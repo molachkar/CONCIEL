@@ -1,0 +1,39 @@
+--> even if market news are more than gold and others do not let llm halocinate and give market more
+scoring / weight or something like that, rather understanding the market more since its the 
+first gold competetor.
+
+--> the llm i need to test it first do you understad this data well, units, numbers, meanings, fractions,
+everything data needed
+
+--> economic calender mo, will fetch all news starting from the ongoing date all the way back 30 days
+only for usd news, medium and high
+
+--> fetch last thirty days daily candles of gold and spy to see its relation to news so the structure will be
+like 15/10/2025 (news - social media - economic calender - daily ohclv - fundamentals). meaning it
+will be a script will run the five scripts at ones, have access to all data and can read its contesnts,
+make a news json file that follow that structure above.
+
+--> when trading smaller time frrames we are going to take a look for depth of the market.
+
+--> now i have economic calender for the last 30 days with title data and event 
++ fundamentals for daily frequence data i have prev month covered all, for other frequencies
+i have just enough data.
++ marketechnicals i have 7d/24h/6h data high and low thats for support and resistance and technical
+calculated, plus prev month opclv each day market data xauusd.
++ newssentiment finviz spy, vix, gold, usd, headlines for the last thirty days.
++ social media reddit sentiment and news.
+
++ i want to acumilate all the bots output into one output how is that, take the oldes date in our data
+meaning one month older, go through all files and get what happened in that day, example 17/10/2025,
+economic calender bot gives eneven with data, save it to that day then fundamentals bot gives also data to that date,
+also for marketch 30d ohclv data, news for all tickers and social media, once we collect data for that date we move one 
+to the next one 18, se if there is a corresponding data, and goes on all the way to the todays date,
+at the end i will get an emens data set orginzed and filterd by date, ready to discuss and build our daily bais
+and predictions
+--> first : i need a main that runs the bots at once.
+--> second : a bot that gets json files and accumilate them all.
+
+--> only after that i will go to make a coinciel llm.
+
+
+ok now that i have five different bots, one collect fundamentals, one collects economic calender, on for market data and calculating techincals, one for news sentiment and one for social media sentiment, i need a main that run them all at ones

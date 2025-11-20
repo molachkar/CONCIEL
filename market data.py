@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Dict, Optional, Any, List
 import pandas as pd
 import numpy as np
@@ -27,34 +27,41 @@ def initialize_mt5() -> bool:
         return False
     return True
 
-def fetch_weekly(symbol: str) -> Optional[Dict[str, float]]:
+def fetch_weekly(symbol: str) -> Optional[Dict[str, Any]]:
     rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_W1, 1, 1)
     if rates is None or len(rates) == 0:
         return None
     candle = rates[0]
+    close_time = datetime.fromtimestamp(candle['time'])
     return {
         "high": round_to_2_decimals(candle['high']),
-        "low": round_to_2_decimals(candle['low'])
+        "low": round_to_2_decimals(candle['low']),
+        "time": close_time.isoformat()
     }
 
-def fetch_daily(symbol: str) -> Optional[Dict[str, float]]:
+def fetch_daily(symbol: str) -> Optional[Dict[str, Any]]:
     rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_D1, 1, 1)
     if rates is None or len(rates) == 0:
         return None
     candle = rates[0]
+    close_time = datetime.fromtimestamp(candle['time'])
     return {
         "high": round_to_2_decimals(candle['high']),
-        "low": round_to_2_decimals(candle['low'])
+        "low": round_to_2_decimals(candle['low']),
+        "time": close_time.isoformat()
     }
 
-def fetch_hourly(symbol: str) -> Optional[Dict[str, float]]:
+def fetch_hourly(symbol: str) -> Optional[Dict[str, Any]]:
     rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_H1, 1, 6)
     if rates is None or len(rates) == 0:
         return None
     df = pd.DataFrame(rates)
+    start_time = datetime.fromtimestamp(df['time'].iloc[0])
+    end_time = datetime.fromtimestamp(df['time'].iloc[-1])
     return {
         "high": round_to_2_decimals(df['high'].max()),
-        "low": round_to_2_decimals(df['low'].min())
+        "low": round_to_2_decimals(df['low'].min()),
+        "time": end_time.isoformat()
     }
 
 def fetch_hourly_for_indicators(symbol: str, bars: int = 300) -> Optional[pd.DataFrame]:
@@ -155,6 +162,42 @@ def compute_indicators(df: pd.DataFrame) -> Optional[Dict[str, Any]]:
         "stoch_status": stoch_status
     }
 
+def fetch_xauusd_30d() -> Optional[pd.DataFrame]:
+    now = datetime.now()
+    thirty_days_ago = now - timedelta(days=30)
+    
+    rates = mt5.copy_rates_range(
+        "XAUUSD", 
+        mt5.TIMEFRAME_D1, 
+        thirty_days_ago,
+        now
+    )
+    
+    if rates is None or len(rates) == 0:
+        return None
+    
+    df = pd.DataFrame(rates)
+    df['time'] = pd.to_datetime(df['time'], unit='s')
+    
+    df = df[['time', 'open', 'high', 'low', 'close']]
+    
+    df = df.tail(30)
+    
+    return df
+
+def save_xauusd_30d_to_json(df: pd.DataFrame, filename: str = "xauusd_30d.json"):
+    if df is None or df.empty:
+        return
+    
+    records = df.to_dict('records')
+    for record in records:
+        for key in ['open', 'high', 'low', 'close']:
+            record[key] = round_to_2_decimals(record[key])
+        record['time'] = str(record['time'])
+    
+    with open(filename, 'w') as jsonfile:
+        json.dump(records, jsonfile, indent=2)
+
 def determine_bias(current_price: float, weekly: Dict, daily: Dict, hourly: Dict, 
                    indicators: Optional[Dict] = None) -> str:
     if not weekly or not daily or not hourly or current_price is None:
@@ -226,6 +269,11 @@ def main():
         result = analyze_instrument(symbol)
         if result:
             results.append(result)
+    
+    xauusd_30d = fetch_xauusd_30d()
+    if xauusd_30d is not None:
+        save_xauusd_30d_to_json(xauusd_30d)
+        print(f"XAUUSD 30-day data saved to xauusd_30d.json ({len(xauusd_30d)} days)")
     
     mt5.shutdown()
     

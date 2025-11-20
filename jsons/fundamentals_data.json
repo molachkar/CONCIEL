@@ -1,0 +1,120 @@
+{
+  "collection_date": "2025-11-19 01:45:04",
+  "data_source": "Federal Reserve Economic Data (FRED)",
+  "CPI_CURR": 324.37,
+  "CPI_PREV": 323.36,
+  "CPI_CURR_DATE": "2025-09-01",
+  "CPI_PREV_DATE": "2025-08-01",
+  "PCE_CURR": 127.28,
+  "PCE_CURR_DATE": "2025-08-01",
+  "PPI_CURR": 262.44,
+  "PPI_CURR_DATE": "2025-08-01",
+  "UNEMPLOYMENT_CURR": 4.3,
+  "UNEMPLOYMENT_CURR_DATE": "2025-08-01",
+  "NFP_CURR": 159540.0,
+  "NFP_CURR_DATE": "2025-08-01",
+  "JOBLESS_CLAIMS_CURR": null,
+  "JOBLESS_CLAIMS_PREV": null,
+  "JOBLESS_CLAIMS_LAST_30_DAYS": null,
+  "TREASURY_10Y_CURR": 4.13,
+  "TREASURY_10Y_PREV": 4.14,
+  "TREASURY_10Y_CURR_DATE": "2025-11-17",
+  "TREASURY_10Y_PREV_DATE": "2025-11-14",
+  "TREASURY_10Y_LAST_30_DAYS": [
+    {
+      "date": "2025-11-17",
+      "value": 4.13
+    },
+    {
+      "date": "2025-11-14",
+      "value": 4.14
+    },
+    {
+      "date": "2025-11-13",
+      "value": 4.11
+    },
+    {
+      "date": "2025-11-12",
+      "value": 4.08
+    },
+    {
+      "date": "2025-11-10",
+      "value": 4.13
+    },
+    {
+      "date": "2025-11-07",
+      "value": 4.11
+    },
+    {
+      "date": "2025-11-06",
+      "value": 4.11
+    },
+    {
+      "date": "2025-11-05",
+      "value": 4.17
+    },
+    {
+      "date": "2025-11-04",
+      "value": 4.1
+    },
+    {
+      "date": "2025-11-03",
+      "value": 4.13
+    },
+    {
+      "date": "2025-10-31",
+      "value": 4.11
+    },
+    {
+      "date": "2025-10-30",
+      "value": 4.11
+    },
+    {
+      "date": "2025-10-29",
+      "value": 4.08
+    },
+    {
+      "date": "2025-10-28",
+      "value": 3.99
+    },
+    {
+      "date": "2025-10-27",
+      "value": 4.01
+    },
+    {
+      "date": "2025-10-24",
+      "value": 4.02
+    },
+    {
+      "date": "2025-10-23",
+      "value": 4.01
+    },
+    {
+      "date": "2025-10-22",
+      "value": 3.97
+    },
+    {
+      "date": "2025-10-21",
+      "value": 3.98
+    },
+    {
+      "date": "2025-10-20",
+      "value": 4.0
+    }
+  ],
+  "FEDFUNDS_CURR": 4.09,
+  "FEDFUNDS_PREV": 4.22,
+  "FEDFUNDS_CURR_DATE": "2025-10-01",
+  "FEDFUNDS_PREV_DATE": "2025-09-01",
+  "REAL_RATE_CURR": 1.11,
+  "M2_MONEY_SUPPLY_CURR": 22212.5,
+  "M2_MONEY_SUPPLY_PREV": 22108.4,
+  "M2_MONEY_SUPPLY_CURR_DATE": "2025-09-01",
+  "M2_MONEY_SUPPLY_PREV_DATE": "2025-08-01",
+  "RETAIL_SALES_CURR": 732010.0,
+  "RETAIL_SALES_CURR_DATE": "2025-08-01",
+  "INDUSTRIAL_PROD_CURR": 103.92,
+  "INDUSTRIAL_PROD_CURR_DATE": "2025-08-01",
+  "HOUSING_STARTS_CURR": 1307.0,
+  "HOUSING_STARTS_CURR_DATE": "2025-08-01"
+}
