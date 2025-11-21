@@ -1,297 +1,266 @@
 #!/usr/bin/env python3
 import json
-import os
+from pathlib import Path
 from datetime import datetime, timedelta
-from typing import Dict, List, Any
 from collections import defaultdict
 
-def load_json_file(filepath: str) -> Any:
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except Exception as e:
-        print(f"Error loading {filepath}: {e}")
-        return None
+INPUT_FOLDER = "jsons"
+OUTPUT_FOLDER = "daily_snapshots"
 
-def parse_date(date_str: str) -> str:
-    """Parse various date formats and return YYYY-MM-DD"""
-    if not date_str:
-        return None
-    
+def parse_date(date_str):
+    """Parse various date formats"""
     formats = [
         "%Y-%m-%d",
         "%Y-%m-%dT%H:%M:%S",
-        "%Y-%m-%dT%H:%M:%S.%f",
-        "%d/%m/%Y",
-        "%m/%d/%Y"
+        "%Y-%m-%d %H:%M:%S",
+        "%d/%m/%Y"
     ]
-    
     for fmt in formats:
         try:
-            dt = datetime.strptime(date_str.split('T')[0] if 'T' in date_str else date_str.split(' ')[0], fmt.split('T')[0])
-            return dt.strftime("%Y-%m-%d")
+            return datetime.strptime(date_str.split("T")[0] if "T" in date_str else date_str.split()[0] if " " in date_str else date_str, fmt.split("T")[0] if "T" in fmt else fmt.split()[0] if " " in fmt else fmt).date()
         except:
             continue
     return None
 
-def extract_dates_from_calendar(data: Any) -> Dict[str, List[Any]]:
-    dates = defaultdict(list)
-    if not data or 'events' not in data:
-        return dates
-    
-    for event in data['events']:
-        date_str = event.get('date', '')
-        date = parse_date(date_str)
-        if date:
-            dates[date].append({
-                'type': 'calendar_event',
-                'data': event
-            })
-    
-    return dates
-
-def extract_dates_from_fundamentals(data: Dict) -> Dict[str, List[Any]]:
-    dates = defaultdict(list)
-    if not data:
-        return dates
-    
-    # Handle date-specific fundamental data
-    date_fields = [
-        ('CPI_CURR_DATE', 'CPI_CURR', 'CPI'),
-        ('PCE_CURR_DATE', 'PCE_CURR', 'PCE'),
-        ('UNEMPLOYMENT_CURR_DATE', 'UNEMPLOYMENT_CURR', 'UNEMPLOYMENT'),
-        ('NFP_CURR_DATE', 'NFP_CURR', 'NFP'),
-        ('M2_MONEY_SUPPLY_CURR_DATE', 'M2_MONEY_SUPPLY_CURR', 'M2_MONEY_SUPPLY'),
-        ('RETAIL_SALES_CURR_DATE', 'RETAIL_SALES_CURR', 'RETAIL_SALES'),
-        ('INDUSTRIAL_PROD_CURR_DATE', 'INDUSTRIAL_PROD_CURR', 'INDUSTRIAL_PROD'),
-        ('HOUSING_STARTS_CURR_DATE', 'HOUSING_STARTS_CURR', 'HOUSING_STARTS'),
-        ('FEDFUNDS_CURR_DATE', 'FEDFUNDS_CURR', 'FEDFUNDS')
-    ]
-    
-    for date_field, value_field, name in date_fields:
-        if date_field in data and value_field in data:
-            date = parse_date(data[date_field])
-            if date:
-                dates[date].append({
-                    'type': f'fundamental_{name}',
-                    'data': {
-                        'indicator': name,
-                        'value': data[value_field],
-                        'date': date
-                    }
-                })
-    
-    # Handle TREASURY_10Y_LAST_30_DAYS
-    if 'TREASURY_10Y_LAST_30_DAYS' in data and isinstance(data['TREASURY_10Y_LAST_30_DAYS'], list):
-        for item in data['TREASURY_10Y_LAST_30_DAYS']:
-            date = parse_date(item.get('date'))
-            if date:
-                dates[date].append({
-                    'type': 'fundamental_TREASURY_10Y',
-                    'data': item
-                })
-    
-    return dates
-
-def extract_dates_from_market(data: Any) -> Dict[str, List[Any]]:
-    dates = defaultdict(list)
-    if not data or not isinstance(data, list):
-        return dates
-    
-    now = datetime.now()
-    
-    for item in data:
-        if not isinstance(item, dict):
-            continue
-        
-        # Current market snapshot goes to today
-        if 'timestamp' in item:
-            timestamp = item.get('timestamp', '')
-            date = parse_date(timestamp)
-            if date:
-                dates[date].append({
-                    'type': 'market_snapshot_current',
-                    'data': item
-                })
-        
-        # Weekly support/resistance goes to 7 days ago
-        if 'support_resistance' in item and 'weekly' in item['support_resistance']:
-            week_ago = (now - timedelta(days=7)).strftime("%Y-%m-%d")
-            dates[week_ago].append({
-                'type': 'market_weekly_sr',
-                'data': {
-                    'instrument': item.get('instrument'),
-                    'weekly_support_resistance': item['support_resistance']['weekly']
-                }
-            })
-    
-    return dates
-
-def extract_dates_from_xauusd(data: Any) -> Dict[str, List[Any]]:
-    dates = defaultdict(list)
-    if not data or not isinstance(data, list):
-        return dates
-    
-    for candle in data:
-        if isinstance(candle, dict) and 'time' in candle:
-            date = parse_date(candle['time'])
-            if date:
-                dates[date].append({
-                    'type': 'xauusd_ohlcv',
-                    'data': candle
-                })
-    
-    return dates
-
-def extract_dates_from_news(data: Any) -> Dict[str, List[Any]]:
-    dates = defaultdict(list)
-    if not data:
-        return dates
-    
-    # Handle all timeframes
-    for timeframe in ['30D', '7D', '24H']:
-        if timeframe in data and 'raw_headlines' in data[timeframe]:
-            for article in data[timeframe]['raw_headlines']:
-                time_str = article.get('time', '')
-                date = parse_date(time_str)
-                if date:
-                    dates[date].append({
-                        'type': 'news_headline',
-                        'data': article
-                    })
-    
-    return dates
-
-def extract_dates_from_reddit(data: Any) -> Dict[str, List[Any]]:
-    dates = defaultdict(list)
-    if not data:
-        return dates
-    
-    # Handle all timeframes
-    for timeframe in ['30D', '7D', '24H']:
-        if timeframe in data and 'posts' in data[timeframe]:
-            for post in data[timeframe]['posts']:
-                time_str = post.get('time', '')
-                date = parse_date(time_str)
-                if date:
-                    dates[date].append({
-                        'type': 'reddit_post',
-                        'data': post
-                    })
-    
-    return dates
-
-def organize_by_date(jsons_folder: str = "jsons") -> Dict[str, Any]:
-    all_dates = defaultdict(lambda: {
-        'calendar': [],
-        'fundamentals': [],
-        'market': [],
-        'xauusd_ohlcv': [],
-        'news': [],
-        'reddit': []
+def extract_all_dates_and_data(input_path):
+    """Extract all dates and their associated data from all files"""
+    date_data = defaultdict(lambda: {
+        "fundamentals": {},
+        "market_analysis": {},
+        "xauusd": {},
+        "economic_events": [],
+        "news": [],
+        "reddit": []
     })
     
-    files = {
-        'calendar': 'economic_calendar_investpy.json',
-        'fundamentals': 'fundamentals_data.json',
-        'market': 'market_analysis.json',
-        'xauusd': 'xauusd_30d.json',
-        'news': 'news_sentiment_layer.json',
-        'reddit': 'reddit_sentiment.json'
-    }
+    # Process fundamentals_data.json
+    filepath = input_path / "fundamentals_data.json"
+    if filepath.exists():
+        print(f"Scanning {filepath.name}...")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        # Daily metrics with history
+        daily_keys = [
+            "TREASURY_10Y", "HY_CREDIT_SPREAD", "GLD_PRICE", "GLD_VOLUME",
+            "IAU_PRICE", "IAU_VOLUME", "JOBLESS_CLAIMS"
+        ]
+        
+        for key in daily_keys:
+            if f"{key}_LAST_30_DAYS" in data:
+                for entry in data[f"{key}_LAST_30_DAYS"]:
+                    date = entry.get("date")
+                    if date:
+                        date_obj = parse_date(date)
+                        if date_obj:
+                            if "value" in entry:
+                                date_data[date_obj]["fundamentals"][key] = entry["value"]
+                            elif "close" in entry:
+                                date_data[date_obj]["fundamentals"][f"{key}_CLOSE"] = entry["close"]
+                                if "volume" in entry:
+                                    date_data[date_obj]["fundamentals"][f"{key}_VOLUME"] = entry["volume"]
+        
+        # Monthly metrics (add to all dates in that month)
+        monthly_keys = [
+            "CPI", "PCE", "PPI", "UNEMPLOYMENT", "NFP", 
+            "FEDFUNDS", "M2_MONEY_SUPPLY", "RETAIL_SALES",
+            "INDUSTRIAL_PROD", "HOUSING_STARTS", "REAL_RATE"
+        ]
+        
+        for key in monthly_keys:
+            if f"{key}_CURR" in data and f"{key}_CURR_DATE" in data:
+                date = data[f"{key}_CURR_DATE"]
+                date_obj = parse_date(date)
+                if date_obj:
+                    date_data[date_obj]["fundamentals"][key] = data[f"{key}_CURR"]
     
-    for file_type, filename in files.items():
-        filepath = os.path.join(jsons_folder, filename)
-        if not os.path.exists(filepath):
-            print(f"Warning: {filepath} not found, skipping...")
-            continue
+    # Process market_analysis.json
+    filepath = input_path / "market_analysis.json"
+    if filepath.exists():
+        print(f"Scanning {filepath.name}...")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
         
-        data = load_json_file(filepath)
-        if data is None:
-            continue
-        
-        date_items = {}
-        
-        if file_type == 'calendar':
-            date_items = extract_dates_from_calendar(data)
-        elif file_type == 'fundamentals':
-            date_items = extract_dates_from_fundamentals(data)
-        elif file_type == 'market':
-            date_items = extract_dates_from_market(data)
-        elif file_type == 'xauusd':
-            date_items = extract_dates_from_xauusd(data)
-        elif file_type == 'news':
-            date_items = extract_dates_from_news(data)
-        elif file_type == 'reddit':
-            date_items = extract_dates_from_reddit(data)
-        
-        for date, items in date_items.items():
-            for item in items:
-                item_type = item['type']
-                
-                if 'calendar' in item_type:
-                    all_dates[date]['calendar'].append(item['data'])
-                elif 'fundamental' in item_type:
-                    all_dates[date]['fundamentals'].append(item['data'])
-                elif 'market' in item_type:
-                    all_dates[date]['market'].append(item['data'])
-                elif 'xauusd' in item_type:
-                    all_dates[date]['xauusd_ohlcv'].append(item['data'])
-                elif 'news' in item_type:
-                    all_dates[date]['news'].append(item['data'])
-                elif 'reddit' in item_type:
-                    all_dates[date]['reddit'].append(item['data'])
+        if isinstance(data, list):
+            for item in data:
+                if "timestamp" in item:
+                    date_obj = parse_date(item["timestamp"])
+                    if date_obj:
+                        instrument = item.get("instrument", "UNKNOWN")
+                        date_data[date_obj]["market_analysis"][f"{instrument}_PRICE"] = item.get("current_price")
+                        date_data[date_obj]["market_analysis"][f"{instrument}_BIAS"] = item.get("final_bias")
+                        
+                        if "indicators" in item:
+                            indicators = item["indicators"]
+                            date_data[date_obj]["market_analysis"][f"{instrument}_RSI"] = indicators.get("rsi_value")
+                            date_data[date_obj]["market_analysis"][f"{instrument}_MACD"] = indicators.get("macd_value")
     
-    return dict(all_dates)
+    # Process xauusd_30d.json
+    filepath = input_path / "xauusd_30d.json"
+    if filepath.exists():
+        print(f"Scanning {filepath.name}...")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        if isinstance(data, list):
+            for entry in data:
+                if "time" in entry:
+                    date_obj = parse_date(entry["time"])
+                    if date_obj:
+                        date_data[date_obj]["xauusd"] = {
+                            "open": entry.get("open"),
+                            "high": entry.get("high"),
+                            "low": entry.get("low"),
+                            "close": entry.get("close")
+                        }
+    
+    # Process economic_calendar.json
+    filepath = input_path / "economic_calendar.json"
+    if filepath.exists():
+        print(f"Scanning {filepath.name}...")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        if "events" in data:
+            for event in data["events"]:
+                date = event.get("date")
+                date_obj = parse_date(date)
+                if date_obj:
+                    date_data[date_obj]["economic_events"].append({
+                        "time": event.get("time"),
+                        "currency": event.get("currency"),
+                        "event": event.get("event"),
+                        "actual": event.get("actual"),
+                        "forecast": event.get("forecast"),
+                        "previous": event.get("previous")
+                    })
+    
+    # Process news_30days.json
+    filepath = input_path / "news_30days.json"
+    if filepath.exists():
+        print(f"Scanning {filepath.name}...")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        if "headlines" in data:
+            for article in data["headlines"]:
+                time = article.get("time")
+                if time:
+                    date_obj = parse_date(time)
+                    if date_obj:
+                        date_data[date_obj]["news"].append({
+                            "category": article.get("category"),
+                            "title": article.get("title"),
+                            "ticker": article.get("ticker")
+                        })
+    
+    # Process reddit_news.json
+    filepath = input_path / "reddit_news.json"
+    if filepath.exists():
+        print(f"Scanning {filepath.name}...")
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        if "posts" in data:
+            for post in data["posts"]:
+                time = post.get("time")
+                if time:
+                    date_obj = parse_date(time)
+                    if date_obj:
+                        date_data[date_obj]["reddit"].append({
+                            "title": post.get("title"),
+                            "source": post.get("source")
+                        })
+    
+    return date_data
 
-def categorize_by_timeframe(organized_data: Dict[str, Any]) -> Dict[str, Any]:
-    now = datetime.now()
-    one_month_ago = now - timedelta(days=30)
+def clean_snapshot_data(data):
+    """Remove empty sections from snapshot data"""
+    cleaned = {}
     
-    result = {
-        'last_30_days': {},
-        'older_data': {}
-    }
+    for key, value in data.items():
+        # Keep dictionaries only if they have content
+        if isinstance(value, dict):
+            if value:  # Non-empty dict
+                cleaned[key] = value
+        # Keep lists only if they have content
+        elif isinstance(value, list):
+            if value:  # Non-empty list
+                cleaned[key] = value
+        # Keep other values as-is
+        else:
+            cleaned[key] = value
     
-    for date_str, data in organized_data.items():
-        try:
-            date_obj = datetime.strptime(date_str, '%Y-%m-%d')
-            
-            if date_obj >= one_month_ago:
-                result['last_30_days'][date_str] = data
-            else:
-                result['older_data'][date_str] = data
-        except ValueError:
-            result['older_data'][date_str] = data
-    
-    return result
-
-def save_organized_data(organized_data: Dict[str, Any], output_path: str = "organized_data.json"):
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(organized_data, f, indent=2, ensure_ascii=False)
-    print(f"Organized data saved to {output_path}")
+    return cleaned
 
 def main():
-    print("Starting data organization...")
+    print("\n" + "="*60)
+    print("DAILY SNAPSHOT GENERATOR")
+    print("="*60 + "\n")
     
-    organized = organize_by_date("jsons")
+    input_path = Path(INPUT_FOLDER)
+    if not input_path.exists():
+        print(f"ERROR: {INPUT_FOLDER} folder not found")
+        return
     
-    categorized = categorize_by_timeframe(organized)
+    output_path = Path(OUTPUT_FOLDER)
+    output_path.mkdir(exist_ok=True)
     
-    save_organized_data(categorized, "organized_data.json")
+    # Extract all dates and data
+    print("Extracting all dates and data from files...\n")
+    date_data = extract_all_dates_and_data(input_path)
     
-    print(f"\nSummary:")
-    print(f"Last 30 days: {len(categorized['last_30_days'])} dates")
-    print(f"Older data: {len(categorized['older_data'])} dates")
+    if not date_data:
+        print("ERROR: No data found in any files")
+        return
     
-    # Show sample of what's in each date
-    if categorized['last_30_days']:
-        sample_date = list(categorized['last_30_days'].keys())[0]
-        sample_data = categorized['last_30_days'][sample_date]
-        print(f"\nSample date {sample_date}:")
-        for key, items in sample_data.items():
-            if items:
-                print(f"  {key}: {len(items)} items")
+    # Get date range
+    all_dates = sorted(date_data.keys())
+    oldest_date = all_dates[0]
+    newest_date = all_dates[-1]
+    
+    print(f"\nDate range found:")
+    print(f"  Oldest: {oldest_date}")
+    print(f"  Newest: {newest_date}")
+    print(f"  Total days with data: {len(all_dates)}")
+    print("\n" + "="*60)
+    
+    # Generate snapshots for each date
+    print("\nGenerating daily snapshots...\n")
+    
+    current_date = oldest_date
+    snapshot_count = 0
+    
+    while current_date <= newest_date:
+        if current_date in date_data:
+            # Clean the data to remove empty sections
+            cleaned_data = clean_snapshot_data(date_data[current_date])
+            
+            # Only create snapshot if there's actual data
+            if cleaned_data:
+                snapshot = {
+                    "date": current_date.isoformat(),
+                    "snapshot_generated_at": datetime.now().isoformat(),
+                    "data": cleaned_data
+                }
+                
+                # Save snapshot
+                filename = f"snapshot_{current_date.isoformat()}.json"
+                filepath = output_path / filename
+                
+                with open(filepath, 'w', encoding='utf-8') as f:
+                    json.dump(snapshot, f, indent=2, ensure_ascii=False)
+                
+                snapshot_count += 1
+                print(f"✓ {filename}")
+        
+        current_date += timedelta(days=1)
+    
+    print("\n" + "="*60)
+    print(f"Generated {snapshot_count} daily snapshots")
+    print(f"Output folder: {OUTPUT_FOLDER}/")
+    print("="*60)
+    print("FINISHED\n")
 
 if __name__ == "__main__":
     main()

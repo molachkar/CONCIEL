@@ -210,7 +210,7 @@ class NewsFetcher:
         self._log(f"By category: {by_category}")
         self._log("="*60)
         
-        out_path = "news_30days.json"
+        out_path = "jsons/news_30days.json"
         with open(out_path, 'w', encoding='utf-8') as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
         self._log(f"Saved to {out_path}")

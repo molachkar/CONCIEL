@@ -2,69 +2,75 @@
   {
     "instrument": "XAUUSD",
     "description": "Gold spot",
-    "timestamp": "2025-11-19T01:45:23.283075",
-    "current_price": 4074.57,
+    "timestamp": "2025-11-20T18:28:06.824002",
+    "current_price": 4057.7,
     "support_resistance": {
       "weekly": {
         "high": 4244.93,
-        "low": 3996.7
+        "low": 3996.7,
+        "time": "2025-11-09T01:00:00"
       },
       "daily": {
-        "high": 4082.28,
-        "low": 3997.66
+        "high": 4132.68,
+        "low": 4055.25,
+        "time": "2025-11-19T01:00:00"
       },
       "hourly": {
-        "high": 4082.28,
-        "low": 4059.12
+        "high": 4107.06,
+        "low": 4044.49,
+        "time": "2025-11-20T19:00:00"
       }
     },
     "indicators": {
-      "rsi_value": 53.23,
+      "rsi_value": 45.66,
       "rsi_status": "Neutral",
-      "ema50_value": 4068.84,
-      "ema200_value": 4084.38,
+      "ema50_value": 4075.47,
+      "ema200_value": 4081.98,
       "ema_trend": "Bearish",
       "ema_crossover": "No Crossover",
-      "macd_value": 6.07,
-      "macd_signal": 1.75,
-      "macd_histogram": 4.33,
+      "macd_value": -4.38,
+      "macd_signal": -3.17,
+      "macd_histogram": -1.21,
       "macd_trend_shift": "No Trend Shift",
-      "stoch_d_value": 84.41,
-      "stoch_status": "Exhaustion Near Highs"
+      "stoch_d_value": 29.62,
+      "stoch_status": "Neutral"
     },
     "final_bias": "BEARISH"
   },
   {
     "instrument": "USA500.IDX",
     "description": "S&P500 index CFD",
-    "timestamp": "2025-11-19T01:45:23.291529",
-    "current_price": 6617.05,
+    "timestamp": "2025-11-20T18:28:06.831976",
+    "current_price": 6605.05,
     "support_resistance": {
       "weekly": {
         "high": 6876.75,
-        "low": 6649.85
+        "low": 6649.85,
+        "time": "2025-11-09T01:00:00"
       },
       "daily": {
-        "high": 6688.05,
-        "low": 6574.65
+        "high": 6689.4,
+        "low": 6592.84,
+        "time": "2025-11-19T01:00:00"
       },
       "hourly": {
-        "high": 6667.74,
-        "low": 6595.24
+        "high": 6770.75,
+        "low": 6608.35,
+        "time": "2025-11-20T19:00:00"
       }
     },
     "indicators": {
-      "rsi_value": 41.84,
+      "rsi_value": 38.2,
       "rsi_status": "Neutral",
-      "ema50_value": 6676.42,
-      "ema200_value": 6753.4,
+      "ema50_value": 6683.69,
+      "ema200_value": 6727.26,
       "ema_trend": "Bearish",
       "ema_crossover": "No Crossover",
-      "macd_value": -17.6,
-      "macd_signal": -19.2,
-      "macd_histogram": 1.6,
+      "macd_value": 3.17,
+      "macd_signal": 16.45,
+      "macd_histogram": -13.28,
       "macd_trend_shift": "No Trend Shift",
-      "stoch_d_value": 45.15,
+      "stoch_d_value": 25.48,
       "stoch_status": "Neutral"
     },
     "final_bias": "BEARISH"
@@ -72,34 +78,37 @@
   {
     "instrument": "VOL.IDX",
     "description": "Volatility Index (VIX CFD)",
-    "timestamp": "2025-11-19T01:45:23.302794",
-    "current_price": 21.68,
+    "timestamp": "2025-11-20T18:28:06.837047",
+    "current_price": 22.12,
     "support_resistance": {
       "weekly": {
         "high": 21.88,
-        "low": 17.97
+        "low": 17.97,
+        "time": "2025-11-09T01:00:00"
       },
       "daily": {
-        "high": 22.23,
-        "low": 20.87
+        "high": 21.98,
+        "low": 20.62,
+        "time": "2025-11-19T01:00:00"
       },
       "hourly": {
-        "high": 22.02,
-        "low": 20.92
+        "high": 21.98,
+        "low": 19.57,
+        "time": "2025-11-20T19:00:00"
       }
     },
     "indicators": {
-      "rsi_value": 55.29,
+      "rsi_value": 63.13,
       "rsi_status": "Neutral",
-      "ema50_value": 21.0,
-      "ema200_value": 19.88,
+      "ema50_value": 20.83,
+      "ema200_value": 20.22,
       "ema_trend": "Bullish",
       "ema_crossover": "No Crossover",
-      "macd_value": 0.18,
-      "macd_signal": 0.2,
-      "macd_histogram": -0.02,
+      "macd_value": -0.01,
+      "macd_signal": -0.21,
+      "macd_histogram": 0.2,
       "macd_trend_shift": "No Trend Shift",
-      "stoch_d_value": 65.65,
+      "stoch_d_value": 75.92,
       "stoch_status": "Neutral"
     },
     "final_bias": "BULLISH"
@@ -107,34 +116,37 @@
   {
     "instrument": "DOLLAR.IDX",
     "description": "Dollar Index (DXY CFD)",
-    "timestamp": "2025-11-19T01:45:23.312781",
-    "current_price": 99.45,
+    "timestamp": "2025-11-20T18:28:06.842195",
+    "current_price": 100.1,
     "support_resistance": {
       "weekly": {
         "high": 99.6,
-        "low": 98.85
+        "low": 98.85,
+        "time": "2025-11-09T01:00:00"
       },
       "daily": {
-        "high": 99.49,
-        "low": 99.18
+        "high": 100.15,
+        "low": 99.38,
+        "time": "2025-11-19T01:00:00"
       },
       "hourly": {
-        "high": 99.55,
-        "low": 99.28
+        "high": 100.29,
+        "low": 99.93,
+        "time": "2025-11-20T19:00:00"
       }
     },
     "indicators": {
-      "rsi_value": 54.18,
+      "rsi_value": 58.62,
       "rsi_status": "Neutral",
-      "ema50_value": 99.36,
-      "ema200_value": 99.33,
+      "ema50_value": 99.86,
+      "ema200_value": 99.56,
       "ema_trend": "Bullish",
       "ema_crossover": "No Crossover",
-      "macd_value": 0.03,
-      "macd_signal": 0.04,
-      "macd_histogram": -0.0,
+      "macd_value": 0.08,
+      "macd_signal": 0.11,
+      "macd_histogram": -0.03,
       "macd_trend_shift": "No Trend Shift",
-      "stoch_d_value": 62.12,
+      "stoch_d_value": 47.0,
       "stoch_status": "Neutral"
     },
     "final_bias": "BULLISH"

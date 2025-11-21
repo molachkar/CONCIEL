@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import requests
+import yfinance as yf
 from typing import Dict, List, Optional
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
@@ -31,8 +32,7 @@ def fetch_fred_series_range(series_id: str, start_date: str) -> Optional[List[Di
             except (ValueError, KeyError):
                 continue
         return results if results else None
-    except Exception as e:
-        print(f"Error fetching {series_id}: {e}")
+    except Exception:
         return None
 
 def fetch_monthly_indicator(series_id: str, name: str) -> Dict:
@@ -50,16 +50,38 @@ def fetch_monthly_indicator(series_id: str, name: str) -> Dict:
     elif data and len(data) == 1:
         result[f"{name}_CURR"] = data[0]["value"]
         result[f"{name}_CURR_DATE"] = data[0]["date"]
-        print(f"Warning: Only 1 data point found for {series_id}")
     else:
         result[f"{name}_CURR"] = None
         result[f"{name}_PREV"] = None
-        print(f"Warning: No data found for {series_id}")
     
     return result
 
 def fetch_daily_previous_month(series_id: str, name: str) -> Dict:
     """Fetch all values from previous 30 days for daily frequency indicators."""
+    start_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    data = fetch_fred_series_range(series_id, start_date)
+    
+    result = {}
+    
+    if data and len(data) >= 2:
+        result[f"{name}_CURR"] = data[0]["value"]
+        result[f"{name}_PREV"] = data[1]["value"]
+        result[f"{name}_CURR_DATE"] = data[0]["date"]
+        result[f"{name}_PREV_DATE"] = data[1]["date"]
+        result[f"{name}_LAST_30_DAYS"] = [{"date": d["date"], "value": d["value"]} for d in data]
+    elif data and len(data) == 1:
+        result[f"{name}_CURR"] = data[0]["value"]
+        result[f"{name}_CURR_DATE"] = data[0]["date"]
+        result[f"{name}_LAST_30_DAYS"] = [{"date": data[0]["date"], "value": data[0]["value"]}]
+    else:
+        result[f"{name}_CURR"] = None
+        result[f"{name}_PREV"] = None
+        result[f"{name}_LAST_30_DAYS"] = None
+    
+    return result
+
+def fetch_weekly_previous_month(series_id: str, name: str) -> Dict:
+    """Fetch all values from previous 30 days for weekly frequency indicators."""
     start_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     data = fetch_fred_series_range(series_id, start_date)
     
@@ -105,65 +127,106 @@ def fetch_real_interest_rate() -> Dict:
     
     return result
 
+def fetch_gold_etf_flows() -> Dict:
+    """Fetch GLD and IAU net asset values as proxy for institutional flows."""
+    result = {}
+    
+    try:
+        end_date = datetime.now()
+        start_date = end_date - timedelta(days=30)
+        
+        gld = yf.Ticker("GLD")
+        gld_hist = gld.history(start=start_date, end=end_date)
+        
+        if not gld_hist.empty:
+            gld_latest = gld_hist.iloc[-1]
+            gld_prev = gld_hist.iloc[-2] if len(gld_hist) > 1 else None
+            
+            result["GLD_PRICE_CURR"] = round(gld_latest["Close"], 2)
+            result["GLD_VOLUME_CURR"] = int(gld_latest["Volume"])
+            result["GLD_DATE_CURR"] = gld_latest.name.strftime("%Y-%m-%d")
+            
+            if gld_prev is not None:
+                result["GLD_PRICE_PREV"] = round(gld_prev["Close"], 2)
+                result["GLD_VOLUME_PREV"] = int(gld_prev["Volume"])
+                result["GLD_DATE_PREV"] = gld_prev.name.strftime("%Y-%m-%d")
+            
+            gld_30d = [{"date": idx.strftime("%Y-%m-%d"), "close": round(row["Close"], 2), "volume": int(row["Volume"])} 
+                       for idx, row in gld_hist.iterrows()]
+            result["GLD_LAST_30_DAYS"] = gld_30d
+    except Exception:
+        result["GLD_PRICE_CURR"] = None
+        result["GLD_VOLUME_CURR"] = None
+    
+    try:
+        iau = yf.Ticker("IAU")
+        iau_hist = iau.history(start=start_date, end=end_date)
+        
+        if not iau_hist.empty:
+            iau_latest = iau_hist.iloc[-1]
+            iau_prev = iau_hist.iloc[-2] if len(iau_hist) > 1 else None
+            
+            result["IAU_PRICE_CURR"] = round(iau_latest["Close"], 2)
+            result["IAU_VOLUME_CURR"] = int(iau_latest["Volume"])
+            result["IAU_DATE_CURR"] = iau_latest.name.strftime("%Y-%m-%d")
+            
+            if iau_prev is not None:
+                result["IAU_PRICE_PREV"] = round(iau_prev["Close"], 2)
+                result["IAU_VOLUME_PREV"] = int(iau_prev["Volume"])
+                result["IAU_DATE_PREV"] = iau_prev.name.strftime("%Y-%m-%d")
+            
+            iau_30d = [{"date": idx.strftime("%Y-%m-%d"), "close": round(row["Close"], 2), "volume": int(row["Volume"])} 
+                       for idx, row in iau_hist.iterrows()]
+            result["IAU_LAST_30_DAYS"] = iau_30d
+    except Exception:
+        result["IAU_PRICE_CURR"] = None
+        result["IAU_VOLUME_CURR"] = None
+    
+    return result
+
 def collect_fundamentals() -> Dict:
     """Collect all fundamental economic indicators."""
-    print("=" * 60)
     print("Collecting fundamental economic data...")
-    print("=" * 60)
     
     fundamentals = {
         "collection_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "data_source": "Federal Reserve Economic Data (FRED)"
+        "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance"
     }
     
-    # Core Inflation Indicators
-    print("\n Fetching CPI (Consumer Price Index)...")
-    fundamentals.update(fetch_monthly_indicator("CPIAUCSL", "CPI"))
-    
-    print("Fetching PCE (Personal Consumption Expenditures)...")
-    fundamentals.update(fetch_monthly_indicator("PCEPI", "PCE"))
-    
-    print("Fetching PPI (Producer Price Index)...")
-    fundamentals.update(fetch_monthly_indicator("PPIACO", "PPI"))
-    
-    # Labor Market
-    print("Fetching Unemployment Rate...")
-    fundamentals.update(fetch_monthly_indicator("UNRATE", "UNEMPLOYMENT"))
-    
-    print("Fetching NFP (Nonfarm Payrolls)...")
-    fundamentals.update(fetch_monthly_indicator("PAYEMS", "NFP"))
-    
-    print("Fetching Initial Jobless Claims (weekly data, last 30 days)...")
-    fundamentals.update(fetch_daily_previous_month("ICSA", "JOBLESS_CLAIMS"))
-    
-    # Interest Rates
-    print("Fetching Treasury 10Y Yield...")
+    # ===== DAILY FREQUENCY INDICATORS =====
+    print("\n[DAILY FREQUENCY]")
     fundamentals.update(fetch_daily_previous_month("DGS10", "TREASURY_10Y"))
+    fundamentals.update(fetch_daily_previous_month("BAMLH0A0HYM2", "HY_CREDIT_SPREAD"))
+    fundamentals.update(fetch_gold_etf_flows())
     
-    print("Fetching Fed Funds Rate...")
+    # ===== WEEKLY FREQUENCY INDICATORS =====
+    print("[WEEKLY FREQUENCY]")
+    fundamentals.update(fetch_weekly_previous_month("ICSA", "JOBLESS_CLAIMS"))
+    
+    # ===== MONTHLY FREQUENCY INDICATORS =====
+    print("[MONTHLY FREQUENCY]")
+    fundamentals.update(fetch_monthly_indicator("CPIAUCSL", "CPI"))
+    fundamentals.update(fetch_monthly_indicator("PCEPI", "PCE"))
+    fundamentals.update(fetch_monthly_indicator("PPIACO", "PPI"))
+    fundamentals.update(fetch_monthly_indicator("UNRATE", "UNEMPLOYMENT"))
+    fundamentals.update(fetch_monthly_indicator("PAYEMS", "NFP"))
     fundamentals.update(fetch_monthly_indicator("FEDFUNDS", "FEDFUNDS"))
+    fundamentals.update(fetch_monthly_indicator("M2SL", "M2_MONEY_SUPPLY"))
+    fundamentals.update(fetch_monthly_indicator("RSAFS", "RETAIL_SALES"))
+    fundamentals.update(fetch_monthly_indicator("INDPRO", "INDUSTRIAL_PROD"))
+    fundamentals.update(fetch_monthly_indicator("HOUST", "HOUSING_STARTS"))
     
-    print("Calculating Real Interest Rate...")
+    # ===== CALCULATED INDICATORS =====
+    print("[CALCULATED INDICATORS]")
     fundamentals.update(fetch_real_interest_rate())
     
-    # Economic Activity
-    print("Fetching M2 Money Supply...")
-    fundamentals.update(fetch_monthly_indicator("M2SL", "M2_MONEY_SUPPLY"))
-    
-    print("Fetching Retail Sales...")
-    fundamentals.update(fetch_monthly_indicator("RSAFS", "RETAIL_SALES"))
-    
-    print("Fetching Industrial Production Index...")
-    fundamentals.update(fetch_monthly_indicator("INDPRO", "INDUSTRIAL_PROD"))
-    
-    print(" Fetching Housing Starts...")
-    fundamentals.update(fetch_monthly_indicator("HOUST", "HOUSING_STARTS"))
+    print("\nCollection complete.")
     
     return fundamentals
 
 def main():
-    print("\n" + "=" * 60)
-    print("FUNDAMENTALS DATA COLLECTION SCRIPT")
+    print("=" * 60)
+    print("FUNDAMENTALS DATA COLLECTION")
     print("=" * 60)
     
     fundamentals = collect_fundamentals()
@@ -171,15 +234,14 @@ def main():
     output = json.dumps(fundamentals, indent=2)
     
     print("\n" + "=" * 60)
-    print("DATA COLLECTION COMPLETE")
+    print("DATA SAVED")
     print("=" * 60)
-    print(output)
     
-    output_file = "fundamentals_data.json"
+    output_file = "jsons/fundamentals_data.json"
     with open(output_file, "w") as f:
         f.write(output)
     
-    print(f"\n Data saved to: {output_file}")
+    print(f"\nFile: {output_file}")
 
 if __name__ == "__main__":
     main()

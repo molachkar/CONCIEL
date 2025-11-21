@@ -185,7 +185,7 @@ def fetch_xauusd_30d() -> Optional[pd.DataFrame]:
     
     return df
 
-def save_xauusd_30d_to_json(df: pd.DataFrame, filename: str = "xauusd_30d.json"):
+def save_xauusd_30d_to_json(df: pd.DataFrame, filename: str = "jsons/xauusd_30d.json"):
     if df is None or df.empty:
         return
     
@@ -253,7 +253,7 @@ def analyze_instrument(symbol: str) -> Optional[Dict[str, Any]]:
     
     return result
 
-def save_to_json(results: List[Dict[str, Any]], filename: str = "market_analysis.json"):
+def save_to_json(results: List[Dict[str, Any]], filename: str = "jsons/market_analysis.json"):
     if not results:
         return
     with open(filename, 'w') as jsonfile:

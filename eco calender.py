@@ -90,7 +90,7 @@ class EconomicCalendarLayer:
             'events': events_list
         }
         
-        out_path = "economic_calendar.json"
+        out_path = "jsons/economic_calendar.json"
         with open(out_path, 'w', encoding='utf-8') as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
         
