@@ -1,0 +1,100 @@
+{
+  "generated_at": "2025-12-07T21:20:42.474530",
+  "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
+  "description": "Monthly inflation and economic indicators",
+  "indicators": {
+    "CPI": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 324.37
+        }
+      ],
+      "end_date": "2025-09-01"
+    },
+    "PCE": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 127.62
+        }
+      ],
+      "end_date": "2025-09-01"
+    },
+    "PPI": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 262.34
+        }
+      ],
+      "end_date": "2025-09-01"
+    },
+    "UNEMPLOYMENT": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 4.4
+        }
+      ],
+      "end_date": "2025-09-01"
+    },
+    "NFP": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 159626.0
+        }
+      ],
+      "end_date": "2025-09-01"
+    },
+    "FEDFUNDS": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 4.22
+        },
+        {
+          "date": "2025-10-01",
+          "value": 4.09
+        },
+        {
+          "date": "2025-11-01",
+          "value": 3.88
+        }
+      ],
+      "end_date": "2025-11-01"
+    },
+    "M2_MONEY_SUPPLY": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 22212.5
+        },
+        {
+          "date": "2025-10-01",
+          "value": 22298.1
+        }
+      ],
+      "end_date": "2025-10-01"
+    },
+    "RETAIL_SALES": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 733258.0
+        }
+      ],
+      "end_date": "2025-09-01"
+    },
+    "INDUSTRIAL_PROD": {
+      "data": [
+        {
+          "date": "2025-09-01",
+          "value": 101.43
+        }
+      ],
+      "end_date": "2025-09-01"
+    }
+  }
+}

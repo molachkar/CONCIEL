@@ -1,0 +1,17 @@
+{
+  "date": "2025-09-01",
+  "snapshot_generated_at": "2025-12-07T21:20:42.524394",
+  "data": {
+    "fundamentals": {
+      "CPI": 324.37,
+      "PCE": 127.62,
+      "PPI": 262.34,
+      "UNEMPLOYMENT": 4.4,
+      "NFP": 159626.0,
+      "FEDFUNDS": 4.22,
+      "M2_MONEY_SUPPLY": 22212.5,
+      "RETAIL_SALES": 733258.0,
+      "INDUSTRIAL_PROD": 101.43
+    }
+  }
+}

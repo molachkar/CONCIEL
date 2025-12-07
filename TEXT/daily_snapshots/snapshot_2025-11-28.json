@@ -1,0 +1,94 @@
+{
+  "date": "2025-11-28",
+  "snapshot_generated_at": "2025-12-07T21:20:42.606024",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.02,
+      "HY_CREDIT_SPREAD": 2.95,
+      "GLD_CLOSE": 387.88,
+      "GLD_VOLUME": 7175400,
+      "IAU_CLOSE": 79.41,
+      "IAU_VOLUME": 6228400
+    },
+    "news": [
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Jones Index Rises As Google Leads; Nvidia, Tesla, Robinhood, GE Vernova Eye Key Levels",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Outage Hits Trading, But Dow Indicates Higher; Google Leads Market (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "5 ETFs Primed to Soar if the Fed Cuts Rates in December",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "ETFs to Benefit From Rate Cut Bets and Upbeat Forecasts",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "This Rare Perfect Market Indicator Says a Major Bull Market Is Coming",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "This International ETF Might Be a Better Buy Than the VOO or QQQ",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Billionaires Cant Get Enough Of This ETF",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Meta Platforms - High EVA Shows Why The Premium Is There",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Preparing for the worst case scenario: Israeli gov't holds wargame for emergency aliyah | The Aliyah Ministry conducted a war game simulating the emergency immigration of 45,000 Jews fleeing a collapsing country, testing plans for 800 arrivals daily for two months.",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "$500 start this month",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Peace deal should limit Russia's army, not Ukraine's, says Kaja Kallas",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "US Black Friday shoppers expected to spend less as cost of living bites",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Sandisk Joins the S&amp;P 500 Today. Its Stock Has Been a Huge Gainer This Year.",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Musk’s xAI to close $15 billion funding round in December",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Oil prices expected to fall in 2026 as Wall Street sees 'punishing oversupply' risking return to COVID levels",
+        "source": "r/oil"
+      },
+      {
+        "title": "Nvidia vs Google heats up after Meta considers switching chips",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Tokyo High Court rules same-sex marriage ban constitutional",
+        "source": "r/japan"
+      }
+    ]
+  }
+}

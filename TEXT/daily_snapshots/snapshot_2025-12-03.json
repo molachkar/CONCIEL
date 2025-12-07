@@ -1,0 +1,335 @@
+{
+  "date": "2025-12-03",
+  "snapshot_generated_at": "2025-12-07T21:20:42.616781",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.06,
+      "HY_CREDIT_SPREAD": 2.89,
+      "GLD_CLOSE": 386.88,
+      "GLD_VOLUME": 7886800,
+      "IAU_CLOSE": 79.23,
+      "IAU_VOLUME": 5417200
+    },
+    "economic_events": [
+      {
+        "time": "14:15",
+        "currency": "USD",
+        "event": "ADP Nonfarm Employment Change  (Nov)",
+        "actual": "-32K",
+        "forecast": "5K",
+        "previous": "47K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Export Price Index (MoM)  (Sep)",
+        "actual": "0.0%",
+        "forecast": "0.1%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Import Price Index (MoM)  (Sep)",
+        "actual": "0.0%",
+        "forecast": "0.1%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "15:15",
+        "currency": "USD",
+        "event": "Industrial Production (MoM)  (Sep)",
+        "actual": "0.1%",
+        "forecast": "0.1%",
+        "previous": "-0.3%"
+      },
+      {
+        "time": "15:15",
+        "currency": "USD",
+        "event": "Industrial Production (YoY)  (Sep)",
+        "actual": "1.62%",
+        "forecast": "",
+        "previous": "0.84%"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Composite PMI  (Nov)",
+        "actual": "54.2",
+        "forecast": "54.8",
+        "previous": "54.6"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Services PMI  (Nov)",
+        "actual": "54.1",
+        "forecast": "55.0",
+        "previous": "54.8"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "ISM Non-Manufacturing Employment  (Nov)",
+        "actual": "48.9",
+        "forecast": "",
+        "previous": "48.2"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "ISM Non-Manufacturing PMI  (Nov)",
+        "actual": "52.6",
+        "forecast": "52.0",
+        "previous": "52.4"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "ISM Non-Manufacturing Prices  (Nov)",
+        "actual": "65.4",
+        "forecast": "68.0",
+        "previous": "70.0"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Crude Oil Inventories",
+        "actual": "0.574M",
+        "forecast": "-1.900M",
+        "previous": "2.774M"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Cushing Crude Oil Inventories",
+        "actual": "-0.457M",
+        "forecast": "",
+        "previous": "-0.068M"
+      }
+    ],
+    "news": [
+      {
+        "category": "gold",
+        "title": "Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher",
+        "ticker": "GLD"
+      },
+      {
+        "category": "dollar",
+        "title": "Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher",
+        "ticker": "UUP"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises On Surprise Jobs Data; Nvidia Extends Gains (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Edges Up On Jobs Data; Microsoft Sells Off On AI News (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "This tech maven bashes nuclear stocks and shares the real way to play AI's energy boom",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "The Cloud Computing Market Could Surge by 218%: Buy This ETF That Holds a Big Position in Alphabet",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Why ETF investors are shaking off tech-stock turbulence and AI bubble fears",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Treasury Debt Buyback Dec 3rd - $12,500,000,000",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "The probability of a December rate cut is as high as 89%. What does this mean for us?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Trump’s trade war meets the ashes of America’s factory economy",
+        "source": "r/economics"
+      },
+      {
+        "title": "Unlocked unlimited profit",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Bond investors warned US Treasury over picking Kevin Hassett as Fed chair",
+        "source": "r/economics"
+      },
+      {
+        "title": "AMKR gains. Plz pump another 59 cents so I can be ITM.",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Salesforce beats on earnings, issues better-than-expected revenue forecast",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "The Job Market Is In Its Worst Stretch Since The Pandemic",
+        "source": "r/economics"
+      },
+      {
+        "title": "What Are Your Moves Tomorrow, December 04, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Ahead of Tariff Ruling, Businesses Race to Secure Refunds",
+        "source": "r/economics"
+      },
+      {
+        "title": "Russia, China agree to thwart efforts to revive ‘Japanese militarism’",
+        "source": "r/japan"
+      },
+      {
+        "title": "Lucky me—SPY brought in 1.7K today.",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Has MU truly exited the Crucial consumer business? Is this a pivot toward the AI server goldmine, or a sign of impending decline?",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Wall Street Journal: American Consumers Lose Patience With High Car Prices",
+        "source": "r/economics"
+      },
+      {
+        "title": "BlackRock’s Fink: Tokenization at '1996 Internet' Moment",
+        "source": "r/economics"
+      },
+      {
+        "title": "Putin's empty war threats expose his growing desperation",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Moderna is in a generational Yolo territory",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Is DraftKings Dead? It’s starting to look like DraftKings is walking straight into the same disruption that crushed taxis when Uber showed u",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Is DraftKings Dead? It’s starting to look like DraftKings is walking straight into the same disruption that crushed taxis when Uber showed up.",
+        "source": "r/investing"
+      },
+      {
+        "title": "Microsoft reportedly cuts AI sales quotas after teams miss growth targets",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Which stocks are truly worth holding in December 2025?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Russian sympathisers in the GOP",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Microsoft lower AI sales quotas. | investingLive",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Even millionaires don't feel wealthy these days",
+        "source": "r/economics"
+      },
+      {
+        "title": "ADP data shows sharp slowdown in the U.S. labor market as small businesses struggle",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Macy’s drops 7% pre-market on strongest growth in 3 years while raising outlook and warning on holiday spending and tariffs",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Is anyone else noticing how every dip gets bought instantly… except the ones you’re in?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "November private payrolls unexpectedly fell by 32,000, led by steep small business job cuts, ADP reports",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "What’s one market belief everyone treats as fact, but you’re convinced is completely wrong?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "440k USD Intel YOLO $INTC",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Daily Discussion Thread for December 03, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Shibuya Ward cancels New Year countdown event; security to be tightened",
+        "source": "r/japan"
+      },
+      {
+        "title": "South Korea offers to build five Aegis destroyers per year to help the US counter China at sea",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Japanese fandom is having a moment in China – and not in a good way",
+        "source": "r/japan"
+      },
+      {
+        "title": "Anthropic reportedly preparing for one of the largest IPOs ever in race with OpenAI: FT",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "US Household Cash on Sidelines: Historically &lt;$1T but now STILL at $4.5T. Why has this amount remained so high and is this money being stored to buy the dips?",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Mom-and-Pop Business Bankruptcies Hit Record High Under Trump",
+        "source": "r/economics"
+      },
+      {
+        "title": "It’s been an okay year…",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "IBM CEO says there is 'no way' spending trillions on AI data centers will pay off at today's infrastructure costs",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Anthropic taps IPO lawyers as it races OpenAI to go public",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Anthropic IPO to go public in preparation",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "$500 to $55,000? Yes, its possible. Just gotta be lucky af. Screenshots included",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Mapped: U.S. Credit Card Delinquency Rates by State (2025)",
+        "source": "r/economics"
+      },
+      {
+        "title": "Kraft, Campbells, and General Mills have continued to decline sales in the last 5 years",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Netanyahu Just Admitted He’s Unfit to Lead Israel",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Marvell to acquire Celestial AI for as much as $5.5 billion",
+        "source": "r/wallstreetbets"
+      }
+    ]
+  }
+}

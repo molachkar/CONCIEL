@@ -1,0 +1,35 @@
+{
+  "date": "2025-11-22",
+  "snapshot_generated_at": "2025-12-07T21:20:42.591648",
+  "data": {
+    "fundamentals": {
+      "JOBLESS_CLAIMS": 218000.0
+    },
+    "news": [
+      {
+        "category": "market",
+        "title": "3 Top ETFs I Can't Wait to Buy More of in My Retirement Account This November",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "3 ETFs Every Income Investor Should Know Before 2026",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "China takes spat with Japan over Taiwan to UN, vows to defend itself | Reuters",
+        "source": "r/japan"
+      },
+      {
+        "title": "Japan's first female leader faces a taboo over entering the male-only sumo ring",
+        "source": "r/japan"
+      },
+      {
+        "title": "I’m sorry y’all. Down we go on Monday.",
+        "source": "r/SPY"
+      }
+    ]
+  }
+}

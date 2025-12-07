@@ -1,0 +1,80 @@
+{
+  "date": "2025-11-12",
+  "snapshot_generated_at": "2025-12-07T21:20:42.571209",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.08,
+      "HY_CREDIT_SPREAD": 3.02,
+      "GLD_CLOSE": 385.99,
+      "GLD_VOLUME": 16203700,
+      "IAU_CLOSE": 79.04,
+      "IAU_VOLUME": 13813900
+    },
+    "xauusd": {
+      "open": 4125.7,
+      "high": 4211.49,
+      "low": 4098.66,
+      "close": 4194.6
+    },
+    "economic_events": [
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "10-Year Note Auction",
+        "actual": "4.074%",
+        "forecast": "",
+        "previous": "4.117%"
+      },
+      {
+        "time": "22:30",
+        "currency": "USD",
+        "event": "API Weekly Crude Oil Stock",
+        "actual": "1.300M",
+        "forecast": "1.700M",
+        "previous": "6.500M"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "This Market Is Trickier Than You Think. How to Hedge.",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "3 Simple ETFs to Buy With $1,000 and Hold for a Lifetime",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Want $1 Million in Retirement? 3 Simple Index Funds to Buy and Hold for Decades",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Should SPDR S&P 500 ETF (SPY) Be on Your Investing Radar?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Im Preparing for a Bang When the Nasdaq Crashes. Heres How Im Trading the QQQ ETF First.",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Market Minute 11-12-25- Stocks on a Streak; AI Helping Chip Sales",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Jones Index Rises As Nvidia, AMD Rally (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Daily ETF Flow: $207M Goes Into IWM",
+        "ticker": "IWM"
+      }
+    ]
+  }
+}

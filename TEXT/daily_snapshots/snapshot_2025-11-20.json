@@ -1,0 +1,270 @@
+{
+  "date": "2025-11-20",
+  "snapshot_generated_at": "2025-12-07T21:20:42.585838",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.1,
+      "HY_CREDIT_SPREAD": 3.17,
+      "GLD_CLOSE": 374.85,
+      "GLD_VOLUME": 10506500,
+      "IAU_CLOSE": 76.78,
+      "IAU_VOLUME": 8518700
+    },
+    "market_analysis": {
+      "XAUUSD_PRICE": 4057.7,
+      "XAUUSD_BIAS": "BEARISH",
+      "XAUUSD_RSI": 45.66,
+      "XAUUSD_MACD": -4.38,
+      "USA500.IDX_PRICE": 6605.05,
+      "USA500.IDX_BIAS": "BEARISH",
+      "USA500.IDX_RSI": 38.2,
+      "USA500.IDX_MACD": 3.17,
+      "VOL.IDX_PRICE": 22.12,
+      "VOL.IDX_BIAS": "BULLISH",
+      "VOL.IDX_RSI": 63.13,
+      "VOL.IDX_MACD": -0.01,
+      "DOLLAR.IDX_PRICE": 100.1,
+      "DOLLAR.IDX_BIAS": "BULLISH",
+      "DOLLAR.IDX_RSI": 58.62,
+      "DOLLAR.IDX_MACD": 0.08
+    },
+    "xauusd": {
+      "open": 4077.26,
+      "high": 4109.81,
+      "low": 4038.61,
+      "close": 4057.7
+    },
+    "economic_events": [
+      {
+        "time": "14:24",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "224K",
+        "forecast": "223K",
+        "previous": "219K"
+      },
+      {
+        "time": "14:25",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "235K",
+        "forecast": "227K",
+        "previous": "224K"
+      },
+      {
+        "time": "14:26",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "220K",
+        "forecast": "",
+        "previous": "235K"
+      },
+      {
+        "time": "14:27",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "220K",
+        "forecast": "",
+        "previous": "232K"
+      },
+      {
+        "time": "14:28",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "229K",
+        "forecast": "",
+        "previous": "220K"
+      },
+      {
+        "time": "14:29",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "228K",
+        "forecast": "",
+        "previous": "229K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Average Hourly Earnings (MoM)  (Sep)",
+        "actual": "0.2%",
+        "forecast": "0.3%",
+        "previous": "0.4%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Average Hourly Earnings (YoY) (YoY)  (Sep)",
+        "actual": "3.8%",
+        "forecast": "3.7%",
+        "previous": "3.8%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "220K",
+        "forecast": "",
+        "previous": "228K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Nonfarm Payrolls  (Sep)",
+        "actual": "119K",
+        "forecast": "53K",
+        "previous": "-4K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Participation Rate  (Sep)",
+        "actual": "62.4%",
+        "forecast": "",
+        "previous": "62.3%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Philadelphia Fed Manufacturing Index  (Nov)",
+        "actual": "-1.7",
+        "forecast": "1.0",
+        "previous": "-12.8"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Philly Fed Employment  (Nov)",
+        "actual": "6.0",
+        "forecast": "",
+        "previous": "4.6"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Private Nonfarm Payrolls  (Sep)",
+        "actual": "97K",
+        "forecast": "62K",
+        "previous": "18K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "U6 Unemployment Rate  (Sep)",
+        "actual": "8.0%",
+        "forecast": "",
+        "previous": "8.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Unemployment Rate  (Sep)",
+        "actual": "4.4%",
+        "forecast": "4.3%",
+        "previous": "4.3%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Existing Home Sales  (Oct)",
+        "actual": "4.10M",
+        "forecast": "4.08M",
+        "previous": "4.05M"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Existing Home Sales (MoM)  (Oct)",
+        "actual": "1.2%",
+        "forecast": "",
+        "previous": "1.3%"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "10-Year TIPS Auction",
+        "actual": "1.843%",
+        "forecast": "",
+        "previous": "1.734%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Should iShares Russell 2000 ETF (IWM) Be on Your Investing Radar?",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "AI and HPC Bitcoin Miners Surge Pre Market Following Stellar NVIDIA Earnings",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "The Zacks Analyst Blog Highlights MS, VOO, SPY, IVV, SPYM, RSP, EQ and EQWL",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Could This Be One of the Smartest ETFs to Buy Right Now?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "Where to Put Your Gold Money Now That The Market Is Getting Nervous",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rallies 600 Points As Nvidia Surges On Earnings; Jobs Report Surprises (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Up Nearly 700 Points As Nvidia Earnings Impress; Broadcom Hits Entry (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Turns Lower As Nvidia Loses Post-Earnings Surge; Oklo Dives (Live Coverage)",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Hacken Audit Validates QANplatforms Quantum Security Protocol",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Even Nvidia can't help a stock market that's in real trouble",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Japan says population crisis is \"biggest problem\"",
+        "source": "r/japan"
+      },
+      {
+        "title": "Like flipping a coin? No, when the trend feels off, U should go the opposite way Successfully caught the Put for a 547% gain",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Started with $500 Monday",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Japan edges towards hosting nuclear weapons - ASPI",
+        "source": "r/japan"
+      },
+      {
+        "title": "Japan to Charge Foreigners More for Residence Permits, Looking to Align with Western Countries",
+        "source": "r/japan"
+      },
+      {
+        "title": "Four Chinese Nationals Indicted for Poaching 107 Ryukyu Black-Breasted Leaf Turtles, a Protected Natural Monument — Naha Prosecutors (Ryukyu Shimpo)",
+        "source": "r/japan"
+      }
+    ]
+  }
+}

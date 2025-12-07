@@ -1,0 +1,61 @@
+{
+  "date": "2025-11-11",
+  "snapshot_generated_at": "2025-12-07T21:20:42.568291",
+  "data": {
+    "fundamentals": {
+      "HY_CREDIT_SPREAD": 3.02,
+      "GLD_CLOSE": 379.87,
+      "GLD_VOLUME": 10753200,
+      "IAU_CLOSE": 77.8,
+      "IAU_VOLUME": 6738900
+    },
+    "xauusd": {
+      "open": 4113.1,
+      "high": 4148.76,
+      "low": 4096.85,
+      "close": 4125.49
+    },
+    "economic_events": [
+      {
+        "time": "19:45",
+        "currency": "USD",
+        "event": "ADP Employment Change Weekly",
+        "actual": "-11.25K",
+        "forecast": "",
+        "previous": "14.25K"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Warren Buffett Sold His Top Recommended Investment. Here's What It Might Mean for You.",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Wavers After Shutdown Bill Passes; Nvidia Partner Plunges (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises After Shutdown Bill Passes; Nvidia Partner Plunges (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Is the S&P 500 Poised for a New High? ETFs to Consider",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "SPYs 50-Day Moving Average Streak is Going Strong. The Rest of the Market is Sending Up Flares.",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Why Income Investors Are Ditching Tech for Energy and Industrials",
+        "ticker": "QQQ"
+      }
+    ]
+  }
+}

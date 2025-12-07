@@ -1,0 +1,76 @@
+{
+  "date": "2025-11-17",
+  "snapshot_generated_at": "2025-12-07T21:20:42.578086",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.13,
+      "HY_CREDIT_SPREAD": 3.13,
+      "GLD_CLOSE": 371.65,
+      "GLD_VOLUME": 13295200,
+      "IAU_CLOSE": 76.11,
+      "IAU_VOLUME": 10494300
+    },
+    "xauusd": {
+      "open": 4083.7,
+      "high": 4106.3,
+      "low": 4006.74,
+      "close": 4044.51
+    },
+    "economic_events": [
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "NY Empire State Manufacturing Index  (Nov)",
+        "actual": "18.70",
+        "forecast": "6.10",
+        "previous": "10.70"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Construction Spending (MoM)  (Aug)",
+        "actual": "0.2%",
+        "forecast": "-0.2%",
+        "previous": "0.2%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Wobbles As Nvidia Slides; Google Jumps On Warren Buffett Stake (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Deribit and SignalPlus Launch 2025 Trading Competition, Featuring a $450,000 USDC Prize Pool",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Falls As Nvidia Slides; Alphabet Jumps On Warren Buffett Stake (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Lite Strategy Reports First Quarter Fiscal Year 2026 Results; Highlights Successful Launch of $100M Litecoin Treasury Strategy and Movement into Active Capital Market Operations",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "What's Behind Silver's Explosive Gains?",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "What's Behind Silver's Explosive Gains?",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Diplomatic crisis deepens between China and Japan",
+        "source": "r/japan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "date": "2025-11-21",
+  "snapshot_generated_at": "2025-12-07T21:20:42.589663",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.06,
+      "HY_CREDIT_SPREAD": 3.19,
+      "GLD_CLOSE": 374.27,
+      "GLD_VOLUME": 13194600,
+      "IAU_CLOSE": 76.61,
+      "IAU_VOLUME": 10289900
+    },
+    "economic_events": [
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Manufacturing PMI  (Nov)",
+        "actual": "51.9",
+        "forecast": "52.0",
+        "previous": "52.5"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Composite PMI  (Nov)",
+        "actual": "54.8",
+        "forecast": "54.5",
+        "previous": "54.6"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Services PMI  (Nov)",
+        "actual": "55.0",
+        "forecast": "54.6",
+        "previous": "54.8"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan 1-Year Inflation Expectations  (Nov)",
+        "actual": "4.5%",
+        "forecast": "4.7%",
+        "previous": "4.6%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan 5-Year Inflation Expectations  (Nov)",
+        "actual": "3.4%",
+        "forecast": "3.6%",
+        "previous": "3.9%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan Consumer Expectations  (Nov)",
+        "actual": "51.0",
+        "forecast": "49.0",
+        "previous": "50.3"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan Consumer Sentiment  (Nov)",
+        "actual": "51.0",
+        "forecast": "50.3",
+        "previous": "53.6"
+      },
+      {
+        "time": "18:00",
+        "currency": "USD",
+        "event": "Atlanta Fed GDPNow  (Q4)",
+        "actual": "4.2%",
+        "forecast": "4.2%",
+        "previous": "4.2%"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Oil Rig Count",
+        "actual": "419",
+        "forecast": "418",
+        "previous": "417"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Total Rig Count",
+        "actual": "554",
+        "forecast": "",
+        "previous": "549"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "74.3K",
+        "forecast": "",
+        "previous": "103.3K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "232.0K",
+        "forecast": "",
+        "previous": "252.9K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "43.3K",
+        "forecast": "",
+        "previous": "41.0K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-144.1K",
+        "forecast": "",
+        "previous": "-136.7K"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Goldman Sachs Just Delivered Bad News for U.S. Investors ... Sort Of. Here's What You Need to Know.",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Gold Is Crushing the S&P 500, the Nasdaq, and Even Nvidia This Year. Here's a Simple Way to Own It.",
+        "ticker": "GLD"
+      },
+      {
+        "category": "gold",
+        "title": "ETFs to Play Amid Rising AI Bubble Concerns",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Inside the Recent Strength in Biotech ETFs",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Bounces On Rate-Cut Hopes After Sell-Off; Nvidia, Palantir Switch Gears (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Market Anxiety Picked Up Thursday",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Up On Rate-Cut Hopes After Sell-Off; Nvidia, Palantir, Tesla Rebound (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Pre-markets Try Again, Begin Session in the Green",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rallies Cautiously On Rate-Cut Hopes; Nvidia, Palantir, AMD Extend Losses (Live Coverage)",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "U.S. Gaming Sales Rise 3% As Switch 2 Surges",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Trump Lifts 40% Tariffs On Brazilian Food Imports",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "What Will Happen To Microstrategy If Bitcoin Falls Under $74,000?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "China Is Driving This Years Gold ETF Boom",
+        "ticker": "IAU"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Taiwan lifts import curbs on Japanese food as Tokyo spars with Beijing",
+        "source": "r/japan"
+      },
+      {
+        "title": "Great day spy printed",
+        "source": "r/SPY"
+      }
+    ]
+  }
+}

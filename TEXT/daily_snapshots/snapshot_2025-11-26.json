@@ -1,0 +1,181 @@
+{
+  "date": "2025-11-26",
+  "snapshot_generated_at": "2025-12-07T21:20:42.601077",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.0,
+      "HY_CREDIT_SPREAD": 3.0,
+      "GLD_CLOSE": 383.12,
+      "GLD_VOLUME": 9184100,
+      "IAU_CLOSE": 78.44,
+      "IAU_VOLUME": 9143000
+    },
+    "economic_events": [
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core Durable Goods Orders (MoM)  (Sep)",
+        "actual": "0.6%",
+        "forecast": "",
+        "previous": "0.5%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Durable Goods Orders (MoM)  (Sep)",
+        "actual": "0.5%",
+        "forecast": "0.5%",
+        "previous": "3.0%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "216K",
+        "forecast": "226K",
+        "previous": "222K"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "Chicago PMI  (Nov)",
+        "actual": "36.3",
+        "forecast": "44.3",
+        "previous": "43.8"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Crude Oil Inventories",
+        "actual": "2.774M",
+        "forecast": "-1.300M",
+        "previous": "-3.426M"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Cushing Crude Oil Inventories",
+        "actual": "-0.068M",
+        "forecast": "",
+        "previous": "-0.698M"
+      },
+      {
+        "time": "18:00",
+        "currency": "USD",
+        "event": "7-Year Note Auction",
+        "actual": "3.781%",
+        "forecast": "",
+        "previous": "3.790%"
+      },
+      {
+        "time": "18:30",
+        "currency": "USD",
+        "event": "Atlanta Fed GDPNow  (Q4)",
+        "actual": "3.9%",
+        "forecast": "4.0%",
+        "previous": "4.0%"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Oil Rig Count",
+        "actual": "407",
+        "forecast": "",
+        "previous": "419"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Total Rig Count",
+        "actual": "544",
+        "forecast": "",
+        "previous": "554"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Don't Just Trade Something, Sit There",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "History Says These are 3 Stocks to Buy for December",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Nasdaq 100: Who's In And Who's Out Of QQQ. Walmart, Strategy, Lululemon?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "5 Stocks to Buy Before Santa Claus Comes to Town",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Be Thankful to These ETFs This Year",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Gold ETFs That Investors Can Consider as the Metal Extends Its Rally",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Daily ETF Flows: Hefty Inflows For IWM",
+        "ticker": "IWM"
+      },
+      {
+        "category": "gold",
+        "title": "Why Gold Loves Trump as Much as Trump Loves Gold",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Nasdaq ISE Seeks to Quadruple Trading Limits on BlackRock's Bitcoin ETF Options",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "SPY gave me an early Thanksgiving",
+        "source": "r/SPY"
+      },
+      {
+        "title": "MIT study finds AI can already replace 11.7% of U.S. workforce",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "World stocks climb after Wall Street rallies on hopes for lower interest rates",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan set to issue 11 tril. yen extra bonds despite record tax revenue",
+        "source": "r/japan"
+      },
+      {
+        "title": "‘Kokuho’ Becomes Biggest Live Action Hit in Japanese Film History",
+        "source": "r/japan"
+      },
+      {
+        "title": "A Google DeepMind researcher and TPU engineer named Amir Yazdan stated on X that the market is \"clueless about hardware and the demand\" following a recent sell-off of Nvidia stock.",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Trump signs “GENESIS” AI initiative - The modern day Manhattan Project",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Hokusai's Great Wave Sells for Record Amount To Settle Billionaire's Debt",
+        "source": "r/japan"
+      },
+      {
+        "title": "Grim retail sales data fuels concerns about health of US economy",
+        "source": "r/StockMarket"
+      }
+    ]
+  }
+}

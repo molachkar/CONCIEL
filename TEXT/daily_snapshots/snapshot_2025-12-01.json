@@ -1,0 +1,131 @@
+{
+  "date": "2025-12-01",
+  "snapshot_generated_at": "2025-12-07T21:20:42.610303",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.09,
+      "HY_CREDIT_SPREAD": 2.94,
+      "GLD_CLOSE": 389.75,
+      "GLD_VOLUME": 11177100,
+      "IAU_CLOSE": 79.81,
+      "IAU_VOLUME": 10411600
+    },
+    "economic_events": [
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Manufacturing PMI  (Nov)",
+        "actual": "52.2",
+        "forecast": "51.9",
+        "previous": "52.5"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "ISM Manufacturing Employment  (Nov)",
+        "actual": "44.0",
+        "forecast": "",
+        "previous": "46.0"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "ISM Manufacturing PMI  (Nov)",
+        "actual": "48.2",
+        "forecast": "49.0",
+        "previous": "48.7"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "ISM Manufacturing Prices  (Nov)",
+        "actual": "58.5",
+        "forecast": "59.5",
+        "previous": "58.0"
+      },
+      {
+        "time": "17:30",
+        "currency": "USD",
+        "event": "Atlanta Fed GDPNow  (Q4)",
+        "actual": "3.9%",
+        "forecast": "3.9%",
+        "previous": "3.9%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "S&P 500 Delivers Best Thanksgiving Week Since 2008",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Falls 200 Points; Nvidia, Tesla Slide (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow, Major Indexes Fall; Nvidia, Tesla Slide (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Falls, Synopsys Hits Resistance Despite Nvidia Investment; Walt Disney Pops (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "S&P 500 to Hit At Least 7,500-Mark in 2026? ETFs in Focus",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "2 Invesco ETFs to Buy Before 2026",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Trumps Potential Fed Chair Pick: How It Could Impact Interest Rates and ETFs",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "'We are counting on China': Macron to ask Xi Jinping to push Russia toward ceasefire",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Germany to Deploy Israeli-Made Arrow 3 Air Defense Missile System for the First Time in Europe",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Surprise, Anger, and Frustration as Tokyo’s High Court Rules Against Marriage Equality - Unseen Japan",
+        "source": "r/japan"
+      },
+      {
+        "title": "Morgan Stanley hikes price targets for two chipmakers, sees Nvidia rising more than 40%",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Airbus shares fall 10% on reports of new quality issue on dozens of A320 aircraft",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Possibility of yen carry trade unwind increases",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Policy talks on foreigners start; land deals, visas high on agenda",
+        "source": "r/japan"
+      },
+      {
+        "title": "Workplace injuries, deaths of foreigners in Japan top 6,000 for first time - The Mainichi",
+        "source": "r/japan"
+      },
+      {
+        "title": "Global Stock Leaderboards Are Ruled by Europe in Rare Dominance",
+        "source": "r/StockMarket"
+      }
+    ]
+  }
+}

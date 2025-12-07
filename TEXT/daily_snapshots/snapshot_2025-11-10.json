@@ -1,0 +1,62 @@
+{
+  "date": "2025-11-10",
+  "snapshot_generated_at": "2025-12-07T21:20:42.563471",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.13,
+      "HY_CREDIT_SPREAD": 3.02,
+      "GLD_CLOSE": 378.38,
+      "GLD_VOLUME": 13456200,
+      "IAU_CLOSE": 77.47,
+      "IAU_VOLUME": 6054500
+    },
+    "xauusd": {
+      "open": 3998.1,
+      "high": 4116.4,
+      "low": 3996.7,
+      "close": 4115.61
+    },
+    "economic_events": [
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "3-Year Note Auction",
+        "actual": "3.579%",
+        "forecast": "",
+        "previous": "3.576%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Zacks Investment Ideas feature highlights Tesla, Intercontinental Exchange, American, United, Delta and QQQ",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises On Shutdown Deal Hopes; Nvidia, Palantir, Tesla Rally (Live Coverage)",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "ETFs to Consider as Gold Jumps to 2-Week High",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "5 Defensive Consumer Plays to Watch If Markets Keep Slipping",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "3 Stocks Showing Relative Strength as Markets Pull Back",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Gold Prices Rise Again. Why $5,000 Could Be the Next Stop.",
+        "ticker": "GLD"
+      }
+    ]
+  }
+}

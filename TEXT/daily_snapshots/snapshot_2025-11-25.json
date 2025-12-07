@@ -1,0 +1,233 @@
+{
+  "date": "2025-11-25",
+  "snapshot_generated_at": "2025-12-07T21:20:42.598347",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.01,
+      "HY_CREDIT_SPREAD": 3.1,
+      "GLD_CLOSE": 380.08,
+      "GLD_VOLUME": 10462800,
+      "IAU_CLOSE": 77.83,
+      "IAU_VOLUME": 12677900
+    },
+    "economic_events": [
+      {
+        "time": "14:15",
+        "currency": "USD",
+        "event": "ADP Employment Change Weekly",
+        "actual": "-13.50K",
+        "forecast": "",
+        "previous": "-2.50K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core PPI (MoM)  (Sep)",
+        "actual": "0.1%",
+        "forecast": "0.2%",
+        "previous": "-0.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core Retail Sales (MoM)  (Sep)",
+        "actual": "0.3%",
+        "forecast": "0.3%",
+        "previous": "0.6%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "PPI (MoM)  (Sep)",
+        "actual": "0.3%",
+        "forecast": "0.3%",
+        "previous": "-0.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Retail Control (MoM)  (Sep)",
+        "actual": "-0.1%",
+        "forecast": "0.3%",
+        "previous": "0.6%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Retail Sales (MoM)  (Sep)",
+        "actual": "0.2%",
+        "forecast": "0.4%",
+        "previous": "0.6%"
+      },
+      {
+        "time": "15:00",
+        "currency": "USD",
+        "event": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Sep)",
+        "actual": "1.4%",
+        "forecast": "1.4%",
+        "previous": "1.6%"
+      },
+      {
+        "time": "15:00",
+        "currency": "USD",
+        "event": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Sep)",
+        "actual": "-0.5%",
+        "forecast": "",
+        "previous": "-0.6%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Business Inventories (MoM)  (Aug)",
+        "actual": "0.0%",
+        "forecast": "0.0%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "CB Consumer Confidence  (Nov)",
+        "actual": "88.7",
+        "forecast": "93.5",
+        "previous": "95.5"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Pending Home Sales (MoM)  (Oct)",
+        "actual": "1.9%",
+        "forecast": "0.5%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Retail Inventories Ex Auto  (Aug)",
+        "actual": "0.0%",
+        "forecast": "0.3%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "17:00",
+        "currency": "USD",
+        "event": "Atlanta Fed GDPNow  (Q4)",
+        "actual": "4.0%",
+        "forecast": "4.2%",
+        "previous": "4.2%"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "5-Year Note Auction",
+        "actual": "3.562%",
+        "forecast": "",
+        "previous": "3.625%"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Federal Budget Balance  (Oct)",
+        "actual": "-284.0B",
+        "forecast": "-223.4B",
+        "previous": "198.0B"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "61.0K",
+        "forecast": "",
+        "previous": "74.3K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "203.9K",
+        "forecast": "",
+        "previous": "232.0K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "52.8K",
+        "forecast": "",
+        "previous": "43.3K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-165.7K",
+        "forecast": "",
+        "previous": "-144.1K"
+      },
+      {
+        "time": "23:30",
+        "currency": "USD",
+        "event": "API Weekly Crude Oil Stock",
+        "actual": "-1.900M",
+        "forecast": "",
+        "previous": "4.400M"
+      }
+    ],
+    "news": [
+      {
+        "category": "gold",
+        "title": "Better Buy for 2026: An S&P 500 Index Fund, Gold, or Bitcoin?",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Is Dow Jones ETF Better-Placed Than S&P 500 & Nasdaq?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "TrustLinq Launches Swiss-Regulated Crypto-to-Fiat Payment Platform to boost Cryptocurrency Adoption",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Trump Trade: White House pauses EO preempting state laws on AI",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Will the S&P 500 Rally in December? These 3 Signals Point to a Big Move Ahead",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "U.S. Marine says has no memory of sexual assault at Okinawa base in trial",
+        "source": "r/japan"
+      },
+      {
+        "title": "First 1K in a single trade!",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Bessent Calls for Simplified Fed as He Ends Candidate Interviews",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Google just became an existential threat to OpenAI.",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan wanted fewer tourists. Now China’s boycott is doing the job for them",
+        "source": "r/japan"
+      },
+      {
+        "title": "Foreign population in 10 Japan prefectures more than doubles in decade - The Mainichi",
+        "source": "r/japan"
+      },
+      {
+        "title": "Japan weighs extending 5-year residency requirement for naturalization",
+        "source": "r/japan"
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "date": "2025-12-02",
+  "snapshot_generated_at": "2025-12-07T21:20:42.613169",
+  "data": {
+    "fundamentals": {
+      "TREASURY_10Y": 4.09,
+      "HY_CREDIT_SPREAD": 2.92,
+      "GLD_CLOSE": 387.24,
+      "GLD_VOLUME": 8103900,
+      "IAU_CLOSE": 79.29,
+      "IAU_VOLUME": 8130400
+    },
+    "economic_events": [
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "39.8K",
+        "forecast": "",
+        "previous": "61.0K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "176.6K",
+        "forecast": "",
+        "previous": "203.9K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "48.9K",
+        "forecast": "",
+        "previous": "52.8K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-145.3K",
+        "forecast": "",
+        "previous": "-165.7K"
+      },
+      {
+        "time": "22:30",
+        "currency": "USD",
+        "event": "API Weekly Crude Oil Stock",
+        "actual": "-2.480M",
+        "forecast": "",
+        "previous": "-1.900M"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "ETF Investors Put $28.3B To Work In Holiday-Shortened Week",
+        "ticker": "IWM"
+      },
+      {
+        "category": "gold",
+        "title": "Billionaire Ken Griffin Buys an Index Fund That's Crushing Bitcoin, Nvidia, and the S&P 500 in 2025",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Q4 Seasonality Feels Different. Dont Miss This Major Overhang for Markets in 2026.",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Goodbye, bull market: This spot-on indicator is saying what you don't want to hear",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "These Are the Hottest Upgrades From the Q3 Reporting Cycle",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Nasdaq Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Nvidia Just Lit a Fire Under Synopsys Stock But Its Chart Is Waving Red Flags. Heres the Only Way Id Trade SNPS Here.",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Very Bullish on TSMC",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Maduro accuses US of wanting to seize Venezuelan oil reserves",
+        "source": "r/oil"
+      },
+      {
+        "title": "Larry Summers banned for life from American Economic Association in wake of Jeffrey Epstein emails",
+        "source": "r/economics"
+      },
+      {
+        "title": "Trump calls affordability 'a Democrat scam' as inflation concerns persist nationwide",
+        "source": "r/economics"
+      },
+      {
+        "title": "Nvidia comeback story",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "What Are Your Moves Tomorrow, December 03, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "OpenAI declares ‘code red’ as Google catches up in AI race",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Survey Finds 59% of Japanese Opposed to Actively Accepting Foreign Workers",
+        "source": "r/japan"
+      },
+      {
+        "title": "Trump's USDA to Pause Funding for Blue States Over SNAP Data",
+        "source": "r/economics"
+      },
+      {
+        "title": "$SNAP will be a 2026 standout",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "China Tells Stats Providers to Halt Home Sales Data Publication After Reports of 41.9% YoY Decline in New Home Sales in October.",
+        "source": "r/China"
+      },
+      {
+        "title": "Is the entire stock market basically a giant confidence game and what happens the day people stop believing in it?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Apartment rents drop further, with vacancies at record high",
+        "source": "r/economics"
+      },
+      {
+        "title": "The message behind Putin’s camouflage-clad claim of victory in a key Ukrainian city",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Michael and Susan Dell Donate $6.25 Billion to ‘Trump Accounts’ for Children",
+        "source": "r/economics"
+      },
+      {
+        "title": "Amazon releases an impressive new AI chip and teases a Nvidia-friendly roadmap",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Gasoline prices fall to $3 per gallon to hit lowest level since 2021",
+        "source": "r/oil"
+      },
+      {
+        "title": "Investors are making up the highest share of homebuyers in 5 years",
+        "source": "r/economics"
+      },
+      {
+        "title": "Trump releases fraudster executive days into prison sentence",
+        "source": "r/economics"
+      },
+      {
+        "title": "Costco Joins Companies Suing for Refunds If Trump’s Tariffs Fall",
+        "source": "r/economics"
+      },
+      {
+        "title": "The ‘S&amp;P 493’ reveals a very different U.S. economy",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan's low-crime image cracking as car thefts, home intrusions rise",
+        "source": "r/japan"
+      },
+      {
+        "title": "The powerful year-end rally in U.S. stocks",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Why did they make gambling so fun on Robinhood?",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "‘Okinawa Is Our Territory’: Japan Dismisses China's Claims Over Ryukyu Islands",
+        "source": "r/japan"
+      },
+      {
+        "title": "Black Friday spending raises eyebrows over US economy",
+        "source": "r/economics"
+      },
+      {
+        "title": "Why calls to ‘tax the rich’ are loud, popular – and rarely successful",
+        "source": "r/economics"
+      },
+      {
+        "title": "Nearly 75% of Japanese feel affinity toward Taiwan: poll",
+        "source": "r/japan"
+      },
+      {
+        "title": "Costco sues for Trump tariff refunds before Supreme Court rules on if they're illegal",
+        "source": "r/StockMarket"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2025-11-30",
+  "snapshot_generated_at": "2025-12-07T21:20:42.608858",
+  "data": {
+    "fundamentals": {
+      "HY_CREDIT_SPREAD": 2.92
+    },
+    "news": [
+      {
+        "category": "market",
+        "title": "Which ETF Deserves a Spot in Your Portfolio Right Now?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Here's How Much You'd Need to Invest in the Nasdaq-100 to Get Your Portfolio to $1 Million or More by Retirement",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "China’s Electric Trucks Cut Diesel Use, Reshape Global Markets",
+        "source": "r/oil"
+      },
+      {
+        "title": "How Realistically could US take Maduro out from the air? With Special Forces?",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Venezuela hits out at Trump's airspace closure 'colonialist threat' as Maduro's jet flies to Brazil",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "The world turns a blind eye as war-torn Somalia’s hospitals crumble",
+        "source": "r/geopolitics"
+      }
+    ]
+  }
+}
