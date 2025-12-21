@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 import json
 from datetime import datetime, timedelta
-from typing import Dict, Optional, Any, List
+from typing import Dict, Optional, Any, List, Tuple
 import pandas as pd
 import numpy as np
 import ta
 import MetaTrader5 as mt5
+import os
 
 INSTRUMENTS = {
     "XAUUSD": "Gold spot",
@@ -22,80 +23,66 @@ def round_to_2_decimals(value: Any) -> Any:
     return value
 
 def initialize_mt5() -> bool:
+    # Try to initialize MT5 with specific parameters
     if not mt5.initialize():
         print(f"MT5 initialization failed: {mt5.last_error()}")
         return False
+    
+    # Check if terminal is authorized
+    account_info = mt5.account_info()
+    if account_info is None:
+        print("Terminal authorization failed. Please ensure:")
+        print("1. MetaTrader 5 terminal is running")
+        print("2. You are logged into your account")
+        print("3. AutoTrading is enabled (Tools -> Options -> Expert Advisors)")
+        print("4. 'Allow automated trading' is checked")
+        mt5.shutdown()
+        return False
+    
+    print(f"✓ Connected to account: {account_info.login}")
+    print(f"✓ Server: {account_info.server}")
     return True
 
-def fetch_weekly(symbol: str) -> Optional[Dict[str, Any]]:
-    rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_W1, 1, 1)
+def fetch_extended_daily_ohlc(symbol: str, output_days: int = 30, total_days: int = 300) -> Tuple[Optional[pd.DataFrame], Optional[pd.DataFrame]]:
+    """Fetch extended data for indicator calculations, return full dataset and last N days"""
+    now = datetime.now()
+    extended_days_ago = now - timedelta(days=total_days + 100)  # Extra buffer for trading days
+    
+    rates = mt5.copy_rates_range(
+        symbol, 
+        mt5.TIMEFRAME_D1, 
+        extended_days_ago,
+        now
+    )
+    
     if rates is None or len(rates) == 0:
-        return None
-    candle = rates[0]
-    close_time = datetime.fromtimestamp(candle['time'])
-    return {
-        "high": round_to_2_decimals(candle['high']),
-        "low": round_to_2_decimals(candle['low']),
-        "time": close_time.isoformat()
-    }
+        return None, None
+    
+    df_full = pd.DataFrame(rates)
+    df_full['time'] = pd.to_datetime(df_full['time'], unit='s')
+    
+    # Select only OHLC columns
+    df_full = df_full[['time', 'open', 'high', 'low', 'close']]
+    
+    # Return full data for calculations and last 30 days for output
+    df_output = df_full.tail(output_days).copy()
+    
+    return df_full, df_output
 
-def fetch_daily(symbol: str) -> Optional[Dict[str, Any]]:
-    rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_D1, 1, 1)
-    if rates is None or len(rates) == 0:
-        return None
-    candle = rates[0]
-    close_time = datetime.fromtimestamp(candle['time'])
-    return {
-        "high": round_to_2_decimals(candle['high']),
-        "low": round_to_2_decimals(candle['low']),
-        "time": close_time.isoformat()
-    }
-
-def fetch_hourly(symbol: str) -> Optional[Dict[str, Any]]:
-    rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_H1, 1, 6)
-    if rates is None or len(rates) == 0:
-        return None
-    df = pd.DataFrame(rates)
-    start_time = datetime.fromtimestamp(df['time'].iloc[0])
-    end_time = datetime.fromtimestamp(df['time'].iloc[-1])
-    return {
-        "high": round_to_2_decimals(df['high'].max()),
-        "low": round_to_2_decimals(df['low'].min()),
-        "time": end_time.isoformat()
-    }
-
-def fetch_hourly_for_indicators(symbol: str, bars: int = 300) -> Optional[pd.DataFrame]:
-    rates = mt5.copy_rates_from_pos(symbol, mt5.TIMEFRAME_H1, 0, bars)
-    if rates is None or len(rates) == 0:
-        return None
-    df = pd.DataFrame(rates)
-    df['time'] = pd.to_datetime(df['time'], unit='s')
-    df.set_index('time', inplace=True)
-    return df
-
-def get_current_price(symbol: str) -> Optional[float]:
-    tick = mt5.symbol_info_tick(symbol)
-    if tick is None:
-        return None
-    return round_to_2_decimals(tick.bid)
-
-def compute_indicators(df: pd.DataFrame) -> Optional[Dict[str, Any]]:
-    if df is None or len(df) < 200:
+def compute_daily_technicals(df_full: pd.DataFrame, df_output: pd.DataFrame) -> Optional[List[Dict[str, Any]]]:
+    """Compute technical indicators using full dataset, return values for output period only"""
+    if df_full is None or len(df_full) < 200:
         return None
     
-    close = df['close']
-    high = df['high']
-    low = df['low']
+    technicals_list = []
     
-    rsi_indicator = ta.momentum.RSIIndicator(close, window=20)
-    rsi_value = rsi_indicator.rsi().iloc[-1]
+    close = df_full['close']
+    high = df_full['high']
+    low = df_full['low']
     
-    if rsi_value >= 70:
-        rsi_status = "Overbought"
-    elif rsi_value <= 30:
-        rsi_status = "Oversold"
-    else:
-        rsi_status = "Neutral"
+    # Calculate indicators on full dataset
+    rsi_indicator = ta.momentum.RSIIndicator(close, window=14)
+    rsi_series = rsi_indicator.rsi()
     
     ema50_indicator = ta.trend.EMAIndicator(close, window=50)
     ema200_indicator = ta.trend.EMAIndicator(close, window=200)
@@ -103,161 +90,151 @@ def compute_indicators(df: pd.DataFrame) -> Optional[Dict[str, Any]]:
     ema50_series = ema50_indicator.ema_indicator()
     ema200_series = ema200_indicator.ema_indicator()
     
-    ema50_current = ema50_series.iloc[-1]
-    ema200_current = ema200_series.iloc[-1]
-    ema50_prev = ema50_series.iloc[-2]
-    ema200_prev = ema200_series.iloc[-2]
-    
-    if ema50_current > ema200_current:
-        ema_trend = "Bullish"
-    else:
-        ema_trend = "Bearish"
-    
-    if ema50_current > ema200_current and ema50_prev <= ema200_prev:
-        ema_crossover = "Bullish Crossover"
-    elif ema50_current < ema200_current and ema50_prev >= ema200_prev:
-        ema_crossover = "Bearish Crossover"
-    else:
-        ema_crossover = "No Crossover"
-    
     macd_indicator = ta.trend.MACD(close, window_slow=26, window_fast=12, window_sign=9)
     macd_line = macd_indicator.macd()
     signal_line = macd_indicator.macd_signal()
     histogram = macd_indicator.macd_diff()
     
-    macd_current = macd_line.iloc[-1]
-    signal_current = signal_line.iloc[-1]
-    histogram_current = histogram.iloc[-1]
-    histogram_prev = histogram.iloc[-2]
-    
-    if histogram_current > 0 and histogram_prev <= 0:
-        macd_trend_shift = "Bullish Trend Shift"
-    elif histogram_current < 0 and histogram_prev >= 0:
-        macd_trend_shift = "Bearish Trend Shift"
-    else:
-        macd_trend_shift = "No Trend Shift"
-    
     stoch_indicator = ta.momentum.StochasticOscillator(high, low, close, window=14, smooth_window=3)
-    stoch_d_value = stoch_indicator.stoch_signal().iloc[-1]
+    stoch_k = stoch_indicator.stoch()
+    stoch_d = stoch_indicator.stoch_signal()
     
-    if stoch_d_value >= 80:
-        stoch_status = "Exhaustion Near Highs"
-    elif stoch_d_value <= 20:
-        stoch_status = "Exhaustion Near Lows"
-    else:
-        stoch_status = "Neutral"
+    # Get the indices that correspond to df_output in df_full
+    output_start_idx = len(df_full) - len(df_output)
+    
+    # Build technicals for each day in the output period
+    for i in range(len(df_output)):
+        full_idx = output_start_idx + i
+        
+        rsi_val = rsi_series.iloc[full_idx] if full_idx < len(rsi_series) and not pd.isna(rsi_series.iloc[full_idx]) else None
+        
+        if rsi_val is not None:
+            if rsi_val >= 70:
+                rsi_status = "Overbought"
+            elif rsi_val <= 30:
+                rsi_status = "Oversold"
+            else:
+                rsi_status = "Neutral"
+        else:
+            rsi_status = None
+        
+        ema50_val = ema50_series.iloc[full_idx] if full_idx < len(ema50_series) and not pd.isna(ema50_series.iloc[full_idx]) else None
+        ema200_val = ema200_series.iloc[full_idx] if full_idx < len(ema200_series) and not pd.isna(ema200_series.iloc[full_idx]) else None
+        
+        if ema50_val is not None and ema200_val is not None:
+            ema_trend = "Bullish" if ema50_val > ema200_val else "Bearish"
+        else:
+            ema_trend = None
+        
+        macd_val = macd_line.iloc[full_idx] if full_idx < len(macd_line) and not pd.isna(macd_line.iloc[full_idx]) else None
+        signal_val = signal_line.iloc[full_idx] if full_idx < len(signal_line) and not pd.isna(signal_line.iloc[full_idx]) else None
+        hist_val = histogram.iloc[full_idx] if full_idx < len(histogram) and not pd.isna(histogram.iloc[full_idx]) else None
+        
+        stoch_k_val = stoch_k.iloc[full_idx] if full_idx < len(stoch_k) and not pd.isna(stoch_k.iloc[full_idx]) else None
+        stoch_d_val = stoch_d.iloc[full_idx] if full_idx < len(stoch_d) and not pd.isna(stoch_d.iloc[full_idx]) else None
+        
+        if stoch_d_val is not None:
+            if stoch_d_val >= 80:
+                stoch_status = "Exhaustion Near Highs"
+            elif stoch_d_val <= 20:
+                stoch_status = "Exhaustion Near Lows"
+            else:
+                stoch_status = "Neutral"
+        else:
+            stoch_status = None
+        
+        technicals_list.append({
+            "date": str(df_output['time'].iloc[i]),
+            "rsi_value": round_to_2_decimals(rsi_val),
+            "rsi_status": rsi_status,
+            "ema50_value": round_to_2_decimals(ema50_val),
+            "ema200_value": round_to_2_decimals(ema200_val),
+            "ema_trend": ema_trend,
+            "macd_value": round_to_2_decimals(macd_val),
+            "macd_signal": round_to_2_decimals(signal_val),
+            "macd_histogram": round_to_2_decimals(hist_val),
+            "stoch_k_value": round_to_2_decimals(stoch_k_val),
+            "stoch_d_value": round_to_2_decimals(stoch_d_val),
+            "stoch_status": stoch_status
+        })
+    
+    return technicals_list
+
+def detect_30d_high_low(df: pd.DataFrame) -> Dict[str, Any]:
+    """Detect the highest high and lowest low in 30-day period"""
+    if df is None or df.empty:
+        return {"high": None, "low": None, "high_date": None, "low_date": None}
+    
+    high_idx = df['high'].idxmax()
+    low_idx = df['low'].idxmin()
     
     return {
-        "rsi_value": round_to_2_decimals(rsi_value),
-        "rsi_status": rsi_status,
-        "ema50_value": round_to_2_decimals(ema50_current),
-        "ema200_value": round_to_2_decimals(ema200_current),
-        "ema_trend": ema_trend,
-        "ema_crossover": ema_crossover,
-        "macd_value": round_to_2_decimals(macd_current),
-        "macd_signal": round_to_2_decimals(signal_current),
-        "macd_histogram": round_to_2_decimals(histogram_current),
-        "macd_trend_shift": macd_trend_shift,
-        "stoch_d_value": round_to_2_decimals(stoch_d_value),
-        "stoch_status": stoch_status
+        "thirty_day_high": round_to_2_decimals(df.loc[high_idx, 'high']),
+        "thirty_day_high_date": str(df.loc[high_idx, 'time']),
+        "thirty_day_low": round_to_2_decimals(df.loc[low_idx, 'low']),
+        "thirty_day_low_date": str(df.loc[low_idx, 'time'])
     }
 
-def fetch_xauusd_30d() -> Optional[pd.DataFrame]:
-    now = datetime.now()
-    thirty_days_ago = now - timedelta(days=30)
+def analyze_instrument_30d(symbol: str) -> Optional[Dict[str, Any]]:
+    """Analyze instrument with 30-day market data and technicals"""
     
-    rates = mt5.copy_rates_range(
-        "XAUUSD", 
-        mt5.TIMEFRAME_D1, 
-        thirty_days_ago,
-        now
-    )
+    # Fetch extended data for calculations, get last 30 days for output
+    df_full, df_output = fetch_extended_daily_ohlc(symbol, output_days=30, total_days=300)
     
-    if rates is None or len(rates) == 0:
+    if df_full is None or df_output is None or df_output.empty:
+        print(f"Failed to fetch data for {symbol}")
         return None
     
-    df = pd.DataFrame(rates)
-    df['time'] = pd.to_datetime(df['time'], unit='s')
+    if len(df_full) < 200:
+        print(f"Warning: {symbol} only has {len(df_full)} days of data, need 200+ for accurate indicators")
     
-    df = df[['time', 'open', 'high', 'low', 'close']]
+    print(f"  Fetched {len(df_full)} days total, using last {len(df_output)} days for output")
     
-    df = df.tail(30)
+    # Convert OHLC to JSON-serializable format
+    market_data = []
+    for _, row in df_output.iterrows():
+        market_data.append({
+            "date": str(row['time']),
+            "open": round_to_2_decimals(row['open']),
+            "high": round_to_2_decimals(row['high']),
+            "low": round_to_2_decimals(row['low']),
+            "close": round_to_2_decimals(row['close'])
+        })
     
-    return df
-
-def save_xauusd_30d_to_json(df: pd.DataFrame, filename: str = "Fetchers/jsons/xauusd_30d.json"):
-    if df is None or df.empty:
-        return
+    # Detect 30-day high/low
+    high_low_info = detect_30d_high_low(df_output)
     
-    records = df.to_dict('records')
-    for record in records:
-        for key in ['open', 'high', 'low', 'close']:
-            record[key] = round_to_2_decimals(record[key])
-        record['time'] = str(record['time'])
-    
-    with open(filename, 'w') as jsonfile:
-        json.dump(records, jsonfile, indent=2)
-
-def determine_bias(current_price: float, weekly: Dict, daily: Dict, hourly: Dict, 
-                   indicators: Optional[Dict] = None) -> str:
-    if not weekly or not daily or not hourly or current_price is None:
-        return "NEUTRAL"
-    
-    if current_price > daily['high']:
-        return "BULLISH"
-    
-    if current_price < daily['low']:
-        return "BEARISH"
-    
-    if current_price > weekly['high']:
-        return "BULLISH"
-    
-    if current_price < weekly['low']:
-        return "BEARISH"
-    
-    if indicators:
-        if indicators['ema_trend'] == "Bullish" and indicators['rsi_status'] != "Overbought":
-            return "BULLISH"
-        if indicators['ema_trend'] == "Bearish" and indicators['rsi_status'] != "Oversold":
-            return "BEARISH"
-    
-    return "NEUTRAL"
-
-def analyze_instrument(symbol: str) -> Optional[Dict[str, Any]]:
-    weekly = fetch_weekly(symbol)
-    daily = fetch_daily(symbol)
-    hourly = fetch_hourly(symbol)
-    current_price = get_current_price(symbol)
-    
-    if not weekly or not daily or not hourly or current_price is None:
-        return None
-    
-    df = fetch_hourly_for_indicators(symbol)
-    indicators = compute_indicators(df)
-    
-    bias = determine_bias(current_price, weekly, daily, hourly, indicators)
+    # Compute daily technicals using full dataset
+    technicals = compute_daily_technicals(df_full, df_output)
     
     result = {
         "instrument": symbol,
-        "description": INSTRUMENTS[symbol],
-        "timestamp": datetime.now().isoformat(),
-        "current_price": current_price,
-        "support_resistance": {
-            "weekly": weekly,
-            "daily": daily,
-            "hourly": hourly
-        },
-        "indicators": indicators if indicators else {},
-        "final_bias": bias
+        "description": INSTRUMENTS.get(symbol, "Unknown"),
+        "analysis_timestamp": datetime.now().isoformat(),
+        "period": "30_days",
+        "thirty_day_range": high_low_info,
+        "market_data": market_data,
+        "technicals": technicals if technicals else []
     }
     
     return result
 
-def save_to_json(results: List[Dict[str, Any]], filename: str = "Fetchers/jsons/market_analysis.json"):
+def save_to_json(results: List[Dict[str, Any]], filename: str = "Fetchers/jsons/market_analysis_30d.json"):
+    """Save all results to a single JSON file"""
     if not results:
         return
+    
+    # Create directory if it doesn't exist
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    
+    output = {
+        "generated_at": datetime.now().isoformat(),
+        "period_days": 30,
+        "instruments": results
+    }
+    
     with open(filename, 'w') as jsonfile:
-        json.dump(results, jsonfile, indent=2, default=str)
+        json.dump(output, jsonfile, indent=2, default=str)
 
 def main():
     if not initialize_mt5():
@@ -266,20 +243,20 @@ def main():
     results = []
     
     for symbol in INSTRUMENTS.keys():
-        result = analyze_instrument(symbol)
+        print(f"Analyzing {symbol}...")
+        result = analyze_instrument_30d(symbol)
         if result:
             results.append(result)
-    
-    xauusd_30d = fetch_xauusd_30d()
-    if xauusd_30d is not None:
-        save_xauusd_30d_to_json(xauusd_30d)
-        print(f"XAUUSD 30-day data saved to xauusd_30d.json ({len(xauusd_30d)} days)")
+            print(f"✓ {symbol} analysis complete ({len(result['market_data'])} days)")
     
     mt5.shutdown()
     
     if results:
         save_to_json(results)
-        print(f"Analysis complete. Results saved to market_analysis.json")
+        print(f"\n✓ Complete analysis saved to market_analysis_30d.json")
+        print(f"✓ Total instruments analyzed: {len(results)}")
+    else:
+        print("No results to save")
 
 if __name__ == "__main__":
     main()
