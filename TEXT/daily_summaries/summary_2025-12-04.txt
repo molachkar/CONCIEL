@@ -1,5 +1,17 @@
 December 04, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 98.87, high 99.03, low 98.70, closed at 99.00. Daily gain of +0.13 (+0.13%), range 0.33.
+S&P 500: Opened at 6,853.95, high 6,870.55, low 6,826.15, closed at 6,855.35. Daily gain of +1.40 (+0.02%), range 44.40.
+VIX (Volatility Index): Opened at 17.73, high 17.88, low 17.42, closed at 17.47. Daily loss of -0.26 (-1.47%), range 0.46.
+Gold (XAU/USD): Opened at $4,202.90, high $4,219.26, low $4,175.01, closed at $4,207.41. Daily gain of +4.51 (+0.11%), range 44.25.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 44.21 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.92). MACD: 0.04, signal: 0.18, histogram: -0.14 (negative). Stochastic: 16.42 (exhaustion near lows).
+S&P 500: RSI: 58.74 (neutral). EMA trend: bullish (EMA50: 6718.92, EMA200: 6369.29). MACD: 27.79, signal: 12.89, histogram: 14.90 (positive). Stochastic: 93.98 (exhaustion near highs).
+VIX: RSI: 40.53 (neutral). EMA trend: bullish (EMA50: 18.95, EMA200: 18.69). MACD: -0.38, signal: -0.01, histogram: -0.37 (negative). Stochastic: 0.88 (exhaustion near lows).
+Gold (XAU/USD): RSI: 61.22 (neutral). EMA trend: bullish (EMA50: 4023.13, EMA200: 3556.48). MACD: 50.41, signal: 44.51, histogram: 5.90 (positive). Stochastic: 77.80 (neutral).
+
 ECONOMIC EVENTS:
 At 14:30, USD Initial Jobless Claims was released. Actual: 191K, missing forecast of 219K and falling from previous 218K.
 At 16:00, USD Factory Orders (MoM)  (Sep) was released. Actual: 0.2% and falling from previous 1.3%.
@@ -99,4 +111,4 @@ r/wallstreetbets (18 posts):
 
 [Total: 57 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

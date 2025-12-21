@@ -1,5 +1,17 @@
 November 27, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 99.42, high 99.63, low 99.32, closed at 99.50. Daily gain of +0.08 (+0.08%), range 0.31.
+S&P 500: Opened at 6,817.10, high 6,819.95, low 6,810.14, closed at 6,813.55. Daily loss of -3.55 (-0.05%), range 9.81.
+VIX (Volatility Index): Opened at 18.67, high 18.73, low 18.57, closed at 18.62. Daily loss of -0.05 (-0.27%), range 0.16.
+Gold (XAU/USD): Opened at $4,164.28, high $4,168.40, low $4,142.43, closed at $4,155.14. Daily loss of -9.14 (-0.22%), range 25.97.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 52.56 (neutral). EMA trend: bearish (EMA50: 99.00, EMA200: 99.96). MACD: 0.26, signal: 0.32, histogram: -0.05 (negative). Stochastic: 50.13 (neutral).
+S&P 500: RSI: 56.47 (neutral). EMA trend: bullish (EMA50: 6692.21, EMA200: 6345.20). MACD: 1.57, signal: -3.64, histogram: 5.21 (positive). Stochastic: 78.86 (neutral).
+VIX: RSI: 45.40 (neutral). EMA trend: bullish (EMA50: 19.19, EMA200: 18.73). MACD: 0.19, signal: 0.43, histogram: -0.24 (negative). Stochastic: 15.86 (exhaustion near lows).
+Gold (XAU/USD): RSI: 58.91 (neutral). EMA trend: bullish (EMA50: 3980.59, EMA200: 3522.68). MACD: 36.92, signal: 34.50, histogram: 2.42 (positive). Stochastic: 64.23 (neutral).
+
 FUNDAMENTALS:
 High-yield credit spread: 3.00%.
 
@@ -24,4 +36,4 @@ r/japan (7 posts):
 
 [Total: 11 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

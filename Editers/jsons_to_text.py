@@ -41,7 +41,6 @@ class DataFormatter:
             return float(value)
         if isinstance(value, str):
             try:
-                # Remove common characters and parse
                 cleaned = value.replace('%', '').replace(',', '').replace('$', '').replace('B', '').replace('M', '').replace('K', '').strip()
                 return float(cleaned)
             except ValueError:
@@ -54,7 +53,7 @@ class DataFormatter:
         if rsi is None:
             return "no RSI data"
         if rsi < 30:
-            return "oversold conditions, potential buying opportunity"
+            return "oversold conditions"
         elif rsi < 45:
             return "bearish momentum"
         elif rsi < 55:
@@ -62,19 +61,14 @@ class DataFormatter:
         elif rsi < 70:
             return "bullish momentum"
         else:
-            return "overbought conditions, potential reversal risk"
+            return "overbought conditions"
     
     @staticmethod
-    def interpret_macd(macd: Optional[float]) -> str:
-        """Interpret MACD value"""
-        if macd is None:
-            return "no MACD data"
-        if abs(macd) < 0.5:
-            return "neutral momentum"
-        elif macd > 0:
-            return "positive momentum"
-        else:
-            return "negative momentum"
+    def interpret_ema_trend(trend: Optional[str]) -> str:
+        """Interpret EMA trend"""
+        if not trend:
+            return "no trend data"
+        return f"{trend.lower()} trend"
 
 
 class InflationDataFormatter:
@@ -177,7 +171,6 @@ class InflationDataFormatter:
                     except:
                         monetary_items.append(f"Federal Funds Rate was {latest_val:.2f}%.")
                 
-                # Show trend if multiple data points
                 if len(fedfunds_data) > 1:
                     first = fedfunds_data[0]
                     first_val = DataFormatter.parse_numeric(first.get("value"))
@@ -217,51 +210,169 @@ class InflationDataFormatter:
         return "\n\n".join(sections) if sections else "No economic data available."
 
 
-class XAUUSDFormatter:
-    """Formats gold price data"""
+class MarketDataFormatter:
+    """Formats market data (OHLC) for all instruments"""
+    
+    INSTRUMENT_NAMES = {
+        "XAUUSD": "Gold (XAU/USD)",
+        "USA500.IDX": "S&P 500",
+        "VOL.IDX": "VIX (Volatility Index)",
+        "DOLLAR.IDX": "US Dollar Index (DXY)"
+    }
     
     @staticmethod
     def format(data: Dict[str, Any]) -> Optional[str]:
-        """Convert XAUUSD data to natural language"""
+        """Convert market data to natural language"""
         if not data:
             return None
         
-        open_p = DataFormatter.parse_numeric(data.get("open"))
-        high = DataFormatter.parse_numeric(data.get("high"))
-        low = DataFormatter.parse_numeric(data.get("low"))
-        close = DataFormatter.parse_numeric(data.get("close"))
+        # Extract unique instruments from market_data
+        instruments = set()
+        for key in data.keys():
+            if "_OPEN" in key or "_CLOSE" in key:
+                instrument = key.replace("_OPEN", "").replace("_HIGH", "").replace("_LOW", "").replace("_CLOSE", "")
+                if not instrument.endswith("_30D"):
+                    instruments.add(instrument)
         
-        if not all([open_p, high, low, close]):
+        if not instruments:
             return None
         
-        change, pct_change = DataFormatter.calculate_change(open_p, close)
-        if change is None or pct_change is None:
+        lines = []
+        
+        for instrument in sorted(instruments):
+            try:
+                open_p = DataFormatter.parse_numeric(data.get(f"{instrument}_OPEN"))
+                high = DataFormatter.parse_numeric(data.get(f"{instrument}_HIGH"))
+                low = DataFormatter.parse_numeric(data.get(f"{instrument}_LOW"))
+                close = DataFormatter.parse_numeric(data.get(f"{instrument}_CLOSE"))
+                
+                if not all([open_p, high, low, close]):
+                    continue
+                
+                change, pct_change = DataFormatter.calculate_change(open_p, close)
+                if change is None or pct_change is None:
+                    continue
+                
+                range_val = high - low
+                
+                # Determine direction
+                if abs(change) < 0.01:
+                    direction = "no change"
+                    change_text = "flat"
+                    pct_text = "0.00%"
+                elif change > 0:
+                    direction = "gain"
+                    change_text = f"+{change:.2f}"
+                    pct_text = f"+{pct_change:.2f}%"
+                else:
+                    direction = "loss"
+                    change_text = f"{change:.2f}"
+                    pct_text = f"{pct_change:.2f}%"
+                
+                instrument_name = MarketDataFormatter.INSTRUMENT_NAMES.get(instrument, instrument)
+                
+                if instrument == "XAUUSD":
+                    text = f"{instrument_name}: Opened at ${open_p:,.2f}, high ${high:,.2f}, low ${low:,.2f}, closed at ${close:,.2f}. "
+                else:
+                    text = f"{instrument_name}: Opened at {open_p:,.2f}, high {high:,.2f}, low {low:,.2f}, closed at {close:,.2f}. "
+                
+                text += f"Daily {direction} of {change_text} ({pct_text}), range {range_val:.2f}."
+                
+                # Add 30-day range if available
+                day_high = data.get(f"{instrument}_30D_HIGH")
+                day_low = data.get(f"{instrument}_30D_LOW")
+                if day_high is not None and day_low is not None:
+                    text += f" 30-day range: {day_low:,.2f} - {day_high:,.2f}."
+                
+                lines.append(text)
+            except Exception:
+                continue
+        
+        return "\n".join(lines) if lines else None
+
+
+class TechnicalsFormatter:
+    """Formats technical indicators for all instruments"""
+    
+    INSTRUMENT_NAMES = {
+        "XAUUSD": "Gold (XAU/USD)",
+        "USA500.IDX": "S&P 500",
+        "VOL.IDX": "VIX",
+        "DOLLAR.IDX": "Dollar Index (DXY)"
+    }
+    
+    @staticmethod
+    def format(data: Dict[str, Any]) -> Optional[str]:
+        """Convert technicals to natural language"""
+        if not data:
             return None
         
-        range_val = high - low
+        # Extract unique instruments
+        instruments = set()
+        for key in data.keys():
+            if "_RSI" in key:
+                instrument = key.replace("_RSI", "").replace("_RSI_STATUS", "")
+                instruments.add(instrument)
         
-        # Determine direction
-        if abs(change) < 0.01:
-            direction = "no significant change"
-            change_text = "flat"
-            pct_text = "0.00%"
-        elif change > 0:
-            direction = "gain"
-            change_text = f"+{DataFormatter.format_number(change, '', 2)}"
-            pct_text = f"+{pct_change:.2f}%"
-        else:
-            direction = "loss"
-            change_text = DataFormatter.format_number(change, '', 2)
-            pct_text = f"{pct_change:.2f}%"
+        if not instruments:
+            return None
         
-        text = f"Gold (XAU/USD) opened at {DataFormatter.format_number(open_p)}, "
-        text += f"reached a high of {DataFormatter.format_number(high)}, "
-        text += f"dipped to a low of {DataFormatter.format_number(low)}, "
-        text += f"and closed at {DataFormatter.format_number(close)}. "
-        text += f"This represents a daily {direction} of {change_text} ({pct_text}) "
-        text += f"with an intraday range of {DataFormatter.format_number(range_val, '', 2)}."
+        lines = []
         
-        return text
+        for instrument in sorted(instruments):
+            try:
+                rsi = DataFormatter.parse_numeric(data.get(f"{instrument}_RSI"))
+                rsi_status = data.get(f"{instrument}_RSI_STATUS")
+                ema50 = DataFormatter.parse_numeric(data.get(f"{instrument}_EMA50"))
+                ema200 = DataFormatter.parse_numeric(data.get(f"{instrument}_EMA200"))
+                ema_trend = data.get(f"{instrument}_EMA_TREND")
+                macd = DataFormatter.parse_numeric(data.get(f"{instrument}_MACD"))
+                macd_signal = DataFormatter.parse_numeric(data.get(f"{instrument}_MACD_SIGNAL"))
+                macd_hist = DataFormatter.parse_numeric(data.get(f"{instrument}_MACD_HIST"))
+                stoch_k = DataFormatter.parse_numeric(data.get(f"{instrument}_STOCH_K"))
+                stoch_d = DataFormatter.parse_numeric(data.get(f"{instrument}_STOCH_D"))
+                stoch_status = data.get(f"{instrument}_STOCH_STATUS")
+                
+                parts = []
+                instrument_name = TechnicalsFormatter.INSTRUMENT_NAMES.get(instrument, instrument)
+                
+                # RSI
+                if rsi is not None:
+                    rsi_text = f"RSI: {rsi:.2f}"
+                    if rsi_status:
+                        rsi_text += f" ({rsi_status.lower()})"
+                    parts.append(rsi_text)
+                
+                # EMA Trend
+                if ema_trend:
+                    ema_text = f"EMA trend: {ema_trend.lower()}"
+                    if ema50 is not None and ema200 is not None:
+                        ema_text += f" (EMA50: {ema50:.2f}, EMA200: {ema200:.2f})"
+                    parts.append(ema_text)
+                
+                # MACD
+                if macd is not None:
+                    macd_text = f"MACD: {macd:.2f}"
+                    if macd_signal is not None:
+                        macd_text += f", signal: {macd_signal:.2f}"
+                    if macd_hist is not None:
+                        hist_dir = "positive" if macd_hist > 0 else "negative"
+                        macd_text += f", histogram: {macd_hist:.2f} ({hist_dir})"
+                    parts.append(macd_text)
+                
+                # Stochastic
+                if stoch_d is not None:
+                    stoch_text = f"Stochastic: {stoch_d:.2f}"
+                    if stoch_status:
+                        stoch_text += f" ({stoch_status.lower()})"
+                    parts.append(stoch_text)
+                
+                if parts:
+                    lines.append(f"{instrument_name}: {'. '.join(parts)}.")
+            except Exception:
+                continue
+        
+        return "\n".join(lines) if lines else None
 
 
 class EconomicEventsFormatter:
@@ -283,13 +394,11 @@ class EconomicEventsFormatter:
                 forecast = event.get("forecast", "")
                 previous = event.get("previous", "")
                 
-                # Build event description
                 text = f"At {time}, {currency} {event_name} was released."
                 
                 if actual:
                     text += f" Actual: {actual}"
                     
-                    # Compare to forecast
                     if forecast and actual != forecast:
                         actual_num = DataFormatter.parse_numeric(actual)
                         forecast_num = DataFormatter.parse_numeric(forecast)
@@ -304,7 +413,6 @@ class EconomicEventsFormatter:
                     elif forecast:
                         text += f", matching forecast of {forecast}"
                     
-                    # Compare to previous
                     if previous and actual != previous:
                         actual_num = DataFormatter.parse_numeric(actual)
                         previous_num = DataFormatter.parse_numeric(previous)
@@ -323,7 +431,6 @@ class EconomicEventsFormatter:
                 
                 lines.append(text)
             except Exception:
-                # Skip malformed events but continue processing
                 continue
         
         return "\n".join(lines) if lines else None
@@ -340,88 +447,32 @@ class FundamentalsFormatter:
         
         lines = []
         
-        # Treasury yields
         if "TREASURY_10Y" in data:
             val = DataFormatter.parse_numeric(data["TREASURY_10Y"])
             if val is not None:
                 lines.append(f"10-Year Treasury yield: {val:.2f}%.")
         
-        # Credit spreads
         if "HY_CREDIT_SPREAD" in data:
             val = DataFormatter.parse_numeric(data["HY_CREDIT_SPREAD"])
             if val is not None:
                 lines.append(f"High-yield credit spread: {val:.2f}%.")
-        
-        # Inflation metrics
-        if "CPI" in data:
-            val = DataFormatter.parse_numeric(data["CPI"])
-            if val is not None:
-                lines.append(f"Consumer Price Index (CPI): {val:.2f}.")
-        
-        if "PCE" in data:
-            val = DataFormatter.parse_numeric(data["PCE"])
-            if val is not None:
-                lines.append(f"Personal Consumption Expenditures (PCE): {val:.2f}.")
-        
-        if "PPI" in data:
-            val = DataFormatter.parse_numeric(data["PPI"])
-            if val is not None:
-                lines.append(f"Producer Price Index (PPI): {val:.2f}.")
-        
-        # Employment data
-        if "UNEMPLOYMENT" in data:
-            val = DataFormatter.parse_numeric(data["UNEMPLOYMENT"])
-            if val is not None:
-                lines.append(f"Unemployment rate: {val:.1f}%.")
-        
-        if "NFP" in data:
-            val = DataFormatter.parse_numeric(data["NFP"])
-            if val is not None:
-                lines.append(f"Non-Farm Payrolls: {val:,.0f}K jobs.")
         
         if "JOBLESS_CLAIMS" in data:
             val = DataFormatter.parse_numeric(data["JOBLESS_CLAIMS"])
             if val is not None:
                 lines.append(f"Initial jobless claims: {val:,.0f}K.")
         
-        # Interest rates
-        if "FEDFUNDS" in data:
-            val = DataFormatter.parse_numeric(data["FEDFUNDS"])
-            if val is not None:
-                lines.append(f"Federal Funds Rate: {val:.2f}%.")
-        
         if "REAL_RATE" in data:
             val = DataFormatter.parse_numeric(data["REAL_RATE"])
             if val is not None:
                 lines.append(f"Real interest rate: {val:.2f}%.")
-        
-        # Money supply & economic activity
-        if "M2_MONEY_SUPPLY" in data:
-            val = DataFormatter.parse_numeric(data["M2_MONEY_SUPPLY"])
-            if val is not None:
-                lines.append(f"M2 money supply: ${val:,.2f}B.")
-        
-        if "RETAIL_SALES" in data:
-            val = DataFormatter.parse_numeric(data["RETAIL_SALES"])
-            if val is not None:
-                lines.append(f"Retail sales: ${val:,.0f}M.")
-        
-        if "INDUSTRIAL_PROD" in data:
-            val = DataFormatter.parse_numeric(data["INDUSTRIAL_PROD"])
-            if val is not None:
-                lines.append(f"Industrial production index: {val:.2f}.")
-        
-        if "HOUSING_STARTS" in data:
-            val = DataFormatter.parse_numeric(data["HOUSING_STARTS"])
-            if val is not None:
-                lines.append(f"Housing starts: {val:,.0f}K units.")
         
         # Gold ETFs
         gld_parts = []
         if "GLD_CLOSE" in data:
             val = DataFormatter.parse_numeric(data["GLD_CLOSE"])
             if val is not None:
-                gld_parts.append(f"closed at {DataFormatter.format_number(val)}")
+                gld_parts.append(f"closed at ${val:.2f}")
         
         if "GLD_VOLUME" in data:
             val = DataFormatter.parse_numeric(data["GLD_VOLUME"])
@@ -435,7 +486,7 @@ class FundamentalsFormatter:
         if "IAU_CLOSE" in data:
             val = DataFormatter.parse_numeric(data["IAU_CLOSE"])
             if val is not None:
-                iau_parts.append(f"closed at {DataFormatter.format_number(val)}")
+                iau_parts.append(f"closed at ${val:.2f}")
         
         if "IAU_VOLUME" in data:
             val = DataFormatter.parse_numeric(data["IAU_VOLUME"])
@@ -448,70 +499,6 @@ class FundamentalsFormatter:
         return " ".join(lines) if lines else None
 
 
-class MarketAnalysisFormatter:
-    """Formats market analysis data"""
-    
-    INSTRUMENT_NAMES = {
-        "XAUUSD": "Gold (XAU/USD)",
-        "USA500.IDX": "S&P 500",
-        "USA100.IDX": "Nasdaq 100",
-        "USA30.IDX": "Dow Jones",
-        "VOL.IDX": "VIX (Volatility Index)",
-        "DOLLAR.IDX": "US Dollar Index (DXY)",
-        "BTC": "Bitcoin",
-        "ETH": "Ethereum"
-    }
-    
-    @staticmethod
-    def format(data: Dict[str, Any]) -> Optional[str]:
-        """Convert market analysis to natural language"""
-        if not data:
-            return None
-        
-        # Extract unique instruments
-        instruments = set()
-        for key in data.keys():
-            if "_PRICE" in key:
-                instrument = key.replace("_PRICE", "")
-                instruments.add(instrument)
-        
-        if not instruments:
-            return None
-        
-        lines = []
-        
-        for instrument in sorted(instruments):
-            try:
-                price = DataFormatter.parse_numeric(data.get(f"{instrument}_PRICE"))
-                bias = data.get(f"{instrument}_BIAS", "neutral")
-                rsi = DataFormatter.parse_numeric(data.get(f"{instrument}_RSI"))
-                macd = DataFormatter.parse_numeric(data.get(f"{instrument}_MACD"))
-                
-                if price is None:
-                    continue
-                
-                # Format price
-                if instrument == "XAUUSD":
-                    price_str = DataFormatter.format_number(price)
-                else:
-                    price_str = f"{price:,.2f}"
-                
-                instrument_name = MarketAnalysisFormatter.INSTRUMENT_NAMES.get(instrument, instrument)
-                text = f"{instrument_name}: trading at {price_str} with {bias.lower()} bias."
-                
-                if rsi is not None:
-                    text += f" RSI: {rsi:.2f} ({DataFormatter.interpret_rsi(rsi)})."
-                
-                if macd is not None:
-                    text += f" MACD: {macd:.2f} ({DataFormatter.interpret_macd(macd)})."
-                
-                lines.append(text)
-            except Exception:
-                continue
-        
-        return "\n".join(lines) if lines else None
-
-
 class NewsFormatter:
     """Formats news articles"""
     
@@ -521,7 +508,6 @@ class NewsFormatter:
         if not articles:
             return None
         
-        # Group by category
         by_category = {}
         for article in articles:
             category = article.get("category", "general")
@@ -561,7 +547,6 @@ class RedditFormatter:
         if not posts:
             return None
         
-        # Group by subreddit
         by_subreddit = {}
         for post in posts:
             source = post.get("source", "unknown")
@@ -597,7 +582,6 @@ class SnapshotConverter:
         """Convert entire snapshot to natural language summary"""
         
         if is_inflation_file:
-            # Simple handling for inflation_data.json
             generated_at = snapshot_data.get("generated_at", "")
             
             try:
@@ -625,7 +609,6 @@ class SnapshotConverter:
         date = snapshot_data.get("date", "Unknown Date")
         data = snapshot_data.get("data", {})
         
-        # Parse date for header
         try:
             date_obj = datetime.fromisoformat(date)
             date_header = date_obj.strftime("%B %d, %Y")
@@ -636,12 +619,12 @@ class SnapshotConverter:
         sections.append(date_header)
         sections.append("")
         
-        # Process each category
+        # Process each category with new structure
         formatters = [
-            ("xauusd", "GOLD PRICE ACTION", XAUUSDFormatter.format),
+            ("market_data", "MARKET DATA", MarketDataFormatter.format),
+            ("technicals", "TECHNICAL INDICATORS", TechnicalsFormatter.format),
             ("economic_events", "ECONOMIC EVENTS", EconomicEventsFormatter.format),
             ("fundamentals", "FUNDAMENTALS", FundamentalsFormatter.format),
-            ("market_analysis", "TECHNICAL ANALYSIS", MarketAnalysisFormatter.format),
             ("news", "NEWS HIGHLIGHTS", NewsFormatter.format),
             ("reddit", "SOCIAL SENTIMENT", RedditFormatter.format),
         ]
@@ -658,7 +641,6 @@ class SnapshotConverter:
                     sections.append(f"{title}: [Error processing data: {str(e)}]")
                     sections.append("")
         
-        # Footer with timestamp only
         sections.append(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         
         return "\n".join(sections)
@@ -677,7 +659,6 @@ def main():
     output_path = Path(OUTPUT_FOLDER)
     output_path.mkdir(exist_ok=True)
     
-    # Check for inflation data first
     inflation_file = input_path / "inflation_data.json"
     snapshot_files = []
     
@@ -685,7 +666,6 @@ def main():
         snapshot_files.append(inflation_file)
         print("Found inflation_data.json - processing as monthly overview\n")
     
-    # Get all daily snapshot files
     daily_files = sorted(input_path.glob("snapshot_*.json"))
     snapshot_files.extend(daily_files)
     
@@ -700,17 +680,13 @@ def main():
     
     for snapshot_file in snapshot_files:
         try:
-            # Read snapshot
             with open(snapshot_file, 'r', encoding='utf-8') as f:
                 snapshot_data = json.load(f)
             
-            # Check if this is the inflation data file
             is_inflation = snapshot_file.name == "inflation_data.json"
             
-            # Convert to text
             text_summary = SnapshotConverter.convert_to_text(snapshot_data, is_inflation_file=is_inflation)
             
-            # Determine output filename
             if is_inflation:
                 output_file = output_path / "summary_monthly_indicators.txt"
             else:

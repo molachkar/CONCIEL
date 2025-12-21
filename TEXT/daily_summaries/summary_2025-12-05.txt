@@ -1,5 +1,17 @@
 December 05, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 98.96, high 99.08, low 98.76, closed at 98.96. Daily no change of flat (0.00%), range 0.32.
+S&P 500: Opened at 6,858.04, high 6,896.00, low 6,847.85, closed at 6,871.35. Daily gain of +13.31 (+0.19%), range 48.15.
+VIX (Volatility Index): Opened at 17.43, high 17.58, low 17.17, closed at 17.17. Daily loss of -0.26 (-1.49%), range 0.41.
+Gold (XAU/USD): Opened at $4,207.10, high $4,259.10, low $4,191.81, closed at $4,197.40. Daily loss of -9.70 (-0.23%), range 67.29.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 43.49 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.91). MACD: 0.01, signal: 0.15, histogram: -0.14 (negative). Stochastic: 12.61 (exhaustion near lows).
+S&P 500: RSI: 59.99 (neutral). EMA trend: bullish (EMA50: 6724.90, EMA200: 6374.28). MACD: 31.82, signal: 16.68, histogram: 15.14 (positive). Stochastic: 95.64 (exhaustion near highs).
+VIX: RSI: 39.15 (neutral). EMA trend: bullish (EMA50: 18.88, EMA200: 18.67). MACD: -0.47, signal: -0.10, histogram: -0.37 (negative). Stochastic: 0.28 (exhaustion near lows).
+Gold (XAU/USD): RSI: 59.78 (neutral). EMA trend: bullish (EMA50: 4029.97, EMA200: 3562.85). MACD: 49.01, signal: 45.41, histogram: 3.60 (positive). Stochastic: 76.77 (neutral).
+
 ECONOMIC EVENTS:
 At 16:00, USD Core PCE Price Index (MoM)  (Sep) was released. Actual: 0.2%, matching forecast of 0.2%
 At 16:00, USD Core PCE Price Index (YoY)  (Sep) was released. Actual: 2.8%, missing forecast of 2.9% and falling from previous 2.9%.
@@ -131,4 +143,4 @@ r/worldnews (11 posts):
 
 [Total: 61 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

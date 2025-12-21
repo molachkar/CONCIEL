@@ -1,5 +1,17 @@
 November 24, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 100.17, high 100.20, low 99.93, closed at 100.11. Daily loss of -0.06 (-0.06%), range 0.27.
+S&P 500: Opened at 6,643.64, high 6,715.25, low 6,608.74, closed at 6,706.65. Daily gain of +63.01 (+0.95%), range 106.51.
+VIX (Volatility Index): Opened at 20.97, high 21.83, low 19.77, closed at 19.82. Daily loss of -1.15 (-5.48%), range 2.06.
+Gold (XAU/USD): Opened at $4,069.22, high $4,139.64, low $4,039.95, closed at $4,134.72. Daily gain of +65.50 (+1.61%), range 99.69.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 65.65 (neutral). EMA trend: bearish (EMA50: 98.92, EMA200: 99.97). MACD: 0.37, signal: 0.33, histogram: 0.03 (positive). Stochastic: 87.22 (exhaustion near highs).
+S&P 500: RSI: 49.34 (neutral). EMA trend: bullish (EMA50: 6678.55, EMA200: 6331.38). MACD: -24.38, signal: -1.60, histogram: -22.78 (negative). Stochastic: 27.87 (neutral).
+VIX: RSI: 50.00 (neutral). EMA trend: bullish (EMA50: 19.24, EMA200: 18.73). MACD: 0.65, signal: 0.53, histogram: 0.12 (positive). Stochastic: 64.76 (neutral).
+Gold (XAU/USD): RSI: 57.72 (neutral). EMA trend: bullish (EMA50: 3959.03, EMA200: 3503.59). MACD: 30.10, signal: 34.03, histogram: -3.93 (negative). Stochastic: 51.58 (neutral).
+
 ECONOMIC EVENTS:
 At 19:00, USD 2-Year Note Auction was released. Actual: 3.489% and falling from previous 3.504%.
 
@@ -33,4 +45,4 @@ r/japan (1 posts):
 
 [Total: 2 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

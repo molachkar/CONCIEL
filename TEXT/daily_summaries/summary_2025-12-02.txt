@@ -1,5 +1,17 @@
 December 02, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 99.38, high 99.50, low 99.24, closed at 99.25. Daily loss of -0.13 (-0.13%), range 0.26.
+S&P 500: Opened at 6,817.95, high 6,851.85, low 6,800.85, closed at 6,828.44. Daily gain of +10.49 (+0.15%), range 51.00.
+VIX (Volatility Index): Opened at 18.18, high 18.28, low 17.82, closed at 17.92. Daily loss of -0.26 (-1.43%), range 0.46.
+Gold (XAU/USD): Opened at $4,231.20, high $4,235.85, low $4,163.46, closed at $4,205.69. Daily loss of -25.51 (-0.60%), range 72.39.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 47.64 (neutral). EMA trend: bearish (EMA50: 99.03, EMA200: 99.94). MACD: 0.15, signal: 0.25, histogram: -0.10 (negative). Stochastic: 32.81 (neutral).
+S&P 500: RSI: 56.77 (neutral). EMA trend: bullish (EMA50: 6707.63, EMA200: 6359.49). MACD: 18.71, signal: 5.49, histogram: 13.22 (positive). Stochastic: 87.61 (exhaustion near highs).
+VIX: RSI: 42.55 (neutral). EMA trend: bullish (EMA50: 19.07, EMA200: 18.71). MACD: -0.18, signal: 0.18, histogram: -0.36 (negative). Stochastic: 4.02 (exhaustion near lows).
+Gold (XAU/USD): RSI: 61.20 (neutral). EMA trend: bullish (EMA50: 4007.99, EMA200: 3543.38). MACD: 50.27, signal: 41.19, histogram: 9.08 (positive). Stochastic: 86.85 (exhaustion near highs).
+
 ECONOMIC EVENTS:
 At 21:30, USD CFTC Crude Oil speculative net positions was released. Actual: 39.8K and falling from previous 61.0K.
 At 21:30, USD CFTC Gold speculative net positions was released. Actual: 176.6K and falling from previous 203.9K.
@@ -75,4 +87,4 @@ r/wallstreetbets (5 posts):
 
 [Total: 29 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

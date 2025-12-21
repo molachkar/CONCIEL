@@ -1,0 +1,15 @@
+December 19, 2025
+
+MARKET DATA:
+US Dollar Index (DXY): Opened at 98.09, high 98.39, low 98.07, closed at 98.35. Daily gain of +0.26 (+0.27%), range 0.32. 30-day range: 97.49 - 100.31.
+S&P 500: Opened at 6,772.83, high 6,840.24, low 6,766.64, closed at 6,835.14. Daily gain of +62.31 (+0.92%), range 73.60. 30-day range: 6,507.35 - 6,911.40.
+VIX (Volatility Index): Opened at 18.12, high 18.18, low 17.28, closed at 17.28. Daily loss of -0.84 (-4.64%), range 0.90. 30-day range: 15.87 - 23.37.
+Gold (XAU/USD): Opened at $4,331.50, high $4,356.36, low $4,308.72, closed at $4,338.67. Daily gain of +7.17 (+0.17%), range 47.64. 30-day range: 3,996.70 - 4,374.40.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 42.09 (neutral). EMA trend: bearish (EMA50: 98.78, EMA200: 99.76). MACD: -0.32, signal: -0.23, histogram: -0.10 (negative). Stochastic: 31.34 (neutral).
+S&P 500: RSI: 53.78 (neutral). EMA trend: bullish (EMA50: 6757.19, EMA200: 6417.21). MACD: 12.89, signal: 21.36, histogram: -8.47 (negative). Stochastic: 31.89 (neutral).
+VIX: RSI: 44.85 (neutral). EMA trend: bearish (EMA50: 18.38, EMA200: 18.55). MACD: -0.43, signal: -0.51, histogram: 0.08 (positive). Stochastic: 72.97 (neutral).
+Gold (XAU/USD): RSI: 71.23 (overbought). EMA trend: bullish (EMA50: 4114.71, EMA200: 3631.37). MACD: 64.29, signal: 57.36, histogram: 6.93 (positive). Stochastic: 84.78 (exhaustion near highs).
+
+2025-12-21 16:49:11

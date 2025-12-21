@@ -1,5 +1,17 @@
 December 01, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 99.36, high 99.44, low 98.93, closed at 99.33. Daily loss of -0.03 (-0.03%), range 0.51.
+S&P 500: Opened at 6,847.24, high 6,852.04, low 6,789.74, closed at 6,813.60. Daily loss of -33.64 (-0.49%), range 62.30.
+VIX (Volatility Index): Opened at 17.98, high 18.82, low 17.87, closed at 18.22. Daily gain of +0.24 (+1.33%), range 0.95.
+Gold (XAU/USD): Opened at $4,221.52, high $4,264.39, low $4,204.35, closed at $4,231.26. Daily gain of +9.74 (+0.23%), range 60.04.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 49.22 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.95). MACD: 0.19, signal: 0.28, histogram: -0.09 (negative). Stochastic: 38.41 (neutral).
+S&P 500: RSI: 55.70 (neutral). EMA trend: bullish (EMA50: 6702.70, EMA200: 6354.78). MACD: 14.41, signal: 2.18, histogram: 12.22 (positive). Stochastic: 85.68 (exhaustion near highs).
+VIX: RSI: 43.85 (neutral). EMA trend: bullish (EMA50: 19.11, EMA200: 18.72). MACD: -0.07, signal: 0.27, histogram: -0.33 (negative). Stochastic: 7.43 (exhaustion near lows).
+Gold (XAU/USD): RSI: 64.43 (neutral). EMA trend: bullish (EMA50: 3999.92, EMA200: 3536.72). MACD: 48.98, signal: 38.92, histogram: 10.06 (positive). Stochastic: 82.13 (exhaustion near highs).
+
 ECONOMIC EVENTS:
 At 15:45, USD S&P Global Manufacturing PMI  (Nov) was released. Actual: 52.2, beating forecast of 51.9 and falling from previous 52.5.
 At 16:00, USD ISM Manufacturing Employment  (Nov) was released. Actual: 44.0 and falling from previous 46.0.
@@ -42,4 +54,4 @@ r/japan (3 posts):
 
 [Total: 9 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

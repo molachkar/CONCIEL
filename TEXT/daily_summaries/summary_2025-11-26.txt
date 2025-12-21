@@ -1,5 +1,17 @@
 November 26, 2025
 
+MARKET DATA:
+US Dollar Index (DXY): Opened at 99.74, high 99.87, low 99.46, closed at 99.53. Daily loss of -0.21 (-0.21%), range 0.41.
+S&P 500: Opened at 6,766.15, high 6,831.75, low 6,763.15, closed at 6,815.64. Daily gain of +49.49 (+0.73%), range 68.60.
+VIX (Volatility Index): Opened at 19.28, high 19.33, low 18.52, closed at 18.63. Daily loss of -0.65 (-3.37%), range 0.81.
+Gold (XAU/USD): Opened at $4,131.30, high $4,173.15, low $4,129.57, closed at $4,162.56. Daily gain of +31.26 (+0.76%), range 43.58.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 53.08 (neutral). EMA trend: bearish (EMA50: 98.98, EMA200: 99.97). MACD: 0.30, signal: 0.33, histogram: -0.03 (negative). Stochastic: 64.18 (neutral).
+S&P 500: RSI: 56.64 (neutral). EMA trend: bullish (EMA50: 6687.25, EMA200: 6340.49). MACD: -6.34, signal: -4.94, histogram: -1.39 (negative). Stochastic: 69.22 (neutral).
+VIX: RSI: 45.44 (neutral). EMA trend: bullish (EMA50: 19.21, EMA200: 18.73). MACD: 0.33, signal: 0.49, histogram: -0.16 (negative). Stochastic: 23.27 (neutral).
+Gold (XAU/USD): RSI: 59.77 (neutral). EMA trend: bullish (EMA50: 3973.47, EMA200: 3516.32). MACD: 35.19, signal: 33.89, histogram: 1.30 (positive). Stochastic: 64.63 (neutral).
+
 ECONOMIC EVENTS:
 At 14:30, USD Core Durable Goods Orders (MoM)  (Sep) was released. Actual: 0.6% and rising from previous 0.5%.
 At 14:30, USD Durable Goods Orders (MoM)  (Sep) was released. Actual: 0.5%, matching forecast of 0.5% and falling from previous 3.0%.
@@ -51,4 +63,4 @@ r/japan (3 posts):
 
 [Total: 9 posts tracked]
 
-2025-12-07 22:00:19
+2025-12-21 16:49:11

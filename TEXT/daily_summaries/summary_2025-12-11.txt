@@ -1,0 +1,15 @@
+December 11, 2025
+
+MARKET DATA:
+US Dollar Index (DXY): Opened at 98.57, high 98.74, low 98.11, closed at 98.31. Daily loss of -0.26 (-0.26%), range 0.63.
+S&P 500: Opened at 6,881.95, high 6,908.85, low 6,811.05, closed at 6,906.90. Daily gain of +24.95 (+0.36%), range 97.80.
+VIX (Volatility Index): Opened at 16.63, high 17.28, low 15.97, closed at 15.97. Daily loss of -0.66 (-3.97%), range 1.31.
+Gold (XAU/USD): Opened at $4,227.92, high $4,285.70, low $4,203.90, closed at $4,279.40. Daily gain of +51.48 (+1.22%), range 81.80.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 34.59 (neutral). EMA trend: bearish (EMA50: 98.98, EMA200: 99.87). MACD: -0.13, signal: 0.02, histogram: -0.15 (negative). Stochastic: 13.27 (exhaustion near lows).
+S&P 500: RSI: 62.06 (neutral). EMA trend: bullish (EMA50: 6746.38, EMA200: 6393.69). MACD: 39.00, signal: 27.73, histogram: 11.26 (positive). Stochastic: 93.48 (exhaustion near highs).
+VIX: RSI: 34.55 (neutral). EMA trend: bearish (EMA50: 18.59, EMA200: 18.61). MACD: -0.73, signal: -0.41, histogram: -0.32 (negative). Stochastic: 3.40 (exhaustion near lows).
+Gold (XAU/USD): RSI: 67.34 (neutral). EMA trend: bullish (EMA50: 4059.17, EMA200: 3588.87). MACD: 50.12, signal: 46.67, histogram: 3.45 (positive). Stochastic: 86.21 (exhaustion near highs).
+
+2025-12-21 16:49:11
