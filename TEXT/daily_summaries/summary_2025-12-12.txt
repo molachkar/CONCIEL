@@ -52,11 +52,9 @@ r/StockMarket (4 posts):
   • U.S. stocks hit records despite AI-led tech slide
   • Costco tops Wall Street's sales and revenue expectations
 
-r/economics (1 posts):
-  • The Fed just 'Trump-Proofed' Itself With a Unanimous Move to Preempt a Potential Leadership Shakeup
-
-r/geopolitics (3 posts):
+r/geopolitics (4 posts):
   • The US isn’t attacking Venezuela because of drugs — it’s because of minerals
+  • RIP American Tech Dominance
   • The Multipolar Mirage: Why America and China Are the World’s Only Great Powers
   • Ukraine considering troop withdrawal
 
@@ -68,4 +66,4 @@ r/oil (1 posts):
 
 [Total: 10 posts tracked]
 
-2025-12-22 18:06:41
+2025-12-22 19:34:37

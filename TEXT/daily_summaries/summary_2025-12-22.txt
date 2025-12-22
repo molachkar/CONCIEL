@@ -1,22 +1,22 @@
 December 22, 2025
 
 MARKET DATA:
-US Dollar Index (DXY): Opened at 98.27, high 98.30, low 97.86, closed at 97.95. Daily loss of -0.32 (-0.33%), range 0.44. 30-day range: 97.49 - 100.31.
-S&P 500: Opened at 6,852.64, high 6,879.75, low 6,846.35, closed at 6,876.93. Daily gain of +24.29 (+0.35%), range 33.40. 30-day range: 6,507.35 - 6,911.40.
-VIX (Volatility Index): Opened at 17.13, high 17.18, low 16.82, closed at 16.87. Daily loss of -0.26 (-1.52%), range 0.36. 30-day range: 15.87 - 23.37.
-Gold (XAU/USD): Opened at $4,338.90, high $4,441.95, low $4,336.64, closed at $4,437.48. Daily gain of +98.58 (+2.27%), range 105.31. 30-day range: 3,997.66 - 4,441.95.
+US Dollar Index (DXY): Opened at 98.27, high 98.30, low 97.84, closed at 97.96. Daily loss of -0.31 (-0.32%), range 0.46. 30-day range: 97.49 - 100.31.
+S&P 500: Opened at 6,852.64, high 6,882.45, low 6,846.35, closed at 6,876.80. Daily gain of +24.16 (+0.35%), range 36.10. 30-day range: 6,507.35 - 6,911.40.
+VIX (Volatility Index): Opened at 17.13, high 17.18, low 16.82, closed at 17.00. Daily loss of -0.13 (-0.76%), range 0.36. 30-day range: 15.87 - 23.37.
+Gold (XAU/USD): Opened at $4,338.90, high $4,441.95, low $4,336.64, closed at $4,435.82. Daily gain of +96.92 (+2.23%), range 105.31. 30-day range: 3,997.66 - 4,441.95.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 36.15 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.74). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 32.80 (neutral).
-S&P 500: RSI: 57.39 (neutral). EMA trend: bullish (EMA50: 6761.89, EMA200: 6421.78). MACD: 17.12, signal: 20.51, histogram: -3.39 (negative). Stochastic: 56.03 (neutral).
-VIX: RSI: 42.73 (neutral). EMA trend: bearish (EMA50: 18.32, EMA200: 18.53). MACD: -0.46, signal: -0.50, histogram: 0.03 (positive). Stochastic: 53.15 (neutral).
-Gold (XAU/USD): RSI: 78.30 (overbought). EMA trend: bullish (EMA50: 4127.37, EMA200: 3639.39). MACD: 72.23, signal: 60.34, histogram: 11.89 (positive). Stochastic: 86.89 (exhaustion near highs).
+Dollar Index (DXY): RSI: 36.29 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.74). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 33.01 (neutral).
+S&P 500: RSI: 57.38 (neutral). EMA trend: bullish (EMA50: 6761.88, EMA200: 6421.78). MACD: 17.11, signal: 20.51, histogram: -3.40 (negative). Stochastic: 56.01 (neutral).
+VIX: RSI: 43.38 (neutral). EMA trend: bearish (EMA50: 18.33, EMA200: 18.53). MACD: -0.45, signal: -0.50, histogram: 0.04 (positive). Stochastic: 54.62 (neutral).
+Gold (XAU/USD): RSI: 78.21 (overbought). EMA trend: bullish (EMA50: 4127.30, EMA200: 3639.38). MACD: 72.10, signal: 60.31, histogram: 11.79 (positive). Stochastic: 86.69 (exhaustion near highs).
 
 ECONOMIC EVENTS:
-At 19:00, USD 2-Year Note Auction was released.
+At 19:00, USD 2-Year Note Auction was released. Actual: 3.499% and rising from previous 3.489%.
 
 FUNDAMENTALS:
-GLD ETF: closed at $408.02, volume 7,868,335. IAU ETF: closed at $83.56, volume 3,543,074.
+GLD ETF: closed at $407.98, volume 9,484,153. IAU ETF: closed at $83.55, volume 4,820,048.
 
 NEWS HIGHLIGHTS:
 
@@ -38,19 +38,24 @@ r/Gold (2 posts):
   • Gold shatters USD 4400 per ounce mark !
   • Gold hits all-time high of above $4,395 marking its best year since 1979 with a 68% gain.
 
-r/StockMarket (2 posts):
+r/StockMarket (3 posts):
+  • Why gold and tech stocks are rallying at the same time
   • Nvidia plans 40,000–80,000 H200 AI chips to China by mid-February pending approval
   • UK stocks outperformed Wall Street this year — and investors see more upside ahead in 2026
 
-r/economics (1 posts):
+r/economics (2 posts):
+  • Fed Risks Recession Without More Interest Rate Cuts, Miran Says
   • Voters in Hamburg have rejected universal basic income. Many economists would agree with them
 
 r/economy (2 posts):
   • Record-high gold &amp; silver prices are a vote of No Confidence in the Fed &amp; its monetary malpractice
   • China reduces US Treasury holdings to lowest level since 2008 over concerns about sustainability of the US federal debt
 
-r/europe (16 posts):
+r/europe (19 posts):
+  • Sovereignty of Kingdom of Denmark must be preserved, EU spokesperson says
   • Russia ‘ready to legally confirm it has no intention of attacking EU or Nato’ – as it happened
+  • Poland launches app for finding nearest bomb shelter
+  • US tariffs hit German car industry, threatening EU’s export-driven economy
   • Denmark to summon US ambassador following Greenland envoy appointment
   • ‘Teach your daughter to speak Polish’: Ukrainians in Poland face growing resentment
   • British companies lose £80m after piling into Bitcoin
@@ -82,10 +87,14 @@ r/wallstreetbets (7 posts):
   • Key data for the coming week
   • Dark Horse Picks for 2026
 
-r/worldnews (19 posts):
+r/worldnews (23 posts):
+  • Britons poorer than they were in 2019, as living standards continue to fall
+  • “Catastrophic consequences”: Russia warns of nuclear escalation, accusing NATO of pushing world toward dangerous threshold
+  • Russia Develops Area-Effect Weapon to Destroy Starlink Satellites, Intelligence Warns
   • ‘To make Greenland a part of the U.S.’: Trump appoints new special envoy
   • China hits EU dairy products with provisional duties up to 42.7%
   • France to build new nuclear carrier replacing Charles de Gaulle
+  • Bennett on Qatar-gate: 'The most serious betrayal in Israel's history'
   • Russia could support China attack on Taiwan: Taiwan security chief
   • Russia sentences 19-year-old woman to nearly three years in a penal colony after poetic anti-war protest
   • China says US seizure of ships 'serious violation' of international law
@@ -103,6 +112,6 @@ r/worldnews (19 posts):
   • Israeli FM calls on Jews to move to Israel after Bondi shooting attack
   • Ukrainian and European officials had ‘productive’ talks on ending war, US envoy says
 
-[Total: 52 posts tracked]
+[Total: 61 posts tracked]
 
-2025-12-22 18:06:41
+2025-12-22 19:34:37

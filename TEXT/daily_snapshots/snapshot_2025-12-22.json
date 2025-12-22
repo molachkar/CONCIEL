@@ -1,20 +1,20 @@
 {
   "date": "2025-12-22",
-  "snapshot_generated_at": "2025-12-22T18:06:31.246914",
+  "snapshot_generated_at": "2025-12-22T19:34:37.123419",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4338.9,
       "XAUUSD_HIGH": 4441.95,
       "XAUUSD_LOW": 4336.64,
-      "XAUUSD_CLOSE": 4437.48,
+      "XAUUSD_CLOSE": 4435.82,
       "XAUUSD_30D_HIGH": 4441.95,
       "XAUUSD_30D_HIGH_DATE": "2025-12-22 00:00:00",
       "XAUUSD_30D_LOW": 3997.66,
       "XAUUSD_30D_LOW_DATE": "2025-11-18 00:00:00",
       "USA500.IDX_OPEN": 6852.64,
-      "USA500.IDX_HIGH": 6879.75,
+      "USA500.IDX_HIGH": 6882.45,
       "USA500.IDX_LOW": 6846.35,
-      "USA500.IDX_CLOSE": 6876.93,
+      "USA500.IDX_CLOSE": 6876.8,
       "USA500.IDX_30D_HIGH": 6911.4,
       "USA500.IDX_30D_HIGH_DATE": "2025-12-12 00:00:00",
       "USA500.IDX_30D_LOW": 6507.35,
@@ -22,55 +22,55 @@
       "VOL.IDX_OPEN": 17.13,
       "VOL.IDX_HIGH": 17.18,
       "VOL.IDX_LOW": 16.82,
-      "VOL.IDX_CLOSE": 16.87,
+      "VOL.IDX_CLOSE": 17.0,
       "VOL.IDX_30D_HIGH": 23.37,
       "VOL.IDX_30D_HIGH_DATE": "2025-11-21 00:00:00",
       "VOL.IDX_30D_LOW": 15.87,
       "VOL.IDX_30D_LOW_DATE": "2025-12-12 00:00:00",
       "DOLLAR.IDX_OPEN": 98.27,
       "DOLLAR.IDX_HIGH": 98.3,
-      "DOLLAR.IDX_LOW": 97.86,
-      "DOLLAR.IDX_CLOSE": 97.95,
+      "DOLLAR.IDX_LOW": 97.84,
+      "DOLLAR.IDX_CLOSE": 97.96,
       "DOLLAR.IDX_30D_HIGH": 100.31,
       "DOLLAR.IDX_30D_HIGH_DATE": "2025-11-21 00:00:00",
       "DOLLAR.IDX_30D_LOW": 97.49,
       "DOLLAR.IDX_30D_LOW_DATE": "2025-12-16 00:00:00"
     },
     "technicals": {
-      "XAUUSD_RSI": 78.3,
+      "XAUUSD_RSI": 78.21,
       "XAUUSD_RSI_STATUS": "Overbought",
-      "XAUUSD_EMA50": 4127.37,
-      "XAUUSD_EMA200": 3639.39,
+      "XAUUSD_EMA50": 4127.3,
+      "XAUUSD_EMA200": 3639.38,
       "XAUUSD_EMA_TREND": "Bullish",
-      "XAUUSD_MACD": 72.23,
-      "XAUUSD_MACD_SIGNAL": 60.34,
-      "XAUUSD_MACD_HIST": 11.89,
-      "XAUUSD_STOCH_K": 98.36,
-      "XAUUSD_STOCH_D": 86.89,
+      "XAUUSD_MACD": 72.1,
+      "XAUUSD_MACD_SIGNAL": 60.31,
+      "XAUUSD_MACD_HIST": 11.79,
+      "XAUUSD_STOCH_K": 97.75,
+      "XAUUSD_STOCH_D": 86.69,
       "XAUUSD_STOCH_STATUS": "Exhaustion Near Highs",
-      "USA500.IDX_RSI": 57.39,
+      "USA500.IDX_RSI": 57.38,
       "USA500.IDX_RSI_STATUS": "Neutral",
-      "USA500.IDX_EMA50": 6761.89,
+      "USA500.IDX_EMA50": 6761.88,
       "USA500.IDX_EMA200": 6421.78,
       "USA500.IDX_EMA_TREND": "Bullish",
-      "USA500.IDX_MACD": 17.12,
+      "USA500.IDX_MACD": 17.11,
       "USA500.IDX_MACD_SIGNAL": 20.51,
-      "USA500.IDX_MACD_HIST": -3.39,
-      "USA500.IDX_STOCH_K": 82.24,
-      "USA500.IDX_STOCH_D": 56.03,
+      "USA500.IDX_MACD_HIST": -3.4,
+      "USA500.IDX_STOCH_K": 82.17,
+      "USA500.IDX_STOCH_D": 56.01,
       "USA500.IDX_STOCH_STATUS": "Neutral",
-      "VOL.IDX_RSI": 42.73,
+      "VOL.IDX_RSI": 43.38,
       "VOL.IDX_RSI_STATUS": "Neutral",
-      "VOL.IDX_EMA50": 18.32,
+      "VOL.IDX_EMA50": 18.33,
       "VOL.IDX_EMA200": 18.53,
       "VOL.IDX_EMA_TREND": "Bearish",
-      "VOL.IDX_MACD": -0.46,
+      "VOL.IDX_MACD": -0.45,
       "VOL.IDX_MACD_SIGNAL": -0.5,
-      "VOL.IDX_MACD_HIST": 0.03,
-      "VOL.IDX_STOCH_K": 33.78,
-      "VOL.IDX_STOCH_D": 53.15,
+      "VOL.IDX_MACD_HIST": 0.04,
+      "VOL.IDX_STOCH_K": 38.18,
+      "VOL.IDX_STOCH_D": 54.62,
       "VOL.IDX_STOCH_STATUS": "Neutral",
-      "DOLLAR.IDX_RSI": 36.15,
+      "DOLLAR.IDX_RSI": 36.29,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.75,
       "DOLLAR.IDX_EMA200": 99.74,
@@ -78,22 +78,22 @@
       "DOLLAR.IDX_MACD": -0.34,
       "DOLLAR.IDX_MACD_SIGNAL": -0.25,
       "DOLLAR.IDX_MACD_HIST": -0.09,
-      "DOLLAR.IDX_STOCH_K": 25.57,
-      "DOLLAR.IDX_STOCH_D": 32.8,
+      "DOLLAR.IDX_STOCH_K": 26.18,
+      "DOLLAR.IDX_STOCH_D": 33.01,
       "DOLLAR.IDX_STOCH_STATUS": "Neutral"
     },
     "fundamentals": {
-      "GLD_CLOSE": 408.02,
-      "GLD_VOLUME": 7868335,
-      "IAU_CLOSE": 83.56,
-      "IAU_VOLUME": 3543074
+      "GLD_CLOSE": 407.98,
+      "GLD_VOLUME": 9484153,
+      "IAU_CLOSE": 83.55,
+      "IAU_VOLUME": 4820048
     },
     "economic_events": [
       {
         "time": "19:00",
         "currency": "USD",
         "event": "2-Year Note Auction",
-        "actual": "",
+        "actual": "3.499%",
         "forecast": "",
         "previous": "3.489%"
       }
@@ -127,6 +127,22 @@
     ],
     "reddit": [
       {
+        "title": "Britons poorer than they were in 2019, as living standards continue to fall",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Sovereignty of Kingdom of Denmark must be preserved, EU spokesperson says",
+        "source": "r/europe"
+      },
+      {
+        "title": "“Catastrophic consequences”: Russia warns of nuclear escalation, accusing NATO of pushing world toward dangerous threshold",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Russia Develops Area-Effect Weapon to Destroy Starlink Satellites, Intelligence Warns",
+        "source": "r/worldnews"
+      },
+      {
         "title": "‘To make Greenland a part of the U.S.’: Trump appoints new special envoy",
         "source": "r/worldnews"
       },
@@ -135,8 +151,24 @@
         "source": "r/europe"
       },
       {
+        "title": "Fed Risks Recession Without More Interest Rate Cuts, Miran Says",
+        "source": "r/economics"
+      },
+      {
+        "title": "Why gold and tech stocks are rallying at the same time",
+        "source": "r/StockMarket"
+      },
+      {
         "title": "WSB 2025: Year in Review (with sound) 🥂",
         "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Poland launches app for finding nearest bomb shelter",
+        "source": "r/europe"
+      },
+      {
+        "title": "US tariffs hit German car industry, threatening EU’s export-driven economy",
+        "source": "r/europe"
       },
       {
         "title": "Denmark to summon US ambassador following Greenland envoy appointment",
@@ -161,6 +193,10 @@
       {
         "title": "British companies lose £80m after piling into Bitcoin",
         "source": "r/europe"
+      },
+      {
+        "title": "Bennett on Qatar-gate: 'The most serious betrayal in Israel's history'",
+        "source": "r/worldnews"
       },
       {
         "title": "Daily Discussion Thread for December 22, 2025",

@@ -1,5 +1,5 @@
 {
-  "collection_date": "2025-12-22 18:01:33",
+  "collection_date": "2025-12-22 19:31:58",
   "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
   "#DAILY_DATA": "Last 30 days, chronological order (oldest to newest)",
   "TREASURY_10Y": [
@@ -262,8 +262,8 @@
     },
     {
       "date": "2025-12-22",
-      "close": 408.02,
-      "volume": 7868335
+      "close": 407.98,
+      "volume": 9484153
     }
   ],
   "GLD_END_DATE": "2025-12-22",
@@ -365,8 +365,8 @@
     },
     {
       "date": "2025-12-22",
-      "close": 83.56,
-      "volume": 3543074
+      "close": 83.55,
+      "volume": 4820048
     }
   ],
   "IAU_END_DATE": "2025-12-22",
