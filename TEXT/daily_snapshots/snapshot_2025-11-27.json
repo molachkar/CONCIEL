@@ -1,6 +1,6 @@
 {
   "date": "2025-11-27",
-  "snapshot_generated_at": "2025-12-21T16:44:08.255832",
+  "snapshot_generated_at": "2025-12-22T18:06:31.174916",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4164.28,
@@ -68,52 +68,6 @@
     },
     "fundamentals": {
       "HY_CREDIT_SPREAD": 3.0
-    },
-    "reddit": [
-      {
-        "title": "Consideration of residence fees \"up to 300,000 yen for PR, up to 100,000 yen for visa renewals”The government will also tighten naturalization requirements.",
-        "source": "r/japan"
-      },
-      {
-        "title": "Spat With China Becomes an Asset for Japan’s New Leader",
-        "source": "r/japan"
-      },
-      {
-        "title": "Trump ‘urged Japanese PM not to provoke China over Taiwan’",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "FT - The dark side of Japanese convenience stores",
-        "source": "r/japan"
-      },
-      {
-        "title": "European markets when the US has a day off…",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Britain is about to unlock Russia's dirty money - here's how it could be used",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "The report claiming that U.S. President Trump advised Japan regarding Taiwan is not true, the Chief Cabinet Secretary said, denying the story.",
-        "source": "r/japan"
-      },
-      {
-        "title": "Japan needs to end its dangerous debt delusion",
-        "source": "r/japan"
-      },
-      {
-        "title": "China's tech giants move AI model training overseas to access Nvidia chips, FT reports",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Asahi says more than 1.5m customers' data leaked in cyber-attack",
-        "source": "r/japan"
-      },
-      {
-        "title": "Trump, After Call With China’s Xi, Told Tokyo to Lower the Volume on Taiwan",
-        "source": "r/japan"
-      }
-    ]
+    }
   }
 }

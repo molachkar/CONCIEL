@@ -1,6 +1,6 @@
 {
   "date": "2025-12-18",
-  "snapshot_generated_at": "2025-12-21T16:44:08.325575",
+  "snapshot_generated_at": "2025-12-22T18:06:31.234810",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4339.71,
@@ -65,6 +65,295 @@
       "DOLLAR.IDX_STOCH_K": 29.75,
       "DOLLAR.IDX_STOCH_D": 22.27,
       "DOLLAR.IDX_STOCH_STATUS": "Neutral"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.12,
+      "HY_CREDIT_SPREAD": 2.95,
+      "GLD_CLOSE": 398.57,
+      "GLD_VOLUME": 11837600,
+      "IAU_CLOSE": 81.63,
+      "IAU_VOLUME": 8053100,
+      "REAL_RATE": 1.12
+    },
+    "economic_events": [
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core CPI (YoY)  (Nov)",
+        "actual": "2.6%",
+        "forecast": "3.0%",
+        "previous": "3.0%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "CPI (YoY)  (Nov)",
+        "actual": "2.7%",
+        "forecast": "3.1%",
+        "previous": "3.0%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "224K",
+        "forecast": "224K",
+        "previous": "237K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Philadelphia Fed Manufacturing Index  (Dec)",
+        "actual": "-10.2",
+        "forecast": "2.5",
+        "previous": "-1.7"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Philly Fed Employment  (Dec)",
+        "actual": "12.9",
+        "forecast": "",
+        "previous": "6.0"
+      },
+      {
+        "time": "22:00",
+        "currency": "USD",
+        "event": "TIC Net Long-Term Transactions  (Oct)",
+        "actual": "17.5B",
+        "forecast": "122.7B",
+        "previous": "173.2B"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "2 ETFs That Are Good Bets To Beat the S&P 500 in 2026",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "Micron crushes earnings, calming markets and helping boost bitcoin back above $87,000",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "How To Cash In On Vanguard's Call For The Decade's Top Asset",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rebounds On Surprise CPI Inflation Data; AI Stock Surges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises On Surprise Inflation Data; Nvidia, Tesla Rally (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Gold Gearing Up for Another Solid Run? ETFs to Ride the Trend",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow, Small Caps Rise On Surprise Inflation Data; Nvidia, Tesla Rally (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "CPI, Jobless Claims in Very Agreeable Ranges",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Indexes Rise; Nvidia, Tesla Rally But Some Electronics Firms Struggle (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Vanguards Other Index ETF Has Absolutely Destroyed SPY and VOO This Year | VXUS",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Indexes Rise; Nvidia, Tesla Rally; This Nuke Play Sets Up (Live Coverage)",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "The stock market right now is poised for a breakout - or a breakup",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Settle Higher on Upbeat Tech Outlook and Cooling Inflation",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "ETF Fund Flows: IVV Gains $34 Billion Ahead of CPI",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Gig Economy Attracting More Workers As Layoffs Increase, Goldman Sachs Report Says",
+        "source": "r/economics"
+      },
+      {
+        "title": "Don't miss the macro shift in the Cannabis sector: 280E is dead and the Hemp loophole is closed.",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Trump Media Technology Group shares surged 40% today. ​​It seems the blonde guy is back to playing the stock market again.",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Japan needs to possess nuclear weapons, prime minister's office source says",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "What Are Your Moves Tomorrow, December 19, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Apple spent $750B on buybacks for 10yrs and Tim Cook is overrated.",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation",
+        "source": "r/economics"
+      },
+      {
+        "title": "The age of AI has been full of predictions of mass technology-driven unemployment. A 2013 report by the Oxford FHI posited that nearly half of U.S. employment at the time was “potentially automatable” over the next “decade or two.” A decade later, however, there were 17 million more jobs in the U.S.",
+        "source": "r/economics"
+      },
+      {
+        "title": "Weed loss porn numbers higher than I was when I bought",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "The $8 Billion Black Market for Venezuelan Oil Is Suddenly Closing Down",
+        "source": "r/oil"
+      },
+      {
+        "title": "Fact Check Dismantles Trump’s Latest Claim That Prices Are “Falling Fast” - TLP Media",
+        "source": "r/economics"
+      },
+      {
+        "title": "Trump Media is merging with fusion power company TAE Technologies in $6B deal",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Sold a house got to a million and lost it all, now I owe the IRS 179k and I owe creditors 100k do not do options if you adhd",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "US Arms Sale to Taiwan of $11B Sparks China Fury, Beijing Vows to Take 'Necessary Measures'",
+        "source": "r/China"
+      },
+      {
+        "title": "Nothing more degenerate than making a small salary writing $RDDT puts",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Increased $NBIS call position to $80,000",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Pretty much 0 CPI data for October and November but we are meant to believe it's 2.7%",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "'Money today or blood tomorrow': The stark choice Europe faces over Russian assets",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "US prices continued to rise despite Trump claims they are ‘rapidly’ falling",
+        "source": "r/economics"
+      },
+      {
+        "title": "Real average weekly earnings are up 0.8% over the last year (+3.5% avg hourly earnings against +2.7% inflation)",
+        "source": "r/economics"
+      },
+      {
+        "title": "[Breaking] - US Inflation Data for Dec measured at 2.7%",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Consumer Price Index News Releases (CPI for Nov and Oct only represented gas and autos)",
+        "source": "r/economics"
+      },
+      {
+        "title": "November consumer prices rose at a 2.7% annual rate, lower than expected, delayed data shows",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "CPI rose 2.7% for the 12 months ending November, Much Less than the expected 3.1%",
+        "source": "r/stocks"
+      },
+      {
+        "title": "CPI (inflation) falls to 2.7% from 3.0% in September 2025",
+        "source": "r/economics"
+      },
+      {
+        "title": "Trump Media announces $6 billion merger with fusion company TAE Technologies; DJT stock soars 25%",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Furious Putin is trapped in a gilded cage. Only death will free him",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Russia Will Be Paying for Its War on Ukraine Long After It Ends",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Trump said his tariffs would reduce the trade deficit and bring back manufacturing. Here's what the data show.",
+        "source": "r/economics"
+      },
+      {
+        "title": "Trump Media to Merge With TAE Tech in $6 Billion Deal",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Activist Elliott takes over $1 Billion stake in LULU",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Daily Discussion Thread for December 18, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "China Has Reportedly Built Its First EUV Machine Prototype, Marking a Semiconductor Breakthrough the U.S. Has Feared All Along",
+        "source": "r/China"
+      },
+      {
+        "title": "How do people earn so much in so little time whilst investing?",
+        "source": "r/investing"
+      },
+      {
+        "title": "Historical footage: Japanese troops entering the capital of China during WWII",
+        "source": "r/China"
+      },
+      {
+        "title": "Tighter residency rules take shape as Japan gov't mulls stricter foreigner policies - The Mainichi",
+        "source": "r/japan"
+      },
+      {
+        "title": "Thought I was investing in 'AI Infrastructure', turns out I was just providing exit liquidity. Rate my bags.",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "POET: The Photonic Solution to the SSD &amp; RAM Shortage",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "UK police plan crackdown on antisemitic chants, including ‘Globalize the intifada’",
+        "source": "r/geopolitics"
+      }
+    ]
   }
 }

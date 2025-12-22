@@ -12,4 +12,55 @@ S&P 500: RSI: 62.06 (neutral). EMA trend: bullish (EMA50: 6746.38, EMA200: 6393.
 VIX: RSI: 34.55 (neutral). EMA trend: bearish (EMA50: 18.59, EMA200: 18.61). MACD: -0.73, signal: -0.41, histogram: -0.32 (negative). Stochastic: 3.40 (exhaustion near lows).
 Gold (XAU/USD): RSI: 67.34 (neutral). EMA trend: bullish (EMA50: 4059.17, EMA200: 3588.87). MACD: 50.12, signal: 46.67, histogram: 3.45 (positive). Stochastic: 86.21 (exhaustion near highs).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 14:30, USD Exports  (Sep) was released. Actual: 289.30B and rising from previous 280.80B.
+At 14:30, USD Imports  (Sep) was released. Actual: 342.10B and rising from previous 340.40B.
+At 14:30, USD Initial Jobless Claims was released. Actual: 236K, beating forecast of 220K and rising from previous 192K.
+At 14:30, USD Trade Balance  (Sep) was released. Actual: -52.80B, beating forecast of -62.50B and rising from previous -59.30B.
+At 19:00, USD 30-Year Bond Auction was released. Actual: 4.773% and rising from previous 4.694%.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.14%. High-yield credit spread: 2.88%. GLD ETF: closed at $393.24, volume 11,240,600. IAU ETF: closed at $80.54, volume 13,195,700.
+
+NEWS HIGHLIGHTS:
+
+GOLD (4 items):
+  • Gold ETFs in the Spotlight as 2025 Draws to a Close [GLD]
+  • Theres a Shiny New Gold Mining ETF on Wall Street, and a Big, Growing Problem for Retail Investors [GDX]
+  • Dow Jones, Russell 2000 Hit Highs; Broadcom Sees AI Chip Sales Doubling [GDX]
+  • Daily ETF Flows: Big Inflows For GLDM [GLDM]
+
+MARKET (14 items):
+  • Stock Market Today: Dow Wobbles With Jobless Claims On The Way; Oracle Plunges On Earnings (Live Coverage) [SPY]
+  • The Smartest Index ETF to Buy With $2,000 Right Now [QQQ]
+  • Stock Market Today: Dow Turns Lower On Surprise Jobless Claims Data; Oracle Plunges On Earnings (Live Coverage) [SPY]
+  • Stock Market Today: Dow Rises On Surprise Jobless Claims Data; Oracle Plunges On Earnings (Live Coverage) [SPY]
+  • JEPQs 10% Dividend Is Legendary, But At What Cost? [QQQ]
+  • 3 Dividend ETFs to Buy and Hold for Life if the Market Crashes [QQQ]
+  • This 1 Unusually Active IWM Put Option Screams Covered Strangle [SPY]
+  • FEZ Smashed VOO With 2x The Return, Is It Just Warming Up? [SPY]
+  • Crypto Market 2026 Predictions: Which Coins Will 10x and Which Will Crash? [SPY]
+  • Strategy Falls Ahead Of Annual Nasdaq 100 Change; The Stakes For Bitcoin [QQQ]
+  • Too Many People Just Buy SPY, These Are The ETFs Id Own Instead [SPY]
+  • The Dow and S&P 500 are soaring - but this unloved stock index is absolutely roaring [SPY]
+  • 1 Tech ETF to Buy Hand Over Fist and 1 to Avoid in 2026 [QQQ]
+  • Tracking the Top-Performing Russell 2000 Stocks Against the Zacks Rank [IWM]
+
+[Total: 18 news items]
+
+SOCIAL SENTIMENT:
+
+r/StockMarket (3 posts):
+  • The Stock Market Flashes a Warning Seen Twice in 40 Years, and the Federal Reserve Has Bad News About President Trump's Tariffs
+  • Trump administration to overhaul financial stability watchdog to focus on economic growth: Bessent
+  • Disney making $1 billion investment in OpenAI, will allow characters on Sora AI video generator
+
+r/japan (4 posts):
+  • US bombers join Japanese jets in show of force after China-Russia drills, Tokyo says
+  • GAINAX closes its doors after nearly 42 years; Hideaki Anno announces completion of bankruptcy proceedings
+  • Japan: Hundreds get car driving licences suspended for drink cycling
+  • Japanese consumers going cold on traditional hot pot 'oden' as prices rise
+
+[Total: 7 posts tracked]
+
+2025-12-22 18:06:41

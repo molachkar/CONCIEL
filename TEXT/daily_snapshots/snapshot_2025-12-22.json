@@ -1,0 +1,339 @@
+{
+  "date": "2025-12-22",
+  "snapshot_generated_at": "2025-12-22T18:06:31.246914",
+  "data": {
+    "market_data": {
+      "XAUUSD_OPEN": 4338.9,
+      "XAUUSD_HIGH": 4441.95,
+      "XAUUSD_LOW": 4336.64,
+      "XAUUSD_CLOSE": 4437.48,
+      "XAUUSD_30D_HIGH": 4441.95,
+      "XAUUSD_30D_HIGH_DATE": "2025-12-22 00:00:00",
+      "XAUUSD_30D_LOW": 3997.66,
+      "XAUUSD_30D_LOW_DATE": "2025-11-18 00:00:00",
+      "USA500.IDX_OPEN": 6852.64,
+      "USA500.IDX_HIGH": 6879.75,
+      "USA500.IDX_LOW": 6846.35,
+      "USA500.IDX_CLOSE": 6876.93,
+      "USA500.IDX_30D_HIGH": 6911.4,
+      "USA500.IDX_30D_HIGH_DATE": "2025-12-12 00:00:00",
+      "USA500.IDX_30D_LOW": 6507.35,
+      "USA500.IDX_30D_LOW_DATE": "2025-11-21 00:00:00",
+      "VOL.IDX_OPEN": 17.13,
+      "VOL.IDX_HIGH": 17.18,
+      "VOL.IDX_LOW": 16.82,
+      "VOL.IDX_CLOSE": 16.87,
+      "VOL.IDX_30D_HIGH": 23.37,
+      "VOL.IDX_30D_HIGH_DATE": "2025-11-21 00:00:00",
+      "VOL.IDX_30D_LOW": 15.87,
+      "VOL.IDX_30D_LOW_DATE": "2025-12-12 00:00:00",
+      "DOLLAR.IDX_OPEN": 98.27,
+      "DOLLAR.IDX_HIGH": 98.3,
+      "DOLLAR.IDX_LOW": 97.86,
+      "DOLLAR.IDX_CLOSE": 97.95,
+      "DOLLAR.IDX_30D_HIGH": 100.31,
+      "DOLLAR.IDX_30D_HIGH_DATE": "2025-11-21 00:00:00",
+      "DOLLAR.IDX_30D_LOW": 97.49,
+      "DOLLAR.IDX_30D_LOW_DATE": "2025-12-16 00:00:00"
+    },
+    "technicals": {
+      "XAUUSD_RSI": 78.3,
+      "XAUUSD_RSI_STATUS": "Overbought",
+      "XAUUSD_EMA50": 4127.37,
+      "XAUUSD_EMA200": 3639.39,
+      "XAUUSD_EMA_TREND": "Bullish",
+      "XAUUSD_MACD": 72.23,
+      "XAUUSD_MACD_SIGNAL": 60.34,
+      "XAUUSD_MACD_HIST": 11.89,
+      "XAUUSD_STOCH_K": 98.36,
+      "XAUUSD_STOCH_D": 86.89,
+      "XAUUSD_STOCH_STATUS": "Exhaustion Near Highs",
+      "USA500.IDX_RSI": 57.39,
+      "USA500.IDX_RSI_STATUS": "Neutral",
+      "USA500.IDX_EMA50": 6761.89,
+      "USA500.IDX_EMA200": 6421.78,
+      "USA500.IDX_EMA_TREND": "Bullish",
+      "USA500.IDX_MACD": 17.12,
+      "USA500.IDX_MACD_SIGNAL": 20.51,
+      "USA500.IDX_MACD_HIST": -3.39,
+      "USA500.IDX_STOCH_K": 82.24,
+      "USA500.IDX_STOCH_D": 56.03,
+      "USA500.IDX_STOCH_STATUS": "Neutral",
+      "VOL.IDX_RSI": 42.73,
+      "VOL.IDX_RSI_STATUS": "Neutral",
+      "VOL.IDX_EMA50": 18.32,
+      "VOL.IDX_EMA200": 18.53,
+      "VOL.IDX_EMA_TREND": "Bearish",
+      "VOL.IDX_MACD": -0.46,
+      "VOL.IDX_MACD_SIGNAL": -0.5,
+      "VOL.IDX_MACD_HIST": 0.03,
+      "VOL.IDX_STOCH_K": 33.78,
+      "VOL.IDX_STOCH_D": 53.15,
+      "VOL.IDX_STOCH_STATUS": "Neutral",
+      "DOLLAR.IDX_RSI": 36.15,
+      "DOLLAR.IDX_RSI_STATUS": "Neutral",
+      "DOLLAR.IDX_EMA50": 98.75,
+      "DOLLAR.IDX_EMA200": 99.74,
+      "DOLLAR.IDX_EMA_TREND": "Bearish",
+      "DOLLAR.IDX_MACD": -0.34,
+      "DOLLAR.IDX_MACD_SIGNAL": -0.25,
+      "DOLLAR.IDX_MACD_HIST": -0.09,
+      "DOLLAR.IDX_STOCH_K": 25.57,
+      "DOLLAR.IDX_STOCH_D": 32.8,
+      "DOLLAR.IDX_STOCH_STATUS": "Neutral"
+    },
+    "fundamentals": {
+      "GLD_CLOSE": 408.02,
+      "GLD_VOLUME": 7868335,
+      "IAU_CLOSE": 83.56,
+      "IAU_VOLUME": 3543074
+    },
+    "economic_events": [
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "2-Year Note Auction",
+        "actual": "",
+        "forecast": "",
+        "previous": "3.489%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "QQQ to Become an Open-End Fund",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Here Are the Top ETFs Holding Oracle after Its Nosedive",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "The Safest Way to Bet on the Santa Claus Rally",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Silent Time Bomb Threatens 6 AI S&P 500 Stocks Loading Up With Debt",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Will Santa Claus Rally Set In for 2025? 4 Best ETF Areas to Explore",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "‘To make Greenland a part of the U.S.’: Trump appoints new special envoy",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Russia ‘ready to legally confirm it has no intention of attacking EU or Nato’ – as it happened",
+        "source": "r/europe"
+      },
+      {
+        "title": "WSB 2025: Year in Review (with sound) 🥂",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Denmark to summon US ambassador following Greenland envoy appointment",
+        "source": "r/europe"
+      },
+      {
+        "title": "China hits EU dairy products with provisional duties up to 42.7%",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "France to build new nuclear carrier replacing Charles de Gaulle",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Nvidia plans 40,000–80,000 H200 AI chips to China by mid-February pending approval",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "‘Teach your daughter to speak Polish’: Ukrainians in Poland face growing resentment",
+        "source": "r/europe"
+      },
+      {
+        "title": "British companies lose £80m after piling into Bitcoin",
+        "source": "r/europe"
+      },
+      {
+        "title": "Daily Discussion Thread for December 22, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Russia could support China attack on Taiwan: Taiwan security chief",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Russia sentences 19-year-old woman to nearly three years in a penal colony after poetic anti-war protest",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "China says US seizure of ships 'serious violation' of international law",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Denmark to summon US ambassador over Trump Greenland envoy appointment",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "US is ‘demolishing its scientific leadership with a wrecking ball,’ says chief EU research diplomat",
+        "source": "r/europe"
+      },
+      {
+        "title": "Trump names Louisiana governor as Greenland special envoy, prompting Danish alarm",
+        "source": "r/europe"
+      },
+      {
+        "title": "This bus line goes from Poland to Czechia to Poland to Germany to Poland and to Czechia again.",
+        "source": "r/europe"
+      },
+      {
+        "title": "China says US seizure of ships ‘serious violation’ of international law",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Why European armies are turning to the Swedish CV90 in large numbers",
+        "source": "r/europe"
+      },
+      {
+        "title": "Longyearbyen, Svalbard was hotter than Madrid this morning",
+        "source": "r/europe"
+      },
+      {
+        "title": "Thanks E-Toro I guess",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "U.S. crude oil closes at lowest level since early 2021 as looming surplus weighs on market",
+        "source": "r/europe"
+      },
+      {
+        "title": "India will never open up dairy sector to free trade, Piyush Goyal says after pact with New Zealand",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "How Europe’s far right used unlabelled AI to win votes — and now writes the rules",
+        "source": "r/europe"
+      },
+      {
+        "title": "Russian general killed by car bomb in Moscow, officials say",
+        "source": "r/europe"
+      },
+      {
+        "title": "Russian general killed in explosion in Moscow, officials say",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Population unable to keep home adequately warm (2024)",
+        "source": "r/europe"
+      },
+      {
+        "title": "Western intelligence suspects Russia is developing new weapon to target Musk's Starlink satellites",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "'Too much regulation, not enough action': Carney rebuffs Trudeau's climate policies | CBC News",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Doctor says I should take profits, I say rockets go up (RKLB)",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Gold shatters USD 4400 per ounce mark !",
+        "source": "r/Gold"
+      },
+      {
+        "title": "Police allege Bondi shooters had ‘tennis ball bomb’ and made IS-inspired video manifesto, court documents reveal",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Anthony Albanese apologises for what Jewish community experienced after Bondi attack",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Gold hits all-time high of above $4,395 marking its best year since 1979 with a 68% gain.",
+        "source": "r/Gold"
+      },
+      {
+        "title": "NZ strikes free trade agreement with India",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1397, Part 1 (Thread )",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Algerian asking for advice about Chinese citizenship and life",
+        "source": "r/China"
+      },
+      {
+        "title": "Record-high gold &amp; silver prices are a vote of No Confidence in the Fed &amp; its monetary malpractice",
+        "source": "r/economy"
+      },
+      {
+        "title": "Gun crackdown and controversial protest laws to be passed in NSW despite Coalition split over firearms",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Global trends favor phone-free schools as Japan still debating action",
+        "source": "r/japan"
+      },
+      {
+        "title": "Voters in Hamburg have rejected universal basic income. Many economists would agree with them",
+        "source": "r/economics"
+      },
+      {
+        "title": "The Netherlands sees more elderly than young people for first time",
+        "source": "r/europe"
+      },
+      {
+        "title": "It’s a beautiful time to believe in space (RKLB)",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "China reduces US Treasury holdings to lowest level since 2008 over concerns about sustainability of the US federal debt",
+        "source": "r/economy"
+      },
+      {
+        "title": "Andrew Tate loses comeback fight in Dubai as pressure grows on Prime Minister Keir Starmer to extradite him to U.K | Tate and his brother Tristan are facing a series of 21 charges in the U.K",
+        "source": "r/europe"
+      },
+      {
+        "title": "Key data for the coming week",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Waymo suspends service in San Francisco after driverless cars cause traffic jams during blackout",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Israeli FM calls on Jews to move to Israel after Bondi shooting attack",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "France formally green lights PA-Ng aircraft carrier production",
+        "source": "r/europe"
+      },
+      {
+        "title": "Ukrainian and European officials had ‘productive’ talks on ending war, US envoy says",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Dark Horse Picks for 2026",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "UK stocks outperformed Wall Street this year — and investors see more upside ahead in 2026",
+        "source": "r/StockMarket"
+      }
+    ]
+  }
+}

@@ -1,6 +1,6 @@
 {
   "date": "2025-12-16",
-  "snapshot_generated_at": "2025-12-21T16:44:08.321241",
+  "snapshot_generated_at": "2025-12-22T18:06:31.227770",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4304.9,
@@ -65,6 +65,394 @@
       "DOLLAR.IDX_STOCH_K": 15.88,
       "DOLLAR.IDX_STOCH_D": 8.39,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.15,
+      "HY_CREDIT_SPREAD": 2.98,
+      "GLD_CLOSE": 395.89,
+      "GLD_VOLUME": 9201600,
+      "IAU_CLOSE": 81.08,
+      "IAU_VOLUME": 6965200
+    },
+    "economic_events": [
+      {
+        "time": "14:15",
+        "currency": "USD",
+        "event": "ADP Employment Change Weekly",
+        "actual": "16.25K",
+        "forecast": "",
+        "previous": "2.75K"
+      },
+      {
+        "time": "14:29",
+        "currency": "USD",
+        "event": "Average Hourly Earnings (MoM)  (Oct)",
+        "actual": "0.4%",
+        "forecast": "",
+        "previous": "0.2%"
+      },
+      {
+        "time": "14:29",
+        "currency": "USD",
+        "event": "Average Hourly Earnings (YoY) (YoY)  (Oct)",
+        "actual": "3.7%",
+        "forecast": "",
+        "previous": "3.8%"
+      },
+      {
+        "time": "14:29",
+        "currency": "USD",
+        "event": "Nonfarm Payrolls  (Oct)",
+        "actual": "-105K",
+        "forecast": "",
+        "previous": "108K"
+      },
+      {
+        "time": "14:29",
+        "currency": "USD",
+        "event": "Private Nonfarm Payrolls  (Oct)",
+        "actual": "52K",
+        "forecast": "",
+        "previous": "104K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Average Hourly Earnings (MoM)  (Nov)",
+        "actual": "0.1%",
+        "forecast": "0.3%",
+        "previous": "0.4%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Average Hourly Earnings (YoY) (YoY)  (Nov)",
+        "actual": "3.5%",
+        "forecast": "",
+        "previous": "3.7%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core Retail Sales (MoM)  (Oct)",
+        "actual": "0.4%",
+        "forecast": "0.2%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Nonfarm Payrolls  (Nov)",
+        "actual": "64K",
+        "forecast": "50K",
+        "previous": "-105K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Participation Rate  (Nov)",
+        "actual": "62.5%",
+        "forecast": "",
+        "previous": "62.4%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Private Nonfarm Payrolls  (Nov)",
+        "actual": "69K",
+        "forecast": "45K",
+        "previous": "52K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Retail Control (MoM)  (Oct)",
+        "actual": "0.8%",
+        "forecast": "0.3%",
+        "previous": "-0.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Retail Sales (MoM)  (Oct)",
+        "actual": "0.0%",
+        "forecast": "0.1%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "U6 Unemployment Rate  (Nov)",
+        "actual": "8.7%",
+        "forecast": "",
+        "previous": "8.0%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Unemployment Rate  (Nov)",
+        "actual": "4.6%",
+        "forecast": "4.5%",
+        "previous": "4.4%"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Manufacturing PMI  (Dec)",
+        "actual": "51.8",
+        "forecast": "52.0",
+        "previous": "52.2"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Composite PMI  (Dec)",
+        "actual": "53.0",
+        "forecast": "53.9",
+        "previous": "54.2"
+      },
+      {
+        "time": "15:45",
+        "currency": "USD",
+        "event": "S&P Global Services PMI  (Dec)",
+        "actual": "52.9",
+        "forecast": "54.0",
+        "previous": "54.1"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Business Inventories (MoM)  (Sep)",
+        "actual": "0.2%",
+        "forecast": "0.1%",
+        "previous": "0.0%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Retail Inventories Ex Auto  (Sep)",
+        "actual": "0.0%",
+        "forecast": "",
+        "previous": "0.0%"
+      },
+      {
+        "time": "18:00",
+        "currency": "USD",
+        "event": "Atlanta Fed GDPNow  (Q4)",
+        "actual": "3.5%",
+        "forecast": "3.5%",
+        "previous": "3.5%"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "55.0K",
+        "forecast": "",
+        "previous": "69.2K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "204.6K",
+        "forecast": "",
+        "previous": "210.3K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "57.4K",
+        "forecast": "",
+        "previous": "46.4K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-155.3K",
+        "forecast": "",
+        "previous": "-147.4K"
+      },
+      {
+        "time": "22:30",
+        "currency": "USD",
+        "event": "API Weekly Crude Oil Stock",
+        "actual": "-9.300M",
+        "forecast": "-2.200M",
+        "previous": "-4.800M"
+      }
+    ],
+    "news": [
+      {
+        "category": "gold",
+        "title": "These Cryptocurrencies Beat the Market by 20% or More in 2025. Should You Buy Them in 2026?",
+        "ticker": "IAU"
+      },
+      {
+        "category": "market",
+        "title": "New to Investing? These 2 ETFs Can Help You Build a Strong Foundation.",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Dips Ahead Of Jobs Report; Palantir, Tesla Drop (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Vanguard Just Revealed Its Surprising Outlook For S&P 500 Stocks",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "VOO and SPY and Good, But DBEU Looks A Lot Better Right Now",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Reverses On Surprise Jobs Report; Palantir, Tesla Drop (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Falls On Surprise Jobs Report; Palantir, Tesla Drop (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Trump Trade: Infosys to be impacted by Trumps $100K H-1B worker fee",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Indexes Mixed On Surprise Jobs Report; Palantir, Tesla Turn Higher (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "volatility",
+        "title": "AI Optimism on Pause? ETFs to Play in the Short Term",
+        "ticker": "VXX"
+      },
+      {
+        "category": "market",
+        "title": "Jobs Come In at +64K in November, Unemployment +4.6%",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Western Digital's Nasdaq-100 Entry Caps Its AI-Driven Comeback",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Crash Is Here: How Bad Can It Get?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Should You Buy the 5 Highest-Paying Dividend Stocks in the Dow Jones Before 2026?",
+        "ticker": "DIA"
+      },
+      {
+        "category": "market",
+        "title": "1 Vanguard ETF I'm Buying in 2026 and Holding Forever",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "Gold Miners' Stocks Are Outrunning Gold. It Won't Last.",
+        "ticker": "GDX"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Settle Mixed on Soft US Economic News",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Daily ETF Flows: GLDM Picks Up Steam",
+        "ticker": "GLDM"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Warner Bros likely to reject $108.4 billion Paramount bid, back Netflix in bidding war, sources say",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "The children's Christmas presents are ready.",
+        "source": "r/SPY"
+      },
+      {
+        "title": "Warner Bros. to Reject Paramount offer on Funding Concerns",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "EU-made combustion cars to comply with 90% emissions reduction by 2035",
+        "source": "r/economics"
+      },
+      {
+        "title": "Russia: US has promised us Ukrainian territory",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "America’s Eyes Are on the Wrong Hemisphere",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "US Oil Futures Drop Below $55 a Barrel for First Time Since 2021",
+        "source": "r/economics"
+      },
+      {
+        "title": "U.S. crude oil drops below $55 a barrel, hits lowest level since early 2021",
+        "source": "r/economics"
+      },
+      {
+        "title": "Zelenskyy: Ukraine Won't Recognize Donbas As Russian, Seeks NATO-Style Guarantees",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "SP500 to be one of the worst G20 performers for 2025",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "US unemployment rate hits four-year high of 4.6%",
+        "source": "r/economics"
+      },
+      {
+        "title": "BUREAU OF LABOR STATISTICS - Employment Situation Nov 2025 (direct link to report)",
+        "source": "r/economics"
+      },
+      {
+        "title": "Mexico approves up to 50% tariffs on China and other countries",
+        "source": "r/economics"
+      },
+      {
+        "title": "Now that the government has stopped minting pennies, retailers and restaurants that tend to do a lot of cash business want the federal government to come up with a standard for rounding.",
+        "source": "r/economics"
+      },
+      {
+        "title": "Why Japan's internet looks weird — unless you live here",
+        "source": "r/japan"
+      },
+      {
+        "title": "Pentagon plan calls for major power shifts within U.S. military",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Fannie, Freddie Quietly Add Billions to Mortgage-Bond Portfolios",
+        "source": "r/economics"
+      },
+      {
+        "title": "EU will be ‘severely damaged for years’ if assets plan fails, says Germany’s Merz",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Intel appoints Trump economic adviser as head of government affairs",
+        "source": "r/StockMarket"
+      }
+    ]
   }
 }

@@ -12,4 +12,52 @@ S&P 500: RSI: 56.20 (neutral). EMA trend: bullish (EMA50: 6733.92, EMA200: 6383.
 VIX: RSI: 42.51 (neutral). EMA trend: bullish (EMA50: 18.78, EMA200: 18.65). MACD: -0.53, signal: -0.25, histogram: -0.28 (negative). Stochastic: 4.32 (exhaustion near lows).
 Gold (XAU/USD): RSI: 60.48 (neutral). EMA trend: bullish (EMA50: 4042.94, EMA200: 3575.44). MACD: 45.82, signal: 45.71, histogram: 0.11 (positive). Stochastic: 73.50 (neutral).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 14:15, USD ADP Employment Change Weekly was released. Actual: 4.75K and rising from previous -13.50K.
+At 16:00, USD JOLTS Job Openings  (Sep) was released. Actual: 7.658M, beating forecast of 7.200M and rising from previous 7.227M.
+At 16:00, USD US Leading Index (MoM)  (Sep) was released. Actual: -0.3%, matching forecast of -0.3%
+At 16:01, USD JOLTS Job Openings  (Oct) was released. Actual: 7.670M and rising from previous 7.658M.
+At 19:00, USD 10-Year Note Auction was released. Actual: 4.175% and rising from previous 4.074%.
+At 21:30, USD CFTC Crude Oil speculative net positions was released. Actual: 74.9K and rising from previous 65.6K.
+At 21:30, USD CFTC Gold speculative net positions was released. Actual: 202.3K and falling from previous 204.7K.
+At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 48.2K and rising from previous 42.3K.
+At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -163.9K and falling from previous -150.1K.
+At 22:30, USD API Weekly Crude Oil Stock was released. Actual: -4.800M, missing forecast of -1.700M and falling from previous -2.480M.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.18%. High-yield credit spread: 2.89%. GLD ETF: closed at $387.40, volume 6,358,700. IAU ETF: closed at $79.34, volume 5,245,200.
+
+NEWS HIGHLIGHTS:
+
+GOLD (1 items):
+  • ETFs That Investors May Consider Amid a Dollar Drag [GLD]
+
+MARKET (7 items):
+  • Stock Market Today: Dow Edges Higher Ahead Of Fed Meeting; Nvidia Rallies On Trump Comments (Live Coverage) [SPY]
+  • Stock Market Today: Dow Wobbles Ahead Of Fed Meeting; Nvidia Rallies On Trump Comments (Live Coverage) [SPY]
+  • Stock Market Today: Dow Up Ahead Of Fed Meeting; Nvidia Falls Despite Trump Comments (Live Coverage) [SPY]
+  • Stock Market Today: Dow Leads Despite Drag From Nvidia; This Cruise Line Stock Sails Higher (Live Coverage) [QQQ]
+  • December FOMC Preview: Rate Cut Priced in but Tone is Everything [IWM]
+  • This Dividend Aristocrat Turned $100k Into $4 Million in 25 Years [QQQ]
+  • Understanding The Concept of Price Action Versus News (News Failure) [QQQ]
+
+[Total: 8 news items]
+
+SOCIAL SENTIMENT:
+
+r/StockMarket (4 posts):
+  • JPMorgan falls 4% after warning 2026 expenses will jump on credit card competition and AI spending
+  • SpaceX to pursue 2026 IPO raising above $30 billion, Bloomberg News reports
+  • Microsoft to invest $17.5 billion in India, CEO Nadella says
+  • Economy is dragging, but the stock market is thriving. Why?
+
+r/japan (2 posts):
+  • Takaichi reiterates Japan claim on Dokdo, vows diplomatic push
+  • Japan rebuffs EU plea to join Russian assets plan
+
+r/oil (1 posts):
+  • Oil Markets Face Supply Glut as Prices Expected to Fall Below $60
+
+[Total: 7 posts tracked]
+
+2025-12-22 18:06:41

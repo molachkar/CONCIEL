@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-21T16:44:08.147347",
+  "generated_at": "2025-12-22T18:06:31.110776",
   "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
   "description": "Monthly inflation and economic indicators",
   "indicators": {
@@ -8,9 +8,13 @@
         {
           "date": "2025-09-01",
           "value": 324.37
+        },
+        {
+          "date": "2025-11-01",
+          "value": 325.03
         }
       ],
-      "end_date": "2025-09-01"
+      "end_date": "2025-11-01"
     },
     "PCE": {
       "data": [
@@ -35,18 +39,30 @@
         {
           "date": "2025-09-01",
           "value": 4.4
+        },
+        {
+          "date": "2025-11-01",
+          "value": 4.6
         }
       ],
-      "end_date": "2025-09-01"
+      "end_date": "2025-11-01"
     },
     "NFP": {
       "data": [
         {
           "date": "2025-09-01",
-          "value": 159626.0
+          "value": 159593.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 159488.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 159552.0
         }
       ],
-      "end_date": "2025-09-01"
+      "end_date": "2025-11-01"
     },
     "FEDFUNDS": {
       "data": [
@@ -82,10 +98,14 @@
       "data": [
         {
           "date": "2025-09-01",
-          "value": 733258.0
+          "value": 732444.0
+        },
+        {
+          "date": "2025-10-01",
+          "value": 732633.0
         }
       ],
-      "end_date": "2025-09-01"
+      "end_date": "2025-10-01"
     },
     "INDUSTRIAL_PROD": {
       "data": [
@@ -95,6 +115,10 @@
         }
       ],
       "end_date": "2025-09-01"
+    },
+    "REAL_RATE": {
+      "value": 1.12,
+      "end_date": "2025-12-18"
     }
   }
 }

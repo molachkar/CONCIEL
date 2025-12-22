@@ -40,51 +40,13 @@ MARKET (7 items):
 
 SOCIAL SENTIMENT:
 
-r/China (1 posts):
-  • China Tells Stats Providers to Halt Home Sales Data Publication After Reports of 41.9% YoY Decline in New Home Sales in October.
-
-r/StockMarket (3 posts):
-  • The ‘S&amp;P 493’ reveals a very different U.S. economy
-  • The powerful year-end rally in U.S. stocks
-  • Costco sues for Trump tariff refunds before Supreme Court rules on if they're illegal
-
-r/economics (10 posts):
-  • Larry Summers banned for life from American Economic Association in wake of Jeffrey Epstein emails
-  • Trump calls affordability 'a Democrat scam' as inflation concerns persist nationwide
-  • Trump's USDA to Pause Funding for Blue States Over SNAP Data
-  • Apartment rents drop further, with vacancies at record high
-  • Michael and Susan Dell Donate $6.25 Billion to ‘Trump Accounts’ for Children
-  • Investors are making up the highest share of homebuyers in 5 years
-  • Trump releases fraudster executive days into prison sentence
-  • Costco Joins Companies Suing for Refunds If Trump’s Tariffs Fall
-  • Black Friday spending raises eyebrows over US economy
-  • Why calls to ‘tax the rich’ are loud, popular – and rarely successful
-
-r/geopolitics (1 posts):
-  • The message behind Putin’s camouflage-clad claim of victory in a key Ukrainian city
-
-r/japan (4 posts):
+r/japan (5 posts):
   • Survey Finds 59% of Japanese Opposed to Actively Accepting Foreign Workers
   • Japan's low-crime image cracking as car thefts, home intrusions rise
   • ‘Okinawa Is Our Territory’: Japan Dismisses China's Claims Over Ryukyu Islands
+  • PM Takaichi's 'work, work, work, work' remark tops Japan 2025 catchphrase list
   • Nearly 75% of Japanese feel affinity toward Taiwan: poll
 
-r/oil (2 posts):
-  • Maduro accuses US of wanting to seize Venezuelan oil reserves
-  • Gasoline prices fall to $3 per gallon to hit lowest level since 2021
+[Total: 5 posts tracked]
 
-r/stocks (3 posts):
-  • Very Bullish on TSMC
-  • OpenAI declares ‘code red’ as Google catches up in AI race
-  • Is the entire stock market basically a giant confidence game and what happens the day people stop believing in it?
-
-r/wallstreetbets (5 posts):
-  • Nvidia comeback story
-  • What Are Your Moves Tomorrow, December 03, 2025
-  • $SNAP will be a 2026 standout
-  • Amazon releases an impressive new AI chip and teases a Nvidia-friendly roadmap
-  • Why did they make gambling so fun on Robinhood?
-
-[Total: 29 posts tracked]
-
-2025-12-21 16:49:11
+2025-12-22 18:06:41

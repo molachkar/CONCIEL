@@ -1,6 +1,6 @@
 {
   "date": "2025-12-17",
-  "snapshot_generated_at": "2025-12-21T16:44:08.323908",
+  "snapshot_generated_at": "2025-12-22T18:06:31.230979",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4302.52,
@@ -65,6 +65,291 @@
       "DOLLAR.IDX_STOCH_K": 21.2,
       "DOLLAR.IDX_STOCH_D": 14.65,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.16,
+      "HY_CREDIT_SPREAD": 2.99,
+      "GLD_CLOSE": 399.29,
+      "GLD_VOLUME": 10456900,
+      "IAU_CLOSE": 81.76,
+      "IAU_VOLUME": 10268800
+    },
+    "economic_events": [
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Crude Oil Inventories",
+        "actual": "-1.274M",
+        "forecast": "-2.400M",
+        "previous": "-1.812M"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Cushing Crude Oil Inventories",
+        "actual": "-0.742M",
+        "forecast": "",
+        "previous": "0.308M"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "20-Year Bond Auction",
+        "actual": "4.798%",
+        "forecast": "",
+        "previous": "4.706%"
+      }
+    ],
+    "news": [
+      {
+        "category": "volatility",
+        "title": "The Zacks Analyst Blog VXX, VIXM,JEPQ,JEPI,QYLD",
+        "ticker": "VXX"
+      },
+      {
+        "category": "gold",
+        "title": "6 Top-Performing ETF Areas of Last Week",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Buy! Analysts Pound The Table For 11 S&P 500 Stocks In 2026",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Warren Buffett dumps 2 investments hes told Americans to buy for years. Should ordinary inventors do the same?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "AI Overvaluation Bothering You? Try Buffer ETFs",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Mixed with Energy Producers Higher and Homebuilders Lower",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises In Wake Of Market Drop; Oracle Tumbles (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Massive Breakout in Industrials: 3 Must-Watch Stocks Now",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Retreat as AI Infrastructure Companies and Chip Makers Fall",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Turns Lower As Nasdaq Loss Deepens; Oracle Tumbles (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "This Artificial Intelligence (AI) ETF Has Nearly Doubled Since April. Is It Time to Stock Up?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "3 Dividend ETFs That Pay You Every Single Month Without Fail",
+        "ticker": "DIA"
+      },
+      {
+        "category": "gold",
+        "title": "Bitcoin, gold, AI were key drivers of 2025's record ETF inflows",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Settle Sharply Lower as Tech Stocks Routed",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "ETF Fund Flows as of December 17, 2025",
+        "ticker": "IWM"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "End of an era. Penny has officially been delisted and they're now holding a funeral for it",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Micron forecasts surging revenue as computer memory demand for AI remains high",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "\"There is no way that the U.S. oil production data is correct.\" Anonymous comment",
+        "source": "r/investing"
+      },
+      {
+        "title": "Job Growth This Year Paints a Grim Picture of Trump’s Economy",
+        "source": "r/economics"
+      },
+      {
+        "title": "Hohoho guess I’m joining the regard club today",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Report: Israel, Greece and Cyprus eye joint rapid-response force in eastern Mediterranean",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Oracle stock sinks as reported AI data center snag puts rising debt in focus",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Micron Technology, Inc. Reports Results- Blows Out Earnings/Guidance, Waving the Market and the World",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "What Are Your Moves Tomorrow, December 18, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "NVIDIA (NVDA) has fallen more than 20% over the past 45 days. Is it truly “overvalued,” or is this merely a price re-evaluation?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Long BULL @ $10.41 for $416,400, down $80,600 (-19%)",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "$115k loss on options, just broke even using $80k debt",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Putin calls European leaders 'piglets,' declares war goals will be met 'unconditionally",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Oracle stock dips 5% on report Blue Owl Capital won't back $10 billion data center",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "ASML stock dips 6% as Reuters reports that China has EUV technology",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Trump says China didn't buy soybeans while Biden was president. Here's what the data show.",
+        "source": "r/China"
+      },
+      {
+        "title": "$30,000 Worth of September Calls for $NBIS",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "\"We Are Not as Wealthy as We Thought We Were\": Elevated American Household Net Worth Reflects Poverty, Not Wealth",
+        "source": "r/economics"
+      },
+      {
+        "title": "Thank you TQQQ, KMX, GLD &amp; SLV. Can you see when I discovered the joy of buying options?",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Oracle stock dips 6% on report Blue Owl Capital won’t back $10 billion data center",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Oracle stock dips 4% on report Blue Owl Capital won't back $10 billion data center",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "The Death of Gasoline Has Been Greatly Exaggerated",
+        "source": "r/oil"
+      },
+      {
+        "title": "US oil industry doesn’t see profit in Trump’s “pro-petroleum” moves",
+        "source": "r/oil"
+      },
+      {
+        "title": "‘The More I’m Around Young People, the More Panicked I Am’",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Waymo seeks billions at $100B+ valuation in new funding talks as robotaxi competition heats up",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "After Trump Officials Cut Food Aid to Kenya, Children Starved to Death",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Gen Zers are defiantly ‘giving up’ on ever owning a home and are spending more than saving, working less, and making risky investments, study shows",
+        "source": "r/economics"
+      },
+      {
+        "title": "Daily Discussion Thread for December 17, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Trump promised a blue-collar jobs boom. The opposite is happening",
+        "source": "r/economics"
+      },
+      {
+        "title": "Japanese Minister Kimi Onoda Says She Only Likes ‘2D Men’",
+        "source": "r/japan"
+      },
+      {
+        "title": "Can you guess the country in red just by analysing the chart?",
+        "source": "r/oil"
+      },
+      {
+        "title": "OpenAI in talks with Amazon about investment that could exceed $10 billion",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan’s new leader Takaichi says she wants to meet North Korea’s Kim Jong Un",
+        "source": "r/japan"
+      },
+      {
+        "title": "Finland’s Prime Minister Condemns Politicians Over Racist Gesture Posts",
+        "source": "r/japan"
+      },
+      {
+        "title": "US bank regulator says large banks engaged in 'debanking' of disfavored industries | Reuters",
+        "source": "r/economics"
+      },
+      {
+        "title": "A Chinese Hillbilly's 30-Year Perspective on China",
+        "source": "r/China"
+      },
+      {
+        "title": "Amazon to Invest $10B in OpenAI, OpenAI to use Amazon Chips",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "What should I do? I lost all and completely devastated! My whole salary savings and side hustle money are gone! 33M!",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "California judge finds Tesla Autopilot marketing deceptive. DMV gives 90 days to fix claims. 30 day license suspension risk",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan to tighten rules on property buyers from overseas",
+        "source": "r/japan"
+      },
+      {
+        "title": "Started the year with $155K and now ending the year at $155K after thousands of trades.",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Tesla stock closes at record as investors rally around Musk's robotaxi hype despite slow EV sales",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "World Inequality Report 2026: Eﬀective income tax rates climb steadily for most of the population but fall sharply for billionaires and centi-millionaires.",
+        "source": "r/economics"
+      }
+    ]
   }
 }

@@ -1,40 +1,24 @@
 {
   "date": "2025-12-19",
-  "snapshot_generated_at": "2025-12-21T16:44:08.327152",
+  "snapshot_generated_at": "2025-12-22T18:06:31.237401",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4331.5,
       "XAUUSD_HIGH": 4356.36,
       "XAUUSD_LOW": 4308.72,
       "XAUUSD_CLOSE": 4338.67,
-      "XAUUSD_30D_HIGH": 4374.4,
-      "XAUUSD_30D_HIGH_DATE": "2025-12-18 00:00:00",
-      "XAUUSD_30D_LOW": 3996.7,
-      "XAUUSD_30D_LOW_DATE": "2025-11-10 00:00:00",
       "USA500.IDX_OPEN": 6772.83,
       "USA500.IDX_HIGH": 6840.24,
       "USA500.IDX_LOW": 6766.64,
       "USA500.IDX_CLOSE": 6835.14,
-      "USA500.IDX_30D_HIGH": 6911.4,
-      "USA500.IDX_30D_HIGH_DATE": "2025-12-12 00:00:00",
-      "USA500.IDX_30D_LOW": 6507.35,
-      "USA500.IDX_30D_LOW_DATE": "2025-11-21 00:00:00",
       "VOL.IDX_OPEN": 18.12,
       "VOL.IDX_HIGH": 18.18,
       "VOL.IDX_LOW": 17.28,
       "VOL.IDX_CLOSE": 17.28,
-      "VOL.IDX_30D_HIGH": 23.37,
-      "VOL.IDX_30D_HIGH_DATE": "2025-11-21 00:00:00",
-      "VOL.IDX_30D_LOW": 15.87,
-      "VOL.IDX_30D_LOW_DATE": "2025-12-12 00:00:00",
       "DOLLAR.IDX_OPEN": 98.09,
       "DOLLAR.IDX_HIGH": 98.39,
       "DOLLAR.IDX_LOW": 98.07,
-      "DOLLAR.IDX_CLOSE": 98.35,
-      "DOLLAR.IDX_30D_HIGH": 100.31,
-      "DOLLAR.IDX_30D_HIGH_DATE": "2025-11-21 00:00:00",
-      "DOLLAR.IDX_30D_LOW": 97.49,
-      "DOLLAR.IDX_30D_LOW_DATE": "2025-12-16 00:00:00"
+      "DOLLAR.IDX_CLOSE": 98.35
     },
     "technicals": {
       "XAUUSD_RSI": 71.23,
@@ -81,6 +65,347 @@
       "DOLLAR.IDX_STOCH_K": 43.08,
       "DOLLAR.IDX_STOCH_D": 31.34,
       "DOLLAR.IDX_STOCH_STATUS": "Neutral"
-    }
+    },
+    "fundamentals": {
+      "HY_CREDIT_SPREAD": 2.9,
+      "GLD_CLOSE": 399.02,
+      "GLD_VOLUME": 9889200,
+      "IAU_CLOSE": 81.71,
+      "IAU_VOLUME": 5199600
+    },
+    "economic_events": [
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Existing Home Sales  (Nov)",
+        "actual": "4.13M",
+        "forecast": "4.15M",
+        "previous": "4.11M"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Existing Home Sales (MoM)  (Nov)",
+        "actual": "0.5%",
+        "forecast": "",
+        "previous": "1.5%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan 1-Year Inflation Expectations  (Dec)",
+        "actual": "4.2%",
+        "forecast": "4.1%",
+        "previous": "4.5%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan 5-Year Inflation Expectations  (Dec)",
+        "actual": "3.2%",
+        "forecast": "3.2%",
+        "previous": "3.4%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan Consumer Expectations  (Dec)",
+        "actual": "54.6",
+        "forecast": "55.0",
+        "previous": "51.0"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "Michigan Consumer Sentiment  (Dec)",
+        "actual": "52.9",
+        "forecast": "53.5",
+        "previous": "51.0"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Oil Rig Count",
+        "actual": "406",
+        "forecast": "",
+        "previous": "414"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Total Rig Count",
+        "actual": "542",
+        "forecast": "",
+        "previous": "548"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "58.4K",
+        "forecast": "",
+        "previous": "55.0K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "223.9K",
+        "forecast": "",
+        "previous": "204.6K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "48.1K",
+        "forecast": "",
+        "previous": "57.4K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-190.4K",
+        "forecast": "",
+        "previous": "-155.3K"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Oracle TikTok deal lifts AI mining stocks as bitcoin tags $88,000",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Income Investors Can Trust Erie Indemnitys Fortress Balance Sheet and Low Payout",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Dips As Nike Plunges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Invesco Unlocks $180 Million Windfall After QQQ Vote Passes",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises But Nike Plunges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Supported by Strength in Cloud Stocks and Chip Makers",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "More Fed Rate Cuts in 2026? ETFs to Play the Opportunities",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "Dear Western Digital Stock Fans, Mark Your Calendars for Dec. 22",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Climb as Tech Shares Rally",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "The Nasdaq-100 ETF Just Flashed a Bearish Chart Signal. Heres What Happens Next.",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "November Inflation Cools: ETF Strategies to Play",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "History Says This Is How the Market Will Perform in 2026. Here Are the Best ETFs to Own Headed Into Next Year.",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "Bitcoin ETF IBIT Ranks Among Top 2025 Fund Flows Despite Negative Returns",
+        "ticker": "GLD"
+      },
+      {
+        "category": "gold",
+        "title": "3 Best Gold ETF Picks for 2026",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Rally as Strength in Tech Boosts Market Sentiment",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "This ETF Is Set To Beat the S&P 500 For the Third Year in a Row. Can It Do Again in 2026?",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "The biggest stupid decision I made this year",
+        "source": "r/stocks"
+      },
+      {
+        "title": "2025 is almost over, how much has your investment account grown?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Rivian is just starting",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Hassett says Trump is right where others are wrong about inflation",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "First options contract. Do I belong here now?",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "What stocks are you guys picking up for 2026?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Why America gave up on economists",
+        "source": "r/economics"
+      },
+      {
+        "title": "Musk wins appeal and restores 2018 Tesla pay deal worth $56 billion",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Elon Musk's 2018 Tesla pay package must be restored, Delaware Supreme Court rules",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "$80,000 —&gt;$108,000 in $NBIS calls",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Weekend Discussion Thread for the Weekend of December 19, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Santa’s gains were in space (RKLB,LUNR,PL)",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Advanced Money Dispenser",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "is Amazon the next Google for 2026..",
+        "source": "r/stocks"
+      },
+      {
+        "title": "When ThetaGang Goes Wrong",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "CoreWeave +20% after joining Department of Energy Genesis Mission to provide AI cloud for U.S. research and energy innovation",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "I dislike the stock / ceo",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "20 million gen z are jobless in urban China",
+        "source": "r/China"
+      },
+      {
+        "title": "From the Guardian: Toyota, Japan's largest company, uses video games to get its employees to lobby against clean air rules",
+        "source": "r/japan"
+      },
+      {
+        "title": "The Christmas rally is here!!",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Nike (NKE) crushed after earnings beat, but accompanied by China slowdown",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Think Lower Inflation Means Cheaper Prices? Think Again",
+        "source": "r/economics"
+      },
+      {
+        "title": "Daily Discussion Thread for December 19, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "EU leaders to loan €90bn to Ukraine - but fail to agree on using Russian assets",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "‘This is a wacky number’: Economists Cry Foul as New Government Data Assumes Zero Housing Inflation in Surprising November Drop",
+        "source": "r/economics"
+      },
+      {
+        "title": "Bangladesh unrest: Hindu man lynched, body tied to tree and set on fire as tensions escalate",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "China Condemns U.S. 'Bullying' Over Venezuela Oil Blockade, Makes No Aid Commitments",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "After 17 years running a Chinese school in Beijing, here's what I'd tell anyone considering studying in China",
+        "source": "r/China"
+      },
+      {
+        "title": "Japan's 10 year yield crosses 2% for the first time in over 15 years",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Colorado steel mill halts rail shipments to BNSF and UP - Trains",
+        "source": "r/economics"
+      },
+      {
+        "title": "U.S. access to Canada’s critical minerals not ‘assured,’ Carney says",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Remember, the market, in any industry, will always need and reward the player. $RIVN",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "The $38 trillion national debt is to blame for over $1 trillion in annual interest payments from here on out, CRFB says",
+        "source": "r/economics"
+      },
+      {
+        "title": "How to Profit from the Great RAM Drought",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "9 Japan Companies Team Up on EV Battery Production; Seek to Streamline Process to Compete With China",
+        "source": "r/japan"
+      },
+      {
+        "title": "Japanese Police Rush to Retrieve Toy Guns Capable of Firing Live Ammunition",
+        "source": "r/japan"
+      },
+      {
+        "title": "YTD gains on my RH account",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Oracle +5% after hours after TikTok signs binding US joint venture with Oracle taking 15% stake",
+        "source": "r/wallstreetbets"
+      }
+    ]
   }
 }

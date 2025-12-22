@@ -1,6 +1,6 @@
 {
   "date": "2025-12-08",
-  "snapshot_generated_at": "2025-12-21T16:44:08.295952",
+  "snapshot_generated_at": "2025-12-22T18:06:31.204833",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4198.3,
@@ -65,6 +65,84 @@
       "DOLLAR.IDX_STOCH_K": 21.83,
       "DOLLAR.IDX_STOCH_D": 18.84,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.17,
+      "HY_CREDIT_SPREAD": 2.89,
+      "GLD_CLOSE": 385.42,
+      "GLD_VOLUME": 6822100,
+      "IAU_CLOSE": 78.95,
+      "IAU_VOLUME": 6331000
+    },
+    "economic_events": [
+      {
+        "time": "17:00",
+        "currency": "USD",
+        "event": "NY Fed 1-Year Consumer Inflation Expectations  (Nov)",
+        "actual": "3.2%",
+        "forecast": "",
+        "previous": "3.2%"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "3-Year Note Auction",
+        "actual": "3.614%",
+        "forecast": "",
+        "previous": "3.579%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Invesco Doesnt QQQuite Have the Votes for ETFs Transition",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "U.S. stocks face a bullish set-up, Morgan Stanleys Wilson says",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises As Fed Meeting Looms; Tesla Slides On Downgrade (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Falls As Fed Meeting Looms; Tesla Slides On Downgrade (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Is a Global Margin Call Coming? How a Bank of Japan Rate Hike Could Trigger the Next Market Shock",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Is the QQQ ETF the Smartest Investment You Can Make Today?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Bitget sees record 4,468% surge in tokenized U.S. stock futures volume",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Reality Check: The Future Is In Derivative-Based ETFs",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Japan PM vows ‘resolute’ response after Chinese aircraft accused of locking radar on to Japanese fighter jets",
+        "source": "r/japan"
+      },
+      {
+        "title": "7.2 Earthquake in Aomori. Tsunami Warning.",
+        "source": "r/japan"
+      }
+    ]
   }
 }

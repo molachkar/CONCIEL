@@ -12,4 +12,53 @@ S&P 500: RSI: 60.22 (neutral). EMA trend: bullish (EMA50: 6739.82, EMA200: 6388.
 VIX: RSI: 37.60 (neutral). EMA trend: bullish (EMA50: 18.69, EMA200: 18.63). MACD: -0.62, signal: -0.33, histogram: -0.29 (negative). Stochastic: 5.00 (exhaustion near lows).
 Gold (XAU/USD): RSI: 62.60 (neutral). EMA trend: bullish (EMA50: 4050.18, EMA200: 3581.93). MACD: 46.21, signal: 45.81, histogram: 0.40 (positive). Stochastic: 76.81 (neutral).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 14:30, USD Employment Cost Index (QoQ)  (Q3) was released. Actual: 0.8%, missing forecast of 0.9% and falling from previous 0.9%.
+At 16:30, USD Crude Oil Inventories was released. Actual: -1.812M, missing forecast of -1.200M and falling from previous 0.574M.
+At 16:30, USD Cushing Crude Oil Inventories was released. Actual: 0.308M and rising from previous -0.457M.
+At 20:00, USD Federal Budget Balance  (Nov) was released. Actual: -173.0B, beating forecast of -186.5B and rising from previous -284.0B.
+At 20:00, USD Interest Rate Projection - 1st Yr  (Q4) was released. Actual: 3.4%.
+At 20:00, USD Interest Rate Projection - 2nd Yr  (Q4) was released. Actual: 3.1%.
+At 20:00, USD Interest Rate Projection - 3rd Yr  (Q4) was released. Actual: 3.1%.
+At 20:00, USD Interest Rate Projection - Current  (Q4) was released. Actual: 3.6%.
+At 20:00, USD Interest Rate Projection - Longer  (Q4) was released. Actual: 3.0%.
+At 20:00, USD Fed Interest Rate Decision was released. Actual: 3.75%, matching forecast of 3.75% and falling from previous 4.00%.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.13%. High-yield credit spread: 2.91%. GLD ETF: closed at $389.05, volume 9,120,500. IAU ETF: closed at $79.67, volume 8,626,400.
+
+NEWS HIGHLIGHTS:
+
+DOLLAR (1 items):
+  • The Zacks Analyst Blog Highlights iShares Silver Trust, United States Copper ETF and Invesco DB US Dollar Index Bullish Fund [UUP]
+
+MARKET (12 items):
+  • Zacks Investment Ideas feature highlights: Carvana, Lennar, Bank of America, Newmont Mining and the Russell 2000 Index ETF [IWM]
+  • Zacks Investment Ideas feature highlights: Intercontinental Exchange, Circle Group, Nasdaq 100 Index ETF and CoreWeave [QQQ]
+  • Should You Buy the Invesco QQQ ETF With the Nasdaq Near an All-Time High? History Offers a Clear Answer. [QQQ]
+  • 3 Undervalued ETFs to Buy Before 2026 [SPY]
+  • Stock Market Today: Dow Slips Ahead Of Fed Ruling; Nvidia Chipmaker Rises On Sales Report (Live Coverage) [SPY]
+  • Stock Market Today: Dow Up Ahead Of Fed Ruling; Nvidia Chipmaker Rises On Sales Report (Live Coverage) [SPY]
+  • Stock Market Today: Dow Steady Ahead Of Fed Ruling; Microsoft Sells Off (Live Coverage) [SPY]
+  • QYLD Turns Mag 7 Tech Stocks Into an 11% Dividend Yield [QQQ]
+  • Paul Tudor Jones Reduces Stake in SPDR S&P 500 ETF Trust by 0.72% [SPY]
+  • Fed Cuts Rates for Third Time This Year, Signals One More in 2026 [SPY]
+  • The Big Three ETFs To Dominate 2026 [QQQ]
+  • QQQ vs. VGT: What's the Better Tech ETF Going Into 2026? [QQQ]
+
+[Total: 13 news items]
+
+SOCIAL SENTIMENT:
+
+r/StockMarket (4 posts):
+  • ORCL -10% after hours as revenue misses estimates despite 68% OCI growth and RPO jumping to $523B
+  • FED Cut Rate By 25 points
+  • There's no guarantee the Fed's rate cuts will lower the rates that matter
+  • The Federal Reserve is likely to cut interest rates for a third time this year. However, the trajectory for next year remains uncertain.
+
+r/japan (1 posts):
+  • Russian bombers join Chinese air patrol near Japan as Tokyo-Beijing tensions simmer
+
+[Total: 5 posts tracked]
+
+2025-12-22 18:06:41

@@ -1,6 +1,6 @@
 {
   "date": "2025-12-11",
-  "snapshot_generated_at": "2025-12-21T16:44:08.310301",
+  "snapshot_generated_at": "2025-12-22T18:06:31.214757",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4227.92,
@@ -65,6 +65,178 @@
       "DOLLAR.IDX_STOCH_K": 9.45,
       "DOLLAR.IDX_STOCH_D": 13.27,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.14,
+      "HY_CREDIT_SPREAD": 2.88,
+      "GLD_CLOSE": 393.24,
+      "GLD_VOLUME": 11240600,
+      "IAU_CLOSE": 80.54,
+      "IAU_VOLUME": 13195700
+    },
+    "economic_events": [
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Exports  (Sep)",
+        "actual": "289.30B",
+        "forecast": "",
+        "previous": "280.80B"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Imports  (Sep)",
+        "actual": "342.10B",
+        "forecast": "",
+        "previous": "340.40B"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Initial Jobless Claims",
+        "actual": "236K",
+        "forecast": "220K",
+        "previous": "192K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Trade Balance  (Sep)",
+        "actual": "-52.80B",
+        "forecast": "-62.50B",
+        "previous": "-59.30B"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "30-Year Bond Auction",
+        "actual": "4.773%",
+        "forecast": "",
+        "previous": "4.694%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Wobbles With Jobless Claims On The Way; Oracle Plunges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Gold ETFs in the Spotlight as 2025 Draws to a Close",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "The Smartest Index ETF to Buy With $2,000 Right Now",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Turns Lower On Surprise Jobless Claims Data; Oracle Plunges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises On Surprise Jobless Claims Data; Oracle Plunges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "JEPQs 10% Dividend Is Legendary, But At What Cost?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "3 Dividend ETFs to Buy and Hold for Life if the Market Crashes",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "This 1 Unusually Active IWM Put Option Screams Covered Strangle",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "FEZ Smashed VOO With 2x The Return, Is It Just Warming Up?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Crypto Market 2026 Predictions: Which Coins Will 10x and Which Will Crash?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Strategy Falls Ahead Of Annual Nasdaq 100 Change; The Stakes For Bitcoin",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Too Many People Just Buy SPY, These Are The ETFs Id Own Instead",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Theres a Shiny New Gold Mining ETF on Wall Street, and a Big, Growing Problem for Retail Investors",
+        "ticker": "GDX"
+      },
+      {
+        "category": "market",
+        "title": "The Dow and S&P 500 are soaring - but this unloved stock index is absolutely roaring",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "1 Tech ETF to Buy Hand Over Fist and 1 to Avoid in 2026",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "Dow Jones, Russell 2000 Hit Highs; Broadcom Sees AI Chip Sales Doubling",
+        "ticker": "GDX"
+      },
+      {
+        "category": "gold",
+        "title": "Daily ETF Flows: Big Inflows For GLDM",
+        "ticker": "GLDM"
+      },
+      {
+        "category": "market",
+        "title": "Tracking the Top-Performing Russell 2000 Stocks Against the Zacks Rank",
+        "ticker": "IWM"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "The Stock Market Flashes a Warning Seen Twice in 40 Years, and the Federal Reserve Has Bad News About President Trump's Tariffs",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Trump administration to overhaul financial stability watchdog to focus on economic growth: Bessent",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "US bombers join Japanese jets in show of force after China-Russia drills, Tokyo says",
+        "source": "r/japan"
+      },
+      {
+        "title": "Disney making $1 billion investment in OpenAI, will allow characters on Sora AI video generator",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "GAINAX closes its doors after nearly 42 years; Hideaki Anno announces completion of bankruptcy proceedings",
+        "source": "r/japan"
+      },
+      {
+        "title": "Japan: Hundreds get car driving licences suspended for drink cycling",
+        "source": "r/japan"
+      },
+      {
+        "title": "Japanese consumers going cold on traditional hot pot 'oden' as prices rise",
+        "source": "r/japan"
+      }
+    ]
   }
 }

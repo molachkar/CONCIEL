@@ -1,6 +1,6 @@
 {
   "date": "2025-12-01",
-  "snapshot_generated_at": "2025-12-21T16:44:08.263357",
+  "snapshot_generated_at": "2025-12-22T18:06:31.189517",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4221.52,
@@ -76,14 +76,6 @@
     },
     "economic_events": [
       {
-        "time": "15:45",
-        "currency": "USD",
-        "event": "S&P Global Manufacturing PMI  (Nov)",
-        "actual": "52.2",
-        "forecast": "51.9",
-        "previous": "52.5"
-      },
-      {
         "time": "16:00",
         "currency": "USD",
         "event": "ISM Manufacturing Employment  (Nov)",
@@ -144,39 +136,14 @@
       },
       {
         "category": "market",
-        "title": "2 Invesco ETFs to Buy Before 2026",
-        "ticker": "QQQ"
-      },
-      {
-        "category": "market",
         "title": "Trumps Potential Fed Chair Pick: How It Could Impact Interest Rates and ETFs",
         "ticker": "SPY"
       }
     ],
     "reddit": [
       {
-        "title": "'We are counting on China': Macron to ask Xi Jinping to push Russia toward ceasefire",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "Germany to Deploy Israeli-Made Arrow 3 Air Defense Missile System for the First Time in Europe",
-        "source": "r/geopolitics"
-      },
-      {
         "title": "Surprise, Anger, and Frustration as Tokyo’s High Court Rules Against Marriage Equality - Unseen Japan",
         "source": "r/japan"
-      },
-      {
-        "title": "Morgan Stanley hikes price targets for two chipmakers, sees Nvidia rising more than 40%",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Airbus shares fall 10% on reports of new quality issue on dozens of A320 aircraft",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Possibility of yen carry trade unwind increases",
-        "source": "r/StockMarket"
       },
       {
         "title": "Policy talks on foreigners start; land deals, visas high on agenda",
@@ -185,10 +152,6 @@
       {
         "title": "Workplace injuries, deaths of foreigners in Japan top 6,000 for first time - The Mainichi",
         "source": "r/japan"
-      },
-      {
-        "title": "Global Stock Leaderboards Are Ruled by Europe in Rare Dominance",
-        "source": "r/StockMarket"
       }
     ]
   }

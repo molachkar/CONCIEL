@@ -1,6 +1,6 @@
 {
   "date": "2025-11-25",
-  "snapshot_generated_at": "2025-12-21T16:44:08.245014",
+  "snapshot_generated_at": "2025-12-22T18:06:31.165726",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4131.59,
@@ -245,52 +245,7 @@
       {
         "category": "market",
         "title": "Is Dow Jones ETF Better-Placed Than S&P 500 & Nasdaq?",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "TrustLinq Launches Swiss-Regulated Crypto-to-Fiat Payment Platform to boost Cryptocurrency Adoption",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Trump Trade: White House pauses EO preempting state laws on AI",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Will the S&P 500 Rally in December? These 3 Signals Point to a Big Move Ahead",
-        "ticker": "SPY"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "U.S. Marine says has no memory of sexual assault at Okinawa base in trial",
-        "source": "r/japan"
-      },
-      {
-        "title": "First 1K in a single trade!",
-        "source": "r/SPY"
-      },
-      {
-        "title": "Bessent Calls for Simplified Fed as He Ends Candidate Interviews",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Google just became an existential threat to OpenAI.",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Japan wanted fewer tourists. Now China’s boycott is doing the job for them",
-        "source": "r/japan"
-      },
-      {
-        "title": "Foreign population in 10 Japan prefectures more than doubles in decade - The Mainichi",
-        "source": "r/japan"
-      },
-      {
-        "title": "Japan weighs extending 5-year residency requirement for naturalization",
-        "source": "r/japan"
+        "ticker": "DIA"
       }
     ]
   }

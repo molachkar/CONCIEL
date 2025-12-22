@@ -1,0 +1,108 @@
+December 22, 2025
+
+MARKET DATA:
+US Dollar Index (DXY): Opened at 98.27, high 98.30, low 97.86, closed at 97.95. Daily loss of -0.32 (-0.33%), range 0.44. 30-day range: 97.49 - 100.31.
+S&P 500: Opened at 6,852.64, high 6,879.75, low 6,846.35, closed at 6,876.93. Daily gain of +24.29 (+0.35%), range 33.40. 30-day range: 6,507.35 - 6,911.40.
+VIX (Volatility Index): Opened at 17.13, high 17.18, low 16.82, closed at 16.87. Daily loss of -0.26 (-1.52%), range 0.36. 30-day range: 15.87 - 23.37.
+Gold (XAU/USD): Opened at $4,338.90, high $4,441.95, low $4,336.64, closed at $4,437.48. Daily gain of +98.58 (+2.27%), range 105.31. 30-day range: 3,997.66 - 4,441.95.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 36.15 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.74). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 32.80 (neutral).
+S&P 500: RSI: 57.39 (neutral). EMA trend: bullish (EMA50: 6761.89, EMA200: 6421.78). MACD: 17.12, signal: 20.51, histogram: -3.39 (negative). Stochastic: 56.03 (neutral).
+VIX: RSI: 42.73 (neutral). EMA trend: bearish (EMA50: 18.32, EMA200: 18.53). MACD: -0.46, signal: -0.50, histogram: 0.03 (positive). Stochastic: 53.15 (neutral).
+Gold (XAU/USD): RSI: 78.30 (overbought). EMA trend: bullish (EMA50: 4127.37, EMA200: 3639.39). MACD: 72.23, signal: 60.34, histogram: 11.89 (positive). Stochastic: 86.89 (exhaustion near highs).
+
+ECONOMIC EVENTS:
+At 19:00, USD 2-Year Note Auction was released.
+
+FUNDAMENTALS:
+GLD ETF: closed at $408.02, volume 7,868,335. IAU ETF: closed at $83.56, volume 3,543,074.
+
+NEWS HIGHLIGHTS:
+
+MARKET (5 items):
+  • QQQ to Become an Open-End Fund [QQQ]
+  • Here Are the Top ETFs Holding Oracle after Its Nosedive [SPY]
+  • The Safest Way to Bet on the Santa Claus Rally [SPY]
+  • Silent Time Bomb Threatens 6 AI S&P 500 Stocks Loading Up With Debt [SPY]
+  • Will Santa Claus Rally Set In for 2025? 4 Best ETF Areas to Explore [SPY]
+
+[Total: 5 news items]
+
+SOCIAL SENTIMENT:
+
+r/China (1 posts):
+  • Algerian asking for advice about Chinese citizenship and life
+
+r/Gold (2 posts):
+  • Gold shatters USD 4400 per ounce mark !
+  • Gold hits all-time high of above $4,395 marking its best year since 1979 with a 68% gain.
+
+r/StockMarket (2 posts):
+  • Nvidia plans 40,000–80,000 H200 AI chips to China by mid-February pending approval
+  • UK stocks outperformed Wall Street this year — and investors see more upside ahead in 2026
+
+r/economics (1 posts):
+  • Voters in Hamburg have rejected universal basic income. Many economists would agree with them
+
+r/economy (2 posts):
+  • Record-high gold &amp; silver prices are a vote of No Confidence in the Fed &amp; its monetary malpractice
+  • China reduces US Treasury holdings to lowest level since 2008 over concerns about sustainability of the US federal debt
+
+r/europe (16 posts):
+  • Russia ‘ready to legally confirm it has no intention of attacking EU or Nato’ – as it happened
+  • Denmark to summon US ambassador following Greenland envoy appointment
+  • ‘Teach your daughter to speak Polish’: Ukrainians in Poland face growing resentment
+  • British companies lose £80m after piling into Bitcoin
+  • US is ‘demolishing its scientific leadership with a wrecking ball,’ says chief EU research diplomat
+  • Trump names Louisiana governor as Greenland special envoy, prompting Danish alarm
+  • This bus line goes from Poland to Czechia to Poland to Germany to Poland and to Czechia again.
+  • Why European armies are turning to the Swedish CV90 in large numbers
+  • Longyearbyen, Svalbard was hotter than Madrid this morning
+  • U.S. crude oil closes at lowest level since early 2021 as looming surplus weighs on market
+  • How Europe’s far right used unlabelled AI to win votes — and now writes the rules
+  • Russian general killed by car bomb in Moscow, officials say
+  • Population unable to keep home adequately warm (2024)
+  • The Netherlands sees more elderly than young people for first time
+  • Andrew Tate loses comeback fight in Dubai as pressure grows on Prime Minister Keir Starmer to extradite him to U.K | Tate and his brother Tristan are facing a series of 21 charges in the U.K
+  • France formally green lights PA-Ng aircraft carrier production
+
+r/japan (1 posts):
+  • Global trends favor phone-free schools as Japan still debating action
+
+r/stocks (1 posts):
+  • Waymo suspends service in San Francisco after driverless cars cause traffic jams during blackout
+
+r/wallstreetbets (7 posts):
+  • WSB 2025: Year in Review (with sound) 🥂
+  • Daily Discussion Thread for December 22, 2025
+  • Thanks E-Toro I guess
+  • Doctor says I should take profits, I say rockets go up (RKLB)
+  • It’s a beautiful time to believe in space (RKLB)
+  • Key data for the coming week
+  • Dark Horse Picks for 2026
+
+r/worldnews (19 posts):
+  • ‘To make Greenland a part of the U.S.’: Trump appoints new special envoy
+  • China hits EU dairy products with provisional duties up to 42.7%
+  • France to build new nuclear carrier replacing Charles de Gaulle
+  • Russia could support China attack on Taiwan: Taiwan security chief
+  • Russia sentences 19-year-old woman to nearly three years in a penal colony after poetic anti-war protest
+  • China says US seizure of ships 'serious violation' of international law
+  • Denmark to summon US ambassador over Trump Greenland envoy appointment
+  • China says US seizure of ships ‘serious violation’ of international law
+  • India will never open up dairy sector to free trade, Piyush Goyal says after pact with New Zealand
+  • Russian general killed in explosion in Moscow, officials say
+  • Western intelligence suspects Russia is developing new weapon to target Musk's Starlink satellites
+  • 'Too much regulation, not enough action': Carney rebuffs Trudeau's climate policies | CBC News
+  • Police allege Bondi shooters had ‘tennis ball bomb’ and made IS-inspired video manifesto, court documents reveal
+  • Anthony Albanese apologises for what Jewish community experienced after Bondi attack
+  • NZ strikes free trade agreement with India
+  • /r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1397, Part 1 (Thread )
+  • Gun crackdown and controversial protest laws to be passed in NSW despite Coalition split over firearms
+  • Israeli FM calls on Jews to move to Israel after Bondi shooting attack
+  • Ukrainian and European officials had ‘productive’ talks on ending war, US envoy says
+
+[Total: 52 posts tracked]
+
+2025-12-22 18:06:41

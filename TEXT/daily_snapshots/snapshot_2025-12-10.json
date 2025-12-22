@@ -1,6 +1,6 @@
 {
   "date": "2025-12-10",
-  "snapshot_generated_at": "2025-12-21T16:44:08.307221",
+  "snapshot_generated_at": "2025-12-22T18:06:31.213155",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4207.23,
@@ -65,6 +65,185 @@
       "DOLLAR.IDX_STOCH_K": 1.7,
       "DOLLAR.IDX_STOCH_D": 17.4,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.13,
+      "HY_CREDIT_SPREAD": 2.91,
+      "GLD_CLOSE": 389.05,
+      "GLD_VOLUME": 9120500,
+      "IAU_CLOSE": 79.67,
+      "IAU_VOLUME": 8626400
+    },
+    "economic_events": [
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Employment Cost Index (QoQ)  (Q3)",
+        "actual": "0.8%",
+        "forecast": "0.9%",
+        "previous": "0.9%"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Crude Oil Inventories",
+        "actual": "-1.812M",
+        "forecast": "-1.200M",
+        "previous": "0.574M"
+      },
+      {
+        "time": "16:30",
+        "currency": "USD",
+        "event": "Cushing Crude Oil Inventories",
+        "actual": "0.308M",
+        "forecast": "",
+        "previous": "-0.457M"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Federal Budget Balance  (Nov)",
+        "actual": "-173.0B",
+        "forecast": "-186.5B",
+        "previous": "-284.0B"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Interest Rate Projection - 1st Yr  (Q4)",
+        "actual": "3.4%",
+        "forecast": "",
+        "previous": "3.4%"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Interest Rate Projection - 2nd Yr  (Q4)",
+        "actual": "3.1%",
+        "forecast": "",
+        "previous": "3.1%"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Interest Rate Projection - 3rd Yr  (Q4)",
+        "actual": "3.1%",
+        "forecast": "",
+        "previous": "3.1%"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Interest Rate Projection - Current  (Q4)",
+        "actual": "3.6%",
+        "forecast": "",
+        "previous": "3.6%"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Interest Rate Projection - Longer  (Q4)",
+        "actual": "3.0%",
+        "forecast": "",
+        "previous": "3.0%"
+      },
+      {
+        "time": "20:00",
+        "currency": "USD",
+        "event": "Fed Interest Rate Decision",
+        "actual": "3.75%",
+        "forecast": "3.75%",
+        "previous": "4.00%"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Zacks Investment Ideas feature highlights: Carvana, Lennar, Bank of America, Newmont Mining and the Russell 2000 Index ETF",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "Zacks Investment Ideas feature highlights: Intercontinental Exchange, Circle Group, Nasdaq 100 Index ETF and CoreWeave",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Should You Buy the Invesco QQQ ETF With the Nasdaq Near an All-Time High? History Offers a Clear Answer.",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "dollar",
+        "title": "The Zacks Analyst Blog Highlights iShares Silver Trust, United States Copper ETF and Invesco DB US Dollar Index Bullish Fund",
+        "ticker": "UUP"
+      },
+      {
+        "category": "market",
+        "title": "3 Undervalued ETFs to Buy Before 2026",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Slips Ahead Of Fed Ruling; Nvidia Chipmaker Rises On Sales Report (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Up Ahead Of Fed Ruling; Nvidia Chipmaker Rises On Sales Report (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Steady Ahead Of Fed Ruling; Microsoft Sells Off (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "QYLD Turns Mag 7 Tech Stocks Into an 11% Dividend Yield",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Paul Tudor Jones Reduces Stake in SPDR S&P 500 ETF Trust by 0.72%",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Fed Cuts Rates for Third Time This Year, Signals One More in 2026",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "The Big Three ETFs To Dominate 2026",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "QQQ vs. VGT: What's the Better Tech ETF Going Into 2026?",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "ORCL -10% after hours as revenue misses estimates despite 68% OCI growth and RPO jumping to $523B",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "FED Cut Rate By 25 points",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "There's no guarantee the Fed's rate cuts will lower the rates that matter",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Russian bombers join Chinese air patrol near Japan as Tokyo-Beijing tensions simmer",
+        "source": "r/japan"
+      },
+      {
+        "title": "The Federal Reserve is likely to cut interest rates for a third time this year. However, the trajectory for next year remains uncertain.",
+        "source": "r/StockMarket"
+      }
+    ]
   }
 }

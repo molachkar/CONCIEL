@@ -12,4 +12,54 @@ S&P 500: RSI: 51.85 (neutral). EMA trend: bullish (EMA50: 6752.43, EMA200: 6402.
 VIX: RSI: 38.25 (neutral). EMA trend: bearish (EMA50: 18.42, EMA200: 18.56). MACD: -0.80, signal: -0.54, histogram: -0.25 (negative). Stochastic: 9.56 (exhaustion near lows).
 Gold (XAU/USD): RSI: 69.36 (neutral). EMA trend: bullish (EMA50: 4077.80, EMA200: 3602.98). MACD: 57.11, signal: 49.96, histogram: 7.16 (positive). Stochastic: 84.33 (exhaustion near highs).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 14:30, USD NY Empire State Manufacturing Index  (Dec) was released. Actual: -3.90, missing forecast of 9.80 and falling from previous 18.70.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.18%. High-yield credit spread: 2.91%. GLD ETF: closed at $395.80, volume 11,345,000. IAU ETF: closed at $81.08, volume 7,222,800.
+
+NEWS HIGHLIGHTS:
+
+GOLD (2 items):
+  • GLDs $141 Billion Rally Hinges on Continued Central Bank Buying [GLD]
+  • Positioning for 2026: Market Outlook and ETF Strategies [GLD]
+
+MARKET (8 items):
+  • Small Caps Strike Back: See Why the Russell 2000 Futures Are Heating Up for 2026 [IWM]
+  • IEUR Is One Of The Best Performing ETFs No One Knows About (Crushed VOO and SPY) [SPY]
+  • Stock Market Today: Dow Rises As Nvidia Rebounds; Tesla Near Buy Point (Live Coverage) [SPY]
+  • Best-Performing Leveraged ETF Areas of 2025 [SPY]
+  • Will the SPDR S&P 500 ETF (SPY) Stock Hit $800 in 2026? [SPY]
+  • Did the QQQ Bull Run Just End? Heres Why This Candlestick is a Bearish Confirmation. [QQQ]
+  • 1 No-Brainer Artificial Intelligence (AI) Index Fund to Buy Right Now for Less Than $1,000 [QQQ]
+  • Stocks Fall Ahead of US November Payroll Report [SPY]
+
+[Total: 10 news items]
+
+SOCIAL SENTIMENT:
+
+r/StockMarket (4 posts):
+  • Tesla +3.6% after Musk confirms driverless robotaxi testing while Lyft -6% and Uber -4%
+  • Exclusive: Nasdaq seeks to extend trading hours, as Wall Street gears up for 24/7 move
+  • Barron's 2026 Stock Picks
+  • Wall Street Sees AI Bubble Coming and Is Betting on What Pops It
+
+r/economics (2 posts):
+  • U.S. Home Prices Slow Further Amid Affordability Concerns
+  • What the Twin Cities Tell Us About Fixing the Housing Crisis
+
+r/geopolitics (6 posts):
+  • Trump says end of war ‘closer than ever’ as Ukraine approves ‘Nato-like’ plan
+  • Is Europe getting ready for battle?
+  • Why Germany Wants a Divorce With China
+  • Zelensky says he will drop Nato ambitions to reach Ukraine peace deal
+  • Trump Officials Celebrated With Cake After Slashing Aid. Then People Died of Cholera.
+  • MI6 chief warns Putin: We won’t abandon Ukraine
+
+r/japan (2 posts):
+  • Japan needs tariff relief now — what is Trump waiting for?
+  • 2 pandas to depart Japan in Jan., leaving none for 1st time in half-century
+
+[Total: 14 posts tracked]
+
+2025-12-22 18:06:41

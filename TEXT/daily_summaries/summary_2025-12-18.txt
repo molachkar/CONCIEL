@@ -12,4 +12,98 @@ S&P 500: RSI: 46.91 (neutral). EMA trend: bullish (EMA50: 6754.01, EMA200: 6413.
 VIX: RSI: 49.89 (neutral). EMA trend: bearish (EMA50: 18.42, EMA200: 18.56). MACD: -0.43, signal: -0.53, histogram: 0.10 (positive). Stochastic: 87.05 (exhaustion near highs).
 Gold (XAU/USD): RSI: 70.50 (overbought). EMA trend: bullish (EMA50: 4105.57, EMA200: 3624.26). MACD: 63.29, signal: 55.63, histogram: 7.65 (positive). Stochastic: 82.16 (exhaustion near highs).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 14:30, USD Core CPI (YoY)  (Nov) was released. Actual: 2.6%, missing forecast of 3.0% and falling from previous 3.0%.
+At 14:30, USD CPI (YoY)  (Nov) was released. Actual: 2.7%, missing forecast of 3.1% and falling from previous 3.0%.
+At 14:30, USD Initial Jobless Claims was released. Actual: 224K, matching forecast of 224K and falling from previous 237K.
+At 14:30, USD Philadelphia Fed Manufacturing Index  (Dec) was released. Actual: -10.2, missing forecast of 2.5 and falling from previous -1.7.
+At 14:30, USD Philly Fed Employment  (Dec) was released. Actual: 12.9 and rising from previous 6.0.
+At 22:00, USD TIC Net Long-Term Transactions  (Oct) was released. Actual: 17.5B, missing forecast of 122.7B and falling from previous 173.2B.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.12%. High-yield credit spread: 2.95%. Real interest rate: 1.12%. GLD ETF: closed at $398.57, volume 11,837,600. IAU ETF: closed at $81.63, volume 8,053,100.
+
+NEWS HIGHLIGHTS:
+
+GOLD (1 items):
+  • Gold Gearing Up for Another Solid Run? ETFs to Ride the Trend [GLD]
+
+MARKET (13 items):
+  • 2 ETFs That Are Good Bets To Beat the S&P 500 in 2026 [IWM]
+  • Micron crushes earnings, calming markets and helping boost bitcoin back above $87,000 [QQQ]
+  • How To Cash In On Vanguard's Call For The Decade's Top Asset [SPY]
+  • Stock Market Today: Dow Rebounds On Surprise CPI Inflation Data; AI Stock Surges On Earnings (Live Coverage) [SPY]
+  • Stock Market Today: Dow Rises On Surprise Inflation Data; Nvidia, Tesla Rally (Live Coverage) [SPY]
+  • Stock Market Today: Dow, Small Caps Rise On Surprise Inflation Data; Nvidia, Tesla Rally (Live Coverage) [SPY]
+  • CPI, Jobless Claims in Very Agreeable Ranges [SPY]
+  • Stock Market Today: Indexes Rise; Nvidia, Tesla Rally But Some Electronics Firms Struggle (Live Coverage) [SPY]
+  • Vanguards Other Index ETF Has Absolutely Destroyed SPY and VOO This Year | VXUS [SPY]
+  • Stock Market Today: Indexes Rise; Nvidia, Tesla Rally; This Nuke Play Sets Up (Live Coverage) [QQQ]
+  • The stock market right now is poised for a breakout - or a breakup [SPY]
+  • Stocks Settle Higher on Upbeat Tech Outlook and Cooling Inflation [SPY]
+  • ETF Fund Flows: IVV Gains $34 Billion Ahead of CPI [QQQ]
+
+[Total: 14 news items]
+
+SOCIAL SENTIMENT:
+
+r/China (3 posts):
+  • US Arms Sale to Taiwan of $11B Sparks China Fury, Beijing Vows to Take 'Necessary Measures'
+  • China Has Reportedly Built Its First EUV Machine Prototype, Marking a Semiconductor Breakthrough the U.S. Has Feared All Along
+  • Historical footage: Japanese troops entering the capital of China during WWII
+
+r/StockMarket (2 posts):
+  • Trump Media is merging with fusion power company TAE Technologies in $6B deal
+  • November consumer prices rose at a 2.7% annual rate, lower than expected, delayed data shows
+
+r/economics (9 posts):
+  • Gig Economy Attracting More Workers As Layoffs Increase, Goldman Sachs Report Says
+  • Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation
+  • The age of AI has been full of predictions of mass technology-driven unemployment. A 2013 report by the Oxford FHI posited that nearly half of U.S. employment at the time was “potentially automatable” over the next “decade or two.” A decade later, however, there were 17 million more jobs in the U.S.
+  • Fact Check Dismantles Trump’s Latest Claim That Prices Are “Falling Fast” - TLP Media
+  • US prices continued to rise despite Trump claims they are ‘rapidly’ falling
+  • Real average weekly earnings are up 0.8% over the last year (+3.5% avg hourly earnings against +2.7% inflation)
+  • Consumer Price Index News Releases (CPI for Nov and Oct only represented gas and autos)
+  • CPI (inflation) falls to 2.7% from 3.0% in September 2025
+  • Trump said his tariffs would reduce the trade deficit and bring back manufacturing. Here's what the data show.
+
+r/geopolitics (5 posts):
+  • Japan needs to possess nuclear weapons, prime minister's office source says
+  • 'Money today or blood tomorrow': The stark choice Europe faces over Russian assets
+  • Furious Putin is trapped in a gilded cage. Only death will free him
+  • Russia Will Be Paying for Its War on Ukraine Long After It Ends
+  • UK police plan crackdown on antisemitic chants, including ‘Globalize the intifada’
+
+r/investing (1 posts):
+  • How do people earn so much in so little time whilst investing?
+
+r/japan (1 posts):
+  • Tighter residency rules take shape as Japan gov't mulls stricter foreigner policies - The Mainichi
+
+r/oil (1 posts):
+  • The $8 Billion Black Market for Venezuelan Oil Is Suddenly Closing Down
+
+r/stocks (5 posts):
+  • Don't miss the macro shift in the Cannabis sector: 280E is dead and the Hemp loophole is closed.
+  • Trump Media Technology Group shares surged 40% today. ​​It seems the blonde guy is back to playing the stock market again.
+  • CPI rose 2.7% for the 12 months ending November, Much Less than the expected 3.1%
+  • Trump Media announces $6 billion merger with fusion company TAE Technologies; DJT stock soars 25%
+  • Activist Elliott takes over $1 Billion stake in LULU
+
+r/wallstreetbets (12 posts):
+  • What Are Your Moves Tomorrow, December 19, 2025
+  • Apple spent $750B on buybacks for 10yrs and Tim Cook is overrated.
+  • Weed loss porn numbers higher than I was when I bought
+  • Sold a house got to a million and lost it all, now I owe the IRS 179k and I owe creditors 100k do not do options if you adhd
+  • Nothing more degenerate than making a small salary writing $RDDT puts
+  • Increased $NBIS call position to $80,000
+  • Pretty much 0 CPI data for October and November but we are meant to believe it's 2.7%
+  • [Breaking] - US Inflation Data for Dec measured at 2.7%
+  • Trump Media to Merge With TAE Tech in $6 Billion Deal
+  • Daily Discussion Thread for December 18, 2025
+  • Thought I was investing in 'AI Infrastructure', turns out I was just providing exit liquidity. Rate my bags.
+  • POET: The Photonic Solution to the SSD &amp; RAM Shortage
+
+[Total: 39 posts tracked]
+
+2025-12-22 18:06:41

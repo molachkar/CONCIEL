@@ -1,10 +1,10 @@
 December 19, 2025
 
 MARKET DATA:
-US Dollar Index (DXY): Opened at 98.09, high 98.39, low 98.07, closed at 98.35. Daily gain of +0.26 (+0.27%), range 0.32. 30-day range: 97.49 - 100.31.
-S&P 500: Opened at 6,772.83, high 6,840.24, low 6,766.64, closed at 6,835.14. Daily gain of +62.31 (+0.92%), range 73.60. 30-day range: 6,507.35 - 6,911.40.
-VIX (Volatility Index): Opened at 18.12, high 18.18, low 17.28, closed at 17.28. Daily loss of -0.84 (-4.64%), range 0.90. 30-day range: 15.87 - 23.37.
-Gold (XAU/USD): Opened at $4,331.50, high $4,356.36, low $4,308.72, closed at $4,338.67. Daily gain of +7.17 (+0.17%), range 47.64. 30-day range: 3,996.70 - 4,374.40.
+US Dollar Index (DXY): Opened at 98.09, high 98.39, low 98.07, closed at 98.35. Daily gain of +0.26 (+0.27%), range 0.32.
+S&P 500: Opened at 6,772.83, high 6,840.24, low 6,766.64, closed at 6,835.14. Daily gain of +62.31 (+0.92%), range 73.60.
+VIX (Volatility Index): Opened at 18.12, high 18.18, low 17.28, closed at 17.28. Daily loss of -0.84 (-4.64%), range 0.90.
+Gold (XAU/USD): Opened at $4,331.50, high $4,356.36, low $4,308.72, closed at $4,338.67. Daily gain of +7.17 (+0.17%), range 47.64.
 
 TECHNICAL INDICATORS:
 Dollar Index (DXY): RSI: 42.09 (neutral). EMA trend: bearish (EMA50: 98.78, EMA200: 99.76). MACD: -0.32, signal: -0.23, histogram: -0.10 (negative). Stochastic: 31.34 (neutral).
@@ -12,4 +12,101 @@ S&P 500: RSI: 53.78 (neutral). EMA trend: bullish (EMA50: 6757.19, EMA200: 6417.
 VIX: RSI: 44.85 (neutral). EMA trend: bearish (EMA50: 18.38, EMA200: 18.55). MACD: -0.43, signal: -0.51, histogram: 0.08 (positive). Stochastic: 72.97 (neutral).
 Gold (XAU/USD): RSI: 71.23 (overbought). EMA trend: bullish (EMA50: 4114.71, EMA200: 3631.37). MACD: 64.29, signal: 57.36, histogram: 6.93 (positive). Stochastic: 84.78 (exhaustion near highs).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 16:00, USD Existing Home Sales  (Nov) was released. Actual: 4.13M, missing forecast of 4.15M and rising from previous 4.11M.
+At 16:00, USD Existing Home Sales (MoM)  (Nov) was released. Actual: 0.5% and falling from previous 1.5%.
+At 16:00, USD Michigan 1-Year Inflation Expectations  (Dec) was released. Actual: 4.2%, beating forecast of 4.1% and falling from previous 4.5%.
+At 16:00, USD Michigan 5-Year Inflation Expectations  (Dec) was released. Actual: 3.2%, matching forecast of 3.2% and falling from previous 3.4%.
+At 16:00, USD Michigan Consumer Expectations  (Dec) was released. Actual: 54.6, missing forecast of 55.0 and rising from previous 51.0.
+At 16:00, USD Michigan Consumer Sentiment  (Dec) was released. Actual: 52.9, missing forecast of 53.5 and rising from previous 51.0.
+At 19:00, USD U.S. Baker Hughes Oil Rig Count was released. Actual: 406 and falling from previous 414.
+At 19:00, USD U.S. Baker Hughes Total Rig Count was released. Actual: 542 and falling from previous 548.
+At 21:30, USD CFTC Crude Oil speculative net positions was released. Actual: 58.4K and rising from previous 55.0K.
+At 21:30, USD CFTC Gold speculative net positions was released. Actual: 223.9K and rising from previous 204.6K.
+At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 48.1K and falling from previous 57.4K.
+At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -190.4K and falling from previous -155.3K.
+
+FUNDAMENTALS:
+High-yield credit spread: 2.90%. GLD ETF: closed at $399.02, volume 9,889,200. IAU ETF: closed at $81.71, volume 5,199,600.
+
+NEWS HIGHLIGHTS:
+
+GOLD (3 items):
+  • November Inflation Cools: ETF Strategies to Play [GLD]
+  • Bitcoin ETF IBIT Ranks Among Top 2025 Fund Flows Despite Negative Returns [GLD]
+  • 3 Best Gold ETF Picks for 2026 [GLD]
+
+MARKET (13 items):
+  • Oracle TikTok deal lifts AI mining stocks as bitcoin tags $88,000 [QQQ]
+  • Income Investors Can Trust Erie Indemnitys Fortress Balance Sheet and Low Payout [SPY]
+  • Stock Market Today: Dow Dips As Nike Plunges On Earnings (Live Coverage) [SPY]
+  • Invesco Unlocks $180 Million Windfall After QQQ Vote Passes [QQQ]
+  • Stock Market Today: Dow Rises But Nike Plunges On Earnings (Live Coverage) [SPY]
+  • Stocks Supported by Strength in Cloud Stocks and Chip Makers [SPY]
+  • More Fed Rate Cuts in 2026? ETFs to Play the Opportunities [IWM]
+  • Dear Western Digital Stock Fans, Mark Your Calendars for Dec. 22 [QQQ]
+  • Stocks Climb as Tech Shares Rally [SPY]
+  • The Nasdaq-100 ETF Just Flashed a Bearish Chart Signal. Heres What Happens Next. [QQQ]
+  • History Says This Is How the Market Will Perform in 2026. Here Are the Best ETFs to Own Headed Into Next Year. [QQQ]
+  • Stocks Rally as Strength in Tech Boosts Market Sentiment [SPY]
+  • This ETF Is Set To Beat the S&P 500 For the Third Year in a Row. Can It Do Again in 2026? [QQQ]
+
+[Total: 16 news items]
+
+SOCIAL SENTIMENT:
+
+r/China (2 posts):
+  • 20 million gen z are jobless in urban China
+  • After 17 years running a Chinese school in Beijing, here's what I'd tell anyone considering studying in China
+
+r/StockMarket (2 posts):
+  • Hassett says Trump is right where others are wrong about inflation
+  • Elon Musk's 2018 Tesla pay package must be restored, Delaware Supreme Court rules
+
+r/economics (5 posts):
+  • Why America gave up on economists
+  • Think Lower Inflation Means Cheaper Prices? Think Again
+  • ‘This is a wacky number’: Economists Cry Foul as New Government Data Assumes Zero Housing Inflation in Surprising November Drop
+  • Colorado steel mill halts rail shipments to BNSF and UP - Trains
+  • The $38 trillion national debt is to blame for over $1 trillion in annual interest payments from here on out, CRFB says
+
+r/geopolitics (4 posts):
+  • EU leaders to loan €90bn to Ukraine - but fail to agree on using Russian assets
+  • Bangladesh unrest: Hindu man lynched, body tied to tree and set on fire as tensions escalate
+  • China Condemns U.S. 'Bullying' Over Venezuela Oil Blockade, Makes No Aid Commitments
+  • U.S. access to Canada’s critical minerals not ‘assured,’ Carney says
+
+r/japan (3 posts):
+  • From the Guardian: Toyota, Japan's largest company, uses video games to get its employees to lobby against clean air rules
+  • 9 Japan Companies Team Up on EV Battery Production; Seek to Streamline Process to Compete With China
+  • Japanese Police Rush to Retrieve Toy Guns Capable of Firing Live Ammunition
+
+r/stocks (7 posts):
+  • The biggest stupid decision I made this year
+  • 2025 is almost over, how much has your investment account grown?
+  • What stocks are you guys picking up for 2026?
+  • Musk wins appeal and restores 2018 Tesla pay deal worth $56 billion
+  • is Amazon the next Google for 2026..
+  • The Christmas rally is here!!
+  • Nike (NKE) crushed after earnings beat, but accompanied by China slowdown
+
+r/wallstreetbets (15 posts):
+  • Rivian is just starting
+  • First options contract. Do I belong here now?
+  • $80,000 —&gt;$108,000 in $NBIS calls
+  • Weekend Discussion Thread for the Weekend of December 19, 2025
+  • Santa’s gains were in space (RKLB,LUNR,PL)
+  • Advanced Money Dispenser
+  • When ThetaGang Goes Wrong
+  • CoreWeave +20% after joining Department of Energy Genesis Mission to provide AI cloud for U.S. research and energy innovation
+  • I dislike the stock / ceo
+  • Daily Discussion Thread for December 19, 2025
+  • Japan's 10 year yield crosses 2% for the first time in over 15 years
+  • Remember, the market, in any industry, will always need and reward the player. $RIVN
+  • How to Profit from the Great RAM Drought
+  • YTD gains on my RH account
+  • Oracle +5% after hours after TikTok signs binding US joint venture with Oracle taking 15% stake
+
+[Total: 38 posts tracked]
+
+2025-12-22 18:06:41

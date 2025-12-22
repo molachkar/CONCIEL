@@ -1,6 +1,6 @@
 {
   "date": "2025-12-05",
-  "snapshot_generated_at": "2025-12-21T16:44:08.285400",
+  "snapshot_generated_at": "2025-12-22T18:06:31.197377",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4207.1,
@@ -67,10 +67,12 @@
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
     },
     "fundamentals": {
+      "TREASURY_10Y": 4.14,
+      "HY_CREDIT_SPREAD": 2.85,
       "GLD_CLOSE": 386.44,
-      "GLD_VOLUME": 9428800,
+      "GLD_VOLUME": 9449800,
       "IAU_CLOSE": 79.14,
-      "IAU_VOLUME": 6568000
+      "IAU_VOLUME": 6569800
     },
     "economic_events": [
       {
@@ -274,248 +276,24 @@
     ],
     "reddit": [
       {
-        "title": "89K short on TSLA for next week",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "On this day, 108 years ago, Finland declared independence from Russia",
-        "source": "r/europe"
-      },
-      {
-        "title": "Canada added 54,000 jobs in November, unemployment rate drops to 6.5%",
-        "source": "r/economics"
-      },
-      {
-        "title": "Weekend Discussion Thread for the Weekend of December 05, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "Foreign driver’s license conversion test passes plummet from over 90% to 33% in Japan",
         "source": "r/japan"
-      },
-      {
-        "title": "This economy is the enemy of having children",
-        "source": "r/economy"
-      },
-      {
-        "title": "Germany rejects US security strategy's 'outside advice'",
-        "source": "r/europe"
-      },
-      {
-        "title": "EU defense chief: Stop relying on Washington and craft our own peace plan – POLITICO",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "US job cuts surged 183% in October to a record 153K. Is this the end of America's ‘no hire, no fire’ landscape?",
-        "source": "r/economics"
-      },
-      {
-        "title": "-75k over 5 years, I'm done",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "First batch of Argentina's F-16 fighter jets due to arrive from Denmark",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Putin arrest warrant will stand even if US-led peace talks agree Ukraine amnesty, ICC prosecutors say",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "The Uses of Platinum, Gold &amp; Silver",
-        "source": "r/Gold"
-      },
-      {
-        "title": "So what’s your game plan for 2026?",
-        "source": "r/stocks"
-      },
-      {
-        "title": "SpaceX in Talks for Share Sale That Would Boost Valuation to $800 Billion",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "No one can pretend the Atlantic alliance is still alive",
-        "source": "r/europe"
-      },
-      {
-        "title": "Trump is meeting Mexican President Sheinbaum in person for the first time at World Cup draw",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Originally estimated at $1 billion, the fraud of taxpayers in Minnesota might exceed $8 billion",
-        "source": "r/economy"
-      },
-      {
-        "title": "Google - not AMD - is Nvidia’s greatest threat because of their full-stack AI and AlphaEvolve",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Biden detractors: where is the concern about the national debt now?",
-        "source": "r/economy"
-      },
-      {
-        "title": "G7 and EU are in talks to replace a price cap on Russian oil exports with a full maritime services ban",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Canada's unemployment rate fell to 6.5% in November, a steep drop from previous month",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Microsoft's annual shareholder meeting has just concluded, leaving the market with several intriguing signals.",
-        "source": "r/stocks"
-      },
-      {
-        "title": "China — The Real Winner From Russian Victory in Ukraine",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "France intercepts illegal drone overflight at nuclear submarine base",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "French navy shoots at 5 drones buzzing nuclear submarine base, AFP reports",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Core PCE Inflation Cools to 2.8% in September, Lower Than Expected.",
-        "source": "r/economics"
-      },
-      {
-        "title": "Chinese tourism to Russia soars as travellers pivot from under-fire Japan",
-        "source": "r/China"
       },
       {
         "title": "Japan gov't considering 10-year residence requirement for foreigners seeking citizenship - The Mainichi",
         "source": "r/japan"
       },
       {
-        "title": "Another 200 down the drain",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Spain recognizes Moroccan sovereignty in Western Sahara",
-        "source": "r/europe"
-      },
-      {
-        "title": "Getting better at accepting small wins",
-        "source": "r/SPY"
-      },
-      {
-        "title": "Core inflation rate watched by Fed hit 2.8%, delayed September data shows, lower than expected",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Trump’s son-in-law to run Gaza with Tony Blair",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "Clean energy isn’t failing. It’s threatening the people who built fortunes on scarcity.",
-        "source": "r/stocks"
-      },
-      {
-        "title": "$2.4 Million Bet On RIVN - Cursed Carmaker Turnaround",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Weekly Earnings Thread 12/8 - 12/12",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Wall Street Races to Cut Its Risk From AI’s Borrowing Binge",
-        "source": "r/economics"
-      },
-      {
-        "title": "It's the mid-1970s and you work at your local bank's \"Gold Department\".",
-        "source": "r/Gold"
-      },
-      {
-        "title": "Germany votes to bring back voluntary military service programme for 18-year-olds",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Mysterious Drones Penetrate Airspace Above France’s Nuclear Sub Fleet—Marines Open Fire",
-        "source": "r/europe"
-      },
-      {
-        "title": "Netflix to buy Warner Bros. film and streaming assets in $72 billion deal",
-        "source": "r/economics"
-      },
-      {
-        "title": "Netflix to buy Warner Bros. in an $82.7 billion deal that rewrites Hollywood’s future",
-        "source": "r/investing"
-      },
-      {
-        "title": "NFLX I ain‘t leaving - 182K Position",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Netflix agrees to buy Warner Bros. in a $72-billion deal that will transform Hollywood",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Sweden to cut development aid to five countries, divert money to Ukraine",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Finally found gold at spot price!",
-        "source": "r/Gold"
-      },
-      {
-        "title": "Netflix says it’s struck a deal to buy Warner Bros. Discovery for $27.75 per share",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Daily Discussion Thread for December 05, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Report: Immigrants power U.S. hospitality",
-        "source": "r/economics"
-      },
-      {
         "title": "Japan Considering to make 5-Year Visa to Become Mandatory (even for high-skilled visa?)",
         "source": "r/japan"
-      },
-      {
-        "title": "Russian Troops Shoot Ukrainian POW in Donetsk Region Moments After Surrendering",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Boyfriend facing manslaughter charges after 'leaving novice female climber to die on Austria's highest peak'",
-        "source": "r/europe"
       },
       {
         "title": "Japan media leaks what Trump said in the call to Japan PM : \"Don't interfere in the Taiwan issue\", whereas Takaichi announced to the press the day after “President Trump told me that he and I are extremely good friends and that I should call him any time”",
         "source": "r/japan"
       },
       {
-        "title": "‘China’s Nvidia’ Moore Threads surges over 400% on trading debut after $1.1 billion listing",
-        "source": "r/stocks"
-      },
-      {
-        "title": "White House just released its new National Security Strategy",
-        "source": "r/geopolitics"
-      },
-      {
         "title": "Cary-Hiroyuki Tagawa Dead: 'Mortal Kombat, 'High Castle' Actor Was 75",
         "source": "r/japan"
-      },
-      {
-        "title": "Is this a glitch or did they really expire at this price?",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Recently got my first 2 gold coins, well I’m back with my 3rd gold coin🫡",
-        "source": "r/Gold"
-      },
-      {
-        "title": "Got my very first gold",
-        "source": "r/Gold"
-      },
-      {
-        "title": "The 26-Minute, 51% Wipeout That Deepened Trumps’ Crypto Woes",
-        "source": "r/economics"
       }
     ]
   }

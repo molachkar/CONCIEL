@@ -1,6 +1,6 @@
 {
   "date": "2025-12-12",
-  "snapshot_generated_at": "2025-12-21T16:44:08.312632",
+  "snapshot_generated_at": "2025-12-22T18:06:31.217978",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4278.9,
@@ -65,6 +65,173 @@
       "DOLLAR.IDX_STOCH_K": 2.42,
       "DOLLAR.IDX_STOCH_D": 4.53,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.19,
+      "HY_CREDIT_SPREAD": 2.91,
+      "GLD_CLOSE": 395.44,
+      "GLD_VOLUME": 16792100,
+      "IAU_CLOSE": 80.99,
+      "IAU_VOLUME": 13725700
+    },
+    "economic_events": [
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Oil Rig Count",
+        "actual": "414",
+        "forecast": "",
+        "previous": "413"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "U.S. Baker Hughes Total Rig Count",
+        "actual": "548",
+        "forecast": "",
+        "previous": "549"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "69.2K",
+        "forecast": "",
+        "previous": "74.9K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "210.3K",
+        "forecast": "",
+        "previous": "202.3K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "46.4K",
+        "forecast": "",
+        "previous": "48.2K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-147.4K",
+        "forecast": "",
+        "previous": "-163.9K"
+      }
+    ],
+    "news": [
+      {
+        "category": "gold",
+        "title": "5 Momentum ETFs With More Room to Run in 2026",
+        "ticker": "GDXJ"
+      },
+      {
+        "category": "market",
+        "title": "5 Momentum ETFs With More Room to Run in 2026",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "Mid-Cap ETFs in High Momentum Now: More Rally Ahead?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Strategy And Bitcoin Face A Defining Test Today",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises But Nasdaq, AI Stocks Falter As Broadcom Plunges On Earnings (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "3 High-Powered ETFs That Have Doubled in Value in Just 3 Years",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Pre-markets Mixed Ahead of Consequential Week of Data",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Strategy, Bitcoin Slide Ahead Of Today's Defining Test",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Tumble on Tech Stock Weakness and Higher Bond Yields",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "QQQ vs ONEQ: Is There Any Real Difference Between These ETFs?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Pay Attention, Little Known VGK Has Nearly Doubled VOO and SPYs Returns This Year",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Sink as Chip Stocks Retreat and Bond Yields Climb",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Strategy Keeps Nasdaq 100 Listing; What It Means For Bitcoin",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "The US isn’t attacking Venezuela because of drugs — it’s because of minerals",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "The Fed just 'Trump-Proofed' Itself With a Unanimous Move to Preempt a Potential Leadership Shakeup",
+        "source": "r/economics"
+      },
+      {
+        "title": "The Multipolar Mirage: Why America and China Are the World’s Only Great Powers",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "1.4 billion barrels are on the seas, waiting to be unloaded at a port. The day that happens, oil prices are going below $50 a barrel and lowering inflation significantly.",
+        "source": "r/oil"
+      },
+      {
+        "title": "Pot Stocks Rise on Trump’s Plan to Ease Cannabis Restrictions",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Nasdaq, S&amp;P 500 futures slip as Broadcom outlook reignites AI bubble fears",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Bank of Japan set for first rate hike in 11 months",
+        "source": "r/japan"
+      },
+      {
+        "title": "Ukraine considering troop withdrawal",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "U.S. stocks hit records despite AI-led tech slide",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Costco tops Wall Street's sales and revenue expectations",
+        "source": "r/StockMarket"
+      }
+    ]
   }
 }

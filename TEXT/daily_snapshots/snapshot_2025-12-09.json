@@ -1,6 +1,6 @@
 {
   "date": "2025-12-09",
-  "snapshot_generated_at": "2025-12-21T16:44:08.301765",
+  "snapshot_generated_at": "2025-12-22T18:06:31.208741",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4189.7,
@@ -65,6 +65,168 @@
       "DOLLAR.IDX_STOCH_K": 28.67,
       "DOLLAR.IDX_STOCH_D": 22.18,
       "DOLLAR.IDX_STOCH_STATUS": "Neutral"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.18,
+      "HY_CREDIT_SPREAD": 2.89,
+      "GLD_CLOSE": 387.4,
+      "GLD_VOLUME": 6358700,
+      "IAU_CLOSE": 79.34,
+      "IAU_VOLUME": 5245200
+    },
+    "economic_events": [
+      {
+        "time": "14:15",
+        "currency": "USD",
+        "event": "ADP Employment Change Weekly",
+        "actual": "4.75K",
+        "forecast": "",
+        "previous": "-13.50K"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "JOLTS Job Openings  (Sep)",
+        "actual": "7.658M",
+        "forecast": "7.200M",
+        "previous": "7.227M"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "US Leading Index (MoM)  (Sep)",
+        "actual": "-0.3%",
+        "forecast": "-0.3%",
+        "previous": "-0.3%"
+      },
+      {
+        "time": "16:01",
+        "currency": "USD",
+        "event": "JOLTS Job Openings  (Oct)",
+        "actual": "7.670M",
+        "forecast": "",
+        "previous": "7.658M"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "10-Year Note Auction",
+        "actual": "4.175%",
+        "forecast": "",
+        "previous": "4.074%"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "74.9K",
+        "forecast": "",
+        "previous": "65.6K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "202.3K",
+        "forecast": "",
+        "previous": "204.7K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "48.2K",
+        "forecast": "",
+        "previous": "42.3K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-163.9K",
+        "forecast": "",
+        "previous": "-150.1K"
+      },
+      {
+        "time": "22:30",
+        "currency": "USD",
+        "event": "API Weekly Crude Oil Stock",
+        "actual": "-4.800M",
+        "forecast": "-1.700M",
+        "previous": "-2.480M"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Edges Higher Ahead Of Fed Meeting; Nvidia Rallies On Trump Comments (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Wobbles Ahead Of Fed Meeting; Nvidia Rallies On Trump Comments (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Up Ahead Of Fed Meeting; Nvidia Falls Despite Trump Comments (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "ETFs That Investors May Consider Amid a Dollar Drag",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Leads Despite Drag From Nvidia; This Cruise Line Stock Sails Higher (Live Coverage)",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "December FOMC Preview: Rate Cut Priced in but Tone is Everything",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "This Dividend Aristocrat Turned $100k Into $4 Million in 25 Years",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Understanding The Concept of Price Action Versus News (News Failure)",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "JPMorgan falls 4% after warning 2026 expenses will jump on credit card competition and AI spending",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Takaichi reiterates Japan claim on Dokdo, vows diplomatic push",
+        "source": "r/japan"
+      },
+      {
+        "title": "SpaceX to pursue 2026 IPO raising above $30 billion, Bloomberg News reports",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Oil Markets Face Supply Glut as Prices Expected to Fall Below $60",
+        "source": "r/oil"
+      },
+      {
+        "title": "Microsoft to invest $17.5 billion in India, CEO Nadella says",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Economy is dragging, but the stock market is thriving. Why?",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan rebuffs EU plea to join Russian assets plan",
+        "source": "r/japan"
+      }
+    ]
   }
 }

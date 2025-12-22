@@ -1,6 +1,6 @@
 {
   "date": "2025-12-15",
-  "snapshot_generated_at": "2025-12-21T16:44:08.314436",
+  "snapshot_generated_at": "2025-12-22T18:06:31.225938",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4299.3,
@@ -65,6 +65,134 @@
       "DOLLAR.IDX_STOCH_K": 6.87,
       "DOLLAR.IDX_STOCH_D": 6.25,
       "DOLLAR.IDX_STOCH_STATUS": "Exhaustion Near Lows"
-    }
+    },
+    "fundamentals": {
+      "TREASURY_10Y": 4.18,
+      "HY_CREDIT_SPREAD": 2.91,
+      "GLD_CLOSE": 395.8,
+      "GLD_VOLUME": 11345000,
+      "IAU_CLOSE": 81.08,
+      "IAU_VOLUME": 7222800
+    },
+    "economic_events": [
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "NY Empire State Manufacturing Index  (Dec)",
+        "actual": "-3.90",
+        "forecast": "9.80",
+        "previous": "18.70"
+      }
+    ],
+    "news": [
+      {
+        "category": "gold",
+        "title": "GLDs $141 Billion Rally Hinges on Continued Central Bank Buying",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Small Caps Strike Back: See Why the Russell 2000 Futures Are Heating Up for 2026",
+        "ticker": "IWM"
+      },
+      {
+        "category": "market",
+        "title": "IEUR Is One Of The Best Performing ETFs No One Knows About (Crushed VOO and SPY)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Rises As Nvidia Rebounds; Tesla Near Buy Point (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Best-Performing Leveraged ETF Areas of 2025",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Will the SPDR S&P 500 ETF (SPY) Stock Hit $800 in 2026?",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Did the QQQ Bull Run Just End? Heres Why This Candlestick is a Bearish Confirmation.",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "1 No-Brainer Artificial Intelligence (AI) Index Fund to Buy Right Now for Less Than $1,000",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "gold",
+        "title": "Positioning for 2026: Market Outlook and ETF Strategies",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stocks Fall Ahead of US November Payroll Report",
+        "ticker": "SPY"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "Tesla +3.6% after Musk confirms driverless robotaxi testing while Lyft -6% and Uber -4%",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Trump says end of war ‘closer than ever’ as Ukraine approves ‘Nato-like’ plan",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Exclusive: Nasdaq seeks to extend trading hours, as Wall Street gears up for 24/7 move",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Is Europe getting ready for battle?",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "U.S. Home Prices Slow Further Amid Affordability Concerns",
+        "source": "r/economics"
+      },
+      {
+        "title": "Japan needs tariff relief now — what is Trump waiting for?",
+        "source": "r/japan"
+      },
+      {
+        "title": "What the Twin Cities Tell Us About Fixing the Housing Crisis",
+        "source": "r/economics"
+      },
+      {
+        "title": "Why Germany Wants a Divorce With China",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Barron's 2026 Stock Picks",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Zelensky says he will drop Nato ambitions to reach Ukraine peace deal",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Trump Officials Celebrated With Cake After Slashing Aid. Then People Died of Cholera.",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "MI6 chief warns Putin: We won’t abandon Ukraine",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "2 pandas to depart Japan in Jan., leaving none for 1st time in half-century",
+        "source": "r/japan"
+      },
+      {
+        "title": "Wall Street Sees AI Bubble Coming and Is Betting on What Pops It",
+        "source": "r/StockMarket"
+      }
+    ]
   }
 }

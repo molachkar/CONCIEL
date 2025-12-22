@@ -1,6 +1,6 @@
 {
   "date": "2025-11-26",
-  "snapshot_generated_at": "2025-12-21T16:44:08.249362",
+  "snapshot_generated_at": "2025-12-22T18:06:31.170163",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4131.3,
@@ -163,26 +163,6 @@
         "ticker": "IWM"
       },
       {
-        "category": "market",
-        "title": "History Says These are 3 Stocks to Buy for December",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Nasdaq 100: Who's In And Who's Out Of QQQ. Walmart, Strategy, Lululemon?",
-        "ticker": "QQQ"
-      },
-      {
-        "category": "market",
-        "title": "5 Stocks to Buy Before Santa Claus Comes to Town",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Be Thankful to These ETFs This Year",
-        "ticker": "SPY"
-      },
-      {
         "category": "gold",
         "title": "Gold ETFs That Investors Can Consider as the Metal Extends Its Rally",
         "ticker": "GLD"
@@ -196,49 +176,6 @@
         "category": "gold",
         "title": "Why Gold Loves Trump as Much as Trump Loves Gold",
         "ticker": "GLD"
-      },
-      {
-        "category": "market",
-        "title": "Nasdaq ISE Seeks to Quadruple Trading Limits on BlackRock's Bitcoin ETF Options",
-        "ticker": "SPY"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "SPY gave me an early Thanksgiving",
-        "source": "r/SPY"
-      },
-      {
-        "title": "MIT study finds AI can already replace 11.7% of U.S. workforce",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "World stocks climb after Wall Street rallies on hopes for lower interest rates",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Japan set to issue 11 tril. yen extra bonds despite record tax revenue",
-        "source": "r/japan"
-      },
-      {
-        "title": "‘Kokuho’ Becomes Biggest Live Action Hit in Japanese Film History",
-        "source": "r/japan"
-      },
-      {
-        "title": "A Google DeepMind researcher and TPU engineer named Amir Yazdan stated on X that the market is \"clueless about hardware and the demand\" following a recent sell-off of Nvidia stock.",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Trump signs “GENESIS” AI initiative - The modern day Manhattan Project",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Hokusai's Great Wave Sells for Record Amount To Settle Billionaire's Debt",
-        "source": "r/japan"
-      },
-      {
-        "title": "Grim retail sales data fuels concerns about health of US economy",
-        "source": "r/StockMarket"
       }
     ]
   }

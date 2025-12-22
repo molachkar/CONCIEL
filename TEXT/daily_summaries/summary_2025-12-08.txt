@@ -12,4 +12,33 @@ S&P 500: RSI: 57.04 (neutral). EMA trend: bullish (EMA50: 6729.64, EMA200: 6378.
 VIX: RSI: 40.96 (neutral). EMA trend: bullish (EMA50: 18.82, EMA200: 18.66). MACD: -0.52, signal: -0.18, histogram: -0.34 (negative). Stochastic: 1.88 (exhaustion near lows).
 Gold (XAU/USD): RSI: 58.66 (neutral). EMA trend: bullish (EMA50: 4036.24, EMA200: 3569.09). MACD: 46.75, signal: 45.68, histogram: 1.07 (positive). Stochastic: 74.26 (neutral).
 
-2025-12-21 16:49:11
+ECONOMIC EVENTS:
+At 17:00, USD NY Fed 1-Year Consumer Inflation Expectations  (Nov) was released. Actual: 3.2%.
+At 19:00, USD 3-Year Note Auction was released. Actual: 3.614% and rising from previous 3.579%.
+
+FUNDAMENTALS:
+10-Year Treasury yield: 4.17%. High-yield credit spread: 2.89%. GLD ETF: closed at $385.42, volume 6,822,100. IAU ETF: closed at $78.95, volume 6,331,000.
+
+NEWS HIGHLIGHTS:
+
+MARKET (8 items):
+  • Invesco Doesnt QQQuite Have the Votes for ETFs Transition [QQQ]
+  • U.S. stocks face a bullish set-up, Morgan Stanleys Wilson says [IWM]
+  • Stock Market Today: Dow Rises As Fed Meeting Looms; Tesla Slides On Downgrade (Live Coverage) [SPY]
+  • Stock Market Today: Dow Falls As Fed Meeting Looms; Tesla Slides On Downgrade (Live Coverage) [SPY]
+  • Is a Global Margin Call Coming? How a Bank of Japan Rate Hike Could Trigger the Next Market Shock [QQQ]
+  • Is the QQQ ETF the Smartest Investment You Can Make Today? [QQQ]
+  • Bitget sees record 4,468% surge in tokenized U.S. stock futures volume [QQQ]
+  • Reality Check: The Future Is In Derivative-Based ETFs [SPY]
+
+[Total: 8 news items]
+
+SOCIAL SENTIMENT:
+
+r/japan (2 posts):
+  • Japan PM vows ‘resolute’ response after Chinese aircraft accused of locking radar on to Japanese fighter jets
+  • 7.2 Earthquake in Aomori. Tsunami Warning.
+
+[Total: 2 posts tracked]
+
+2025-12-22 18:06:41

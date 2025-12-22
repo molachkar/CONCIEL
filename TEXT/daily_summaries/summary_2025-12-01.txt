@@ -13,7 +13,6 @@ VIX: RSI: 43.85 (neutral). EMA trend: bullish (EMA50: 19.11, EMA200: 18.72). MAC
 Gold (XAU/USD): RSI: 64.43 (neutral). EMA trend: bullish (EMA50: 3999.92, EMA200: 3536.72). MACD: 48.98, signal: 38.92, histogram: 10.06 (positive). Stochastic: 82.13 (exhaustion near highs).
 
 ECONOMIC EVENTS:
-At 15:45, USD S&P Global Manufacturing PMI  (Nov) was released. Actual: 52.2, beating forecast of 51.9 and falling from previous 52.5.
 At 16:00, USD ISM Manufacturing Employment  (Nov) was released. Actual: 44.0 and falling from previous 46.0.
 At 16:00, USD ISM Manufacturing PMI  (Nov) was released. Actual: 48.2, missing forecast of 49.0 and falling from previous 48.7.
 At 16:00, USD ISM Manufacturing Prices  (Nov) was released. Actual: 58.5, missing forecast of 59.5 and rising from previous 58.0.
@@ -24,34 +23,23 @@ FUNDAMENTALS:
 
 NEWS HIGHLIGHTS:
 
-MARKET (7 items):
+MARKET (6 items):
   • S&P 500 Delivers Best Thanksgiving Week Since 2008 [SPY]
   • Stock Market Today: Dow Falls 200 Points; Nvidia, Tesla Slide (Live Coverage) [SPY]
   • Stock Market Today: Dow, Major Indexes Fall; Nvidia, Tesla Slide (Live Coverage) [SPY]
   • Stock Market Today: Dow Falls, Synopsys Hits Resistance Despite Nvidia Investment; Walt Disney Pops (Live Coverage) [SPY]
   • S&P 500 to Hit At Least 7,500-Mark in 2026? ETFs in Focus [SPY]
-  • 2 Invesco ETFs to Buy Before 2026 [QQQ]
   • Trumps Potential Fed Chair Pick: How It Could Impact Interest Rates and ETFs [SPY]
 
-[Total: 7 news items]
+[Total: 6 news items]
 
 SOCIAL SENTIMENT:
-
-r/StockMarket (4 posts):
-  • Morgan Stanley hikes price targets for two chipmakers, sees Nvidia rising more than 40%
-  • Airbus shares fall 10% on reports of new quality issue on dozens of A320 aircraft
-  • Possibility of yen carry trade unwind increases
-  • Global Stock Leaderboards Are Ruled by Europe in Rare Dominance
-
-r/geopolitics (2 posts):
-  • 'We are counting on China': Macron to ask Xi Jinping to push Russia toward ceasefire
-  • Germany to Deploy Israeli-Made Arrow 3 Air Defense Missile System for the First Time in Europe
 
 r/japan (3 posts):
   • Surprise, Anger, and Frustration as Tokyo’s High Court Rules Against Marriage Equality - Unseen Japan
   • Policy talks on foreigners start; land deals, visas high on agenda
   • Workplace injuries, deaths of foreigners in Japan top 6,000 for first time - The Mainichi
 
-[Total: 9 posts tracked]
+[Total: 3 posts tracked]
 
-2025-12-21 16:49:11
+2025-12-22 18:06:41

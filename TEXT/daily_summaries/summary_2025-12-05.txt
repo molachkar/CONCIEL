@@ -32,7 +32,7 @@ At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 42
 At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -150.1K and falling from previous -145.3K.
 
 FUNDAMENTALS:
-GLD ETF: closed at $386.44, volume 9,428,800. IAU ETF: closed at $79.14, volume 6,568,000.
+10-Year Treasury yield: 4.14%. High-yield credit spread: 2.85%. GLD ETF: closed at $386.44, volume 9,449,800. IAU ETF: closed at $79.14, volume 6,569,800.
 
 NEWS HIGHLIGHTS:
 
@@ -56,49 +56,6 @@ MARKET (10 items):
 
 SOCIAL SENTIMENT:
 
-r/China (1 posts):
-  • Chinese tourism to Russia soars as travellers pivot from under-fire Japan
-
-r/Gold (5 posts):
-  • The Uses of Platinum, Gold &amp; Silver
-  • It's the mid-1970s and you work at your local bank's "Gold Department".
-  • Finally found gold at spot price!
-  • Recently got my first 2 gold coins, well I’m back with my 3rd gold coin🫡
-  • Got my very first gold
-
-r/SPY (1 posts):
-  • Getting better at accepting small wins
-
-r/economics (7 posts):
-  • Canada added 54,000 jobs in November, unemployment rate drops to 6.5%
-  • US job cuts surged 183% in October to a record 153K. Is this the end of America's ‘no hire, no fire’ landscape?
-  • Core PCE Inflation Cools to 2.8% in September, Lower Than Expected.
-  • Wall Street Races to Cut Its Risk From AI’s Borrowing Binge
-  • Netflix to buy Warner Bros. film and streaming assets in $72 billion deal
-  • Report: Immigrants power U.S. hospitality
-  • The 26-Minute, 51% Wipeout That Deepened Trumps’ Crypto Woes
-
-r/economy (3 posts):
-  • This economy is the enemy of having children
-  • Originally estimated at $1 billion, the fraud of taxpayers in Minnesota might exceed $8 billion
-  • Biden detractors: where is the concern about the national debt now?
-
-r/europe (6 posts):
-  • On this day, 108 years ago, Finland declared independence from Russia
-  • Germany rejects US security strategy's 'outside advice'
-  • No one can pretend the Atlantic alliance is still alive
-  • Spain recognizes Moroccan sovereignty in Western Sahara
-  • Mysterious Drones Penetrate Airspace Above France’s Nuclear Sub Fleet—Marines Open Fire
-  • Boyfriend facing manslaughter charges after 'leaving novice female climber to die on Austria's highest peak'
-
-r/geopolitics (3 posts):
-  • China — The Real Winner From Russian Victory in Ukraine
-  • Trump’s son-in-law to run Gaza with Tony Blair
-  • White House just released its new National Security Strategy
-
-r/investing (1 posts):
-  • Netflix to buy Warner Bros. in an $82.7 billion deal that rewrites Hollywood’s future
-
 r/japan (5 posts):
   • Foreign driver’s license conversion test passes plummet from over 90% to 33% in Japan
   • Japan gov't considering 10-year residence requirement for foreigners seeking citizenship - The Mainichi
@@ -106,41 +63,6 @@ r/japan (5 posts):
   • Japan media leaks what Trump said in the call to Japan PM : "Don't interfere in the Taiwan issue", whereas Takaichi announced to the press the day after “President Trump told me that he and I are extremely good friends and that I should call him any time”
   • Cary-Hiroyuki Tagawa Dead: 'Mortal Kombat, 'High Castle' Actor Was 75
 
-r/stocks (5 posts):
-  • So what’s your game plan for 2026?
-  • Microsoft's annual shareholder meeting has just concluded, leaving the market with several intriguing signals.
-  • Clean energy isn’t failing. It’s threatening the people who built fortunes on scarcity.
-  • Netflix says it’s struck a deal to buy Warner Bros. Discovery for $27.75 per share
-  • ‘China’s Nvidia’ Moore Threads surges over 400% on trading debut after $1.1 billion listing
+[Total: 5 posts tracked]
 
-r/wallstreetbets (13 posts):
-  • 89K short on TSLA for next week
-  • Weekend Discussion Thread for the Weekend of December 05, 2025
-  • -75k over 5 years, I'm done
-  • SpaceX in Talks for Share Sale That Would Boost Valuation to $800 Billion
-  • Google - not AMD - is Nvidia’s greatest threat because of their full-stack AI and AlphaEvolve
-  • Another 200 down the drain
-  • Core inflation rate watched by Fed hit 2.8%, delayed September data shows, lower than expected
-  • $2.4 Million Bet On RIVN - Cursed Carmaker Turnaround
-  • Weekly Earnings Thread 12/8 - 12/12
-  • NFLX I ain‘t leaving - 182K Position
-  • Netflix agrees to buy Warner Bros. in a $72-billion deal that will transform Hollywood
-  • Daily Discussion Thread for December 05, 2025
-  • Is this a glitch or did they really expire at this price?
-
-r/worldnews (11 posts):
-  • EU defense chief: Stop relying on Washington and craft our own peace plan – POLITICO
-  • First batch of Argentina's F-16 fighter jets due to arrive from Denmark
-  • Putin arrest warrant will stand even if US-led peace talks agree Ukraine amnesty, ICC prosecutors say
-  • Trump is meeting Mexican President Sheinbaum in person for the first time at World Cup draw
-  • G7 and EU are in talks to replace a price cap on Russian oil exports with a full maritime services ban
-  • Canada's unemployment rate fell to 6.5% in November, a steep drop from previous month
-  • France intercepts illegal drone overflight at nuclear submarine base
-  • French navy shoots at 5 drones buzzing nuclear submarine base, AFP reports
-  • Germany votes to bring back voluntary military service programme for 18-year-olds
-  • Sweden to cut development aid to five countries, divert money to Ukraine
-  • Russian Troops Shoot Ukrainian POW in Donetsk Region Moments After Surrendering
-
-[Total: 61 posts tracked]
-
-2025-12-21 16:49:11
+2025-12-22 18:06:41

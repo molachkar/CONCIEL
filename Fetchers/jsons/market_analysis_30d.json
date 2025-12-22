@@ -1,26 +1,19 @@
 {
-  "generated_at": "2025-12-21T16:34:19.111613",
+  "generated_at": "2025-12-22T18:05:43.672238",
   "period_days": 30,
   "instruments": [
     {
       "instrument": "XAUUSD",
       "description": "Gold spot",
-      "analysis_timestamp": "2025-12-21T16:34:18.511101",
+      "analysis_timestamp": "2025-12-22T18:05:43.511767",
       "period": "30_days",
       "thirty_day_range": {
-        "thirty_day_high": 4374.4,
-        "thirty_day_high_date": "2025-12-18 00:00:00",
-        "thirty_day_low": 3996.7,
-        "thirty_day_low_date": "2025-11-10 00:00:00"
+        "thirty_day_high": 4441.95,
+        "thirty_day_high_date": "2025-12-22 00:00:00",
+        "thirty_day_low": 3997.66,
+        "thirty_day_low_date": "2025-11-18 00:00:00"
       },
       "market_data": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "open": 3998.1,
-          "high": 4116.4,
-          "low": 3996.7,
-          "close": 4115.61
-        },
         {
           "date": "2025-11-11 00:00:00",
           "open": 4113.1,
@@ -223,23 +216,16 @@
           "high": 4356.36,
           "low": 4308.72,
           "close": 4338.67
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "open": 4338.9,
+          "high": 4441.95,
+          "low": 4336.64,
+          "close": 4437.48
         }
       ],
       "technicals": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "rsi_value": 58.9,
-          "rsi_status": "Neutral",
-          "ema50_value": 3889.14,
-          "ema200_value": 3440.56,
-          "ema_trend": "Bullish",
-          "macd_value": 25.95,
-          "macd_signal": 42.31,
-          "macd_histogram": -16.36,
-          "stoch_k_value": 83.43,
-          "stoch_d_value": 41.67,
-          "stoch_status": "Neutral"
-        },
         {
           "date": "2025-11-11 00:00:00",
           "rsi_value": 59.48,
@@ -645,13 +631,27 @@
           "stoch_k_value": 83.06,
           "stoch_d_value": 84.78,
           "stoch_status": "Exhaustion Near Highs"
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "rsi_value": 78.3,
+          "rsi_status": "Overbought",
+          "ema50_value": 4127.37,
+          "ema200_value": 3639.39,
+          "ema_trend": "Bullish",
+          "macd_value": 72.23,
+          "macd_signal": 60.34,
+          "macd_histogram": 11.89,
+          "stoch_k_value": 98.36,
+          "stoch_d_value": 86.89,
+          "stoch_status": "Exhaustion Near Highs"
         }
       ]
     },
     {
       "instrument": "USA500.IDX",
       "description": "S&P500 index CFD",
-      "analysis_timestamp": "2025-12-21T16:34:19.028565",
+      "analysis_timestamp": "2025-12-22T18:05:43.543237",
       "period": "30_days",
       "thirty_day_range": {
         "thirty_day_high": 6911.4,
@@ -660,13 +660,6 @@
         "thirty_day_low_date": "2025-11-21 00:00:00"
       },
       "market_data": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "open": 6763.1,
-          "high": 6841.64,
-          "low": 6747.54,
-          "close": 6838.33
-        },
         {
           "date": "2025-11-11 00:00:00",
           "open": 6835.94,
@@ -869,23 +862,16 @@
           "high": 6840.24,
           "low": 6766.64,
           "close": 6835.14
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "open": 6852.64,
+          "high": 6879.75,
+          "low": 6846.35,
+          "close": 6876.93
         }
       ],
       "technicals": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "rsi_value": 58.4,
-          "rsi_status": "Neutral",
-          "ema50_value": 6672.5,
-          "ema200_value": 6292.9,
-          "ema_trend": "Bullish",
-          "macd_value": 36.89,
-          "macd_signal": 46.17,
-          "macd_histogram": -9.27,
-          "stoch_k_value": 71.29,
-          "stoch_d_value": 45.48,
-          "stoch_status": "Neutral"
-        },
         {
           "date": "2025-11-11 00:00:00",
           "rsi_value": 59.63,
@@ -1291,13 +1277,27 @@
           "stoch_k_value": 60.7,
           "stoch_d_value": 31.89,
           "stoch_status": "Neutral"
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "rsi_value": 57.39,
+          "rsi_status": "Neutral",
+          "ema50_value": 6761.89,
+          "ema200_value": 6421.78,
+          "ema_trend": "Bullish",
+          "macd_value": 17.12,
+          "macd_signal": 20.51,
+          "macd_histogram": -3.39,
+          "stoch_k_value": 82.24,
+          "stoch_d_value": 56.03,
+          "stoch_status": "Neutral"
         }
       ]
     },
     {
       "instrument": "VOL.IDX",
       "description": "Volatility Index (VIX CFD)",
-      "analysis_timestamp": "2025-12-21T16:34:19.070105",
+      "analysis_timestamp": "2025-12-22T18:05:43.607017",
       "period": "30_days",
       "thirty_day_range": {
         "thirty_day_high": 23.37,
@@ -1306,13 +1306,6 @@
         "thirty_day_low_date": "2025-12-12 00:00:00"
       },
       "market_data": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "open": 19.13,
-          "high": 19.48,
-          "low": 18.32,
-          "close": 18.32
-        },
         {
           "date": "2025-11-11 00:00:00",
           "open": 18.37,
@@ -1515,23 +1508,16 @@
           "high": 18.18,
           "low": 17.28,
           "close": 17.28
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "open": 17.13,
+          "high": 17.18,
+          "low": 16.82,
+          "close": 16.87
         }
       ],
       "technicals": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "rsi_value": 47.26,
-          "rsi_status": "Neutral",
-          "ema50_value": 18.55,
-          "ema200_value": 18.54,
-          "ema_trend": "Bullish",
-          "macd_value": 0.17,
-          "macd_signal": 0.24,
-          "macd_histogram": -0.07,
-          "stoch_k_value": 15.54,
-          "stoch_d_value": 43.07,
-          "stoch_status": "Neutral"
-        },
         {
           "date": "2025-11-11 00:00:00",
           "rsi_value": 47.06,
@@ -1937,13 +1923,27 @@
           "stoch_k_value": 47.64,
           "stoch_d_value": 72.97,
           "stoch_status": "Neutral"
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "rsi_value": 42.73,
+          "rsi_status": "Neutral",
+          "ema50_value": 18.32,
+          "ema200_value": 18.53,
+          "ema_trend": "Bearish",
+          "macd_value": -0.46,
+          "macd_signal": -0.5,
+          "macd_histogram": 0.03,
+          "stoch_k_value": 33.78,
+          "stoch_d_value": 53.15,
+          "stoch_status": "Neutral"
         }
       ]
     },
     {
       "instrument": "DOLLAR.IDX",
       "description": "Dollar Index (DXY CFD)",
-      "analysis_timestamp": "2025-12-21T16:34:19.110737",
+      "analysis_timestamp": "2025-12-22T18:05:43.671069",
       "period": "30_days",
       "thirty_day_range": {
         "thirty_day_high": 100.31,
@@ -1952,13 +1952,6 @@
         "thirty_day_low_date": "2025-12-16 00:00:00"
       },
       "market_data": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "open": 99.54,
-          "high": 99.59,
-          "low": 99.3,
-          "close": 99.5
-        },
         {
           "date": "2025-11-11 00:00:00",
           "open": 99.54,
@@ -2161,23 +2154,16 @@
           "high": 98.39,
           "low": 98.07,
           "close": 98.35
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "open": 98.27,
+          "high": 98.3,
+          "low": 97.86,
+          "close": 97.95
         }
       ],
       "technicals": [
-        {
-          "date": "2025-11-10 00:00:00",
-          "rsi_value": 59.72,
-          "rsi_status": "Neutral",
-          "ema50_value": 98.56,
-          "ema200_value": 100.01,
-          "ema_trend": "Bearish",
-          "macd_value": 0.42,
-          "macd_signal": 0.4,
-          "macd_histogram": 0.03,
-          "stoch_k_value": 65.66,
-          "stoch_d_value": 64.93,
-          "stoch_status": "Neutral"
-        },
         {
           "date": "2025-11-11 00:00:00",
           "rsi_value": 56.82,
@@ -2582,6 +2568,20 @@
           "macd_histogram": -0.1,
           "stoch_k_value": 43.08,
           "stoch_d_value": 31.34,
+          "stoch_status": "Neutral"
+        },
+        {
+          "date": "2025-12-22 00:00:00",
+          "rsi_value": 36.15,
+          "rsi_status": "Neutral",
+          "ema50_value": 98.75,
+          "ema200_value": 99.74,
+          "ema_trend": "Bearish",
+          "macd_value": -0.34,
+          "macd_signal": -0.25,
+          "macd_histogram": -0.09,
+          "stoch_k_value": 25.57,
+          "stoch_d_value": 32.8,
           "stoch_status": "Neutral"
         }
       ]
