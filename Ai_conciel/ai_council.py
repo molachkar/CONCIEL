@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 
-import os, sys, random, re
+import os, sys, re
 from datetime import datetime
 from pathlib import Path
 from rich.console import Console
 from rich.panel import Panel
-from rich.prompt import IntPrompt, FloatPrompt
 from rich.table import Table
+from rich.prompt import IntPrompt, FloatPrompt
+from rich.markdown import Markdown
 
 try:
     from dotenv import load_dotenv
@@ -20,6 +21,7 @@ from openai import OpenAI
 
 console = Console()
 
+# API Setup
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 SAMBANOVA_API_KEY = os.environ.get("SAMBANOVA_API_KEY")
@@ -30,65 +32,81 @@ gemini_client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
 sambanova_client = OpenAI(api_key=SAMBANOVA_API_KEY, base_url="https://api.sambanova.ai/v1") if SAMBANOVA_API_KEY else None
 cerebras_client = OpenAI(api_key=CEREBRAS_API_KEY, base_url="https://api.cerebras.ai/v1") if CEREBRAS_API_KEY else None
 
+# FIXED ORDER - Strategic leads first for context building
+COUNCIL_ORDER = [
+    "macro_quant",      # Qwen 235B - strongest first
+    "swing_trader",     # Gemini 2.5 - structure
+    "speed_technician", # Llama 70B - patterns
+    "momentum_scalper", # Llama 8B - timing
+    "risk_quant"        # Llama 8B - math
+]
+
 TRADERS = {
-    "groq": {
-        "name": "Momentum Scalper", 
-        "color": "cyan", 
-        "style": "bold cyan",
-        "personality": "Momentum scalper. Focus: price action, S/R, quick entries. Tight stops, 1:2+ R:R. Trade WITH trend. Max 3 sentences.",
-        "model": "llama-3.1-8b-instant", 
-        "provider": "groq"
-    },
-    "gemini": {
-        "name": "Swing Trader", 
-        "color": "green", 
-        "style": "bold green",
-        "personality": "Swing structure trader. Focus: market structure, EMAs, HTF context. Wider stops, 1:3+ R:R. WITH HTF trend only. Max 3 sentences.",
-        "model": "gemini-2.5-flash", 
-        "provider": "gemini"
-    },
-    "sambanova": {
-        "name": "Risk Quant", 
-        "color": "magenta", 
-        "style": "bold magenta",
-        "personality": "Risk quant. Focus: position sizing, probability, math. Math-first. If math fails, no trade. Max 3 sentences.",
-        "model": "Meta-Llama-3.1-8B-Instruct", 
-        "provider": "sambanova"
-    },
-    "cerebras_llama": {
-        "name": "Speed Technician", 
-        "color": "blue", 
-        "style": "bold blue",
-        "personality": "Speed technical analyst. Focus: rapid patterns, key levels, volume. Fast decisions, chart structure, fib, orderblocks. Max 3 sentences.",
-        "model": "llama-3.3-70b", 
-        "provider": "cerebras"
-    },
-    "cerebras_qwen": {
-        "name": "Macro Quant", 
-        "color": "yellow", 
+    "macro_quant": {
+        "name": "Macro Quant",
+        "color": "yellow",
         "style": "bold yellow",
-        "personality": "Deep macro quant. Focus: macro-technical synthesis, regime analysis, MTF confluence. Large reasoning, correlations, probability. Max 3 sentences.",
-        "model": "qwen-3-235b-a22b-instruct-2507", 
-        "provider": "cerebras"
+        "lens": "Probabilistic regime analysis + macro-technical synthesis + base probability calculation",
+        "model": "qwen-3-235b-a22b-instruct-2507",
+        "provider": "cerebras",
+        "weight": 0.30,
+        "veto_power": True
+    },
+    "swing_trader": {
+        "name": "Swing Trader",
+        "color": "green",
+        "style": "bold green",
+        "lens": "Market structure + HTF context + key S/R levels + trend alignment",
+        "model": "gemini-2.5-flash",
+        "provider": "gemini",
+        "weight": 0.25,
+        "veto_power": False
+    },
+    "speed_technician": {
+        "name": "Speed Technician",
+        "color": "blue",
+        "style": "bold blue",
+        "lens": "Technical patterns + key levels + volume analysis + order blocks",
+        "model": "llama-3.3-70b",
+        "provider": "cerebras",
+        "weight": 0.20,
+        "veto_power": False
+    },
+    "momentum_scalper": {
+        "name": "Momentum Scalper",
+        "color": "cyan",
+        "style": "bold cyan",
+        "lens": "Entry timing + price action + immediate execution optimization",
+        "model": "llama-3.1-8b-instant",
+        "provider": "groq",
+        "weight": 0.125,
+        "veto_power": False
+    },
+    "risk_quant": {
+        "name": "Risk Quant",
+        "color": "magenta",
+        "style": "bold magenta",
+        "lens": "Position sizing + Kelly Criterion + risk mathematics + probability validation",
+        "model": "Meta-Llama-3.1-8B-Instruct",
+        "provider": "sambanova",
+        "weight": 0.125,
+        "veto_power": False
     }
 }
 
-params, macro, tech, log = {}, "", "", []
+params, macro_data, tech_data, meeting_log = {}, {}, {}, []
 
 def get_params():
     console.print(Panel("[bold yellow]Trading Parameters[/bold yellow]", border_style="yellow"))
     p = {}
-    p['account_size'] = FloatPrompt.ask("[bold]Account Size (USD)[/bold]", default=300.0)
-    p['risk_percent'] = FloatPrompt.ask("[bold]Risk (%)[/bold]", default=2.0)
+    p['account_size'] = FloatPrompt.ask("[bold]Account Size (USD)[/bold]", default=100.0)
+    p['risk_percent'] = FloatPrompt.ask("[bold]Risk (%)[/bold]", default=10.0)
     
     console.print("\n[bold]Timeframe:[/bold] 1.Scalp 2.Intraday 3.Swing")
     p['timeframe'] = {1:"Scalp",2:"Intraday",3:"Swing"}[IntPrompt.ask("Select", default=2)]
     
     console.print("\n[bold]Min R:R:[/bold] 1.1:2 2.1:3 3.1:5")
-    p['min_rr'] = {1:2.0,2:3.0,3:5.0}[IntPrompt.ask("Select", default=1)]
-    
-    console.print("\n[bold]Style:[/bold] 1.Aggressive 2.Balanced 3.Conservative")
-    p['style'] = {1:"Aggressive",2:"Balanced",3:"Conservative"}[IntPrompt.ask("Select", default=2)]
+    p['min_rr'] = {1:2.0,2:3.0,3:5.0}[IntPrompt.ask("Select", default=2)]
     
     p['risk_dollars'] = (p['account_size'] * p['risk_percent']) / 100
     
@@ -99,461 +117,927 @@ def get_params():
     t.add_row("Risk/Trade", f"{p['risk_percent']}% (${p['risk_dollars']:.2f})")
     t.add_row("Timeframe", p['timeframe'])
     t.add_row("Min R:R", f"1:{p['min_rr']}")
-    t.add_row("Style", p['style'])
     console.print(t)
     return p
 
-def optimize_macro(txt):
-    """
-    Extract structured key metrics from the macro report.
-    Expects a KEY METRICS SNAPSHOT section at the top of the report.
-    """
+def extract_macro_data(report_path):
+    """Extract structured macro data from report"""
     try:
-        output = []
+        with open(report_path, 'r', encoding='utf-8') as f:
+            content = f.read()
         
-        # Extract the KEY METRICS SNAPSHOT section if present
-        metrics_section = re.search(
-            r'## KEY METRICS SNAPSHOT\s*\n(.*?)\n---', 
-            txt, 
-            re.DOTALL | re.IGNORECASE
-        )
+        data = {}
         
+        # Extract KEY METRICS SNAPSHOT
+        metrics_section = re.search(r'## KEY METRICS SNAPSHOT\s*\n(.*?)\n---', content, re.DOTALL | re.I)
         if metrics_section:
-            metrics_text = metrics_section.group(1)
+            metrics = metrics_section.group(1)
             
-            # Extract Regime (in quotes)
-            regime = re.search(r'\*\*Regime\*\*:\s*"([^"]+)"', metrics_text, re.I)
-            if regime:
-                output.append(f"REGIME: {regime.group(1)}")
+            regime = re.search(r'\*\*Regime\*\*:\s*"([^"]+)"', metrics, re.I)
+            if regime: data['regime'] = regime.group(1)
             
-            # Extract Gold price
-            gold = re.search(r'\*\*XAU/USD\*\*:\s*\$?([\d,]+\.?\d*)', metrics_text, re.I)
-            if gold:
-                output.append(f"Gold: ${gold.group(1)}")
+            gold = re.search(r'\*\*XAU/USD\*\*:\s*\$?([\d,]+\.?\d*)', metrics, re.I)
+            if gold: data['gold_macro'] = float(gold.group(1).replace(',', ''))
             
-            # Extract DXY
-            dxy = re.search(r'\*\*DXY\*\*:\s*([\d,]+\.?\d*)', metrics_text, re.I)
-            if dxy:
-                output.append(f"DXY: {dxy.group(1)}")
+            dxy = re.search(r'\*\*DXY\*\*:\s*([\d.]+)', metrics, re.I)
+            if dxy: data['dxy'] = float(dxy.group(1))
             
-            # Extract VIX
-            vix = re.search(r'\*\*VIX\*\*:\s*([\d,]+\.?\d*)', metrics_text, re.I)
-            if vix:
-                output.append(f"VIX: {vix.group(1)}")
+            vix = re.search(r'\*\*VIX\*\*:\s*([\d.]+)', metrics, re.I)
+            if vix: data['vix'] = float(vix.group(1))
             
-            # Extract Fed Stance
-            fed = re.search(r'\*\*Fed Stance\*\*:\s*(\w+)', metrics_text, re.I)
-            if fed:
-                output.append(f"Fed: {fed.group(1)}")
+            fed = re.search(r'\*\*Fed Stance\*\*:\s*(\w+)', metrics, re.I)
+            if fed: data['fed_stance'] = fed.group(1)
             
-            # Extract 10Y Treasury
-            treasury = re.search(r'\*\*10Y Treasury\*\*:\s*([\d.]+)%?', metrics_text, re.I)
-            if treasury:
-                output.append(f"10Y: {treasury.group(1)}%")
+            treasury = re.search(r'\*\*10Y Treasury\*\*:\s*([\d.]+)', metrics, re.I)
+            if treasury: data['treasury_10y'] = float(treasury.group(1))
             
-            # Extract Real Rate Estimate
-            real_rate = re.search(r'\*\*Real Rate Estimate\*\*:\s*([+-]?[\d.]+)%?', metrics_text, re.I)
-            if real_rate:
-                output.append(f"Real Rate: {real_rate.group(1)}%")
+            real_rate = re.search(r'\*\*Real Rate Estimate\*\*:\s*([+-]?[\d.]+)', metrics, re.I)
+            if real_rate: data['real_rate'] = float(real_rate.group(1))
         
-        # Fallback: try old extraction methods if KEY METRICS section not found
-        if not output:
-            regime = re.search(r'regime.*?[""]([^""]+)[""]', txt, re.I)
-            if regime:
-                output.append(f"REGIME: {regime.group(1)}")
-            
-            gold = re.search(r'XAU/USD.*?(\$?[\d,]+\.?\d*)', txt, re.I)
-            if gold:
-                output.append(f"Gold: {gold.group(1)}")
-            
-            if 'dovish' in txt.lower():
-                output.append("Fed: Dovish")
-            elif 'hawkish' in txt.lower():
-                output.append("Fed: Hawkish")
-            
-            dxy = re.search(r'DXY.*?(\d+\.?\d*)', txt, re.I)
-            if dxy:
-                output.append(f"DXY: {dxy.group(1)}")
-            
-            vix = re.search(r'VIX.*?(\d+\.?\d*)', txt, re.I)
-            if vix:
-                output.append(f"VIX: {vix.group(1)}")
+        # Store full report for reference
+        data['full_report'] = content
         
-        # Return formatted output or fallback
-        if output:
-            return "\n".join(output)
-        else:
-            return "Limited macro data - check report format"
-    
+        return data
     except Exception as e:
-        # If all parsing fails, return truncated text
-        return txt[:500] + "\n\n[Parsing failed - using raw excerpt]"
+        console.print(f"[red]Error extracting macro: {e}[/red]")
+        return None
+
+def extract_tech_data(tech_path):
+    """Extract pure technical data from technical file"""
+    try:
+        with open(tech_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        data = {}
+        
+        # Extract price data
+        current = re.search(r'Current:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if current: data['current_price'] = float(current.group(1).replace(',', ''))
+        
+        day_open = re.search(r'Day Open:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if day_open: data['day_open'] = float(day_open.group(1).replace(',', ''))
+        
+        day_high = re.search(r'Day High:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if day_high: data['day_high'] = float(day_high.group(1).replace(',', ''))
+        
+        day_low = re.search(r'Day Low:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if day_low: data['day_low'] = float(day_low.group(1).replace(',', ''))
+        
+        # Extract EMAs
+        ema50 = re.search(r'EMA50:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if ema50: data['ema50'] = float(ema50.group(1).replace(',', ''))
+        
+        ema200 = re.search(r'EMA200:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if ema200: data['ema200'] = float(ema200.group(1).replace(',', ''))
+        
+        # Extract full technical content for patterns/levels
+        data['full_technical'] = content
+        
+        return data
+    except Exception as e:
+        console.print(f"[red]Error extracting technicals: {e}[/red]")
+        return None
 
 def load_reports():
-    global macro, tech
+    global macro_data, tech_data
     rp = Path("Ai_conciel/reports")
+    
     if not rp.exists():
         console.print("[red]No reports folder[/red]")
         return False
     
-    mf = list(rp.glob("*gold_regime*.md")) + list(rp.glob("*macro*.txt")) + list(rp.glob("*macro*.md"))
-    if not mf:
-        console.print("[red]No macro reports[/red]")
+    # Load macro report
+    macro_files = list(rp.glob("*gold_regime*.md"))
+    if not macro_files:
+        console.print("[red]No macro reports found[/red]")
         return False
     
     console.print("\n[bold]Macro Reports:[/bold]")
-    for i,f in enumerate(mf,1): 
+    for i, f in enumerate(macro_files, 1):
         console.print(f"  {i}. {f.name}")
-    c = IntPrompt.ask("Select", default=1)
-    if c<1 or c>len(mf): 
+    choice = IntPrompt.ask("Select", default=1)
+    if choice < 1 or choice > len(macro_files):
         return False
     
-    for enc in ['utf-8','latin-1','cp1252']:
-        try:
-            with open(mf[c-1],'r',encoding=enc,errors='replace') as f:
-                macro = optimize_macro(f.read())
-            break
-        except: 
-            continue
+    macro_data = extract_macro_data(macro_files[choice-1])
+    if not macro_data:
+        return False
     
-    tf = list(rp.glob("technical*.txt")) + list(rp.glob("technical*.md"))
-    if not tf:
-        tech = "No technical data"
-    else:
-        console.print("\n[bold]Technical Reports:[/bold]")
-        for i,f in enumerate(tf,1): 
-            console.print(f"  {i}. {f.name}")
-        c = IntPrompt.ask("Select", default=1)
-        if 1<=c<=len(tf):
-            for enc in ['utf-8','latin-1','cp1252']:
-                try:
-                    with open(tf[c-1],'r',encoding=enc,errors='replace') as f:
-                        tech = f.read()
-                    break
-                except: 
-                    continue
+    # Load technical report
+    tech_files = list(rp.glob("technical*.txt")) + list(rp.glob("technical*.md"))
+    if not tech_files:
+        console.print("[red]No technical reports found[/red]")
+        return False
+    
+    console.print("\n[bold]Technical Reports:[/bold]")
+    for i, f in enumerate(tech_files, 1):
+        console.print(f"  {i}. {f.name}")
+    choice = IntPrompt.ask("Select", default=1)
+    if choice < 1 or choice > len(tech_files):
+        return False
+    
+    tech_data = extract_tech_data(tech_files[choice-1])
+    if not tech_data:
+        return False
+    
     return True
 
-def ai_call(key, prompt, sys, max_tok=300):
+def ai_call(key, prompt, max_tok=500):
     t = TRADERS[key]
     prov = t["provider"]
     try:
-        if prov == "groq":
-            if not groq_client: 
-                return "[Groq not init]"
+        if prov == "groq" and groq_client:
             r = groq_client.chat.completions.create(
                 model=t["model"],
-                messages=[{"role":"system","content":sys},{"role":"user","content":prompt}],
-                max_tokens=max_tok, 
-                temperature=0.7
+                messages=[{"role":"user","content":prompt}],
+                max_tokens=max_tok, temperature=0.3
             )
             return r.choices[0].message.content or "[No response]"
-        elif prov == "gemini":
-            if not gemini_client: 
-                return "[Gemini not init]"
+        elif prov == "gemini" and gemini_client:
             r = gemini_client.models.generate_content(
-                model=t["model"], 
-                contents=f"{sys}\n\n{prompt}"
+                model=t["model"], contents=prompt
             )
             return r.text or "[No response]"
-        elif prov == "sambanova":
-            if not sambanova_client: 
-                return "[SambaNova not init]"
+        elif prov == "sambanova" and sambanova_client:
             r = sambanova_client.chat.completions.create(
                 model=t["model"],
-                messages=[{"role":"system","content":sys},{"role":"user","content":prompt}],
-                max_tokens=max_tok, 
-                temperature=0.7
+                messages=[{"role":"user","content":prompt}],
+                max_tokens=max_tok, temperature=0.3
             )
             return r.choices[0].message.content or "[No response]"
-        elif prov == "cerebras":
-            if not cerebras_client: 
-                return "[Cerebras not init]"
+        elif prov == "cerebras" and cerebras_client:
             r = cerebras_client.chat.completions.create(
                 model=t["model"],
-                messages=[{"role":"system","content":sys},{"role":"user","content":prompt}],
-                max_tokens=max_tok, 
-                temperature=0.7
+                messages=[{"role":"user","content":prompt}],
+                max_tokens=max_tok, temperature=0.3
             )
             return r.choices[0].message.content or "[No response]"
     except Exception as e:
         return f"[Error: {e}]"
+    return "[Provider not available]"
 
-def vote_direction(order):
-    console.print(Panel("[bold]ROUND 1: DIRECTION[/bold]\nVote: BUY/SELL/NO TRADE", border_style="yellow"))
+def format_meeting_log(include_round=None):
+    """Format meeting log for display in prompts"""
+    output = []
+    for entry in meeting_log:
+        if include_round and entry.get('round') != include_round:
+            continue
+        output.append(f"[{entry['model']}]:\n{entry['response']}\n")
+    return "\n".join(output)
+
+# PHASE 1: OPEN ANALYSIS
+
+def round_1_initial_assessment():
+    """Round 1: All models provide initial market assessment"""
+    console.print(Panel("[bold]PHASE 1 - ROUND 1: INITIAL ASSESSMENT[/bold]", border_style="yellow"))
+    
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== TRADING MEETING ROOM ===
+
+ACCOUNT: ${params['account_size']:.2f} | RISK: {params['risk_percent']}% (${params['risk_dollars']:.2f}) | TIMEFRAME: {params['timeframe']} | MIN R:R: 1:{params['min_rr']}
+
+MACRO REPORT (Economic Context):
+Regime: {macro_data.get('regime', 'N/A')}
+DXY: {macro_data.get('dxy', 'N/A')}
+VIX: {macro_data.get('vix', 'N/A')}
+Fed Stance: {macro_data.get('fed_stance', 'N/A')}
+10Y Treasury: {macro_data.get('treasury_10y', 'N/A')}%
+Real Rate: {macro_data.get('real_rate', 'N/A')}%
+
+[Full Report Context]
+{macro_data.get('full_report', 'N/A')[:1500]}...
+
+TECHNICAL DATA (Pure):
+XAUUSD Current: ${tech_data.get('current_price', 'N/A')}
+Day Open: ${tech_data.get('day_open', 'N/A')}
+Day High: ${tech_data.get('day_high', 'N/A')}
+Day Low: ${tech_data.get('day_low', 'N/A')}
+EMA50: ${tech_data.get('ema50', 'N/A')}
+EMA200: ${tech_data.get('ema200', 'N/A')}
+
+[Full Technical Data]
+{tech_data.get('full_technical', 'N/A')[:1000]}...
+
+YOUR ANALYTICAL LENS: {t['lens']}
+
+TASK: Provide your initial market assessment from your lens perspective.
+
+1. What do you see from your analytical lens?
+2. What's your probability assessment?
+   P(BUY) = ?
+   P(SELL) = ?
+   P(NONE) = ?
+3. What's your confidence level? (LOW/MEDIUM/HIGH)
+4. Key risks or opportunities you notice?
+
+Speak freely. 3-5 sentences max. Focus on building understanding, not criticizing."""
+
+        with console.status(f"[{t['color']}]{t['name']} analyzing...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=400)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        meeting_log.append({"round": 1, "model": t['name'], "key": key, "response": response})
+    
+    return True
+
+def round_2_collaborative_response():
+    """Round 2: All models respond to Round 1 discussion"""
+    console.print(Panel("[bold]PHASE 1 - ROUND 2: COLLABORATIVE RESPONSE[/bold]", border_style="yellow"))
+    
+    round1_discussion = format_meeting_log(include_round=1)
+    
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== MEETING ROOM - ROUND 2 ===
+
+ROUND 1 DISCUSSION:
+{round1_discussion}
+
+YOUR ANALYTICAL LENS: {t['lens']}
+
+TASK: Respond to the discussion and refine your view.
+
+1. Which analysis do you most AGREE with? Why?
+2. Which analysis do you DISAGREE with? Why?
+3. Do you want to adjust your probability? 
+   New: P(BUY) = ?
+   New: P(SELL) = ?
+   New: P(NONE) = ?
+4. What's missing from the discussion that needs attention?
+
+Focus on COLLABORATION to build consensus. 3-4 sentences max."""
+
+        with console.status(f"[{t['color']}]{t['name']} responding...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=400)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        meeting_log.append({"round": 2, "model": t['name'], "key": key, "response": response})
+    
+    # Calculate aggregate probabilities
+    probs = {'BUY': [], 'SELL': [], 'NONE': []}
+    for entry in meeting_log:
+        resp = entry['response']
+        buy = re.findall(r'P\(BUY\)\s*=?\s*(0?\.\d+|\d+%?)', resp, re.I)
+        sell = re.findall(r'P\(SELL\)\s*=?\s*(0?\.\d+|\d+%?)', resp, re.I)
+        none = re.findall(r'P\(NONE\)\s*=?\s*(0?\.\d+|\d+%?)', resp, re.I)
+        
+        if buy:
+            val = buy[-1].replace('%', '')
+            probs['BUY'].append(float(val) if '.' in val else float(val)/100)
+        if sell:
+            val = sell[-1].replace('%', '')
+            probs['SELL'].append(float(val) if '.' in val else float(val)/100)
+        if none:
+            val = none[-1].replace('%', '')
+            probs['NONE'].append(float(val) if '.' in val else float(val)/100)
+    
+    avg_probs = {
+        'BUY': sum(probs['BUY'])/len(probs['BUY']) if probs['BUY'] else 0,
+        'SELL': sum(probs['SELL'])/len(probs['SELL']) if probs['SELL'] else 0,
+        'NONE': sum(probs['NONE'])/len(probs['NONE']) if probs['NONE'] else 0
+    }
+    
+    console.print(Panel(
+        f"[bold]PHASE 1 SUMMARY:[/bold]\n"
+        f"P(BUY) = {avg_probs['BUY']:.2f}\n"
+        f"P(SELL) = {avg_probs['SELL']:.2f}\n"
+        f"P(NONE) = {avg_probs['NONE']:.2f}",
+        border_style="cyan"
+    ))
+    
+    max_prob = max(avg_probs.values())
+    if max_prob < 0.60:
+        console.print(Panel("[red]NO CLEAR DIRECTION - Probability < 0.60[/red]", border_style="red"))
+        return False, None
+    
+    direction = max(avg_probs, key=avg_probs.get)
+    if direction == 'NONE':
+        console.print(Panel("[red]CONSENSUS: NO TRADE[/red]", border_style="red"))
+        return False, None
+    
+    return True, {'direction': direction, 'probability': max_prob}
+
+# PHASE 2: DIRECTION CONSENSUS
+
+def round_3_direction_vote(phase1_result):
+    """Round 3: Final direction vote with supermajority"""
+    console.print(Panel("[bold]PHASE 2 - ROUND 3: FINAL DIRECTION VOTE[/bold]", border_style="yellow"))
+    
     votes = {}
-    for k in order:
-        t = TRADERS[k]
-        p = f"Account: ${params['account_size']} | Risk: {params['risk_percent']}% | TF: {params['timeframe']}\n\nMACRO:\n{macro}\n\nTECH:\n{tech}\n\nVote DIRECTION: BUY/SELL/NO TRADE\nOne sentence why.\nFormat:\nVOTE: [choice]\nWHY: [sentence]"
-        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
-            resp = ai_call(k, p, t["personality"])
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}] {resp}")
-        vm = re.search(r'VOTE:\s*(BUY|SELL|NO TRADE)', resp, re.I)
-        votes[k] = {"vote": vm.group(1).upper() if vm else "NO TRADE", "reasoning": resp}
-        log.append(f"[{t['name']}] Dir: {votes[k]['vote']}")
     
-    buy = sum(1 for v in votes.values() if v["vote"]=="BUY")
-    sell = sum(1 for v in votes.values() if v["vote"]=="SELL")
-    no = sum(1 for v in votes.values() if v["vote"]=="NO TRADE")
-    cons = max(buy,sell,no)/len(votes)
-    
-    if buy>sell and buy>no: 
-        direction = "BUY"
-    elif sell>buy and sell>no: 
-        direction = "SELL"
-    else: 
-        direction = "NO TRADE"
-    
-    console.print(f"\n[bold]CONSENSUS:[/bold] {direction} ({buy} BUY, {sell} SELL, {no} NO)\n[bold]Agreement:[/bold] {cons*100:.0f}%")
-    return {"direction":direction, "consensus":cons, "votes":votes, "buy":buy, "sell":sell, "no_trade":no}
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== MEETING ROOM - DIRECTION VOTE ===
 
-def vote_entry(order, direction, prev):
-    console.print(Panel(f"[bold]ROUND 2: ENTRY[/bold]\nDirection: {direction}", border_style="yellow"))
-    entries = {}
-    for k in order:
-        t = TRADERS[k]
-        pctx = "\n".join([f"{TRADERS[x]['name']}: {v['vote']}" for x,v in prev.items()])
-        p = f"Dir: {direction}\nAccount: ${params['account_size']} | Risk: {params['risk_percent']}%\n\nMACRO: {macro}\nTECH: {tech}\n\nPrev votes:\n{pctx}\n\nPropose ENTRY (number) and WHY (sentence).\nFormat:\nENTRY: $[price]\nWHY: [sentence]"
-        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
-            resp = ai_call(k, p, t["personality"])
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}] {resp}")
-        em = re.search(r'ENTRY:\s*\$?([\d,]+\.?\d*)', resp, re.I)
-        if em:
-            ep = float(em.group(1).replace(',',''))
-            entries[k] = {"entry":ep, "reasoning":resp}
-            log.append(f"[{t['name']}] Entry: ${ep:.2f}")
+PHASE 1 SUMMARY:
+Direction Indication: {phase1_result['direction']}
+Probability: {phase1_result['probability']:.2f}
+
+FULL DISCUSSION SO FAR:
+{format_meeting_log()}
+
+YOUR LENS: {t['lens']}
+
+FINAL VOTE: Given all discussion, what is your FINAL direction vote?
+
+OUTPUT FORMAT (STRICT):
+VOTE: BUY / SELL / NO_TRADE
+PROBABILITY: 0.XX (your final confidence in this direction)
+WHY: [1-2 sentences - final reasoning]"""
+
+        with console.status(f"[{t['color']}]{t['name']} voting...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=300)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        
+        # Parse vote
+        vote_match = re.search(r'VOTE:\s*(BUY|SELL|NO_TRADE)', response, re.I)
+        prob_match = re.search(r'PROBABILITY:\s*(0?\.\d+)', response, re.I)
+        
+        vote = vote_match.group(1).upper() if vote_match else "NO_TRADE"
+        prob = float(prob_match.group(1)) if prob_match else 0.5
+        
+        votes[key] = {'vote': vote, 'probability': prob, 'response': response}
+        meeting_log.append({"round": 3, "model": t['name'], "key": key, "response": response})
+    
+    # Count votes
+    buy_votes = sum(1 for v in votes.values() if v['vote'] == 'BUY')
+    sell_votes = sum(1 for v in votes.values() if v['vote'] == 'SELL')
+    no_votes = sum(1 for v in votes.values() if v['vote'] == 'NO_TRADE')
+    
+    # Check for Qwen veto
+    qwen_vote = votes['macro_quant']['vote']
+    qwen_veto = (qwen_vote == 'NO_TRADE')
+    
+    # Supermajority check (4/5)
+    if buy_votes >= 4:
+        direction = 'BUY'
+        consensus_prob = sum(v['probability'] for v in votes.values() if v['vote'] == 'BUY') / buy_votes
+    elif sell_votes >= 4:
+        direction = 'SELL'
+        consensus_prob = sum(v['probability'] for v in votes.values() if v['vote'] == 'SELL') / sell_votes
+    else:
+        direction = None
+        consensus_prob = 0
+    
+    # Check Qwen override
+    if qwen_veto and direction:
+        override_votes = buy_votes if direction == 'BUY' else sell_votes
+        if override_votes >= 3:
+            console.print(f"[yellow]⚠️ Macro Quant VETO overridden by {override_votes} votes[/yellow]")
         else:
-            entries[k] = {"entry":None, "reasoning":resp}
+            console.print(f"[red]❌ Macro Quant VETO stands - insufficient override votes[/red]")
+            direction = None
     
-    valid = [v["entry"] for v in entries.values() if v["entry"]]
-    if not valid: 
-        return {"entry":None, "spread":0, "votes":entries}
+    t = Table(title="VOTE RESULTS")
+    t.add_column("Model", style="cyan")
+    t.add_column("Vote", style="yellow")
+    t.add_column("Probability", style="green")
     
-    avg = sum(valid)/len(valid)
-    spread = max(valid)-min(valid)
-    console.print(f"\n[bold]ENTRIES:[/bold] {[f'${e:.2f}' for e in valid]}\n[bold]AVG:[/bold] ${avg:.2f}\n[bold]SPREAD:[/bold] ${spread:.2f}")
-    return {"entry":avg, "min":min(valid), "max":max(valid), "spread":spread, "votes":entries}
-
-def vote_sl(order, direction, entry):
-    console.print(Panel(f"[bold]ROUND 3: STOP LOSS[/bold]\nDir: {direction} | Entry: ${entry:.2f}", border_style="yellow"))
-    stops = {}
-    for k in order:
-        t = TRADERS[k]
-        p = f"Dir: {direction} | Entry: ${entry:.2f}\nAccount: ${params['account_size']} | Risk: {params['risk_percent']}% = ${params['risk_dollars']:.2f}\n\nTECH: {tech}\n\nPropose SL and WHY.\nFormat:\nSL: $[price]\nWHY: [sentence]"
-        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
-            resp = ai_call(k, p, t["personality"])
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}] {resp}")
-        sm = re.search(r'SL:\s*\$?([\d,]+\.?\d*)', resp, re.I)
-        if sm:
-            sp = float(sm.group(1).replace(',',''))
-            stops[k] = {"sl":sp, "reasoning":resp}
-            log.append(f"[{t['name']}] SL: ${sp:.2f}")
-        else:
-            stops[k] = {"sl":None, "reasoning":resp}
-    
-    valid = [v["sl"] for v in stops.values() if v["sl"]]
-    if not valid: 
-        return {"sl":None, "risk":None, "votes":stops}
-    
-    avg = sum(valid)/len(valid)
-    risk = abs(entry-avg)
-    console.print(f"\n[bold]SLs:[/bold] {[f'${s:.2f}' for s in valid]}\n[bold]AVG:[/bold] ${avg:.2f}\n[bold]RISK:[/bold] ${risk:.2f}")
-    return {"sl":avg, "risk":risk, "votes":stops}
-
-def vote_tp(order, direction, entry, sl, risk):
-    console.print(Panel(f"[bold]ROUND 4: TP[/bold]\nEntry: ${entry:.2f} | SL: ${sl:.2f} | Risk: ${risk:.2f}\nMin R:R: 1:{params['min_rr']}", border_style="yellow"))
-    tps = {}
-    min_dist = risk * params['min_rr']
-    min_tp = entry + min_dist if direction=="BUY" else entry - min_dist
-    
-    for k in order:
-        t = TRADERS[k]
-        p = f"Dir: {direction} | Entry: ${entry:.2f} | SL: ${sl:.2f}\nRisk: ${risk:.2f}\nMin R:R: 1:{params['min_rr']} (TP >= ${min_tp:.2f})\n\nTECH: {tech}\n\nPropose TP and R:R.\nFormat:\nTP: $[price]\nR:R: [ratio]"
-        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
-            resp = ai_call(k, p, t["personality"])
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}] {resp}")
-        tm = re.search(r'TP:\s*\$?([\d,]+\.?\d*)', resp, re.I)
-        if tm:
-            tp = float(tm.group(1).replace(',',''))
-            rew = abs(tp-entry)
-            rr = rew/risk if risk>0 else 0
-            tps[k] = {"tp":tp, "rr":rr, "reasoning":resp}
-            log.append(f"[{t['name']}] TP: ${tp:.2f} (R:R 1:{rr:.1f})")
-        else:
-            tps[k] = {"tp":None, "rr":None, "reasoning":resp}
-    
-    valid = [(v["tp"],v["rr"]) for v in tps.values() if v["tp"]]
-    if not valid: 
-        return {"tp":None, "rr":None, "votes":tps}
-    
-    avg_tp = sum(t[0] for t in valid)/len(valid)
-    avg_rr = sum(t[1] for t in valid)/len(valid)
-    console.print(f"\n[bold]TPs:[/bold] {[f'${t[0]:.2f}' for t in valid]}\n[bold]AVG:[/bold] ${avg_tp:.2f}\n[bold]R:R:[/bold] 1:{avg_rr:.1f}")
-    if avg_rr < params['min_rr']: 
-        console.print(f"[red]R:R below min[/red]")
-    return {"tp":avg_tp, "rr":avg_rr, "votes":tps}
-
-def vote_size(order, entry, sl, risk_dollars):
-    console.print(Panel(f"[bold]ROUND 5: SIZE[/bold]\nEntry: ${entry:.2f} | SL: ${sl:.2f}\nRisk: ${abs(entry-sl):.2f}\nMax Risk: ${risk_dollars:.2f}", border_style="yellow"))
-    sizes = {}
-    risk_dist = abs(entry-sl)
-    correct = risk_dollars/risk_dist/0.10
-    console.print(f"[dim]Math correct: {correct:.2f} microlots[/dim]")
-    
-    for k in order:
-        t = TRADERS[k]
-        p = f"Entry: ${entry:.2f} | SL: ${sl:.2f}\nRisk Dist: ${risk_dist:.2f}\nMax Risk: ${risk_dollars:.2f}\nAccount: ${params['account_size']}\n\nCalc position in MICROLOTS.\nFormula: Risk$/RiskDist/$0.10\nShow math.\n\nFormat:\nSIZE: [num] microlots\nMATH: [calc]"
-        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
-            resp = ai_call(k, p, t["personality"])
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}] {resp}")
-        sm = re.search(r'SIZE:\s*([\d.]+)', resp, re.I)
-        if sm:
-            sz = float(sm.group(1))
-            sizes[k] = {"size":sz, "reasoning":resp}
-            log.append(f"[{t['name']}] Size: {sz:.2f} microlots")
-        else:
-            sizes[k] = {"size":None, "reasoning":resp}
-    
-    valid = [v["size"] for v in sizes.values() if v["size"]]
-    if not valid: 
-        return {"size":None, "correct":correct, "votes":sizes}
-    
-    avg = sum(valid)/len(valid)
-    console.print(f"\n[bold]SIZES:[/bold] {[f'{s:.2f}' for s in valid]}\n[bold]AVG:[/bold] {avg:.2f}\n[bold green]CORRECT:[/bold green] {correct:.2f}")
-    if abs(avg-correct)/correct>0.10: 
-        console.print(f"[red]Deviation >10%[/red]")
-    return {"size":correct, "proposed_avg":avg, "votes":sizes}
-
-def final_check(res):
-    console.print(Panel("[bold]FINAL CHECK[/bold]", border_style="blue"))
-    checks = [
-        ("Direction", res['direction']['consensus']>=0.60, f"{res['direction']['consensus']*100:.0f}%"),
-        ("Entry Spread", res['entry']['spread']<50, f"${res['entry']['spread']:.2f}"),
-        ("R:R", res['tp']['rr']>=params['min_rr'], f"1:{res['tp']['rr']:.1f}"),
-        ("Size", res['position']['size'] is not None, "Valid")
-    ]
-    
-    t = Table(title="Validation")
-    t.add_column("Check", style="cyan")
-    t.add_column("Status")
-    t.add_column("Value", style="yellow")
-    
-    ok = True
-    for name, passed, val in checks:
-        st = "✅ PASS" if passed else "❌ FAIL"
-        sty = "green" if passed else "red"
-        t.add_row(name, f"[{sty}]{st}[/{sty}]", val)
-        if not passed: 
-            ok = False
+    for key, vote_data in votes.items():
+        t.add_row(TRADERS[key]['name'], vote_data['vote'], f"{vote_data['probability']:.2f}")
     
     console.print(t)
-    console.print(f"\n[{'green' if ok else 'red'}]{'✅ APPROVED' if ok else '❌ NO SETUP'}[/{'green' if ok else 'red'}]")
-    return ok
+    console.print(f"\n[bold]BUY: {buy_votes} | SELL: {sell_votes} | NO_TRADE: {no_votes}[/bold]")
+    
+    if not direction or consensus_prob < 0.60:
+        console.print(Panel("[red]NO CONSENSUS - Need 4/5 votes & P ≥ 0.60[/red]", border_style="red"))
+        return False, None
+    
+    console.print(Panel(
+        f"[bold green]✅ CONSENSUS: {direction}[/bold green]\n"
+        f"Probability: {consensus_prob:.2f}",
+        border_style="green"
+    ))
+    
+    return True, {'direction': direction, 'probability': consensus_prob, 'votes': votes}
 
-def save_plan(res):
+# PHASE 3: LEVELS NEGOTIATION
+
+def round_4_entry_proposals(consensus):
+    """Round 4: Entry price proposals"""
+    console.print(Panel("[bold]PHASE 3 - ROUND 4: ENTRY PROPOSALS[/bold]", border_style="yellow"))
+    
+    entries = {}
+    
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== MEETING ROOM - ENTRY DISCUSSION ===
+
+CONSENSUS DIRECTION: {consensus['direction']}
+CONSENSUS PROBABILITY: {consensus['probability']:.2f}
+
+MACRO CONTEXT:
+Regime: {macro_data.get('regime', 'N/A')}
+DXY: {macro_data.get('dxy', 'N/A')} | VIX: {macro_data.get('vix', 'N/A')}
+Fed: {macro_data.get('fed_stance', 'N/A')} | Real Rate: {macro_data.get('real_rate', 'N/A')}%
+
+TECHNICAL LEVELS:
+Current: ${tech_data.get('current_price', 'N/A')}
+Day Range: ${tech_data.get('day_low', 'N/A')} - ${tech_data.get('day_high', 'N/A')}
+EMA50: ${tech_data.get('ema50', 'N/A')} | EMA200: ${tech_data.get('ema200', 'N/A')}
+
+YOUR LENS: {t['lens']}
+
+TASK: Propose your entry price for this {consensus['direction']} setup.
+
+1. ENTRY: $X.XX (specific price)
+2. REASONING: Why this level? (cite technical OR macro support)
+3. QUALITY: How good is this entry? (EXCELLENT/GOOD/ACCEPTABLE)
+
+Reference others if you want, but focus on YOUR analysis. 2-3 sentences."""
+
+        with console.status(f"[{t['color']}]{t['name']} proposing entry...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=350)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        
+        # Parse entry
+        entry_match = re.search(r'ENTRY:\s*\$?([\d,]+\.?\d*)', response, re.I)
+        entry = float(entry_match.group(1).replace(',', '')) if entry_match else None
+        
+        entries[key] = {'entry': entry, 'response': response}
+        meeting_log.append({"round": 4, "model": t['name'], "key": key, "response": response})
+    
+    return entries
+
+def round_5_sl_tp_collaboration(consensus, entries):
+    """Round 5: Stop Loss & Take Profit proposals"""
+    console.print(Panel("[bold]PHASE 3 - ROUND 5: SL & TP COLLABORATION[/bold]", border_style="yellow"))
+    
+    # Format entry proposals
+    entry_summary = "\n".join([
+        f"- {TRADERS[k]['name']}: ${v['entry']:.2f}" 
+        for k, v in entries.items() if v['entry']
+    ])
+    
+    levels = {}
+    
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== MEETING ROOM - LEVELS NEGOTIATION ===
+
+DIRECTION: {consensus['direction']}
+ENTRY PROPOSALS:
+{entry_summary}
+
+MACRO: {macro_data.get('regime', 'N/A')}
+DXY: {macro_data.get('dxy', 'N/A')} | VIX: {macro_data.get('vix', 'N/A')}
+
+TECHNICAL LEVELS:
+Current: ${tech_data.get('current_price', 'N/A')}
+Range: ${tech_data.get('day_low', 'N/A')} - ${tech_data.get('day_high', 'N/A')}
+EMA50: ${tech_data.get('ema50', 'N/A')} | EMA200: ${tech_data.get('ema200', 'N/A')}
+
+MIN R:R REQUIRED: 1:{params['min_rr']}
+
+YOUR LENS: {t['lens']}
+
+TASK: Build a complete levels package.
+
+1. ENTRY: $X.XX (your final choice - can pick from proposals or adjust)
+2. SL: $X.XX (where structure/regime breaks)
+3. TP: $X.XX (realistic target given R:R requirement)
+4. R:R: 1:X.X (calculated)
+5. REASONING: Why these levels work together? (2 sentences)
+
+COLLABORATE to find levels everyone can accept."""
+
+        with console.status(f"[{t['color']}]{t['name']} proposing levels...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=400)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        
+        # Parse levels
+        entry_match = re.search(r'ENTRY:\s*\$?([\d,]+\.?\d*)', response, re.I)
+        sl_match = re.search(r'SL:\s*\$?([\d,]+\.?\d*)', response, re.I)
+        tp_match = re.search(r'TP:\s*\$?([\d,]+\.?\d*)', response, re.I)
+        rr_match = re.search(r'R:?R:\s*1?:?([\d.]+)', response, re.I)
+        
+        entry = float(entry_match.group(1).replace(',', '')) if entry_match else None
+        sl = float(sl_match.group(1).replace(',', '')) if sl_match else None
+        tp = float(tp_match.group(1).replace(',', '')) if tp_match else None
+        rr = float(rr_match.group(1)) if rr_match else None
+        
+        levels[key] = {'entry': entry, 'sl': sl, 'tp': tp, 'rr': rr, 'response': response}
+        meeting_log.append({"round": 5, "model": t['name'], "key": key, "response": response})
+    
+    return levels
+
+def round_6_levels_consensus(consensus, levels):
+    """Round 6: Final levels consensus negotiation"""
+    console.print(Panel("[bold]PHASE 3 - ROUND 6: LEVELS CONSENSUS[/bold]", border_style="yellow"))
+    
+    # Calculate medians and spreads
+    valid_entries = [v['entry'] for v in levels.values() if v['entry']]
+    valid_sls = [v['sl'] for v in levels.values() if v['sl']]
+    valid_tps = [v['tp'] for v in levels.values() if v['tp']]
+    
+    if not valid_entries or not valid_sls or not valid_tps:
+        console.print("[red]Missing level proposals[/red]")
+        return False, None
+    
+    median_entry = sorted(valid_entries)[len(valid_entries)//2]
+    median_sl = sorted(valid_sls)[len(valid_sls)//2]
+    median_tp = sorted(valid_tps)[len(valid_tps)//2]
+    
+    entry_spread = max(valid_entries) - min(valid_entries)
+    risk_dist = abs(median_entry - median_sl)
+    reward_dist = abs(median_tp - median_entry)
+    median_rr = reward_dist / risk_dist if risk_dist > 0 else 0
+    
+    # Display proposals table
+    t = Table(title="LEVEL PROPOSALS")
+    t.add_column("Model", style="cyan")
+    t.add_column("Entry", style="yellow")
+    t.add_column("SL", style="red")
+    t.add_column("TP", style="green")
+    t.add_column("R:R", style="magenta")
+    
+    for key, lvl in levels.items():
+        t.add_row(
+            TRADERS[key]['name'],
+            f"${lvl['entry']:.2f}" if lvl['entry'] else "N/A",
+            f"${lvl['sl']:.2f}" if lvl['sl'] else "N/A",
+            f"${lvl['tp']:.2f}" if lvl['tp'] else "N/A",
+            f"1:{lvl['rr']:.1f}" if lvl['rr'] else "N/A"
+        )
+    
+    console.print(t)
+    console.print(f"\n[bold]MEDIANS:[/bold] Entry: ${median_entry:.2f} | SL: ${median_sl:.2f} | TP: ${median_tp:.2f} | R:R: 1:{median_rr:.1f}")
+    console.print(f"[bold]SPREADS:[/bold] Entry: ${entry_spread:.2f} | Risk: ${risk_dist:.2f}")
+    
+    # Acceptance votes
+    accepts = 0
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== MEETING ROOM - FINAL LEVELS CONSENSUS ===
+
+CURRENT PROPOSALS:
+[See table above]
+
+MEDIAN LEVELS (Most Democratic):
+- Entry: ${median_entry:.2f}
+- SL: ${median_sl:.2f}
+- TP: ${median_tp:.2f}
+- R:R: 1:{median_rr:.1f}
+
+SPREADS:
+- Entry spread: ${entry_spread:.2f}
+- Risk distance: ${risk_dist:.2f}
+
+MIN R:R REQUIRED: 1:{params['min_rr']}
+
+YOUR LENS: {t['lens']}
+
+TASK: Final negotiation on levels.
+
+Can you ACCEPT the median levels?
+
+OUTPUT FORMAT:
+ACCEPT: YES / NO
+WHY: [1 sentence - reasoning]
+ADJUSTMENT: [If NO, what specific levels do you propose? Entry/SL/TP]"""
+
+        with console.status(f"[{t['color']}]{t['name']} deciding...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=300)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        
+        accept_match = re.search(r'ACCEPT:\s*(YES|NO)', response, re.I)
+        if accept_match and accept_match.group(1).upper() == 'YES':
+            accepts += 1
+        
+        meeting_log.append({"round": 6, "model": t['name'], "key": key, "response": response})
+    
+    console.print(f"[bold]ACCEPTANCE:[/bold] {accepts}/5 models accept median levels")
+    
+    # If 4/5 accept, use median
+    if accepts >= 4:
+        final_levels = {
+            'entry': median_entry,
+            'sl': median_sl,
+            'tp': median_tp,
+            'rr': median_rr
+        }
+    else:
+        # Use weighted average
+        console.print("[yellow]Using weighted average (capability-based)[/yellow]")
+        weighted_entry = sum(levels[k]['entry'] * TRADERS[k]['weight'] for k in levels if levels[k]['entry'])
+        weighted_sl = sum(levels[k]['sl'] * TRADERS[k]['weight'] for k in levels if levels[k]['sl'])
+        weighted_tp = sum(levels[k]['tp'] * TRADERS[k]['weight'] for k in levels if levels[k]['tp'])
+        
+        w_risk = abs(weighted_entry - weighted_sl)
+        w_reward = abs(weighted_tp - weighted_entry)
+        w_rr = w_reward / w_risk if w_risk > 0 else 0
+        
+        final_levels = {
+            'entry': weighted_entry,
+            'sl': weighted_sl,
+            'tp': weighted_tp,
+            'rr': w_rr
+        }
+    
+    # Validation checks
+    if entry_spread > 30:
+        console.print(f"[red]❌ Entry spread too wide: ${entry_spread:.2f}[/red]")
+        return False, None
+    
+    if risk_dist < 10:
+        console.print(f"[red]❌ Risk distance too small: ${risk_dist:.2f}[/red]")
+        return False, None
+    
+    if final_levels['rr'] < params['min_rr']:
+        console.print(f"[red]❌ R:R below minimum: {final_levels['rr']:.1f} < {params['min_rr']}[/red]")
+        return False, None
+    
+    console.print(Panel(
+        f"[bold green]✅ LEVELS APPROVED[/bold green]\n"
+        f"Entry: ${final_levels['entry']:.2f}\n"
+        f"SL: ${final_levels['sl']:.2f}\n"
+        f"TP: ${final_levels['tp']:.2f}\n"
+        f"R:R: 1:{final_levels['rr']:.1f}",
+        border_style="green"
+    ))
+    
+    return True, final_levels
+
+# PHASE 4: EXECUTION PLAN
+
+def round_7_kelly_sizing_validation(consensus, final_levels):
+    """Round 7: Kelly-adjusted position sizing and final validation"""
+    console.print(Panel("[bold]PHASE 4 - ROUND 7: KELLY SIZING & FINAL VALIDATION[/bold]", border_style="yellow"))
+    
+    risk_dist = abs(final_levels['entry'] - final_levels['sl'])
+    base_size = params['risk_dollars'] / risk_dist / 0.10
+    
+    sizes = []
+    approvals = []
+    kelly_fractions = []
+    
+    for key in COUNCIL_ORDER:
+        t = TRADERS[key]
+        
+        prompt = f"""=== MEETING ROOM - FINAL EXECUTION ===
+
+CONSENSUS TRADE PLAN:
+- Direction: {consensus['direction']}
+- Entry: ${final_levels['entry']:.2f}
+- SL: ${final_levels['sl']:.2f}
+- TP: ${final_levels['tp']:.2f}
+- R:R: 1:{final_levels['rr']:.1f}
+- Probability: {consensus['probability']:.2f}
+
+ACCOUNT: ${params['account_size']:.2f} | RISK: {params['risk_percent']}% = ${params['risk_dollars']:.2f}
+Risk Distance: ${risk_dist:.2f}
+
+BASE SIZE CALCULATION:
+Formula: Risk$ / RiskDist / $0.10
+= ${params['risk_dollars']:.2f} / ${risk_dist:.2f} / $0.10
+= {base_size:.2f} microlots
+
+YOUR LENS: {t['lens']}
+
+TASK: Position sizing + final validation
+
+1. SIZE: Calculate position size in microlots (show math)
+
+2. KELLY ADJUSTMENT: Given P={consensus['probability']:.2f}, should we size down?
+   Kelly Formula: f* = (p * b - q) / b, where p=prob, b=R:R, q=1-p
+   Calculate your Kelly fraction: 0.XX
+   Adjusted size: X.XX microlots
+
+3. FINAL VALIDATION: Is this trade APPROVED or VETOED?
+   Check all conditions:
+   - R:R ≥ {params['min_rr']} ? {'✅' if final_levels['rr'] >= params['min_rr'] else '❌'}
+   - Probability ≥ 0.60 ? {'✅' if consensus['probability'] >= 0.60 else '❌'}
+   - Risk distance ≥ $10 ? {'✅' if risk_dist >= 10 else '❌'}
+   - VIX < 25 ? {'✅' if macro_data.get('vix', 100) < 25 else '❌'}
+   
+   VOTE: APPROVE / VETO
+   WHY: [1 sentence - final reasoning]
+
+OUTPUT FORMAT:
+SIZE: X.XX microlots
+KELLY_FRACTION: 0.XX
+ADJUSTED_SIZE: X.XX microlots
+VOTE: APPROVE / VETO
+WHY: [reasoning]"""
+
+        with console.status(f"[{t['color']}]{t['name']} calculating...[/{t['color']}]"):
+            response = ai_call(key, prompt, max_tok=500)
+        
+        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        
+        # Parse size and kelly
+        size_match = re.search(r'ADJUSTED_SIZE:\s*([\d.]+)', response, re.I)
+        kelly_match = re.search(r'KELLY_FRACTION:\s*([\d.]+)', response, re.I)
+        vote_match = re.search(r'VOTE:\s*(APPROVE|VETO)', response, re.I)
+        
+        size = float(size_match.group(1)) if size_match else base_size
+        kelly = float(kelly_match.group(1)) if kelly_match else 1.0
+        vote = vote_match.group(1).upper() if vote_match else 'APPROVE'
+        
+        sizes.append(size)
+        kelly_fractions.append(kelly)
+        approvals.append(vote == 'APPROVE')
+        
+        meeting_log.append({"round": 7, "model": t['name'], "key": key, "response": response})
+    
+    # Final calculations
+    median_size = sorted(sizes)[len(sizes)//2]
+    avg_kelly = sum(kelly_fractions) / len(kelly_fractions)
+    final_size = median_size * avg_kelly
+    
+    approve_count = sum(approvals)
+    
+    t = Table(title="EXECUTION SUMMARY")
+    t.add_column("Model", style="cyan")
+    t.add_column("Size", style="yellow")
+    t.add_column("Kelly", style="magenta")
+    t.add_column("Vote", style="green")
+    
+    for i, key in enumerate(COUNCIL_ORDER):
+        t.add_row(
+            TRADERS[key]['name'],
+            f"{sizes[i]:.2f}",
+            f"{kelly_fractions[i]:.2f}",
+            "✅ APPROVE" if approvals[i] else "❌ VETO"
+        )
+    
+    console.print(t)
+    console.print(f"\n[bold]FINAL SIZE:[/bold] {final_size:.2f} microlots (Median: {median_size:.2f} × Avg Kelly: {avg_kelly:.2f})")
+    console.print(f"[bold]APPROVAL:[/bold] {approve_count}/5 models approve")
+    
+    # Hard validation rules
+    checks = [
+        ("R:R ≥ Min", final_levels['rr'] >= params['min_rr'], f"1:{final_levels['rr']:.1f}"),
+        ("Probability ≥ 0.60", consensus['probability'] >= 0.60, f"{consensus['probability']:.2f}"),
+        ("Risk Dist ≥ $10", risk_dist >= 10, f"${risk_dist:.2f}"),
+        ("VIX < 25", macro_data.get('vix', 100) < 25, f"{macro_data.get('vix', 'N/A')}"),
+        ("Entry Spread < $30", True, "✓"),  # Already checked
+        ("Supermajority (4/5)", approve_count >= 4, f"{approve_count}/5")
+    ]
+    
+    validation_table = Table(title="VALIDATION CHECKS")
+    validation_table.add_column("Check", style="cyan")
+    validation_table.add_column("Status")
+    validation_table.add_column("Value", style="yellow")
+    
+    all_pass = True
+    for name, passed, val in checks:
+        status = "[green]✅ PASS[/green]" if passed else "[red]❌ FAIL[/red]"
+        validation_table.add_row(name, status, val)
+        if not passed:
+            all_pass = False
+    
+    console.print(validation_table)
+    
+    if not all_pass:
+        console.print(Panel("[red]❌ TRADE REJECTED - Validation Failed[/red]", border_style="red"))
+        return False, None
+    
+    console.print(Panel("[bold green]✅ TRADE APPROVED - All Checks Pass[/bold green]", border_style="green"))
+    
+    return True, {'size': final_size, 'kelly': avg_kelly, 'base_size': base_size}
+
+def save_trade_plan(consensus, final_levels, execution):
+    """Save the complete trade plan"""
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     fn = f"trade_plan_{ts}.txt"
-    direction = res['direction']['direction']
-    entry = res['entry']['entry']
-    sl = res['stop']['sl']
-    tp = res['tp']['tp']
-    rr = res['tp']['rr']
-    size = res['position']['size']
-    risk = res['stop']['risk']
     
     with open(fn, "w", encoding='utf-8') as f:
         f.write("=== XAU/USD TRADE PLAN ===\n")
         f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M')}\n")
         f.write(f"Account: ${params['account_size']:.0f} | Risk: {params['risk_percent']}%\n\n")
+        
         f.write("SETUP:\n")
-        f.write(f"Dir: {direction}\nEntry: ${entry:.2f}\nSL: ${sl:.2f} (${risk:.2f})\nTP: ${tp:.2f}\nSize: {size:.2f} microlots\nRisk: ${params['risk_dollars']:.2f}\nR:R: 1:{rr:.1f}\n\n")
-        f.write(f"MACRO:\n{macro}\n\nTECH:\n{tech[:300]}...\n\n")
+        f.write(f"Dir: {consensus['direction']}\n")
+        f.write(f"Entry: ${final_levels['entry']:.2f}\n")
+        f.write(f"SL: ${final_levels['sl']:.2f} (${abs(final_levels['entry']-final_levels['sl']):.2f})\n")
+        f.write(f"TP: ${final_levels['tp']:.2f}\n")
+        f.write(f"Size: {execution['size']:.2f} microlots\n")
+        f.write(f"Risk: ${params['risk_dollars']:.2f}\n")
+        f.write(f"R:R: 1:{final_levels['rr']:.1f}\n")
+        f.write(f"Probability: {consensus['probability']:.2f}\n\n")
+        
+        f.write("MACRO:\n")
+        f.write(f"REGIME: {macro_data.get('regime', 'N/A')}\n")
+        f.write(f"Gold: ${macro_data.get('gold_macro', tech_data.get('current_price', 'N/A'))}\n")
+        f.write(f"DXY: {macro_data.get('dxy', 'N/A')}\n")
+        f.write(f"VIX: {macro_data.get('vix', 'N/A')}\n")
+        f.write(f"Fed: {macro_data.get('fed_stance', 'N/A')}\n")
+        f.write(f"10Y: {macro_data.get('treasury_10y', 'N/A')}%\n")
+        f.write(f"Real Rate: {macro_data.get('real_rate', 'N/A')}%\n\n")
+        
+        f.write("TECH:\n")
+        f.write(f"Current: ${tech_data.get('current_price', 'N/A')}\n")
+        f.write(f"Day Range: ${tech_data.get('day_low', 'N/A')} - ${tech_data.get('day_high', 'N/A')}\n")
+        f.write(f"EMA50: ${tech_data.get('ema50', 'N/A')}\n")
+        f.write(f"EMA200: ${tech_data.get('ema200', 'N/A')}\n\n")
+        
         f.write("EXECUTION:\n")
-        f.write(f"1. {direction} at ${entry:.2f}\n2. SL ${sl:.2f}\n3. TP ${tp:.2f}\n4. Size {size:.2f} microlots\n\n")
+        f.write(f"1. {consensus['direction']} at ${final_levels['entry']:.2f}\n")
+        f.write(f"2. SL ${final_levels['sl']:.2f}\n")
+        f.write(f"3. TP ${final_levels['tp']:.2f}\n")
+        f.write(f"4. Size {execution['size']:.2f} microlots (Kelly: {execution['kelly']:.2f})\n\n")
+        
         f.write("INVALIDATION:\n")
-        f.write(f"- Break {'below' if direction=='BUY' else 'above'} ${sl:.2f}\n- Major macro shift\n- VIX >25\n\n")
-        f.write("=== LOG ===\n" + "\n".join(log) + "\n")
+        direction_word = 'below' if consensus['direction'] == 'BUY' else 'above'
+        f.write(f"- Break {direction_word} ${final_levels['sl']:.2f}\n")
+        f.write(f"- Major macro regime shift\n")
+        f.write(f"- VIX >25\n\n")
+        
+        f.write("=== MEETING LOG ===\n")
+        for entry in meeting_log:
+            f.write(f"\n[Round {entry['round']}] {entry['model']}:\n{entry['response']}\n")
     
     console.print(f"[green]✅ Saved: {fn}[/green]")
     return fn
 
 def main():
     global params
-    console.print(Panel("[bold]AI Trading Council v3[/bold]\n5 Models | Vote-by-Component", border_style="cyan"))
-    
-    missing = []
-    for k,v in [("GROQ",GROQ_API_KEY),("GEMINI",GEMINI_API_KEY),("SAMBANOVA",SAMBANOVA_API_KEY),("CEREBRAS",CEREBRAS_API_KEY)]:
-        if not v: 
-            missing.append(k)
-    if missing:
-        console.print(f"[yellow]Missing: {','.join(missing)}[/yellow]")
-        console.print("[yellow]Will use available models only[/yellow]")
-    
-    params = get_params()
-    if not load_reports(): 
-        sys.exit(1)
-    
-    console.print(Panel(f"[bold]Data Loaded[/bold]\nMacro:\n{macro}\n\nTech:\n{tech[:200]}...", border_style="green"))
-    
-    available_keys = []
-    if groq_client:
-        available_keys.append("groq")
-    if gemini_client:
-        available_keys.append("gemini")
-    if sambanova_client:
-        available_keys.append("sambanova")
-    if cerebras_client:
-        available_keys.extend(["cerebras_llama", "cerebras_qwen"])
-    
-    order = available_keys[:]
-    random.shuffle(order)
-    console.print(f"\n[dim]Order: {', '.join([TRADERS[k]['name'] for k in order])}[/dim]")
-    
-    dir_res = vote_direction(order)
-    if dir_res['direction']=="NO TRADE" or dir_res['consensus']<0.60:
-        console.print(Panel("[red]NO CLEAR DIRECTION[/red]", border_style="red"))
-        sys.exit(0)
-    
-    random.shuffle(order)
-    entry_res = vote_entry(order, dir_res['direction'], dir_res['votes'])
-    if not entry_res['entry'] or entry_res['spread']>50:
-        console.print(Panel("[red]NO ENTRY CONSENSUS[/red]", border_style="red"))
-        sys.exit(0)
-    
-    random.shuffle(order)
-    sl_res = vote_sl(order, dir_res['direction'], entry_res['entry'])
-    if not sl_res['sl']:
-        console.print(Panel("[red]NO SL CONSENSUS[/red]", border_style="red"))
-        sys.exit(0)
-    
-    random.shuffle(order)
-    tp_res = vote_tp(order, dir_res['direction'], entry_res['entry'], sl_res['sl'], sl_res['risk'])
-    if not tp_res['tp'] or tp_res['rr']<params['min_rr']:
-        console.print(Panel("[red]TP ISSUES[/red]", border_style="red"))
-        sys.exit(0)
-    
-    random.shuffle(order)
-    size_res = vote_size(order, entry_res['entry'], sl_res['sl'], params['risk_dollars'])
-    
-    all_res = {
-        'direction': dir_res, 
-        'entry': entry_res, 
-        'stop': sl_res, 
-        'tp': tp_res, 
-        'position': size_res
-    }
-    
-    if not final_check(all_res): 
-        sys.exit(0)
-    
-    fn = save_plan(all_res)
     
     console.print(Panel(
-        f"[bold green]✅ TRADE APPROVED[/bold green]\n\n"
-        f"Dir: {dir_res['direction']}\nEntry: ${entry_res['entry']:.2f}\nSL: ${sl_res['sl']:.2f}\n"
-        f"TP: ${tp_res['tp']:.2f}\nSize: {size_res['size']:.2f} microlots\nR:R: 1:{tp_res['rr']:.1f}\n\n"
-        f"[bold]Plan:[/bold] {fn}", 
-        title="EXECUTE", 
+        "[bold]AI Trading Council v4[/bold]\n"
+        "Collaborative Meeting Room | Lens-Based Analysis | Kelly Sizing\n"
+        "5 Models | 7 Rounds | Supermajority Consensus",
+        border_style="cyan"
+    ))
+    
+    # Check API availability
+    missing = []
+    for k, v in [("GROQ", GROQ_API_KEY), ("GEMINI", GEMINI_API_KEY), 
+                 ("SAMBANOVA", SAMBANOVA_API_KEY), ("CEREBRAS", CEREBRAS_API_KEY)]:
+        if not v:
+            missing.append(k)
+    if missing:
+        console.print(f"[yellow]⚠️ Missing APIs: {', '.join(missing)}[/yellow]")
+        console.print("[red]All APIs required for v4 council[/red]")
+        sys.exit(1)
+    
+    params = get_params()
+    
+    if not load_reports():
+        sys.exit(1)
+    
+    console.print(Panel(
+        f"[bold]Data Loaded:[/bold]\n"
+        f"Regime: {macro_data.get('regime', 'N/A')[:50]}...\n"
+        f"XAUUSD: ${tech_data.get('current_price', 'N/A')}\n"
+        f"DXY: {macro_data.get('dxy', 'N/A')} | VIX: {macro_data.get('vix', 'N/A')}\n"
+        f"Fed: {macro_data.get('fed_stance', 'N/A')} | Real Rate: {macro_data.get('real_rate', 'N/A')}%",
+        border_style="green"
+    ))
+    
+    console.print(f"\n[bold]Council Order (Fixed):[/bold] {' → '.join([TRADERS[k]['name'] for k in COUNCIL_ORDER])}\n")
+    
+    # PHASE 1: Open Analysis
+    if not round_1_initial_assessment():
+        sys.exit(0)
+    
+    success, phase1_result = round_2_collaborative_response()
+    if not success:
+        sys.exit(0)
+    
+    # PHASE 2: Direction Consensus
+    success, consensus = round_3_direction_vote(phase1_result)
+    if not success:
+        sys.exit(0)
+    
+    # PHASE 3: Levels Negotiation
+    entries = round_4_entry_proposals(consensus)
+    levels = round_5_sl_tp_collaboration(consensus, entries)
+    success, final_levels = round_6_levels_consensus(consensus, levels)
+    if not success:
+        sys.exit(0)
+    
+    # PHASE 4: Execution
+    success, execution = round_7_kelly_sizing_validation(consensus, final_levels)
+    if not success:
+        sys.exit(0)
+    
+    # Save trade plan
+    filename = save_trade_plan(consensus, final_levels, execution)
+    
+    console.print(Panel(
+        f"[bold green]✅ TRADE PLAN COMPLETE[/bold green]\n\n"
+        f"Direction: {consensus['direction']}\n"
+        f"Entry: ${final_levels['entry']:.2f}\n"
+        f"SL: ${final_levels['sl']:.2f}\n"
+        f"TP: ${final_levels['tp']:.2f}\n"
+        f"Size: {execution['size']:.2f} microlots\n"
+        f"R:R: 1:{final_levels['rr']:.1f}\n"
+        f"Probability: {consensus['probability']:.2f}\n\n"
+        f"[bold]Saved:[/bold] {filename}",
+        title="EXECUTION READY",
         border_style="green"
     ))
 
