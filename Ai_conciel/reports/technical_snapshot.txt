@@ -1,0 +1,65 @@
+=== XAU/USD TECHNICAL SNAPSHOT ===
+Generated: 2025-12-24 19:56 UTC
+Timeframe: H1 (Intraday - 18 bars since 2025-12-24 00:00:00)
+
+PRICE ACTION:
+Current: $4476.48
+Day Open: $4486.3
+Day High: $4525.77
+Day Low: $4447.9
+Day Change: $-9.82 (-0.22%)
+Day Range: $77.87
+
+MOVING AVERAGES (H1):
+EMA50: $4464.71 -> Price Above
+EMA200: $4374.48 -> Price Above
+Trend: Strong Bullish
+
+MOMENTUM INDICATORS (H1):
+RSI(14): 48.53 -> Neutral
+MACD: 0.12 (Signal: 4.52)
+MACD Status: Bearish
+
+VOLATILITY:
+ATR(14): $18.01
+Intraday Range: $77.87
+
+KEY LEVELS:
+Resistance: $4525.77, $4501.23, $4499.52
+Support: $4447.9, $4467.92, $4477.81
+
+FIBONACCI RETRACEMENT (Day Low to Current High):
+100% (High): $4525.77
+78.6%: $4509.1
+61.8%: $4496.02
+50.0%: $4486.83
+38.2%: $4477.64
+23.6%: $4466.27
+0.0% (Low): $4447.9
+
+ORDER BLOCKS (H1):
+Bullish: 2 detected -> $4477.81, $4447.9
+Bearish: 2 detected -> $4501.23, $4497.73
+
+FAIR VALUE GAPS (H1):
+Bullish FVG: 0 detected -> None
+Bearish FVG: 2 detected -> $4498.26-$4506.68, $4489.19-$4489.44
+
+VOLUME ANALYSIS (H1):
+Total (Today): 276,725
+Average: 15,373
+Current: 20,358
+Status: High
+
+=== TRADE CONTEXT ===
+Bias: STRONG (EMA alignment)
+Risk Area: Below $4447.9
+Opportunity: Break above resistance
+Caution: Normal conditions
+
+=== TRADING NOTES ===
+- Trend: Strong Bullish
+- Structure: Lower highs/lows
+- Entry zones: $4447.9, $4467.92
+- SL zones: Below $4447.9
+- TP zones: $4525.77, $4501.23
