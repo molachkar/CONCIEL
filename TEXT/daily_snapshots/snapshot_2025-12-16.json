@@ -1,6 +1,6 @@
 {
   "date": "2025-12-16",
-  "snapshot_generated_at": "2025-12-22T19:34:37.113427",
+  "snapshot_generated_at": "2025-12-24T21:59:22.069225",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4304.9,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 68.78,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4086.55,
-      "XAUUSD_EMA200": 3609.93,
+      "XAUUSD_EMA200": 3612.33,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 58.55,
       "XAUUSD_MACD_SIGNAL": 51.67,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 49.22,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6754.08,
-      "USA500.IDX_EMA200": 6406.14,
+      "USA500.IDX_EMA200": 6407.81,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 25.73,
       "USA500.IDX_MACD_SIGNAL": 28.9,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 52.09,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.43,
-      "VOL.IDX_EMA200": 18.56,
+      "VOL.IDX_EMA200": 18.64,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.64,
       "VOL.IDX_MACD_SIGNAL": -0.56,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 29.38,
       "DOLLAR.IDX_RSI_STATUS": "Oversold",
       "DOLLAR.IDX_EMA50": 98.86,
-      "DOLLAR.IDX_EMA200": 99.81,
+      "DOLLAR.IDX_EMA200": 99.84,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.31,
       "DOLLAR.IDX_MACD_SIGNAL": -0.12,
@@ -144,7 +144,7 @@
         "currency": "USD",
         "event": "Nonfarm Payrolls  (Nov)",
         "actual": "64K",
-        "forecast": "50K",
+        "forecast": "51K",
         "previous": "-105K"
       },
       {
@@ -168,7 +168,7 @@
         "currency": "USD",
         "event": "Retail Control (MoM)  (Oct)",
         "actual": "0.8%",
-        "forecast": "0.3%",
+        "forecast": "0.4%",
         "previous": "-0.1%"
       },
       {
@@ -386,14 +386,6 @@
         "source": "r/SPY"
       },
       {
-        "title": "Warner Bros. to Reject Paramount offer on Funding Concerns",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "EU-made combustion cars to comply with 90% emissions reduction by 2035",
-        "source": "r/economics"
-      },
-      {
         "title": "Russia: US has promised us Ukrainian territory",
         "source": "r/geopolitics"
       },
@@ -422,14 +414,6 @@
         "source": "r/economics"
       },
       {
-        "title": "BUREAU OF LABOR STATISTICS - Employment Situation Nov 2025 (direct link to report)",
-        "source": "r/economics"
-      },
-      {
-        "title": "Mexico approves up to 50% tariffs on China and other countries",
-        "source": "r/economics"
-      },
-      {
         "title": "Now that the government has stopped minting pennies, retailers and restaurants that tend to do a lot of cash business want the federal government to come up with a standard for rounding.",
         "source": "r/economics"
       },
@@ -440,10 +424,6 @@
       {
         "title": "Pentagon plan calls for major power shifts within U.S. military",
         "source": "r/geopolitics"
-      },
-      {
-        "title": "Fannie, Freddie Quietly Add Billions to Mortgage-Bond Portfolios",
-        "source": "r/economics"
       },
       {
         "title": "EU will be ‘severely damaged for years’ if assets plan fails, says Germany’s Merz",

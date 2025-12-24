@@ -1,33 +1,33 @@
 {
   "symbol": "XAUUSD",
-  "generated_at": "2025-12-24T19:56:16.932894",
+  "generated_at": "2025-12-24T22:00:06.467679",
   "timeframe": "H1",
   "trading_day_start": "2025-12-24 00:00:00",
-  "bars_analyzed": 18,
+  "bars_analyzed": 20,
   "price_action": {
-    "current": 4476.48,
+    "current": 4478.3,
     "day_open": 4486.3,
     "day_high": 4525.77,
     "day_low": 4447.9,
-    "day_change": -9.82,
-    "day_change_pct": -0.22
+    "day_change": -8.0,
+    "day_change_pct": -0.18
   },
   "moving_averages": {
-    "ema50": 4464.71,
-    "ema200": 4374.48,
+    "ema50": 4465.83,
+    "ema200": 4377.27,
     "trend": "Strong Bullish",
     "price_vs_ema50": "Above",
     "price_vs_ema200": "Above"
   },
   "momentum": {
-    "rsi": 48.53,
+    "rsi": 49.21,
     "rsi_status": "Neutral",
-    "macd": 0.12,
-    "macd_signal": 4.52,
+    "macd": -0.13,
+    "macd_signal": 2.88,
     "macd_status": "Bearish"
   },
   "volatility": {
-    "atr": 18.01,
+    "atr": 16.71,
     "day_range": 77.87
   },
   "fibonacci": {
@@ -89,9 +89,9 @@
     ]
   },
   "volume": {
-    "total": 276725,
-    "average": 15373,
-    "current": 20358,
-    "status": "High"
+    "total": 299717,
+    "average": 14985,
+    "current": 4487,
+    "status": "Low"
   }
 }

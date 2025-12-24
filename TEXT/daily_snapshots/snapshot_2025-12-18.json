@@ -1,6 +1,6 @@
 {
   "date": "2025-12-18",
-  "snapshot_generated_at": "2025-12-22T19:34:37.117140",
+  "snapshot_generated_at": "2025-12-24T21:59:22.072563",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4339.71,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 70.5,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4105.57,
-      "XAUUSD_EMA200": 3624.26,
+      "XAUUSD_EMA200": 3626.62,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 63.29,
       "XAUUSD_MACD_SIGNAL": 55.63,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 46.91,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6754.01,
-      "USA500.IDX_EMA200": 6413.01,
+      "USA500.IDX_EMA200": 6414.65,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 11.55,
       "USA500.IDX_MACD_SIGNAL": 23.48,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 49.89,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.42,
-      "VOL.IDX_EMA200": 18.56,
+      "VOL.IDX_EMA200": 18.64,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.43,
       "VOL.IDX_MACD_SIGNAL": -0.53,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 35.62,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.8,
-      "DOLLAR.IDX_EMA200": 99.78,
+      "DOLLAR.IDX_EMA200": 99.8,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.34,
       "DOLLAR.IDX_MACD_SIGNAL": -0.2,
@@ -72,8 +72,7 @@
       "GLD_CLOSE": 398.57,
       "GLD_VOLUME": 11837600,
       "IAU_CLOSE": 81.63,
-      "IAU_VOLUME": 8053100,
-      "REAL_RATE": 1.12
+      "IAU_VOLUME": 8053100
     },
     "economic_events": [
       {
@@ -115,6 +114,14 @@
         "actual": "12.9",
         "forecast": "",
         "previous": "6.0"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "5-Year TIPS Auction",
+        "actual": "1.433%",
+        "forecast": "",
+        "previous": "1.182%"
       },
       {
         "time": "22:00",
@@ -203,24 +210,12 @@
         "source": "r/economics"
       },
       {
-        "title": "Don't miss the macro shift in the Cannabis sector: 280E is dead and the Hemp loophole is closed.",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Trump Media Technology Group shares surged 40% today. ​​It seems the blonde guy is back to playing the stock market again.",
-        "source": "r/stocks"
+        "title": "Finnish PM apologizes after lawmakers pull 'slanted-eyes' faces. The Finnish embassies in Japan, China, and South Korea released a statement by Petteri Orpo on social media on Wednesday, in which he pledged to tackle racism.",
+        "source": "r/japan"
       },
       {
         "title": "Japan needs to possess nuclear weapons, prime minister's office source says",
         "source": "r/geopolitics"
-      },
-      {
-        "title": "What Are Your Moves Tomorrow, December 19, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Apple spent $750B on buybacks for 10yrs and Tim Cook is overrated.",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "Trust these numbers? Economists see a lot of flaws in delayed CPI report showing downward inflation",
@@ -231,16 +226,8 @@
         "source": "r/economics"
       },
       {
-        "title": "Weed loss porn numbers higher than I was when I bought",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "The $8 Billion Black Market for Venezuelan Oil Is Suddenly Closing Down",
         "source": "r/oil"
-      },
-      {
-        "title": "Fact Check Dismantles Trump’s Latest Claim That Prices Are “Falling Fast” - TLP Media",
-        "source": "r/economics"
       },
       {
         "title": "Trump Media is merging with fusion power company TAE Technologies in $6B deal",
@@ -248,22 +235,6 @@
       },
       {
         "title": "Sold a house got to a million and lost it all, now I owe the IRS 179k and I owe creditors 100k do not do options if you adhd",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "US Arms Sale to Taiwan of $11B Sparks China Fury, Beijing Vows to Take 'Necessary Measures'",
-        "source": "r/China"
-      },
-      {
-        "title": "Nothing more degenerate than making a small salary writing $RDDT puts",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Increased $NBIS call position to $80,000",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Pretty much 0 CPI data for October and November but we are meant to believe it's 2.7%",
         "source": "r/wallstreetbets"
       },
       {
@@ -279,10 +250,6 @@
         "source": "r/economics"
       },
       {
-        "title": "[Breaking] - US Inflation Data for Dec measured at 2.7%",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "Consumer Price Index News Releases (CPI for Nov and Oct only represented gas and autos)",
         "source": "r/economics"
       },
@@ -291,16 +258,8 @@
         "source": "r/StockMarket"
       },
       {
-        "title": "CPI rose 2.7% for the 12 months ending November, Much Less than the expected 3.1%",
-        "source": "r/stocks"
-      },
-      {
         "title": "CPI (inflation) falls to 2.7% from 3.0% in September 2025",
         "source": "r/economics"
-      },
-      {
-        "title": "Trump Media announces $6 billion merger with fusion company TAE Technologies; DJT stock soars 25%",
-        "source": "r/stocks"
       },
       {
         "title": "Furious Putin is trapped in a gilded cage. Only death will free him",
@@ -315,40 +274,8 @@
         "source": "r/economics"
       },
       {
-        "title": "Trump Media to Merge With TAE Tech in $6 Billion Deal",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Activist Elliott takes over $1 Billion stake in LULU",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Daily Discussion Thread for December 18, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "China Has Reportedly Built Its First EUV Machine Prototype, Marking a Semiconductor Breakthrough the U.S. Has Feared All Along",
-        "source": "r/China"
-      },
-      {
-        "title": "How do people earn so much in so little time whilst investing?",
-        "source": "r/investing"
-      },
-      {
-        "title": "Historical footage: Japanese troops entering the capital of China during WWII",
-        "source": "r/China"
-      },
-      {
         "title": "Tighter residency rules take shape as Japan gov't mulls stricter foreigner policies - The Mainichi",
         "source": "r/japan"
-      },
-      {
-        "title": "Thought I was investing in 'AI Infrastructure', turns out I was just providing exit liquidity. Rate my bags.",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "POET: The Photonic Solution to the SSD &amp; RAM Shortage",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "UK police plan crackdown on antisemitic chants, including ‘Globalize the intifada’",

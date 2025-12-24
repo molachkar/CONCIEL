@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 18.12, high 18.18, low 17.28, closed at 17.28.
 Gold (XAU/USD): Opened at $4,331.50, high $4,356.36, low $4,308.72, closed at $4,338.67. Daily gain of +7.17 (+0.17%), range 47.64.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 42.09 (neutral). EMA trend: bearish (EMA50: 98.78, EMA200: 99.76). MACD: -0.32, signal: -0.23, histogram: -0.10 (negative). Stochastic: 31.34 (neutral).
-S&P 500: RSI: 53.78 (neutral). EMA trend: bullish (EMA50: 6757.19, EMA200: 6417.21). MACD: 12.89, signal: 21.36, histogram: -8.47 (negative). Stochastic: 31.89 (neutral).
-VIX: RSI: 44.85 (neutral). EMA trend: bearish (EMA50: 18.38, EMA200: 18.55). MACD: -0.43, signal: -0.51, histogram: 0.08 (positive). Stochastic: 72.97 (neutral).
-Gold (XAU/USD): RSI: 71.23 (overbought). EMA trend: bullish (EMA50: 4114.71, EMA200: 3631.37). MACD: 64.29, signal: 57.36, histogram: 6.93 (positive). Stochastic: 84.78 (exhaustion near highs).
+Dollar Index (DXY): RSI: 42.09 (neutral). EMA trend: bearish (EMA50: 98.78, EMA200: 99.79). MACD: -0.32, signal: -0.23, histogram: -0.10 (negative). Stochastic: 31.34 (neutral).
+S&P 500: RSI: 53.78 (neutral). EMA trend: bullish (EMA50: 6757.19, EMA200: 6418.83). MACD: 12.89, signal: 21.36, histogram: -8.47 (negative). Stochastic: 31.89 (neutral).
+VIX: RSI: 44.85 (neutral). EMA trend: bearish (EMA50: 18.38, EMA200: 18.62). MACD: -0.43, signal: -0.51, histogram: 0.08 (positive). Stochastic: 72.97 (neutral).
+Gold (XAU/USD): RSI: 71.23 (overbought). EMA trend: bullish (EMA50: 4114.71, EMA200: 3633.70). MACD: 64.29, signal: 57.36, histogram: 6.93 (positive). Stochastic: 84.78 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 16:00, USD Existing Home Sales  (Nov) was released. Actual: 4.13M, missing forecast of 4.15M and rising from previous 4.11M.
@@ -27,7 +27,7 @@ At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 48
 At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -190.4K and falling from previous -155.3K.
 
 FUNDAMENTALS:
-High-yield credit spread: 2.90%. GLD ETF: closed at $399.02, volume 9,889,200. IAU ETF: closed at $81.71, volume 5,199,600.
+10-Year Treasury yield: 4.16%. High-yield credit spread: 2.90%. GLD ETF: closed at $399.02, volume 9,894,800. IAU ETF: closed at $81.71, volume 5,202,600.
 
 NEWS HIGHLIGHTS:
 
@@ -55,9 +55,8 @@ MARKET (13 items):
 
 SOCIAL SENTIMENT:
 
-r/China (2 posts):
+r/China (1 posts):
   • 20 million gen z are jobless in urban China
-  • After 17 years running a Chinese school in Beijing, here's what I'd tell anyone considering studying in China
 
 r/StockMarket (2 posts):
   • Hassett says Trump is right where others are wrong about inflation
@@ -81,16 +80,7 @@ r/japan (3 posts):
   • 9 Japan Companies Team Up on EV Battery Production; Seek to Streamline Process to Compete With China
   • Japanese Police Rush to Retrieve Toy Guns Capable of Firing Live Ammunition
 
-r/stocks (7 posts):
-  • The biggest stupid decision I made this year
-  • 2025 is almost over, how much has your investment account grown?
-  • What stocks are you guys picking up for 2026?
-  • Musk wins appeal and restores 2018 Tesla pay deal worth $56 billion
-  • is Amazon the next Google for 2026..
-  • The Christmas rally is here!!
-  • Nike (NKE) crushed after earnings beat, but accompanied by China slowdown
-
-r/wallstreetbets (15 posts):
+r/wallstreetbets (10 posts):
   • Rivian is just starting
   • First options contract. Do I belong here now?
   • $80,000 —&gt;$108,000 in $NBIS calls
@@ -100,13 +90,8 @@ r/wallstreetbets (15 posts):
   • When ThetaGang Goes Wrong
   • CoreWeave +20% after joining Department of Energy Genesis Mission to provide AI cloud for U.S. research and energy innovation
   • I dislike the stock / ceo
-  • Daily Discussion Thread for December 19, 2025
   • Japan's 10 year yield crosses 2% for the first time in over 15 years
-  • Remember, the market, in any industry, will always need and reward the player. $RIVN
-  • How to Profit from the Great RAM Drought
-  • YTD gains on my RH account
-  • Oracle +5% after hours after TikTok signs binding US joint venture with Oracle taking 15% stake
 
-[Total: 38 posts tracked]
+[Total: 25 posts tracked]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-22T19:34:37.055115",
+  "generated_at": "2025-12-24T21:59:22.009523",
   "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
   "description": "Monthly inflation and economic indicators",
   "indicators": {
@@ -85,14 +85,18 @@
       "data": [
         {
           "date": "2025-09-01",
-          "value": 22212.5
+          "value": 22212.4
         },
         {
           "date": "2025-10-01",
-          "value": 22298.1
+          "value": 22298.0
+        },
+        {
+          "date": "2025-11-01",
+          "value": 22322.4
         }
       ],
-      "end_date": "2025-10-01"
+      "end_date": "2025-11-01"
     },
     "RETAIL_SALES": {
       "data": [
@@ -111,14 +115,22 @@
       "data": [
         {
           "date": "2025-09-01",
-          "value": 101.43
+          "value": 101.67
+        },
+        {
+          "date": "2025-10-01",
+          "value": 101.62
+        },
+        {
+          "date": "2025-11-01",
+          "value": 101.79
         }
       ],
-      "end_date": "2025-09-01"
+      "end_date": "2025-11-01"
     },
     "REAL_RATE": {
-      "value": 1.12,
-      "end_date": "2025-12-18"
+      "value": 1.17,
+      "end_date": "2025-12-22"
     }
   }
 }

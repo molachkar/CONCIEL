@@ -1,84 +1,102 @@
 December 22, 2025
 
 MARKET DATA:
-US Dollar Index (DXY): Opened at 98.27, high 98.30, low 97.84, closed at 97.96. Daily loss of -0.31 (-0.32%), range 0.46. 30-day range: 97.49 - 100.31.
-S&P 500: Opened at 6,852.64, high 6,882.45, low 6,846.35, closed at 6,876.80. Daily gain of +24.16 (+0.35%), range 36.10. 30-day range: 6,507.35 - 6,911.40.
-VIX (Volatility Index): Opened at 17.13, high 17.18, low 16.82, closed at 17.00. Daily loss of -0.13 (-0.76%), range 0.36. 30-day range: 15.87 - 23.37.
-Gold (XAU/USD): Opened at $4,338.90, high $4,441.95, low $4,336.64, closed at $4,435.82. Daily gain of +96.92 (+2.23%), range 105.31. 30-day range: 3,997.66 - 4,441.95.
+US Dollar Index (DXY): Opened at 98.27, high 98.30, low 97.84, closed at 97.92. Daily loss of -0.35 (-0.36%), range 0.46.
+S&P 500: Opened at 6,852.64, high 6,882.45, low 6,846.35, closed at 6,877.65. Daily gain of +25.01 (+0.36%), range 36.10.
+VIX (Volatility Index): Opened at 17.13, high 17.18, low 16.72, closed at 16.77. Daily loss of -0.36 (-2.10%), range 0.46.
+Gold (XAU/USD): Opened at $4,338.90, high $4,448.94, low $4,336.64, closed at $4,442.81. Daily gain of +103.91 (+2.39%), range 112.30.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 36.29 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.74). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 33.01 (neutral).
-S&P 500: RSI: 57.38 (neutral). EMA trend: bullish (EMA50: 6761.88, EMA200: 6421.78). MACD: 17.11, signal: 20.51, histogram: -3.40 (negative). Stochastic: 56.01 (neutral).
-VIX: RSI: 43.38 (neutral). EMA trend: bearish (EMA50: 18.33, EMA200: 18.53). MACD: -0.45, signal: -0.50, histogram: 0.04 (positive). Stochastic: 54.62 (neutral).
-Gold (XAU/USD): RSI: 78.21 (overbought). EMA trend: bullish (EMA50: 4127.30, EMA200: 3639.38). MACD: 72.10, signal: 60.31, histogram: 11.79 (positive). Stochastic: 86.69 (exhaustion near highs).
+Dollar Index (DXY): RSI: 35.77 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.77). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 32.23 (neutral).
+S&P 500: RSI: 57.44 (neutral). EMA trend: bullish (EMA50: 6761.91, EMA200: 6423.40). MACD: 17.17, signal: 20.52, histogram: -3.35 (negative). Stochastic: 56.15 (neutral).
+VIX: RSI: 42.24 (neutral). EMA trend: bearish (EMA50: 18.32, EMA200: 18.60). MACD: -0.47, signal: -0.50, histogram: 0.03 (positive). Stochastic: 52.03 (neutral).
+Gold (XAU/USD): RSI: 78.58 (overbought). EMA trend: bullish (EMA50: 4127.58, EMA200: 3641.75). MACD: 72.65, signal: 60.42, histogram: 12.23 (positive). Stochastic: 86.70 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 19:00, USD 2-Year Note Auction was released. Actual: 3.499% and rising from previous 3.489%.
 
 FUNDAMENTALS:
-GLD ETF: closed at $407.98, volume 9,484,153. IAU ETF: closed at $83.55, volume 4,820,048.
+10-Year Treasury yield: 4.17%. High-yield credit spread: 2.88%. Real interest rate: 1.17%. GLD ETF: closed at $408.23, volume 14,202,100. IAU ETF: closed at $83.59, volume 6,309,800.
 
 NEWS HIGHLIGHTS:
 
-MARKET (5 items):
+GOLD (2 items):
+  • How to Invest in Gold [GLD]
+  • The Biggest ETF Stories of 2025 and the 2026 Outlook [GLD]
+
+MARKET (8 items):
   • QQQ to Become an Open-End Fund [QQQ]
   • Here Are the Top ETFs Holding Oracle after Its Nosedive [SPY]
   • The Safest Way to Bet on the Santa Claus Rally [SPY]
   • Silent Time Bomb Threatens 6 AI S&P 500 Stocks Loading Up With Debt [SPY]
   • Will Santa Claus Rally Set In for 2025? 4 Best ETF Areas to Explore [SPY]
+  • Stock Market Today: Dow Rises As Nvidia Climbs; Rocket Name Soars (Live Coverage) [SPY]
+  • MarketBeats Top 5 Rated Small-Cap Stocks [IWM]
+  • Stock Indexes Close Higher on Strength in Tech Stocks [SPY]
 
-[Total: 5 news items]
+[Total: 10 news items]
 
 SOCIAL SENTIMENT:
 
-r/China (1 posts):
+r/China (2 posts):
+  • I have some photos from the 1980s and 1990s in Chengdu, China. I'd like to share them here and also tell some of my own little stories. Would you like to see them, or is it appropriate to post them here?
   • Algerian asking for advice about Chinese citizenship and life
 
-r/Gold (2 posts):
-  • Gold shatters USD 4400 per ounce mark !
-  • Gold hits all-time high of above $4,395 marking its best year since 1979 with a 68% gain.
+r/Gold (3 posts):
+  • Does anyone have actual proof with receipts that they were able to sell their Walmart scores at an actual legitimate gold store?
+  • UPDATE on Walmart Gold
+  • My gran left this when she passed is this real before I try and see if I can get value for it thanks
 
-r/StockMarket (3 posts):
+r/SPY (1 posts):
+  • Pre holiday gains. +5.3k
+
+r/StockMarket (4 posts):
+  • Larry Ellison offers $40.4 billion guarantee for Warner Bros
   • Why gold and tech stocks are rallying at the same time
   • Nvidia plans 40,000–80,000 H200 AI chips to China by mid-February pending approval
   • UK stocks outperformed Wall Street this year — and investors see more upside ahead in 2026
 
-r/economics (2 posts):
+r/economics (6 posts):
+  • The Economy Survived 2025, But Many Americans Are Reeling - A feared recession didn’t materialize, but unemployment rose, wage growth slowed and affordability challenges are mounting
+  • An American Dream at risk: What happens to a small Nebraska town when 3,200 workers lose their jobs
   • Fed Risks Recession Without More Interest Rate Cuts, Miran Says
+  • China hits EU dairy products with provisional duties up to 42.7%
+  • Gold and Silver Hit Record Highs Amid Escalation Risks Around Venezuela and Expectations of U.S. Rate Cuts. Investors Turn to Precious Metals as a Hedge Against Geopolitical and Currency Risks
   • Voters in Hamburg have rejected universal basic income. Many economists would agree with them
 
-r/economy (2 posts):
-  • Record-high gold &amp; silver prices are a vote of No Confidence in the Fed &amp; its monetary malpractice
-  • China reduces US Treasury holdings to lowest level since 2008 over concerns about sustainability of the US federal debt
+r/economy (4 posts):
+  • This is what oligarchy looks like.
+  • Mitt Romney says the U.S. is on a cliff—and taxing the rich is now necessary ‘given the magnitude of our national debt’ | Fortune
+  • "Thirty years of the administrations of Ronald Reagan and Bush Sr and Clinton and Bush Jr and Obama have done more to confirm Marx's prediction of the rich getting richer and everyone else falling behind than 75 years of the Soviet Union."
+  • In a small Texas town, one Bitcoin mining facility uses as much power as the entire city of Austin. Everyone is town is affected by the constant noise from the crypto facility, even the animals. One resident: "Every person here is sick."
 
-r/europe (19 posts):
-  • Sovereignty of Kingdom of Denmark must be preserved, EU spokesperson says
-  • Russia ‘ready to legally confirm it has no intention of attacking EU or Nato’ – as it happened
-  • Poland launches app for finding nearest bomb shelter
-  • US tariffs hit German car industry, threatening EU’s export-driven economy
-  • Denmark to summon US ambassador following Greenland envoy appointment
-  • ‘Teach your daughter to speak Polish’: Ukrainians in Poland face growing resentment
-  • British companies lose £80m after piling into Bitcoin
-  • US is ‘demolishing its scientific leadership with a wrecking ball,’ says chief EU research diplomat
-  • Trump names Louisiana governor as Greenland special envoy, prompting Danish alarm
-  • This bus line goes from Poland to Czechia to Poland to Germany to Poland and to Czechia again.
-  • Why European armies are turning to the Swedish CV90 in large numbers
-  • Longyearbyen, Svalbard was hotter than Madrid this morning
-  • U.S. crude oil closes at lowest level since early 2021 as looming surplus weighs on market
-  • How Europe’s far right used unlabelled AI to win votes — and now writes the rules
-  • Russian general killed by car bomb in Moscow, officials say
-  • Population unable to keep home adequately warm (2024)
-  • The Netherlands sees more elderly than young people for first time
-  • Andrew Tate loses comeback fight in Dubai as pressure grows on Prime Minister Keir Starmer to extradite him to U.K | Tate and his brother Tristan are facing a series of 21 charges in the U.K
-  • France formally green lights PA-Ng aircraft carrier production
+r/geopolitics (3 posts):
+  • Ex-Saudi intel chief to ToI: Riyadh will consider normalization when Israel acts normally
+  • Trump still wants to take over Greenland - and he won't stop there
+  • US, Venezuela, Cuba and Russia: Russia's lack of force, or a deal?
+
+r/investing (2 posts):
+  • Is the current market drunk?
+  • If SpaceX goes public in 2026, what happens to Starlink?
 
 r/japan (1 posts):
   • Global trends favor phone-free schools as Japan still debating action
 
-r/stocks (1 posts):
+r/stocks (4 posts):
+  • How can Rocket Lab be a good long term investment
+  • US halts five offshore wind projects citing national security concerns
+  • I'm tired of anonymous reddit investing advice from people who won't show positions
   • Waymo suspends service in San Francisco after driverless cars cause traffic jams during blackout
 
-r/wallstreetbets (7 posts):
+r/wallstreetbets (15 posts):
+  • Electronic Arts Shareholders Approve $55 Billion Sale to Saudis
+  • Larry Ellison backstops $40.4B Paramount bid for Warner Bros. PSKY +4.3%, WBD +3.5%
+  • Ready for the comeback 🥷
+  • What Are Your Moves Tomorrow, December 23, 2025
+  • All time gains in Robinhood
+  • A Pure Gambling Play: LUNR (800% gain so far)
+  • Sold some TSLA in Nov'25 to buy RKLB - 2nd best invest decision made
+  • Alphabet to acquire data center and energy infrastructure company Intersect
   • WSB 2025: Year in Review (with sound) 🥂
   • Daily Discussion Thread for December 22, 2025
   • Thanks E-Toro I guess
@@ -87,31 +105,15 @@ r/wallstreetbets (7 posts):
   • Key data for the coming week
   • Dark Horse Picks for 2026
 
-r/worldnews (23 posts):
-  • Britons poorer than they were in 2019, as living standards continue to fall
-  • “Catastrophic consequences”: Russia warns of nuclear escalation, accusing NATO of pushing world toward dangerous threshold
+r/worldnews (7 posts):
+  • “Nothing sacred for them”: Zelenskyy warns Russia may target Ukraine with massive strike during Christmas holidays
+  • Kremlin denies Reuters report on Putin’s plans to seize former Soviet territories
+  • Russia evacuates diplomats' families from Venezuela as US seizes oil tankers
+  • China likely loaded more than 100 ICBMs in silo fields, Pentagon report says
   • Russia Develops Area-Effect Weapon to Destroy Starlink Satellites, Intelligence Warns
   • ‘To make Greenland a part of the U.S.’: Trump appoints new special envoy
-  • China hits EU dairy products with provisional duties up to 42.7%
-  • France to build new nuclear carrier replacing Charles de Gaulle
-  • Bennett on Qatar-gate: 'The most serious betrayal in Israel's history'
-  • Russia could support China attack on Taiwan: Taiwan security chief
   • Russia sentences 19-year-old woman to nearly three years in a penal colony after poetic anti-war protest
-  • China says US seizure of ships 'serious violation' of international law
-  • Denmark to summon US ambassador over Trump Greenland envoy appointment
-  • China says US seizure of ships ‘serious violation’ of international law
-  • India will never open up dairy sector to free trade, Piyush Goyal says after pact with New Zealand
-  • Russian general killed in explosion in Moscow, officials say
-  • Western intelligence suspects Russia is developing new weapon to target Musk's Starlink satellites
-  • 'Too much regulation, not enough action': Carney rebuffs Trudeau's climate policies | CBC News
-  • Police allege Bondi shooters had ‘tennis ball bomb’ and made IS-inspired video manifesto, court documents reveal
-  • Anthony Albanese apologises for what Jewish community experienced after Bondi attack
-  • NZ strikes free trade agreement with India
-  • /r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1397, Part 1 (Thread )
-  • Gun crackdown and controversial protest laws to be passed in NSW despite Coalition split over firearms
-  • Israeli FM calls on Jews to move to Israel after Bondi shooting attack
-  • Ukrainian and European officials had ‘productive’ talks on ending war, US envoy says
 
-[Total: 61 posts tracked]
+[Total: 52 posts tracked]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

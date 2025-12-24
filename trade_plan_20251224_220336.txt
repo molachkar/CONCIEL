@@ -1,0 +1,74 @@
+=== XAU/USD TRADE PLAN ===
+Generated: 2025-12-24 22:03
+Account: $100 | Risk: 10.0%
+
+SETUP:
+Dir: BUY
+Entry: $4463.92
+SL: $4447.70 ($16.22)
+TP: $4512.28
+Size: 6.17 microlots
+Risk: $10.00
+R:R: 1:3.0
+
+MACRO:
+REGIME: Dovish Gold Rush: Monetary easing and negative real rates fuel strong rally
+Gold: $4,478.30
+DXY: 97.63
+VIX: 16.82
+Fed: Dovish
+10Y: 4.17%
+Real Rate: -0.03%
+
+TECH:
+=== XAU/USD TECHNICAL SNAPSHOT ===
+Generated: 2025-12-24 22:00 UTC
+Timeframe: H1 (Intraday - 20 bars since 2025-12-24 00:00:00)
+
+PRICE ACTION:
+Current: $4478.3
+Day Open: $4486.3
+Day High: $4525.77
+Day Low: $4447.9
+Day Change: $-8.0 (-0.18%)
+Day Range: $77.87
+
+MOVING AVERAGES (H1):
+EMA50: $4465.83 ->...
+
+EXECUTION:
+1. BUY at $4463.92
+2. SL $4447.70
+3. TP $4512.28
+4. Size 6.17 microlots
+
+INVALIDATION:
+- Break below $4447.70
+- Major macro shift
+- VIX >25
+
+=== LOG ===
+[Risk Quant] Dir: NO TRADE
+[Momentum Scalper] Dir: BUY
+[Speed Technician] Dir: BUY
+[Macro Quant] Dir: BUY
+[Swing Trader] Dir: NO TRADE
+[Risk Quant] Entry: $4467.92
+[Macro Quant] Entry: $4467.92
+[Speed Technician] Entry: $4467.92
+[Swing Trader] Entry: $4447.90
+[Momentum Scalper] Entry: $4467.92
+[Swing Trader] SL: $4446.90
+[Risk Quant] SL: $4447.90
+[Macro Quant] SL: $4447.89
+[Speed Technician] SL: $4447.90
+[Momentum Scalper] SL: $4447.90
+[Speed Technician] TP: $4501.23 (R:R 1:2.3)
+[Swing Trader] TP: $4525.77 (R:R 1:3.8)
+[Macro Quant] TP: $4525.77 (R:R 1:3.8)
+[Momentum Scalper] TP: $4496.35 (R:R 1:2.0)
+[Swing Trader] Size: 6.16 microlots
+[Macro Quant] Size: 10.00 microlots
+[Risk Quant] Size: 6.00 microlots
+[Speed Technician] Size: 0.62 microlots
+[Momentum Scalper] Size: 160.00 microlots

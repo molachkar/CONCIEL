@@ -1,6 +1,6 @@
 {
   "date": "2025-12-17",
-  "snapshot_generated_at": "2025-12-22T19:34:37.115471",
+  "snapshot_generated_at": "2025-12-24T21:59:22.071100",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4302.52,
@@ -23,8 +23,8 @@
     "technicals": {
       "XAUUSD_RSI": 71.91,
       "XAUUSD_RSI_STATUS": "Overbought",
-      "XAUUSD_EMA50": 4096.38,
-      "XAUUSD_EMA200": 3617.16,
+      "XAUUSD_EMA50": 4096.39,
+      "XAUUSD_EMA200": 3619.54,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 61.9,
       "XAUUSD_MACD_SIGNAL": 53.72,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 43.94,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6753.51,
-      "USA500.IDX_EMA200": 6409.46,
+      "USA500.IDX_EMA200": 6411.11,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 16.71,
       "USA500.IDX_MACD_SIGNAL": 26.46,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 52.63,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.43,
-      "VOL.IDX_EMA200": 18.56,
+      "VOL.IDX_EMA200": 18.64,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.5,
       "VOL.IDX_MACD_SIGNAL": -0.55,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 32.59,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.83,
-      "DOLLAR.IDX_EMA200": 99.79,
+      "DOLLAR.IDX_EMA200": 99.82,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.34,
       "DOLLAR.IDX_MACD_SIGNAL": -0.17,
@@ -179,80 +179,24 @@
     ],
     "reddit": [
       {
-        "title": "End of an era. Penny has officially been delisted and they're now holding a funeral for it",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "Micron forecasts surging revenue as computer memory demand for AI remains high",
         "source": "r/StockMarket"
-      },
-      {
-        "title": "\"There is no way that the U.S. oil production data is correct.\" Anonymous comment",
-        "source": "r/investing"
       },
       {
         "title": "Job Growth This Year Paints a Grim Picture of Trump’s Economy",
         "source": "r/economics"
       },
       {
-        "title": "Hohoho guess I’m joining the regard club today",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "Report: Israel, Greece and Cyprus eye joint rapid-response force in eastern Mediterranean",
         "source": "r/geopolitics"
-      },
-      {
-        "title": "Oracle stock sinks as reported AI data center snag puts rising debt in focus",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Micron Technology, Inc. Reports Results- Blows Out Earnings/Guidance, Waving the Market and the World",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "What Are Your Moves Tomorrow, December 18, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "NVIDIA (NVDA) has fallen more than 20% over the past 45 days. Is it truly “overvalued,” or is this merely a price re-evaluation?",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Long BULL @ $10.41 for $416,400, down $80,600 (-19%)",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "$115k loss on options, just broke even using $80k debt",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "Putin calls European leaders 'piglets,' declares war goals will be met 'unconditionally",
         "source": "r/geopolitics"
       },
       {
-        "title": "Oracle stock dips 5% on report Blue Owl Capital won't back $10 billion data center",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "ASML stock dips 6% as Reuters reports that China has EUV technology",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Trump says China didn't buy soybeans while Biden was president. Here's what the data show.",
-        "source": "r/China"
-      },
-      {
-        "title": "$30,000 Worth of September Calls for $NBIS",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "\"We Are Not as Wealthy as We Thought We Were\": Elevated American Household Net Worth Reflects Poverty, Not Wealth",
         "source": "r/economics"
-      },
-      {
-        "title": "Thank you TQQQ, KMX, GLD &amp; SLV. Can you see when I discovered the joy of buying options?",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "Oracle stock dips 4% on report Blue Owl Capital won't back $10 billion data center",
@@ -283,10 +227,6 @@
         "source": "r/economics"
       },
       {
-        "title": "Daily Discussion Thread for December 17, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "Trump promised a blue-collar jobs boom. The opposite is happening",
         "source": "r/economics"
       },
@@ -315,28 +255,12 @@
         "source": "r/economics"
       },
       {
-        "title": "A Chinese Hillbilly's 30-Year Perspective on China",
-        "source": "r/China"
-      },
-      {
-        "title": "Amazon to Invest $10B in OpenAI, OpenAI to use Amazon Chips",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "What should I do? I lost all and completely devastated! My whole salary savings and side hustle money are gone! 33M!",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "California judge finds Tesla Autopilot marketing deceptive. DMV gives 90 days to fix claims. 30 day license suspension risk",
         "source": "r/StockMarket"
       },
       {
         "title": "Japan to tighten rules on property buyers from overseas",
         "source": "r/japan"
-      },
-      {
-        "title": "Started the year with $155K and now ending the year at $155K after thousands of trades.",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "Tesla stock closes at record as investors rally around Musk's robotaxi hype despite slow EV sales",

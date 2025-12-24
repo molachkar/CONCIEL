@@ -1,6 +1,6 @@
 {
   "date": "2025-12-12",
-  "snapshot_generated_at": "2025-12-22T19:34:37.109144",
+  "snapshot_generated_at": "2025-12-24T21:59:22.065056",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4278.9,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 68.93,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4068.56,
-      "XAUUSD_EMA200": 3595.93,
+      "XAUUSD_EMA200": 3598.39,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 54.15,
       "XAUUSD_MACD_SIGNAL": 48.17,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 53.14,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6749.71,
-      "USA500.IDX_EMA200": 6398.05,
+      "USA500.IDX_EMA200": 6399.75,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 35.46,
       "USA500.IDX_MACD_SIGNAL": 29.28,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 38.45,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.5,
-      "VOL.IDX_EMA200": 18.58,
+      "VOL.IDX_EMA200": 18.66,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.77,
       "VOL.IDX_MACD_SIGNAL": -0.48,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 30.71,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.94,
-      "DOLLAR.IDX_EMA200": 99.85,
+      "DOLLAR.IDX_EMA200": 99.88,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.2,
       "DOLLAR.IDX_MACD_SIGNAL": -0.03,
@@ -193,18 +193,6 @@
     ],
     "reddit": [
       {
-        "title": "The US isn’t attacking Venezuela because of drugs — it’s because of minerals",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "RIP American Tech Dominance",
-        "source": "r/geopolitics"
-      },
-      {
-        "title": "The Multipolar Mirage: Why America and China Are the World’s Only Great Powers",
-        "source": "r/geopolitics"
-      },
-      {
         "title": "1.4 billion barrels are on the seas, waiting to be unloaded at a port. The day that happens, oil prices are going below $50 a barrel and lowering inflation significantly.",
         "source": "r/oil"
       },
@@ -219,10 +207,6 @@
       {
         "title": "Bank of Japan set for first rate hike in 11 months",
         "source": "r/japan"
-      },
-      {
-        "title": "Ukraine considering troop withdrawal",
-        "source": "r/geopolitics"
       },
       {
         "title": "U.S. stocks hit records despite AI-led tech slide",

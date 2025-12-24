@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 17.12, high 17.77, low 17.12, closed at 17.42.
 Gold (XAU/USD): Opened at $4,198.30, high $4,218.76, low $4,176.00, closed at $4,189.89. Daily loss of -8.41 (-0.20%), range 42.76.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 45.60 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.91). MACD: -0.01, signal: 0.11, histogram: -0.13 (negative). Stochastic: 18.84 (exhaustion near lows).
-S&P 500: RSI: 57.04 (neutral). EMA trend: bullish (EMA50: 6729.64, EMA200: 6378.98). MACD: 32.59, signal: 19.86, histogram: 12.73 (positive). Stochastic: 92.20 (exhaustion near highs).
-VIX: RSI: 40.96 (neutral). EMA trend: bullish (EMA50: 18.82, EMA200: 18.66). MACD: -0.52, signal: -0.18, histogram: -0.34 (negative). Stochastic: 1.88 (exhaustion near lows).
-Gold (XAU/USD): RSI: 58.66 (neutral). EMA trend: bullish (EMA50: 4036.24, EMA200: 3569.09). MACD: 46.75, signal: 45.68, histogram: 1.07 (positive). Stochastic: 74.26 (neutral).
+Dollar Index (DXY): RSI: 45.60 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.94). MACD: -0.01, signal: 0.11, histogram: -0.13 (negative). Stochastic: 18.84 (exhaustion near lows).
+S&P 500: RSI: 57.04 (neutral). EMA trend: bullish (EMA50: 6729.64, EMA200: 6380.75). MACD: 32.59, signal: 19.86, histogram: 12.73 (positive). Stochastic: 92.20 (exhaustion near highs).
+VIX: RSI: 40.96 (neutral). EMA trend: bullish (EMA50: 18.82, EMA200: 18.75). MACD: -0.52, signal: -0.18, histogram: -0.34 (negative). Stochastic: 1.88 (exhaustion near lows).
+Gold (XAU/USD): RSI: 58.66 (neutral). EMA trend: bullish (EMA50: 4036.24, EMA200: 3571.64). MACD: 46.75, signal: 45.68, histogram: 1.07 (positive). Stochastic: 74.26 (neutral).
 
 ECONOMIC EVENTS:
 At 17:00, USD NY Fed 1-Year Consumer Inflation Expectations  (Nov) was released. Actual: 3.2%.
@@ -41,4 +41,4 @@ r/japan (2 posts):
 
 [Total: 2 posts tracked]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

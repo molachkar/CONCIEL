@@ -1,0 +1,671 @@
+{
+  "date": "2025-12-23",
+  "snapshot_generated_at": "2025-12-24T21:59:22.079118",
+  "data": {
+    "market_data": {
+      "XAUUSD_OPEN": 4446.1,
+      "XAUUSD_HIGH": 4499.67,
+      "XAUUSD_LOW": 4429.98,
+      "XAUUSD_CLOSE": 4483.94,
+      "USA500.IDX_OPEN": 6877.35,
+      "USA500.IDX_HIGH": 6910.35,
+      "USA500.IDX_LOW": 6860.33,
+      "USA500.IDX_CLOSE": 6904.24,
+      "VOL.IDX_OPEN": 16.83,
+      "VOL.IDX_HIGH": 17.02,
+      "VOL.IDX_LOW": 16.72,
+      "VOL.IDX_CLOSE": 16.82,
+      "DOLLAR.IDX_OPEN": 97.83,
+      "DOLLAR.IDX_HIGH": 97.86,
+      "DOLLAR.IDX_LOW": 97.5,
+      "DOLLAR.IDX_CLOSE": 97.57
+    },
+    "technicals": {
+      "XAUUSD_RSI": 80.68,
+      "XAUUSD_RSI_STATUS": "Overbought",
+      "XAUUSD_EMA50": 4141.55,
+      "XAUUSD_EMA200": 3650.13,
+      "XAUUSD_EMA_TREND": "Bullish",
+      "XAUUSD_MACD": 81.66,
+      "XAUUSD_MACD_SIGNAL": 64.67,
+      "XAUUSD_MACD_HIST": 16.99,
+      "XAUUSD_STOCH_K": 95.23,
+      "XAUUSD_STOCH_D": 92.03,
+      "XAUUSD_STOCH_STATUS": "Exhaustion Near Highs",
+      "USA500.IDX_RSI": 59.6,
+      "USA500.IDX_RSI_STATUS": "Neutral",
+      "USA500.IDX_EMA50": 6767.5,
+      "USA500.IDX_EMA200": 6428.18,
+      "USA500.IDX_EMA_TREND": "Bullish",
+      "USA500.IDX_MACD": 22.46,
+      "USA500.IDX_MACD_SIGNAL": 20.91,
+      "USA500.IDX_MACD_HIST": 1.55,
+      "USA500.IDX_STOCH_K": 96.31,
+      "USA500.IDX_STOCH_D": 79.87,
+      "USA500.IDX_STOCH_STATUS": "Neutral",
+      "VOL.IDX_RSI": 42.59,
+      "VOL.IDX_RSI_STATUS": "Neutral",
+      "VOL.IDX_EMA50": 18.26,
+      "VOL.IDX_EMA200": 18.59,
+      "VOL.IDX_EMA_TREND": "Bearish",
+      "VOL.IDX_MACD": -0.49,
+      "VOL.IDX_MACD_SIGNAL": -0.5,
+      "VOL.IDX_MACD_HIST": 0.0,
+      "VOL.IDX_STOCH_K": 32.09,
+      "VOL.IDX_STOCH_D": 36.71,
+      "VOL.IDX_STOCH_STATUS": "Neutral",
+      "DOLLAR.IDX_RSI": 31.7,
+      "DOLLAR.IDX_RSI_STATUS": "Neutral",
+      "DOLLAR.IDX_EMA50": 98.7,
+      "DOLLAR.IDX_EMA200": 99.75,
+      "DOLLAR.IDX_EMA_TREND": "Bearish",
+      "DOLLAR.IDX_MACD": -0.38,
+      "DOLLAR.IDX_MACD_SIGNAL": -0.27,
+      "DOLLAR.IDX_MACD_HIST": -0.1,
+      "DOLLAR.IDX_STOCH_K": 4.51,
+      "DOLLAR.IDX_STOCH_D": 23.81,
+      "DOLLAR.IDX_STOCH_STATUS": "Neutral"
+    },
+    "fundamentals": {
+      "GLD_CLOSE": 413.64,
+      "GLD_VOLUME": 13193300,
+      "IAU_CLOSE": 84.68,
+      "IAU_VOLUME": 7327000
+    },
+    "economic_events": [
+      {
+        "time": "14:15",
+        "currency": "USD",
+        "event": "ADP Employment Change Weekly",
+        "actual": "11.50K",
+        "forecast": "",
+        "previous": "17.50K"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core Durable Goods Orders (MoM)  (Oct)",
+        "actual": "0.2%",
+        "forecast": "0.3%",
+        "previous": "0.7%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Core PCE Prices  (Q3)",
+        "actual": "2.90%",
+        "forecast": "2.90%",
+        "previous": "2.60%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "Durable Goods Orders (MoM)  (Oct)",
+        "actual": "-2.2%",
+        "forecast": "-1.5%",
+        "previous": "0.7%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "GDP (QoQ)  (Q3)",
+        "actual": "4.3%",
+        "forecast": "3.3%",
+        "previous": "3.8%"
+      },
+      {
+        "time": "14:30",
+        "currency": "USD",
+        "event": "GDP Price Index (QoQ)  (Q3)",
+        "actual": "3.7%",
+        "forecast": "2.7%",
+        "previous": "2.1%"
+      },
+      {
+        "time": "15:14",
+        "currency": "USD",
+        "event": "Industrial Production (MoM)  (Oct)",
+        "actual": "-0.1%",
+        "forecast": "0.1%",
+        "previous": "0.1%"
+      },
+      {
+        "time": "15:14",
+        "currency": "USD",
+        "event": "Industrial Production (YoY)  (Oct)",
+        "actual": "2.20%",
+        "forecast": "",
+        "previous": "1.90%"
+      },
+      {
+        "time": "15:15",
+        "currency": "USD",
+        "event": "Industrial Production (MoM)  (Nov)",
+        "actual": "0.2%",
+        "forecast": "",
+        "previous": "-0.1%"
+      },
+      {
+        "time": "15:15",
+        "currency": "USD",
+        "event": "Industrial Production (YoY)  (Nov)",
+        "actual": "2.52%",
+        "forecast": "",
+        "previous": "2.20%"
+      },
+      {
+        "time": "16:00",
+        "currency": "USD",
+        "event": "CB Consumer Confidence  (Dec)",
+        "actual": "89.1",
+        "forecast": "91.7",
+        "previous": "92.9"
+      },
+      {
+        "time": "17:00",
+        "currency": "USD",
+        "event": "Atlanta Fed GDPNow  (Q4)",
+        "actual": "3.0%",
+        "forecast": "3.5%",
+        "previous": "3.5%"
+      },
+      {
+        "time": "19:00",
+        "currency": "USD",
+        "event": "5-Year Note Auction",
+        "actual": "3.747%",
+        "forecast": "",
+        "previous": "3.562%"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Crude Oil speculative net positions",
+        "actual": "54.9K",
+        "forecast": "",
+        "previous": "58.4K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Gold speculative net positions",
+        "actual": "234.0K",
+        "forecast": "",
+        "previous": "223.9K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC Nasdaq 100 speculative net positions",
+        "actual": "46.4K",
+        "forecast": "",
+        "previous": "48.1K"
+      },
+      {
+        "time": "21:30",
+        "currency": "USD",
+        "event": "CFTC S&P 500 speculative net positions",
+        "actual": "-166.0K",
+        "forecast": "",
+        "previous": "-190.4K"
+      },
+      {
+        "time": "22:30",
+        "currency": "USD",
+        "event": "API Weekly Crude Oil Stock",
+        "actual": "2.400M",
+        "forecast": "",
+        "previous": "-9.300M"
+      }
+    ],
+    "news": [
+      {
+        "category": "market",
+        "title": "Could Buying the Invesco QQQ Trust Today Set You Up for Life?",
+        "ticker": "QQQ"
+      },
+      {
+        "category": "market",
+        "title": "Pelosi Vs. Buffett: Viral Tweet Reveals Who Beat S&P 500 The Most Since 2012",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Warren Buffett: This asset offers more opportunity than real estate, young Charlie Munger would pick it in a second",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Best-Performing Sector ETFs of 2025",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Falls After Surprise GDP Data; Novo Soars On Weight Loss Pill (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Stock Market Today: Dow Slips After Strong GDP Data; Novo Soars On Weight-Loss Pill (Live Coverage)",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "Q3 GDP +4.3%: Consumer Carries Economic Heft",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Gold Mining ETF (GDXJ) Hits New 52-Week High",
+        "ticker": "GDXJ"
+      },
+      {
+        "category": "market",
+        "title": "Ray Dalios Top Holdings Revealed: Two ETFs and Two Tech Titans",
+        "ticker": "SPY"
+      },
+      {
+        "category": "gold",
+        "title": "Best ETF of 2025 & Its 7 Winning Stocks",
+        "ticker": "GLD"
+      },
+      {
+        "category": "dollar",
+        "title": "Best ETF of 2025 & Its 7 Winning Stocks",
+        "ticker": "UUP"
+      },
+      {
+        "category": "market",
+        "title": "Stocks See Support from Economic Confidence After Strong US GDP Report",
+        "ticker": "SPY"
+      },
+      {
+        "category": "market",
+        "title": "The Smartest Index ETF to Buy With $1,000 Right Now",
+        "ticker": "QQQ"
+      }
+    ],
+    "reddit": [
+      {
+        "title": "China State Media Reacts to Trump Battleship: ‘Easier Target’",
+        "source": "r/China"
+      },
+      {
+        "title": "China Warns Ukraine Against Sanctioning Chinese Companies Over Alleged Support for Russia",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Iranian Navy sends ships to South Africa to participate in BRICS exercises",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "BREAKING: Silver extends gains to a record $71/oz, now up nearly +150% YTD. We are quite literally witnessing one of the most historic runs in precious metals ever.",
+        "source": "r/economy"
+      },
+      {
+        "title": "What did you SELL this year?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "2026 Strategy: Double down on AI, or is it time to move on?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "What Are Your Moves Tomorrow, December 24, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Finland: Unemployment climbs to 10.6%, marking bleakest point since 2009",
+        "source": "r/europe"
+      },
+      {
+        "title": "How is GDP up 4.3% when consumer confidence is down for 5th straight month!?",
+        "source": "r/economy"
+      },
+      {
+        "title": "Gun and protest reforms pass NSW parliament after Bondi terror attack",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "After announcing she would be limiting the number of free days off school, Belgian Flemish education minister calls in police on threats from schoolchildren",
+        "source": "r/europe"
+      },
+      {
+        "title": "‘This is shattering’: Europe reels from US President’s new world order",
+        "source": "r/europe"
+      },
+      {
+        "title": "Trump says US will keep or sell oil seized from Venezuela",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Chernobyl shelter may not withstand second Russian strike, plant director says",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Options are free money",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "This year I realized how little I actually understand about stocks",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Signal lost with private jet believed to be carrying Libyan army chief over Ankara: Report",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Poland Seeks G-20 Membership to Give Voice to Eastern Europe",
+        "source": "r/europe"
+      },
+      {
+        "title": "Islamic State supporters guilty of planning 'most deadly' gun attack on Jewish targets in Manchester",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Belgium joins South Africa's genocide case against lsrael at ICJ",
+        "source": "r/europe"
+      },
+      {
+        "title": "Pakistan bans beggars from foreign travel; 66,000 flyers with suspicious documents stopped at airports this year | Today News",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Citadel to Return $5 Billion of Hedge Fund’s Profits to Clients",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "UK commits to building one new British Navy AUKUS nuclear attack submarine every 18 months",
+        "source": "r/europe"
+      },
+      {
+        "title": "‘Where Are the Manufacturing Jobs?’ — Trump Trade Official Forced to Admit Tariffs Have Hit Manufacturing on Live TV - TLP Media",
+        "source": "r/economics"
+      },
+      {
+        "title": "Myrnohrad defense holds as Russians are eliminated on approach, military says",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "EU blocks \"Novel Foods\" (like lab-grown meat) from new fast-track testing rules, citing \"cultural concerns\"",
+        "source": "r/europe"
+      },
+      {
+        "title": "NL calls for EU ban on powerful fireworks as explosions continue",
+        "source": "r/europe"
+      },
+      {
+        "title": "US adults are increasingly pessimistic about economy",
+        "source": "r/economics"
+      },
+      {
+        "title": "Gold is up 70% in 2025, its best year since 1979. What’s fueling this explosive move?",
+        "source": "r/Gold"
+      },
+      {
+        "title": "Japan has agreed to join Horizon Europe, becoming the biggest country yet to associate to the EU's €93.5 billion research and innovation programme.",
+        "source": "r/europe"
+      },
+      {
+        "title": "5 million people are in default right now. The Dept of Ed estimates as many as 10 million by end of next year because of job market.",
+        "source": "r/economy"
+      },
+      {
+        "title": "Military considers permanent bases in Latvia as part of Canada's NATO commitment",
+        "source": "r/europe"
+      },
+      {
+        "title": "US to Begin Garnishing Wages for Student Debt Collection in 2026",
+        "source": "r/economics"
+      },
+      {
+        "title": "Heritage Foundation openly calls for the end of the European Union",
+        "source": "r/europe"
+      },
+      {
+        "title": "Rocket crashes shortly after launch in blow to Brazil’s space ambitions",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "When will META shut down Reality Labs?",
+        "source": "r/investing"
+      },
+      {
+        "title": "Canadian economy shrank by 0.3% in October, the biggest slump in almost 3 years",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Europe stands with Greenland as Trump threat returns",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "GDP surged unexpectedly by 4.3%, marking the fastest growth in two years.",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Greta Thunberg arrested under Terrorism Act for Palestine Action sign",
+        "source": "r/europe"
+      },
+      {
+        "title": "U.S. GDP grew at a blistering 4.3% pace in the third quarter",
+        "source": "r/economics"
+      },
+      {
+        "title": "Ground drone defends Ukraine’s infantry positions against Russian assaults for 45 days",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "President Sheinbaum: Mexico Ships Oil to Cuba for Humanitarian Reasons",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Russia refuses to hand over consulate building after Poland orders it closed",
+        "source": "r/europe"
+      },
+      {
+        "title": "Does this mean the collapse of the US economy?",
+        "source": "r/Gold"
+      },
+      {
+        "title": "Buying gold at middle age",
+        "source": "r/Gold"
+      },
+      {
+        "title": "Almost all Russian missiles intercepted by F-16 pilots overnight",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "U.S. economy grows by 4.3% in third quarter, much more than expected, delayed report shows",
+        "source": "r/economics"
+      },
+      {
+        "title": "CALIFORNIA: “Crops ready to be harvested were abandoned - left to die in a field simply because there wasn’t enough labor… workers are showing up less because of (Trump’s) ICE raids.”",
+        "source": "r/economy"
+      },
+      {
+        "title": "US economic growth accelerates in third quarter (+4,3%)",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "US Q3 GDP grows 4.3% vs 3.3% forecast as consumer spending accelerates",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "U.S. Economic Growth Surged in Third Quarter of 2025",
+        "source": "r/economics"
+      },
+      {
+        "title": "'When we got out of college, we had a job waiting for us': 80-year-old boomer says her generation left behind a different economy for her grandkids",
+        "source": "r/economy"
+      },
+      {
+        "title": "When will Gen-Z crack the code on the Fed's fiat currency fraud and the destruction of the 99 percents' standard of living?",
+        "source": "r/economy"
+      },
+      {
+        "title": "Here's Why Governments Should Start Paying People to Bike to Work",
+        "source": "r/economics"
+      },
+      {
+        "title": "Enter the 100-month car loan.",
+        "source": "r/economics"
+      },
+      {
+        "title": "Ukrainian partisans set ablaze 2 Russian Su-30 fighter jets in Lipetsk Oblast, HUR says",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "“These crimes will not go unanswered”: Estonian FM condemns Christmas-period attack on Ukraine",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Trump’s ‘peace plan’ for Ukraine is wicked",
+        "source": "r/europe"
+      },
+      {
+        "title": "Finland Raises Reservist Age To 65 | Yle News",
+        "source": "r/europe"
+      },
+      {
+        "title": "Daily Discussion Thread for December 23, 2025",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "London records fewest homicides this year since records began",
+        "source": "r/europe"
+      },
+      {
+        "title": "Germany and Poland strike tech deal for military satellite system",
+        "source": "r/europe"
+      },
+      {
+        "title": "Canadian military considers permanent bases in Latvia as part of Canada's NATO commitment",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Japan Eyes Plan to Accept Up To 1.23 Mil. Foreign Workers by End of Fiscal 2028",
+        "source": "r/japan"
+      },
+      {
+        "title": "iOS 26.3 Brings AirPods-Like Pairing to Third-Party Devices in EU Under DMA",
+        "source": "r/europe"
+      },
+      {
+        "title": "U.S. military says new strike on alleged drug boat killed 1 'narco-terrorist'",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Which Robotics Companies currently fly under the radar / are cheap / should be on the watchlist during a markt pullback?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Trump says US needs Greenland after naming special envoy",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Germany’s far-right AfD accused of gathering information for the Kremlin",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Japan to double required period in the country for citizenship",
+        "source": "r/japan"
+      },
+      {
+        "title": "Hanwha Ocean shares jump 10% after Trump says South Korean firm to build warships for U.S. Navy",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Putin effectively chose Witkoff as US negotiator with Russia, – WSJ",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Trump’s Trade Wars Are Crushing America’s Bourbon Industry",
+        "source": "r/economy"
+      },
+      {
+        "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1398, Part 1 (Thread )",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "A WSB Christmas Story",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "I own Rocket Lab, but why is it so hyped on reddit?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "You cannot annex other countries, Danish and Greenlandic leaders tell Trump",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "From caviar to foie gras — China is becoming a luxury food powerhouse",
+        "source": "r/China"
+      },
+      {
+        "title": "A middle-class family’s only option: A $43,000 health insurance premium",
+        "source": "r/economy"
+      },
+      {
+        "title": "Russia and China pledge support for Venezuela as Trump ratchets up pressure on Maduro",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Always regret I didn't buy more back then",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "China says US broke international law by seizing oil tankers off Venezuela",
+        "source": "r/China"
+      },
+      {
+        "title": "Most US adults aren't making year-end charitable contributions, new AP-NORC poll finds",
+        "source": "r/economics"
+      },
+      {
+        "title": "Why is Netflix still going down after the Warner deal news?",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Russia Is Ready to Legally Confirm That It Has No Intention of Attacking NATO, Deputy Minister Says",
+        "source": "r/geopolitics"
+      },
+      {
+        "title": "Economics beat morals in Trump’s new world, Romanian president says",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Walmart 14kt Gold Cheat Sheet with Images, Getting the Best Value for Your Money",
+        "source": "r/Gold"
+      },
+      {
+        "title": "Christmas gift to myself from the business!",
+        "source": "r/Gold"
+      },
+      {
+        "title": "US President says US needs Greenland after naming special envoy",
+        "source": "r/europe"
+      },
+      {
+        "title": "Novo Nordisk A/S: Wegovy® pill approved in the US as first oral GLP-1 for weight management",
+        "source": "r/stocks"
+      },
+      {
+        "title": "China quietly loads 100+ ICBMs into new missile silos near Mongolia: report",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Boiling lobsters alive to be banned in UK animal cruelty crackdown",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "NVO received approval for oral Wegovy",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "FDA approves first GLP-1 pill for obesity from Novo Nordisk : NVO is up +8% after hours",
+        "source": "r/wallstreetbets"
+      }
+    ]
+  }
+}

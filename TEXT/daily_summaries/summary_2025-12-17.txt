@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 18.48, high 18.78, low 18.12, closed at 18.63.
 Gold (XAU/USD): Opened at $4,302.52, high $4,348.68, low $4,300.85, closed at $4,337.34. Daily gain of +34.82 (+0.81%), range 47.83.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 32.59 (neutral). EMA trend: bearish (EMA50: 98.83, EMA200: 99.79). MACD: -0.34, signal: -0.17, histogram: -0.17 (negative). Stochastic: 14.65 (exhaustion near lows).
-S&P 500: RSI: 43.94 (neutral). EMA trend: bullish (EMA50: 6753.51, EMA200: 6409.46). MACD: 16.71, signal: 26.46, histogram: -9.75 (negative). Stochastic: 23.61 (neutral).
-VIX: RSI: 52.63 (neutral). EMA trend: bearish (EMA50: 18.43, EMA200: 18.56). MACD: -0.50, signal: -0.55, histogram: 0.05 (positive). Stochastic: 66.43 (neutral).
-Gold (XAU/USD): RSI: 71.91 (overbought). EMA trend: bullish (EMA50: 4096.38, EMA200: 3617.16). MACD: 61.90, signal: 53.72, histogram: 8.18 (positive). Stochastic: 81.73 (exhaustion near highs).
+Dollar Index (DXY): RSI: 32.59 (neutral). EMA trend: bearish (EMA50: 98.83, EMA200: 99.82). MACD: -0.34, signal: -0.17, histogram: -0.17 (negative). Stochastic: 14.65 (exhaustion near lows).
+S&P 500: RSI: 43.94 (neutral). EMA trend: bullish (EMA50: 6753.51, EMA200: 6411.11). MACD: 16.71, signal: 26.46, histogram: -9.75 (negative). Stochastic: 23.61 (neutral).
+VIX: RSI: 52.63 (neutral). EMA trend: bearish (EMA50: 18.43, EMA200: 18.64). MACD: -0.50, signal: -0.55, histogram: 0.05 (positive). Stochastic: 66.43 (neutral).
+Gold (XAU/USD): RSI: 71.91 (overbought). EMA trend: bullish (EMA50: 4096.39, EMA200: 3619.54). MACD: 61.90, signal: 53.72, histogram: 8.18 (positive). Stochastic: 81.73 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 16:30, USD Crude Oil Inventories was released. Actual: -1.274M, beating forecast of -2.400M and rising from previous -1.812M.
@@ -47,10 +47,6 @@ VOLATILITY (1 items):
 
 SOCIAL SENTIMENT:
 
-r/China (2 posts):
-  • Trump says China didn't buy soybeans while Biden was president. Here's what the data show.
-  • A Chinese Hillbilly's 30-Year Perspective on China
-
 r/StockMarket (6 posts):
   • Micron forecasts surging revenue as computer memory demand for AI remains high
   • Oracle stock dips 4% on report Blue Owl Capital won't back $10 billion data center
@@ -73,9 +69,6 @@ r/geopolitics (4 posts):
   • ‘The More I’m Around Young People, the More Panicked I Am’
   • After Trump Officials Cut Food Aid to Kenya, Children Starved to Death
 
-r/investing (1 posts):
-  • "There is no way that the U.S. oil production data is correct." Anonymous comment
-
 r/japan (4 posts):
   • Japanese Minister Kimi Onoda Says She Only Likes ‘2D Men’
   • Japan’s new leader Takaichi says she wants to meet North Korea’s Kim Jong Un
@@ -87,26 +80,6 @@ r/oil (3 posts):
   • US oil industry doesn’t see profit in Trump’s “pro-petroleum” moves
   • Can you guess the country in red just by analysing the chart?
 
-r/stocks (2 posts):
-  • NVIDIA (NVDA) has fallen more than 20% over the past 45 days. Is it truly “overvalued,” or is this merely a price re-evaluation?
-  • ASML stock dips 6% as Reuters reports that China has EUV technology
+[Total: 23 posts tracked]
 
-r/wallstreetbets (14 posts):
-  • End of an era. Penny has officially been delisted and they're now holding a funeral for it
-  • Hohoho guess I’m joining the regard club today
-  • Oracle stock sinks as reported AI data center snag puts rising debt in focus
-  • Micron Technology, Inc. Reports Results- Blows Out Earnings/Guidance, Waving the Market and the World
-  • What Are Your Moves Tomorrow, December 18, 2025
-  • Long BULL @ $10.41 for $416,400, down $80,600 (-19%)
-  • $115k loss on options, just broke even using $80k debt
-  • Oracle stock dips 5% on report Blue Owl Capital won't back $10 billion data center
-  • $30,000 Worth of September Calls for $NBIS
-  • Thank you TQQQ, KMX, GLD &amp; SLV. Can you see when I discovered the joy of buying options?
-  • Daily Discussion Thread for December 17, 2025
-  • Amazon to Invest $10B in OpenAI, OpenAI to use Amazon Chips
-  • What should I do? I lost all and completely devastated! My whole salary savings and side hustle money are gone! 33M!
-  • Started the year with $155K and now ending the year at $155K after thousands of trades.
-
-[Total: 42 posts tracked]
-
-2025-12-22 19:34:37
+2025-12-24 21:59:22

@@ -1,6 +1,6 @@
 {
   "date": "2025-12-19",
-  "snapshot_generated_at": "2025-12-22T19:34:37.118770",
+  "snapshot_generated_at": "2025-12-24T21:59:22.074172",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4331.5,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 71.23,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4114.71,
-      "XAUUSD_EMA200": 3631.37,
+      "XAUUSD_EMA200": 3633.7,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 64.29,
       "XAUUSD_MACD_SIGNAL": 57.36,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 53.78,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6757.19,
-      "USA500.IDX_EMA200": 6417.21,
+      "USA500.IDX_EMA200": 6418.83,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 12.89,
       "USA500.IDX_MACD_SIGNAL": 21.36,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 44.85,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.38,
-      "VOL.IDX_EMA200": 18.55,
+      "VOL.IDX_EMA200": 18.62,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.43,
       "VOL.IDX_MACD_SIGNAL": -0.51,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 42.09,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.78,
-      "DOLLAR.IDX_EMA200": 99.76,
+      "DOLLAR.IDX_EMA200": 99.79,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.32,
       "DOLLAR.IDX_MACD_SIGNAL": -0.23,
@@ -67,11 +67,12 @@
       "DOLLAR.IDX_STOCH_STATUS": "Neutral"
     },
     "fundamentals": {
+      "TREASURY_10Y": 4.16,
       "HY_CREDIT_SPREAD": 2.9,
       "GLD_CLOSE": 399.02,
-      "GLD_VOLUME": 9889200,
+      "GLD_VOLUME": 9894800,
       "IAU_CLOSE": 81.71,
-      "IAU_VOLUME": 5199600
+      "IAU_VOLUME": 5202600
     },
     "economic_events": [
       {
@@ -255,14 +256,6 @@
     ],
     "reddit": [
       {
-        "title": "The biggest stupid decision I made this year",
-        "source": "r/stocks"
-      },
-      {
-        "title": "2025 is almost over, how much has your investment account grown?",
-        "source": "r/stocks"
-      },
-      {
         "title": "Rivian is just starting",
         "source": "r/wallstreetbets"
       },
@@ -275,16 +268,8 @@
         "source": "r/wallstreetbets"
       },
       {
-        "title": "What stocks are you guys picking up for 2026?",
-        "source": "r/stocks"
-      },
-      {
         "title": "Why America gave up on economists",
         "source": "r/economics"
-      },
-      {
-        "title": "Musk wins appeal and restores 2018 Tesla pay deal worth $56 billion",
-        "source": "r/stocks"
       },
       {
         "title": "Elon Musk's 2018 Tesla pay package must be restored, Delaware Supreme Court rules",
@@ -307,10 +292,6 @@
         "source": "r/wallstreetbets"
       },
       {
-        "title": "is Amazon the next Google for 2026..",
-        "source": "r/stocks"
-      },
-      {
         "title": "When ThetaGang Goes Wrong",
         "source": "r/wallstreetbets"
       },
@@ -331,20 +312,8 @@
         "source": "r/japan"
       },
       {
-        "title": "The Christmas rally is here!!",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Nike (NKE) crushed after earnings beat, but accompanied by China slowdown",
-        "source": "r/stocks"
-      },
-      {
         "title": "Think Lower Inflation Means Cheaper Prices? Think Again",
         "source": "r/economics"
-      },
-      {
-        "title": "Daily Discussion Thread for December 19, 2025",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "EU leaders to loan €90bn to Ukraine - but fail to agree on using Russian assets",
@@ -363,10 +332,6 @@
         "source": "r/geopolitics"
       },
       {
-        "title": "After 17 years running a Chinese school in Beijing, here's what I'd tell anyone considering studying in China",
-        "source": "r/China"
-      },
-      {
         "title": "Japan's 10 year yield crosses 2% for the first time in over 15 years",
         "source": "r/wallstreetbets"
       },
@@ -379,16 +344,8 @@
         "source": "r/geopolitics"
       },
       {
-        "title": "Remember, the market, in any industry, will always need and reward the player. $RIVN",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "The $38 trillion national debt is to blame for over $1 trillion in annual interest payments from here on out, CRFB says",
         "source": "r/economics"
-      },
-      {
-        "title": "How to Profit from the Great RAM Drought",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "9 Japan Companies Team Up on EV Battery Production; Seek to Streamline Process to Compete With China",
@@ -397,14 +354,6 @@
       {
         "title": "Japanese Police Rush to Retrieve Toy Guns Capable of Firing Live Ammunition",
         "source": "r/japan"
-      },
-      {
-        "title": "YTD gains on my RH account",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Oracle +5% after hours after TikTok signs binding US joint venture with Oracle taking 15% stake",
-        "source": "r/wallstreetbets"
       }
     ]
   }

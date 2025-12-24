@@ -1,6 +1,6 @@
 {
   "date": "2025-11-29",
-  "snapshot_generated_at": "2025-12-22T19:34:37.094869",
+  "snapshot_generated_at": "2025-12-24T21:59:22.050936",
   "data": {
     "fundamentals": {
       "JOBLESS_CLAIMS": 192000.0
@@ -10,17 +10,6 @@
         "category": "gold",
         "title": "Gold to $5,000? What Bank of America and UBS Have to Say",
         "ticker": "GLD"
-      },
-      {
-        "category": "market",
-        "title": "10 truths about the stock market",
-        "ticker": "SPY"
-      }
-    ],
-    "reddit": [
-      {
-        "title": "‘Rental Family’ Offers a No-Judgment Look at Hired Affection in Japan",
-        "source": "r/japan"
       }
     ]
   }

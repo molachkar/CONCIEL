@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 15.97, high 17.83, low 15.87, closed at 16.47.
 Gold (XAU/USD): Opened at $4,278.90, high $4,353.32, low $4,256.85, closed at $4,298.70. Daily gain of +19.80 (+0.46%), range 96.47.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 30.71 (neutral). EMA trend: bearish (EMA50: 98.94, EMA200: 99.85). MACD: -0.20, signal: -0.03, histogram: -0.18 (negative). Stochastic: 4.53 (exhaustion near lows).
-S&P 500: RSI: 53.14 (neutral). EMA trend: bullish (EMA50: 6749.71, EMA200: 6398.05). MACD: 35.46, signal: 29.28, histogram: 6.18 (positive). Stochastic: 87.82 (exhaustion near highs).
-VIX: RSI: 38.45 (neutral). EMA trend: bearish (EMA50: 18.50, EMA200: 18.58). MACD: -0.77, signal: -0.48, histogram: -0.29 (negative). Stochastic: 4.85 (exhaustion near lows).
-Gold (XAU/USD): RSI: 68.93 (neutral). EMA trend: bullish (EMA50: 4068.56, EMA200: 3595.93). MACD: 54.15, signal: 48.17, histogram: 5.98 (positive). Stochastic: 86.63 (exhaustion near highs).
+Dollar Index (DXY): RSI: 30.71 (neutral). EMA trend: bearish (EMA50: 98.94, EMA200: 99.88). MACD: -0.20, signal: -0.03, histogram: -0.18 (negative). Stochastic: 4.53 (exhaustion near lows).
+S&P 500: RSI: 53.14 (neutral). EMA trend: bullish (EMA50: 6749.71, EMA200: 6399.75). MACD: 35.46, signal: 29.28, histogram: 6.18 (positive). Stochastic: 87.82 (exhaustion near highs).
+VIX: RSI: 38.45 (neutral). EMA trend: bearish (EMA50: 18.50, EMA200: 18.66). MACD: -0.77, signal: -0.48, histogram: -0.29 (negative). Stochastic: 4.85 (exhaustion near lows).
+Gold (XAU/USD): RSI: 68.93 (neutral). EMA trend: bullish (EMA50: 4068.56, EMA200: 3598.39). MACD: 54.15, signal: 48.17, histogram: 5.98 (positive). Stochastic: 86.63 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 19:00, USD U.S. Baker Hughes Oil Rig Count was released. Actual: 414 and rising from previous 413.
@@ -52,18 +52,12 @@ r/StockMarket (4 posts):
   • U.S. stocks hit records despite AI-led tech slide
   • Costco tops Wall Street's sales and revenue expectations
 
-r/geopolitics (4 posts):
-  • The US isn’t attacking Venezuela because of drugs — it’s because of minerals
-  • RIP American Tech Dominance
-  • The Multipolar Mirage: Why America and China Are the World’s Only Great Powers
-  • Ukraine considering troop withdrawal
-
 r/japan (1 posts):
   • Bank of Japan set for first rate hike in 11 months
 
 r/oil (1 posts):
   • 1.4 billion barrels are on the seas, waiting to be unloaded at a port. The day that happens, oil prices are going below $50 a barrel and lowering inflation significantly.
 
-[Total: 10 posts tracked]
+[Total: 6 posts tracked]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

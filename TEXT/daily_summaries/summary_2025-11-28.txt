@@ -7,24 +7,22 @@ VIX (Volatility Index): Opened at 18.63, high 18.73, low 18.12, closed at 18.18.
 Gold (XAU/USD): Opened at $4,156.82, high $4,236.37, low $4,153.14, closed at $4,232.52. Daily gain of +75.70 (+1.82%), range 83.23.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 50.77 (neutral). EMA trend: bearish (EMA50: 99.01, EMA200: 99.96). MACD: 0.22, signal: 0.30, histogram: -0.07 (negative). Stochastic: 42.84 (neutral).
-S&P 500: RSI: 58.50 (neutral). EMA trend: bullish (EMA50: 6698.17, EMA200: 6350.16). MACD: 10.21, signal: -0.87, histogram: 11.08 (positive). Stochastic: 85.86 (exhaustion near highs).
-VIX: RSI: 43.64 (neutral). EMA trend: bullish (EMA50: 19.15, EMA200: 18.72). MACD: 0.05, signal: 0.35, histogram: -0.31 (negative). Stochastic: 9.38 (exhaustion near lows).
-Gold (XAU/USD): RSI: 64.59 (neutral). EMA trend: bullish (EMA50: 3990.47, EMA200: 3529.74). MACD: 44.02, signal: 36.40, histogram: 7.62 (positive). Stochastic: 76.15 (neutral).
+Dollar Index (DXY): RSI: 50.77 (neutral). EMA trend: bearish (EMA50: 99.01, EMA200: 99.99). MACD: 0.22, signal: 0.30, histogram: -0.07 (negative). Stochastic: 42.84 (neutral).
+S&P 500: RSI: 58.50 (neutral). EMA trend: bullish (EMA50: 6698.18, EMA200: 6352.05). MACD: 10.21, signal: -0.87, histogram: 11.08 (positive). Stochastic: 85.86 (exhaustion near highs).
+VIX: RSI: 43.64 (neutral). EMA trend: bullish (EMA50: 19.15, EMA200: 18.81). MACD: 0.05, signal: 0.35, histogram: -0.31 (negative). Stochastic: 9.38 (exhaustion near lows).
+Gold (XAU/USD): RSI: 64.59 (neutral). EMA trend: bullish (EMA50: 3990.47, EMA200: 3532.45). MACD: 44.02, signal: 36.40, histogram: 7.62 (positive). Stochastic: 76.15 (neutral).
 
 FUNDAMENTALS:
 10-Year Treasury yield: 4.02%. High-yield credit spread: 2.95%. GLD ETF: closed at $387.88, volume 7,175,400. IAU ETF: closed at $79.41, volume 6,228,400.
 
 NEWS HIGHLIGHTS:
 
-MARKET (6 items):
+MARKET (4 items):
   • Stock Market Today: Dow Jones Index Rises As Google Leads; Nvidia, Tesla, Robinhood, GE Vernova Eye Key Levels [DIA]
   • Stock Market Today: Outage Hits Trading, But Dow Indicates Higher; Google Leads Market (Live Coverage) [DIA]
   • 5 ETFs Primed to Soar if the Fed Cuts Rates in December [IWM]
   • ETFs to Benefit From Rate Cut Bets and Upbeat Forecasts [IWM]
-  • This Rare Perfect Market Indicator Says a Major Bull Market Is Coming [SPY]
-  • Meta Platforms - High EVA Shows Why The Premium Is There [SPY]
 
-[Total: 6 news items]
+[Total: 4 news items]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

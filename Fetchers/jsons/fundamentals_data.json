@@ -1,5 +1,5 @@
 {
-  "collection_date": "2025-12-22 19:31:58",
+  "collection_date": "2025-12-24 21:55:34",
   "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
   "#DAILY_DATA": "Last 30 days, chronological order (oldest to newest)",
   "TREASURY_10Y": [
@@ -74,9 +74,17 @@
     {
       "date": "2025-12-18",
       "value": 4.12
+    },
+    {
+      "date": "2025-12-19",
+      "value": 4.16
+    },
+    {
+      "date": "2025-12-22",
+      "value": 4.17
     }
   ],
-  "TREASURY_10Y_END_DATE": "2025-12-18",
+  "TREASURY_10Y_END_DATE": "2025-12-22",
   "HY_CREDIT_SPREAD": [
     {
       "date": "2025-11-24",
@@ -161,15 +169,14 @@
     {
       "date": "2025-12-19",
       "value": 2.9
+    },
+    {
+      "date": "2025-12-22",
+      "value": 2.88
     }
   ],
-  "HY_CREDIT_SPREAD_END_DATE": "2025-12-19",
+  "HY_CREDIT_SPREAD_END_DATE": "2025-12-22",
   "GLD": [
-    {
-      "date": "2025-11-24",
-      "close": 380.2,
-      "volume": 10085300
-    },
     {
       "date": "2025-11-25",
       "close": 380.08,
@@ -258,21 +265,26 @@
     {
       "date": "2025-12-19",
       "close": 399.02,
-      "volume": 9889200
+      "volume": 9894800
     },
     {
       "date": "2025-12-22",
-      "close": 407.98,
-      "volume": 9484153
+      "close": 408.23,
+      "volume": 14202100
+    },
+    {
+      "date": "2025-12-23",
+      "close": 413.64,
+      "volume": 13193300
+    },
+    {
+      "date": "2025-12-24",
+      "close": 411.93,
+      "volume": 6664181
     }
   ],
-  "GLD_END_DATE": "2025-12-22",
+  "GLD_END_DATE": "2025-12-24",
   "IAU": [
-    {
-      "date": "2025-11-24",
-      "close": 77.84,
-      "volume": 7411900
-    },
     {
       "date": "2025-11-25",
       "close": 77.83,
@@ -361,21 +373,27 @@
     {
       "date": "2025-12-19",
       "close": 81.71,
-      "volume": 5199600
+      "volume": 5202600
     },
     {
       "date": "2025-12-22",
-      "close": 83.55,
-      "volume": 4820048
+      "close": 83.59,
+      "volume": 6309800
+    },
+    {
+      "date": "2025-12-23",
+      "close": 84.68,
+      "volume": 7327000
+    },
+    {
+      "date": "2025-12-24",
+      "close": 84.34,
+      "volume": 6408363
     }
   ],
-  "IAU_END_DATE": "2025-12-22",
+  "IAU_END_DATE": "2025-12-24",
   "#WEEKLY_DATA": "Last 30 days, chronological order (oldest to newest)",
   "JOBLESS_CLAIMS": [
-    {
-      "date": "2025-11-22",
-      "value": 217000.0
-    },
     {
       "date": "2025-11-29",
       "value": 192000.0
@@ -387,9 +405,13 @@
     {
       "date": "2025-12-13",
       "value": 224000.0
+    },
+    {
+      "date": "2025-12-20",
+      "value": 214000.0
     }
   ],
-  "JOBLESS_CLAIMS_END_DATE": "2025-12-13",
+  "JOBLESS_CLAIMS_END_DATE": "2025-12-20",
   "#MONTHLY_DATA": "Last 3 months, chronological order (oldest to newest)",
   "CPI": [
     {
@@ -460,14 +482,18 @@
   "M2_MONEY_SUPPLY": [
     {
       "date": "2025-09-01",
-      "value": 22212.5
+      "value": 22212.4
     },
     {
       "date": "2025-10-01",
-      "value": 22298.1
+      "value": 22298.0
+    },
+    {
+      "date": "2025-11-01",
+      "value": 22322.4
     }
   ],
-  "M2_MONEY_SUPPLY_END_DATE": "2025-10-01",
+  "M2_MONEY_SUPPLY_END_DATE": "2025-11-01",
   "RETAIL_SALES": [
     {
       "date": "2025-09-01",
@@ -482,13 +508,21 @@
   "INDUSTRIAL_PROD": [
     {
       "date": "2025-09-01",
-      "value": 101.43
+      "value": 101.67
+    },
+    {
+      "date": "2025-10-01",
+      "value": 101.62
+    },
+    {
+      "date": "2025-11-01",
+      "value": 101.79
     }
   ],
-  "INDUSTRIAL_PROD_END_DATE": "2025-09-01",
+  "INDUSTRIAL_PROD_END_DATE": "2025-11-01",
   "HOUSING_STARTS": null,
   "HOUSING_STARTS_END_DATE": null,
   "#CALCULATED_DATA": "Derived metrics",
-  "REAL_RATE": 1.12,
-  "REAL_RATE_END_DATE": "2025-12-18"
+  "REAL_RATE": 1.17,
+  "REAL_RATE_END_DATE": "2025-12-22"
 }

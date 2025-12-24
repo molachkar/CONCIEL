@@ -1,4 +1,4 @@
-December 22, 2025
+December 24, 2025
 
 INFLATION INDICATORS:
 Consumer Price Index (CPI) stood at 325.03 in November 2025. Personal Consumption Expenditures (PCE) was 127.62 in September 2025. Producer Price Index (PPI) was 262.34 in September 2025.
@@ -7,9 +7,9 @@ EMPLOYMENT:
 Unemployment rate was 4.6% in November 2025. Non-Farm Payrolls totaled 159,552K jobs.
 
 MONETARY POLICY:
-Federal Funds Rate was 3.88% as of November 2025. Rate moved down 0.34 percentage points during this period. M2 money supply was $22,298.1 billion.
+Federal Funds Rate was 3.88% as of November 2025. Rate moved down 0.34 percentage points during this period. M2 money supply was $22,322.4 billion.
 
 ECONOMIC ACTIVITY:
-Retail sales totaled $732,633 million. Industrial production index was 101.43.
+Retail sales totaled $732,633 million. Industrial production index was 101.79.
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

@@ -1,6 +1,6 @@
 {
   "date": "2025-12-15",
-  "snapshot_generated_at": "2025-12-22T19:34:37.112116",
+  "snapshot_generated_at": "2025-12-24T21:59:22.067838",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4299.3,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 69.36,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4077.8,
-      "XAUUSD_EMA200": 3602.98,
+      "XAUUSD_EMA200": 3605.41,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 57.11,
       "XAUUSD_MACD_SIGNAL": 49.96,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 51.85,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6752.43,
-      "USA500.IDX_EMA200": 6402.24,
+      "USA500.IDX_EMA200": 6403.93,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 31.32,
       "USA500.IDX_MACD_SIGNAL": 29.69,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 38.25,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.42,
-      "VOL.IDX_EMA200": 18.56,
+      "VOL.IDX_EMA200": 18.64,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.8,
       "VOL.IDX_MACD_SIGNAL": -0.54,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 30.01,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.9,
-      "DOLLAR.IDX_EMA200": 99.83,
+      "DOLLAR.IDX_EMA200": 99.86,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.26,
       "DOLLAR.IDX_MACD_SIGNAL": -0.07,
@@ -154,16 +154,8 @@
         "source": "r/geopolitics"
       },
       {
-        "title": "U.S. Home Prices Slow Further Amid Affordability Concerns",
-        "source": "r/economics"
-      },
-      {
         "title": "Japan needs tariff relief now — what is Trump waiting for?",
         "source": "r/japan"
-      },
-      {
-        "title": "What the Twin Cities Tell Us About Fixing the Housing Crisis",
-        "source": "r/economics"
       },
       {
         "title": "Why Germany Wants a Divorce With China",

@@ -1,39 +1,15 @@
 {
-  "fetch_time": "2025-12-22T19:33:26.048024",
+  "fetch_time": "2025-12-24T21:57:49.596601",
   "source": "FinViz",
   "period": "Last 30 days",
-  "total_articles": 202,
+  "total_articles": 208,
   "by_category": {
-    "market": 167,
-    "gold": 30,
-    "volatility": 3,
-    "dollar": 2
+    "gold": 37,
+    "market": 166,
+    "dollar": 3,
+    "volatility": 2
   },
   "headlines": [
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Here's the Average Stock Market Return in the Last 10 Years, and What Wall Street Expects in the Future",
-      "time": "2025-11-24T03:50:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "The Zacks Analyst Blog SPDR Gold Trust, HDGE, PGHY and XLV",
-      "time": "2025-11-24T05:06:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Best-Performing ETFs of Last Week: Healthcare Rules",
-      "time": "2025-11-24T10:00:00"
-    },
-    {
-      "category": "volatility",
-      "ticker": "VXX",
-      "title": "Best-Performing ETFs of Last Week: Healthcare Rules",
-      "time": "2025-11-24T10:00:00"
-    },
     {
       "category": "gold",
       "ticker": "GLD",
@@ -95,64 +71,10 @@
       "time": "2025-11-28T10:10:00"
     },
     {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "This Rare Perfect Market Indicator Says a Major Bull Market Is Coming",
-      "time": "2025-11-28T10:26:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Meta Platforms - High EVA Shows Why The Premium Is There",
-      "time": "2025-11-28T14:21:00"
-    },
-    {
       "category": "gold",
       "ticker": "GLD",
       "title": "Gold to $5,000? What Bank of America and UBS Have to Say",
       "time": "2025-11-29T08:51:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "10 truths about the stock market",
-      "time": "2025-11-29T09:07:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "S&P 500 Delivers Best Thanksgiving Week Since 2008",
-      "time": "2025-12-01T05:43:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Falls 200 Points; Nvidia, Tesla Slide (Live Coverage)",
-      "time": "2025-12-01T08:51:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow, Major Indexes Fall; Nvidia, Tesla Slide (Live Coverage)",
-      "time": "2025-12-01T09:47:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Falls, Synopsys Hits Resistance Despite Nvidia Investment; Walt Disney Pops (Live Coverage)",
-      "time": "2025-12-01T10:48:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "S&P 500 to Hit At Least 7,500-Mark in 2026? ETFs in Focus",
-      "time": "2025-12-01T14:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Trumps Potential Fed Chair Pick: How It Could Impact Interest Rates and ETFs",
-      "time": "2025-12-01T21:07:00"
     },
     {
       "category": "market",
@@ -165,42 +87,6 @@
       "ticker": "GLD",
       "title": "Billionaire Ken Griffin Buys an Index Fund That's Crushing Bitcoin, Nvidia, and the S&P 500 in 2025",
       "time": "2025-12-02T04:12:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Q4 Seasonality Feels Different. Dont Miss This Major Overhang for Markets in 2026.",
-      "time": "2025-12-02T08:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Goodbye, bull market: This spot-on indicator is saying what you don't want to hear",
-      "time": "2025-12-02T08:05:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
-      "time": "2025-12-02T08:42:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "These Are the Hottest Upgrades From the Q3 Reporting Cycle",
-      "time": "2025-12-02T09:06:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Nasdaq Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
-      "time": "2025-12-02T09:48:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Nvidia Just Lit a Fire Under Synopsys Stock But Its Chart Is Waving Red Flags. Heres the Only Way Id Trade SNPS Here.",
-      "time": "2025-12-02T15:13:00"
     },
     {
       "category": "gold",
@@ -231,18 +117,6 @@
       "ticker": "SPY",
       "title": "This tech maven bashes nuclear stocks and shares the real way to play AI's energy boom",
       "time": "2025-12-03T12:35:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "The Cloud Computing Market Could Surge by 218%: Buy This ETF That Holds a Big Position in Alphabet",
-      "time": "2025-12-03T13:36:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Why ETF investors are shaking off tech-stock turbulence and AI bubble fears",
-      "time": "2025-12-03T15:12:00"
     },
     {
       "category": "market",
@@ -1221,6 +1095,168 @@
       "ticker": "SPY",
       "title": "Will Santa Claus Rally Set In for 2025? 4 Best ETF Areas to Explore",
       "time": "2025-12-22T08:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "How to Invest in Gold",
+      "time": "2025-12-22T09:53:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises As Nvidia Climbs; Rocket Name Soars (Live Coverage)",
+      "time": "2025-12-22T10:11:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "MarketBeats Top 5 Rated Small-Cap Stocks",
+      "time": "2025-12-22T13:12:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "The Biggest ETF Stories of 2025 and the 2026 Outlook",
+      "time": "2025-12-22T15:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Indexes Close Higher on Strength in Tech Stocks",
+      "time": "2025-12-22T17:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Could Buying the Invesco QQQ Trust Today Set You Up for Life?",
+      "time": "2025-12-23T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Pelosi Vs. Buffett: Viral Tweet Reveals Who Beat S&P 500 The Most Since 2012",
+      "time": "2025-12-23T06:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Warren Buffett: This asset offers more opportunity than real estate, young Charlie Munger would pick it in a second",
+      "time": "2025-12-23T06:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Best-Performing Sector ETFs of 2025",
+      "time": "2025-12-23T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls After Surprise GDP Data; Novo Soars On Weight Loss Pill (Live Coverage)",
+      "time": "2025-12-23T09:11:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Slips After Strong GDP Data; Novo Soars On Weight-Loss Pill (Live Coverage)",
+      "time": "2025-12-23T09:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Q3 GDP +4.3%: Consumer Carries Economic Heft",
+      "time": "2025-12-23T10:15:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GDXJ",
+      "title": "Gold Mining ETF (GDXJ) Hits New 52-Week High",
+      "time": "2025-12-23T10:33:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Ray Dalios Top Holdings Revealed: Two ETFs and Two Tech Titans",
+      "time": "2025-12-23T10:52:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Best ETF of 2025 & Its 7 Winning Stocks",
+      "time": "2025-12-23T11:00:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Best ETF of 2025 & Its 7 Winning Stocks",
+      "time": "2025-12-23T11:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks See Support from Economic Confidence After Strong US GDP Report",
+      "time": "2025-12-23T12:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The Smartest Index ETF to Buy With $1,000 Right Now",
+      "time": "2025-12-23T12:50:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "I Predict Gold Will Cross $5,000 Per Ounce in 2026. Here's How Much You Should Buy, According to Hedge Fund Legend Ray Dalio",
+      "time": "2025-12-24T06:14:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Climbs Above $4,500 in Historic Rally for Precious Metals",
+      "time": "2025-12-24T07:11:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls Ahead Of Jobless Claims; Nvidia Retakes Key Level (Live Coverage)",
+      "time": "2025-12-24T07:58:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wavers After Surprise Jobless Claims; Nvidia Retakes Key Level (Live Coverage)",
+      "time": "2025-12-24T08:58:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Bitcoin Keeps Falling. Blame Gold and Silver.",
+      "time": "2025-12-24T09:27:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Edges Up After Surprise Jobless Claims; Nvidia Retakes Key Level (Live Coverage)",
+      "time": "2025-12-24T09:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Little Changed Heading Into Year-End",
+      "time": "2025-12-24T10:11:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs",
+      "time": "2025-12-24T11:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Forget the Bond Vigilantes. It's the Gold Vigilantes You Need to Worry About.",
+      "time": "2025-12-24T11:41:00"
     }
   ]
 }

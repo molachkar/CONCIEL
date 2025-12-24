@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 17.87, high 18.23, low 17.67, closed at 17.67.
 Gold (XAU/USD): Opened at $4,206.90, high $4,241.23, low $4,194.40, closed at $4,202.41. Daily loss of -4.49 (-0.11%), range 46.83.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 39.57 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.93). MACD: 0.08, signal: 0.22, histogram: -0.14 (negative). Stochastic: 21.15 (neutral).
-S&P 500: RSI: 58.60 (neutral). EMA trend: bullish (EMA50: 6713.35, EMA200: 6364.40). MACD: 23.87, signal: 9.17, histogram: 14.70 (positive). Stochastic: 89.68 (exhaustion near highs).
-VIX: RSI: 41.44 (neutral). EMA trend: bullish (EMA50: 19.01, EMA200: 18.70). MACD: -0.28, signal: 0.09, histogram: -0.37 (negative). Stochastic: 2.72 (exhaustion near lows).
-Gold (XAU/USD): RSI: 60.78 (neutral). EMA trend: bullish (EMA50: 4015.61, EMA200: 3549.94). MACD: 50.45, signal: 43.04, histogram: 7.41 (positive). Stochastic: 80.78 (exhaustion near highs).
+Dollar Index (DXY): RSI: 39.57 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.96). MACD: 0.08, signal: 0.22, histogram: -0.14 (negative). Stochastic: 21.15 (neutral).
+S&P 500: RSI: 58.60 (neutral). EMA trend: bullish (EMA50: 6713.35, EMA200: 6366.23). MACD: 23.87, signal: 9.17, histogram: 14.70 (positive). Stochastic: 89.68 (exhaustion near highs).
+VIX: RSI: 41.44 (neutral). EMA trend: bullish (EMA50: 19.01, EMA200: 18.79). MACD: -0.28, signal: 0.09, histogram: -0.37 (negative). Stochastic: 2.72 (exhaustion near lows).
+Gold (XAU/USD): RSI: 60.78 (neutral). EMA trend: bullish (EMA50: 4015.61, EMA200: 3552.56). MACD: 50.45, signal: 43.04, histogram: 7.41 (positive). Stochastic: 80.78 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 14:15, USD ADP Nonfarm Employment Change  (Nov) was released. Actual: -32K, missing forecast of 5K and falling from previous 47K.
@@ -35,14 +35,12 @@ DOLLAR (1 items):
 GOLD (1 items):
   • Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher [GLD]
 
-MARKET (5 items):
+MARKET (3 items):
   • Stock Market Today: Dow Rises On Surprise Jobs Data; Nvidia Extends Gains (Live Coverage) [SPY]
   • Stock Market Today: Dow Edges Up On Jobs Data; Microsoft Sells Off On AI News (Live Coverage) [SPY]
   • This tech maven bashes nuclear stocks and shares the real way to play AI's energy boom [SPY]
-  • The Cloud Computing Market Could Surge by 218%: Buy This ETF That Holds a Big Position in Alphabet [QQQ]
-  • Why ETF investors are shaking off tech-stock turbulence and AI bubble fears [QQQ]
 
-[Total: 7 news items]
+[Total: 5 news items]
 
 SOCIAL SENTIMENT:
 
@@ -53,4 +51,4 @@ r/japan (3 posts):
 
 [Total: 3 posts tracked]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

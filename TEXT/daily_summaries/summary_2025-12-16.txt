@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 18.42, high 18.83, low 18.27, closed at 18.53.
 Gold (XAU/USD): Opened at $4,304.90, high $4,334.94, low $4,271.12, closed at $4,301.05. Daily loss of -3.85 (-0.09%), range 63.82.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 29.38 (oversold). EMA trend: bearish (EMA50: 98.86, EMA200: 99.81). MACD: -0.31, signal: -0.12, histogram: -0.19 (negative). Stochastic: 8.39 (exhaustion near lows).
-S&P 500: RSI: 49.22 (neutral). EMA trend: bullish (EMA50: 6754.08, EMA200: 6406.14). MACD: 25.73, signal: 28.90, histogram: -3.17 (negative). Stochastic: 43.10 (neutral).
-VIX: RSI: 52.09 (neutral). EMA trend: bearish (EMA50: 18.43, EMA200: 18.56). MACD: -0.64, signal: -0.56, histogram: -0.08 (negative). Stochastic: 39.52 (neutral).
-Gold (XAU/USD): RSI: 68.78 (neutral). EMA trend: bullish (EMA50: 4086.55, EMA200: 3609.93). MACD: 58.55, signal: 51.67, histogram: 6.87 (positive). Stochastic: 76.92 (neutral).
+Dollar Index (DXY): RSI: 29.38 (oversold). EMA trend: bearish (EMA50: 98.86, EMA200: 99.84). MACD: -0.31, signal: -0.12, histogram: -0.19 (negative). Stochastic: 8.39 (exhaustion near lows).
+S&P 500: RSI: 49.22 (neutral). EMA trend: bullish (EMA50: 6754.08, EMA200: 6407.81). MACD: 25.73, signal: 28.90, histogram: -3.17 (negative). Stochastic: 43.10 (neutral).
+VIX: RSI: 52.09 (neutral). EMA trend: bearish (EMA50: 18.43, EMA200: 18.64). MACD: -0.64, signal: -0.56, histogram: -0.08 (negative). Stochastic: 39.52 (neutral).
+Gold (XAU/USD): RSI: 68.78 (neutral). EMA trend: bullish (EMA50: 4086.55, EMA200: 3612.33). MACD: 58.55, signal: 51.67, histogram: 6.87 (positive). Stochastic: 76.92 (neutral).
 
 ECONOMIC EVENTS:
 At 14:15, USD ADP Employment Change Weekly was released. Actual: 16.25K and rising from previous 2.75K.
@@ -21,10 +21,10 @@ At 14:29, USD Private Nonfarm Payrolls  (Oct) was released. Actual: 52K and fall
 At 14:30, USD Average Hourly Earnings (MoM)  (Nov) was released. Actual: 0.1%, missing forecast of 0.3% and falling from previous 0.4%.
 At 14:30, USD Average Hourly Earnings (YoY) (YoY)  (Nov) was released. Actual: 3.5% and falling from previous 3.7%.
 At 14:30, USD Core Retail Sales (MoM)  (Oct) was released. Actual: 0.4%, beating forecast of 0.2% and rising from previous 0.1%.
-At 14:30, USD Nonfarm Payrolls  (Nov) was released. Actual: 64K, beating forecast of 50K and rising from previous -105K.
+At 14:30, USD Nonfarm Payrolls  (Nov) was released. Actual: 64K, beating forecast of 51K and rising from previous -105K.
 At 14:30, USD Participation Rate  (Nov) was released. Actual: 62.5% and rising from previous 62.4%.
 At 14:30, USD Private Nonfarm Payrolls  (Nov) was released. Actual: 69K, beating forecast of 45K and rising from previous 52K.
-At 14:30, USD Retail Control (MoM)  (Oct) was released. Actual: 0.8%, beating forecast of 0.3% and rising from previous -0.1%.
+At 14:30, USD Retail Control (MoM)  (Oct) was released. Actual: 0.8%, beating forecast of 0.4% and rising from previous -0.1%.
 At 14:30, USD Retail Sales (MoM)  (Oct) was released. Actual: 0.0%, missing forecast of 0.1% and falling from previous 0.1%.
 At 14:30, USD U6 Unemployment Rate  (Nov) was released. Actual: 8.7% and rising from previous 8.0%.
 At 14:30, USD Unemployment Rate  (Nov) was released. Actual: 4.6%, beating forecast of 4.5% and rising from previous 4.4%.
@@ -81,15 +81,11 @@ r/StockMarket (3 posts):
   • SP500 to be one of the worst G20 performers for 2025
   • Intel appoints Trump economic adviser as head of government affairs
 
-r/economics (8 posts):
-  • EU-made combustion cars to comply with 90% emissions reduction by 2035
+r/economics (4 posts):
   • US Oil Futures Drop Below $55 a Barrel for First Time Since 2021
   • U.S. crude oil drops below $55 a barrel, hits lowest level since early 2021
   • US unemployment rate hits four-year high of 4.6%
-  • BUREAU OF LABOR STATISTICS - Employment Situation Nov 2025 (direct link to report)
-  • Mexico approves up to 50% tariffs on China and other countries
   • Now that the government has stopped minting pennies, retailers and restaurants that tend to do a lot of cash business want the federal government to come up with a standard for rounding.
-  • Fannie, Freddie Quietly Add Billions to Mortgage-Bond Portfolios
 
 r/geopolitics (5 posts):
   • Russia: US has promised us Ukrainian territory
@@ -101,9 +97,6 @@ r/geopolitics (5 posts):
 r/japan (1 posts):
   • Why Japan's internet looks weird — unless you live here
 
-r/wallstreetbets (1 posts):
-  • Warner Bros. to Reject Paramount offer on Funding Concerns
+[Total: 14 posts tracked]
 
-[Total: 19 posts tracked]
-
-2025-12-22 19:34:37
+2025-12-24 21:59:22

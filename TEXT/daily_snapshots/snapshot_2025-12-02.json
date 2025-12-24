@@ -1,6 +1,6 @@
 {
   "date": "2025-12-02",
-  "snapshot_generated_at": "2025-12-22T19:34:37.097408",
+  "snapshot_generated_at": "2025-12-24T21:59:22.053665",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4231.2,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 61.2,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4007.99,
-      "XAUUSD_EMA200": 3543.38,
+      "XAUUSD_EMA200": 3546.03,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 50.27,
       "XAUUSD_MACD_SIGNAL": 41.19,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 56.77,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6707.63,
-      "USA500.IDX_EMA200": 6359.49,
+      "USA500.IDX_EMA200": 6361.34,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 18.71,
       "USA500.IDX_MACD_SIGNAL": 5.49,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 42.55,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 19.07,
-      "VOL.IDX_EMA200": 18.71,
+      "VOL.IDX_EMA200": 18.8,
       "VOL.IDX_EMA_TREND": "Bullish",
       "VOL.IDX_MACD": -0.18,
       "VOL.IDX_MACD_SIGNAL": 0.18,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 47.64,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 99.03,
-      "DOLLAR.IDX_EMA200": 99.94,
+      "DOLLAR.IDX_EMA200": 99.98,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": 0.15,
       "DOLLAR.IDX_MACD_SIGNAL": 0.25,
@@ -126,36 +126,6 @@
         "category": "gold",
         "title": "Billionaire Ken Griffin Buys an Index Fund That's Crushing Bitcoin, Nvidia, and the S&P 500 in 2025",
         "ticker": "GLD"
-      },
-      {
-        "category": "market",
-        "title": "Q4 Seasonality Feels Different. Dont Miss This Major Overhang for Markets in 2026.",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Goodbye, bull market: This spot-on indicator is saying what you don't want to hear",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Stock Market Today: Dow Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "These Are the Hottest Upgrades From the Q3 Reporting Cycle",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Stock Market Today: Nasdaq Rises As AI Stocks Nvidia, Palantir, Astera Rally (Live Coverage)",
-        "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "Nvidia Just Lit a Fire Under Synopsys Stock But Its Chart Is Waving Red Flags. Heres the Only Way Id Trade SNPS Here.",
-        "ticker": "QQQ"
       }
     ],
     "reddit": [
@@ -169,10 +139,6 @@
       },
       {
         "title": "‘Okinawa Is Our Territory’: Japan Dismisses China's Claims Over Ryukyu Islands",
-        "source": "r/japan"
-      },
-      {
-        "title": "PM Takaichi's 'work, work, work, work' remark tops Japan 2025 catchphrase list",
         "source": "r/japan"
       },
       {

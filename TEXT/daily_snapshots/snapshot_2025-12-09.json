@@ -1,6 +1,6 @@
 {
   "date": "2025-12-09",
-  "snapshot_generated_at": "2025-12-22T19:34:37.104969",
+  "snapshot_generated_at": "2025-12-24T21:59:22.060962",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4189.7,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 60.48,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4042.94,
-      "XAUUSD_EMA200": 3575.44,
+      "XAUUSD_EMA200": 3577.97,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 45.82,
       "XAUUSD_MACD_SIGNAL": 45.71,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 56.2,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6733.92,
-      "USA500.IDX_EMA200": 6383.55,
+      "USA500.IDX_EMA200": 6385.31,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 32.24,
       "USA500.IDX_MACD_SIGNAL": 22.33,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 42.51,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.78,
-      "VOL.IDX_EMA200": 18.65,
+      "VOL.IDX_EMA200": 18.73,
       "VOL.IDX_EMA_TREND": "Bullish",
       "VOL.IDX_MACD": -0.53,
       "VOL.IDX_MACD_SIGNAL": -0.25,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 48.08,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 99.03,
-      "DOLLAR.IDX_EMA200": 99.9,
+      "DOLLAR.IDX_EMA200": 99.93,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.02,
       "DOLLAR.IDX_MACD_SIGNAL": 0.09,
@@ -200,28 +200,12 @@
     ],
     "reddit": [
       {
-        "title": "JPMorgan falls 4% after warning 2026 expenses will jump on credit card competition and AI spending",
-        "source": "r/StockMarket"
-      },
-      {
         "title": "Takaichi reiterates Japan claim on Dokdo, vows diplomatic push",
         "source": "r/japan"
       },
       {
-        "title": "SpaceX to pursue 2026 IPO raising above $30 billion, Bloomberg News reports",
-        "source": "r/StockMarket"
-      },
-      {
         "title": "Oil Markets Face Supply Glut as Prices Expected to Fall Below $60",
         "source": "r/oil"
-      },
-      {
-        "title": "Microsoft to invest $17.5 billion in India, CEO Nadella says",
-        "source": "r/StockMarket"
-      },
-      {
-        "title": "Economy is dragging, but the stock market is thriving. Why?",
-        "source": "r/StockMarket"
       },
       {
         "title": "Japan rebuffs EU plea to join Russian assets plan",

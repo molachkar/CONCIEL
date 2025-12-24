@@ -1,6 +1,6 @@
 {
   "date": "2025-11-24",
-  "snapshot_generated_at": "2025-12-22T19:34:37.089946",
+  "snapshot_generated_at": "2025-12-24T21:59:22.045241",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4069.22,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 57.72,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 3959.03,
-      "XAUUSD_EMA200": 3503.59,
+      "XAUUSD_EMA200": 3506.41,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 30.1,
       "XAUUSD_MACD_SIGNAL": 34.03,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 49.34,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6678.55,
-      "USA500.IDX_EMA200": 6331.38,
+      "USA500.IDX_EMA200": 6333.34,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": -24.38,
       "USA500.IDX_MACD_SIGNAL": -1.6,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 50.0,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 19.24,
-      "VOL.IDX_EMA200": 18.73,
+      "VOL.IDX_EMA200": 18.82,
       "VOL.IDX_EMA_TREND": "Bullish",
       "VOL.IDX_MACD": 0.65,
       "VOL.IDX_MACD_SIGNAL": 0.53,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 65.65,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.92,
-      "DOLLAR.IDX_EMA200": 99.97,
+      "DOLLAR.IDX_EMA200": 100.01,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": 0.37,
       "DOLLAR.IDX_MACD_SIGNAL": 0.33,
@@ -68,11 +68,7 @@
     },
     "fundamentals": {
       "TREASURY_10Y": 4.04,
-      "HY_CREDIT_SPREAD": 3.15,
-      "GLD_CLOSE": 380.2,
-      "GLD_VOLUME": 10085300,
-      "IAU_CLOSE": 77.84,
-      "IAU_VOLUME": 7411900
+      "HY_CREDIT_SPREAD": 3.15
     },
     "economic_events": [
       {
@@ -82,28 +78,6 @@
         "actual": "3.489%",
         "forecast": "",
         "previous": "3.504%"
-      }
-    ],
-    "news": [
-      {
-        "category": "market",
-        "title": "Here's the Average Stock Market Return in the Last 10 Years, and What Wall Street Expects in the Future",
-        "ticker": "DIA"
-      },
-      {
-        "category": "gold",
-        "title": "The Zacks Analyst Blog SPDR Gold Trust, HDGE, PGHY and XLV",
-        "ticker": "GLD"
-      },
-      {
-        "category": "gold",
-        "title": "Best-Performing ETFs of Last Week: Healthcare Rules",
-        "ticker": "GLD"
-      },
-      {
-        "category": "volatility",
-        "title": "Best-Performing ETFs of Last Week: Healthcare Rules",
-        "ticker": "VXX"
       }
     ]
   }

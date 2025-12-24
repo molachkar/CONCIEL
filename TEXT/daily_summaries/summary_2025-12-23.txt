@@ -1,0 +1,184 @@
+December 23, 2025
+
+MARKET DATA:
+US Dollar Index (DXY): Opened at 97.83, high 97.86, low 97.50, closed at 97.57. Daily loss of -0.26 (-0.27%), range 0.36.
+S&P 500: Opened at 6,877.35, high 6,910.35, low 6,860.33, closed at 6,904.24. Daily gain of +26.89 (+0.39%), range 50.02.
+VIX (Volatility Index): Opened at 16.83, high 17.02, low 16.72, closed at 16.82. Daily no change of flat (0.00%), range 0.30.
+Gold (XAU/USD): Opened at $4,446.10, high $4,499.67, low $4,429.98, closed at $4,483.94. Daily gain of +37.84 (+0.85%), range 69.69.
+
+TECHNICAL INDICATORS:
+Dollar Index (DXY): RSI: 31.70 (neutral). EMA trend: bearish (EMA50: 98.70, EMA200: 99.75). MACD: -0.38, signal: -0.27, histogram: -0.10 (negative). Stochastic: 23.81 (neutral).
+S&P 500: RSI: 59.60 (neutral). EMA trend: bullish (EMA50: 6767.50, EMA200: 6428.18). MACD: 22.46, signal: 20.91, histogram: 1.55 (positive). Stochastic: 79.87 (neutral).
+VIX: RSI: 42.59 (neutral). EMA trend: bearish (EMA50: 18.26, EMA200: 18.59). MACD: -0.49, signal: -0.50, histogram: 0.00 (negative). Stochastic: 36.71 (neutral).
+Gold (XAU/USD): RSI: 80.68 (overbought). EMA trend: bullish (EMA50: 4141.55, EMA200: 3650.13). MACD: 81.66, signal: 64.67, histogram: 16.99 (positive). Stochastic: 92.03 (exhaustion near highs).
+
+ECONOMIC EVENTS:
+At 14:15, USD ADP Employment Change Weekly was released. Actual: 11.50K and falling from previous 17.50K.
+At 14:30, USD Core Durable Goods Orders (MoM)  (Oct) was released. Actual: 0.2%, missing forecast of 0.3% and falling from previous 0.7%.
+At 14:30, USD Core PCE Prices  (Q3) was released. Actual: 2.90%, matching forecast of 2.90% and rising from previous 2.60%.
+At 14:30, USD Durable Goods Orders (MoM)  (Oct) was released. Actual: -2.2%, missing forecast of -1.5% and falling from previous 0.7%.
+At 14:30, USD GDP (QoQ)  (Q3) was released. Actual: 4.3%, beating forecast of 3.3% and rising from previous 3.8%.
+At 14:30, USD GDP Price Index (QoQ)  (Q3) was released. Actual: 3.7%, beating forecast of 2.7% and rising from previous 2.1%.
+At 15:14, USD Industrial Production (MoM)  (Oct) was released. Actual: -0.1%, missing forecast of 0.1% and falling from previous 0.1%.
+At 15:14, USD Industrial Production (YoY)  (Oct) was released. Actual: 2.20% and rising from previous 1.90%.
+At 15:15, USD Industrial Production (MoM)  (Nov) was released. Actual: 0.2% and rising from previous -0.1%.
+At 15:15, USD Industrial Production (YoY)  (Nov) was released. Actual: 2.52% and rising from previous 2.20%.
+At 16:00, USD CB Consumer Confidence  (Dec) was released. Actual: 89.1, missing forecast of 91.7 and falling from previous 92.9.
+At 17:00, USD Atlanta Fed GDPNow  (Q4) was released. Actual: 3.0%, missing forecast of 3.5% and falling from previous 3.5%.
+At 19:00, USD 5-Year Note Auction was released. Actual: 3.747% and rising from previous 3.562%.
+At 21:30, USD CFTC Crude Oil speculative net positions was released. Actual: 54.9K and falling from previous 58.4K.
+At 21:30, USD CFTC Gold speculative net positions was released. Actual: 234.0K and rising from previous 223.9K.
+At 21:30, USD CFTC Nasdaq 100 speculative net positions was released. Actual: 46.4K and falling from previous 48.1K.
+At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -166.0K and rising from previous -190.4K.
+At 22:30, USD API Weekly Crude Oil Stock was released. Actual: 2.400M and rising from previous -9.300M.
+
+FUNDAMENTALS:
+GLD ETF: closed at $413.64, volume 13,193,300. IAU ETF: closed at $84.68, volume 7,327,000.
+
+NEWS HIGHLIGHTS:
+
+DOLLAR (1 items):
+  • Best ETF of 2025 & Its 7 Winning Stocks [UUP]
+
+GOLD (2 items):
+  • Gold Mining ETF (GDXJ) Hits New 52-Week High [GDXJ]
+  • Best ETF of 2025 & Its 7 Winning Stocks [GLD]
+
+MARKET (10 items):
+  • Could Buying the Invesco QQQ Trust Today Set You Up for Life? [QQQ]
+  • Pelosi Vs. Buffett: Viral Tweet Reveals Who Beat S&P 500 The Most Since 2012 [SPY]
+  • Warren Buffett: This asset offers more opportunity than real estate, young Charlie Munger would pick it in a second [SPY]
+  • Best-Performing Sector ETFs of 2025 [SPY]
+  • Stock Market Today: Dow Falls After Surprise GDP Data; Novo Soars On Weight Loss Pill (Live Coverage) [SPY]
+  • Stock Market Today: Dow Slips After Strong GDP Data; Novo Soars On Weight-Loss Pill (Live Coverage) [SPY]
+  • Q3 GDP +4.3%: Consumer Carries Economic Heft [SPY]
+  • Ray Dalios Top Holdings Revealed: Two ETFs and Two Tech Titans [SPY]
+  • Stocks See Support from Economic Confidence After Strong US GDP Report [SPY]
+  • The Smartest Index ETF to Buy With $1,000 Right Now [QQQ]
+
+[Total: 13 news items]
+
+SOCIAL SENTIMENT:
+
+r/China (3 posts):
+  • China State Media Reacts to Trump Battleship: ‘Easier Target’
+  • From caviar to foie gras — China is becoming a luxury food powerhouse
+  • China says US broke international law by seizing oil tankers off Venezuela
+
+r/Gold (5 posts):
+  • Gold is up 70% in 2025, its best year since 1979. What’s fueling this explosive move?
+  • Does this mean the collapse of the US economy?
+  • Buying gold at middle age
+  • Walmart 14kt Gold Cheat Sheet with Images, Getting the Best Value for Your Money
+  • Christmas gift to myself from the business!
+
+r/StockMarket (2 posts):
+  • Citadel to Return $5 Billion of Hedge Fund’s Profits to Clients
+  • US Q3 GDP grows 4.3% vs 3.3% forecast as consumer spending accelerates
+
+r/economics (9 posts):
+  • ‘Where Are the Manufacturing Jobs?’ — Trump Trade Official Forced to Admit Tariffs Have Hit Manufacturing on Live TV - TLP Media
+  • US adults are increasingly pessimistic about economy
+  • US to Begin Garnishing Wages for Student Debt Collection in 2026
+  • U.S. GDP grew at a blistering 4.3% pace in the third quarter
+  • U.S. economy grows by 4.3% in third quarter, much more than expected, delayed report shows
+  • U.S. Economic Growth Surged in Third Quarter of 2025
+  • Here's Why Governments Should Start Paying People to Bike to Work
+  • Enter the 100-month car loan.
+  • Most US adults aren't making year-end charitable contributions, new AP-NORC poll finds
+
+r/economy (8 posts):
+  • BREAKING: Silver extends gains to a record $71/oz, now up nearly +150% YTD. We are quite literally witnessing one of the most historic runs in precious metals ever.
+  • How is GDP up 4.3% when consumer confidence is down for 5th straight month!?
+  • 5 million people are in default right now. The Dept of Ed estimates as many as 10 million by end of next year because of job market.
+  • CALIFORNIA: “Crops ready to be harvested were abandoned - left to die in a field simply because there wasn’t enough labor… workers are showing up less because of (Trump’s) ICE raids.”
+  • 'When we got out of college, we had a job waiting for us': 80-year-old boomer says her generation left behind a different economy for her grandkids
+  • When will Gen-Z crack the code on the Fed's fiat currency fraud and the destruction of the 99 percents' standard of living?
+  • Trump’s Trade Wars Are Crushing America’s Bourbon Industry
+  • A middle-class family’s only option: A $43,000 health insurance premium
+
+r/europe (19 posts):
+  • Finland: Unemployment climbs to 10.6%, marking bleakest point since 2009
+  • After announcing she would be limiting the number of free days off school, Belgian Flemish education minister calls in police on threats from schoolchildren
+  • ‘This is shattering’: Europe reels from US President’s new world order
+  • Poland Seeks G-20 Membership to Give Voice to Eastern Europe
+  • Belgium joins South Africa's genocide case against lsrael at ICJ
+  • UK commits to building one new British Navy AUKUS nuclear attack submarine every 18 months
+  • EU blocks "Novel Foods" (like lab-grown meat) from new fast-track testing rules, citing "cultural concerns"
+  • NL calls for EU ban on powerful fireworks as explosions continue
+  • Japan has agreed to join Horizon Europe, becoming the biggest country yet to associate to the EU's €93.5 billion research and innovation programme.
+  • Military considers permanent bases in Latvia as part of Canada's NATO commitment
+  • Heritage Foundation openly calls for the end of the European Union
+  • Greta Thunberg arrested under Terrorism Act for Palestine Action sign
+  • Russia refuses to hand over consulate building after Poland orders it closed
+  • Trump’s ‘peace plan’ for Ukraine is wicked
+  • Finland Raises Reservist Age To 65 | Yle News
+  • London records fewest homicides this year since records began
+  • Germany and Poland strike tech deal for military satellite system
+  • iOS 26.3 Brings AirPods-Like Pairing to Third-Party Devices in EU Under DMA
+  • US President says US needs Greenland after naming special envoy
+
+r/geopolitics (2 posts):
+  • Islamic State supporters guilty of planning 'most deadly' gun attack on Jewish targets in Manchester
+  • Russia Is Ready to Legally Confirm That It Has No Intention of Attacking NATO, Deputy Minister Says
+
+r/investing (1 posts):
+  • When will META shut down Reality Labs?
+
+r/japan (2 posts):
+  • Japan Eyes Plan to Accept Up To 1.23 Mil. Foreign Workers by End of Fiscal 2028
+  • Japan to double required period in the country for citizenship
+
+r/stocks (8 posts):
+  • What did you SELL this year?
+  • 2026 Strategy: Double down on AI, or is it time to move on?
+  • This year I realized how little I actually understand about stocks
+  • GDP surged unexpectedly by 4.3%, marking the fastest growth in two years.
+  • Which Robotics Companies currently fly under the radar / are cheap / should be on the watchlist during a markt pullback?
+  • I own Rocket Lab, but why is it so hyped on reddit?
+  • Why is Netflix still going down after the Warner deal news?
+  • Novo Nordisk A/S: Wegovy® pill approved in the US as first oral GLP-1 for weight management
+
+r/wallstreetbets (8 posts):
+  • What Are Your Moves Tomorrow, December 24, 2025
+  • Options are free money
+  • US economic growth accelerates in third quarter (+4,3%)
+  • Daily Discussion Thread for December 23, 2025
+  • A WSB Christmas Story
+  • Always regret I didn't buy more back then
+  • NVO received approval for oral Wegovy
+  • FDA approves first GLP-1 pill for obesity from Novo Nordisk : NVO is up +8% after hours
+
+r/worldnews (28 posts):
+  • China Warns Ukraine Against Sanctioning Chinese Companies Over Alleged Support for Russia
+  • Iranian Navy sends ships to South Africa to participate in BRICS exercises
+  • Gun and protest reforms pass NSW parliament after Bondi terror attack
+  • Trump says US will keep or sell oil seized from Venezuela
+  • Chernobyl shelter may not withstand second Russian strike, plant director says
+  • Signal lost with private jet believed to be carrying Libyan army chief over Ankara: Report
+  • Pakistan bans beggars from foreign travel; 66,000 flyers with suspicious documents stopped at airports this year | Today News
+  • Myrnohrad defense holds as Russians are eliminated on approach, military says
+  • Rocket crashes shortly after launch in blow to Brazil’s space ambitions
+  • Canadian economy shrank by 0.3% in October, the biggest slump in almost 3 years
+  • Europe stands with Greenland as Trump threat returns
+  • Ground drone defends Ukraine’s infantry positions against Russian assaults for 45 days
+  • President Sheinbaum: Mexico Ships Oil to Cuba for Humanitarian Reasons
+  • Almost all Russian missiles intercepted by F-16 pilots overnight
+  • Ukrainian partisans set ablaze 2 Russian Su-30 fighter jets in Lipetsk Oblast, HUR says
+  • “These crimes will not go unanswered”: Estonian FM condemns Christmas-period attack on Ukraine
+  • Canadian military considers permanent bases in Latvia as part of Canada's NATO commitment
+  • U.S. military says new strike on alleged drug boat killed 1 'narco-terrorist'
+  • Trump says US needs Greenland after naming special envoy
+  • Germany’s far-right AfD accused of gathering information for the Kremlin
+  • Hanwha Ocean shares jump 10% after Trump says South Korean firm to build warships for U.S. Navy
+  • Putin effectively chose Witkoff as US negotiator with Russia, – WSJ
+  • /r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1398, Part 1 (Thread )
+  • You cannot annex other countries, Danish and Greenlandic leaders tell Trump
+  • Russia and China pledge support for Venezuela as Trump ratchets up pressure on Maduro
+  • Economics beat morals in Trump’s new world, Romanian president says
+  • China quietly loads 100+ ICBMs into new missile silos near Mongolia: report
+  • Boiling lobsters alive to be banned in UK animal cruelty crackdown
+
+[Total: 95 posts tracked]
+
+2025-12-24 21:59:22

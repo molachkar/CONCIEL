@@ -7,29 +7,15 @@ VIX (Volatility Index): Opened at 20.97, high 21.83, low 19.77, closed at 19.82.
 Gold (XAU/USD): Opened at $4,069.22, high $4,139.64, low $4,039.95, closed at $4,134.72. Daily gain of +65.50 (+1.61%), range 99.69.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 65.65 (neutral). EMA trend: bearish (EMA50: 98.92, EMA200: 99.97). MACD: 0.37, signal: 0.33, histogram: 0.03 (positive). Stochastic: 87.22 (exhaustion near highs).
-S&P 500: RSI: 49.34 (neutral). EMA trend: bullish (EMA50: 6678.55, EMA200: 6331.38). MACD: -24.38, signal: -1.60, histogram: -22.78 (negative). Stochastic: 27.87 (neutral).
-VIX: RSI: 50.00 (neutral). EMA trend: bullish (EMA50: 19.24, EMA200: 18.73). MACD: 0.65, signal: 0.53, histogram: 0.12 (positive). Stochastic: 64.76 (neutral).
-Gold (XAU/USD): RSI: 57.72 (neutral). EMA trend: bullish (EMA50: 3959.03, EMA200: 3503.59). MACD: 30.10, signal: 34.03, histogram: -3.93 (negative). Stochastic: 51.58 (neutral).
+Dollar Index (DXY): RSI: 65.65 (neutral). EMA trend: bearish (EMA50: 98.92, EMA200: 100.01). MACD: 0.37, signal: 0.33, histogram: 0.03 (positive). Stochastic: 87.22 (exhaustion near highs).
+S&P 500: RSI: 49.34 (neutral). EMA trend: bullish (EMA50: 6678.55, EMA200: 6333.34). MACD: -24.38, signal: -1.60, histogram: -22.78 (negative). Stochastic: 27.87 (neutral).
+VIX: RSI: 50.00 (neutral). EMA trend: bullish (EMA50: 19.24, EMA200: 18.82). MACD: 0.65, signal: 0.53, histogram: 0.12 (positive). Stochastic: 64.76 (neutral).
+Gold (XAU/USD): RSI: 57.72 (neutral). EMA trend: bullish (EMA50: 3959.03, EMA200: 3506.41). MACD: 30.10, signal: 34.03, histogram: -3.93 (negative). Stochastic: 51.58 (neutral).
 
 ECONOMIC EVENTS:
 At 19:00, USD 2-Year Note Auction was released. Actual: 3.489% and falling from previous 3.504%.
 
 FUNDAMENTALS:
-10-Year Treasury yield: 4.04%. High-yield credit spread: 3.15%. GLD ETF: closed at $380.20, volume 10,085,300. IAU ETF: closed at $77.84, volume 7,411,900.
+10-Year Treasury yield: 4.04%. High-yield credit spread: 3.15%.
 
-NEWS HIGHLIGHTS:
-
-GOLD (2 items):
-  • The Zacks Analyst Blog SPDR Gold Trust, HDGE, PGHY and XLV [GLD]
-  • Best-Performing ETFs of Last Week: Healthcare Rules [GLD]
-
-MARKET (1 items):
-  • Here's the Average Stock Market Return in the Last 10 Years, and What Wall Street Expects in the Future [DIA]
-
-VOLATILITY (1 items):
-  • Best-Performing ETFs of Last Week: Healthcare Rules [VXX]
-
-[Total: 4 news items]
-
-2025-12-22 19:34:37
+2025-12-24 21:59:22

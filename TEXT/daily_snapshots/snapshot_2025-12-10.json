@@ -1,6 +1,6 @@
 {
   "date": "2025-12-10",
-  "snapshot_generated_at": "2025-12-22T19:34:37.106340",
+  "snapshot_generated_at": "2025-12-24T21:59:22.062253",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4207.23,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 62.6,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4050.18,
-      "XAUUSD_EMA200": 3581.93,
+      "XAUUSD_EMA200": 3584.43,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 46.21,
       "XAUUSD_MACD_SIGNAL": 45.81,
@@ -34,8 +34,8 @@
       "XAUUSD_STOCH_STATUS": "Neutral",
       "USA500.IDX_RSI": 60.22,
       "USA500.IDX_RSI_STATUS": "Neutral",
-      "USA500.IDX_EMA50": 6739.82,
-      "USA500.IDX_EMA200": 6388.54,
+      "USA500.IDX_EMA50": 6739.83,
+      "USA500.IDX_EMA200": 6390.28,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 35.25,
       "USA500.IDX_MACD_SIGNAL": 24.92,
@@ -46,8 +46,8 @@
       "VOL.IDX_RSI": 37.6,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.69,
-      "VOL.IDX_EMA200": 18.63,
-      "VOL.IDX_EMA_TREND": "Bullish",
+      "VOL.IDX_EMA200": 18.71,
+      "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.62,
       "VOL.IDX_MACD_SIGNAL": -0.33,
       "VOL.IDX_MACD_HIST": -0.29,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 38.13,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 99.01,
-      "DOLLAR.IDX_EMA200": 99.88,
+      "DOLLAR.IDX_EMA200": 99.92,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.07,
       "DOLLAR.IDX_MACD_SIGNAL": 0.06,
@@ -239,10 +239,6 @@
       {
         "title": "Russian bombers join Chinese air patrol near Japan as Tokyo-Beijing tensions simmer",
         "source": "r/japan"
-      },
-      {
-        "title": "The Federal Reserve is likely to cut interest rates for a third time this year. However, the trajectory for next year remains uncertain.",
-        "source": "r/StockMarket"
       }
     ]
   }

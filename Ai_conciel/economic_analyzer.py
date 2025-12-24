@@ -136,37 +136,58 @@ def analyze_data_overview(data_dict: dict) -> str:
 
 
 def generate_macro_snapshot(formatted_data: str, data_summary: str) -> str:
-    prompt = f"""You are a senior institutional macro strategist focused on gold (XAUUSD) regime analysis. Using only the last ~30 days of data provided, produce a concise, high-signal macro regime brief in Markdown, 400–600 words maximum, with no charts, appendix, or narrative filler.
+    prompt = f"""You are a senior institutional macro strategist focused on gold (XAUUSD) regime analysis. Using only the last ~30 days of data provided, produce a concise, high-signal macro regime brief in Markdown, 400–600 words maximum.
 
-The output must include:
+CRITICAL: The report MUST start with this exact structured metrics section for data extraction:
 
-1. **Regime Call**: One-line classification plus brief justification and net gold bias
+---
+## KEY METRICS SNAPSHOT
+- **Regime**: "[Your one-line regime classification here]"
+- **XAU/USD**: $[current price]
+- **DXY**: [current value]
+- **VIX**: [current value]
+- **Fed Stance**: [Dovish/Hawkish/Neutral]
+- **10Y Treasury**: [current yield]%
+- **Real Rate Estimate**: [10Y yield - 1Y inflation expectation]%
+---
 
-2. **Three Dominant Forces** (ranked): For each force describe:
-   - What changed numerically
-   - The transmission via real rates, USD, inflation expectations, or risk stress
-   - The quantified impact on gold
+After the metrics snapshot, include the following sections:
 
-3. **Gold Transmission Summary**: How the macro forces flow through to XAUUSD
+### 1. Regime Call
+Brief justification (2-3 sentences) and net gold bias.
 
-4. **What Matters Next**: Exactly three macro triggers with:
-   - Metric
-   - Level
-   - Implication
-   - Gold response range
+### 2. Three Dominant Forces
+Ranked by impact. For each:
+- What changed numerically
+- Transmission mechanism (real rates, USD, inflation expectations, risk stress)
+- Quantified impact on gold
 
-5. **Mispriced Risk**: One or two only, with probability bands
+### 3. Gold Transmission Summary
+How macro forces flowed through to XAUUSD (3-4 sentences).
 
-6. **Final Bias**: Regime suitability for gold and clear invalidation conditions
+### 4. What Matters Next
+Exactly three macro triggers:
+- Metric name
+- Critical level
+- Implication
+- Gold response range estimate
 
-RULES:
+### 5. Mispriced Risk
+One or two risks with probability bands (20-40%, 30-50%, etc.)
+
+### 6. Final Bias
+Clear regime suitability for gold and specific invalidation conditions.
+
+STRICT RULES:
+- The KEY METRICS SNAPSHOT section MUST come first with exact format shown above
 - Use ONLY supplied data
-- Quantify every claim (no vague statements)
-- Avoid buy/sell language
-- State uncertainty where data is weak
-- Focus strictly on: real rates, USD, inflation expectations, and risk stress
-- 400-600 words MAX
-- No filler, no narratives, pure signal
+- Extract the MOST RECENT values from the data for the metrics snapshot
+- Quantify every claim with numbers from the data
+- No vague statements - cite specific values
+- Focus on: real rates, USD, inflation expectations, risk stress
+- State Fed Stance as exactly one word: Dovish, Hawkish, or Neutral
+- 400-600 words total
+- No filler, pure signal
 
 Data Overview:
 {data_summary}
@@ -174,7 +195,7 @@ Data Overview:
 Economic Data:
 {formatted_data}
 
-OUTPUT: High-signal gold regime brief in Markdown format."""
+OUTPUT: High-signal gold regime brief in Markdown format with KEY METRICS SNAPSHOT at the top."""
 
     console.print(f"\n[yellow]Generating gold regime brief with {GEMINI_MODEL}...[/yellow]")
     

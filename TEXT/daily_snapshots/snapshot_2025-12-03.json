@@ -1,6 +1,6 @@
 {
   "date": "2025-12-03",
-  "snapshot_generated_at": "2025-12-22T19:34:37.098474",
+  "snapshot_generated_at": "2025-12-24T21:59:22.054574",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4206.9,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 60.78,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4015.61,
-      "XAUUSD_EMA200": 3549.94,
+      "XAUUSD_EMA200": 3552.56,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 50.45,
       "XAUUSD_MACD_SIGNAL": 43.04,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 58.6,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6713.35,
-      "USA500.IDX_EMA200": 6364.4,
+      "USA500.IDX_EMA200": 6366.23,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 23.87,
       "USA500.IDX_MACD_SIGNAL": 9.17,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 41.44,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 19.01,
-      "VOL.IDX_EMA200": 18.7,
+      "VOL.IDX_EMA200": 18.79,
       "VOL.IDX_EMA_TREND": "Bullish",
       "VOL.IDX_MACD": -0.28,
       "VOL.IDX_MACD_SIGNAL": 0.09,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 39.57,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 99.02,
-      "DOLLAR.IDX_EMA200": 99.93,
+      "DOLLAR.IDX_EMA200": 99.96,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": 0.08,
       "DOLLAR.IDX_MACD_SIGNAL": 0.22,
@@ -181,16 +181,6 @@
         "category": "market",
         "title": "This tech maven bashes nuclear stocks and shares the real way to play AI's energy boom",
         "ticker": "SPY"
-      },
-      {
-        "category": "market",
-        "title": "The Cloud Computing Market Could Surge by 218%: Buy This ETF That Holds a Big Position in Alphabet",
-        "ticker": "QQQ"
-      },
-      {
-        "category": "market",
-        "title": "Why ETF investors are shaking off tech-stock turbulence and AI bubble fears",
-        "ticker": "QQQ"
       }
     ],
     "reddit": [

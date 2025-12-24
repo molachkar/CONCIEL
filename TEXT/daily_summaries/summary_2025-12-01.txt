@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 17.98, high 18.82, low 17.87, closed at 18.22.
 Gold (XAU/USD): Opened at $4,221.52, high $4,264.39, low $4,204.35, closed at $4,231.26. Daily gain of +9.74 (+0.23%), range 60.04.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 49.22 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.95). MACD: 0.19, signal: 0.28, histogram: -0.09 (negative). Stochastic: 38.41 (neutral).
-S&P 500: RSI: 55.70 (neutral). EMA trend: bullish (EMA50: 6702.70, EMA200: 6354.78). MACD: 14.41, signal: 2.18, histogram: 12.22 (positive). Stochastic: 85.68 (exhaustion near highs).
-VIX: RSI: 43.85 (neutral). EMA trend: bullish (EMA50: 19.11, EMA200: 18.72). MACD: -0.07, signal: 0.27, histogram: -0.33 (negative). Stochastic: 7.43 (exhaustion near lows).
-Gold (XAU/USD): RSI: 64.43 (neutral). EMA trend: bullish (EMA50: 3999.92, EMA200: 3536.72). MACD: 48.98, signal: 38.92, histogram: 10.06 (positive). Stochastic: 82.13 (exhaustion near highs).
+Dollar Index (DXY): RSI: 49.22 (neutral). EMA trend: bearish (EMA50: 99.02, EMA200: 99.98). MACD: 0.19, signal: 0.28, histogram: -0.09 (negative). Stochastic: 38.41 (neutral).
+S&P 500: RSI: 55.70 (neutral). EMA trend: bullish (EMA50: 6702.70, EMA200: 6356.64). MACD: 14.41, signal: 2.18, histogram: 12.22 (positive). Stochastic: 85.68 (exhaustion near highs).
+VIX: RSI: 43.85 (neutral). EMA trend: bullish (EMA50: 19.11, EMA200: 18.81). MACD: -0.07, signal: 0.27, histogram: -0.33 (negative). Stochastic: 7.43 (exhaustion near lows).
+Gold (XAU/USD): RSI: 64.43 (neutral). EMA trend: bullish (EMA50: 3999.92, EMA200: 3539.40). MACD: 48.98, signal: 38.92, histogram: 10.06 (positive). Stochastic: 82.13 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 16:00, USD ISM Manufacturing Employment  (Nov) was released. Actual: 44.0 and falling from previous 46.0.
@@ -21,25 +21,12 @@ At 17:30, USD Atlanta Fed GDPNow  (Q4) was released. Actual: 3.9%, matching fore
 FUNDAMENTALS:
 10-Year Treasury yield: 4.09%. High-yield credit spread: 2.94%. GLD ETF: closed at $389.75, volume 11,177,100. IAU ETF: closed at $79.81, volume 10,411,600.
 
-NEWS HIGHLIGHTS:
-
-MARKET (6 items):
-  • S&P 500 Delivers Best Thanksgiving Week Since 2008 [SPY]
-  • Stock Market Today: Dow Falls 200 Points; Nvidia, Tesla Slide (Live Coverage) [SPY]
-  • Stock Market Today: Dow, Major Indexes Fall; Nvidia, Tesla Slide (Live Coverage) [SPY]
-  • Stock Market Today: Dow Falls, Synopsys Hits Resistance Despite Nvidia Investment; Walt Disney Pops (Live Coverage) [SPY]
-  • S&P 500 to Hit At Least 7,500-Mark in 2026? ETFs in Focus [SPY]
-  • Trumps Potential Fed Chair Pick: How It Could Impact Interest Rates and ETFs [SPY]
-
-[Total: 6 news items]
-
 SOCIAL SENTIMENT:
 
-r/japan (3 posts):
+r/japan (2 posts):
   • Surprise, Anger, and Frustration as Tokyo’s High Court Rules Against Marriage Equality - Unseen Japan
-  • Policy talks on foreigners start; land deals, visas high on agenda
   • Workplace injuries, deaths of foreigners in Japan top 6,000 for first time - The Mainichi
 
-[Total: 3 posts tracked]
+[Total: 2 posts tracked]
 
-2025-12-22 19:34:37
+2025-12-24 21:59:22

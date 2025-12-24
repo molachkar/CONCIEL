@@ -104,27 +104,90 @@ def get_params():
     return p
 
 def optimize_macro(txt):
+    """
+    Extract structured key metrics from the macro report.
+    Expects a KEY METRICS SNAPSHOT section at the top of the report.
+    """
     try:
-        o = []
-        regime = re.search(r'regime.*?[""]([^""]+)[""]', txt, re.I)
-        if regime: 
-            o.append(f"REGIME: {regime.group(1)}")
-        gold = re.search(r'XAU/USD.*?(\$?[\d,]+\.?\d*)', txt)
-        if gold: 
-            o.append(f"Gold: {gold.group(1)}")
-        if 'dovish' in txt.lower(): 
-            o.append("Fed: Dovish/Easing")
-        elif 'hawkish' in txt.lower(): 
-            o.append("Fed: Hawkish/Tightening")
-        dxy = re.search(r'DXY.*?(\d+\.?\d*)', txt)
-        if dxy: 
-            o.append(f"DXY: {dxy.group(1)}")
-        vix = re.search(r'VIX.*?(\d+\.?\d*)', txt)
-        if vix: 
-            o.append(f"VIX: {vix.group(1)}")
-        return "\n".join(o) if o else "Limited macro data"
-    except:
-        return txt[:500]
+        output = []
+        
+        # Extract the KEY METRICS SNAPSHOT section if present
+        metrics_section = re.search(
+            r'## KEY METRICS SNAPSHOT\s*\n(.*?)\n---', 
+            txt, 
+            re.DOTALL | re.IGNORECASE
+        )
+        
+        if metrics_section:
+            metrics_text = metrics_section.group(1)
+            
+            # Extract Regime (in quotes)
+            regime = re.search(r'\*\*Regime\*\*:\s*"([^"]+)"', metrics_text, re.I)
+            if regime:
+                output.append(f"REGIME: {regime.group(1)}")
+            
+            # Extract Gold price
+            gold = re.search(r'\*\*XAU/USD\*\*:\s*\$?([\d,]+\.?\d*)', metrics_text, re.I)
+            if gold:
+                output.append(f"Gold: ${gold.group(1)}")
+            
+            # Extract DXY
+            dxy = re.search(r'\*\*DXY\*\*:\s*([\d,]+\.?\d*)', metrics_text, re.I)
+            if dxy:
+                output.append(f"DXY: {dxy.group(1)}")
+            
+            # Extract VIX
+            vix = re.search(r'\*\*VIX\*\*:\s*([\d,]+\.?\d*)', metrics_text, re.I)
+            if vix:
+                output.append(f"VIX: {vix.group(1)}")
+            
+            # Extract Fed Stance
+            fed = re.search(r'\*\*Fed Stance\*\*:\s*(\w+)', metrics_text, re.I)
+            if fed:
+                output.append(f"Fed: {fed.group(1)}")
+            
+            # Extract 10Y Treasury
+            treasury = re.search(r'\*\*10Y Treasury\*\*:\s*([\d.]+)%?', metrics_text, re.I)
+            if treasury:
+                output.append(f"10Y: {treasury.group(1)}%")
+            
+            # Extract Real Rate Estimate
+            real_rate = re.search(r'\*\*Real Rate Estimate\*\*:\s*([+-]?[\d.]+)%?', metrics_text, re.I)
+            if real_rate:
+                output.append(f"Real Rate: {real_rate.group(1)}%")
+        
+        # Fallback: try old extraction methods if KEY METRICS section not found
+        if not output:
+            regime = re.search(r'regime.*?[""]([^""]+)[""]', txt, re.I)
+            if regime:
+                output.append(f"REGIME: {regime.group(1)}")
+            
+            gold = re.search(r'XAU/USD.*?(\$?[\d,]+\.?\d*)', txt, re.I)
+            if gold:
+                output.append(f"Gold: {gold.group(1)}")
+            
+            if 'dovish' in txt.lower():
+                output.append("Fed: Dovish")
+            elif 'hawkish' in txt.lower():
+                output.append("Fed: Hawkish")
+            
+            dxy = re.search(r'DXY.*?(\d+\.?\d*)', txt, re.I)
+            if dxy:
+                output.append(f"DXY: {dxy.group(1)}")
+            
+            vix = re.search(r'VIX.*?(\d+\.?\d*)', txt, re.I)
+            if vix:
+                output.append(f"VIX: {vix.group(1)}")
+        
+        # Return formatted output or fallback
+        if output:
+            return "\n".join(output)
+        else:
+            return "Limited macro data - check report format"
+    
+    except Exception as e:
+        # If all parsing fails, return truncated text
+        return txt[:500] + "\n\n[Parsing failed - using raw excerpt]"
 
 def load_reports():
     global macro, tech
