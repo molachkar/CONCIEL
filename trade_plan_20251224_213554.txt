@@ -1,0 +1,71 @@
+=== XAU/USD TRADE PLAN ===
+Generated: 2025-12-24 21:35
+Account: $100 | Risk: 10.0%
+
+SETUP:
+Dir: BUY
+Entry: $4469.90
+SL: $4447.52 ($22.38)
+TP: $4518.67
+Size: 4.47 microlots
+Risk: $10.00
+R:R: 1:2.2
+
+MACRO:
+Fed: Dovish/Easing
+DXY: 100.09
+VIX: 21.43
+
+TECH:
+=== XAU/USD TECHNICAL SNAPSHOT ===
+Generated: 2025-12-24 19:56 UTC
+Timeframe: H1 (Intraday - 18 bars since 2025-12-24 00:00:00)
+
+PRICE ACTION:
+Current: $4476.48
+Day Open: $4486.3
+Day High: $4525.77
+Day Low: $4447.9
+Day Change: $-9.82 (-0.22%)
+Day Range: $77.87
+
+MOVING AVERAGES (H1):
+EMA50: $4464.71 ...
+
+EXECUTION:
+1. BUY at $4469.90
+2. SL $4447.52
+3. TP $4518.67
+4. Size 4.47 microlots
+
+INVALIDATION:
+- Break below $4447.52
+- Major macro shift
+- VIX >25
+
+=== LOG ===
+[Risk Quant] Dir: BUY
+[Momentum Scalper] Dir: BUY
+[Macro Quant] Dir: BUY
+[Swing Trader] Dir: BUY
+[Speed Technician] Dir: BUY
+[Momentum Scalper] Entry: $4467.92
+[Speed Technician] Entry: $4477.81
+[Swing Trader] Entry: $4467.92
+[Risk Quant] Entry: $4467.92
+[Macro Quant] Entry: $4467.92
+[Risk Quant] SL: $4447.90
+[Macro Quant] SL: $4447.89
+[Swing Trader] SL: $4447.00
+[Momentum Scalper] SL: $4446.90
+[Speed Technician] SL: $4447.90
+[Swing Trader] TP: $4537.04 (R:R 1:3.0)
+[Macro Quant] TP: $4525.77 (R:R 1:2.5)
+[Speed Technician] TP: $4514.66 (R:R 1:2.0)
+[Risk Quant] TP: $4514.66 (R:R 1:2.0)
+[Momentum Scalper] TP: $4501.23 (R:R 1:1.4)
+[Risk Quant] Size: 225.80 microlots
+[Momentum Scalper] Size: 4.47 microlots
+[Swing Trader] Size: 4.00 microlots
+[Macro Quant] Size: 10.00 microlots
+[Speed Technician] Size: 4.00 microlots
