@@ -5,33 +5,32 @@ import sys
 import time
 from datetime import datetime
 from pathlib import Path
-from rich.console import Console
-from rich.panel import Panel
-from rich.markdown import Markdown
-from rich.progress import Progress
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from google import genai
+from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv('Ai_conciel/api.env')
 
-console = Console()
-
 DATA_FOLDER = Path("TEXT/daily_summaries")
 OUTPUT_FOLDER = Path("Ai_conciel/reports")
 GEMINI_MODEL = "gemini-2.5-flash"
+QWEN_MODEL = "qwen-3-235b-a22b-instruct-2507"
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY")
+
 gemini_client = genai.Client(api_key=GEMINI_API_KEY) if GEMINI_API_KEY else None
+cerebras_client = OpenAI(
+    api_key=CEREBRAS_API_KEY,
+    base_url="https://api.cerebras.ai/v1"
+) if CEREBRAS_API_KEY else None
 
 
-def check_api_key():
-    if not GEMINI_API_KEY:
-        console.print(Panel(
-            "[red]Missing GEMINI_API_KEY in api.env[/red]",
-            title="Configuration Error",
-            border_style="red"
-        ))
+def check_api_keys():
+    if not GEMINI_API_KEY or not CEREBRAS_API_KEY:
+        print("Error: Missing API keys in api.env")
         return False
     return True
 
@@ -39,249 +38,229 @@ def check_api_key():
 def load_txt_file_raw(file_path: Path) -> str:
     try:
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-            content = f.read().strip()
-        return content if content else None
-    except Exception as e:
-        console.print(f"  [red]✗ Error: {e}[/red]")
+            return f.read().strip() or None
+    except:
         return None
 
 
 def load_economic_data(folder_path: Path) -> dict:
     if not folder_path.exists():
-        console.print(f"[red]Folder not found: {folder_path}[/red]")
+        print(f"Error: Folder not found: {folder_path}")
         return None
     
     txt_files = sorted(list(folder_path.glob("*.txt")))
-    
     if not txt_files:
-        console.print(f"[red]No TXT files found in: {folder_path}[/red]")
+        print(f"Error: No TXT files in {folder_path}")
         return None
     
-    console.print(f"[yellow]Found {len(txt_files)} TXT files[/yellow]\n")
+    print(f"Loading {len(txt_files)} files...")
     
     daily_data = {}
     monthly_indicators = None
     
     for txt_file in txt_files:
-        time.sleep(0.05)
-        console.print(f"  Loading: {txt_file.name}...", end=" ")
-        
         content = load_txt_file_raw(txt_file)
-        
         if content:
             if "monthly_indicators" in txt_file.name.lower():
                 monthly_indicators = content
-                console.print(f"[blue]✓ (Monthly Context)[/blue]")
             else:
-                date_str = txt_file.stem.replace("summary_", "")
-                daily_data[date_str] = content
-                console.print(f"[green]✓[/green]")
-        else:
-            console.print(f"[yellow]⊘[/yellow]")
+                daily_data[txt_file.stem.replace("summary_", "")] = content
     
     if not daily_data:
-        console.print("[red]No daily data files loaded[/red]")
+        print("Error: No daily data loaded")
         return None
     
-    console.print(f"\n[green]Successfully loaded {len(daily_data)} daily files[/green]")
-    if monthly_indicators:
-        console.print(f"[blue]Monthly indicators loaded as context baseline[/blue]")
-    
-    return {
-        "daily_data": daily_data,
-        "monthly_indicators": monthly_indicators
-    }
+    return {"daily_data": daily_data, "monthly_indicators": monthly_indicators}
 
 
-def prepare_data_for_analysis(data_dict: dict) -> str:
+def prepare_data_for_qwen(data_dict: dict) -> str:
+    data_text = []
     daily_data = data_dict["daily_data"]
     monthly_indicators = data_dict["monthly_indicators"]
     
-    data_text = []
-    
     if monthly_indicators:
-        data_text.append("=" * 80)
-        data_text.append("MONTHLY INDICATORS (BASELINE CONTEXT)")
-        data_text.append("=" * 80)
-        data_text.append(monthly_indicators)
-        data_text.append("\n" + "=" * 80)
-        data_text.append("DAILY ECONOMIC DATA (30-DAY PERIOD)")
-        data_text.append("=" * 80 + "\n")
+        data_text.append("MONTHLY INDICATORS:\n" + monthly_indicators + "\n")
     
-    sorted_dates = sorted(daily_data.keys())
-    
-    for date in sorted_dates:
-        data_text.append(f"\n--- DATE: {date} ---")
-        data_text.append(daily_data[date])
-        data_text.append("-" * 80)
-    
-    data_text.append(f"\n\nTOTAL DAYS ANALYZED: {len(sorted_dates)}")
-    data_text.append(f"DATE RANGE: {sorted_dates[0]} to {sorted_dates[-1]}")
+    for date in sorted(daily_data.keys()):
+        data_text.append(f"\nDATE: {date}\n{daily_data[date]}")
     
     return "\n".join(data_text)
 
 
-def analyze_data_overview(data_dict: dict) -> str:
-    daily_data = data_dict["daily_data"]
-    monthly_indicators = data_dict["monthly_indicators"]
+def call_cerebras_qwen(prompt: str) -> str:
+    try:
+        response = cerebras_client.chat.completions.create(
+            model=QWEN_MODEL,
+            messages=[
+                {"role": "system", "content": "You are a senior macro analyst extracting intelligence from economic data."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3,
+            max_tokens=2000
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        return f"[ERROR: {str(e)}]"
+
+
+def extract_inflation_monetary_intelligence(full_data: str) -> str:
+    prompt = f"""Extract INFLATION and MONETARY POLICY intelligence for gold macro regime.
+
+Focus on:
+1. Inflation: Michigan 1Y/5Y expectations, CPI/PCE, PPI
+2. Fed Policy: Rate decisions, Fed speakers, forward guidance
+3. Real Rates: 10Y yields, real rate shifts
+
+OUTPUT (300-400 words): Chronological bullets with numbers. End with net assessment.
+
+DATA: {full_data}"""
+    return call_cerebras_qwen(prompt)
+
+
+def extract_market_news_reaction(full_data: str) -> str:
+    prompt = f"""Extract MARKET REACTION and NEWS SENTIMENT for gold regime.
+
+Focus on:
+1. Gold: Daily moves >1%, key levels
+2. USD: DXY trend, levels
+3. Risk: VIX regime, S&P moves
+4. News: Gold ETF flows, geopolitical events, Fed headlines
+5. ETF: GLD/IAU volume anomalies
+
+OUTPUT (350-450 words): Group by gold→USD→risk→news. Quantify with prices/dates. Net assessment.
+
+DATA: {full_data}"""
+    return call_cerebras_qwen(prompt)
+
+
+def extract_calendar_reddit_signals(full_data: str) -> str:
+    prompt = f"""Extract ECONOMIC CALENDAR and SOCIAL SENTIMENT.
+
+Focus on:
+1. Calendar: NFP, PMI, GDP, consumer sentiment (actual vs forecast)
+2. Impact: Which releases moved markets
+3. Reddit: Only meaningful sentiment shifts
+
+OUTPUT (250-350 words): Chronological calendar releases, brief reddit section if relevant, forward outlook.
+
+DATA: {full_data}"""
+    return call_cerebras_qwen(prompt)
+
+
+def stage1_qwen_extraction(full_data: str) -> dict:
+    print("Stage 1: Qwen extraction (3 parallel tasks)...")
     
-    sorted_dates = sorted(daily_data.keys())
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {
+            executor.submit(extract_inflation_monetary_intelligence, full_data): "inflation",
+            executor.submit(extract_market_news_reaction, full_data): "market",
+            executor.submit(extract_calendar_reddit_signals, full_data): "calendar"
+        }
+        
+        extracts = {}
+        for future in as_completed(futures):
+            extract_type = futures[future]
+            extracts[extract_type] = future.result()
     
-    summary = []
-    summary.append(f"Data Period: {len(sorted_dates)} days")
-    summary.append(f"Date Range: {sorted_dates[0]} to {sorted_dates[-1]}")
-    summary.append(f"Monthly Indicators: {'Present' if monthly_indicators else 'Not found'}")
+    print("Stage 1 complete")
+    return extracts
+
+
+def stage2_gemini_synthesis(extracts: dict) -> str:
+    print("Stage 2: Gemini synthesis...")
     
-    return "\n".join(summary)
+    combined = f"{extracts['inflation']}\n\n{extracts['market']}\n\n{extracts['calendar']}"
+    
+    prompt = f"""Synthesize gold (XAU/USD) macro regime brief from these pre-analyzed summaries.
 
-
-def generate_macro_snapshot(formatted_data: str, data_summary: str) -> str:
-    prompt = f"""You are a senior institutional macro strategist focused on gold (XAUUSD) regime analysis. Using only the last ~30 days of data provided, produce a concise, high-signal macro regime brief in Markdown, 400–600 words maximum.
-
-CRITICAL: The report MUST start with this exact structured metrics section for data extraction:
-
+MUST start with:
 ---
 ## KEY METRICS SNAPSHOT
-- **Regime**: "[Your one-line regime classification here]"
-- **XAU/USD**: $[current price]
-- **DXY**: [current value]
-- **VIX**: [current value]
+- **Regime**: "[classification]"
+- **XAU/USD**: $[price]
+- **DXY**: [value]
+- **VIX**: [value]
 - **Fed Stance**: [Dovish/Hawkish/Neutral]
-- **10Y Treasury**: [current yield]%
-- **Real Rate Estimate**: [10Y yield - 1Y inflation expectation]%
+- **10Y Treasury**: [yield]%
+- **Real Rate Estimate**: [calculation]%
 ---
 
-After the metrics snapshot, include the following sections:
+Then:
+### 1. Regime Call (100 words)
+### 2. Five Dominant Forces (400 words) - ranked by gold impact, cite numbers
+### 3. Gold Transmission Summary (150 words)
+### 4. What Matters Next (200 words) - 4 triggers with levels
+### 5. Mispriced Risk (150 words) - 1-2 risks with probability
+### 6. Final Bias & Invalidation (100 words)
 
-### 1. Regime Call
-Brief justification (2-3 sentences) and net gold bias.
+Total: 900-1200 words. Pure synthesis.
 
-### 2. Three Dominant Forces
-Ranked by impact. For each:
-- What changed numerically
-- Transmission mechanism (real rates, USD, inflation expectations, risk stress)
-- Quantified impact on gold
+SUMMARIES:
+{combined}"""
 
-### 3. Gold Transmission Summary
-How macro forces flowed through to XAUUSD (3-4 sentences).
-
-### 4. What Matters Next
-Exactly three macro triggers:
-- Metric name
-- Critical level
-- Implication
-- Gold response range estimate
-
-### 5. Mispriced Risk
-One or two risks with probability bands (20-40%, 30-50%, etc.)
-
-### 6. Final Bias
-Clear regime suitability for gold and specific invalidation conditions.
-
-STRICT RULES:
-- The KEY METRICS SNAPSHOT section MUST come first with exact format shown above
-- Use ONLY supplied data
-- Extract the MOST RECENT values from the data for the metrics snapshot
-- Quantify every claim with numbers from the data
-- No vague statements - cite specific values
-- Focus on: real rates, USD, inflation expectations, risk stress
-- State Fed Stance as exactly one word: Dovish, Hawkish, or Neutral
-- 400-600 words total
-- No filler, pure signal
-
-Data Overview:
-{data_summary}
-
-Economic Data:
-{formatted_data}
-
-OUTPUT: High-signal gold regime brief in Markdown format with KEY METRICS SNAPSHOT at the top."""
-
-    console.print(f"\n[yellow]Generating gold regime brief with {GEMINI_MODEL}...[/yellow]")
-    
     try:
         response = gemini_client.models.generate_content(
             model=GEMINI_MODEL,
             contents=prompt
         )
-        return response.text or "[No response generated]"
+        print("Stage 2 complete")
+        return response.text or "[No response]"
     except Exception as e:
-        return f"[Error: {str(e)}]"
+        return f"[ERROR: {str(e)}]"
 
 
-def save_snapshot(snapshot_content: str, data_summary: str):
-    """Save the gold macro regime brief in markdown format."""
+def save_report(final_report: str, extracts: dict, data_dict: dict):
     OUTPUT_FOLDER.mkdir(exist_ok=True)
     
-    date_range_parts = data_summary.split('Date Range: ')[1].split('\n')[0].strip()
-    dates = date_range_parts.split(' to ')
-    start_date = dates[0].strip()
-    end_date = dates[1].strip() if len(dates) > 1 else start_date
-    
+    sorted_dates = sorted(data_dict["daily_data"].keys())
+    start_date = sorted_dates[0]
+    end_date = sorted_dates[-1]
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = OUTPUT_FOLDER / f"gold_regime_brief_{timestamp}.md"
     
-    with open(filename, "w", encoding='utf-8') as f:
-        f.write(f"GOLD MACRO REGIME BRIEF\n")
+    report_file = OUTPUT_FOLDER / f"gold_regime_brief_{timestamp}.md"
+    with open(report_file, "w", encoding='utf-8') as f:
+        f.write(f"# GOLD MACRO REGIME BRIEF v2.0\n")
         f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}\n")
-        f.write(f"Period: {start_date} to {end_date}\n\n")
-        f.write(snapshot_content)
+        f.write(f"Period: {start_date} to {end_date}\n")
+        f.write(f"Pipeline: Qwen 2.5 → Gemini 2.5\n\n")
+        f.write(final_report)
     
-    return filename
+    extracts_file = OUTPUT_FOLDER / f"extracts_{timestamp}.md"
+    with open(extracts_file, "w", encoding='utf-8') as f:
+        f.write(f"# QWEN EXTRACTS\n")
+        f.write(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}\n\n")
+        f.write("## INFLATION & MONETARY\n\n" + extracts['inflation'])
+        f.write("\n\n## MARKET & NEWS\n\n" + extracts['market'])
+        f.write("\n\n## CALENDAR & REDDIT\n\n" + extracts['calendar'])
+    
+    return report_file, extracts_file
 
 
 def main():
-    console.print(Panel(
-        "[bold]Gold Macro Regime Analyzer[/bold]\n\n"
-        f"Data: [cyan]{DATA_FOLDER}[/cyan]\n"
-        f"Output: [cyan]{OUTPUT_FOLDER}[/cyan]\n"
-        f"Model: [cyan]{GEMINI_MODEL}[/cyan]",
-        title="Gold Regime Analysis",
-        border_style="blue"
-    ))
+    print("\nGold Macro Regime Analyzer v2.0")
+    print(f"Data: {DATA_FOLDER}")
+    print(f"Output: {OUTPUT_FOLDER}\n")
     
-    if not check_api_key():
+    if not check_api_keys():
         sys.exit(1)
     
-    console.print("\n[yellow]Loading economic data...[/yellow]")
     data_dict = load_economic_data(DATA_FOLDER)
-    
     if data_dict is None:
         sys.exit(1)
     
-    console.print("\n[yellow]Preparing data...[/yellow]")
-    data_summary = analyze_data_overview(data_dict)
-    formatted_data = prepare_data_for_analysis(data_dict)
+    print("Preparing data...")
+    full_data = prepare_data_for_qwen(data_dict)
     
-    console.print(Panel(
-        data_summary,
-        title="Data Overview",
-        border_style="cyan"
-    ))
+    start_time = time.time()
+    extracts = stage1_qwen_extraction(full_data)
+    final_report = stage2_gemini_synthesis(extracts)
+    total_time = time.time() - start_time
     
-    with Progress() as progress:
-        task = progress.add_task("[cyan]Generating regime brief...", total=1)
-        snapshot_content = generate_macro_snapshot(formatted_data, data_summary)
-        progress.update(task, advance=1)
+    report_file, extracts_file = save_report(final_report, extracts, data_dict)
     
-    console.print()
-    console.print(Panel(
-        snapshot_content[:1500] + "\n\n...(truncated)",
-        title="[bold green]Gold Regime Brief[/bold green]",
-        border_style="green",
-        padding=(1, 2)
-    ))
-    
-    filename = save_snapshot(snapshot_content, data_summary)
-    
-    console.print()
-    console.print(Panel(
-        f"[bold green]Complete[/bold green]\n\n"
-        f"Saved: [bold]{filename}[/bold]\n"
-        f"Format: Markdown 400-600 words",
-        title="Done",
-        border_style="green"
-    ))
+    print(f"\nComplete in {total_time:.1f}s")
+    print(f"Report: {report_file}")
+    print(f"Extracts: {extracts_file}")
 
 
 if __name__ == "__main__":
