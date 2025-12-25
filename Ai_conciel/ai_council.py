@@ -314,7 +314,8 @@ REASON: [1 sentence]"""
     
     meeting_log.append({"round": 0, "model": "Macro Quant", "key": "macro_quant", "response": response})
     
-    if "NO" in response.upper():
+    tradeable_match = re.search(r'TRADEABLE:\s*(YES|NO)', response, re.I)
+    if tradeable_match and tradeable_match.group(1).upper() == 'NO':
         console.print("REGIME FILTER: Not tradeable")
         return False
     
