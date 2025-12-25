@@ -1,6 +1,6 @@
 {
   "date": "2025-12-16",
-  "snapshot_generated_at": "2025-12-24T21:59:22.069225",
+  "snapshot_generated_at": "2025-12-25T20:45:21.369937",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4304.9,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 68.78,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 4086.55,
-      "XAUUSD_EMA200": 3612.33,
+      "XAUUSD_EMA200": 3613.56,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 58.55,
       "XAUUSD_MACD_SIGNAL": 51.67,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 49.22,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6754.08,
-      "USA500.IDX_EMA200": 6407.81,
+      "USA500.IDX_EMA200": 6409.56,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 25.73,
       "USA500.IDX_MACD_SIGNAL": 28.9,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 29.38,
       "DOLLAR.IDX_RSI_STATUS": "Oversold",
       "DOLLAR.IDX_EMA50": 98.86,
-      "DOLLAR.IDX_EMA200": 99.84,
+      "DOLLAR.IDX_EMA200": 99.87,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.31,
       "DOLLAR.IDX_MACD_SIGNAL": -0.12,
@@ -394,12 +394,8 @@
         "source": "r/geopolitics"
       },
       {
-        "title": "US Oil Futures Drop Below $55 a Barrel for First Time Since 2021",
-        "source": "r/economics"
-      },
-      {
         "title": "U.S. crude oil drops below $55 a barrel, hits lowest level since early 2021",
-        "source": "r/economics"
+        "source": "r/oil"
       },
       {
         "title": "Zelenskyy: Ukraine Won't Recognize Donbas As Russian, Seeks NATO-Style Guarantees",
@@ -411,10 +407,6 @@
       },
       {
         "title": "US unemployment rate hits four-year high of 4.6%",
-        "source": "r/economics"
-      },
-      {
-        "title": "Now that the government has stopped minting pennies, retailers and restaurants that tend to do a lot of cash business want the federal government to come up with a standard for rounding.",
         "source": "r/economics"
       },
       {

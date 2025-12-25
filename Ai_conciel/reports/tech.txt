@@ -1,0 +1,66 @@
+=== XAU/USD TECHNICAL SNAPSHOT ===
+Generated: 2025-12-25 20:15 UTC
+
+PRICE ACTION:
+Current: $4478.3
+Open: $4472.81
+High: $4525.77
+Low: $4447.9
+Change: $5.49 (0.12%)
+Range: $77.87
+
+MOVING AVERAGES:
+EMA9: $4478.95
+EMA21: $4481.58
+EMA50: $4465.83
+EMA200: $4377.9
+Trend: Bullish
+
+MOMENTUM:
+RSI(14): 49.21 - Neutral
+Stochastic K: 58.13 D: 57.46 - Neutral
+CCI(20): -68.32
+Williams %R: -41.87
+ROC(12): -0.33
+
+TREND INDICATORS:
+MACD: -0.13 Signal: 2.88 Histogram: -3.01 - Bearish
+ADX(14): 21.03 - Trend Strength: Moderate
++DI: 16.41 -DI: 25.21
+
+VOLATILITY & BANDS:
+ATR(14): $16.71
+BB Upper: $4515.82
+BB Middle: $4488.01
+BB Lower: $4460.2
+BB Width: 1.24
+Price Position: Inside Bands
+
+VOLUME:
+Total: 343,823
+Average: 14,325
+Current: 4,487
+Status: Low
+OBV: 440263.0
+
+FIBONACCI LEVELS:
+100%: $4525.77
+78.6%: $4509.1
+61.8%: $4496.02
+50.0%: $4486.83
+38.2%: $4477.64
+23.6%: $4466.27
+0%: $4447.9
+
+KEY LEVELS:
+Resistance: $4525.77, $4501.23, $4499.67
+Support: $4447.9, $4467.92, $4477.81
+
+PIVOT POINTS:
+R3: $4597.95
+R2: $4561.86
+R1: $4520.08
+Pivot: $4483.99
+S1: $4442.21
+S2: $4406.12
+S3: $4364.34

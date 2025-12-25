@@ -45,52 +45,42 @@ TRADERS = {
     "macro_quant": {
         "name": "Macro Quant",
         "color": "yellow",
-        "style": "bold yellow",
         "lens": "Probabilistic regime analysis + macro-technical synthesis + base probability calculation",
         "model": "qwen-3-235b-a22b-instruct-2507",
         "provider": "cerebras",
-        "weight": 0.30,
-        "veto_power": True
+        "weight": 0.30
     },
     "swing_trader": {
         "name": "Swing Trader",
         "color": "green",
-        "style": "bold green",
         "lens": "Market structure + HTF context + key S/R levels + trend alignment",
         "model": "gemini-2.5-flash",
         "provider": "gemini",
-        "weight": 0.25,
-        "veto_power": False
+        "weight": 0.25
     },
     "speed_technician": {
         "name": "Speed Technician",
         "color": "blue",
-        "style": "bold blue",
         "lens": "Technical patterns + key levels + volume analysis + order blocks",
         "model": "llama-3.3-70b",
         "provider": "cerebras",
-        "weight": 0.20,
-        "veto_power": False
+        "weight": 0.20
     },
     "momentum_scalper": {
         "name": "Momentum Scalper",
         "color": "cyan",
-        "style": "bold cyan",
         "lens": "Entry timing + price action + immediate execution optimization",
         "model": "llama-3.1-8b-instant",
         "provider": "groq",
-        "weight": 0.125,
-        "veto_power": False
+        "weight": 0.125
     },
     "risk_quant": {
         "name": "Risk Quant",
         "color": "magenta",
-        "style": "bold magenta",
         "lens": "Position sizing + Kelly Criterion + risk mathematics + probability validation",
         "model": "Meta-Llama-3.1-8B-Instruct",
         "provider": "sambanova",
-        "weight": 0.125,
-        "veto_power": False
+        "weight": 0.125
     }
 }
 
@@ -174,16 +164,22 @@ def extract_tech_data(tech_path):
         current = re.search(r'Current:\s*\$?([\d,]+\.?\d*)', content, re.I)
         if current: data['current_price'] = float(current.group(1).replace(',', ''))
         
-        day_open = re.search(r'Day Open:\s*\$?([\d,]+\.?\d*)', content, re.I)
-        if day_open: data['day_open'] = float(day_open.group(1).replace(',', ''))
+        open_match = re.search(r'Open:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if open_match: data['day_open'] = float(open_match.group(1).replace(',', ''))
         
-        day_high = re.search(r'Day High:\s*\$?([\d,]+\.?\d*)', content, re.I)
-        if day_high: data['day_high'] = float(day_high.group(1).replace(',', ''))
+        high_match = re.search(r'High:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if high_match: data['day_high'] = float(high_match.group(1).replace(',', ''))
         
-        day_low = re.search(r'Day Low:\s*\$?([\d,]+\.?\d*)', content, re.I)
-        if day_low: data['day_low'] = float(day_low.group(1).replace(',', ''))
+        low_match = re.search(r'Low:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if low_match: data['day_low'] = float(low_match.group(1).replace(',', ''))
         
         # Extract EMAs
+        ema9 = re.search(r'EMA9:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if ema9: data['ema9'] = float(ema9.group(1).replace(',', ''))
+        
+        ema21 = re.search(r'EMA21:\s*\$?([\d,]+\.?\d*)', content, re.I)
+        if ema21: data['ema21'] = float(ema21.group(1).replace(',', ''))
+        
         ema50 = re.search(r'EMA50:\s*\$?([\d,]+\.?\d*)', content, re.I)
         if ema50: data['ema50'] = float(ema50.group(1).replace(',', ''))
         
@@ -224,7 +220,7 @@ def load_reports():
         return False
     
     # Load technical report
-    tech_files = list(rp.glob("technical*.txt")) + list(rp.glob("technical*.md"))
+    tech_files = list(rp.glob("tech*.txt")) + list(rp.glob("tech*.md")) + list(rp.glob("technical*.txt")) + list(rp.glob("technical*.md"))
     if not tech_files:
         console.print("[red]No technical reports found[/red]")
         return False
@@ -311,9 +307,11 @@ Real Rate: {macro_data.get('real_rate', 'N/A')}%
 
 TECHNICAL DATA (Pure):
 XAUUSD Current: ${tech_data.get('current_price', 'N/A')}
-Day Open: ${tech_data.get('day_open', 'N/A')}
-Day High: ${tech_data.get('day_high', 'N/A')}
-Day Low: ${tech_data.get('day_low', 'N/A')}
+Open: ${tech_data.get('day_open', 'N/A')}
+High: ${tech_data.get('day_high', 'N/A')}
+Low: ${tech_data.get('day_low', 'N/A')}
+EMA9: ${tech_data.get('ema9', 'N/A')}
+EMA21: ${tech_data.get('ema21', 'N/A')}
 EMA50: ${tech_data.get('ema50', 'N/A')}
 EMA200: ${tech_data.get('ema200', 'N/A')}
 
@@ -334,10 +332,11 @@ TASK: Provide your initial market assessment from your lens perspective.
 
 Speak freely. 3-5 sentences max. Focus on building understanding, not criticizing."""
 
-        with console.status(f"[{t['color']}]{t['name']} analyzing...[/{t['color']}]"):
+        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
             response = ai_call(key, prompt, max_tok=400)
         
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        console.print(f"[{t['color']}]{t['name']}:[/{t['color']}]")
+        console.print(f"{response}\n")
         meeting_log.append({"round": 1, "model": t['name'], "key": key, "response": response})
     
     return True
@@ -370,10 +369,11 @@ TASK: Respond to the discussion and refine your view.
 
 Focus on COLLABORATION to build consensus. 3-4 sentences max."""
 
-        with console.status(f"[{t['color']}]{t['name']} responding...[/{t['color']}]"):
+        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
             response = ai_call(key, prompt, max_tok=400)
         
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        console.print(f"[{t['color']}]{t['name']}:[/{t['color']}]")
+        console.print(f"{response}\n")
         meeting_log.append({"round": 2, "model": t['name'], "key": key, "response": response})
     
     # Calculate aggregate probabilities
@@ -449,10 +449,11 @@ VOTE: BUY / SELL / NO_TRADE
 PROBABILITY: 0.XX (your final confidence in this direction)
 WHY: [1-2 sentences - final reasoning]"""
 
-        with console.status(f"[{t['color']}]{t['name']} voting...[/{t['color']}]"):
+        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
             response = ai_call(key, prompt, max_tok=300)
         
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        console.print(f"[{t['color']}]{t['name']}:[/{t['color']}]")
+        console.print(f"{response}\n")
         
         # Parse vote
         vote_match = re.search(r'VOTE:\s*(BUY|SELL|NO_TRADE)', response, re.I)
@@ -469,10 +470,6 @@ WHY: [1-2 sentences - final reasoning]"""
     sell_votes = sum(1 for v in votes.values() if v['vote'] == 'SELL')
     no_votes = sum(1 for v in votes.values() if v['vote'] == 'NO_TRADE')
     
-    # Check for Qwen veto
-    qwen_vote = votes['macro_quant']['vote']
-    qwen_veto = (qwen_vote == 'NO_TRADE')
-    
     # Supermajority check (4/5)
     if buy_votes >= 4:
         direction = 'BUY'
@@ -484,15 +481,6 @@ WHY: [1-2 sentences - final reasoning]"""
         direction = None
         consensus_prob = 0
     
-    # Check Qwen override
-    if qwen_veto and direction:
-        override_votes = buy_votes if direction == 'BUY' else sell_votes
-        if override_votes >= 3:
-            console.print(f"[yellow]⚠️ Macro Quant VETO overridden by {override_votes} votes[/yellow]")
-        else:
-            console.print(f"[red]❌ Macro Quant VETO stands - insufficient override votes[/red]")
-            direction = None
-    
     t = Table(title="VOTE RESULTS")
     t.add_column("Model", style="cyan")
     t.add_column("Vote", style="yellow")
@@ -502,7 +490,7 @@ WHY: [1-2 sentences - final reasoning]"""
         t.add_row(TRADERS[key]['name'], vote_data['vote'], f"{vote_data['probability']:.2f}")
     
     console.print(t)
-    console.print(f"\n[bold]BUY: {buy_votes} | SELL: {sell_votes} | NO_TRADE: {no_votes}[/bold]")
+    console.print(f"\nBUY: {buy_votes} | SELL: {sell_votes} | NO_TRADE: {no_votes}\n")
     
     if not direction or consensus_prob < 0.60:
         console.print(Panel("[red]NO CONSENSUS - Need 4/5 votes & P ≥ 0.60[/red]", border_style="red"))
@@ -539,7 +527,7 @@ Fed: {macro_data.get('fed_stance', 'N/A')} | Real Rate: {macro_data.get('real_ra
 
 TECHNICAL LEVELS:
 Current: ${tech_data.get('current_price', 'N/A')}
-Day Range: ${tech_data.get('day_low', 'N/A')} - ${tech_data.get('day_high', 'N/A')}
+Range: ${tech_data.get('day_low', 'N/A')} - ${tech_data.get('day_high', 'N/A')}
 EMA50: ${tech_data.get('ema50', 'N/A')} | EMA200: ${tech_data.get('ema200', 'N/A')}
 
 YOUR LENS: {t['lens']}
@@ -552,10 +540,11 @@ TASK: Propose your entry price for this {consensus['direction']} setup.
 
 Reference others if you want, but focus on YOUR analysis. 2-3 sentences."""
 
-        with console.status(f"[{t['color']}]{t['name']} proposing entry...[/{t['color']}]"):
+        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
             response = ai_call(key, prompt, max_tok=350)
         
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        console.print(f"[{t['color']}]{t['name']}:[/{t['color']}]")
+        console.print(f"{response}\n")
         
         # Parse entry
         entry_match = re.search(r'ENTRY:\s*\$?([\d,]+\.?\d*)', response, re.I)
@@ -609,10 +598,11 @@ TASK: Build a complete levels package.
 
 COLLABORATE to find levels everyone can accept."""
 
-        with console.status(f"[{t['color']}]{t['name']} proposing levels...[/{t['color']}]"):
+        with console.status(f"[{t['color']}]{t['name']}...[/{t['color']}]"):
             response = ai_call(key, prompt, max_tok=400)
         
-        console.print(f"[{t['style']}]{t['name']}:[/{t['style']}]\n{response}\n")
+        console.print(f"[{t['color']}]{t['name']}:[/{t['color']}]")
+        console.print(f"{response}\n")
         
         # Parse levels
         entry_match = re.search(r'ENTRY:\s*\$?([\d,]+\.?\d*)', response, re.I)

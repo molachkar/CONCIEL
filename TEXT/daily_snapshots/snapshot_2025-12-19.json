@@ -1,6 +1,6 @@
 {
   "date": "2025-12-19",
-  "snapshot_generated_at": "2025-12-24T21:59:22.074172",
+  "snapshot_generated_at": "2025-12-25T20:45:21.374285",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4331.5,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 71.23,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4114.71,
-      "XAUUSD_EMA200": 3633.7,
+      "XAUUSD_EMA200": 3634.89,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 64.29,
       "XAUUSD_MACD_SIGNAL": 57.36,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 53.78,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6757.19,
-      "USA500.IDX_EMA200": 6418.83,
+      "USA500.IDX_EMA200": 6420.52,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 12.89,
       "USA500.IDX_MACD_SIGNAL": 21.36,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 42.09,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.78,
-      "DOLLAR.IDX_EMA200": 99.79,
+      "DOLLAR.IDX_EMA200": 99.82,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.32,
       "DOLLAR.IDX_MACD_SIGNAL": -0.23,
@@ -256,16 +256,8 @@
     ],
     "reddit": [
       {
-        "title": "Rivian is just starting",
-        "source": "r/wallstreetbets"
-      },
-      {
         "title": "Hassett says Trump is right where others are wrong about inflation",
         "source": "r/StockMarket"
-      },
-      {
-        "title": "First options contract. Do I belong here now?",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "Why America gave up on economists",
@@ -274,38 +266,6 @@
       {
         "title": "Elon Musk's 2018 Tesla pay package must be restored, Delaware Supreme Court rules",
         "source": "r/StockMarket"
-      },
-      {
-        "title": "$80,000 —&gt;$108,000 in $NBIS calls",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Weekend Discussion Thread for the Weekend of December 19, 2025",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Santa’s gains were in space (RKLB,LUNR,PL)",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Advanced Money Dispenser",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "When ThetaGang Goes Wrong",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "CoreWeave +20% after joining Department of Energy Genesis Mission to provide AI cloud for U.S. research and energy innovation",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "I dislike the stock / ceo",
-        "source": "r/wallstreetbets"
-      },
-      {
-        "title": "20 million gen z are jobless in urban China",
-        "source": "r/China"
       },
       {
         "title": "From the Guardian: Toyota, Japan's largest company, uses video games to get its employees to lobby against clean air rules",
@@ -330,10 +290,6 @@
       {
         "title": "China Condemns U.S. 'Bullying' Over Venezuela Oil Blockade, Makes No Aid Commitments",
         "source": "r/geopolitics"
-      },
-      {
-        "title": "Japan's 10 year yield crosses 2% for the first time in over 15 years",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "Colorado steel mill halts rail shipments to BNSF and UP - Trains",

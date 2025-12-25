@@ -4,75 +4,102 @@ MARKET DATA:
 US Dollar Index (DXY): Opened at 97.52, high 97.67, low 97.40, closed at 97.63. Daily gain of +0.11 (+0.11%), range 0.27. 30-day range: 97.40 - 100.31.
 S&P 500: Opened at 6,905.93, high 6,936.50, low 6,900.64, closed at 6,929.00. Daily gain of +23.07 (+0.33%), range 35.86. 30-day range: 6,507.35 - 6,936.50.
 VIX (Volatility Index): Opened at 16.77, high 16.88, low 16.68, closed at 16.82. Daily gain of +0.05 (+0.30%), range 0.20. 30-day range: 15.87 - 23.37.
-Gold (XAU/USD): Opened at $4,486.30, high $4,525.77, low $4,447.90, closed at $4,478.30. Daily loss of -8.00 (-0.18%), range 77.87. 30-day range: 3,997.66 - 4,525.77.
+Gold (XAU/USD): Opened at $4,486.30, high $4,525.77, low $4,447.90, closed at $4,478.77. Daily loss of -7.53 (-0.17%), range 77.87. 30-day range: 3,997.66 - 4,525.77.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 33.07 (neutral). EMA trend: bearish (EMA50: 98.66, EMA200: 99.73). MACD: -0.40, signal: -0.30, histogram: -0.10 (negative). Stochastic: 13.41 (exhaustion near lows).
-S&P 500: RSI: 61.55 (neutral). EMA trend: bullish (EMA50: 6773.83, EMA200: 6433.16). MACD: 28.32, signal: 22.39, histogram: 5.93 (positive). Stochastic: 91.83 (exhaustion near highs).
+Dollar Index (DXY): RSI: 33.07 (neutral). EMA trend: bearish (EMA50: 98.66, EMA200: 99.75). MACD: -0.40, signal: -0.30, histogram: -0.10 (negative). Stochastic: 13.41 (exhaustion near lows).
+S&P 500: RSI: 61.55 (neutral). EMA trend: bullish (EMA50: 6773.83, EMA200: 6434.81). MACD: 28.32, signal: 22.39, histogram: 5.93 (positive). Stochastic: 91.83 (exhaustion near highs).
 VIX: RSI: 42.59 (neutral). EMA trend: bearish (EMA50: 18.20, EMA200: 18.57). MACD: -0.51, signal: -0.50, histogram: -0.01 (negative). Stochastic: 31.53 (neutral).
-Gold (XAU/USD): RSI: 79.53 (overbought). EMA trend: bullish (EMA50: 4154.76, EMA200: 3658.37). MACD: 87.33, signal: 69.20, histogram: 18.13 (positive). Stochastic: 93.23 (exhaustion near highs).
+Gold (XAU/USD): RSI: 79.62 (overbought). EMA trend: bullish (EMA50: 4154.78, EMA200: 3659.53). MACD: 87.37, signal: 69.21, histogram: 18.16 (positive). Stochastic: 93.28 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 14:30, USD Initial Jobless Claims was released. Actual: 214K, missing forecast of 224K and falling from previous 224K.
 At 17:30, USD 7-Year Note Auction was released. Actual: 3.930% and rising from previous 3.781%.
 
 FUNDAMENTALS:
-GLD ETF: closed at $411.93, volume 6,664,181. IAU ETF: closed at $84.34, volume 6,408,363.
+GLD ETF: closed at $411.93, volume 6,718,400. IAU ETF: closed at $84.34, volume 6,549,300.
 
 NEWS HIGHLIGHTS:
 
-GOLD (5 items):
+DOLLAR (1 items):
+  • Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs [UUP]
+
+GOLD (6 items):
   • I Predict Gold Will Cross $5,000 Per Ounce in 2026. Here's How Much You Should Buy, According to Hedge Fund Legend Ray Dalio [GLD]
   • Gold Climbs Above $4,500 in Historic Rally for Precious Metals [GLD]
   • Bitcoin Keeps Falling. Blame Gold and Silver. [GLD]
   • Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs [GLD]
   • Forget the Bond Vigilantes. It's the Gold Vigilantes You Need to Worry About. [GLD]
+  • ETF trends to watch in 2026 for active managed & derivative funds [GLD]
 
-MARKET (4 items):
+MARKET (6 items):
   • Stock Market Today: Dow Falls Ahead Of Jobless Claims; Nvidia Retakes Key Level (Live Coverage) [SPY]
   • Stock Market Today: Dow Wavers After Surprise Jobless Claims; Nvidia Retakes Key Level (Live Coverage) [SPY]
   • Stock Market Today: Dow Edges Up After Surprise Jobless Claims; Nvidia Retakes Key Level (Live Coverage) [SPY]
   • Stocks Little Changed Heading Into Year-End [SPY]
+  • Top-Performing International ETFs of 2025 [SPY]
+  • Stocks End Mildly Higher as Bullish Sentiment Continues [SPY]
 
-[Total: 9 news items]
+[Total: 13 news items]
 
 SOCIAL SENTIMENT:
 
-r/China (1 posts):
+r/China (4 posts):
+  • Chinese Fighter Jet Exports Set To Grow Significantly - The War Zone
+  • Zelenskyy: Chinese Satellites Tracked Ukrainian Energy Sites Ahead of Russian Attacks
   • China economy grew below 3% in 2025, half of official target, think tank estimates
+  • US bans new foreign drone models in a blow to Chinese giant DJI
 
-r/Gold (6 posts):
+r/Gold (5 posts):
   • I see we're doing full collections now? - That's what I kept after selling half about 2 months ago.
-  • full collection : gold 1.438 kg 22kt jewels + 300 gms gold bars 24 kt + over 16kg of silver 999 , its 8+ yrs of hardwork . got motivated with other fellow stackers after seeing their stack.
   • My only gold right now
   • Bitcoin’s buzz is gone. Investors chose real gold in 2025
   • My humble gold stack
   • Family pressuring to sell
 
-r/StockMarket (2 posts):
+r/SPY (2 posts):
+  • My first 2 1/2 months trading spy/qqq options
+  • $700 play by New Year’s Eve?
+
+r/StockMarket (3 posts):
+  • Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record
   • INTC: Intel Stock Falls After Nvidia Backs Out of 18A Chip Deal
   • Dollar down ~8% in 2025, worst year since 2017. Options signal more downside
 
-r/economics (2 posts):
+r/economics (3 posts):
+  • Whoever Trump Picks, the Next Fed Chair Won’t Be Independent
   • Russiа’s ruble has surged over 45% against the dollar in 2025, the strongest annual gain since 1994
   • Healthcare Spending Will Be One-Fifth of the Economy Within a Decade
 
-r/economy (6 posts):
+r/economy (12 posts):
+  • Propaganda Over Policy
+  • The Great Decoupling: Why America’s economy is booming without jobs
+  • Defaulted Student Loan Borrowers
+  • Car Payments Now Average More Than $750 a Month. Enter the 100-Month Car Loan.
+  • Americans should focus on blue collar jobs: White House
   • If all the money in America was equally redistributed overnight, how much would you get?
+  • Trump turns government into giant debt collector with threat to garnish wages on millions of Americans in default on student loans
   • Lutnick: The US economy grew 4.3%. What that means is that Americans overall—all of us—are going to earn 4.3% more money.
   • Finally a pastor preaching something worth hearing. I’m an atheist but I’d sit through this sermon
   • Billionaire Mark Cuban Wants U.S. Healthcare To Go Back To 1955. Doctors Provide Care, Patients Get A Bill —'And If They Can Afford It, They Pay'.
   • Inflation wasn't just in prices; it was in opportunities too.
   • In this economy? Really?
 
-r/europe (24 posts):
+r/europe (32 posts):
+  • US watchdog says F-35s flew half the time in 2024 due to Lockheed maintenance issues
+  • Europe slams visa bans after US takes fresh swing at allies over 'censorship'
   • Europe’s largest shipbuilder calls for standardisation of vessel specifications
   • Swedish christmas food - what do you eat in your country today?
+  • Bulgarian soldiers from 1st 'Iron' Sofia Infantry Division celebrating Christmas on Macedonian front during WW1
+  • In the Czech republic every christmas they play shrek in one of the tv channels, the tv chanell made it's own dub that was original until shrek 2 released so they had to use different actors for the other dub, the other dub of shrek is on other channels and streaming platforms
   • Germany slams US ban on German non-profit group supporting victims of hate speech
   • On this day, 111 years ago, during World War I, enemy soldiers laid down their weapons, shared food and songs, and reminded the world of our shared humanity - the Christmas Truce of 1914.
   • EU warns of possible action after the US bars 5 Europeans accused of censorship
+  • Turkish cargo ship carrying goods from Ukraine to Turkey hit in Black Sea, marking the 4th Turkish vessel hit in last 10 days
   • Macron and the European Union Accuse the United States of Intimidation Over Visa Sanctions Targeting Supporters of Digital Regulation. Brussels Says It Is Defending Its Sovereign Right to Set Rules for Online Platforms
+  • EU spending on US oil and gas fell 7 percent over the past four months
   • The United States Imposes Visa Sanctions on European Regulators and Activists, Accusing Them of Censorship. The European Union Calls the Measures Interference and Defends Its Right to Regulate the Digital Space Independently
+  • Apples, Italy becomes the world's leading exporter
   • All I Want for Christmas is EU
   • Zelenskyy Proposes 50-50 US–Ukraine Management of Zaporizhzhia Nuclear Plant in New Peace Plan
   • Declaration of Christmas Peace - please read.
@@ -90,6 +117,7 @@ r/europe (24 posts):
   • Nuclear Power Capacity by Country (2025)
   • Top 10 Most Visited Countries in The World in 2024.
   • Support for Ukraine war in Russia in steep decline
+  • US Sanctions Former EU Official, Others in New Swipe at Europe
 
 r/geopolitics (4 posts):
   • Why Are So Many Leaders Warning Of War With Russia?
@@ -97,13 +125,19 @@ r/geopolitics (4 posts):
   • Zelensky says peace plan agreed by Ukraine and US has been shared with Russia
   • ‘No chance of normalization with Israel, we’re officially at war,’ Lebanon FM says
 
-r/investing (1 posts):
+r/investing (2 posts):
+  • Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record
   • Your request to remove a security deemed worthless cannot be processed - Robinhood
 
-r/stocks (1 posts):
-  • How long will wallstreet make excuses for Andy Jassy
+r/stocks (2 posts):
+  • Best Day of the Year is coming Friday Dec 26
+  • Which sectors do you plan to buy in in 2026? which sectors did you sell in 2025?
 
-r/wallstreetbets (6 posts):
+r/wallstreetbets (10 posts):
+  • How did WSB's stock picks of 2025 perform?
+  • Nvidia to buy AI chip startup Groq for $20 billion in cash
+  • Merry Christmas Everyone (Realized +$33,000 USD)
+  • I think I'm done with options
   • I’m the Gayest One ️‍
   • Daily Discussion Thread for December 24, 2025
   • 500 -&gt; 90k -&gt; 13.5k in 6 weeks - Got Fucked by Theta
@@ -111,7 +145,16 @@ r/wallstreetbets (6 posts):
   • ASTS successfully launches BlueBird-6 satellite
   • Nike (NKE) Director Tim Cook Acquires $2.95M in Company Shares
 
-r/worldnews (23 posts):
+r/worldnews (33 posts):
+  • Venezuela targets US tanker seizure supporters with new 'anti-piracy' law
+  • White House orders military to focus on 'quarantine' of Venezuela oil
+  • Police arrest man accused of celebrating Bondi Beach shooting, discover ammunition cache
+  • Korea's childbirths rise for 16th consecutive month in October: data
+  • Huge 100-tonne fatberg found in London sewers
+  • Zelenskyy says Ukraine will not abandon its bid to join NATO
+  • UK, Canada and Germany condemn Israel for 19 new West Bank settlements
+  • 14 Countries, including France, Britain, Canada and Japan, Condemn Israel's Expansion Of West Bank Settlements
+  • Multiple nations issue travel advisory as New Delhi suffers from suffocating smog: 'Extremely high levels'
   • Algeria's parliament approves law declaring France's colonisation a crime
   • China may be assisting Russia with satellite imagery. Chinese satellite images coincided with strikes on specific Ukrainian energy facilities, according to Ukrainian President and Head of the Center for Countering Disinformation
   • Denmark responds to Trump naming Greenland envoy: ‘Completely unacceptable’
@@ -119,7 +162,9 @@ r/worldnews (23 posts):
   • India's space agency launches its heaviest satellite yet
   • Khamenei gives green light to compact nuclear warheads - report
   • Zelensky Proposes Demilitarized Zone in Eastern Ukraine as Way to Peace
+  • Japan to test deep-sea extraction of rare-earth mud
   • UN experts slam US blockade on Venezuela: Four United Nations rights experts on Wednesday condemned the US partial naval blockade of Venezuela, determining it illegal armed aggression and calling on the US Congress to intervene
+  • Ukraine on track to receive total of 3 million FPV drones in 2025, defense minister says
   • Venezuela warns US ‘aggression’ is first stage amid ‘continental ambitions’
   • Putin has been briefed on U.S. proposals for Ukraine peace plan, the Kremlin says
   • Moscow explosion kills 2 Russian police officers tied to Ukrainian POW abuse, intelligence source says
@@ -134,8 +179,7 @@ r/worldnews (23 posts):
   • Australia to deport British man charged with displaying Nazi symbols
   • Belgium joins South Africa's genocide case against Israel: Brussels files declaration of intervention, joining Brazil, Colombia, Ireland, Mexico, Spain and Turkey in supporting the case against Israel at the World Court
   • Ukraine took out Russia’s only submarine-hunter aircraft before historic Kilo-class sub strike
-  • US Sanctions Former EU Official, Others in New Swipe at Europe
 
-[Total: 76 posts tracked]
+[Total: 112 posts tracked]
 
-2025-12-24 21:59:22
+2025-12-25 20:45:21

@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 18.67, high 18.73, low 17.97, closed at 18.18.
 Gold (XAU/USD): Opened at $4,339.71, high $4,374.40, low $4,308.28, closed at $4,330.62. Daily loss of -9.09 (-0.21%), range 66.12.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 35.62 (neutral). EMA trend: bearish (EMA50: 98.80, EMA200: 99.80). MACD: -0.34, signal: -0.20, histogram: -0.14 (negative). Stochastic: 22.27 (neutral).
-S&P 500: RSI: 46.91 (neutral). EMA trend: bullish (EMA50: 6754.01, EMA200: 6414.65). MACD: 11.55, signal: 23.48, histogram: -11.92 (negative). Stochastic: 19.40 (exhaustion near lows).
-VIX: RSI: 49.89 (neutral). EMA trend: bearish (EMA50: 18.42, EMA200: 18.64). MACD: -0.43, signal: -0.53, histogram: 0.10 (positive). Stochastic: 87.05 (exhaustion near highs).
-Gold (XAU/USD): RSI: 70.50 (overbought). EMA trend: bullish (EMA50: 4105.57, EMA200: 3626.62). MACD: 63.29, signal: 55.63, histogram: 7.65 (positive). Stochastic: 82.16 (exhaustion near highs).
+Dollar Index (DXY): RSI: 35.62 (neutral). EMA trend: bearish (EMA50: 98.80, EMA200: 99.83). MACD: -0.34, signal: -0.20, histogram: -0.14 (negative). Stochastic: 22.27 (neutral).
+S&P 500: RSI: 46.91 (neutral). EMA trend: bullish (EMA50: 6754.01, EMA200: 6416.36). MACD: 11.55, signal: 23.48, histogram: -11.92 (negative). Stochastic: 19.40 (exhaustion near lows).
+VIX: RSI: 49.89 (neutral). EMA trend: bearish (EMA50: 18.42, EMA200: 18.63). MACD: -0.43, signal: -0.53, histogram: 0.10 (positive). Stochastic: 87.05 (exhaustion near highs).
+Gold (XAU/USD): RSI: 70.50 (overbought). EMA trend: bullish (EMA50: 4105.57, EMA200: 3627.82). MACD: 63.29, signal: 55.63, histogram: 7.65 (positive). Stochastic: 82.16 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 14:30, USD Core CPI (YoY)  (Nov) was released. Actual: 2.6%, missing forecast of 3.0% and falling from previous 3.0%.
@@ -76,9 +76,6 @@ r/japan (2 posts):
 r/oil (1 posts):
   • The $8 Billion Black Market for Venezuelan Oil Is Suddenly Closing Down
 
-r/wallstreetbets (1 posts):
-  • Sold a house got to a million and lost it all, now I owe the IRS 179k and I owe creditors 100k do not do options if you adhd
+[Total: 18 posts tracked]
 
-[Total: 19 posts tracked]
-
-2025-12-24 21:59:22
+2025-12-25 20:45:21

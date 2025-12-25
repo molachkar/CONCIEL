@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 17.58, high 17.82, low 16.52, closed at 16.66.
 Gold (XAU/USD): Opened at $4,207.23, high $4,238.44, low $4,181.56, closed at $4,227.65. Daily gain of +20.42 (+0.49%), range 56.88.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 38.13 (neutral). EMA trend: bearish (EMA50: 99.01, EMA200: 99.92). MACD: -0.07, signal: 0.06, histogram: -0.13 (negative). Stochastic: 17.40 (exhaustion near lows).
-S&P 500: RSI: 60.22 (neutral). EMA trend: bullish (EMA50: 6739.83, EMA200: 6390.28). MACD: 35.25, signal: 24.92, histogram: 10.33 (positive). Stochastic: 89.40 (exhaustion near highs).
+Dollar Index (DXY): RSI: 38.13 (neutral). EMA trend: bearish (EMA50: 99.01, EMA200: 99.94). MACD: -0.07, signal: 0.06, histogram: -0.13 (negative). Stochastic: 17.40 (exhaustion near lows).
+S&P 500: RSI: 60.22 (neutral). EMA trend: bullish (EMA50: 6739.83, EMA200: 6392.09). MACD: 35.25, signal: 24.92, histogram: 10.33 (positive). Stochastic: 89.40 (exhaustion near highs).
 VIX: RSI: 37.60 (neutral). EMA trend: bearish (EMA50: 18.69, EMA200: 18.71). MACD: -0.62, signal: -0.33, histogram: -0.29 (negative). Stochastic: 5.00 (exhaustion near lows).
-Gold (XAU/USD): RSI: 62.60 (neutral). EMA trend: bullish (EMA50: 4050.18, EMA200: 3584.43). MACD: 46.21, signal: 45.81, histogram: 0.40 (positive). Stochastic: 76.81 (neutral).
+Gold (XAU/USD): RSI: 62.60 (neutral). EMA trend: bullish (EMA50: 4050.18, EMA200: 3585.71). MACD: 46.21, signal: 45.81, histogram: 0.40 (positive). Stochastic: 76.81 (neutral).
 
 ECONOMIC EVENTS:
 At 14:30, USD Employment Cost Index (QoQ)  (Q3) was released. Actual: 0.8%, missing forecast of 0.9% and falling from previous 0.9%.
@@ -50,14 +50,12 @@ MARKET (12 items):
 
 SOCIAL SENTIMENT:
 
-r/StockMarket (3 posts):
+r/StockMarket (1 posts):
   • ORCL -10% after hours as revenue misses estimates despite 68% OCI growth and RPO jumping to $523B
-  • FED Cut Rate By 25 points
-  • There's no guarantee the Fed's rate cuts will lower the rates that matter
 
 r/japan (1 posts):
   • Russian bombers join Chinese air patrol near Japan as Tokyo-Beijing tensions simmer
 
-[Total: 4 posts tracked]
+[Total: 2 posts tracked]
 
-2025-12-24 21:59:22
+2025-12-25 20:45:21

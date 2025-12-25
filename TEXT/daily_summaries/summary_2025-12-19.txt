@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 18.12, high 18.18, low 17.28, closed at 17.28.
 Gold (XAU/USD): Opened at $4,331.50, high $4,356.36, low $4,308.72, closed at $4,338.67. Daily gain of +7.17 (+0.17%), range 47.64.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 42.09 (neutral). EMA trend: bearish (EMA50: 98.78, EMA200: 99.79). MACD: -0.32, signal: -0.23, histogram: -0.10 (negative). Stochastic: 31.34 (neutral).
-S&P 500: RSI: 53.78 (neutral). EMA trend: bullish (EMA50: 6757.19, EMA200: 6418.83). MACD: 12.89, signal: 21.36, histogram: -8.47 (negative). Stochastic: 31.89 (neutral).
+Dollar Index (DXY): RSI: 42.09 (neutral). EMA trend: bearish (EMA50: 98.78, EMA200: 99.82). MACD: -0.32, signal: -0.23, histogram: -0.10 (negative). Stochastic: 31.34 (neutral).
+S&P 500: RSI: 53.78 (neutral). EMA trend: bullish (EMA50: 6757.19, EMA200: 6420.52). MACD: 12.89, signal: 21.36, histogram: -8.47 (negative). Stochastic: 31.89 (neutral).
 VIX: RSI: 44.85 (neutral). EMA trend: bearish (EMA50: 18.38, EMA200: 18.62). MACD: -0.43, signal: -0.51, histogram: 0.08 (positive). Stochastic: 72.97 (neutral).
-Gold (XAU/USD): RSI: 71.23 (overbought). EMA trend: bullish (EMA50: 4114.71, EMA200: 3633.70). MACD: 64.29, signal: 57.36, histogram: 6.93 (positive). Stochastic: 84.78 (exhaustion near highs).
+Gold (XAU/USD): RSI: 71.23 (overbought). EMA trend: bullish (EMA50: 4114.71, EMA200: 3634.89). MACD: 64.29, signal: 57.36, histogram: 6.93 (positive). Stochastic: 84.78 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 16:00, USD Existing Home Sales  (Nov) was released. Actual: 4.13M, missing forecast of 4.15M and rising from previous 4.11M.
@@ -55,9 +55,6 @@ MARKET (13 items):
 
 SOCIAL SENTIMENT:
 
-r/China (1 posts):
-  • 20 million gen z are jobless in urban China
-
 r/StockMarket (2 posts):
   • Hassett says Trump is right where others are wrong about inflation
   • Elon Musk's 2018 Tesla pay package must be restored, Delaware Supreme Court rules
@@ -80,18 +77,6 @@ r/japan (3 posts):
   • 9 Japan Companies Team Up on EV Battery Production; Seek to Streamline Process to Compete With China
   • Japanese Police Rush to Retrieve Toy Guns Capable of Firing Live Ammunition
 
-r/wallstreetbets (10 posts):
-  • Rivian is just starting
-  • First options contract. Do I belong here now?
-  • $80,000 —&gt;$108,000 in $NBIS calls
-  • Weekend Discussion Thread for the Weekend of December 19, 2025
-  • Santa’s gains were in space (RKLB,LUNR,PL)
-  • Advanced Money Dispenser
-  • When ThetaGang Goes Wrong
-  • CoreWeave +20% after joining Department of Energy Genesis Mission to provide AI cloud for U.S. research and energy innovation
-  • I dislike the stock / ceo
-  • Japan's 10 year yield crosses 2% for the first time in over 15 years
+[Total: 14 posts tracked]
 
-[Total: 25 posts tracked]
-
-2025-12-24 21:59:22
+2025-12-25 20:45:21

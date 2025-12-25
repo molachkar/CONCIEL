@@ -1,6 +1,6 @@
 {
   "date": "2025-12-23",
-  "snapshot_generated_at": "2025-12-24T21:59:22.079118",
+  "snapshot_generated_at": "2025-12-25T20:45:21.379204",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4446.1,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 80.68,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4141.55,
-      "XAUUSD_EMA200": 3650.13,
+      "XAUUSD_EMA200": 3651.3,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 81.66,
       "XAUUSD_MACD_SIGNAL": 64.67,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 59.6,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6767.5,
-      "USA500.IDX_EMA200": 6428.18,
+      "USA500.IDX_EMA200": 6429.84,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 22.46,
       "USA500.IDX_MACD_SIGNAL": 20.91,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 42.59,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.26,
-      "VOL.IDX_EMA200": 18.59,
+      "VOL.IDX_EMA200": 18.58,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.49,
       "VOL.IDX_MACD_SIGNAL": -0.5,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 31.7,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.7,
-      "DOLLAR.IDX_EMA200": 99.75,
+      "DOLLAR.IDX_EMA200": 99.77,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.38,
       "DOLLAR.IDX_MACD_SIGNAL": -0.27,
@@ -67,6 +67,7 @@
       "DOLLAR.IDX_STOCH_STATUS": "Neutral"
     },
     "fundamentals": {
+      "HY_CREDIT_SPREAD": 2.83,
       "GLD_CLOSE": 413.64,
       "GLD_VOLUME": 13193300,
       "IAU_CLOSE": 84.68,
@@ -295,10 +296,6 @@
         "source": "r/worldnews"
       },
       {
-        "title": "Iranian Navy sends ships to South Africa to participate in BRICS exercises",
-        "source": "r/worldnews"
-      },
-      {
         "title": "BREAKING: Silver extends gains to a record $71/oz, now up nearly +150% YTD. We are quite literally witnessing one of the most historic runs in precious metals ever.",
         "source": "r/economy"
       },
@@ -323,15 +320,11 @@
         "source": "r/economy"
       },
       {
-        "title": "Gun and protest reforms pass NSW parliament after Bondi terror attack",
-        "source": "r/worldnews"
+        "title": "Micron(MU) up 217% in 2025, is the rally just getting started?",
+        "source": "r/stocks"
       },
       {
         "title": "After announcing she would be limiting the number of free days off school, Belgian Flemish education minister calls in police on threats from schoolchildren",
-        "source": "r/europe"
-      },
-      {
-        "title": "‘This is shattering’: Europe reels from US President’s new world order",
         "source": "r/europe"
       },
       {
@@ -355,10 +348,6 @@
         "source": "r/worldnews"
       },
       {
-        "title": "Poland Seeks G-20 Membership to Give Voice to Eastern Europe",
-        "source": "r/europe"
-      },
-      {
         "title": "Islamic State supporters guilty of planning 'most deadly' gun attack on Jewish targets in Manchester",
         "source": "r/geopolitics"
       },
@@ -367,16 +356,8 @@
         "source": "r/europe"
       },
       {
-        "title": "Pakistan bans beggars from foreign travel; 66,000 flyers with suspicious documents stopped at airports this year | Today News",
-        "source": "r/worldnews"
-      },
-      {
         "title": "Citadel to Return $5 Billion of Hedge Fund’s Profits to Clients",
         "source": "r/StockMarket"
-      },
-      {
-        "title": "UK commits to building one new British Navy AUKUS nuclear attack submarine every 18 months",
-        "source": "r/europe"
       },
       {
         "title": "‘Where Are the Manufacturing Jobs?’ — Trump Trade Official Forced to Admit Tariffs Have Hit Manufacturing on Live TV - TLP Media",
@@ -388,10 +369,6 @@
       },
       {
         "title": "EU blocks \"Novel Foods\" (like lab-grown meat) from new fast-track testing rules, citing \"cultural concerns\"",
-        "source": "r/europe"
-      },
-      {
-        "title": "NL calls for EU ban on powerful fireworks as explosions continue",
         "source": "r/europe"
       },
       {
@@ -411,8 +388,8 @@
         "source": "r/economy"
       },
       {
-        "title": "Military considers permanent bases in Latvia as part of Canada's NATO commitment",
-        "source": "r/europe"
+        "title": "Oral Wegovy approved. The $100 billion weight loss drug market sees the start of the “pill vs. injection” showdown.",
+        "source": "r/stocks"
       },
       {
         "title": "US to Begin Garnishing Wages for Student Debt Collection in 2026",
@@ -423,16 +400,8 @@
         "source": "r/europe"
       },
       {
-        "title": "Rocket crashes shortly after launch in blow to Brazil’s space ambitions",
-        "source": "r/worldnews"
-      },
-      {
         "title": "When will META shut down Reality Labs?",
         "source": "r/investing"
-      },
-      {
-        "title": "Canadian economy shrank by 0.3% in October, the biggest slump in almost 3 years",
-        "source": "r/worldnews"
       },
       {
         "title": "Europe stands with Greenland as Trump threat returns",
@@ -455,19 +424,11 @@
         "source": "r/worldnews"
       },
       {
-        "title": "President Sheinbaum: Mexico Ships Oil to Cuba for Humanitarian Reasons",
-        "source": "r/worldnews"
-      },
-      {
         "title": "Russia refuses to hand over consulate building after Poland orders it closed",
         "source": "r/europe"
       },
       {
         "title": "Does this mean the collapse of the US economy?",
-        "source": "r/Gold"
-      },
-      {
-        "title": "Buying gold at middle age",
         "source": "r/Gold"
       },
       {
@@ -511,80 +472,24 @@
         "source": "r/economics"
       },
       {
-        "title": "Ukrainian partisans set ablaze 2 Russian Su-30 fighter jets in Lipetsk Oblast, HUR says",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "“These crimes will not go unanswered”: Estonian FM condemns Christmas-period attack on Ukraine",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Trump’s ‘peace plan’ for Ukraine is wicked",
-        "source": "r/europe"
-      },
-      {
-        "title": "Finland Raises Reservist Age To 65 | Yle News",
-        "source": "r/europe"
-      },
-      {
         "title": "Daily Discussion Thread for December 23, 2025",
         "source": "r/wallstreetbets"
-      },
-      {
-        "title": "London records fewest homicides this year since records began",
-        "source": "r/europe"
-      },
-      {
-        "title": "Germany and Poland strike tech deal for military satellite system",
-        "source": "r/europe"
-      },
-      {
-        "title": "Canadian military considers permanent bases in Latvia as part of Canada's NATO commitment",
-        "source": "r/worldnews"
       },
       {
         "title": "Japan Eyes Plan to Accept Up To 1.23 Mil. Foreign Workers by End of Fiscal 2028",
         "source": "r/japan"
       },
       {
-        "title": "iOS 26.3 Brings AirPods-Like Pairing to Third-Party Devices in EU Under DMA",
+        "title": "Germany’s far-right AfD accused of gathering information for the Kremlin",
         "source": "r/europe"
-      },
-      {
-        "title": "U.S. military says new strike on alleged drug boat killed 1 'narco-terrorist'",
-        "source": "r/worldnews"
       },
       {
         "title": "Which Robotics Companies currently fly under the radar / are cheap / should be on the watchlist during a markt pullback?",
         "source": "r/stocks"
       },
       {
-        "title": "Trump says US needs Greenland after naming special envoy",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Germany’s far-right AfD accused of gathering information for the Kremlin",
-        "source": "r/worldnews"
-      },
-      {
         "title": "Japan to double required period in the country for citizenship",
         "source": "r/japan"
-      },
-      {
-        "title": "Hanwha Ocean shares jump 10% after Trump says South Korean firm to build warships for U.S. Navy",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Putin effectively chose Witkoff as US negotiator with Russia, – WSJ",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Trump’s Trade Wars Are Crushing America’s Bourbon Industry",
-        "source": "r/economy"
-      },
-      {
-        "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1398, Part 1 (Thread )",
-        "source": "r/worldnews"
       },
       {
         "title": "A WSB Christmas Story",
@@ -595,20 +500,8 @@
         "source": "r/stocks"
       },
       {
-        "title": "You cannot annex other countries, Danish and Greenlandic leaders tell Trump",
-        "source": "r/worldnews"
-      },
-      {
         "title": "From caviar to foie gras — China is becoming a luxury food powerhouse",
         "source": "r/China"
-      },
-      {
-        "title": "A middle-class family’s only option: A $43,000 health insurance premium",
-        "source": "r/economy"
-      },
-      {
-        "title": "Russia and China pledge support for Venezuela as Trump ratchets up pressure on Maduro",
-        "source": "r/worldnews"
       },
       {
         "title": "Always regret I didn't buy more back then",
@@ -631,32 +524,8 @@
         "source": "r/geopolitics"
       },
       {
-        "title": "Economics beat morals in Trump’s new world, Romanian president says",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Walmart 14kt Gold Cheat Sheet with Images, Getting the Best Value for Your Money",
-        "source": "r/Gold"
-      },
-      {
-        "title": "Christmas gift to myself from the business!",
-        "source": "r/Gold"
-      },
-      {
-        "title": "US President says US needs Greenland after naming special envoy",
-        "source": "r/europe"
-      },
-      {
         "title": "Novo Nordisk A/S: Wegovy® pill approved in the US as first oral GLP-1 for weight management",
         "source": "r/stocks"
-      },
-      {
-        "title": "China quietly loads 100+ ICBMs into new missile silos near Mongolia: report",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Boiling lobsters alive to be banned in UK animal cruelty crackdown",
-        "source": "r/worldnews"
       },
       {
         "title": "NVO received approval for oral Wegovy",

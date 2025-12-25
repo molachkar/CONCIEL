@@ -1,6 +1,6 @@
 {
   "date": "2025-12-17",
-  "snapshot_generated_at": "2025-12-24T21:59:22.071100",
+  "snapshot_generated_at": "2025-12-25T20:45:21.371632",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4302.52,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 71.91,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4096.39,
-      "XAUUSD_EMA200": 3619.54,
+      "XAUUSD_EMA200": 3620.76,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 61.9,
       "XAUUSD_MACD_SIGNAL": 53.72,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 43.94,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6753.51,
-      "USA500.IDX_EMA200": 6411.11,
+      "USA500.IDX_EMA200": 6412.84,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 16.71,
       "USA500.IDX_MACD_SIGNAL": 26.46,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 32.59,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.83,
-      "DOLLAR.IDX_EMA200": 99.82,
+      "DOLLAR.IDX_EMA200": 99.85,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.34,
       "DOLLAR.IDX_MACD_SIGNAL": -0.17,
@@ -251,10 +251,6 @@
         "source": "r/japan"
       },
       {
-        "title": "US bank regulator says large banks engaged in 'debanking' of disfavored industries | Reuters",
-        "source": "r/economics"
-      },
-      {
         "title": "California judge finds Tesla Autopilot marketing deceptive. DMV gives 90 days to fix claims. 30 day license suspension risk",
         "source": "r/StockMarket"
       },
@@ -265,10 +261,6 @@
       {
         "title": "Tesla stock closes at record as investors rally around Musk's robotaxi hype despite slow EV sales",
         "source": "r/StockMarket"
-      },
-      {
-        "title": "World Inequality Report 2026: Eﬀective income tax rates climb steadily for most of the population but fall sharply for billionaires and centi-millionaires.",
-        "source": "r/economics"
       }
     ]
   }

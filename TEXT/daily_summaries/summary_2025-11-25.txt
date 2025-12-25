@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 19.78, high 20.67, low 19.17, closed at 19.23.
 Gold (XAU/USD): Opened at $4,131.59, high $4,159.05, low $4,109.41, closed at $4,130.51. Daily loss of -1.08 (-0.03%), range 49.64.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 57.02 (neutral). EMA trend: bearish (EMA50: 98.95, EMA200: 100.01). MACD: 0.34, signal: 0.34, histogram: 0.00 (negative). Stochastic: 77.13 (neutral).
-S&P 500: RSI: 53.52 (neutral). EMA trend: bullish (EMA50: 6682.01, EMA200: 6337.66). MACD: -16.55, signal: -4.59, histogram: -11.96 (negative). Stochastic: 50.68 (neutral).
+Dollar Index (DXY): RSI: 57.02 (neutral). EMA trend: bearish (EMA50: 98.95, EMA200: 100.04). MACD: 0.34, signal: 0.34, histogram: 0.00 (negative). Stochastic: 77.13 (neutral).
+S&P 500: RSI: 53.52 (neutral). EMA trend: bullish (EMA50: 6682.02, EMA200: 6339.68). MACD: -16.55, signal: -4.59, histogram: -11.96 (negative). Stochastic: 50.68 (neutral).
 VIX: RSI: 47.71 (neutral). EMA trend: bullish (EMA50: 19.23, EMA200: 18.82). MACD: 0.50, signal: 0.52, histogram: -0.02 (negative). Stochastic: 40.56 (neutral).
-Gold (XAU/USD): RSI: 57.29 (neutral). EMA trend: bullish (EMA50: 3965.75, EMA200: 3512.62). MACD: 31.72, signal: 33.57, histogram: -1.85 (negative). Stochastic: 55.73 (neutral).
+Gold (XAU/USD): RSI: 57.29 (neutral). EMA trend: bullish (EMA50: 3965.75, EMA200: 3514.04). MACD: 31.72, signal: 33.57, histogram: -1.85 (negative). Stochastic: 55.73 (neutral).
 
 ECONOMIC EVENTS:
 At 14:15, USD ADP Employment Change Weekly was released. Actual: -13.50K and falling from previous -2.50K.
@@ -35,16 +35,6 @@ At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -165.
 At 23:30, USD API Weekly Crude Oil Stock was released. Actual: -1.900M and falling from previous 4.400M.
 
 FUNDAMENTALS:
-10-Year Treasury yield: 4.01%. High-yield credit spread: 3.10%. GLD ETF: closed at $380.08, volume 10,462,800. IAU ETF: closed at $77.83, volume 12,677,900.
+10-Year Treasury yield: 4.01%. High-yield credit spread: 3.10%.
 
-NEWS HIGHLIGHTS:
-
-GOLD (1 items):
-  • Better Buy for 2026: An S&P 500 Index Fund, Gold, or Bitcoin? [GLD]
-
-MARKET (1 items):
-  • Is Dow Jones ETF Better-Placed Than S&P 500 & Nasdaq? [DIA]
-
-[Total: 2 news items]
-
-2025-12-24 21:59:22
+2025-12-25 20:45:21

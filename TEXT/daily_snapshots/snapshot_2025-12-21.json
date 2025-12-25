@@ -1,6 +1,6 @@
 {
   "date": "2025-12-21",
-  "snapshot_generated_at": "2025-12-24T21:59:22.076813",
+  "snapshot_generated_at": "2025-12-25T20:45:21.376521",
   "data": {
     "news": [
       {
@@ -71,18 +71,6 @@
         "source": "r/stocks"
       },
       {
-        "title": "Whats the catch? Investing in SPY and forgetting about it for X years",
-        "source": "r/investing"
-      },
-      {
-        "title": "Portfolio recommendations 2026-2030",
-        "source": "r/stocks"
-      },
-      {
-        "title": "Retirement...is it achievable with the cost of living these days? Asking on behalf of someone who will never touch $100k per year with their career. Is investing my only hope to do this?",
-        "source": "r/investing"
-      },
-      {
         "title": "PCT $120k YOLO - I’ve been early before",
         "source": "r/wallstreetbets"
       },
@@ -97,10 +85,6 @@
       {
         "title": "Brazil's Lula warns military action in Venezuela would be 'humanitarian catastrophe'",
         "source": "r/geopolitics"
-      },
-      {
-        "title": "Do you think Alphabet will keep waymo or spin it off?",
-        "source": "r/stocks"
       }
     ]
   }

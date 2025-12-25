@@ -1,6 +1,6 @@
 {
   "date": "2025-12-22",
-  "snapshot_generated_at": "2025-12-24T21:59:22.077634",
+  "snapshot_generated_at": "2025-12-25T20:45:21.377447",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4338.9,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 78.58,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4127.58,
-      "XAUUSD_EMA200": 3641.75,
+      "XAUUSD_EMA200": 3642.93,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 72.65,
       "XAUUSD_MACD_SIGNAL": 60.42,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 57.44,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6761.91,
-      "USA500.IDX_EMA200": 6423.4,
+      "USA500.IDX_EMA200": 6425.07,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 17.17,
       "USA500.IDX_MACD_SIGNAL": 20.52,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 35.77,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.75,
-      "DOLLAR.IDX_EMA200": 99.77,
+      "DOLLAR.IDX_EMA200": 99.8,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.34,
       "DOLLAR.IDX_MACD_SIGNAL": -0.25,
@@ -147,28 +147,12 @@
         "source": "r/wallstreetbets"
       },
       {
-        "title": "Does anyone have actual proof with receipts that they were able to sell their Walmart scores at an actual legitimate gold store?",
-        "source": "r/Gold"
-      },
-      {
         "title": "Larry Ellison backstops $40.4B Paramount bid for Warner Bros. PSKY +4.3%, WBD +3.5%",
         "source": "r/wallstreetbets"
       },
       {
-        "title": "“Nothing sacred for them”: Zelenskyy warns Russia may target Ukraine with massive strike during Christmas holidays",
-        "source": "r/worldnews"
-      },
-      {
         "title": "Ready for the comeback 🥷",
         "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Kremlin denies Reuters report on Putin’s plans to seize former Soviet territories",
-        "source": "r/worldnews"
-      },
-      {
-        "title": "Russia evacuates diplomats' families from Venezuela as US seizes oil tankers",
-        "source": "r/worldnews"
       },
       {
         "title": "What Are Your Moves Tomorrow, December 23, 2025",
@@ -187,24 +171,12 @@
         "source": "r/economics"
       },
       {
-        "title": "UPDATE on Walmart Gold",
-        "source": "r/Gold"
-      },
-      {
-        "title": "China likely loaded more than 100 ICBMs in silo fields, Pentagon report says",
-        "source": "r/worldnews"
-      },
-      {
         "title": "A Pure Gambling Play: LUNR (800% gain so far)",
         "source": "r/wallstreetbets"
       },
       {
         "title": "Is the current market drunk?",
         "source": "r/investing"
-      },
-      {
-        "title": "Mitt Romney says the U.S. is on a cliff—and taxing the rich is now necessary ‘given the magnitude of our national debt’ | Fortune",
-        "source": "r/economy"
       },
       {
         "title": "Sold some TSLA in Nov'25 to buy RKLB - 2nd best invest decision made",
@@ -219,32 +191,12 @@
         "source": "r/wallstreetbets"
       },
       {
-        "title": "Russia Develops Area-Effect Weapon to Destroy Starlink Satellites, Intelligence Warns",
-        "source": "r/worldnews"
-      },
-      {
         "title": "Ex-Saudi intel chief to ToI: Riyadh will consider normalization when Israel acts normally",
         "source": "r/geopolitics"
       },
       {
         "title": "Trump still wants to take over Greenland - and he won't stop there",
         "source": "r/geopolitics"
-      },
-      {
-        "title": "My gran left this when she passed is this real before I try and see if I can get value for it thanks",
-        "source": "r/Gold"
-      },
-      {
-        "title": "\"Thirty years of the administrations of Ronald Reagan and Bush Sr and Clinton and Bush Jr and Obama have done more to confirm Marx's prediction of the rich getting richer and everyone else falling behind than 75 years of the Soviet Union.\"",
-        "source": "r/economy"
-      },
-      {
-        "title": "In a small Texas town, one Bitcoin mining facility uses as much power as the entire city of Austin. Everyone is town is affected by the constant noise from the crypto facility, even the animals. One resident: \"Every person here is sick.\"",
-        "source": "r/economy"
-      },
-      {
-        "title": "‘To make Greenland a part of the U.S.’: Trump appoints new special envoy",
-        "source": "r/worldnews"
       },
       {
         "title": "Larry Ellison offers $40.4 billion guarantee for Warner Bros",
@@ -285,10 +237,6 @@
       {
         "title": "Daily Discussion Thread for December 22, 2025",
         "source": "r/wallstreetbets"
-      },
-      {
-        "title": "Russia sentences 19-year-old woman to nearly three years in a penal colony after poetic anti-war protest",
-        "source": "r/worldnews"
       },
       {
         "title": "I have some photos from the 1980s and 1990s in Chengdu, China. I'd like to share them here and also tell some of my own little stories. Would you like to see them, or is it appropriate to post them here?",

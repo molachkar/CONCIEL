@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 16.83, high 17.02, low 16.72, closed at 16.82.
 Gold (XAU/USD): Opened at $4,446.10, high $4,499.67, low $4,429.98, closed at $4,483.94. Daily gain of +37.84 (+0.85%), range 69.69.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 31.70 (neutral). EMA trend: bearish (EMA50: 98.70, EMA200: 99.75). MACD: -0.38, signal: -0.27, histogram: -0.10 (negative). Stochastic: 23.81 (neutral).
-S&P 500: RSI: 59.60 (neutral). EMA trend: bullish (EMA50: 6767.50, EMA200: 6428.18). MACD: 22.46, signal: 20.91, histogram: 1.55 (positive). Stochastic: 79.87 (neutral).
-VIX: RSI: 42.59 (neutral). EMA trend: bearish (EMA50: 18.26, EMA200: 18.59). MACD: -0.49, signal: -0.50, histogram: 0.00 (negative). Stochastic: 36.71 (neutral).
-Gold (XAU/USD): RSI: 80.68 (overbought). EMA trend: bullish (EMA50: 4141.55, EMA200: 3650.13). MACD: 81.66, signal: 64.67, histogram: 16.99 (positive). Stochastic: 92.03 (exhaustion near highs).
+Dollar Index (DXY): RSI: 31.70 (neutral). EMA trend: bearish (EMA50: 98.70, EMA200: 99.77). MACD: -0.38, signal: -0.27, histogram: -0.10 (negative). Stochastic: 23.81 (neutral).
+S&P 500: RSI: 59.60 (neutral). EMA trend: bullish (EMA50: 6767.50, EMA200: 6429.84). MACD: 22.46, signal: 20.91, histogram: 1.55 (positive). Stochastic: 79.87 (neutral).
+VIX: RSI: 42.59 (neutral). EMA trend: bearish (EMA50: 18.26, EMA200: 18.58). MACD: -0.49, signal: -0.50, histogram: 0.00 (negative). Stochastic: 36.71 (neutral).
+Gold (XAU/USD): RSI: 80.68 (overbought). EMA trend: bullish (EMA50: 4141.55, EMA200: 3651.30). MACD: 81.66, signal: 64.67, histogram: 16.99 (positive). Stochastic: 92.03 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 14:15, USD ADP Employment Change Weekly was released. Actual: 11.50K and falling from previous 17.50K.
@@ -33,7 +33,7 @@ At 21:30, USD CFTC S&P 500 speculative net positions was released. Actual: -166.
 At 22:30, USD API Weekly Crude Oil Stock was released. Actual: 2.400M and rising from previous -9.300M.
 
 FUNDAMENTALS:
-GLD ETF: closed at $413.64, volume 13,193,300. IAU ETF: closed at $84.68, volume 7,327,000.
+High-yield credit spread: 2.83%. GLD ETF: closed at $413.64, volume 13,193,300. IAU ETF: closed at $84.68, volume 7,327,000.
 
 NEWS HIGHLIGHTS:
 
@@ -65,12 +65,9 @@ r/China (3 posts):
   • From caviar to foie gras — China is becoming a luxury food powerhouse
   • China says US broke international law by seizing oil tankers off Venezuela
 
-r/Gold (5 posts):
+r/Gold (2 posts):
   • Gold is up 70% in 2025, its best year since 1979. What’s fueling this explosive move?
   • Does this mean the collapse of the US economy?
-  • Buying gold at middle age
-  • Walmart 14kt Gold Cheat Sheet with Images, Getting the Best Value for Your Money
-  • Christmas gift to myself from the business!
 
 r/StockMarket (2 posts):
   • Citadel to Return $5 Billion of Hedge Fund’s Profits to Clients
@@ -87,36 +84,24 @@ r/economics (9 posts):
   • Enter the 100-month car loan.
   • Most US adults aren't making year-end charitable contributions, new AP-NORC poll finds
 
-r/economy (8 posts):
+r/economy (6 posts):
   • BREAKING: Silver extends gains to a record $71/oz, now up nearly +150% YTD. We are quite literally witnessing one of the most historic runs in precious metals ever.
   • How is GDP up 4.3% when consumer confidence is down for 5th straight month!?
   • 5 million people are in default right now. The Dept of Ed estimates as many as 10 million by end of next year because of job market.
   • CALIFORNIA: “Crops ready to be harvested were abandoned - left to die in a field simply because there wasn’t enough labor… workers are showing up less because of (Trump’s) ICE raids.”
   • 'When we got out of college, we had a job waiting for us': 80-year-old boomer says her generation left behind a different economy for her grandkids
   • When will Gen-Z crack the code on the Fed's fiat currency fraud and the destruction of the 99 percents' standard of living?
-  • Trump’s Trade Wars Are Crushing America’s Bourbon Industry
-  • A middle-class family’s only option: A $43,000 health insurance premium
 
-r/europe (19 posts):
+r/europe (9 posts):
   • Finland: Unemployment climbs to 10.6%, marking bleakest point since 2009
   • After announcing she would be limiting the number of free days off school, Belgian Flemish education minister calls in police on threats from schoolchildren
-  • ‘This is shattering’: Europe reels from US President’s new world order
-  • Poland Seeks G-20 Membership to Give Voice to Eastern Europe
   • Belgium joins South Africa's genocide case against lsrael at ICJ
-  • UK commits to building one new British Navy AUKUS nuclear attack submarine every 18 months
   • EU blocks "Novel Foods" (like lab-grown meat) from new fast-track testing rules, citing "cultural concerns"
-  • NL calls for EU ban on powerful fireworks as explosions continue
   • Japan has agreed to join Horizon Europe, becoming the biggest country yet to associate to the EU's €93.5 billion research and innovation programme.
-  • Military considers permanent bases in Latvia as part of Canada's NATO commitment
   • Heritage Foundation openly calls for the end of the European Union
   • Greta Thunberg arrested under Terrorism Act for Palestine Action sign
   • Russia refuses to hand over consulate building after Poland orders it closed
-  • Trump’s ‘peace plan’ for Ukraine is wicked
-  • Finland Raises Reservist Age To 65 | Yle News
-  • London records fewest homicides this year since records began
-  • Germany and Poland strike tech deal for military satellite system
-  • iOS 26.3 Brings AirPods-Like Pairing to Third-Party Devices in EU Under DMA
-  • US President says US needs Greenland after naming special envoy
+  • Germany’s far-right AfD accused of gathering information for the Kremlin
 
 r/geopolitics (2 posts):
   • Islamic State supporters guilty of planning 'most deadly' gun attack on Jewish targets in Manchester
@@ -129,10 +114,12 @@ r/japan (2 posts):
   • Japan Eyes Plan to Accept Up To 1.23 Mil. Foreign Workers by End of Fiscal 2028
   • Japan to double required period in the country for citizenship
 
-r/stocks (8 posts):
+r/stocks (10 posts):
   • What did you SELL this year?
   • 2026 Strategy: Double down on AI, or is it time to move on?
+  • Micron(MU) up 217% in 2025, is the rally just getting started?
   • This year I realized how little I actually understand about stocks
+  • Oral Wegovy approved. The $100 billion weight loss drug market sees the start of the “pill vs. injection” showdown.
   • GDP surged unexpectedly by 4.3%, marking the fastest growth in two years.
   • Which Robotics Companies currently fly under the radar / are cheap / should be on the watchlist during a markt pullback?
   • I own Rocket Lab, but why is it so hyped on reddit?
@@ -149,36 +136,16 @@ r/wallstreetbets (8 posts):
   • NVO received approval for oral Wegovy
   • FDA approves first GLP-1 pill for obesity from Novo Nordisk : NVO is up +8% after hours
 
-r/worldnews (28 posts):
+r/worldnews (8 posts):
   • China Warns Ukraine Against Sanctioning Chinese Companies Over Alleged Support for Russia
-  • Iranian Navy sends ships to South Africa to participate in BRICS exercises
-  • Gun and protest reforms pass NSW parliament after Bondi terror attack
   • Trump says US will keep or sell oil seized from Venezuela
   • Chernobyl shelter may not withstand second Russian strike, plant director says
   • Signal lost with private jet believed to be carrying Libyan army chief over Ankara: Report
-  • Pakistan bans beggars from foreign travel; 66,000 flyers with suspicious documents stopped at airports this year | Today News
   • Myrnohrad defense holds as Russians are eliminated on approach, military says
-  • Rocket crashes shortly after launch in blow to Brazil’s space ambitions
-  • Canadian economy shrank by 0.3% in October, the biggest slump in almost 3 years
   • Europe stands with Greenland as Trump threat returns
   • Ground drone defends Ukraine’s infantry positions against Russian assaults for 45 days
-  • President Sheinbaum: Mexico Ships Oil to Cuba for Humanitarian Reasons
   • Almost all Russian missiles intercepted by F-16 pilots overnight
-  • Ukrainian partisans set ablaze 2 Russian Su-30 fighter jets in Lipetsk Oblast, HUR says
-  • “These crimes will not go unanswered”: Estonian FM condemns Christmas-period attack on Ukraine
-  • Canadian military considers permanent bases in Latvia as part of Canada's NATO commitment
-  • U.S. military says new strike on alleged drug boat killed 1 'narco-terrorist'
-  • Trump says US needs Greenland after naming special envoy
-  • Germany’s far-right AfD accused of gathering information for the Kremlin
-  • Hanwha Ocean shares jump 10% after Trump says South Korean firm to build warships for U.S. Navy
-  • Putin effectively chose Witkoff as US negotiator with Russia, – WSJ
-  • /r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1398, Part 1 (Thread )
-  • You cannot annex other countries, Danish and Greenlandic leaders tell Trump
-  • Russia and China pledge support for Venezuela as Trump ratchets up pressure on Maduro
-  • Economics beat morals in Trump’s new world, Romanian president says
-  • China quietly loads 100+ ICBMs into new missile silos near Mongolia: report
-  • Boiling lobsters alive to be banned in UK animal cruelty crackdown
 
-[Total: 95 posts tracked]
+[Total: 62 posts tracked]
 
-2025-12-24 21:59:22
+2025-12-25 20:45:21

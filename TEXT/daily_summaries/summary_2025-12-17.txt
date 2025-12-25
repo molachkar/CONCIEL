@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 18.48, high 18.78, low 18.12, closed at 18.63.
 Gold (XAU/USD): Opened at $4,302.52, high $4,348.68, low $4,300.85, closed at $4,337.34. Daily gain of +34.82 (+0.81%), range 47.83.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 32.59 (neutral). EMA trend: bearish (EMA50: 98.83, EMA200: 99.82). MACD: -0.34, signal: -0.17, histogram: -0.17 (negative). Stochastic: 14.65 (exhaustion near lows).
-S&P 500: RSI: 43.94 (neutral). EMA trend: bullish (EMA50: 6753.51, EMA200: 6411.11). MACD: 16.71, signal: 26.46, histogram: -9.75 (negative). Stochastic: 23.61 (neutral).
+Dollar Index (DXY): RSI: 32.59 (neutral). EMA trend: bearish (EMA50: 98.83, EMA200: 99.85). MACD: -0.34, signal: -0.17, histogram: -0.17 (negative). Stochastic: 14.65 (exhaustion near lows).
+S&P 500: RSI: 43.94 (neutral). EMA trend: bullish (EMA50: 6753.51, EMA200: 6412.84). MACD: 16.71, signal: 26.46, histogram: -9.75 (negative). Stochastic: 23.61 (neutral).
 VIX: RSI: 52.63 (neutral). EMA trend: bearish (EMA50: 18.43, EMA200: 18.64). MACD: -0.50, signal: -0.55, histogram: 0.05 (positive). Stochastic: 66.43 (neutral).
-Gold (XAU/USD): RSI: 71.91 (overbought). EMA trend: bullish (EMA50: 4096.39, EMA200: 3619.54). MACD: 61.90, signal: 53.72, histogram: 8.18 (positive). Stochastic: 81.73 (exhaustion near highs).
+Gold (XAU/USD): RSI: 71.91 (overbought). EMA trend: bullish (EMA50: 4096.39, EMA200: 3620.76). MACD: 61.90, signal: 53.72, histogram: 8.18 (positive). Stochastic: 81.73 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 16:30, USD Crude Oil Inventories was released. Actual: -1.274M, beating forecast of -2.400M and rising from previous -1.812M.
@@ -55,13 +55,11 @@ r/StockMarket (6 posts):
   • California judge finds Tesla Autopilot marketing deceptive. DMV gives 90 days to fix claims. 30 day license suspension risk
   • Tesla stock closes at record as investors rally around Musk's robotaxi hype despite slow EV sales
 
-r/economics (6 posts):
+r/economics (4 posts):
   • Job Growth This Year Paints a Grim Picture of Trump’s Economy
   • "We Are Not as Wealthy as We Thought We Were": Elevated American Household Net Worth Reflects Poverty, Not Wealth
   • Gen Zers are defiantly ‘giving up’ on ever owning a home and are spending more than saving, working less, and making risky investments, study shows
   • Trump promised a blue-collar jobs boom. The opposite is happening
-  • US bank regulator says large banks engaged in 'debanking' of disfavored industries | Reuters
-  • World Inequality Report 2026: Eﬀective income tax rates climb steadily for most of the population but fall sharply for billionaires and centi-millionaires.
 
 r/geopolitics (4 posts):
   • Report: Israel, Greece and Cyprus eye joint rapid-response force in eastern Mediterranean
@@ -80,6 +78,6 @@ r/oil (3 posts):
   • US oil industry doesn’t see profit in Trump’s “pro-petroleum” moves
   • Can you guess the country in red just by analysing the chart?
 
-[Total: 23 posts tracked]
+[Total: 21 posts tracked]
 
-2025-12-24 21:59:22
+2025-12-25 20:45:21

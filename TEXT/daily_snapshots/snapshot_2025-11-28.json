@@ -1,6 +1,6 @@
 {
   "date": "2025-11-28",
-  "snapshot_generated_at": "2025-12-24T21:59:22.049841",
+  "snapshot_generated_at": "2025-12-25T20:45:21.351547",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4156.82,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 64.59,
       "XAUUSD_RSI_STATUS": "Neutral",
       "XAUUSD_EMA50": 3990.47,
-      "XAUUSD_EMA200": 3532.45,
+      "XAUUSD_EMA200": 3533.83,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 44.02,
       "XAUUSD_MACD_SIGNAL": 36.4,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 58.5,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6698.18,
-      "USA500.IDX_EMA200": 6352.05,
+      "USA500.IDX_EMA200": 6354.01,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 10.21,
       "USA500.IDX_MACD_SIGNAL": -0.87,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 50.77,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 99.01,
-      "DOLLAR.IDX_EMA200": 99.99,
+      "DOLLAR.IDX_EMA200": 100.02,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": 0.22,
       "DOLLAR.IDX_MACD_SIGNAL": 0.3,

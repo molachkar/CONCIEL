@@ -1,6 +1,6 @@
 {
   "date": "2025-12-18",
-  "snapshot_generated_at": "2025-12-24T21:59:22.072563",
+  "snapshot_generated_at": "2025-12-25T20:45:21.372933",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4339.71,
@@ -24,7 +24,7 @@
       "XAUUSD_RSI": 70.5,
       "XAUUSD_RSI_STATUS": "Overbought",
       "XAUUSD_EMA50": 4105.57,
-      "XAUUSD_EMA200": 3626.62,
+      "XAUUSD_EMA200": 3627.82,
       "XAUUSD_EMA_TREND": "Bullish",
       "XAUUSD_MACD": 63.29,
       "XAUUSD_MACD_SIGNAL": 55.63,
@@ -35,7 +35,7 @@
       "USA500.IDX_RSI": 46.91,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6754.01,
-      "USA500.IDX_EMA200": 6414.65,
+      "USA500.IDX_EMA200": 6416.36,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 11.55,
       "USA500.IDX_MACD_SIGNAL": 23.48,
@@ -46,7 +46,7 @@
       "VOL.IDX_RSI": 49.89,
       "VOL.IDX_RSI_STATUS": "Neutral",
       "VOL.IDX_EMA50": 18.42,
-      "VOL.IDX_EMA200": 18.64,
+      "VOL.IDX_EMA200": 18.63,
       "VOL.IDX_EMA_TREND": "Bearish",
       "VOL.IDX_MACD": -0.43,
       "VOL.IDX_MACD_SIGNAL": -0.53,
@@ -57,7 +57,7 @@
       "DOLLAR.IDX_RSI": 35.62,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.8,
-      "DOLLAR.IDX_EMA200": 99.8,
+      "DOLLAR.IDX_EMA200": 99.83,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.34,
       "DOLLAR.IDX_MACD_SIGNAL": -0.2,
@@ -232,10 +232,6 @@
       {
         "title": "Trump Media is merging with fusion power company TAE Technologies in $6B deal",
         "source": "r/StockMarket"
-      },
-      {
-        "title": "Sold a house got to a million and lost it all, now I owe the IRS 179k and I owe creditors 100k do not do options if you adhd",
-        "source": "r/wallstreetbets"
       },
       {
         "title": "'Money today or blood tomorrow': The stark choice Europe faces over Russian assets",

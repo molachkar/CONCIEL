@@ -1,12 +1,12 @@
 {
   "date": "2025-12-24",
-  "snapshot_generated_at": "2025-12-24T21:59:22.081946",
+  "snapshot_generated_at": "2025-12-25T20:45:21.381190",
   "data": {
     "market_data": {
       "XAUUSD_OPEN": 4486.3,
       "XAUUSD_HIGH": 4525.77,
       "XAUUSD_LOW": 4447.9,
-      "XAUUSD_CLOSE": 4478.3,
+      "XAUUSD_CLOSE": 4478.77,
       "XAUUSD_30D_HIGH": 4525.77,
       "XAUUSD_30D_HIGH_DATE": "2025-12-24 00:00:00",
       "XAUUSD_30D_LOW": 3997.66,
@@ -37,21 +37,21 @@
       "DOLLAR.IDX_30D_LOW_DATE": "2025-12-24 00:00:00"
     },
     "technicals": {
-      "XAUUSD_RSI": 79.53,
+      "XAUUSD_RSI": 79.62,
       "XAUUSD_RSI_STATUS": "Overbought",
-      "XAUUSD_EMA50": 4154.76,
-      "XAUUSD_EMA200": 3658.37,
+      "XAUUSD_EMA50": 4154.78,
+      "XAUUSD_EMA200": 3659.53,
       "XAUUSD_EMA_TREND": "Bullish",
-      "XAUUSD_MACD": 87.33,
-      "XAUUSD_MACD_SIGNAL": 69.2,
-      "XAUUSD_MACD_HIST": 18.13,
-      "XAUUSD_STOCH_K": 86.66,
-      "XAUUSD_STOCH_D": 93.23,
+      "XAUUSD_MACD": 87.37,
+      "XAUUSD_MACD_SIGNAL": 69.21,
+      "XAUUSD_MACD_HIST": 18.16,
+      "XAUUSD_STOCH_K": 86.8,
+      "XAUUSD_STOCH_D": 93.28,
       "XAUUSD_STOCH_STATUS": "Exhaustion Near Highs",
       "USA500.IDX_RSI": 61.55,
       "USA500.IDX_RSI_STATUS": "Neutral",
       "USA500.IDX_EMA50": 6773.83,
-      "USA500.IDX_EMA200": 6433.16,
+      "USA500.IDX_EMA200": 6434.81,
       "USA500.IDX_EMA_TREND": "Bullish",
       "USA500.IDX_MACD": 28.32,
       "USA500.IDX_MACD_SIGNAL": 22.39,
@@ -73,7 +73,7 @@
       "DOLLAR.IDX_RSI": 33.07,
       "DOLLAR.IDX_RSI_STATUS": "Neutral",
       "DOLLAR.IDX_EMA50": 98.66,
-      "DOLLAR.IDX_EMA200": 99.73,
+      "DOLLAR.IDX_EMA200": 99.75,
       "DOLLAR.IDX_EMA_TREND": "Bearish",
       "DOLLAR.IDX_MACD": -0.4,
       "DOLLAR.IDX_MACD_SIGNAL": -0.3,
@@ -84,9 +84,9 @@
     },
     "fundamentals": {
       "GLD_CLOSE": 411.93,
-      "GLD_VOLUME": 6664181,
+      "GLD_VOLUME": 6718400,
       "IAU_CLOSE": 84.34,
-      "IAU_VOLUME": 6408363
+      "IAU_VOLUME": 6549300
     },
     "economic_events": [
       {
@@ -148,15 +148,123 @@
         "ticker": "GLD"
       },
       {
+        "category": "market",
+        "title": "Top-Performing International ETFs of 2025",
+        "ticker": "SPY"
+      },
+      {
+        "category": "dollar",
+        "title": "Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs",
+        "ticker": "UUP"
+      },
+      {
         "category": "gold",
         "title": "Forget the Bond Vigilantes. It's the Gold Vigilantes You Need to Worry About.",
         "ticker": "GLD"
+      },
+      {
+        "category": "gold",
+        "title": "ETF trends to watch in 2026 for active managed & derivative funds",
+        "ticker": "GLD"
+      },
+      {
+        "category": "market",
+        "title": "Stocks End Mildly Higher as Bullish Sentiment Continues",
+        "ticker": "SPY"
       }
     ],
     "reddit": [
       {
+        "title": "Venezuela targets US tanker seizure supporters with new 'anti-piracy' law",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "White House orders military to focus on 'quarantine' of Venezuela oil",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Propaganda Over Policy",
+        "source": "r/economy"
+      },
+      {
+        "title": "How did WSB's stock picks of 2025 perform?",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Police arrest man accused of celebrating Bondi Beach shooting, discover ammunition cache",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "US watchdog says F-35s flew half the time in 2024 due to Lockheed maintenance issues",
+        "source": "r/europe"
+      },
+      {
+        "title": "Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record",
+        "source": "r/StockMarket"
+      },
+      {
+        "title": "Nvidia to buy AI chip startup Groq for $20 billion in cash",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Korea's childbirths rise for 16th consecutive month in October: data",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Exclusive: Nvidia buying AI chip startup Groq for about $20 billion in its largest acquisition on record",
+        "source": "r/investing"
+      },
+      {
+        "title": "Huge 100-tonne fatberg found in London sewers",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Zelenskyy says Ukraine will not abandon its bid to join NATO",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "UK, Canada and Germany condemn Israel for 19 new West Bank settlements",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Whoever Trump Picks, the Next Fed Chair Won’t Be Independent",
+        "source": "r/economics"
+      },
+      {
+        "title": "The Great Decoupling: Why America’s economy is booming without jobs",
+        "source": "r/economy"
+      },
+      {
+        "title": "Europe slams visa bans after US takes fresh swing at allies over 'censorship'",
+        "source": "r/europe"
+      },
+      {
+        "title": "Merry Christmas Everyone (Realized +$33,000 USD)",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "Best Day of the Year is coming Friday Dec 26",
+        "source": "r/stocks"
+      },
+      {
+        "title": "Chinese Fighter Jet Exports Set To Grow Significantly - The War Zone",
+        "source": "r/China"
+      },
+      {
         "title": "Europe’s largest shipbuilder calls for standardisation of vessel specifications",
         "source": "r/europe"
+      },
+      {
+        "title": "I think I'm done with options",
+        "source": "r/wallstreetbets"
+      },
+      {
+        "title": "14 Countries, including France, Britain, Canada and Japan, Condemn Israel's Expansion Of West Bank Settlements",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Multiple nations issue travel advisory as New Delhi suffers from suffocating smog: 'Extremely high levels'",
+        "source": "r/worldnews"
       },
       {
         "title": "Swedish christmas food - what do you eat in your country today?",
@@ -167,12 +275,24 @@
         "source": "r/worldnews"
       },
       {
+        "title": "My first 2 1/2 months trading spy/qqq options",
+        "source": "r/SPY"
+      },
+      {
         "title": "China may be assisting Russia with satellite imagery. Chinese satellite images coincided with strikes on specific Ukrainian energy facilities, according to Ukrainian President and Head of the Center for Countering Disinformation",
         "source": "r/worldnews"
       },
       {
         "title": "Denmark responds to Trump naming Greenland envoy: ‘Completely unacceptable’",
         "source": "r/worldnews"
+      },
+      {
+        "title": "Bulgarian soldiers from 1st 'Iron' Sofia Infantry Division celebrating Christmas on Macedonian front during WW1",
+        "source": "r/europe"
+      },
+      {
+        "title": "$700 play by New Year’s Eve?",
+        "source": "r/SPY"
       },
       {
         "title": "Russiа’s ruble has surged over 45% against the dollar in 2025, the strongest annual gain since 1994",
@@ -191,8 +311,8 @@
         "source": "r/worldnews"
       },
       {
-        "title": "How long will wallstreet make excuses for Andy Jassy",
-        "source": "r/stocks"
+        "title": "In the Czech republic every christmas they play shrek in one of the tv channels, the tv chanell made it's own dub that was original until shrek 2 released so they had to use different actors for the other dub, the other dub of shrek is on other channels and streaming platforms",
+        "source": "r/europe"
       },
       {
         "title": "Khamenei gives green light to compact nuclear warheads - report",
@@ -203,12 +323,28 @@
         "source": "r/worldnews"
       },
       {
+        "title": "Defaulted Student Loan Borrowers",
+        "source": "r/economy"
+      },
+      {
+        "title": "Zelenskyy: Chinese Satellites Tracked Ukrainian Energy Sites Ahead of Russian Attacks",
+        "source": "r/China"
+      },
+      {
         "title": "Germany slams US ban on German non-profit group supporting victims of hate speech",
         "source": "r/europe"
       },
       {
         "title": "INTC: Intel Stock Falls After Nvidia Backs Out of 18A Chip Deal",
         "source": "r/StockMarket"
+      },
+      {
+        "title": "Japan to test deep-sea extraction of rare-earth mud",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Car Payments Now Average More Than $750 a Month. Enter the 100-Month Car Loan.",
+        "source": "r/economy"
       },
       {
         "title": "On this day, 111 years ago, during World War I, enemy soldiers laid down their weapons, shared food and songs, and reminded the world of our shared humanity - the Christmas Truce of 1914.",
@@ -221,6 +357,18 @@
       {
         "title": "UN experts slam US blockade on Venezuela: Four United Nations rights experts on Wednesday condemned the US partial naval blockade of Venezuela, determining it illegal armed aggression and calling on the US Congress to intervene",
         "source": "r/worldnews"
+      },
+      {
+        "title": "Ukraine on track to receive total of 3 million FPV drones in 2025, defense minister says",
+        "source": "r/worldnews"
+      },
+      {
+        "title": "Turkish cargo ship carrying goods from Ukraine to Turkey hit in Black Sea, marking the 4th Turkish vessel hit in last 10 days",
+        "source": "r/europe"
+      },
+      {
+        "title": "Americans should focus on blue collar jobs: White House",
+        "source": "r/economy"
       },
       {
         "title": "Macron and the European Union Accuse the United States of Intimidation Over Visa Sanctions Targeting Supporters of Digital Regulation. Brussels Says It Is Defending Its Sovereign Right to Set Rules for Online Platforms",
@@ -239,8 +387,20 @@
         "source": "r/geopolitics"
       },
       {
+        "title": "EU spending on US oil and gas fell 7 percent over the past four months",
+        "source": "r/europe"
+      },
+      {
         "title": "The United States Imposes Visa Sanctions on European Regulators and Activists, Accusing Them of Censorship. The European Union Calls the Measures Interference and Defends Its Right to Regulate the Digital Space Independently",
         "source": "r/europe"
+      },
+      {
+        "title": "Apples, Italy becomes the world's leading exporter",
+        "source": "r/europe"
+      },
+      {
+        "title": "Trump turns government into giant debt collector with threat to garnish wages on millions of Americans in default on student loans",
+        "source": "r/economy"
       },
       {
         "title": "All I Want for Christmas is EU",
@@ -275,10 +435,6 @@
         "source": "r/europe"
       },
       {
-        "title": "full collection : gold 1.438 kg 22kt jewels + 300 gms gold bars 24 kt + over 16kg of silver 999 , its 8+ yrs of hardwork . got motivated with other fellow stackers after seeing their stack.",
-        "source": "r/Gold"
-      },
-      {
         "title": "Daily Discussion Thread for December 24, 2025",
         "source": "r/wallstreetbets"
       },
@@ -301,6 +457,10 @@
       {
         "title": "Germany’s export model hit from both sides as US and China demand slumps",
         "source": "r/europe"
+      },
+      {
+        "title": "US bans new foreign drone models in a blow to Chinese giant DJI",
+        "source": "r/China"
       },
       {
         "title": "Zelensky reveals full 20-point peace plan draft backed by Ukraine, US",
@@ -369,6 +529,10 @@
       {
         "title": "Billionaire Mark Cuban Wants U.S. Healthcare To Go Back To 1955. Doctors Provide Care, Patients Get A Bill —'And If They Can Afford It, They Pay'.",
         "source": "r/economy"
+      },
+      {
+        "title": "Which sectors do you plan to buy in in 2026? which sectors did you sell in 2025?",
+        "source": "r/stocks"
       },
       {
         "title": "Never seen out of money assignment, which one of your regard exercise this.",
@@ -456,7 +620,7 @@
       },
       {
         "title": "US Sanctions Former EU Official, Others in New Swipe at Europe",
-        "source": "r/worldnews"
+        "source": "r/europe"
       }
     ]
   }

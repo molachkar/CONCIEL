@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 17.13, high 17.18, low 16.72, closed at 16.77.
 Gold (XAU/USD): Opened at $4,338.90, high $4,448.94, low $4,336.64, closed at $4,442.81. Daily gain of +103.91 (+2.39%), range 112.30.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 35.77 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.77). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 32.23 (neutral).
-S&P 500: RSI: 57.44 (neutral). EMA trend: bullish (EMA50: 6761.91, EMA200: 6423.40). MACD: 17.17, signal: 20.52, histogram: -3.35 (negative). Stochastic: 56.15 (neutral).
+Dollar Index (DXY): RSI: 35.77 (neutral). EMA trend: bearish (EMA50: 98.75, EMA200: 99.80). MACD: -0.34, signal: -0.25, histogram: -0.09 (negative). Stochastic: 32.23 (neutral).
+S&P 500: RSI: 57.44 (neutral). EMA trend: bullish (EMA50: 6761.91, EMA200: 6425.07). MACD: 17.17, signal: 20.52, histogram: -3.35 (negative). Stochastic: 56.15 (neutral).
 VIX: RSI: 42.24 (neutral). EMA trend: bearish (EMA50: 18.32, EMA200: 18.60). MACD: -0.47, signal: -0.50, histogram: 0.03 (positive). Stochastic: 52.03 (neutral).
-Gold (XAU/USD): RSI: 78.58 (overbought). EMA trend: bullish (EMA50: 4127.58, EMA200: 3641.75). MACD: 72.65, signal: 60.42, histogram: 12.23 (positive). Stochastic: 86.70 (exhaustion near highs).
+Gold (XAU/USD): RSI: 78.58 (overbought). EMA trend: bullish (EMA50: 4127.58, EMA200: 3642.93). MACD: 72.65, signal: 60.42, histogram: 12.23 (positive). Stochastic: 86.70 (exhaustion near highs).
 
 ECONOMIC EVENTS:
 At 19:00, USD 2-Year Note Auction was released. Actual: 3.499% and rising from previous 3.489%.
@@ -42,11 +42,6 @@ r/China (2 posts):
   • I have some photos from the 1980s and 1990s in Chengdu, China. I'd like to share them here and also tell some of my own little stories. Would you like to see them, or is it appropriate to post them here?
   • Algerian asking for advice about Chinese citizenship and life
 
-r/Gold (3 posts):
-  • Does anyone have actual proof with receipts that they were able to sell their Walmart scores at an actual legitimate gold store?
-  • UPDATE on Walmart Gold
-  • My gran left this when she passed is this real before I try and see if I can get value for it thanks
-
 r/SPY (1 posts):
   • Pre holiday gains. +5.3k
 
@@ -64,11 +59,8 @@ r/economics (6 posts):
   • Gold and Silver Hit Record Highs Amid Escalation Risks Around Venezuela and Expectations of U.S. Rate Cuts. Investors Turn to Precious Metals as a Hedge Against Geopolitical and Currency Risks
   • Voters in Hamburg have rejected universal basic income. Many economists would agree with them
 
-r/economy (4 posts):
+r/economy (1 posts):
   • This is what oligarchy looks like.
-  • Mitt Romney says the U.S. is on a cliff—and taxing the rich is now necessary ‘given the magnitude of our national debt’ | Fortune
-  • "Thirty years of the administrations of Ronald Reagan and Bush Sr and Clinton and Bush Jr and Obama have done more to confirm Marx's prediction of the rich getting richer and everyone else falling behind than 75 years of the Soviet Union."
-  • In a small Texas town, one Bitcoin mining facility uses as much power as the entire city of Austin. Everyone is town is affected by the constant noise from the crypto facility, even the animals. One resident: "Every person here is sick."
 
 r/geopolitics (3 posts):
   • Ex-Saudi intel chief to ToI: Riyadh will consider normalization when Israel acts normally
@@ -105,15 +97,6 @@ r/wallstreetbets (15 posts):
   • Key data for the coming week
   • Dark Horse Picks for 2026
 
-r/worldnews (7 posts):
-  • “Nothing sacred for them”: Zelenskyy warns Russia may target Ukraine with massive strike during Christmas holidays
-  • Kremlin denies Reuters report on Putin’s plans to seize former Soviet territories
-  • Russia evacuates diplomats' families from Venezuela as US seizes oil tankers
-  • China likely loaded more than 100 ICBMs in silo fields, Pentagon report says
-  • Russia Develops Area-Effect Weapon to Destroy Starlink Satellites, Intelligence Warns
-  • ‘To make Greenland a part of the U.S.’: Trump appoints new special envoy
-  • Russia sentences 19-year-old woman to nearly three years in a penal colony after poetic anti-war protest
+[Total: 39 posts tracked]
 
-[Total: 52 posts tracked]
-
-2025-12-24 21:59:22
+2025-12-25 20:45:21

@@ -1,27 +1,15 @@
 {
-  "fetch_time": "2025-12-24T21:57:49.596601",
+  "fetch_time": "2025-12-25T20:43:45.282845",
   "source": "FinViz",
   "period": "Last 30 days",
-  "total_articles": 208,
+  "total_articles": 207,
   "by_category": {
+    "market": 164,
     "gold": 37,
-    "market": 166,
-    "dollar": 3,
+    "dollar": 4,
     "volatility": 2
   },
   "headlines": [
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Better Buy for 2026: An S&P 500 Index Fund, Gold, or Bitcoin?",
-      "time": "2025-11-25T04:50:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Is Dow Jones ETF Better-Placed Than S&P 500 & Nasdaq?",
-      "time": "2025-11-25T06:00:00"
-    },
     {
       "category": "market",
       "ticker": "IWM",
@@ -103,24 +91,6 @@
     {
       "category": "market",
       "ticker": "SPY",
-      "title": "Stock Market Today: Dow Rises On Surprise Jobs Data; Nvidia Extends Gains (Live Coverage)",
-      "time": "2025-12-03T09:05:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Edges Up On Jobs Data; Microsoft Sells Off On AI News (Live Coverage)",
-      "time": "2025-12-03T09:41:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "This tech maven bashes nuclear stocks and shares the real way to play AI's energy boom",
-      "time": "2025-12-03T12:35:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
       "title": "Stock Market Today: Dow Rises On Surprise Jobless Claims; Snowflake Plunges On Earnings (Live Coverage)",
       "time": "2025-12-04T09:22:00"
     },
@@ -189,12 +159,6 @@
       "ticker": "SPY",
       "title": "Capturing AI Gains Without Overexposure: ETFs to Consider",
       "time": "2025-12-05T10:02:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Why has Invesco's QQQ called me two dozen times in the past few weeks? Is it a scam?",
-      "time": "2025-12-05T12:34:00"
     },
     {
       "category": "market",
@@ -1253,10 +1217,40 @@
       "time": "2025-12-24T11:00:00"
     },
     {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Top-Performing International ETFs of 2025",
+      "time": "2025-12-24T11:00:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs",
+      "time": "2025-12-24T11:00:00"
+    },
+    {
       "category": "gold",
       "ticker": "GLD",
       "title": "Forget the Bond Vigilantes. It's the Gold Vigilantes You Need to Worry About.",
       "time": "2025-12-24T11:41:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "ETF trends to watch in 2026 for active managed & derivative funds",
+      "time": "2025-12-24T11:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks End Mildly Higher as Bullish Sentiment Continues",
+      "time": "2025-12-24T14:23:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "GDP 'Nowhere Near' 4.3%: Rosenberg Dismisses Q3 Report As 'Fugazi,' Pegs Real Growth At 0.8%",
+      "time": "2025-12-25T07:30:00"
     }
   ]
 }

@@ -7,10 +7,10 @@ VIX (Volatility Index): Opened at 17.43, high 17.68, low 17.22, closed at 17.63.
 Gold (XAU/USD): Opened at $4,189.70, high $4,221.35, low $4,169.85, closed at $4,207.07. Daily gain of +17.37 (+0.41%), range 51.50.
 
 TECHNICAL INDICATORS:
-Dollar Index (DXY): RSI: 48.08 (neutral). EMA trend: bearish (EMA50: 99.03, EMA200: 99.93). MACD: -0.02, signal: 0.09, histogram: -0.11 (negative). Stochastic: 22.18 (neutral).
-S&P 500: RSI: 56.20 (neutral). EMA trend: bullish (EMA50: 6733.92, EMA200: 6385.31). MACD: 32.24, signal: 22.33, histogram: 9.91 (positive). Stochastic: 88.68 (exhaustion near highs).
+Dollar Index (DXY): RSI: 48.08 (neutral). EMA trend: bearish (EMA50: 99.03, EMA200: 99.96). MACD: -0.02, signal: 0.09, histogram: -0.11 (negative). Stochastic: 22.18 (neutral).
+S&P 500: RSI: 56.20 (neutral). EMA trend: bullish (EMA50: 6733.92, EMA200: 6387.14). MACD: 32.24, signal: 22.33, histogram: 9.91 (positive). Stochastic: 88.68 (exhaustion near highs).
 VIX: RSI: 42.51 (neutral). EMA trend: bullish (EMA50: 18.78, EMA200: 18.73). MACD: -0.53, signal: -0.25, histogram: -0.28 (negative). Stochastic: 4.32 (exhaustion near lows).
-Gold (XAU/USD): RSI: 60.48 (neutral). EMA trend: bullish (EMA50: 4042.94, EMA200: 3577.97). MACD: 45.82, signal: 45.71, histogram: 0.11 (positive). Stochastic: 73.50 (neutral).
+Gold (XAU/USD): RSI: 60.48 (neutral). EMA trend: bullish (EMA50: 4042.94, EMA200: 3579.26). MACD: 45.82, signal: 45.71, histogram: 0.11 (positive). Stochastic: 73.50 (neutral).
 
 ECONOMIC EVENTS:
 At 14:15, USD ADP Employment Change Weekly was released. Actual: 4.75K and rising from previous -13.50K.
@@ -54,4 +54,4 @@ r/oil (1 posts):
 
 [Total: 3 posts tracked]
 
-2025-12-24 21:59:22
+2025-12-25 20:45:21

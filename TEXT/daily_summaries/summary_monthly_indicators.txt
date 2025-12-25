@@ -1,4 +1,4 @@
-December 24, 2025
+December 25, 2025
 
 INFLATION INDICATORS:
 Consumer Price Index (CPI) stood at 325.03 in November 2025. Personal Consumption Expenditures (PCE) was 127.62 in September 2025. Producer Price Index (PPI) was 262.34 in September 2025.
@@ -12,4 +12,4 @@ Federal Funds Rate was 3.88% as of November 2025. Rate moved down 0.34 percentag
 ECONOMIC ACTIVITY:
 Retail sales totaled $732,633 million. Industrial production index was 101.79.
 
-2025-12-24 21:59:22
+2025-12-25 20:45:21
