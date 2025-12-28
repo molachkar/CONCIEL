@@ -39,3 +39,261 @@ and predictions
 ok now that i have five different bots, one collect fundamentals, one collects economic calender, on for market data and calculating techincals, one for news sentiment and one for social media sentiment, i need a main that run them all at ones
 08.01/09.01/10.01/10.21/22/23/24/26/27/28/29/30/31/01/02/03/04/05/06/07/08/09/10/
 11/12/13/14/15/16/17/18/19/20.
+
+
+
+DeepSeek-R1-0528 /DeepSeek-R1-Distill-Llama-70B/Qwen3-32B = outputes reasoning alnog side the answer and the answer not complete token i guess
+DeepSeek-V3.1/DeepSeek-V3.1-Terminus/gpt-oss-120b/Meta-Llama-3.3-70B-Instruct/DeepSeek-V3-0324/Llama-3.3-Swallow-70B-Instruct-v0.4 = working.
+
+
+qwen-3-235b-a22b-instruct-2507 (Cerebras)
+llama-3.3-70b (Cerebras)
+gemini-2.5-flash (Gemini)
+DeepSeek-V3.1 (SambaNova)
+DeepSeek-V3.1-Terminus (SambaNova)
+gpt-oss-120b (SambaNova)
+Meta-Llama-3.3-70B-Instruct (SambaNova)
+DeepSeek-V3-0324 (SambaNova)
+Llama-3.3-Swallow-70B-Instruct-v0.4 (SambaNova)
+
+
+Model 1 (Qwen-235B):        → Regime probability calculation
+Model 2 (Gemini):           → Technical pattern recognition  
+Model 3 (Llama-3.3-70B):    → Volume/momentum analysis
+Model 4 (DeepSeek-V3.1):    → Macro force weighting
+Model 5 (Meta-Llama-3.3):   → Support/resistance mapping
+Model 6 (Terminus):         → Risk factor identification
+Model 7 (gpt-oss-120b):     → Correlation analysis (DXY/Gold)
+Model 8 (DeepSeek-V3-0324): → Trend strength validation
+Model 9 (Llama-Swallow):    → Sentiment/positioning analysis
+
+
+ALL 9 models receive:
+- Regime probability: 0.78 (bullish)
+- Pattern: ascending triangle breakout
+- Volume: declining on pullbacks (bullish)
+- Macro weighting: Fed dovish (0.8), DXY weak (0.7)
+- S/R: 4450 resistance, 4350 support
+- Risks: overbought RSI, geopolitical tail risk
+- Correlation: inverse DXY strong (-0.85)
+- Trend: strong uptrend (ADX 34)
+- Sentiment: net long positioning high
+
+NOW vote: BUY/SELL/NO_TRADE + propose levels
+
+
+=== ROUND 0 INTELLIGENCE ===
+
+[REGIME_PROBABILITY] Model: Qwen-235B
+Status: BULLISH | Confidence: 0.78 | Timeframe: 2-4 weeks
+Key Drivers: Fed_dovish(0.8), DXY_weak(0.7), Real_rates_low(0.6)
+Invalidation: DXY>98.5 OR VIX>25 OR Fed_hawkish_pivot
+
+[TECHNICAL_PATTERN] Model: Gemini-2.5
+Pattern: Ascending_triangle_breakout | Completion: 95%
+Trigger: Break above 4450 | Target: 4650 | Invalidation: Break below 4350
+Quality: High (volume confirmation, EMA alignment)
+
+[VOLUME_MOMENTUM] Model: Llama-3.3-70B
+Trend: BULLISH | Strength: 8/10
+Volume: Declining on pullbacks (bullish), surging on rallies
+Momentum: ADX=34.74 (strong), MACD bullish crossover, RSI=79.53 (overbought warning)
+
+[MACRO_FORCE_WEIGHTING] Model: DeepSeek-V3.1
+Force_1: Fed_easing (weight=0.85, duration=3-6mo, impact=direct)
+Force_2: DXY_weakness (weight=0.75, duration=1-3mo, impact=inverse_correlation)
+Force_3: Geopolitical_risk (weight=0.40, duration=unknown, impact=safe_haven_bid)
+Net_bullish_weight: 0.67
+
+[SUPPORT_RESISTANCE] Model: Meta-Llama-3.3-70B
+Primary_resistance: 4500 (tested 2x, weak), 4550 (untested, major)
+Primary_support: 4350 (strong, tested 3x), 4250 (EMA50 confluence)
+Current: 4478 | Distance_to_R: +22 | Distance_to_S: -128
+
+[RISK_FACTORS] Model: DeepSeek-Terminus
+Risk_1: Overbought_RSI (severity=medium, probability=0.7, impact=pullback to 4350)
+Risk_2: Geopolitical_shock (severity=high, probability=0.15, impact=spike to 4600+)
+Risk_3: Fed_hawkish_surprise (severity=high, probability=0.05, impact=crash to 4200)
+Net_risk_score: 0.32 (acceptable)
+
+[CORRELATION_ANALYSIS] Model: gpt-oss-120b
+DXY_Gold: -0.85 (strong inverse, 30d window)
+VIX_Gold: +0.42 (moderate positive)
+SPX_Gold: -0.31 (weak inverse)
+Implication: Gold moving on dollar weakness primarily, not risk-off
+
+[TREND_STRENGTH] Model: DeepSeek-V3-0324
+Trend: UPTREND | Phase: Late-stage acceleration
+Strength: ADX=34.74 (very strong), all EMAs aligned bullish
+Sustainability: 6/10 (overbought, but momentum intact)
+Reversal_signal: None (would need close below 4250)
+
+[SENTIMENT_POSITIONING] Model: Llama-Swallow
+Speculative_longs: 234K contracts (elevated but not extreme)
+ETF_flows: GLD/IAU strong inflows (institutional positioning)
+Retail_sentiment: 72% bullish (crowded but not euphoric)
+Contrarian_risk: Medium (some froth, but trend supported)
+
+=== END ROUND 0 ===
+
+
+
+regime generating schema.
+RAW DATA (35-40 days × 5 data types)
+         ↓
+    ┌────┴────┬────────┬────────┬────────┐
+    ↓         ↓        ↓        ↓        ↓
+AGENT 1   AGENT 2  AGENT 3  AGENT 4  AGENT 5
+Economic  Inflation Market   News    Social
+Calendar  Data      Data     Tracking Sentiment
+    ↓         ↓        ↓        ↓        ↓
+JSON-1    JSON-2   JSON-3   JSON-4   JSON-5
+    └────┬────┴────────┴────────┴────────┘
+         ↓
+    AGGREGATOR (1 model)
+         ↓
+  macro_structured.json (master file)
+         ↓
+    OPTIONAL: Narrative generator
+         ↓
+  gold_regime.md (human report)
+macro_structured.json (FOR MODELS - Round 0 input)
+gold_regime.md (FOR HUMANS - optional)
+agent_outputs/ folder with 5 specialist JSONs (for debugging)
+
+
+
+DATA_BOT/
+├── collectors/
+│   ├── economic_calendar.py      # Fetches economic events (35-40 days)
+│   ├── inflation_tracker.py      # Monthly + daily inflation indicators
+│   ├── market_data.py            # XAU/DXY/VIX/SPX OHLC + technicals
+│   ├── news_scraper.py           # Gold/SPX/Dollar/VIX news headlines
+│   └── social_sentiment.py       # Reddit posts (9 subreddits)
+│
+├── raw_output/                   # Saved daily summaries
+│   ├── summary_2025-12-24.txt
+│   ├── summary_2025-12-25.txt
+│   └── ... (35-40 files)
+│
+├── processors/                   # 5 specialist agents
+│   ├── agent_1_economic.py       # Llama-3.3-70B (Cerebras)
+│   ├── agent_2_inflation.py      # DeepSeek-V3.1 (SambaNova)
+│   ├── agent_3_market.py         # Gemini-2.5-Flash
+│   ├── agent_4_news.py           # Meta-Llama-3.3-70B (SambaNova)
+│   └── agent_5_social.py         # Llama-3.3-Swallow (SambaNova)
+│
+├── aggregator/
+│   └── master_synthesizer.py    # Qwen-3-235B (Cerebras)
+│
+├── output/
+│   ├── agent_outputs/           # Intermediate JSONs (debug)
+│   │   ├── economic.json
+│   │   ├── inflation.json
+│   │   ├── market.json
+│   │   ├── news.json
+│   │   └── social.json
+│   ├── macro_structured.json    # Master file (FOR COUNCIL)
+│   └── gold_regime.md           # Human narrative (optional)
+│
+├── schemas/
+│   ├── agent_schemas.json       # Output formats for 5 agents
+│   └── master_schema.json       # Output format for aggregator
+│
+├── config.py                    # API keys, model configs
+├── orchestrator.py              # Main execution flow
+└── validator.py                 # JSON validation + error checking
+
+
+
+
+
+
+COUNCIL_BOT/
+├── models/
+│   ├── cerebras_client.py       # Qwen-235B, Llama-3.3-70B
+│   ├── gemini_client.py         # Gemini-2.5-Flash
+│   ├── sambanova_client.py      # DeepSeek, Meta-Llama, Swallow
+│   └── groq_client.py           # (unused, kept for future)
+│
+├── council/
+│   ├── round_0_specialists.py   # 9 models, 9 single tasks
+│   ├── round_1_direction.py     # All 9 vote BUY/SELL/NO_TRADE
+│   ├── round_2_levels.py        # 7+ propose Entry/SL/TP + Devil challenge
+│   └── round_3_execution.py     # Position sizing + trade management
+│
+├── traders/                     # Model configs + round-specific lenses
+│   ├── macro_quant.py
+│   ├── swing_trader.py
+│   ├── speed_technician.py
+│   ├── market_strategist.py
+│   ├── risk_quant.py
+│   ├── devils_advocate.py
+│   ├── macro_validator.py
+│   ├── alt_technician.py
+│   └── sentiment_analyst.py
+│
+├── data_loaders/
+│   ├── load_macro.py            # Reads macro_structured.json
+│   ├── load_technical.py        # Reads tech.txt (35-day OHLC)
+│   └── validate_inputs.py       # Checks data completeness
+│
+├── prompts/
+│   ├── round_0_tasks.py         # 9 specialist task prompts
+│   ├── round_1_voting.py        # Direction voting prompt
+│   ├── round_2_levels.py        # Level proposal + Devil prompt
+│   └── round_3_execution.py     # Sizing + management prompts
+│
+├── output/
+│   ├── meeting_log.json         # Full conversation traceback
+│   ├── trade_plan.txt           # Final execution plan
+│   └── round_outputs/           # Intermediate results (debug)
+│       ├── round_0.json
+│       ├── round_1.json
+│       ├── round_2.json
+│       └── round_3.json
+│
+├── utils/
+│   ├── parser.py                # Regex extraction (DIRECTION, ENTRY, etc.)
+│   ├── calculator.py            # Kelly, R:R, position sizing math
+│   └── validator.py             # Trade validation rules
+│
+├── config/
+│   ├── traders.json             # 9 model configs (model, provider, weight, lens)
+│   ├── rules.json               # Global rules, round rules, thresholds
+│   └── api_config.json          # API keys, rate limits
+│
+├── main.py                      # Orchestrator (runs all 4 rounds)
+└── README.md                    # Usage instructions
+
+
+
+
+
+┌─────────────────────────────────────────────────────┐
+│              DATA BOT (Runs Daily)                  │
+├─────────────────────────────────────────────────────┤
+│  Collectors → Raw Summaries (35-40 days)           │
+│       ↓                                             │
+│  5 Agents → Specialized JSONs                       │
+│       ↓                                             │
+│  Aggregator → macro_structured.json                 │
+│       ↓                                             │
+│  Optional → gold_regime.md (human)                  │
+└──────────────┬──────────────────────────────────────┘
+               │
+               │ Files ready: macro_structured.json + tech.txt
+               ↓
+┌─────────────────────────────────────────────────────┐
+│           COUNCIL BOT (On Demand)                   │
+├─────────────────────────────────────────────────────┤
+│  Round 0: 9 specialists → Intelligence layer        │
+│       ↓                                             │
+│  Round 1: 9 voters → Direction consensus           │
+│       ↓                                             │
+│  Round 2: 7 proposers + Devil → Levels refined     │
+│       ↓                                             │
+│  Round 3: 9 validators → Execution approved        │
+│       ↓                                             │
+│  OUTPUT: Trade plan + Meeting log                   │
+└─────────────────────────────────────────────────────┘
