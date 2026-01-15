@@ -6,11 +6,7 @@ from datetime import datetime, timedelta
 from urllib.request import urlopen, Request
 import hashlib
 
-SUBREDDITS = [
-    "Gold", "wallstreetbets", "stocks", "investing", "economy", 
-    "StockMarket", "geopolitics", "worldnews", "economics",
-    "China", "europe", "japan", "commodities", "oil", "SPY"
-]
+SUBREDDITS = ["japan", "oil", "geopolitics", "worldnews","economics","europe"]
 
 GOLD_KEYWORDS = [
     "gold", "xau", "precious metal", "bullion", "gold price",

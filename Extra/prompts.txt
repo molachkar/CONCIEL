@@ -20,3 +20,20 @@ Extract and reference SPECIFIC data points including:
 - Percentage changes and rates
 - Specific economic indicators with their readings
 - Concrete market levels and movements
+
+
+
+
+
+prompt for report generating token efficent :
+Generate a token-efficient, signal-only market report for the last 30 days (macro + gold).
+Use structured Markdown with fixed sections only.
+Write in simple, small vocabulary, short lines, many line breaks.
+No narrative, no repetition, no filler, no opinions.
+Encode information as facts, signals, risks, assumptions only.
+Prefer numbers over adjectives, symbols (↑ ↓ →) over words.
+Collapse time into deltas and direction, not daily stories.
+Separate FACT from INTERPRETATION.
+Reddit or social data = sentiment only, never facts.
+Output must be human-readable and LLM-parsable.
+Do not explain the format. Do not add conclusions outside the structure.
