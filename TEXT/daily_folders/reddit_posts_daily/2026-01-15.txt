@@ -7,9 +7,6 @@
 2026-|US Economy Increasingly Dependent on Spending by Wealthiest 10%|r/economics
 2026-|Analysis: Coal power drops in China and India for first time in 52 yea|r/geopolitics
 2026-|Afar tribe seeks Israeli support amid Iranian expansion and Eritrean r|r/geopolitics
-2026-|NATO nations deploy to Greenland after tense White House talks|r/worldnews
 2026-|Trump is preparing to unleash inflation on his own voters|r/economics
 2026-|France To Send More Forces To Greenland, Says Macron|r/worldnews
-
-POSTS: 36
-TOP_SOURCES: r/economics:15|r/geopolitics:10|r/worldnews:11
+2026-|Europe allies begin Greenland military mission as Trump says US needs |r/geopolitics

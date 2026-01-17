@@ -4,12 +4,6 @@ GOLD(2):
 2025-|How to Invest in Gold|GLD
 2025-|The Biggest ETF Stories of 2025 and the 2026 Outlook|GLD
 
-MARKET(8):
-2025-|QQQ to Become an Open-End Fund|QQQ
-2025-|Here Are the Top ETFs Holding Oracle after Its Nosedive|SPY
-2025-|The Safest Way to Bet on the Santa Claus Rally|SPY
-2025-|Silent Time Bomb Threatens 6 AI S&P 500 Stocks Loading Up Wi|SPY
-2025-|Will Santa Claus Rally Set In for 2025? 4 Best ETF Areas to |SPY
-
-SENTIMENT: GOLD↑|MARKET=
-CATEGORIES: MARKET:8|GOLD:2
+MARKET(2):
+2025-|MarketBeats Top 5 Rated Small-Cap Stocks|IWM
+2025-|Stock Indexes Close Higher on Strength in Tech Stocks|DIA

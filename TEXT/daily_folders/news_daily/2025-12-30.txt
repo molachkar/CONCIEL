@@ -1,0 +1,14 @@
+=== NEWS: 2025-12-30 (FinViz) ===
+
+GOLD(1):
+2025-|Top & Flop ETF Areas of 2025|GDXJ
+
+MARKET(6):
+2025-|Should SPDR Dow Jones Industrial Average ETF (DIA) Be on You|DIA
+2025-|Top & Flop ETF Areas of 2025|DIA
+2025-|Pre-markets Flat on New Year's Eve Eve|DIA
+2025-|6 ETF Predictions for 2026|DIA
+2025-|Stocks Slip as Bond Yields Rise|DIA
+
+VOLATILITY(1):
+2025-|Top & Flop ETF Areas of 2025|VIXY

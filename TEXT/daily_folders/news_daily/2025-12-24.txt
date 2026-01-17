@@ -10,12 +10,7 @@ GOLD(6):
 2025-|Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Hi|GLD
 2025-|Forget the Bond Vigilantes. It's the Gold Vigilantes You Nee|GLD
 
-MARKET(6):
-2025-|Stock Market Today: Dow Falls Ahead Of Jobless Claims; Nvidi|SPY
-2025-|Stock Market Today: Dow Wavers After Surprise Jobless Claims|SPY
-2025-|Stock Market Today: Dow Edges Up After Surprise Jobless Clai|SPY
-2025-|Stocks Little Changed Heading Into Year-End|SPY
-2025-|Top-Performing International ETFs of 2025|SPY
-
-SENTIMENT: GOLD↑|MARKET=
-CATEGORIES: GOLD:6|MARKET:6|DOLLAR:1
+MARKET(3):
+2025-|Stocks Little Changed Heading Into Year-End|DIA
+2025-|Top-Performing International ETFs of 2025|DIA
+2025-|Stocks End Mildly Higher as Bullish Sentiment Continues|DIA

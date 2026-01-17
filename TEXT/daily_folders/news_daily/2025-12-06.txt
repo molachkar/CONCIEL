@@ -1,7 +1,0 @@
-=== NEWS: 2025-12-06 (FinViz) ===
-
-MARKET(1):
-2025-|1 Risky ETF You Want to Avoid Buying in December|QQQ
-
-SENTIMENT: MARKET=
-CATEGORIES: MARKET:1

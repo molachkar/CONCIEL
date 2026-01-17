@@ -1,0 +1,19 @@
+=== NEWS: 2026-01-05 (FinViz) ===
+
+DOLLAR(1):
+2026-|5 Leveraged ETF Winners of December|UUP
+
+GOLD(3):
+2026-|Gold, Dollar Jump After US Ousts Venezuela's Maduro|GLD
+2026-|Top ETF Stories of 2025|GLD
+2026-|Market Minute 1-5-26- Energy Stocks, Gold Jump After Maduro |GLD
+
+MARKET(5):
+2026-|Stock Market Today: Dow Wavers After U.S. Ousts Maduro; AMD,|QQQ
+2026-|Bet on These 3 Small-Cap ETFs to Ride the January Effect|IWM
+2026-|Stock Market Today: Dow Rises After U.S. Ousts Maduro; AMD, |QQQ
+2026-|Stocks Climb on AI Spending Optimism and Strength in Energy |QQQ
+2026-|Dogs Of The Dow: 10 High-Yield Stocks With Dividends Up To 6|DIA
+
+VOLATILITY(1):
+2026-|Brace for Choppy Markets Ahead With These Volatility ETFs|VXX

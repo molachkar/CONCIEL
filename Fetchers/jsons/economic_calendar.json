@@ -1,1194 +1,6 @@
 {
   "events": [
     {
-      "date": "25/11/2025",
-      "time": "14:15",
-      "currency": "USD",
-      "event": "ADP Employment Change Weekly",
-      "actual": "-13.50K",
-      "forecast": "",
-      "previous": "-2.50K"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Core PPI (MoM)  (Sep)",
-      "actual": "0.1%",
-      "forecast": "0.2%",
-      "previous": "-0.1%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Core Retail Sales (MoM)  (Sep)",
-      "actual": "0.3%",
-      "forecast": "0.3%",
-      "previous": "0.6%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "PPI (MoM)  (Sep)",
-      "actual": "0.3%",
-      "forecast": "0.3%",
-      "previous": "-0.1%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Retail Control (MoM)  (Sep)",
-      "actual": "-0.1%",
-      "forecast": "0.3%",
-      "previous": "0.6%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Retail Sales (MoM)  (Sep)",
-      "actual": "0.2%",
-      "forecast": "0.4%",
-      "previous": "0.6%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "15:00",
-      "currency": "USD",
-      "event": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Sep)",
-      "actual": "1.4%",
-      "forecast": "1.4%",
-      "previous": "1.6%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "15:00",
-      "currency": "USD",
-      "event": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Sep)",
-      "actual": "-0.5%",
-      "forecast": "",
-      "previous": "-0.6%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Business Inventories (MoM)  (Aug)",
-      "actual": "0.0%",
-      "forecast": "0.0%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "CB Consumer Confidence  (Nov)",
-      "actual": "88.7",
-      "forecast": "93.5",
-      "previous": "95.5"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Pending Home Sales (MoM)  (Oct)",
-      "actual": "1.9%",
-      "forecast": "0.5%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Retail Inventories Ex Auto  (Aug)",
-      "actual": "0.0%",
-      "forecast": "0.3%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "17:00",
-      "currency": "USD",
-      "event": "Atlanta Fed GDPNow  (Q4)",
-      "actual": "4.0%",
-      "forecast": "4.2%",
-      "previous": "4.2%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "5-Year Note Auction",
-      "actual": "3.562%",
-      "forecast": "",
-      "previous": "3.625%"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Federal Budget Balance  (Oct)",
-      "actual": "-284.0B",
-      "forecast": "-223.4B",
-      "previous": "198.0B"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "61.0K",
-      "forecast": "",
-      "previous": "74.3K"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "203.9K",
-      "forecast": "",
-      "previous": "232.0K"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "52.8K",
-      "forecast": "",
-      "previous": "43.3K"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-165.7K",
-      "forecast": "",
-      "previous": "-144.1K"
-    },
-    {
-      "date": "25/11/2025",
-      "time": "23:30",
-      "currency": "USD",
-      "event": "API Weekly Crude Oil Stock",
-      "actual": "-1.900M",
-      "forecast": "",
-      "previous": "4.400M"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Core Durable Goods Orders (MoM)  (Sep)",
-      "actual": "0.6%",
-      "forecast": "",
-      "previous": "0.5%"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Durable Goods Orders (MoM)  (Sep)",
-      "actual": "0.5%",
-      "forecast": "0.5%",
-      "previous": "3.0%"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Initial Jobless Claims",
-      "actual": "216K",
-      "forecast": "226K",
-      "previous": "222K"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "Chicago PMI  (Nov)",
-      "actual": "36.3",
-      "forecast": "44.3",
-      "previous": "43.8"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Crude Oil Inventories",
-      "actual": "2.774M",
-      "forecast": "-1.300M",
-      "previous": "-3.426M"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Cushing Crude Oil Inventories",
-      "actual": "-0.068M",
-      "forecast": "",
-      "previous": "-0.698M"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "18:00",
-      "currency": "USD",
-      "event": "7-Year Note Auction",
-      "actual": "3.781%",
-      "forecast": "",
-      "previous": "3.790%"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "18:30",
-      "currency": "USD",
-      "event": "Atlanta Fed GDPNow  (Q4)",
-      "actual": "3.9%",
-      "forecast": "4.0%",
-      "previous": "4.0%"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Oil Rig Count",
-      "actual": "407",
-      "forecast": "",
-      "previous": "419"
-    },
-    {
-      "date": "26/11/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Total Rig Count",
-      "actual": "544",
-      "forecast": "",
-      "previous": "554"
-    },
-    {
-      "date": "01/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "ISM Manufacturing Employment  (Nov)",
-      "actual": "44.0",
-      "forecast": "",
-      "previous": "46.0"
-    },
-    {
-      "date": "01/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "ISM Manufacturing PMI  (Nov)",
-      "actual": "48.2",
-      "forecast": "49.0",
-      "previous": "48.7"
-    },
-    {
-      "date": "01/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "ISM Manufacturing Prices  (Nov)",
-      "actual": "58.5",
-      "forecast": "59.5",
-      "previous": "58.0"
-    },
-    {
-      "date": "01/12/2025",
-      "time": "17:30",
-      "currency": "USD",
-      "event": "Atlanta Fed GDPNow  (Q4)",
-      "actual": "3.9%",
-      "forecast": "3.9%",
-      "previous": "3.9%"
-    },
-    {
-      "date": "02/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "39.8K",
-      "forecast": "",
-      "previous": "61.0K"
-    },
-    {
-      "date": "02/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "176.6K",
-      "forecast": "",
-      "previous": "203.9K"
-    },
-    {
-      "date": "02/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "48.9K",
-      "forecast": "",
-      "previous": "52.8K"
-    },
-    {
-      "date": "02/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-145.3K",
-      "forecast": "",
-      "previous": "-165.7K"
-    },
-    {
-      "date": "02/12/2025",
-      "time": "22:30",
-      "currency": "USD",
-      "event": "API Weekly Crude Oil Stock",
-      "actual": "-2.480M",
-      "forecast": "",
-      "previous": "-1.900M"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "14:15",
-      "currency": "USD",
-      "event": "ADP Nonfarm Employment Change  (Nov)",
-      "actual": "-32K",
-      "forecast": "5K",
-      "previous": "47K"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Export Price Index (MoM)  (Sep)",
-      "actual": "0.0%",
-      "forecast": "0.1%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Import Price Index (MoM)  (Sep)",
-      "actual": "0.0%",
-      "forecast": "0.1%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "15:15",
-      "currency": "USD",
-      "event": "Industrial Production (MoM)  (Sep)",
-      "actual": "0.1%",
-      "forecast": "0.1%",
-      "previous": "-0.3%"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "15:15",
-      "currency": "USD",
-      "event": "Industrial Production (YoY)  (Sep)",
-      "actual": "1.62%",
-      "forecast": "",
-      "previous": "0.84%"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "ISM Non-Manufacturing Employment  (Nov)",
-      "actual": "48.9",
-      "forecast": "",
-      "previous": "48.2"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "ISM Non-Manufacturing PMI  (Nov)",
-      "actual": "52.6",
-      "forecast": "52.0",
-      "previous": "52.4"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "ISM Non-Manufacturing Prices  (Nov)",
-      "actual": "65.4",
-      "forecast": "68.0",
-      "previous": "70.0"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Crude Oil Inventories",
-      "actual": "0.574M",
-      "forecast": "-1.900M",
-      "previous": "2.774M"
-    },
-    {
-      "date": "03/12/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Cushing Crude Oil Inventories",
-      "actual": "-0.457M",
-      "forecast": "",
-      "previous": "-0.068M"
-    },
-    {
-      "date": "04/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Initial Jobless Claims",
-      "actual": "191K",
-      "forecast": "219K",
-      "previous": "218K"
-    },
-    {
-      "date": "04/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Factory Orders (MoM)  (Sep)",
-      "actual": "0.2%",
-      "forecast": "",
-      "previous": "1.3%"
-    },
-    {
-      "date": "04/12/2025",
-      "time": "17:00",
-      "currency": "USD",
-      "event": "Atlanta Fed GDPNow  (Q4)",
-      "actual": "3.8%",
-      "forecast": "3.9%",
-      "previous": "3.9%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Core PCE Price Index (MoM)  (Sep)",
-      "actual": "0.2%",
-      "forecast": "0.2%",
-      "previous": "0.2%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Core PCE Price Index (YoY)  (Sep)",
-      "actual": "2.8%",
-      "forecast": "2.9%",
-      "previous": "2.9%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan 1-Year Inflation Expectations  (Dec)",
-      "actual": "4.1%",
-      "forecast": "4.5%",
-      "previous": "4.5%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan 5-Year Inflation Expectations  (Dec)",
-      "actual": "3.2%",
-      "forecast": "3.4%",
-      "previous": "3.4%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan Consumer Expectations  (Dec)",
-      "actual": "55.0",
-      "forecast": "52.0",
-      "previous": "51.0"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan Consumer Sentiment  (Dec)",
-      "actual": "53.3",
-      "forecast": "",
-      "previous": "51.0"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "PCE price index (MoM)  (Sep)",
-      "actual": "0.3%",
-      "forecast": "0.3%",
-      "previous": "0.3%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "PCE Price index (YoY)  (Sep)",
-      "actual": "2.8%",
-      "forecast": "2.8%",
-      "previous": "2.7%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Personal Spending (MoM)  (Sep)",
-      "actual": "0.3%",
-      "forecast": "0.3%",
-      "previous": "0.5%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "18:00",
-      "currency": "USD",
-      "event": "Atlanta Fed GDPNow  (Q4)",
-      "actual": "3.5%",
-      "forecast": "3.8%",
-      "previous": "3.8%"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Oil Rig Count",
-      "actual": "413",
-      "forecast": "409",
-      "previous": "407"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Total Rig Count",
-      "actual": "549",
-      "forecast": "",
-      "previous": "544"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "21:00",
-      "currency": "USD",
-      "event": "Consumer Credit  (Oct)",
-      "actual": "9.18B",
-      "forecast": "11.80B",
-      "previous": "11.01B"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "65.6K",
-      "forecast": "",
-      "previous": "39.8K"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "204.7K",
-      "forecast": "",
-      "previous": "176.6K"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "42.3K",
-      "forecast": "",
-      "previous": "48.9K"
-    },
-    {
-      "date": "05/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-150.1K",
-      "forecast": "",
-      "previous": "-145.3K"
-    },
-    {
-      "date": "08/12/2025",
-      "time": "17:00",
-      "currency": "USD",
-      "event": "NY Fed 1-Year Consumer Inflation Expectations  (Nov)",
-      "actual": "3.2%",
-      "forecast": "",
-      "previous": "3.2%"
-    },
-    {
-      "date": "08/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "3-Year Note Auction",
-      "actual": "3.614%",
-      "forecast": "",
-      "previous": "3.579%"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "14:15",
-      "currency": "USD",
-      "event": "ADP Employment Change Weekly",
-      "actual": "4.75K",
-      "forecast": "",
-      "previous": "-13.50K"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "JOLTS Job Openings  (Sep)",
-      "actual": "7.658M",
-      "forecast": "7.200M",
-      "previous": "7.227M"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "US Leading Index (MoM)  (Sep)",
-      "actual": "-0.3%",
-      "forecast": "-0.3%",
-      "previous": "-0.3%"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "16:01",
-      "currency": "USD",
-      "event": "JOLTS Job Openings  (Oct)",
-      "actual": "7.670M",
-      "forecast": "",
-      "previous": "7.658M"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "10-Year Note Auction",
-      "actual": "4.175%",
-      "forecast": "",
-      "previous": "4.074%"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "74.9K",
-      "forecast": "",
-      "previous": "65.6K"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "202.3K",
-      "forecast": "",
-      "previous": "204.7K"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "48.2K",
-      "forecast": "",
-      "previous": "42.3K"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-163.9K",
-      "forecast": "",
-      "previous": "-150.1K"
-    },
-    {
-      "date": "09/12/2025",
-      "time": "22:30",
-      "currency": "USD",
-      "event": "API Weekly Crude Oil Stock",
-      "actual": "-4.800M",
-      "forecast": "-1.700M",
-      "previous": "-2.480M"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Employment Cost Index (QoQ)  (Q3)",
-      "actual": "0.8%",
-      "forecast": "0.9%",
-      "previous": "0.9%"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Crude Oil Inventories",
-      "actual": "-1.812M",
-      "forecast": "-1.200M",
-      "previous": "0.574M"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Cushing Crude Oil Inventories",
-      "actual": "0.308M",
-      "forecast": "",
-      "previous": "-0.457M"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Federal Budget Balance  (Nov)",
-      "actual": "-173.0B",
-      "forecast": "-186.5B",
-      "previous": "-284.0B"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Interest Rate Projection - 1st Yr  (Q4)",
-      "actual": "3.4%",
-      "forecast": "",
-      "previous": "3.4%"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Interest Rate Projection - 2nd Yr  (Q4)",
-      "actual": "3.1%",
-      "forecast": "",
-      "previous": "3.1%"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Interest Rate Projection - 3rd Yr  (Q4)",
-      "actual": "3.1%",
-      "forecast": "",
-      "previous": "3.1%"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Interest Rate Projection - Current  (Q4)",
-      "actual": "3.6%",
-      "forecast": "",
-      "previous": "3.6%"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Interest Rate Projection - Longer  (Q4)",
-      "actual": "3.0%",
-      "forecast": "",
-      "previous": "3.0%"
-    },
-    {
-      "date": "10/12/2025",
-      "time": "20:00",
-      "currency": "USD",
-      "event": "Fed Interest Rate Decision",
-      "actual": "3.75%",
-      "forecast": "3.75%",
-      "previous": "4.00%"
-    },
-    {
-      "date": "11/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Exports  (Sep)",
-      "actual": "289.30B",
-      "forecast": "",
-      "previous": "280.80B"
-    },
-    {
-      "date": "11/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Imports  (Sep)",
-      "actual": "342.10B",
-      "forecast": "",
-      "previous": "340.40B"
-    },
-    {
-      "date": "11/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Initial Jobless Claims",
-      "actual": "236K",
-      "forecast": "220K",
-      "previous": "192K"
-    },
-    {
-      "date": "11/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Trade Balance  (Sep)",
-      "actual": "-52.80B",
-      "forecast": "-62.50B",
-      "previous": "-59.30B"
-    },
-    {
-      "date": "11/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "30-Year Bond Auction",
-      "actual": "4.773%",
-      "forecast": "",
-      "previous": "4.694%"
-    },
-    {
-      "date": "12/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Oil Rig Count",
-      "actual": "414",
-      "forecast": "",
-      "previous": "413"
-    },
-    {
-      "date": "12/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Total Rig Count",
-      "actual": "548",
-      "forecast": "",
-      "previous": "549"
-    },
-    {
-      "date": "12/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "69.2K",
-      "forecast": "",
-      "previous": "74.9K"
-    },
-    {
-      "date": "12/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "210.3K",
-      "forecast": "",
-      "previous": "202.3K"
-    },
-    {
-      "date": "12/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "46.4K",
-      "forecast": "",
-      "previous": "48.2K"
-    },
-    {
-      "date": "12/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-147.4K",
-      "forecast": "",
-      "previous": "-163.9K"
-    },
-    {
-      "date": "15/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "NY Empire State Manufacturing Index  (Dec)",
-      "actual": "-3.90",
-      "forecast": "9.80",
-      "previous": "18.70"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:15",
-      "currency": "USD",
-      "event": "ADP Employment Change Weekly",
-      "actual": "16.25K",
-      "forecast": "",
-      "previous": "2.75K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:29",
-      "currency": "USD",
-      "event": "Average Hourly Earnings (MoM)  (Oct)",
-      "actual": "0.4%",
-      "forecast": "",
-      "previous": "0.2%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:29",
-      "currency": "USD",
-      "event": "Average Hourly Earnings (YoY) (YoY)  (Oct)",
-      "actual": "3.7%",
-      "forecast": "",
-      "previous": "3.8%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:29",
-      "currency": "USD",
-      "event": "Nonfarm Payrolls  (Oct)",
-      "actual": "-105K",
-      "forecast": "",
-      "previous": "108K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:29",
-      "currency": "USD",
-      "event": "Private Nonfarm Payrolls  (Oct)",
-      "actual": "52K",
-      "forecast": "",
-      "previous": "104K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Average Hourly Earnings (MoM)  (Nov)",
-      "actual": "0.1%",
-      "forecast": "0.3%",
-      "previous": "0.4%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Average Hourly Earnings (YoY) (YoY)  (Nov)",
-      "actual": "3.5%",
-      "forecast": "",
-      "previous": "3.7%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Core Retail Sales (MoM)  (Oct)",
-      "actual": "0.4%",
-      "forecast": "0.2%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Nonfarm Payrolls  (Nov)",
-      "actual": "64K",
-      "forecast": "51K",
-      "previous": "-105K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Participation Rate  (Nov)",
-      "actual": "62.5%",
-      "forecast": "",
-      "previous": "62.4%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Private Nonfarm Payrolls  (Nov)",
-      "actual": "69K",
-      "forecast": "45K",
-      "previous": "52K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Retail Control (MoM)  (Oct)",
-      "actual": "0.8%",
-      "forecast": "0.4%",
-      "previous": "-0.1%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Retail Sales (MoM)  (Oct)",
-      "actual": "0.0%",
-      "forecast": "0.1%",
-      "previous": "0.1%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "U6 Unemployment Rate  (Nov)",
-      "actual": "8.7%",
-      "forecast": "",
-      "previous": "8.0%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Unemployment Rate  (Nov)",
-      "actual": "4.6%",
-      "forecast": "4.5%",
-      "previous": "4.4%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "S&P Global Manufacturing PMI  (Dec)",
-      "actual": "51.8",
-      "forecast": "52.0",
-      "previous": "52.2"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "S&P Global Composite PMI  (Dec)",
-      "actual": "53.0",
-      "forecast": "53.9",
-      "previous": "54.2"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "S&P Global Services PMI  (Dec)",
-      "actual": "52.9",
-      "forecast": "54.0",
-      "previous": "54.1"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Business Inventories (MoM)  (Sep)",
-      "actual": "0.2%",
-      "forecast": "0.1%",
-      "previous": "0.0%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Retail Inventories Ex Auto  (Sep)",
-      "actual": "0.0%",
-      "forecast": "",
-      "previous": "0.0%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "18:00",
-      "currency": "USD",
-      "event": "Atlanta Fed GDPNow  (Q4)",
-      "actual": "3.5%",
-      "forecast": "3.5%",
-      "previous": "3.5%"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "55.0K",
-      "forecast": "",
-      "previous": "69.2K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "204.6K",
-      "forecast": "",
-      "previous": "210.3K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "57.4K",
-      "forecast": "",
-      "previous": "46.4K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-155.3K",
-      "forecast": "",
-      "previous": "-147.4K"
-    },
-    {
-      "date": "16/12/2025",
-      "time": "22:30",
-      "currency": "USD",
-      "event": "API Weekly Crude Oil Stock",
-      "actual": "-9.300M",
-      "forecast": "-2.200M",
-      "previous": "-4.800M"
-    },
-    {
-      "date": "17/12/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Crude Oil Inventories",
-      "actual": "-1.274M",
-      "forecast": "-2.400M",
-      "previous": "-1.812M"
-    },
-    {
-      "date": "17/12/2025",
-      "time": "16:30",
-      "currency": "USD",
-      "event": "Cushing Crude Oil Inventories",
-      "actual": "-0.742M",
-      "forecast": "",
-      "previous": "0.308M"
-    },
-    {
-      "date": "17/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "20-Year Bond Auction",
-      "actual": "4.798%",
-      "forecast": "",
-      "previous": "4.706%"
-    },
-    {
       "date": "18/12/2025",
       "time": "14:30",
       "currency": "USD",
@@ -1487,6 +299,24 @@
     },
     {
       "date": "23/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "actual": "409",
+      "forecast": "",
+      "previous": "406"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "actual": "545",
+      "forecast": "",
+      "previous": "542"
+    },
+    {
+      "date": "23/12/2025",
       "time": "21:30",
       "currency": "USD",
       "event": "CFTC Crude Oil speculative net positions",
@@ -1547,6 +377,1023 @@
       "actual": "3.930%",
       "forecast": "",
       "previous": "3.781%"
+    },
+    {
+      "date": "29/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Pending Home Sales (MoM)  (Nov)",
+      "actual": "3.3%",
+      "forecast": "1.0%",
+      "previous": "2.4%"
+    },
+    {
+      "date": "29/12/2025",
+      "time": "23:00",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "actual": "0.405M",
+      "forecast": "-2.000M",
+      "previous": "-1.274M"
+    },
+    {
+      "date": "29/12/2025",
+      "time": "23:00",
+      "currency": "USD",
+      "event": "Cushing Crude Oil Inventories",
+      "actual": "0.707M",
+      "forecast": "",
+      "previous": "-0.742M"
+    },
+    {
+      "date": "30/12/2025",
+      "time": "15:00",
+      "currency": "USD",
+      "event": "S&P/CS HPI Composite - 20 n.s.a. (YoY)  (Oct)",
+      "actual": "1.3%",
+      "forecast": "1.1%",
+      "previous": "1.4%"
+    },
+    {
+      "date": "30/12/2025",
+      "time": "15:00",
+      "currency": "USD",
+      "event": "S&P/CS HPI Composite - 20 n.s.a. (MoM)  (Oct)",
+      "actual": "-0.3%",
+      "forecast": "",
+      "previous": "-0.5%"
+    },
+    {
+      "date": "30/12/2025",
+      "time": "15:45",
+      "currency": "USD",
+      "event": "Chicago PMI  (Dec)",
+      "actual": "43.5",
+      "forecast": "39.8",
+      "previous": "36.3"
+    },
+    {
+      "date": "30/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "actual": "412",
+      "forecast": "",
+      "previous": "409"
+    },
+    {
+      "date": "30/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "actual": "546",
+      "forecast": "",
+      "previous": "545"
+    },
+    {
+      "date": "30/12/2025",
+      "time": "22:30",
+      "currency": "USD",
+      "event": "API Weekly Crude Oil Stock",
+      "actual": "1.700M",
+      "forecast": "",
+      "previous": "2.400M"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Initial Jobless Claims",
+      "actual": "199K",
+      "forecast": "219K",
+      "previous": "215K"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "actual": "-1.934M",
+      "forecast": "0.500M",
+      "previous": "0.405M"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Cushing Crude Oil Inventories",
+      "actual": "0.543M",
+      "forecast": "",
+      "previous": "0.707M"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "64.9K",
+      "forecast": "",
+      "previous": "54.9K"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "240.7K",
+      "forecast": "",
+      "previous": "234.0K"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "31.8K",
+      "forecast": "",
+      "previous": "46.4K"
+    },
+    {
+      "date": "31/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-81.8K",
+      "forecast": "",
+      "previous": "-166.0K"
+    },
+    {
+      "date": "02/01/2026",
+      "time": "15:45",
+      "currency": "USD",
+      "event": "S&P Global Manufacturing PMI  (Dec)",
+      "actual": "51.8",
+      "forecast": "51.8",
+      "previous": "52.2"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Manufacturing Employment  (Dec)",
+      "actual": "44.9",
+      "forecast": "",
+      "previous": "44.0"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Manufacturing PMI  (Dec)",
+      "actual": "47.9",
+      "forecast": "48.3",
+      "previous": "48.2"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Manufacturing Prices  (Dec)",
+      "actual": "58.5",
+      "forecast": "59.0",
+      "previous": "58.5"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "18:00",
+      "currency": "USD",
+      "event": "Atlanta Fed GDPNow  (Q4)",
+      "actual": "2.7%",
+      "forecast": "3.0%",
+      "previous": "3.0%"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "64.6K",
+      "forecast": "",
+      "previous": "64.9K"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "231.2K",
+      "forecast": "",
+      "previous": "240.7K"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "25.1K",
+      "forecast": "",
+      "previous": "31.8K"
+    },
+    {
+      "date": "05/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-94.4K",
+      "forecast": "",
+      "previous": "-81.8K"
+    },
+    {
+      "date": "06/01/2026",
+      "time": "15:45",
+      "currency": "USD",
+      "event": "S&P Global Composite PMI  (Dec)",
+      "actual": "52.7",
+      "forecast": "53.0",
+      "previous": "54.2"
+    },
+    {
+      "date": "06/01/2026",
+      "time": "15:45",
+      "currency": "USD",
+      "event": "S&P Global Services PMI  (Dec)",
+      "actual": "52.5",
+      "forecast": "52.9",
+      "previous": "54.1"
+    },
+    {
+      "date": "06/01/2026",
+      "time": "22:30",
+      "currency": "USD",
+      "event": "API Weekly Crude Oil Stock",
+      "actual": "-2.800M",
+      "forecast": "1.200M",
+      "previous": "1.700M"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "14:15",
+      "currency": "USD",
+      "event": "ADP Nonfarm Employment Change  (Dec)",
+      "actual": "41K",
+      "forecast": "49K",
+      "previous": "-29K"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Factory Orders (MoM)  (Oct)",
+      "actual": "-1.3%",
+      "forecast": "-1.1%",
+      "previous": "0.2%"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Non-Manufacturing Employment  (Dec)",
+      "actual": "52.0",
+      "forecast": "49.0",
+      "previous": "48.9"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Non-Manufacturing PMI  (Dec)",
+      "actual": "54.4",
+      "forecast": "52.2",
+      "previous": "52.6"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Non-Manufacturing Prices  (Dec)",
+      "actual": "64.3",
+      "forecast": "64.9",
+      "previous": "65.4"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "JOLTS Job Openings  (Nov)",
+      "actual": "7.146M",
+      "forecast": "7.610M",
+      "previous": "7.449M"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "actual": "-3.832M",
+      "forecast": "-1.200M",
+      "previous": "-1.934M"
+    },
+    {
+      "date": "07/01/2026",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Cushing Crude Oil Inventories",
+      "actual": "0.728M",
+      "forecast": "",
+      "previous": "0.543M"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Exports  (Oct)",
+      "actual": "302.00B",
+      "forecast": "",
+      "previous": "294.20B"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Imports  (Oct)",
+      "actual": "331.40B",
+      "forecast": "",
+      "previous": "342.40B"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Initial Jobless Claims",
+      "actual": "208K",
+      "forecast": "213K",
+      "previous": "200K"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Nonfarm Productivity (QoQ)  (Q3)",
+      "actual": "4.9%",
+      "forecast": "4.9%",
+      "previous": "4.1%"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Trade Balance  (Oct)",
+      "actual": "-29.40B",
+      "forecast": "-58.10B",
+      "previous": "-48.10B"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Unit Labor Costs (QoQ)  (Q3)",
+      "actual": "-1.9%",
+      "forecast": "0.0%",
+      "previous": "-2.9%"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "17:00",
+      "currency": "USD",
+      "event": "NY Fed 1-Year Consumer Inflation Expectations  (Dec)",
+      "actual": "3.4%",
+      "forecast": "",
+      "previous": "3.2%"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "18:00",
+      "currency": "USD",
+      "event": "Atlanta Fed GDPNow  (Q4)",
+      "actual": "5.4%",
+      "forecast": "2.7%",
+      "previous": "2.7%"
+    },
+    {
+      "date": "08/01/2026",
+      "time": "21:00",
+      "currency": "USD",
+      "event": "Consumer Credit  (Nov)",
+      "actual": "4.23B",
+      "forecast": "10.10B",
+      "previous": "9.24B"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:29",
+      "currency": "USD",
+      "event": "Building Permits  (Sep)",
+      "actual": "1.415M",
+      "forecast": "1.350M",
+      "previous": "1.330M"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:29",
+      "currency": "USD",
+      "event": "Housing Starts  (Sep)",
+      "actual": "1.306M",
+      "forecast": "1.330M",
+      "previous": "1.307M"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:29",
+      "currency": "USD",
+      "event": "Housing Starts (MoM)  (Sep)",
+      "actual": "1.2%",
+      "forecast": "",
+      "previous": "-9.1%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Average Hourly Earnings (MoM)  (Dec)",
+      "actual": "0.3%",
+      "forecast": "0.3%",
+      "previous": "0.2%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Average Hourly Earnings (YoY) (YoY)  (Dec)",
+      "actual": "3.8%",
+      "forecast": "3.6%",
+      "previous": "3.6%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Building Permits  (Oct)",
+      "actual": "1.412M",
+      "forecast": "1.415M",
+      "previous": "1.330M"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Housing Starts  (Oct)",
+      "actual": "1.246M",
+      "forecast": "",
+      "previous": "1.291M"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Housing Starts (MoM)  (Oct)",
+      "actual": "-4.6%",
+      "forecast": "",
+      "previous": "-9.1%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Nonfarm Payrolls  (Dec)",
+      "actual": "50K",
+      "forecast": "66K",
+      "previous": "56K"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Participation Rate  (Dec)",
+      "actual": "62.4%",
+      "forecast": "",
+      "previous": "62.5%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Private Nonfarm Payrolls  (Dec)",
+      "actual": "37K",
+      "forecast": "64K",
+      "previous": "50K"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "U6 Unemployment Rate  (Dec)",
+      "actual": "8.4%",
+      "forecast": "",
+      "previous": "8.7%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Unemployment Rate  (Dec)",
+      "actual": "4.4%",
+      "forecast": "4.5%",
+      "previous": "4.5%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan 1-Year Inflation Expectations  (Jan)",
+      "actual": "4.2%",
+      "forecast": "4.1%",
+      "previous": "4.2%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan 5-Year Inflation Expectations  (Jan)",
+      "actual": "3.4%",
+      "forecast": "3.3%",
+      "previous": "3.2%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan Consumer Expectations  (Jan)",
+      "actual": "55.0",
+      "forecast": "",
+      "previous": "54.6"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan Consumer Sentiment  (Jan)",
+      "actual": "54.0",
+      "forecast": "53.5",
+      "previous": "52.9"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "17:30",
+      "currency": "USD",
+      "event": "Atlanta Fed GDPNow  (Q4)",
+      "actual": "5.1%",
+      "forecast": "5.4%",
+      "previous": "5.4%"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "actual": "409",
+      "forecast": "",
+      "previous": "412"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "actual": "544",
+      "forecast": "",
+      "previous": "546"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "57.4K",
+      "forecast": "",
+      "previous": "64.6K"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "227.6K",
+      "forecast": "",
+      "previous": "231.2K"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "32.6K",
+      "forecast": "",
+      "previous": "25.1K"
+    },
+    {
+      "date": "09/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-106.1K",
+      "forecast": "",
+      "previous": "-94.4K"
+    },
+    {
+      "date": "12/01/2026",
+      "time": "18:30",
+      "currency": "USD",
+      "event": "3-Year Note Auction",
+      "actual": "3.609%",
+      "forecast": "",
+      "previous": "3.614%"
+    },
+    {
+      "date": "12/01/2026",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "10-Year Note Auction",
+      "actual": "4.173%",
+      "forecast": "",
+      "previous": "4.175%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "14:15",
+      "currency": "USD",
+      "event": "ADP Employment Change Weekly",
+      "actual": "11.75K",
+      "forecast": "",
+      "previous": "11.00K"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Core CPI (MoM)  (Dec)",
+      "actual": "0.2%",
+      "forecast": "0.3%",
+      "previous": "0.2%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Core CPI (YoY)  (Dec)",
+      "actual": "2.6%",
+      "forecast": "2.7%",
+      "previous": "2.6%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "CPI (MoM)  (Dec)",
+      "actual": "0.3%",
+      "forecast": "0.3%",
+      "previous": "0.3%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "CPI (YoY)  (Dec)",
+      "actual": "2.7%",
+      "forecast": "2.7%",
+      "previous": "2.7%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "15:59",
+      "currency": "USD",
+      "event": "New Home Sales  (Sep)",
+      "actual": "738K",
+      "forecast": "",
+      "previous": "711K"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "15:59",
+      "currency": "USD",
+      "event": "New Home Sales (MoM)  (Sep)",
+      "actual": "3.8%",
+      "forecast": "",
+      "previous": "11.3%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "New Home Sales  (Oct)",
+      "actual": "737K",
+      "forecast": "716K",
+      "previous": "738K"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "New Home Sales (MoM)  (Oct)",
+      "actual": "-0.1%",
+      "forecast": "",
+      "previous": "3.8%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "30-Year Bond Auction",
+      "actual": "4.825%",
+      "forecast": "",
+      "previous": "4.773%"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Federal Budget Balance  (Dec)",
+      "actual": "-145.0B",
+      "forecast": "-144.5B",
+      "previous": "-173.0B"
+    },
+    {
+      "date": "13/01/2026",
+      "time": "22:30",
+      "currency": "USD",
+      "event": "API Weekly Crude Oil Stock",
+      "actual": "5.270M",
+      "forecast": "-2.000M",
+      "previous": "-2.800M"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:29",
+      "currency": "USD",
+      "event": "Core PPI (MoM)  (Oct)",
+      "actual": "0.3%",
+      "forecast": "",
+      "previous": "0.1%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:29",
+      "currency": "USD",
+      "event": "PPI (MoM)  (Oct)",
+      "actual": "0.1%",
+      "forecast": "",
+      "previous": "0.6%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Core PPI (MoM)  (Nov)",
+      "actual": "0.0%",
+      "forecast": "0.2%",
+      "previous": "0.4%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Core Retail Sales (MoM)  (Nov)",
+      "actual": "0.5%",
+      "forecast": "0.4%",
+      "previous": "0.2%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Current Account  (Q3)",
+      "actual": "-226.4B",
+      "forecast": "-235.0B",
+      "previous": "-249.2B"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "PPI (MoM)  (Nov)",
+      "actual": "0.2%",
+      "forecast": "0.2%",
+      "previous": "0.6%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Retail Control (MoM)  (Nov)",
+      "actual": "0.4%",
+      "forecast": "0.4%",
+      "previous": "0.6%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Retail Sales (MoM)  (Nov)",
+      "actual": "0.6%",
+      "forecast": "0.5%",
+      "previous": "-0.1%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Business Inventories (MoM)  (Oct)",
+      "actual": "0.3%",
+      "forecast": "0.1%",
+      "previous": "0.3%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Existing Home Sales  (Dec)",
+      "actual": "4.35M",
+      "forecast": "4.21M",
+      "previous": "4.14M"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Existing Home Sales (MoM)  (Dec)",
+      "actual": "5.1%",
+      "forecast": "",
+      "previous": "0.7%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Retail Inventories Ex Auto  (Oct)",
+      "actual": "0.3%",
+      "forecast": "0.0%",
+      "previous": "0.1%"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "actual": "3.391M",
+      "forecast": "-1.700M",
+      "previous": "-3.832M"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Cushing Crude Oil Inventories",
+      "actual": "0.745M",
+      "forecast": "",
+      "previous": "0.728M"
+    },
+    {
+      "date": "14/01/2026",
+      "time": "18:30",
+      "currency": "USD",
+      "event": "Atlanta Fed GDPNow  (Q4)",
+      "actual": "5.3%",
+      "forecast": "5.1%",
+      "previous": "5.1%"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Export Price Index (MoM)  (Nov)",
+      "actual": "0.5%",
+      "forecast": "0.2%",
+      "previous": "0.0%"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Import Price Index (MoM)  (Nov)",
+      "actual": "0.4%",
+      "forecast": "-0.1%",
+      "previous": "0.0%"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Initial Jobless Claims",
+      "actual": "198K",
+      "forecast": "215K",
+      "previous": "207K"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "NY Empire State Manufacturing Index  (Jan)",
+      "actual": "7.70",
+      "forecast": "0.80",
+      "previous": "-3.70"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Philadelphia Fed Manufacturing Index  (Jan)",
+      "actual": "12.6",
+      "forecast": "-1.6",
+      "previous": "-8.8"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Philly Fed Employment  (Jan)",
+      "actual": "9.7",
+      "forecast": "",
+      "previous": "13.0"
+    },
+    {
+      "date": "15/01/2026",
+      "time": "22:00",
+      "currency": "USD",
+      "event": "TIC Net Long-Term Transactions  (Nov)",
+      "actual": "220.2B",
+      "forecast": "48.7B",
+      "previous": "30.9B"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "15:15",
+      "currency": "USD",
+      "event": "Industrial Production (MoM)  (Dec)",
+      "actual": "0.4%",
+      "forecast": "0.1%",
+      "previous": "0.4%"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "15:15",
+      "currency": "USD",
+      "event": "Industrial Production (YoY)  (Dec)",
+      "actual": "1.99%",
+      "forecast": "",
+      "previous": "2.68%"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "actual": "410",
+      "forecast": "",
+      "previous": "409"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "actual": "543",
+      "forecast": "",
+      "previous": "544"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "58.1K",
+      "forecast": "",
+      "previous": "57.4K"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "251.2K",
+      "forecast": "",
+      "previous": "227.6K"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "29.1K",
+      "forecast": "",
+      "previous": "32.6K"
+    },
+    {
+      "date": "16/01/2026",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-122.1K",
+      "forecast": "",
+      "previous": "-106.1K"
     }
   ]
 }

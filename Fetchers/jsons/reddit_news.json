@@ -1,8 +1,23 @@
 {
-  "fetch_time": "2026-01-17T10:33:50.137882",
+  "fetch_time": "2026-01-17T12:14:42.698764",
   "total_fetched": 300,
-  "total_filtered": 176,
+  "total_filtered": 178,
   "posts": [
+    {
+      "time": "2026-01-17T09:28:27",
+      "title": "Some Western-supplied air defence systems in Ukraine out of ammo at critical time, Zelenskyy says",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T09:09:06",
+      "title": "Indian man gets 30-month jail in US for illegal export of aviation parts to Russia",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T07:39:02",
+      "title": "European Commission urges heavy industry to back 'Made in Europe' manufacturing",
+      "source": "r/worldnews"
+    },
     {
       "time": "2026-01-17T07:36:32",
       "title": "Thousands of Chinese Fishing Boats Quietly Form Vast Sea Barriers",
@@ -27,6 +42,11 @@
       "time": "2026-01-17T05:47:05",
       "title": "Iranian Supreme Leader Ali Khamenei Is Running Out of Road",
       "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-17T05:40:10",
+      "title": "Japan protests China's latest resource development move in East China Sea",
+      "source": "r/worldnews"
     },
     {
       "time": "2026-01-17T05:39:19",
@@ -57,6 +77,11 @@
       "time": "2026-01-17T04:40:23",
       "title": "It’s Trump’s Economy, and Voters Are Unhappy With It",
       "source": "r/economics"
+    },
+    {
+      "time": "2026-01-17T04:07:45",
+      "title": "Tony Blair to oversee Gaza's future as part of Trump's 'greatest and most prestigious' Board of Peace",
+      "source": "r/worldnews"
     },
     {
       "time": "2026-01-17T02:50:17",
@@ -136,6 +161,11 @@
     {
       "time": "2026-01-16T20:52:38",
       "title": "Ukraine's air defence supplies 'insufficient', Zelensky says",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-16T20:52:06",
+      "title": "India, Japan unveil new initiatives on critical minerals, AI and defence ties",
       "source": "r/worldnews"
     },
     {
@@ -399,11 +429,6 @@
       "source": "r/worldnews"
     },
     {
-      "time": "2026-01-16T10:04:40",
-      "title": "Carney reaches tariff-quota deal with China on EVs, canola",
-      "source": "r/worldnews"
-    },
-    {
       "time": "2026-01-16T09:07:29",
       "title": "Parliamentary systems do better economically than presidential ones",
       "source": "r/economics"
@@ -427,11 +452,6 @@
       "time": "2026-01-16T05:27:25",
       "title": "Donald Trump’s first Venezuela oil sale deal goes to megadonor’s company",
       "source": "r/economics"
-    },
-    {
-      "time": "2026-01-16T05:02:36",
-      "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1422, Part 1 (Thread )",
-      "source": "r/worldnews"
     },
     {
       "time": "2026-01-16T04:53:50",
@@ -504,11 +524,6 @@
       "source": "r/geopolitics"
     },
     {
-      "time": "2026-01-15T21:17:31",
-      "title": "Pentagon moving carrier strike group toward Middle East amid tensions with Iran",
-      "source": "r/worldnews"
-    },
-    {
       "time": "2026-01-15T20:46:16",
       "title": "Taiwan will invest $250 billion in U.S. chipmaking under new trade deal",
       "source": "r/economics"
@@ -574,11 +589,6 @@
       "source": "r/economics"
     },
     {
-      "time": "2026-01-15T14:17:51",
-      "title": "European military personnel arrive in Greenland as Trump says US needs island",
-      "source": "r/worldnews"
-    },
-    {
       "time": "2026-01-15T13:32:15",
       "title": "US farm economy shows widening cracks as costs rise, jobs vanish",
       "source": "r/economics"
@@ -597,11 +607,6 @@
       "time": "2026-01-15T11:15:49",
       "title": "Trump is preparing to unleash inflation on his own voters",
       "source": "r/economics"
-    },
-    {
-      "time": "2026-01-15T10:27:41",
-      "title": "NATO nations deploy to Greenland after tense White House talks",
-      "source": "r/worldnews"
     },
     {
       "time": "2026-01-15T09:17:22",
@@ -661,6 +666,11 @@
     {
       "time": "2026-01-14T20:53:53",
       "title": "Denmark’s Army Chief Says He’s Ready to Defend Greenland",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-14T20:08:00",
+      "title": "Putin’s great-power project faces the ‘end of an era’",
       "source": "r/geopolitics"
     },
     {

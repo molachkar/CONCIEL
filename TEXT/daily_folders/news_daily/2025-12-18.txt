@@ -1,14 +1,5 @@
 === NEWS: 2025-12-18 (FinViz) ===
 
-GOLD(1):
-2025-|Gold Gearing Up for Another Solid Run? ETFs to Ride the Tren|GLD
-
-MARKET(13):
-2025-|2 ETFs That Are Good Bets To Beat the S&P 500 in 2026|IWM
-2025-|Micron crushes earnings, calming markets and helping boost b|QQQ
-2025-|How To Cash In On Vanguard's Call For The Decade's Top Asset|SPY
-2025-|Stock Market Today: Dow Rebounds On Surprise CPI Inflation D|SPY
-2025-|Stock Market Today: Dow Rises On Surprise Inflation Data; Nv|SPY
-
-SENTIMENT: GOLD↑|MARKET=
-CATEGORIES: MARKET:13|GOLD:1
+MARKET(2):
+2025-|Stocks Settle Higher on Upbeat Tech Outlook and Cooling Infl|DIA
+2025-|ETF Fund Flows: IVV Gains $34 Billion Ahead of CPI|IWM

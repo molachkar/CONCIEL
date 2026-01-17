@@ -48,12 +48,15 @@ def process_fundamentals_json(data, output_dir):
         elif key.endswith("_END_DATE"):
             continue
     
+    # Only write files for dates that have more than just collection_info
     for date, content in sorted(date_data.items()):
-        file_path = os.path.join(folder_path, f"{date}.json")
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(content, f, indent=2, ensure_ascii=False)
+        if len(content) > 1:  # More than just collection_info
+            file_path = os.path.join(folder_path, f"{date}.json")
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_data)} JSON files in {folder_name}")
+    files_created = sum(1 for content in date_data.values() if len(content) > 1)
+    print(f"Created {files_created} JSON files in {folder_name}")
     return date_data
 
 def process_economic_calendar_json(data, output_dir):
@@ -68,15 +71,17 @@ def process_economic_calendar_json(data, output_dir):
         if date:
             date_events[date].append(event)
     
+    # Only write files for dates that have events
     for date, events in sorted(date_events.items()):
-        file_path = os.path.join(folder_path, f"{date}.json")
-        content = {
-            "date": date,
-            "total_events": len(events),
-            "events": sorted(events, key=lambda x: x.get("time", ""))
-        }
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(content, f, indent=2, ensure_ascii=False)
+        if events:  # Only if there are events
+            file_path = os.path.join(folder_path, f"{date}.json")
+            content = {
+                "date": date,
+                "total_events": len(events),
+                "events": sorted(events, key=lambda x: x.get("time", ""))
+            }
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
     
     print(f"Created {len(date_events)} JSON files in {folder_name}")
     return date_events
@@ -119,12 +124,15 @@ def process_market_analysis_json(data, output_dir):
                     }
                 date_data[date]["instruments"][instrument_name]["technicals"] = tech_entry
     
+    # Only write files for dates that have instruments
     for date, content in sorted(date_data.items()):
-        file_path = os.path.join(folder_path, f"{date}.json")
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(content, f, indent=2, ensure_ascii=False)
+        if content["instruments"]:  # Only if there are instruments
+            file_path = os.path.join(folder_path, f"{date}.json")
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_data)} JSON files in {folder_name}")
+    files_created = sum(1 for content in date_data.values() if content["instruments"])
+    print(f"Created {files_created} JSON files in {folder_name}")
     return date_data
 
 def process_news_json(data, output_dir):
@@ -142,20 +150,23 @@ def process_news_json(data, output_dir):
         if date:
             date_news[date]["headlines"].append(headline)
     
+    # Only write files for dates that have headlines
     for date, content in sorted(date_news.items()):
-        content["headlines"] = sorted(content["headlines"], key=lambda x: x.get("time", ""))
-        content["total_headlines"] = len(content["headlines"])
-        
-        categories = defaultdict(int)
-        for h in content["headlines"]:
-            categories[h.get("category", "unknown")] += 1
-        content["by_category"] = dict(categories)
-        
-        file_path = os.path.join(folder_path, f"{date}.json")
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(content, f, indent=2, ensure_ascii=False)
+        if content["headlines"]:  # Only if there are headlines
+            content["headlines"] = sorted(content["headlines"], key=lambda x: x.get("time", ""))
+            content["total_headlines"] = len(content["headlines"])
+            
+            categories = defaultdict(int)
+            for h in content["headlines"]:
+                categories[h.get("category", "unknown")] += 1
+            content["by_category"] = dict(categories)
+            
+            file_path = os.path.join(folder_path, f"{date}.json")
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_news)} JSON files in {folder_name}")
+    files_created = sum(1 for content in date_news.values() if content["headlines"])
+    print(f"Created {files_created} JSON files in {folder_name}")
     return date_news
 
 def process_reddit_json(data, output_dir):
@@ -177,20 +188,23 @@ def process_reddit_json(data, output_dir):
         if date:
             date_posts[date]["posts"].append(post)
     
+    # Only write files for dates that have posts
     for date, content in sorted(date_posts.items()):
-        content["posts"] = sorted(content["posts"], key=lambda x: x.get("time", ""))
-        content["total_posts"] = len(content["posts"])
-        
-        sources = defaultdict(int)
-        for p in content["posts"]:
-            sources[p.get("source", "unknown")] += 1
-        content["by_subreddit"] = dict(sources)
-        
-        file_path = os.path.join(folder_path, f"{date}.json")
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(content, f, indent=2, ensure_ascii=False)
+        if content["posts"]:  # Only if there are posts
+            content["posts"] = sorted(content["posts"], key=lambda x: x.get("time", ""))
+            content["total_posts"] = len(content["posts"])
+            
+            sources = defaultdict(int)
+            for p in content["posts"]:
+                sources[p.get("source", "unknown")] += 1
+            content["by_subreddit"] = dict(sources)
+            
+            file_path = os.path.join(folder_path, f"{date}.json")
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_posts)} JSON files in {folder_name}")
+    files_created = sum(1 for content in date_posts.values() if content["posts"])
+    print(f"Created {files_created} JSON files in {folder_name}")
     return date_posts
 
 def convert_economic_calendar_to_txt(json_folder, txt_folder):
@@ -207,9 +221,11 @@ def convert_economic_calendar_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        lines = [f"=== ECONOMIC EVENTS: {date} ===", ""]
+        # Skip if no events
+        if not data.get("events"):
+            continue
         
-        beats, misses, meets = 0, 0, 0
+        lines = [f"=== ECONOMIC EVENTS: {date} ===", ""]
         
         for event in data.get("events", []):
             time = event.get("time", "")
@@ -226,24 +242,17 @@ def convert_economic_calendar_to_txt(json_folder, txt_folder):
                     fc_val = float(forecast.replace("%", "").replace("K", "").replace("M", "").replace("B", ""))
                     if act_val > fc_val:
                         status = "BEAT↑"
-                        beats += 1
                     elif act_val < fc_val:
                         status = "MISS↓"
-                        misses += 1
                     else:
                         status = "MEET"
-                        meets += 1
                 except:
                     status = "MEET"
-                    meets += 1
             
             line = f"{time}|{name}|{actual}|FC:{forecast}|PV:{previous}|{currency}"
             if status:
                 line += f"|{status}"
             lines.append(line)
-        
-        lines.append("")
-        lines.append(f"SUMMARY: {len(data.get('events', []))}_EVENTS|{beats}_BEAT|{misses}_MISS|{meets}_MEET")
         
         with open(txt_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
@@ -263,17 +272,21 @@ def convert_fundamentals_to_txt(json_folder, txt_folder):
             data = json.load(f)
         
         lines = [f"=== FUNDAMENTALS: {date} ===", ""]
+        has_content = False
         
         if "TREASURY_10Y" in data:
             lines.append("RATES:")
             for entry in data["TREASURY_10Y"]:
                 lines.append(f"T10Y:{entry.get('value')}%")
+            has_content = True
         
         if "HY_CREDIT_SPREAD" in data:
             for entry in data["HY_CREDIT_SPREAD"]:
                 lines.append(f"HY_SPREAD:{entry.get('value')}%")
+            has_content = True
         
-        lines.append("")
+        if has_content:
+            lines.append("")
         
         if "GLD" in data:
             lines.append("GOLD_ETFS:")
@@ -281,30 +294,38 @@ def convert_fundamentals_to_txt(json_folder, txt_folder):
                 close = entry.get('close', 0)
                 vol = entry.get('volume', 0)
                 lines.append(f"GLD:${close}|VOL:{vol/1000000:.2f}M")
+            has_content = True
         
         if "IAU" in data:
             for entry in data["IAU"]:
                 close = entry.get('close', 0)
                 vol = entry.get('volume', 0)
                 lines.append(f"IAU:${close}|VOL:{vol/1000000:.2f}M")
+            has_content = True
         
-        lines.append("")
+        if has_content and ("JOBLESS_CLAIMS" in data or "CPI" in data or "UNEMPLOYMENT" in data):
+            lines.append("")
         
         if "JOBLESS_CLAIMS" in data:
             lines.append("LABOR:")
             for entry in data["JOBLESS_CLAIMS"]:
                 lines.append(f"CLAIMS:{int(entry.get('value', 0))}K")
+            has_content = True
         
         if "CPI" in data:
             for entry in data["CPI"]:
                 lines.append(f"CPI:{entry.get('value')}")
+            has_content = True
         
         if "UNEMPLOYMENT" in data:
             for entry in data["UNEMPLOYMENT"]:
                 lines.append(f"UNEMPLOYMENT:{entry.get('value')}%")
+            has_content = True
         
-        with open(txt_path, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(lines))
+        # Only write if there's actual content
+        if has_content:
+            with open(txt_path, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(lines))
 
 def convert_market_analysis_to_txt(json_folder, txt_folder):
     os.makedirs(txt_folder, exist_ok=True)
@@ -319,6 +340,10 @@ def convert_market_analysis_to_txt(json_folder, txt_folder):
         
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
+        
+        # Skip if no instruments
+        if not data.get("instruments"):
+            continue
         
         lines = [f"=== MARKET ANALYSIS: {date} ===", ""]
         
@@ -369,6 +394,10 @@ def convert_news_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
+        # Skip if no headlines
+        if not data.get("headlines"):
+            continue
+        
         source = data.get("source", "")
         lines = [f"=== NEWS: {date} ({source}) ===", ""]
         
@@ -385,16 +414,6 @@ def convert_news_to_txt(json_folder, txt_folder):
                 ticker = h.get("ticker", "")
                 lines.append(f"{time}|{title}|{ticker}")
             lines.append("")
-        
-        sentiment_line = "SENTIMENT: "
-        if "gold" in by_category:
-            sentiment_line += "GOLD↑|"
-        if "market" in by_category:
-            sentiment_line += "MARKET=|"
-        lines.append(sentiment_line.rstrip("|"))
-        
-        category_counts = "|".join([f"{cat.upper()}:{len(items)}" for cat, items in by_category.items()])
-        lines.append(f"CATEGORIES: {category_counts}")
         
         with open(txt_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))
@@ -413,21 +432,17 @@ def convert_reddit_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        lines = [f"=== REDDIT: {date} ===", ""]
+        # Skip if no posts
+        if not data.get("posts"):
+            continue
         
-        by_subreddit = data.get("by_subreddit", {})
+        lines = [f"=== REDDIT: {date} ===", ""]
         
         for post in data.get("posts", [])[:10]:
             time = post.get("time", "")[:5]
             title = post.get("title", "")[:70]
             source = post.get("source", "")
             lines.append(f"{time}|{title}|{source}")
-        
-        lines.append("")
-        lines.append(f"POSTS: {data.get('total_posts', 0)}")
-        
-        subreddit_counts = "|".join([f"{sub}:{count}" for sub, count in sorted(by_subreddit.items())])
-        lines.append(f"TOP_SOURCES: {subreddit_counts}")
         
         with open(txt_path, 'w', encoding='utf-8') as f:
             f.write('\n'.join(lines))

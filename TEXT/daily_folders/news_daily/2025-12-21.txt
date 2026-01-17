@@ -4,10 +4,3 @@ GOLD(3):
 2025-|BlackRocks IBIT Defies Bitcoin Slump to Beat Gold in 2025 ET|GLD
 2025-|Analyst who predicted record gold prices resets target|GLD
 2025-|Analyst who predicted gold rally sets shocking new price tar|GLD
-
-MARKET(2):
-2025-|BlackRocks IBIT Defies Bitcoin Slump to Beat Gold in 2025 ET|QQQ
-2025-|Buying These 3 Perfect ETFs Could Make You a Millionaire Ret|QQQ
-
-SENTIMENT: GOLD↑|MARKET=
-CATEGORIES: GOLD:3|MARKET:2

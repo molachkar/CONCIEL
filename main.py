@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import subprocess
 import sys
 from datetime import datetime
@@ -11,27 +10,24 @@ SCRIPTS = {
     "MARKET DATA": "Fetchers/global market data.py",
     "NEWS": "Fetchers/news.py",
     "REDDIT": "Fetchers/reddit.py",
-    "SNAPSHOTS": "Editers/snapshots.py",
-    "JSON TO TEXT": "Editers/jsons_to_text.py"
+    "SPLITER": "Editers/spliter.py",
 }
 
 TIMEOUT_SECONDS = 300
 
 def run_script(name, script_path):
     """Run a single Python script with minimal output"""
-    
-    # Check if file exists
+
     path_obj = Path(script_path)
     if not path_obj.exists():
         print(f"ERROR: {name} - Script not found at {script_path}")
         return False
     
     try:
-        # Set environment to use UTF-8 encoding
+
         env = os.environ.copy()
         env['PYTHONIOENCODING'] = 'utf-8'
-        
-        # Run the script with UTF-8 encoding
+
         result = subprocess.run(
             [sys.executable, script_path],
             capture_output=True,
@@ -42,8 +38,7 @@ def run_script(name, script_path):
             errors='replace',
             env=env
         )
-        
-        # Check for errors
+
         if result.returncode != 0:
             print(f"ERROR: {name} failed")
             if result.stderr:
@@ -74,22 +69,18 @@ def verify_all_scripts():
 def main():
     print(f"\nData Collection Runner - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
     
-    # First verify all scripts exist
     if not verify_all_scripts():
         sys.exit(1)
     
     results = {}
-    
-    # Run each script
+
     for name, script_path in SCRIPTS.items():
         success = run_script(name, script_path)
         results[name] = success
-        
-        # Stop if any script fails
+
         if not success:
             break
     
-    # Summary
     print("\n" + "="*60)
     
     successful = sum(1 for v in results.values() if v)

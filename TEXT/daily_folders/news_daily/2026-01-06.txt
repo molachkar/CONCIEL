@@ -1,0 +1,13 @@
+=== NEWS: 2026-01-06 (FinViz) ===
+
+GOLD(3):
+2026-|Can S&P 500 Sustain Double-Digit Winning Streak in 2026? ETF|GLD
+2026-|Newmont Mining Breaks Into the Top 100: A Bet on Venezuelas |RING
+2026-|What's Driving the Parabolic Rise in Silver Futures, and How|GLD
+
+MARKET(8):
+2026-|Stock Market Today: Dow Dips But Nvidia Rallies On New AI Ch|QQQ
+2026-|Stock Market Today: Dow Rises As Nvidia Rallies On New AI Ch|SPY
+2026-|Why QQQ Remains a Popular Proxy for AI-Driven Growth|QQQ
+2026-|Nvidia, Palantir, Seagate And More: Louis Navellier Says For|SPY
+2026-|Better Buy: Comparing the SPY and EQL ETF|SPY

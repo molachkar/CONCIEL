@@ -7,12 +7,7 @@ GOLD(2):
 2025-|Gold Mining ETF (GDXJ) Hits New 52-Week High|GDXJ
 2025-|Best ETF of 2025 & Its 7 Winning Stocks|GLD
 
-MARKET(10):
-2025-|Could Buying the Invesco QQQ Trust Today Set You Up for Life|QQQ
-2025-|Pelosi Vs. Buffett: Viral Tweet Reveals Who Beat S&P 500 The|SPY
-2025-|Warren Buffett: This asset offers more opportunity than real|SPY
-2025-|Best-Performing Sector ETFs of 2025|SPY
-2025-|Stock Market Today: Dow Falls After Surprise GDP Data; Novo |SPY
-
-SENTIMENT: GOLD↑|MARKET=
-CATEGORIES: MARKET:10|GOLD:2|DOLLAR:1
+MARKET(3):
+2025-|Best-Performing Sector ETFs of 2025|DIA
+2025-|Q3 GDP +4.3%: Consumer Carries Economic Heft|DIA
+2025-|Stocks See Support from Economic Confidence After Strong US |DIA
