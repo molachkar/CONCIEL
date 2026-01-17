@@ -6,12 +6,7 @@ from datetime import datetime, timedelta
 from urllib.request import urlopen, Request
 import hashlib
 
-SUBREDDITS = ["japan", "oil", "geopolitics", "worldnews","economics","europe"]
-
-GOLD_KEYWORDS = [
-    "gold", "xau", "precious metal", "bullion", "gold price",
-    "gold market", "gold futures", "gold etf", "gld"
-]
+SUBREDDITS = ["economics", "geopolitics", "worldnews"]
 
 MIN_SCORE = 50
 MIN_COMMENTS = 10
@@ -42,11 +37,11 @@ class RedditNewsFetcher:
                         'subreddit': subreddit
                     })
                 
-                print(f"  r/{subreddit}: {len(data['data']['children'])} posts")
+                print(f"r/{subreddit}: {len(data['data']['children'])} posts")
                 time.sleep(random.uniform(2, 3))
                 
             except Exception as e:
-                print(f"  r/{subreddit}: Error - {str(e)}")
+                print(f"r/{subreddit}: Error - {str(e)}")
         
         return posts
     
@@ -56,10 +51,6 @@ class RedditNewsFetcher:
         text = re.sub(r'@\w+', '', text)
         text = re.sub(r'[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF\U0001F1E0-\U0001F1FF]+', '', text)
         return ' '.join(text.split()).strip()
-    
-    def is_gold_related(self, title):
-        title_lower = title.lower()
-        return any(keyword in title_lower for keyword in GOLD_KEYWORDS)
     
     def filter_posts(self, posts):
         now = datetime.now()
@@ -84,12 +75,6 @@ class RedditNewsFetcher:
             
             self.seen_hashes.add(text_hash)
             
-            gold_related = self.is_gold_related(title)
-            
-            if not gold_related:
-                if post['score'] < 100 or post['num_comments'] < 25:
-                    continue
-            
             filtered.append({
                 'time': post['timestamp'].isoformat(),
                 'title': title,
@@ -99,19 +84,20 @@ class RedditNewsFetcher:
         return filtered
     
     def run(self):
-        print("="*60)
         print("Reddit News Fetcher - 30 Days")
-        print("="*60)
+        print()
         
-        print("\nFetching Reddit posts...")
+        print("Fetching Reddit posts...")
         raw_posts = self.fetch_reddit(SUBREDDITS, limit=100)
         print(f"Total fetched: {len(raw_posts)}")
+        print()
         
-        print("\nFiltering (30 days, high quality, gold-focused)...")
+        print("Filtering posts...")
         filtered = self.filter_posts(raw_posts)
         filtered.sort(key=lambda x: x['time'], reverse=True)
         
         print(f"After filtering: {len(filtered)}")
+        print()
         
         output = {
             'fetch_time': datetime.now().isoformat(),
@@ -123,13 +109,11 @@ class RedditNewsFetcher:
         with open("Fetchers/jsons/reddit_news.json", 'w', encoding='utf-8') as f:
             json.dump(output, f, indent=2, ensure_ascii=False)
         
-        print(f"\n{'='*60}")
         print(f"Saved to reddit_news.json")
-        print("="*60)
+        print(f"Total posts saved: {len(filtered)}")
         
         return output
 
 if __name__ == "__main__":
     fetcher = RedditNewsFetcher()
     result = fetcher.run()
-    print(f"\nTotal posts saved: {result['total_filtered']}")

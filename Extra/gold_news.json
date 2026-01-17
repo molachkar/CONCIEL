@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-01-17T10:52:14.757758",
+  "total_articles": 2,
+  "articles": [
+    {
+      "source": "World Gold Council",
+      "title": "Thank you",
+      "url": "https://www.gold.org/geopolitics-gold-2026-thank-you",
+      "published": "Thu, 08 Jan 2026 12:16:57 +0000",
+      "description": "Thank you\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><span lang=\"lang\">Wilf Walsworth</span></span>\n<span class=\"field field--name-created field--type-created field--label-hidden\"><time class=\"datetime\" datetime=\"2026-01-08T12:16:57+00:00\" title=\"Thursday, January 8, 2026 - 12:16\">Thu, 08/01/2026 - 12:16</time>\n</span>\n\n\n<hr class=\"a-spacer a-spacer--lg theme-purple surface surface--primary surface--dark surface--default\" />\n\n\n\n\n\n  \n\n  \n  <h2 class=\"t-no-mb\">Check your inbox</h2>\n  \n      <div>  <h3>Geopolitics and Gold in 2026 Event</h3><p><span>We have sent you an email containing your webinar invitation</span></p>\n</div>\n  \n  \n\n\n\n<hr class=\"a-spacer a-spacer--lg theme-purple surface surface--primary surface--dark surface--default\" />\n\n\n            <div>1</div>\n                  <div>0</div>\n                  <div>0</div>\n      \n                <img alt=\"A world\" class=\"image-style-sbk-21-9 lazyload\" />\n\n\n\n      \n\n            <div>md</div>\n                  <div>0</div>\n                  <div>Geopolitics and Gold in 2026</div>\n                  <div>theme-purple surface surface--primary surface--light surface--default</div>",
+      "category": "Gold Research",
+      "relevance_score": 100
+    },
+    {
+      "source": "World Gold Council",
+      "title": "Geopolitics and Gold in 2026 event",
+      "url": "https://www.gold.org/invitations/geopolitics-gold-2026",
+      "published": "Thu, 08 Jan 2026 10:51:52 +0000",
+      "description": "Geopolitics and Gold in 2026 event\n<span class=\"field field--name-uid field--type-entity-reference field--label-hidden\"><span lang=\"lang\">Wilf Walsworth</span></span>\n<span class=\"field field--name-created field--type-created field--label-hidden\"><time class=\"datetime\" datetime=\"2026-01-08T10:51:52+00:00\" title=\"Thursday, January 8, 2026 - 10:51\">Thu, 08/01/2026 - 10:51</time>\n</span>\n\n\n<hr class=\"a-spacer a-spacer--sm theme-purple surface surface--primary surface--light surface--default\" />\n\n\n\n\n\n  \n\n  \n  <h3 class=\"t-no-mb\">Get your invite</h3>\n  \n      <div>  <p><span>To register for the event, please click on the ‘Get your invite’ button to enter your details.</span></p>\n</div>\n  \n      \n    <div>\n            <div class=\"wgc-field wgc-field-type-entity_reference_revisions wgc-field-name-field_sbk_pardot_form\">\n              <div>\n  <button class=\"pardot-forms a-button a-button--md a-button--fullwidth a-button--secondary a-button--icon a-button--icon-right \" type=\"button\">\n                      <div>Get your invite</div>\n      \n        \n  </button>\n\n\n\n</div>\n          </div>\n  \n    </div>\n  \n\n\n\n<hr class=\"a-spacer a-spacer--lg theme-purple surface surface--primary surface--light surface--default\" />\n\n\n            <div>1</div>\n                  <div>0</div>\n                  <div>1</div>\n      \n                <img alt=\"A world\" class=\"image-style-sbk-21-9 lazyload\" />\n\n\n\n      \n\n            <div>md</div>\n                  <div>0</div>\n                  <div>Geopolitics and Gold in 2026</div>\n                  <div>theme-blue surface surface--primary surface--light surface--default</div>",
+      "category": "Gold Research",
+      "relevance_score": 100
+    }
+  ]
+}
