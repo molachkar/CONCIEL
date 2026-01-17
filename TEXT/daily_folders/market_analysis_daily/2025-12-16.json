@@ -1,0 +1,104 @@
+{
+  "analysis_info": {
+    "generated_at": "2025-12-25T20:42:44.201618",
+    "period_days": 30
+  },
+  "instruments": {
+    "XAUUSD": {
+      "description": "Gold spot",
+      "market_data": {
+        "date": "2025-12-16 00:00:00",
+        "open": 4304.9,
+        "high": 4334.94,
+        "low": 4271.12,
+        "close": 4301.05
+      },
+      "technicals": {
+        "date": "2025-12-16 00:00:00",
+        "rsi_value": 68.78,
+        "rsi_status": "Neutral",
+        "ema50_value": 4086.55,
+        "ema200_value": 3613.56,
+        "ema_trend": "Bullish",
+        "macd_value": 58.55,
+        "macd_signal": 51.67,
+        "macd_histogram": 6.87,
+        "stoch_k_value": 75.21,
+        "stoch_d_value": 76.92,
+        "stoch_status": "Neutral"
+      }
+    },
+    "USA500.IDX": {
+      "description": "S&P500 index CFD",
+      "market_data": {
+        "date": "2025-12-16 00:00:00",
+        "open": 6821.94,
+        "high": 6830.35,
+        "low": 6758.93,
+        "close": 6794.34
+      },
+      "technicals": {
+        "date": "2025-12-16 00:00:00",
+        "rsi_value": 49.22,
+        "rsi_status": "Neutral",
+        "ema50_value": 6754.08,
+        "ema200_value": 6409.56,
+        "ema_trend": "Bullish",
+        "macd_value": 25.73,
+        "macd_signal": 28.9,
+        "macd_histogram": -3.17,
+        "stoch_k_value": 23.22,
+        "stoch_d_value": 43.1,
+        "stoch_status": "Neutral"
+      }
+    },
+    "VOL.IDX": {
+      "description": "Volatility Index (VIX CFD)",
+      "market_data": {
+        "date": "2025-12-16 00:00:00",
+        "open": 18.42,
+        "high": 18.83,
+        "low": 18.27,
+        "close": 18.53
+      },
+      "technicals": {
+        "date": "2025-12-16 00:00:00",
+        "rsi_value": 52.09,
+        "rsi_status": "Neutral",
+        "ema50_value": 18.43,
+        "ema200_value": 18.64,
+        "ema_trend": "Bearish",
+        "macd_value": -0.64,
+        "macd_signal": -0.56,
+        "macd_histogram": -0.08,
+        "stoch_k_value": 89.86,
+        "stoch_d_value": 39.52,
+        "stoch_status": "Neutral"
+      }
+    },
+    "DOLLAR.IDX": {
+      "description": "Dollar Index (DXY CFD)",
+      "market_data": {
+        "date": "2025-12-16 00:00:00",
+        "open": 97.92,
+        "high": 97.95,
+        "low": 97.49,
+        "close": 97.85
+      },
+      "technicals": {
+        "date": "2025-12-16 00:00:00",
+        "rsi_value": 29.38,
+        "rsi_status": "Oversold",
+        "ema50_value": 98.86,
+        "ema200_value": 99.87,
+        "ema_trend": "Bearish",
+        "macd_value": -0.31,
+        "macd_signal": -0.12,
+        "macd_histogram": -0.19,
+        "stoch_k_value": 15.88,
+        "stoch_d_value": 8.39,
+        "stoch_status": "Exhaustion Near Lows"
+      }
+    }
+  }
+}

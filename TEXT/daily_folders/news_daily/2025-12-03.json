@@ -1,0 +1,22 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher",
+      "time": "2025-12-03T09:00:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Higher",
+      "time": "2025-12-03T09:00:00"
+    }
+  ],
+  "total_headlines": 2,
+  "by_category": {
+    "gold": 1,
+    "dollar": 1
+  }
+}

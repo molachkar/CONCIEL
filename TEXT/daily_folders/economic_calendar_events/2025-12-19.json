@@ -1,0 +1,114 @@
+{
+  "date": "2025-12-19",
+  "total_events": 12,
+  "events": [
+    {
+      "date": "19/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Existing Home Sales  (Nov)",
+      "actual": "4.13M",
+      "forecast": "4.15M",
+      "previous": "4.11M"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Existing Home Sales (MoM)  (Nov)",
+      "actual": "0.5%",
+      "forecast": "",
+      "previous": "1.5%"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan 1-Year Inflation Expectations  (Dec)",
+      "actual": "4.2%",
+      "forecast": "4.1%",
+      "previous": "4.5%"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan 5-Year Inflation Expectations  (Dec)",
+      "actual": "3.2%",
+      "forecast": "3.2%",
+      "previous": "3.4%"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan Consumer Expectations  (Dec)",
+      "actual": "54.6",
+      "forecast": "55.0",
+      "previous": "51.0"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "Michigan Consumer Sentiment  (Dec)",
+      "actual": "52.9",
+      "forecast": "53.5",
+      "previous": "51.0"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Oil Rig Count",
+      "actual": "406",
+      "forecast": "",
+      "previous": "414"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "U.S. Baker Hughes Total Rig Count",
+      "actual": "542",
+      "forecast": "",
+      "previous": "548"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "58.4K",
+      "forecast": "",
+      "previous": "55.0K"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "223.9K",
+      "forecast": "",
+      "previous": "204.6K"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "48.1K",
+      "forecast": "",
+      "previous": "57.4K"
+    },
+    {
+      "date": "19/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-190.4K",
+      "forecast": "",
+      "previous": "-155.3K"
+    }
+  ]
+}

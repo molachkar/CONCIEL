@@ -1,0 +1,18 @@
+{
+  "collection_info": {
+    "source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
+    "original_collection_date": "2025-12-25 20:42:12"
+  },
+  "TREASURY_10Y": [
+    {
+      "date": "2025-11-25",
+      "value": 4.01
+    }
+  ],
+  "HY_CREDIT_SPREAD": [
+    {
+      "date": "2025-11-25",
+      "value": 3.1
+    }
+  ]
+}

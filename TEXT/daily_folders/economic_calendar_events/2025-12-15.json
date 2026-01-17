@@ -1,0 +1,15 @@
+{
+  "date": "2025-12-15",
+  "total_events": 1,
+  "events": [
+    {
+      "date": "15/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "NY Empire State Manufacturing Index  (Dec)",
+      "actual": "-3.90",
+      "forecast": "9.80",
+      "previous": "18.70"
+    }
+  ]
+}

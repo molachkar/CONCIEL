@@ -1,0 +1,89 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Could Buying the Invesco QQQ Trust Today Set You Up for Life?",
+      "time": "2025-12-23T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Pelosi Vs. Buffett: Viral Tweet Reveals Who Beat S&P 500 The Most Since 2012",
+      "time": "2025-12-23T06:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Warren Buffett: This asset offers more opportunity than real estate, young Charlie Munger would pick it in a second",
+      "time": "2025-12-23T06:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Best-Performing Sector ETFs of 2025",
+      "time": "2025-12-23T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls After Surprise GDP Data; Novo Soars On Weight Loss Pill (Live Coverage)",
+      "time": "2025-12-23T09:11:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Slips After Strong GDP Data; Novo Soars On Weight-Loss Pill (Live Coverage)",
+      "time": "2025-12-23T09:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Q3 GDP +4.3%: Consumer Carries Economic Heft",
+      "time": "2025-12-23T10:15:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GDXJ",
+      "title": "Gold Mining ETF (GDXJ) Hits New 52-Week High",
+      "time": "2025-12-23T10:33:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Ray Dalios Top Holdings Revealed: Two ETFs and Two Tech Titans",
+      "time": "2025-12-23T10:52:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Best ETF of 2025 & Its 7 Winning Stocks",
+      "time": "2025-12-23T11:00:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Best ETF of 2025 & Its 7 Winning Stocks",
+      "time": "2025-12-23T11:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks See Support from Economic Confidence After Strong US GDP Report",
+      "time": "2025-12-23T12:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The Smartest Index ETF to Buy With $1,000 Right Now",
+      "time": "2025-12-23T12:50:00"
+    }
+  ],
+  "total_headlines": 13,
+  "by_category": {
+    "market": 10,
+    "gold": 2,
+    "dollar": 1
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Zacks Investment Ideas feature highlights: Carvana, Lennar, Bank of America, Newmont Mining and the Russell 2000 Index ETF",
+      "time": "2025-12-10T04:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Zacks Investment Ideas feature highlights: Intercontinental Exchange, Circle Group, Nasdaq 100 Index ETF and CoreWeave",
+      "time": "2025-12-10T04:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Should You Buy the Invesco QQQ ETF With the Nasdaq Near an All-Time High? History Offers a Clear Answer.",
+      "time": "2025-12-10T04:26:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "The Zacks Analyst Blog Highlights iShares Silver Trust, United States Copper ETF and Invesco DB US Dollar Index Bullish Fund",
+      "time": "2025-12-10T04:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "3 Undervalued ETFs to Buy Before 2026",
+      "time": "2025-12-10T07:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Slips Ahead Of Fed Ruling; Nvidia Chipmaker Rises On Sales Report (Live Coverage)",
+      "time": "2025-12-10T08:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Up Ahead Of Fed Ruling; Nvidia Chipmaker Rises On Sales Report (Live Coverage)",
+      "time": "2025-12-10T08:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Steady Ahead Of Fed Ruling; Microsoft Sells Off (Live Coverage)",
+      "time": "2025-12-10T09:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "QYLD Turns Mag 7 Tech Stocks Into an 11% Dividend Yield",
+      "time": "2025-12-10T09:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Paul Tudor Jones Reduces Stake in SPDR S&P 500 ETF Trust by 0.72%",
+      "time": "2025-12-10T11:02:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Fed Cuts Rates for Third Time This Year, Signals One More in 2026",
+      "time": "2025-12-10T11:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The Big Three ETFs To Dominate 2026",
+      "time": "2025-12-10T15:03:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "QQQ vs. VGT: What's the Better Tech ETF Going Into 2026?",
+      "time": "2025-12-10T15:25:00"
+    }
+  ],
+  "total_headlines": 13,
+  "by_category": {
+    "market": 12,
+    "dollar": 1
+  }
+}

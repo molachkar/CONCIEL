@@ -1,0 +1,15 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "At 31, He Works 7 Days A Week And Has $13M In The Bank, But Says 'Money Is Meaningless'",
+      "time": "2025-12-13T09:02:00"
+    }
+  ],
+  "total_headlines": 1,
+  "by_category": {
+    "market": 1
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "GLDs $141 Billion Rally Hinges on Continued Central Bank Buying",
+      "time": "2025-12-15T08:58:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Small Caps Strike Back: See Why the Russell 2000 Futures Are Heating Up for 2026",
+      "time": "2025-12-15T09:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "IEUR Is One Of The Best Performing ETFs No One Knows About (Crushed VOO and SPY)",
+      "time": "2025-12-15T09:10:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises As Nvidia Rebounds; Tesla Near Buy Point (Live Coverage)",
+      "time": "2025-12-15T09:40:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Best-Performing Leveraged ETF Areas of 2025",
+      "time": "2025-12-15T10:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Will the SPDR S&P 500 ETF (SPY) Stock Hit $800 in 2026?",
+      "time": "2025-12-15T12:18:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Did the QQQ Bull Run Just End? Heres Why This Candlestick is a Bearish Confirmation.",
+      "time": "2025-12-15T13:14:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "1 No-Brainer Artificial Intelligence (AI) Index Fund to Buy Right Now for Less Than $1,000",
+      "time": "2025-12-15T13:25:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Positioning for 2026: Market Outlook and ETF Strategies",
+      "time": "2025-12-15T16:04:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Fall Ahead of US November Payroll Report",
+      "time": "2025-12-15T16:36:00"
+    }
+  ],
+  "total_headlines": 10,
+  "by_category": {
+    "gold": 2,
+    "market": 8
+  }
+}

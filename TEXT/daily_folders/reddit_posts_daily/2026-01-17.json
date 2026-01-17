@@ -1,0 +1,100 @@
+{
+  "fetch_info": {
+    "fetch_time": "2026-01-17T10:33:50.137882",
+    "total_fetched": 300,
+    "total_filtered": 176
+  },
+  "posts": [
+    {
+      "time": "2026-01-17T00:09:00",
+      "title": "Chechen leader Kadyrov's son gets into car accident: hospitalised in serious condition",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T01:09:12",
+      "title": "Mossad director visits U.S. for Iran consultations",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T01:36:28",
+      "title": "Execution of at Least 52 Prisoners in Iran on Murder and Drug-Related Charges",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T02:19:53",
+      "title": "Germany weighs deploying Eurofighters, naval vessels to Greenland in NATO Arctic security push",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T02:21:58",
+      "title": "Poker-faced Powell may have ace up sleeve to stymie Trump's Fed shakeup",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-17T02:50:17",
+      "title": "Canadian PM Carney accepts role on Trump's Gaza 'Board of Peace'",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T04:40:23",
+      "title": "It’s Trump’s Economy, and Voters Are Unhappy With It",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-17T04:50:27",
+      "title": "Trump Purchased Netflix, Warner Bonds in Days After Deal Announcement",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-17T04:56:44",
+      "title": "China curbs US AI chips, shuns foreign capital in pursuit of tech self-reliance",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T05:02:38",
+      "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1423, Part 1 (Thread )",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T05:23:30",
+      "title": "Japan and the Philippines sign a new defense pact as they face growing China aggression",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T05:39:19",
+      "title": "Song banned from Swedish charts for being AI creation",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T05:47:05",
+      "title": "Iranian Supreme Leader Ali Khamenei Is Running Out of Road",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-17T05:52:53",
+      "title": "Intelligence indicates Russians are preparing for new large-scale attacks on Ukraine",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T06:34:23",
+      "title": "Iran plans permanent break from global internet, say activists",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T06:44:32",
+      "title": "China blocks Nvidia H200 AI chips that US government cleared for export – report | Nvidia",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-17T07:36:32",
+      "title": "Thousands of Chinese Fishing Boats Quietly Form Vast Sea Barriers",
+      "source": "r/worldnews"
+    }
+  ],
+  "total_posts": 17,
+  "by_subreddit": {
+    "r/worldnews": 13,
+    "r/economics": 3,
+    "r/geopolitics": 1
+  }
+}

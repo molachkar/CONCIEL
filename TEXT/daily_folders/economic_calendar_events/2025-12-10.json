@@ -1,0 +1,96 @@
+{
+  "date": "2025-12-10",
+  "total_events": 10,
+  "events": [
+    {
+      "date": "10/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Employment Cost Index (QoQ)  (Q3)",
+      "actual": "0.8%",
+      "forecast": "0.9%",
+      "previous": "0.9%"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "actual": "-1.812M",
+      "forecast": "-1.200M",
+      "previous": "0.574M"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Cushing Crude Oil Inventories",
+      "actual": "0.308M",
+      "forecast": "",
+      "previous": "-0.457M"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Federal Budget Balance  (Nov)",
+      "actual": "-173.0B",
+      "forecast": "-186.5B",
+      "previous": "-284.0B"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Interest Rate Projection - 1st Yr  (Q4)",
+      "actual": "3.4%",
+      "forecast": "",
+      "previous": "3.4%"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Interest Rate Projection - 2nd Yr  (Q4)",
+      "actual": "3.1%",
+      "forecast": "",
+      "previous": "3.1%"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Interest Rate Projection - 3rd Yr  (Q4)",
+      "actual": "3.1%",
+      "forecast": "",
+      "previous": "3.1%"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Interest Rate Projection - Current  (Q4)",
+      "actual": "3.6%",
+      "forecast": "",
+      "previous": "3.6%"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Interest Rate Projection - Longer  (Q4)",
+      "actual": "3.0%",
+      "forecast": "",
+      "previous": "3.0%"
+    },
+    {
+      "date": "10/12/2025",
+      "time": "20:00",
+      "currency": "USD",
+      "event": "Fed Interest Rate Decision",
+      "actual": "3.75%",
+      "forecast": "3.75%",
+      "previous": "4.00%"
+    }
+  ]
+}

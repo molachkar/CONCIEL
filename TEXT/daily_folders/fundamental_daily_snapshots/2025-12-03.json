@@ -1,0 +1,32 @@
+{
+  "collection_info": {
+    "source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
+    "original_collection_date": "2025-12-25 20:42:12"
+  },
+  "TREASURY_10Y": [
+    {
+      "date": "2025-12-03",
+      "value": 4.06
+    }
+  ],
+  "HY_CREDIT_SPREAD": [
+    {
+      "date": "2025-12-03",
+      "value": 2.89
+    }
+  ],
+  "GLD": [
+    {
+      "date": "2025-12-03",
+      "close": 386.88,
+      "volume": 7886800
+    }
+  ],
+  "IAU": [
+    {
+      "date": "2025-12-03",
+      "close": 79.23,
+      "volume": 5417200
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "gold",
+      "ticker": "GDXJ",
+      "title": "5 Momentum ETFs With More Room to Run in 2026",
+      "time": "2025-12-12T07:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "5 Momentum ETFs With More Room to Run in 2026",
+      "time": "2025-12-12T07:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Mid-Cap ETFs in High Momentum Now: More Rally Ahead?",
+      "time": "2025-12-12T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Strategy And Bitcoin Face A Defining Test Today",
+      "time": "2025-12-12T08:14:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises But Nasdaq, AI Stocks Falter As Broadcom Plunges On Earnings (Live Coverage)",
+      "time": "2025-12-12T09:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "3 High-Powered ETFs That Have Doubled in Value in Just 3 Years",
+      "time": "2025-12-12T09:54:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Pre-markets Mixed Ahead of Consequential Week of Data",
+      "time": "2025-12-12T10:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Strategy, Bitcoin Slide Ahead Of Today's Defining Test",
+      "time": "2025-12-12T11:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Tumble on Tech Stock Weakness and Higher Bond Yields",
+      "time": "2025-12-12T11:19:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "QQQ vs ONEQ: Is There Any Real Difference Between These ETFs?",
+      "time": "2025-12-12T11:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Pay Attention, Little Known VGK Has Nearly Doubled VOO and SPYs Returns This Year",
+      "time": "2025-12-12T12:19:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Sink as Chip Stocks Retreat and Bond Yields Climb",
+      "time": "2025-12-12T16:33:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Strategy Keeps Nasdaq 100 Listing; What It Means For Bitcoin",
+      "time": "2025-12-12T20:39:00"
+    }
+  ],
+  "total_headlines": 13,
+  "by_category": {
+    "gold": 1,
+    "market": 12
+  }
+}

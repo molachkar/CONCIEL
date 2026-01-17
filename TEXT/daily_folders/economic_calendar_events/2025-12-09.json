@@ -1,0 +1,96 @@
+{
+  "date": "2025-12-09",
+  "total_events": 10,
+  "events": [
+    {
+      "date": "09/12/2025",
+      "time": "14:15",
+      "currency": "USD",
+      "event": "ADP Employment Change Weekly",
+      "actual": "4.75K",
+      "forecast": "",
+      "previous": "-13.50K"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "JOLTS Job Openings  (Sep)",
+      "actual": "7.658M",
+      "forecast": "7.200M",
+      "previous": "7.227M"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "US Leading Index (MoM)  (Sep)",
+      "actual": "-0.3%",
+      "forecast": "-0.3%",
+      "previous": "-0.3%"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "16:01",
+      "currency": "USD",
+      "event": "JOLTS Job Openings  (Oct)",
+      "actual": "7.670M",
+      "forecast": "",
+      "previous": "7.658M"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "10-Year Note Auction",
+      "actual": "4.175%",
+      "forecast": "",
+      "previous": "4.074%"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "74.9K",
+      "forecast": "",
+      "previous": "65.6K"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "202.3K",
+      "forecast": "",
+      "previous": "204.7K"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "48.2K",
+      "forecast": "",
+      "previous": "42.3K"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-163.9K",
+      "forecast": "",
+      "previous": "-150.1K"
+    },
+    {
+      "date": "09/12/2025",
+      "time": "22:30",
+      "currency": "USD",
+      "event": "API Weekly Crude Oil Stock",
+      "actual": "-4.800M",
+      "forecast": "-1.700M",
+      "previous": "-2.480M"
+    }
+  ]
+}

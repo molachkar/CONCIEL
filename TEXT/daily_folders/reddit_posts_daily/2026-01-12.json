@@ -1,0 +1,54 @@
+{
+  "fetch_info": {
+    "fetch_time": "2026-01-17T10:33:50.137882",
+    "total_fetched": 300,
+    "total_filtered": 176
+  },
+  "posts": [
+    {
+      "time": "2026-01-12T11:01:58",
+      "title": "Why Iran's brutal ayatollah will hang on until the bloody end",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-12T12:26:04",
+      "title": "Hamas says it will dissolve its Gaza government when new Palestinian body takes over",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-12T16:23:23",
+      "title": "What Are The Options, Military Or Otherwise, The US Has To Use Against Iran?",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-12T18:12:08",
+      "title": "Iran Has Sent Russia $2.7 Billion Worth of Missiles",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-12T19:45:32",
+      "title": "Trump’s attempts to influence Fed risk ‘70’s-style inflation and global backlash’",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-12T21:10:00",
+      "title": "Former Fed chairs, Treasury chiefs condemn Trump administration's Jerome Powell probe",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-12T21:39:59",
+      "title": "Treasury spent $276 billion in interest on the national debt in the final three months of 2025, says the CBO—up $30 billion from a year prior | Fortune",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-12T23:31:56",
+      "title": "Iran Is on the Edge of Revolution",
+      "source": "r/geopolitics"
+    }
+  ],
+  "total_posts": 8,
+  "by_subreddit": {
+    "r/geopolitics": 5,
+    "r/economics": 3
+  }
+}

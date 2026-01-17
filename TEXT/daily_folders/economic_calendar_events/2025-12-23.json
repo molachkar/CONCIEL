@@ -1,0 +1,168 @@
+{
+  "date": "2025-12-23",
+  "total_events": 18,
+  "events": [
+    {
+      "date": "23/12/2025",
+      "time": "14:15",
+      "currency": "USD",
+      "event": "ADP Employment Change Weekly",
+      "actual": "11.50K",
+      "forecast": "",
+      "previous": "17.50K"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Core Durable Goods Orders (MoM)  (Oct)",
+      "actual": "0.2%",
+      "forecast": "0.3%",
+      "previous": "0.7%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Core PCE Prices  (Q3)",
+      "actual": "2.90%",
+      "forecast": "2.90%",
+      "previous": "2.60%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Durable Goods Orders (MoM)  (Oct)",
+      "actual": "-2.2%",
+      "forecast": "-1.5%",
+      "previous": "0.7%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "GDP (QoQ)  (Q3)",
+      "actual": "4.3%",
+      "forecast": "3.3%",
+      "previous": "3.8%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "GDP Price Index (QoQ)  (Q3)",
+      "actual": "3.7%",
+      "forecast": "2.7%",
+      "previous": "2.1%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "15:14",
+      "currency": "USD",
+      "event": "Industrial Production (MoM)  (Oct)",
+      "actual": "-0.1%",
+      "forecast": "0.1%",
+      "previous": "0.1%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "15:14",
+      "currency": "USD",
+      "event": "Industrial Production (YoY)  (Oct)",
+      "actual": "2.20%",
+      "forecast": "",
+      "previous": "1.90%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "15:15",
+      "currency": "USD",
+      "event": "Industrial Production (MoM)  (Nov)",
+      "actual": "0.2%",
+      "forecast": "",
+      "previous": "-0.1%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "15:15",
+      "currency": "USD",
+      "event": "Industrial Production (YoY)  (Nov)",
+      "actual": "2.52%",
+      "forecast": "",
+      "previous": "2.20%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "CB Consumer Confidence  (Dec)",
+      "actual": "89.1",
+      "forecast": "91.7",
+      "previous": "92.9"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "17:00",
+      "currency": "USD",
+      "event": "Atlanta Fed GDPNow  (Q4)",
+      "actual": "3.0%",
+      "forecast": "3.5%",
+      "previous": "3.5%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "19:00",
+      "currency": "USD",
+      "event": "5-Year Note Auction",
+      "actual": "3.747%",
+      "forecast": "",
+      "previous": "3.562%"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Crude Oil speculative net positions",
+      "actual": "54.9K",
+      "forecast": "",
+      "previous": "58.4K"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Gold speculative net positions",
+      "actual": "234.0K",
+      "forecast": "",
+      "previous": "223.9K"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC Nasdaq 100 speculative net positions",
+      "actual": "46.4K",
+      "forecast": "",
+      "previous": "48.1K"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "21:30",
+      "currency": "USD",
+      "event": "CFTC S&P 500 speculative net positions",
+      "actual": "-166.0K",
+      "forecast": "",
+      "previous": "-190.4K"
+    },
+    {
+      "date": "23/12/2025",
+      "time": "22:30",
+      "currency": "USD",
+      "event": "API Weekly Crude Oil Stock",
+      "actual": "2.400M",
+      "forecast": "",
+      "previous": "-9.300M"
+    }
+  ]
+}

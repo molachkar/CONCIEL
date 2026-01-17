@@ -1,0 +1,106 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Oracle TikTok deal lifts AI mining stocks as bitcoin tags $88,000",
+      "time": "2025-12-19T06:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Income Investors Can Trust Erie Indemnitys Fortress Balance Sheet and Low Payout",
+      "time": "2025-12-19T07:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Dips As Nike Plunges On Earnings (Live Coverage)",
+      "time": "2025-12-19T08:59:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Invesco Unlocks $180 Million Windfall After QQQ Vote Passes",
+      "time": "2025-12-19T09:12:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises But Nike Plunges On Earnings (Live Coverage)",
+      "time": "2025-12-19T09:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Supported by Strength in Cloud Stocks and Chip Makers",
+      "time": "2025-12-19T10:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "More Fed Rate Cuts in 2026? ETFs to Play the Opportunities",
+      "time": "2025-12-19T10:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Dear Western Digital Stock Fans, Mark Your Calendars for Dec. 22",
+      "time": "2025-12-19T11:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Climb as Tech Shares Rally",
+      "time": "2025-12-19T11:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "The Nasdaq-100 ETF Just Flashed a Bearish Chart Signal. Heres What Happens Next.",
+      "time": "2025-12-19T11:09:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "November Inflation Cools: ETF Strategies to Play",
+      "time": "2025-12-19T12:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "History Says This Is How the Market Will Perform in 2026. Here Are the Best ETFs to Own Headed Into Next Year.",
+      "time": "2025-12-19T13:45:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Bitcoin ETF IBIT Ranks Among Top 2025 Fund Flows Despite Negative Returns",
+      "time": "2025-12-19T14:16:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "3 Best Gold ETF Picks for 2026",
+      "time": "2025-12-19T16:09:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Rally as Strength in Tech Boosts Market Sentiment",
+      "time": "2025-12-19T16:33:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "This ETF Is Set To Beat the S&P 500 For the Third Year in a Row. Can It Do Again in 2026?",
+      "time": "2025-12-19T19:05:00"
+    }
+  ],
+  "total_headlines": 16,
+  "by_category": {
+    "market": 13,
+    "gold": 3
+  }
+}

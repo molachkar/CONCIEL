@@ -1,0 +1,15 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold to $5,000? What Bank of America and UBS Have to Say",
+      "time": "2025-11-29T08:51:00"
+    }
+  ],
+  "total_headlines": 1,
+  "by_category": {
+    "gold": 1
+  }
+}

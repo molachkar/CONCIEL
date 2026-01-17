@@ -1,0 +1,119 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "gold",
+      "ticker": "IAU",
+      "title": "These Cryptocurrencies Beat the Market by 20% or More in 2025. Should You Buy Them in 2026?",
+      "time": "2025-12-16T05:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "New to Investing? These 2 ETFs Can Help You Build a Strong Foundation.",
+      "time": "2025-12-16T07:50:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Dips Ahead Of Jobs Report; Palantir, Tesla Drop (Live Coverage)",
+      "time": "2025-12-16T07:59:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Vanguard Just Revealed Its Surprising Outlook For S&P 500 Stocks",
+      "time": "2025-12-16T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "VOO and SPY and Good, But DBEU Looks A Lot Better Right Now",
+      "time": "2025-12-16T08:10:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Reverses On Surprise Jobs Report; Palantir, Tesla Drop (Live Coverage)",
+      "time": "2025-12-16T08:44:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls On Surprise Jobs Report; Palantir, Tesla Drop (Live Coverage)",
+      "time": "2025-12-16T09:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump Trade: Infosys to be impacted by Trumps $100K H-1B worker fee",
+      "time": "2025-12-16T10:10:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Indexes Mixed On Surprise Jobs Report; Palantir, Tesla Turn Higher (Live Coverage)",
+      "time": "2025-12-16T10:16:00"
+    },
+    {
+      "category": "volatility",
+      "ticker": "VXX",
+      "title": "AI Optimism on Pause? ETFs to Play in the Short Term",
+      "time": "2025-12-16T10:32:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Jobs Come In at +64K in November, Unemployment +4.6%",
+      "time": "2025-12-16T10:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Western Digital's Nasdaq-100 Entry Caps Its AI-Driven Comeback",
+      "time": "2025-12-16T11:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Crash Is Here: How Bad Can It Get?",
+      "time": "2025-12-16T11:23:00"
+    },
+    {
+      "category": "market",
+      "ticker": "DIA",
+      "title": "Should You Buy the 5 Highest-Paying Dividend Stocks in the Dow Jones Before 2026?",
+      "time": "2025-12-16T12:27:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "1 Vanguard ETF I'm Buying in 2026 and Holding Forever",
+      "time": "2025-12-16T13:50:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GDX",
+      "title": "Gold Miners' Stocks Are Outrunning Gold. It Won't Last.",
+      "time": "2025-12-16T14:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Settle Mixed on Soft US Economic News",
+      "time": "2025-12-16T16:33:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLDM",
+      "title": "Daily ETF Flows: GLDM Picks Up Steam",
+      "time": "2025-12-16T18:00:00"
+    }
+  ],
+  "total_headlines": 18,
+  "by_category": {
+    "gold": 3,
+    "market": 14,
+    "volatility": 1
+  }
+}

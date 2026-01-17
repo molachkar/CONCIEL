@@ -1,0 +1,96 @@
+{
+  "date": "2025-12-03",
+  "total_events": 10,
+  "events": [
+    {
+      "date": "03/12/2025",
+      "time": "14:15",
+      "currency": "USD",
+      "event": "ADP Nonfarm Employment Change  (Nov)",
+      "actual": "-32K",
+      "forecast": "5K",
+      "previous": "47K"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Export Price Index (MoM)  (Sep)",
+      "actual": "0.0%",
+      "forecast": "0.1%",
+      "previous": "0.1%"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "14:30",
+      "currency": "USD",
+      "event": "Import Price Index (MoM)  (Sep)",
+      "actual": "0.0%",
+      "forecast": "0.1%",
+      "previous": "0.1%"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "15:15",
+      "currency": "USD",
+      "event": "Industrial Production (MoM)  (Sep)",
+      "actual": "0.1%",
+      "forecast": "0.1%",
+      "previous": "-0.3%"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "15:15",
+      "currency": "USD",
+      "event": "Industrial Production (YoY)  (Sep)",
+      "actual": "1.62%",
+      "forecast": "",
+      "previous": "0.84%"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Non-Manufacturing Employment  (Nov)",
+      "actual": "48.9",
+      "forecast": "",
+      "previous": "48.2"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Non-Manufacturing PMI  (Nov)",
+      "actual": "52.6",
+      "forecast": "52.0",
+      "previous": "52.4"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "16:00",
+      "currency": "USD",
+      "event": "ISM Non-Manufacturing Prices  (Nov)",
+      "actual": "65.4",
+      "forecast": "68.0",
+      "previous": "70.0"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Crude Oil Inventories",
+      "actual": "0.574M",
+      "forecast": "-1.900M",
+      "previous": "2.774M"
+    },
+    {
+      "date": "03/12/2025",
+      "time": "16:30",
+      "currency": "USD",
+      "event": "Cushing Crude Oil Inventories",
+      "actual": "-0.457M",
+      "forecast": "",
+      "previous": "-0.068M"
+    }
+  ]
+}

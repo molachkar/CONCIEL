@@ -1,0 +1,58 @@
+{
+  "source": "FinViz",
+  "headlines": [
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Edges Higher Ahead Of Fed Meeting; Nvidia Rallies On Trump Comments (Live Coverage)",
+      "time": "2025-12-09T08:08:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wobbles Ahead Of Fed Meeting; Nvidia Rallies On Trump Comments (Live Coverage)",
+      "time": "2025-12-09T08:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Up Ahead Of Fed Meeting; Nvidia Falls Despite Trump Comments (Live Coverage)",
+      "time": "2025-12-09T09:56:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "ETFs That Investors May Consider Amid a Dollar Drag",
+      "time": "2025-12-09T10:37:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Leads Despite Drag From Nvidia; This Cruise Line Stock Sails Higher (Live Coverage)",
+      "time": "2025-12-09T10:56:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "December FOMC Preview: Rate Cut Priced in but Tone is Everything",
+      "time": "2025-12-09T11:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "This Dividend Aristocrat Turned $100k Into $4 Million in 25 Years",
+      "time": "2025-12-09T14:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Understanding The Concept of Price Action Versus News (News Failure)",
+      "time": "2025-12-09T15:12:00"
+    }
+  ],
+  "total_headlines": 8,
+  "by_category": {
+    "market": 7,
+    "gold": 1
+  }
+}
