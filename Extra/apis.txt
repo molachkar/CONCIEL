@@ -5,3 +5,5 @@
     FINNHUB_KEY = "d2jh4u9r01qj8a5jboegd2jh4u9r01qj8a5jbof0"
     ALPHAVANTAGE_KEY = "RA4O6HFA0Z3SWC2B"
     GNEWS_KEY = "3ca29aea34716d7b94e513c9463ef5f1"
+
+    gg
