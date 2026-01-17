@@ -1,0 +1,10 @@
+=== NEWS: 2025-12-02 (FinViz) ===
+
+GOLD(1):
+2025-|Billionaire Ken Griffin Buys an Index Fund That's Crushing B|GLD
+
+MARKET(1):
+2025-|ETF Investors Put $28.3B To Work In Holiday-Shortened Week|IWM
+
+SENTIMENT: GOLD↑|MARKET=
+CATEGORIES: MARKET:1|GOLD:1

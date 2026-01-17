@@ -1,0 +1,16 @@
+=== NEWS: 2025-12-19 (FinViz) ===
+
+GOLD(3):
+2025-|November Inflation Cools: ETF Strategies to Play|GLD
+2025-|Bitcoin ETF IBIT Ranks Among Top 2025 Fund Flows Despite Neg|GLD
+2025-|3 Best Gold ETF Picks for 2026|GLD
+
+MARKET(13):
+2025-|Oracle TikTok deal lifts AI mining stocks as bitcoin tags $8|QQQ
+2025-|Income Investors Can Trust Erie Indemnitys Fortress Balance |SPY
+2025-|Stock Market Today: Dow Dips As Nike Plunges On Earnings (Li|SPY
+2025-|Invesco Unlocks $180 Million Windfall After QQQ Vote Passes|QQQ
+2025-|Stock Market Today: Dow Rises But Nike Plunges On Earnings (|SPY
+
+SENTIMENT: GOLD↑|MARKET=
+CATEGORIES: MARKET:13|GOLD:3

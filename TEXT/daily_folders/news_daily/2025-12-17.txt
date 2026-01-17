@@ -1,0 +1,18 @@
+=== NEWS: 2025-12-17 (FinViz) ===
+
+GOLD(2):
+2025-|6 Top-Performing ETF Areas of Last Week|GLD
+2025-|Bitcoin, gold, AI were key drivers of 2025's record ETF infl|GLD
+
+MARKET(12):
+2025-|Buy! Analysts Pound The Table For 11 S&P 500 Stocks In 2026|SPY
+2025-|Warren Buffett dumps 2 investments hes told Americans to buy|SPY
+2025-|AI Overvaluation Bothering You? Try Buffer ETFs|SPY
+2025-|Stocks Mixed with Energy Producers Higher and Homebuilders L|SPY
+2025-|Stock Market Today: Dow Rises In Wake Of Market Drop; Oracle|SPY
+
+VOLATILITY(1):
+2025-|The Zacks Analyst Blog VXX, VIXM,JEPQ,JEPI,QYLD|VXX
+
+SENTIMENT: GOLD↑|MARKET=
+CATEGORIES: VOLATILITY:1|GOLD:2|MARKET:12

@@ -1,0 +1,14 @@
+=== NEWS: 2025-12-10 (FinViz) ===
+
+DOLLAR(1):
+2025-|The Zacks Analyst Blog Highlights iShares Silver Trust, Unit|UUP
+
+MARKET(12):
+2025-|Zacks Investment Ideas feature highlights: Carvana, Lennar, |IWM
+2025-|Zacks Investment Ideas feature highlights: Intercontinental |QQQ
+2025-|Should You Buy the Invesco QQQ ETF With the Nasdaq Near an A|QQQ
+2025-|3 Undervalued ETFs to Buy Before 2026|SPY
+2025-|Stock Market Today: Dow Slips Ahead Of Fed Ruling; Nvidia Ch|SPY
+
+SENTIMENT: MARKET=
+CATEGORIES: MARKET:12|DOLLAR:1

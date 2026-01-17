@@ -1,0 +1,21 @@
+=== NEWS: 2025-12-24 (FinViz) ===
+
+DOLLAR(1):
+2025-|Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Hi|UUP
+
+GOLD(6):
+2025-|I Predict Gold Will Cross $5,000 Per Ounce in 2026. Here's H|GLD
+2025-|Gold Climbs Above $4,500 in Historic Rally for Precious Meta|GLD
+2025-|Bitcoin Keeps Falling. Blame Gold and Silver.|GLD
+2025-|Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Hi|GLD
+2025-|Forget the Bond Vigilantes. It's the Gold Vigilantes You Nee|GLD
+
+MARKET(6):
+2025-|Stock Market Today: Dow Falls Ahead Of Jobless Claims; Nvidi|SPY
+2025-|Stock Market Today: Dow Wavers After Surprise Jobless Claims|SPY
+2025-|Stock Market Today: Dow Edges Up After Surprise Jobless Clai|SPY
+2025-|Stocks Little Changed Heading Into Year-End|SPY
+2025-|Top-Performing International ETFs of 2025|SPY
+
+SENTIMENT: GOLD↑|MARKET=
+CATEGORIES: GOLD:6|MARKET:6|DOLLAR:1

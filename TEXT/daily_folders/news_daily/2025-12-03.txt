@@ -1,0 +1,10 @@
+=== NEWS: 2025-12-03 (FinViz) ===
+
+DOLLAR(1):
+2025-|Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Highe|UUP
+
+GOLD(1):
+2025-|Silver Hits a Record High: 4 Reasons Why ETFs Can Soar Highe|GLD
+
+SENTIMENT: GOLD↑
+CATEGORIES: GOLD:1|DOLLAR:1

@@ -1,8 +1,8 @@
 import json
 import os
+import argparse
 from datetime import datetime
 from collections import defaultdict
-from pathlib import Path
 
 def parse_date(date_str):
     formats = [
@@ -21,7 +21,7 @@ def parse_date(date_str):
     
     return None
 
-def process_fundamentals(data, output_dir):
+def process_fundamentals_json(data, output_dir):
     folder_name = "fundamental_daily_snapshots"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
@@ -53,9 +53,10 @@ def process_fundamentals(data, output_dir):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_data)} files in {folder_name}")
+    print(f"Created {len(date_data)} JSON files in {folder_name}")
+    return date_data
 
-def process_economic_calendar(data, output_dir):
+def process_economic_calendar_json(data, output_dir):
     folder_name = "economic_calendar_events"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
@@ -77,9 +78,10 @@ def process_economic_calendar(data, output_dir):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_events)} files in {folder_name}")
+    print(f"Created {len(date_events)} JSON files in {folder_name}")
+    return date_events
 
-def process_market_analysis(data, output_dir):
+def process_market_analysis_json(data, output_dir):
     folder_name = "market_analysis_daily"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
@@ -122,9 +124,10 @@ def process_market_analysis(data, output_dir):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_data)} files in {folder_name}")
+    print(f"Created {len(date_data)} JSON files in {folder_name}")
+    return date_data
 
-def process_news(data, output_dir):
+def process_news_json(data, output_dir):
     folder_name = "news_daily"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
@@ -152,9 +155,10 @@ def process_news(data, output_dir):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_news)} files in {folder_name}")
+    print(f"Created {len(date_news)} JSON files in {folder_name}")
+    return date_news
 
-def process_reddit(data, output_dir):
+def process_reddit_json(data, output_dir):
     folder_name = "reddit_posts_daily"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
@@ -186,22 +190,259 @@ def process_reddit(data, output_dir):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(content, f, indent=2, ensure_ascii=False)
     
-    print(f"Created {len(date_posts)} files in {folder_name}")
+    print(f"Created {len(date_posts)} JSON files in {folder_name}")
+    return date_posts
 
-def main():
-    input_files = {
-        "Fetchers/jsons/economic_calendar.json": process_economic_calendar,
-        "Fetchers/jsons/fundamentals_data.json": process_fundamentals,
-        "Fetchers/jsons/market_analysis_30d.json": process_market_analysis,
-        "Fetchers/jsons/news_30days.json": process_news,
-        "Fetchers/jsons/reddit_news.json": process_reddit
-    }
+def convert_economic_calendar_to_txt(json_folder, txt_folder):
+    os.makedirs(txt_folder, exist_ok=True)
     
-    output_dir = "TEXT/daily_folders"
-    os.makedirs(output_dir, exist_ok=True)
+    for filename in os.listdir(json_folder):
+        if not filename.endswith('.json'):
+            continue
+            
+        date = filename.replace('.json', '')
+        json_path = os.path.join(json_folder, filename)
+        txt_path = os.path.join(txt_folder, f"{date}.txt")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        lines = [f"=== ECONOMIC EVENTS: {date} ===", ""]
+        
+        beats, misses, meets = 0, 0, 0
+        
+        for event in data.get("events", []):
+            time = event.get("time", "")
+            name = event.get("event", "").replace(" ", "_").upper()[:25]
+            actual = event.get("actual", "")
+            forecast = event.get("forecast", "") or "-----"
+            previous = event.get("previous", "")
+            currency = event.get("currency", "")
+            
+            status = ""
+            if actual and forecast and forecast != "-----":
+                try:
+                    act_val = float(actual.replace("%", "").replace("K", "").replace("M", "").replace("B", ""))
+                    fc_val = float(forecast.replace("%", "").replace("K", "").replace("M", "").replace("B", ""))
+                    if act_val > fc_val:
+                        status = "BEAT↑"
+                        beats += 1
+                    elif act_val < fc_val:
+                        status = "MISS↓"
+                        misses += 1
+                    else:
+                        status = "MEET"
+                        meets += 1
+                except:
+                    status = "MEET"
+                    meets += 1
+            
+            line = f"{time}|{name}|{actual}|FC:{forecast}|PV:{previous}|{currency}"
+            if status:
+                line += f"|{status}"
+            lines.append(line)
+        
+        lines.append("")
+        lines.append(f"SUMMARY: {len(data.get('events', []))}_EVENTS|{beats}_BEAT|{misses}_MISS|{meets}_MEET")
+        
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+
+def convert_fundamentals_to_txt(json_folder, txt_folder):
+    os.makedirs(txt_folder, exist_ok=True)
     
-    print("Starting data organization")
+    for filename in os.listdir(json_folder):
+        if not filename.endswith('.json'):
+            continue
+            
+        date = filename.replace('.json', '')
+        json_path = os.path.join(json_folder, filename)
+        txt_path = os.path.join(txt_folder, f"{date}.txt")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        lines = [f"=== FUNDAMENTALS: {date} ===", ""]
+        
+        if "TREASURY_10Y" in data:
+            lines.append("RATES:")
+            for entry in data["TREASURY_10Y"]:
+                lines.append(f"T10Y:{entry.get('value')}%")
+        
+        if "HY_CREDIT_SPREAD" in data:
+            for entry in data["HY_CREDIT_SPREAD"]:
+                lines.append(f"HY_SPREAD:{entry.get('value')}%")
+        
+        lines.append("")
+        
+        if "GLD" in data:
+            lines.append("GOLD_ETFS:")
+            for entry in data["GLD"]:
+                close = entry.get('close', 0)
+                vol = entry.get('volume', 0)
+                lines.append(f"GLD:${close}|VOL:{vol/1000000:.2f}M")
+        
+        if "IAU" in data:
+            for entry in data["IAU"]:
+                close = entry.get('close', 0)
+                vol = entry.get('volume', 0)
+                lines.append(f"IAU:${close}|VOL:{vol/1000000:.2f}M")
+        
+        lines.append("")
+        
+        if "JOBLESS_CLAIMS" in data:
+            lines.append("LABOR:")
+            for entry in data["JOBLESS_CLAIMS"]:
+                lines.append(f"CLAIMS:{int(entry.get('value', 0))}K")
+        
+        if "CPI" in data:
+            for entry in data["CPI"]:
+                lines.append(f"CPI:{entry.get('value')}")
+        
+        if "UNEMPLOYMENT" in data:
+            for entry in data["UNEMPLOYMENT"]:
+                lines.append(f"UNEMPLOYMENT:{entry.get('value')}%")
+        
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+
+def convert_market_analysis_to_txt(json_folder, txt_folder):
+    os.makedirs(txt_folder, exist_ok=True)
+    
+    for filename in os.listdir(json_folder):
+        if not filename.endswith('.json'):
+            continue
+            
+        date = filename.replace('.json', '')
+        json_path = os.path.join(json_folder, filename)
+        txt_path = os.path.join(txt_folder, f"{date}.txt")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        lines = [f"=== MARKET ANALYSIS: {date} ===", ""]
+        
+        for instrument_name, instrument_data in data.get("instruments", {}).items():
+            desc = instrument_data.get("description", "")
+            lines.append(f"{instrument_name}({desc})")
+            
+            market = instrument_data.get("market_data", {})
+            if market:
+                o = market.get('open', 0)
+                h = market.get('high', 0)
+                l = market.get('low', 0)
+                c = market.get('close', 0)
+                lines.append(f"O:{o}|H:{h}|L:{l}|C:{c}")
+            
+            tech = instrument_data.get("technicals", {})
+            if tech:
+                rsi = tech.get('rsi_value', 0)
+                rsi_st = tech.get('rsi_status', 'N')
+                e50 = tech.get('ema50_value', 0)
+                e200 = tech.get('ema200_value', 0)
+                trend = tech.get('ema_trend', 'N')
+                macd = tech.get('macd_value', 0)
+                signal = tech.get('macd_signal', 0)
+                stk = tech.get('stoch_k_value', 0)
+                
+                lines.append(f"RSI:{rsi:.1f}({rsi_st})|E50:{e50:.2f}|E200:{e200:.2f}|TREND:{trend}")
+                
+                macd_dir = ">" if macd > signal else "<"
+                lines.append(f"MACD:{macd:.2f}{macd_dir}{signal:.2f}|STK:{stk:.1f}")
+            
+            lines.append("")
+        
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+
+def convert_news_to_txt(json_folder, txt_folder):
+    os.makedirs(txt_folder, exist_ok=True)
+    
+    for filename in os.listdir(json_folder):
+        if not filename.endswith('.json'):
+            continue
+            
+        date = filename.replace('.json', '')
+        json_path = os.path.join(json_folder, filename)
+        txt_path = os.path.join(txt_folder, f"{date}.txt")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        source = data.get("source", "")
+        lines = [f"=== NEWS: {date} ({source}) ===", ""]
+        
+        by_category = defaultdict(list)
+        for headline in data.get("headlines", []):
+            category = headline.get("category", "unknown")
+            by_category[category].append(headline)
+        
+        for category, headlines in sorted(by_category.items()):
+            lines.append(f"{category.upper()}({len(headlines)}):")
+            for h in headlines[:5]:
+                time = h.get("time", "")[:5]
+                title = h.get("title", "")[:60]
+                ticker = h.get("ticker", "")
+                lines.append(f"{time}|{title}|{ticker}")
+            lines.append("")
+        
+        sentiment_line = "SENTIMENT: "
+        if "gold" in by_category:
+            sentiment_line += "GOLD↑|"
+        if "market" in by_category:
+            sentiment_line += "MARKET=|"
+        lines.append(sentiment_line.rstrip("|"))
+        
+        category_counts = "|".join([f"{cat.upper()}:{len(items)}" for cat, items in by_category.items()])
+        lines.append(f"CATEGORIES: {category_counts}")
+        
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+
+def convert_reddit_to_txt(json_folder, txt_folder):
+    os.makedirs(txt_folder, exist_ok=True)
+    
+    for filename in os.listdir(json_folder):
+        if not filename.endswith('.json'):
+            continue
+            
+        date = filename.replace('.json', '')
+        json_path = os.path.join(json_folder, filename)
+        txt_path = os.path.join(txt_folder, f"{date}.txt")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        lines = [f"=== REDDIT: {date} ===", ""]
+        
+        by_subreddit = data.get("by_subreddit", {})
+        
+        for post in data.get("posts", [])[:10]:
+            time = post.get("time", "")[:5]
+            title = post.get("title", "")[:70]
+            source = post.get("source", "")
+            lines.append(f"{time}|{title}|{source}")
+        
+        lines.append("")
+        lines.append(f"POSTS: {data.get('total_posts', 0)}")
+        
+        subreddit_counts = "|".join([f"{sub}:{count}" for sub, count in sorted(by_subreddit.items())])
+        lines.append(f"TOP_SOURCES: {subreddit_counts}")
+        
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+
+def organize_json_files(output_dir):
+    print("Step 1: Organizing JSON files by date")
     print("")
+    
+    input_files = {
+        "Fetchers/jsons/economic_calendar.json": process_economic_calendar_json,
+        "Fetchers/jsons/fundamentals_data.json": process_fundamentals_json,
+        "Fetchers/jsons/market_analysis_30d.json": process_market_analysis_json,
+        "Fetchers/jsons/news_30days.json": process_news_json,
+        "Fetchers/jsons/reddit_news.json": process_reddit_json
+    }
     
     for file_path, processor_func in input_files.items():
         if os.path.exists(file_path):
@@ -213,6 +454,56 @@ def main():
             print(f"File not found: {file_path}")
     
     print("")
+
+def convert_to_txt(json_base_dir, txt_base_dir):
+    print("Step 2: Converting JSON to optimized TXT")
+    print("")
+    
+    conversions = [
+        ("economic_calendar_events", convert_economic_calendar_to_txt),
+        ("fundamental_daily_snapshots", convert_fundamentals_to_txt),
+        ("market_analysis_daily", convert_market_analysis_to_txt),
+        ("news_daily", convert_news_to_txt),
+        ("reddit_posts_daily", convert_reddit_to_txt)
+    ]
+    
+    for folder_name, converter_func in conversions:
+        json_folder = os.path.join(json_base_dir, folder_name)
+        txt_folder = os.path.join(txt_base_dir, folder_name)
+        
+        if os.path.exists(json_folder):
+            print(f"Converting {folder_name} to TXT")
+            converter_func(json_folder, txt_folder)
+            
+            print(f"Deleting JSON files in {folder_name}")
+            for filename in os.listdir(json_folder):
+                if filename.endswith('.json'):
+                    json_path = os.path.join(json_folder, filename)
+                    os.remove(json_path)
+        else:
+            print(f"Folder not found: {json_folder}")
+    
+    print("")
+
+def main():
+    parser = argparse.ArgumentParser(description='Organize and optimize market data files')
+    parser.add_argument('--json-only', action='store_true', help='Only create JSON files')
+    parser.add_argument('--txt-only', action='store_true', help='Only create TXT files')
+    args = parser.parse_args()
+    
+    base_dir = "TEXT/daily_folders"
+    json_dir = base_dir
+    txt_dir = base_dir
+    
+    print("Starting data organization")
+    print("")
+    
+    if not args.txt_only:
+        organize_json_files(json_dir)
+    
+    if not args.json_only:
+        convert_to_txt(json_dir, txt_dir)
+    
     print("Done")
 
 if __name__ == "__main__":

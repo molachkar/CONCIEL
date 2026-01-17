@@ -1,0 +1,7 @@
+=== NEWS: 2025-12-13 (FinViz) ===
+
+MARKET(1):
+2025-|At 31, He Works 7 Days A Week And Has $13M In The Bank, But |QQQ
+
+SENTIMENT: MARKET=
+CATEGORIES: MARKET:1

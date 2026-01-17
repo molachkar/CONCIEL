@@ -1,0 +1,15 @@
+=== NEWS: 2025-12-15 (FinViz) ===
+
+GOLD(2):
+2025-|GLDs $141 Billion Rally Hinges on Continued Central Bank Buy|GLD
+2025-|Positioning for 2026: Market Outlook and ETF Strategies|GLD
+
+MARKET(8):
+2025-|Small Caps Strike Back: See Why the Russell 2000 Futures Are|IWM
+2025-|IEUR Is One Of The Best Performing ETFs No One Knows About (|SPY
+2025-|Stock Market Today: Dow Rises As Nvidia Rebounds; Tesla Near|SPY
+2025-|Best-Performing Leveraged ETF Areas of 2025|SPY
+2025-|Will the SPDR S&P 500 ETF (SPY) Stock Hit $800 in 2026?|SPY
+
+SENTIMENT: GOLD↑|MARKET=
+CATEGORIES: GOLD:2|MARKET:8

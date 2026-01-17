@@ -1,0 +1,10 @@
+=== NEWS: 2025-12-04 (FinViz) ===
+
+MARKET(4):
+2025-|Stock Market Today: Dow Rises On Surprise Jobless Claims; Sn|SPY
+2025-|Stock Market Today: Dow Wobbles On Surprise Jobless Claims; |SPY
+2025-|ETFs to Keep Your Portfolio on Track in the Long Term|SPY
+2025-|Why High-Income Seekers Are Turning to Autocallable ETFs|SPY
+
+SENTIMENT: MARKET=
+CATEGORIES: MARKET:4
