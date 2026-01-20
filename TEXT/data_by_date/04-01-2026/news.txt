@@ -1,0 +1,10 @@
+=== NEWS: 2026-01-04 (FinViz) ===
+
+GOLD(1):
+2026-|Top & Flop ETF Areas of 2025 (Revised)|GDXJ
+
+MARKET(1):
+2026-|Top & Flop ETF Areas of 2025 (Revised)|DIA
+
+VOLATILITY(1):
+2026-|Top & Flop ETF Areas of 2025 (Revised)|VIXY
