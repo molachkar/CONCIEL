@@ -1,8 +1,7 @@
 import json
-from datetime import datetime, timedelta, timezone
-from typing import Dict, Optional, List
+from datetime import datetime
+from typing import Optional
 import pandas as pd
-import numpy as np
 import ta
 import MetaTrader5 as mt5
 from pathlib import Path
@@ -22,51 +21,27 @@ def round_2(value):
     return round(float(value), 2)
 
 def init_mt5():
-    print("Attempting to connect to MetaTrader 5...")
-    
     if not mt5.initialize():
-        error = mt5.last_error()
-        print(f"\n❌ MT5 Connection Failed: {error}")
-        print("\n🔧 TROUBLESHOOTING STEPS:")
-        print("1. Open MetaTrader 5 desktop application")
-        print("2. Login to your trading account (File → Login to Trade Account)")
-        print("3. Make sure you see 'Connected' in bottom-right corner of MT5")
-        print("4. Keep MT5 running and try this script again")
-        print("\nIf MT5 is already open and logged in:")
-        print("- Restart MT5 completely")
-        print("- Make sure you're using the correct MT5 (not MT4)")
-        print("- Check if your broker allows API/automated trading")
+        print(f"MT5 init failed: {mt5.last_error()}")
         return False
     
     account = mt5.account_info()
     if not account:
-        print("\n❌ Account Info Failed - MT5 not logged in")
-        print("\n🔧 SOLUTION:")
-        print("1. In MT5, go to: File → Login to Trade Account")
-        print("2. Enter your credentials and connect")
-        print("3. Run this script again")
+        print("MT5 not logged in")
         mt5.shutdown()
         return False
     
-    print(f"✅ Connected Successfully!")
-    print(f"   Account: {account.login}")
-    print(f"   Server: {account.server}")
-    print(f"   Balance: {account.balance} {account.currency}")
     return True
 
 def fetch_data(symbol: str) -> Optional[pd.DataFrame]:
     rates = mt5.copy_rates_from_pos(symbol, TIMEFRAME, 0, 450)
     
     if rates is None or len(rates) == 0:
-        print(f"{symbol}: Failed to fetch data")
         return None
     
     df = pd.DataFrame(rates)
     df['time'] = pd.to_datetime(df['time'], unit='s', utc=True)
     df = df[['time', 'open', 'high', 'low', 'close', 'tick_volume']]
-    
-    last_bar_date = df['time'].iloc[-1].strftime('%Y-%m-%d %H:%M:%S UTC')
-    print(f"{symbol}: Fetched {len(df)} daily bars (Last bar: {last_bar_date})")
     return df
 
 def calc_indicators(df):
@@ -75,72 +50,51 @@ def calc_indicators(df):
     low = df['low']
     volume = df['tick_volume']
     
-    # Core EMAs
     ema9 = ta.trend.EMAIndicator(close, window=9).ema_indicator()
     ema21 = ta.trend.EMAIndicator(close, window=21).ema_indicator()
     ema50 = ta.trend.EMAIndicator(close, window=50).ema_indicator()
     ema200 = ta.trend.EMAIndicator(close, window=200).ema_indicator()
     
-    # RSI
     rsi = ta.momentum.RSIIndicator(close, window=14).rsi()
     
-    # MACD
     macd_ind = ta.trend.MACD(close, window_slow=26, window_fast=12, window_sign=9)
     macd = macd_ind.macd()
     signal = macd_ind.macd_signal()
     macd_hist = macd_ind.macd_diff()
     
-    # Bollinger Bands
     bb = ta.volatility.BollingerBands(close, window=20, window_dev=2)
     bb_upper = bb.bollinger_hband()
     bb_lower = bb.bollinger_lband()
     bb_middle = bb.bollinger_mavg()
     bb_width = ((bb_upper - bb_lower) / bb_middle) * 100
     
-    # ATR
     atr = ta.volatility.AverageTrueRange(high, low, close, window=14).average_true_range()
     
-    # Stochastic
     stoch = ta.momentum.StochasticOscillator(high, low, close, window=14, smooth_window=3)
     stoch_k = stoch.stoch()
     stoch_d = stoch.stoch_signal()
     
-    # ADX (Trend Strength)
     adx_ind = ta.trend.ADXIndicator(high, low, close, window=14)
     adx = adx_ind.adx()
     adx_pos = adx_ind.adx_pos()
     adx_neg = adx_ind.adx_neg()
     
-    # Ichimoku Cloud
     ichimoku = ta.trend.IchimokuIndicator(high, low, window1=9, window2=26, window3=52)
     tenkan = ichimoku.ichimoku_conversion_line()
     kijun = ichimoku.ichimoku_base_line()
     senkou_a = ichimoku.ichimoku_a()
     senkou_b = ichimoku.ichimoku_b()
     
-    # On Balance Volume (OBV)
     obv = ta.volume.OnBalanceVolumeIndicator(close, volume).on_balance_volume()
     
-    # Volume Weighted Average Price (approximation)
     typical_price = (high + low + close) / 3
     vwap = (typical_price * volume).rolling(window=20).sum() / volume.rolling(window=20).sum()
     
-    # Parabolic SAR
     psar = ta.trend.PSARIndicator(high, low, close).psar()
-    
-    # Awesome Oscillator
     ao = ta.momentum.AwesomeOscillatorIndicator(high, low).awesome_oscillator()
-    
-    # Williams %R
     willr = ta.momentum.WilliamsRIndicator(high, low, close, lbp=14).williams_r()
-    
-    # Commodity Channel Index
     cci = ta.trend.CCIIndicator(high, low, close, window=20).cci()
-    
-    # Money Flow Index
     mfi = ta.volume.MFIIndicator(high, low, close, volume, window=14).money_flow_index()
-    
-    # Rate of Change
     roc = ta.momentum.ROCIndicator(close, window=12).roc()
     
     return {
@@ -155,10 +109,8 @@ def calc_indicators(df):
     }
 
 def determine_signals(c, indicators, i):
-    """Calculate strategy signals based on proven technical setups"""
     signals = []
     
-    # EMA Alignment (Strong trend confirmation)
     ema9 = indicators['ema9'].loc[i]
     ema21 = indicators['ema21'].loc[i]
     ema50 = indicators['ema50'].loc[i]
@@ -170,18 +122,15 @@ def determine_signals(c, indicators, i):
         elif c < ema9 < ema21 < ema50 < ema200:
             signals.append("EMA_BEAR_STACK")
     
-    # Golden/Death Cross (EMA50/200)
-    if ema50 and ema200:
-        if i > 0:
-            prev_50 = indicators['ema50'].loc[i-1] if not pd.isna(indicators['ema50'].loc[i-1]) else None
-            prev_200 = indicators['ema200'].loc[i-1] if not pd.isna(indicators['ema200'].loc[i-1]) else None
-            if prev_50 and prev_200:
-                if prev_50 <= prev_200 and ema50 > ema200:
-                    signals.append("GOLDEN_CROSS")
-                elif prev_50 >= prev_200 and ema50 < ema200:
-                    signals.append("DEATH_CROSS")
+    if ema50 and ema200 and i > 0:
+        prev_50 = indicators['ema50'].loc[i-1] if not pd.isna(indicators['ema50'].loc[i-1]) else None
+        prev_200 = indicators['ema200'].loc[i-1] if not pd.isna(indicators['ema200'].loc[i-1]) else None
+        if prev_50 and prev_200:
+            if prev_50 <= prev_200 and ema50 > ema200:
+                signals.append("GOLDEN_CROSS")
+            elif prev_50 >= prev_200 and ema50 < ema200:
+                signals.append("DEATH_CROSS")
     
-    # RSI Divergence zones
     rsi = indicators['rsi'].loc[i]
     if rsi:
         if rsi >= 70:
@@ -189,7 +138,6 @@ def determine_signals(c, indicators, i):
         elif rsi <= 30:
             signals.append("RSI_OS")
     
-    # MACD Crossover
     macd = indicators['macd'].loc[i]
     sig = indicators['signal'].loc[i]
     if macd and sig and i > 0:
@@ -201,7 +149,6 @@ def determine_signals(c, indicators, i):
             elif prev_macd >= prev_sig and macd < sig:
                 signals.append("MACD_BEAR_X")
     
-    # ADX Trend Strength
     adx = indicators['adx'].loc[i]
     adx_pos = indicators['adx_pos'].loc[i]
     adx_neg = indicators['adx_neg'].loc[i]
@@ -214,7 +161,6 @@ def determine_signals(c, indicators, i):
         elif adx < 20:
             signals.append("WEAK_TREND")
     
-    # Bollinger Band Squeeze/Breakout
     bb_width = indicators['bb_width'].loc[i]
     if bb_width and bb_width < 1.5:
         signals.append("BB_SQUEEZE")
@@ -227,7 +173,6 @@ def determine_signals(c, indicators, i):
         elif c <= bb_lower:
             signals.append("BB_BREAKOUT_DN")
     
-    # Ichimoku Cloud Position
     senkou_a = indicators['senkou_a'].loc[i]
     senkou_b = indicators['senkou_b'].loc[i]
     if c and senkou_a and senkou_b:
@@ -240,7 +185,6 @@ def determine_signals(c, indicators, i):
         else:
             signals.append("IN_CLOUD")
     
-    # Tenkan/Kijun Cross (Ichimoku signal)
     tenkan = indicators['tenkan'].loc[i]
     kijun = indicators['kijun'].loc[i]
     if tenkan and kijun and i > 0:
@@ -252,7 +196,6 @@ def determine_signals(c, indicators, i):
             elif prev_tenkan >= prev_kijun and tenkan < kijun:
                 signals.append("TK_BEAR_X")
     
-    # Money Flow Index
     mfi = indicators['mfi'].loc[i]
     if mfi:
         if mfi >= 80:
@@ -260,7 +203,6 @@ def determine_signals(c, indicators, i):
         elif mfi <= 20:
             signals.append("MFI_OS")
     
-    # CCI Extreme readings
     cci = indicators['cci'].loc[i]
     if cci:
         if cci > 100:
@@ -268,7 +210,6 @@ def determine_signals(c, indicators, i):
         elif cci < -100:
             signals.append("CCI_OS")
     
-    # Williams %R
     willr = indicators['willr'].loc[i]
     if willr:
         if willr >= -20:
@@ -279,7 +220,6 @@ def determine_signals(c, indicators, i):
     return signals
 
 def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35):
-    """Build a JSON structure organized by date"""
     df_slice = df.tail(last_n).copy()
     daily_data = {}
     
@@ -287,14 +227,12 @@ def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35
         i = df_slice.index[idx]
         date = df_slice.loc[i, 'time'].strftime('%Y-%m-%d')
         
-        # Price data
         o = round_2(df_slice.loc[i, 'open'])
         h = round_2(df_slice.loc[i, 'high'])
         l = round_2(df_slice.loc[i, 'low'])
         c = round_2(df_slice.loc[i, 'close'])
         v = int(df_slice.loc[i, 'tick_volume'])
         
-        # Core indicators
         rsi = round_2(indicators['rsi'].loc[i])
         ema9 = round_2(indicators['ema9'].loc[i])
         ema21 = round_2(indicators['ema21'].loc[i])
@@ -318,7 +256,6 @@ def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35
         adx_pos = round_2(indicators['adx_pos'].loc[i])
         adx_neg = round_2(indicators['adx_neg'].loc[i])
         
-        # Advanced indicators
         tenkan = round_2(indicators['tenkan'].loc[i])
         kijun = round_2(indicators['kijun'].loc[i])
         senkou_a = round_2(indicators['senkou_a'].loc[i])
@@ -332,10 +269,8 @@ def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35
         mfi = round_2(indicators['mfi'].loc[i])
         roc = round_2(indicators['roc'].loc[i])
         
-        # Signals
         signals = determine_signals(c, indicators, i)
         
-        # Store data for this date
         if date not in daily_data:
             daily_data[date] = {}
         
@@ -356,7 +291,6 @@ def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35
     return daily_data
 
 def save_json_output(all_data):
-    """Save data as JSON organized by date"""
     output_dir = Path(OUTPUT_PATH)
     output_dir.mkdir(parents=True, exist_ok=True)
     
@@ -371,14 +305,9 @@ def save_json_output(all_data):
     with open(json_file, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
     
-    print(f"\nSaved: {json_file.absolute()}")
     return str(json_file)
 
 def main():
-    print("Multi-Instrument Technical Analysis - Daily JSON Output")
-    print("(Works on weekends - uses last available data)")
-    print()
-    
     if not init_mt5():
         return
     
@@ -386,28 +315,23 @@ def main():
         all_daily_data = {}
         
         for symbol, name in INSTRUMENTS.items():
-            print(f"\nProcessing {symbol}...")
             df = fetch_data(symbol)
             if df is None or df.empty:
                 continue
             
-            print(f"Calculating indicators...")
             indicators = calc_indicators(df)
-            
             daily_data = build_daily_data_structure(symbol, name, df, indicators, last_n=35)
             
-            # Merge into all_daily_data
             for date, instruments in daily_data.items():
                 if date not in all_daily_data:
                     all_daily_data[date] = {}
                 all_daily_data[date].update(instruments)
         
         save_json_output(all_daily_data)
-        print("\nComplete")
+        print("Done")
         
     finally:
         mt5.shutdown()
-        print("MT5 closed")
 
 if __name__ == "__main__":
     main()

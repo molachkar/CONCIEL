@@ -11,6 +11,7 @@ SCRIPTS = {
     "NEWS": "Fetchers/news.py",
     "REDDIT": "Fetchers/reddit.py",
     "SPLITER": "Editers/spliter.py",
+    "ORGINIZER": "Editers/orginizer.py",
 }
 
 TIMEOUT_SECONDS = 300

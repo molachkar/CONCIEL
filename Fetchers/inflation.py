@@ -8,9 +8,9 @@ from dateutil.relativedelta import relativedelta
 
 FRED_API_KEY = "f4e191ba7125013521aa29b4fbe962ee"
 FRED_BASE_URL = "https://api.stlouisfed.org/fred/series/observations"
+OUTPUT_PATH = "Fetchers/jsons/fundamentals_data.json"
 
 def fetch_fred_series_range(series_id: str, start_date: str) -> Optional[List[Dict]]:
-    """Fetch FRED series data from a start date to present."""
     params = {
         "series_id": series_id,
         "api_key": FRED_API_KEY,
@@ -36,7 +36,6 @@ def fetch_fred_series_range(series_id: str, start_date: str) -> Optional[List[Di
         return None
 
 def fetch_monthly_indicator(series_id: str, name: str) -> Dict:
-    """Fetch current and previous month for monthly indicators."""
     start_date = (datetime.now() - relativedelta(months=3)).strftime("%Y-%m-%d")
     data = fetch_fred_series_range(series_id, start_date)
     
@@ -53,7 +52,6 @@ def fetch_monthly_indicator(series_id: str, name: str) -> Dict:
     return result
 
 def fetch_daily_previous_month(series_id: str, name: str) -> Dict:
-    """Fetch all values from previous 30 days for daily frequency indicators."""
     start_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     data = fetch_fred_series_range(series_id, start_date)
     
@@ -70,7 +68,6 @@ def fetch_daily_previous_month(series_id: str, name: str) -> Dict:
     return result
 
 def fetch_weekly_previous_month(series_id: str, name: str) -> Dict:
-    """Fetch all values from previous 30 days for weekly frequency indicators."""
     start_date = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
     data = fetch_fred_series_range(series_id, start_date)
     
@@ -87,7 +84,6 @@ def fetch_weekly_previous_month(series_id: str, name: str) -> Dict:
     return result
 
 def fetch_real_interest_rate() -> Dict:
-    """Calculate real interest rate (Treasury 10Y - CPI YoY)."""
     start_date = (datetime.now() - relativedelta(months=14)).strftime("%Y-%m-%d")
     treasury_data = fetch_fred_series_range("DGS10", start_date)
     cpi_data = fetch_fred_series_range("CPIAUCSL", start_date)
@@ -112,7 +108,6 @@ def fetch_real_interest_rate() -> Dict:
     return result
 
 def fetch_gold_etf_flows() -> Dict:
-    """Fetch GLD and IAU net asset values as proxy for institutional flows."""
     result = {}
     
     try:
@@ -153,32 +148,20 @@ def fetch_gold_etf_flows() -> Dict:
     return result
 
 def collect_fundamentals() -> Dict:
-    """Collect all fundamental economic indicators."""
-    print("Collecting fundamental economic data...")
-    
     fundamentals = {
         "collection_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance"
     }
     
-    # ===== DAILY FREQUENCY INDICATORS =====
-    print("\n[DAILY FREQUENCY]")
     fundamentals["#DAILY_DATA"] = "Last 30 days, chronological order (oldest to newest)"
-    
     fundamentals.update(fetch_daily_previous_month("DGS10", "TREASURY_10Y"))
     fundamentals.update(fetch_daily_previous_month("BAMLH0A0HYM2", "HY_CREDIT_SPREAD"))
     fundamentals.update(fetch_gold_etf_flows())
     
-    # ===== WEEKLY FREQUENCY INDICATORS =====
-    print("[WEEKLY FREQUENCY]")
     fundamentals["#WEEKLY_DATA"] = "Last 30 days, chronological order (oldest to newest)"
-    
     fundamentals.update(fetch_weekly_previous_month("ICSA", "JOBLESS_CLAIMS"))
     
-    # ===== MONTHLY FREQUENCY INDICATORS =====
-    print("[MONTHLY FREQUENCY]")
     fundamentals["#MONTHLY_DATA"] = "Last 3 months, chronological order (oldest to newest)"
-    
     fundamentals.update(fetch_monthly_indicator("CPIAUCSL", "CPI"))
     fundamentals.update(fetch_monthly_indicator("PCEPI", "PCE"))
     fundamentals.update(fetch_monthly_indicator("PPIACO", "PPI"))
@@ -190,34 +173,18 @@ def collect_fundamentals() -> Dict:
     fundamentals.update(fetch_monthly_indicator("INDPRO", "INDUSTRIAL_PROD"))
     fundamentals.update(fetch_monthly_indicator("HOUST", "HOUSING_STARTS"))
     
-    # ===== CALCULATED INDICATORS =====
-    print("[CALCULATED INDICATORS]")
     fundamentals["#CALCULATED_DATA"] = "Derived metrics"
-    
     fundamentals.update(fetch_real_interest_rate())
-    
-    print("\nCollection complete.")
     
     return fundamentals
 
 def main():
-    print("=" * 60)
-    print("FUNDAMENTALS DATA COLLECTION")
-    print("=" * 60)
-    
     fundamentals = collect_fundamentals()
     
-    output = json.dumps(fundamentals, indent=2)
+    with open(OUTPUT_PATH, "w") as f:
+        json.dump(fundamentals, f, indent=2)
     
-    print("\n" + "=" * 60)
-    print("DATA SAVED")
-    print("=" * 60)
-    
-    output_file = "Fetchers/jsons/fundamentals_data.json"
-    with open(output_file, "w") as f:
-        f.write(output)
-    
-    print(f"\nFile: {output_file}")
+    print("Done")
 
 if __name__ == "__main__":
     main()

@@ -1,8 +1,18 @@
 {
-  "fetch_time": "2026-01-20T20:48:17.015157",
+  "fetch_time": "2026-01-20T21:23:46.356046",
   "total_fetched": 300,
-  "total_filtered": 163,
+  "total_filtered": 166,
   "posts": [
+    {
+      "time": "2026-01-20T21:11:38",
+      "title": "Carney says the old world order 'is not coming back' in Davos speech",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-20T20:18:14",
+      "title": "Denmark would go to war with US over Greenland: MP",
+      "source": "r/geopolitics"
+    },
     {
       "time": "2026-01-20T20:02:39",
       "title": "EU Parliament freezes US trade deal ratification after Trump's tariff threats over Greenland",
@@ -12,6 +22,16 @@
       "time": "2026-01-20T19:38:48",
       "title": "Europe to suspend approval of US tariffs deal",
       "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-20T19:32:15",
+      "title": "Military models Canadian response to hypothetical American invasion",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-20T18:47:53",
+      "title": "To Make Homes Affordable Again, Someone Has to Lose Out",
+      "source": "r/economics"
     },
     {
       "time": "2026-01-20T18:46:57",
@@ -364,11 +384,6 @@
       "source": "r/worldnews"
     },
     {
-      "time": "2026-01-19T21:54:22",
-      "title": "Hackers target Iran state TV's satellite transmission to broadcast exiled crown prince",
-      "source": "r/worldnews"
-    },
-    {
       "time": "2026-01-19T21:18:49",
       "title": "US futures sink after Trump warns of higher tariffs for 8 countries over Greenland issue",
       "source": "r/economics"
@@ -664,9 +679,9 @@
       "source": "r/economics"
     },
     {
-      "time": "2026-01-17T18:08:04",
+      "time": "2026-01-17T17:48:40",
       "title": "Trump says 8 European countries will be charged a 10% tariff for opposing US control of Greenland",
-      "source": "r/economics"
+      "source": "r/geopolitics"
     },
     {
       "time": "2026-01-17T17:48:14",
