@@ -1,0 +1,3995 @@
+{
+  "generated_at": "2026-01-20 22:07:26",
+  "daily_data": {
+    "2025-12-01": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0126,
+          "yang_zhang": 0.1986,
+          "regime": "high",
+          "percentile": 82.12
+        },
+        "hurst": {
+          "value": 0.4558,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.5578
+        },
+        "microstructure": {
+          "spread_estimate": 0.0193,
+          "efficiency_ratio": 0.3171
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0101,
+          "yang_zhang": 0.171,
+          "regime": "high",
+          "percentile": 83.37
+        },
+        "hurst": {
+          "value": 0.2031,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.2911
+        },
+        "microstructure": {
+          "spread_estimate": 0.0152,
+          "efficiency_ratio": 0.0412
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.053,
+          "yang_zhang": 0.9004,
+          "regime": "high",
+          "percentile": 74.22
+        },
+        "hurst": {
+          "value": 0.1374,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4303
+        },
+        "microstructure": {
+          "spread_estimate": 0.0782,
+          "efficiency_ratio": 0.035
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0461,
+          "regime": "low",
+          "percentile": 10.81
+        },
+        "hurst": {
+          "value": 0.1902,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.1314
+        },
+        "microstructure": {
+          "spread_estimate": 0.0043,
+          "efficiency_ratio": 0.1026
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-02": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0125,
+          "yang_zhang": 0.2011,
+          "regime": "high",
+          "percentile": 81.91
+        },
+        "hurst": {
+          "value": 0.4532,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.563
+        },
+        "microstructure": {
+          "spread_estimate": 0.0192,
+          "efficiency_ratio": 0.4018
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.01,
+          "yang_zhang": 0.1699,
+          "regime": "high",
+          "percentile": 82.54
+        },
+        "hurst": {
+          "value": 0.2018,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.2807
+        },
+        "microstructure": {
+          "spread_estimate": 0.0148,
+          "efficiency_ratio": 0.0568
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0524,
+          "yang_zhang": 0.89,
+          "regime": "high",
+          "percentile": 73.18
+        },
+        "hurst": {
+          "value": 0.1429,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4549
+        },
+        "microstructure": {
+          "spread_estimate": 0.0763,
+          "efficiency_ratio": 0.1098
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0446,
+          "regime": "low",
+          "percentile": 5.82
+        },
+        "hurst": {
+          "value": 0.1888,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.1823
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.2446
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-03": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0124,
+          "yang_zhang": 0.2013,
+          "regime": "high",
+          "percentile": 81.29
+        },
+        "hurst": {
+          "value": 0.4519,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.2238
+        },
+        "microstructure": {
+          "spread_estimate": 0.019,
+          "efficiency_ratio": 0.3494
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0098,
+          "yang_zhang": 0.1668,
+          "regime": "high",
+          "percentile": 82.12
+        },
+        "hurst": {
+          "value": 0.2028,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.3827
+        },
+        "microstructure": {
+          "spread_estimate": 0.0144,
+          "efficiency_ratio": 0.0619
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0509,
+          "yang_zhang": 0.8644,
+          "regime": "high",
+          "percentile": 70.27
+        },
+        "hurst": {
+          "value": 0.1404,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4752
+        },
+        "microstructure": {
+          "spread_estimate": 0.0727,
+          "efficiency_ratio": 0.0801
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0447,
+          "regime": "low",
+          "percentile": 9.36
+        },
+        "hurst": {
+          "value": 0.1906,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.4649
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.3308
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-04": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0124,
+          "yang_zhang": 0.1995,
+          "regime": "high",
+          "percentile": 80.87
+        },
+        "hurst": {
+          "value": 0.4498,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.4069
+        },
+        "microstructure": {
+          "spread_estimate": 0.0188,
+          "efficiency_ratio": 0.3613
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0096,
+          "yang_zhang": 0.1645,
+          "regime": "high",
+          "percentile": 80.25
+        },
+        "hurst": {
+          "value": 0.2042,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.4223
+        },
+        "microstructure": {
+          "spread_estimate": 0.0139,
+          "efficiency_ratio": 0.1389
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0499,
+          "yang_zhang": 0.8496,
+          "regime": "high",
+          "percentile": 68.4
+        },
+        "hurst": {
+          "value": 0.1397,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.5184
+        },
+        "microstructure": {
+          "spread_estimate": 0.0702,
+          "efficiency_ratio": 0.1611
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0448,
+          "regime": "low",
+          "percentile": 7.69
+        },
+        "hurst": {
+          "value": 0.1914,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.1139
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.1597
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-05": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0124,
+          "yang_zhang": 0.202,
+          "regime": "high",
+          "percentile": 81.08
+        },
+        "hurst": {
+          "value": 0.449,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.0019
+        },
+        "microstructure": {
+          "spread_estimate": 0.019,
+          "efficiency_ratio": 0.3152
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0094,
+          "yang_zhang": 0.1571,
+          "regime": "high",
+          "percentile": 79.0
+        },
+        "hurst": {
+          "value": 0.2067,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.377
+        },
+        "microstructure": {
+          "spread_estimate": 0.0134,
+          "efficiency_ratio": 0.1502
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0483,
+          "yang_zhang": 0.8008,
+          "regime": "high",
+          "percentile": 66.53
+        },
+        "hurst": {
+          "value": 0.1402,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.515
+        },
+        "microstructure": {
+          "spread_estimate": 0.0664,
+          "efficiency_ratio": 0.1732
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0443,
+          "regime": "low",
+          "percentile": 4.99
+        },
+        "hurst": {
+          "value": 0.1995,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.0107
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.1346
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-08": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0119,
+          "yang_zhang": 0.1994,
+          "regime": "high",
+          "percentile": 77.13
+        },
+        "hurst": {
+          "value": 0.4483,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": -0.1619
+        },
+        "microstructure": {
+          "spread_estimate": 0.018,
+          "efficiency_ratio": 0.1435
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0093,
+          "yang_zhang": 0.155,
+          "regime": "high",
+          "percentile": 77.75
+        },
+        "hurst": {
+          "value": 0.2109,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.2901
+        },
+        "microstructure": {
+          "spread_estimate": 0.0132,
+          "efficiency_ratio": 0.0092
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0479,
+          "yang_zhang": 0.7865,
+          "regime": "medium",
+          "percentile": 64.86
+        },
+        "hurst": {
+          "value": 0.1429,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4664
+        },
+        "microstructure": {
+          "spread_estimate": 0.0651,
+          "efficiency_ratio": 0.0673
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0444,
+          "regime": "low",
+          "percentile": 7.28
+        },
+        "hurst": {
+          "value": 0.2102,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.1413
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.136
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-09": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0119,
+          "yang_zhang": 0.1992,
+          "regime": "high",
+          "percentile": 76.92
+        },
+        "hurst": {
+          "value": 0.4463,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.0524
+        },
+        "microstructure": {
+          "spread_estimate": 0.018,
+          "efficiency_ratio": 0.1554
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0092,
+          "yang_zhang": 0.1542,
+          "regime": "high",
+          "percentile": 77.34
+        },
+        "hurst": {
+          "value": 0.2156,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.1428
+        },
+        "microstructure": {
+          "spread_estimate": 0.013,
+          "efficiency_ratio": 0.0193
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0479,
+          "yang_zhang": 0.7867,
+          "regime": "medium",
+          "percentile": 65.07
+        },
+        "hurst": {
+          "value": 0.1466,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3692
+        },
+        "microstructure": {
+          "spread_estimate": 0.0651,
+          "efficiency_ratio": 0.048
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0439,
+          "regime": "low",
+          "percentile": 5.2
+        },
+        "hurst": {
+          "value": 0.2164,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.2729
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.0551
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-10": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0114,
+          "yang_zhang": 0.194,
+          "regime": "high",
+          "percentile": 74.84
+        },
+        "hurst": {
+          "value": 0.4467,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.3682
+        },
+        "microstructure": {
+          "spread_estimate": 0.0173,
+          "efficiency_ratio": 0.0694
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0093,
+          "yang_zhang": 0.1551,
+          "regime": "high",
+          "percentile": 77.96
+        },
+        "hurst": {
+          "value": 0.2198,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.2744
+        },
+        "microstructure": {
+          "spread_estimate": 0.0132,
+          "efficiency_ratio": 0.0336
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0488,
+          "yang_zhang": 0.7969,
+          "regime": "high",
+          "percentile": 67.36
+        },
+        "hurst": {
+          "value": 0.1498,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4021
+        },
+        "microstructure": {
+          "spread_estimate": 0.0675,
+          "efficiency_ratio": 0.111
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0446,
+          "regime": "low",
+          "percentile": 12.06
+        },
+        "hurst": {
+          "value": 0.2247,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.2098
+        },
+        "microstructure": {
+          "spread_estimate": 0.0043,
+          "efficiency_ratio": 0.1988
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-11": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0113,
+          "yang_zhang": 0.1898,
+          "regime": "high",
+          "percentile": 73.8
+        },
+        "hurst": {
+          "value": 0.4461,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6701
+        },
+        "microstructure": {
+          "spread_estimate": 0.0171,
+          "efficiency_ratio": 0.2152
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.009,
+          "yang_zhang": 0.1543,
+          "regime": "high",
+          "percentile": 76.09
+        },
+        "hurst": {
+          "value": 0.2265,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.4958
+        },
+        "microstructure": {
+          "spread_estimate": 0.0129,
+          "efficiency_ratio": 0.1966
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0463,
+          "yang_zhang": 0.7752,
+          "regime": "medium",
+          "percentile": 61.75
+        },
+        "hurst": {
+          "value": 0.1657,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4429
+        },
+        "microstructure": {
+          "spread_estimate": 0.0649,
+          "efficiency_ratio": 0.3218
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0449,
+          "regime": "low",
+          "percentile": 12.47
+        },
+        "hurst": {
+          "value": 0.2457,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.4033
+        },
+        "microstructure": {
+          "spread_estimate": 0.0043,
+          "efficiency_ratio": 0.1955
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-12": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0101,
+          "yang_zhang": 0.1743,
+          "regime": "medium",
+          "percentile": 63.2
+        },
+        "hurst": {
+          "value": 0.4443,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.529
+        },
+        "microstructure": {
+          "spread_estimate": 0.016,
+          "efficiency_ratio": 0.4984
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.009,
+          "yang_zhang": 0.1499,
+          "regime": "high",
+          "percentile": 74.22
+        },
+        "hurst": {
+          "value": 0.2347,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.3465
+        },
+        "microstructure": {
+          "spread_estimate": 0.0127,
+          "efficiency_ratio": 0.1052
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0463,
+          "yang_zhang": 0.7803,
+          "regime": "medium",
+          "percentile": 61.54
+        },
+        "hurst": {
+          "value": 0.1868,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4593
+        },
+        "microstructure": {
+          "spread_estimate": 0.0648,
+          "efficiency_ratio": 0.2547
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0461,
+          "regime": "low",
+          "percentile": 11.23
+        },
+        "hurst": {
+          "value": 0.2743,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.6002
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.2961
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-15": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0098,
+          "yang_zhang": 0.1699,
+          "regime": "medium",
+          "percentile": 57.59
+        },
+        "hurst": {
+          "value": 0.4415,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.3104
+        },
+        "microstructure": {
+          "spread_estimate": 0.0155,
+          "efficiency_ratio": 0.6447
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0086,
+          "yang_zhang": 0.1446,
+          "regime": "high",
+          "percentile": 68.4
+        },
+        "hurst": {
+          "value": 0.2382,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.1965
+        },
+        "microstructure": {
+          "spread_estimate": 0.0122,
+          "efficiency_ratio": 0.1765
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0419,
+          "yang_zhang": 0.7347,
+          "regime": "medium",
+          "percentile": 50.94
+        },
+        "hurst": {
+          "value": 0.2063,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4324
+        },
+        "microstructure": {
+          "spread_estimate": 0.0602,
+          "efficiency_ratio": 0.482
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.046,
+          "regime": "low",
+          "percentile": 11.64
+        },
+        "hurst": {
+          "value": 0.3102,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.5678
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.4015
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-16": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0096,
+          "yang_zhang": 0.1659,
+          "regime": "medium",
+          "percentile": 54.26
+        },
+        "hurst": {
+          "value": 0.4398,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.2519
+        },
+        "microstructure": {
+          "spread_estimate": 0.0152,
+          "efficiency_ratio": 0.6115
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0084,
+          "yang_zhang": 0.1421,
+          "regime": "medium",
+          "percentile": 65.07
+        },
+        "hurst": {
+          "value": 0.2404,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.1706
+        },
+        "microstructure": {
+          "spread_estimate": 0.0118,
+          "efficiency_ratio": 0.2426
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0412,
+          "yang_zhang": 0.8372,
+          "regime": "medium",
+          "percentile": 49.27
+        },
+        "hurst": {
+          "value": 0.2249,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4118
+        },
+        "microstructure": {
+          "spread_estimate": 0.0586,
+          "efficiency_ratio": 0.2522
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0475,
+          "regime": "low",
+          "percentile": 13.51
+        },
+        "hurst": {
+          "value": 0.3327,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.2625
+        },
+        "microstructure": {
+          "spread_estimate": 0.0043,
+          "efficiency_ratio": 0.4133
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-17": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0093,
+          "yang_zhang": 0.1595,
+          "regime": "medium",
+          "percentile": 50.52
+        },
+        "hurst": {
+          "value": 0.4377,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.4793
+        },
+        "microstructure": {
+          "spread_estimate": 0.0148,
+          "efficiency_ratio": 0.6371
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0084,
+          "yang_zhang": 0.1417,
+          "regime": "medium",
+          "percentile": 65.9
+        },
+        "hurst": {
+          "value": 0.2423,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": -0.0799
+        },
+        "microstructure": {
+          "spread_estimate": 0.0119,
+          "efficiency_ratio": 0.1239
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0406,
+          "yang_zhang": 0.834,
+          "regime": "medium",
+          "percentile": 47.19
+        },
+        "hurst": {
+          "value": 0.2223,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.2998
+        },
+        "microstructure": {
+          "spread_estimate": 0.0571,
+          "efficiency_ratio": 0.173
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.047,
+          "regime": "low",
+          "percentile": 6.86
+        },
+        "hurst": {
+          "value": 0.3507,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.3653
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.6166
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-18": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0093,
+          "yang_zhang": 0.1583,
+          "regime": "medium",
+          "percentile": 49.27
+        },
+        "hurst": {
+          "value": 0.4387,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.2756
+        },
+        "microstructure": {
+          "spread_estimate": 0.0147,
+          "efficiency_ratio": 0.6102
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0072,
+          "yang_zhang": 0.1221,
+          "regime": "medium",
+          "percentile": 45.95
+        },
+        "hurst": {
+          "value": 0.2468,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": -0.1771
+        },
+        "microstructure": {
+          "spread_estimate": 0.0108,
+          "efficiency_ratio": 0.3296
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0351,
+          "yang_zhang": 0.7658,
+          "regime": "medium",
+          "percentile": 34.93
+        },
+        "hurst": {
+          "value": 0.2211,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3854
+        },
+        "microstructure": {
+          "spread_estimate": 0.0518,
+          "efficiency_ratio": 0.415
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0472,
+          "regime": "low",
+          "percentile": 7.9
+        },
+        "hurst": {
+          "value": 0.3685,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.1255
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.6061
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-19": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.009,
+          "yang_zhang": 0.1536,
+          "regime": "medium",
+          "percentile": 43.87
+        },
+        "hurst": {
+          "value": 0.4393,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.3805
+        },
+        "microstructure": {
+          "spread_estimate": 0.0143,
+          "efficiency_ratio": 0.6656
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0066,
+          "yang_zhang": 0.1128,
+          "regime": "medium",
+          "percentile": 37.01
+        },
+        "hurst": {
+          "value": 0.2463,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.1104
+        },
+        "microstructure": {
+          "spread_estimate": 0.0102,
+          "efficiency_ratio": 0.3259
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0333,
+          "yang_zhang": 0.7384,
+          "regime": "low",
+          "percentile": 28.9
+        },
+        "hurst": {
+          "value": 0.2188,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4621
+        },
+        "microstructure": {
+          "spread_estimate": 0.0494,
+          "efficiency_ratio": 0.3934
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0465,
+          "regime": "low",
+          "percentile": 6.03
+        },
+        "hurst": {
+          "value": 0.3885,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.2731
+        },
+        "microstructure": {
+          "spread_estimate": 0.0042,
+          "efficiency_ratio": 0.4812
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-22": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0091,
+          "yang_zhang": 0.1501,
+          "regime": "medium",
+          "percentile": 45.11
+        },
+        "hurst": {
+          "value": 0.4362,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6806
+        },
+        "microstructure": {
+          "spread_estimate": 0.0144,
+          "efficiency_ratio": 0.6908
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0063,
+          "yang_zhang": 0.1062,
+          "regime": "low",
+          "percentile": 31.39
+        },
+        "hurst": {
+          "value": 0.2436,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.2857
+        },
+        "microstructure": {
+          "spread_estimate": 0.0096,
+          "efficiency_ratio": 0.2688
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0307,
+          "yang_zhang": 0.6992,
+          "regime": "low",
+          "percentile": 24.32
+        },
+        "hurst": {
+          "value": 0.2175,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4505
+        },
+        "microstructure": {
+          "spread_estimate": 0.0456,
+          "efficiency_ratio": 0.3228
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0027,
+          "yang_zhang": 0.0468,
+          "regime": "low",
+          "percentile": 9.98
+        },
+        "hurst": {
+          "value": 0.3925,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.0316
+        },
+        "microstructure": {
+          "spread_estimate": 0.0043,
+          "efficiency_ratio": 0.5453
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-23": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0092,
+          "yang_zhang": 0.151,
+          "regime": "medium",
+          "percentile": 46.78
+        },
+        "hurst": {
+          "value": 0.4309,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.8031
+        },
+        "microstructure": {
+          "spread_estimate": 0.0145,
+          "efficiency_ratio": 0.7319
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0997,
+          "regime": "low",
+          "percentile": 21.0
+        },
+        "hurst": {
+          "value": 0.2385,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.4359
+        },
+        "microstructure": {
+          "spread_estimate": 0.0091,
+          "efficiency_ratio": 0.228
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0291,
+          "yang_zhang": 0.6736,
+          "regime": "low",
+          "percentile": 22.25
+        },
+        "hurst": {
+          "value": 0.2166,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4252
+        },
+        "microstructure": {
+          "spread_estimate": 0.0426,
+          "efficiency_ratio": 0.2705
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0456,
+          "regime": "low",
+          "percentile": 4.57
+        },
+        "hurst": {
+          "value": 0.4023,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.3161
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.5408
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-24": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0094,
+          "yang_zhang": 0.1551,
+          "regime": "medium",
+          "percentile": 50.73
+        },
+        "hurst": {
+          "value": 0.4237,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6001
+        },
+        "microstructure": {
+          "spread_estimate": 0.0149,
+          "efficiency_ratio": 0.6917
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0058,
+          "yang_zhang": 0.0983,
+          "regime": "low",
+          "percentile": 15.18
+        },
+        "hurst": {
+          "value": 0.2346,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.4597
+        },
+        "microstructure": {
+          "spread_estimate": 0.0089,
+          "efficiency_ratio": 0.1959
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0286,
+          "yang_zhang": 0.6702,
+          "regime": "low",
+          "percentile": 20.37
+        },
+        "hurst": {
+          "value": 0.2176,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3858
+        },
+        "microstructure": {
+          "spread_estimate": 0.041,
+          "efficiency_ratio": 0.2178
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0452,
+          "regime": "low",
+          "percentile": 3.53
+        },
+        "hurst": {
+          "value": 0.4108,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.0099
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.4935
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-26": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0095,
+          "yang_zhang": 0.1578,
+          "regime": "medium",
+          "percentile": 53.64
+        },
+        "hurst": {
+          "value": 0.422,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.7171
+        },
+        "microstructure": {
+          "spread_estimate": 0.0153,
+          "efficiency_ratio": 0.7498
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0058,
+          "yang_zhang": 0.0987,
+          "regime": "low",
+          "percentile": 16.01
+        },
+        "hurst": {
+          "value": 0.2315,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.3644
+        },
+        "microstructure": {
+          "spread_estimate": 0.009,
+          "efficiency_ratio": 0.2012
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0287,
+          "yang_zhang": 0.6723,
+          "regime": "low",
+          "percentile": 21.0
+        },
+        "hurst": {
+          "value": 0.2194,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3684
+        },
+        "microstructure": {
+          "spread_estimate": 0.0416,
+          "efficiency_ratio": 0.2253
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.045,
+          "regime": "low",
+          "percentile": 3.12
+        },
+        "hurst": {
+          "value": 0.4181,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.2047
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.4572
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-29": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0119,
+          "yang_zhang": 0.1817,
+          "regime": "high",
+          "percentile": 76.72
+        },
+        "hurst": {
+          "value": 0.4233,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.2798
+        },
+        "microstructure": {
+          "spread_estimate": 0.0172,
+          "efficiency_ratio": 0.1579
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0993,
+          "regime": "low",
+          "percentile": 17.46
+        },
+        "hurst": {
+          "value": 0.2306,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.2478
+        },
+        "microstructure": {
+          "spread_estimate": 0.0091,
+          "efficiency_ratio": 0.1078
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0287,
+          "yang_zhang": 0.6735,
+          "regime": "low",
+          "percentile": 20.79
+        },
+        "hurst": {
+          "value": 0.2224,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3765
+        },
+        "microstructure": {
+          "spread_estimate": 0.0415,
+          "efficiency_ratio": 0.2034
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0442,
+          "regime": "low",
+          "percentile": 2.29
+        },
+        "hurst": {
+          "value": 0.425,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.0147
+        },
+        "microstructure": {
+          "spread_estimate": 0.004,
+          "efficiency_ratio": 0.4493
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-30": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.012,
+          "yang_zhang": 0.1859,
+          "regime": "high",
+          "percentile": 77.55
+        },
+        "hurst": {
+          "value": 0.4139,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": -0.0337
+        },
+        "microstructure": {
+          "spread_estimate": 0.0174,
+          "efficiency_ratio": 0.169
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0058,
+          "yang_zhang": 0.0975,
+          "regime": "low",
+          "percentile": 13.51
+        },
+        "hurst": {
+          "value": 0.2302,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.1254
+        },
+        "microstructure": {
+          "spread_estimate": 0.0088,
+          "efficiency_ratio": 0.1547
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.028,
+          "yang_zhang": 0.6616,
+          "regime": "low",
+          "percentile": 17.67
+        },
+        "hurst": {
+          "value": 0.2248,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3622
+        },
+        "microstructure": {
+          "spread_estimate": 0.0401,
+          "efficiency_ratio": 0.233
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0024,
+          "yang_zhang": 0.0426,
+          "regime": "low",
+          "percentile": 1.87
+        },
+        "hurst": {
+          "value": 0.4312,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.335
+        },
+        "microstructure": {
+          "spread_estimate": 0.0039,
+          "efficiency_ratio": 0.3589
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2025-12-31": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0121,
+          "yang_zhang": 0.1882,
+          "regime": "high",
+          "percentile": 79.0
+        },
+        "hurst": {
+          "value": 0.3983,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": -0.0915
+        },
+        "microstructure": {
+          "spread_estimate": 0.0177,
+          "efficiency_ratio": 0.1778
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0058,
+          "yang_zhang": 0.0971,
+          "regime": "low",
+          "percentile": 14.55
+        },
+        "hurst": {
+          "value": 0.232,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": -0.1213
+        },
+        "microstructure": {
+          "spread_estimate": 0.0088,
+          "efficiency_ratio": 0.0368
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0279,
+          "yang_zhang": 0.6612,
+          "regime": "low",
+          "percentile": 17.26
+        },
+        "hurst": {
+          "value": 0.2278,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3208
+        },
+        "microstructure": {
+          "spread_estimate": 0.0398,
+          "efficiency_ratio": 0.1739
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0431,
+          "regime": "low",
+          "percentile": 2.08
+        },
+        "hurst": {
+          "value": 0.4372,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.0705
+        },
+        "microstructure": {
+          "spread_estimate": 0.0039,
+          "efficiency_ratio": 0.3228
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-02": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0124,
+          "yang_zhang": 0.1947,
+          "regime": "high",
+          "percentile": 80.67
+        },
+        "hurst": {
+          "value": 0.3887,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": -0.2996
+        },
+        "microstructure": {
+          "spread_estimate": 0.0182,
+          "efficiency_ratio": 0.2024
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0981,
+          "regime": "low",
+          "percentile": 16.42
+        },
+        "hurst": {
+          "value": 0.2308,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": -0.105
+        },
+        "microstructure": {
+          "spread_estimate": 0.009,
+          "efficiency_ratio": 0.0115
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.028,
+          "yang_zhang": 0.6626,
+          "regime": "low",
+          "percentile": 17.46
+        },
+        "hurst": {
+          "value": 0.2289,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3142
+        },
+        "microstructure": {
+          "spread_estimate": 0.0399,
+          "efficiency_ratio": 0.1818
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0024,
+          "yang_zhang": 0.0429,
+          "regime": "low",
+          "percentile": 1.66
+        },
+        "hurst": {
+          "value": 0.4388,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.4556
+        },
+        "microstructure": {
+          "spread_estimate": 0.0039,
+          "efficiency_ratio": 0.171
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-05": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0128,
+          "yang_zhang": 0.201,
+          "regime": "high",
+          "percentile": 82.95
+        },
+        "hurst": {
+          "value": 0.3843,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.0741
+        },
+        "microstructure": {
+          "spread_estimate": 0.0189,
+          "efficiency_ratio": 0.3212
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0989,
+          "regime": "low",
+          "percentile": 19.75
+        },
+        "hurst": {
+          "value": 0.2308,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.0877
+        },
+        "microstructure": {
+          "spread_estimate": 0.0091,
+          "efficiency_ratio": 0.0769
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.028,
+          "yang_zhang": 0.6645,
+          "regime": "low",
+          "percentile": 18.09
+        },
+        "hurst": {
+          "value": 0.2309,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.2568
+        },
+        "microstructure": {
+          "spread_estimate": 0.04,
+          "efficiency_ratio": 0.1381
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0447,
+          "regime": "low",
+          "percentile": 2.91
+        },
+        "hurst": {
+          "value": 0.4397,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": -0.129
+        },
+        "microstructure": {
+          "spread_estimate": 0.004,
+          "efficiency_ratio": 0.2694
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-06": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0127,
+          "yang_zhang": 0.1983,
+          "regime": "high",
+          "percentile": 82.74
+        },
+        "hurst": {
+          "value": 0.3799,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.3954
+        },
+        "microstructure": {
+          "spread_estimate": 0.0189,
+          "efficiency_ratio": 0.3769
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.006,
+          "yang_zhang": 0.099,
+          "regime": "low",
+          "percentile": 22.66
+        },
+        "hurst": {
+          "value": 0.2319,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.3421
+        },
+        "microstructure": {
+          "spread_estimate": 0.0092,
+          "efficiency_ratio": 0.1163
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.028,
+          "yang_zhang": 0.6649,
+          "regime": "low",
+          "percentile": 18.5
+        },
+        "hurst": {
+          "value": 0.2342,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.2413
+        },
+        "microstructure": {
+          "spread_estimate": 0.0401,
+          "efficiency_ratio": 0.1265
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0454,
+          "regime": "low",
+          "percentile": 4.78
+        },
+        "hurst": {
+          "value": 0.4407,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.4591
+        },
+        "microstructure": {
+          "spread_estimate": 0.0041,
+          "efficiency_ratio": 0.165
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-07": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0129,
+          "yang_zhang": 0.2008,
+          "regime": "high",
+          "percentile": 83.78
+        },
+        "hurst": {
+          "value": 0.3728,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.3049
+        },
+        "microstructure": {
+          "spread_estimate": 0.0193,
+          "efficiency_ratio": 0.3261
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0984,
+          "regime": "low",
+          "percentile": 20.37
+        },
+        "hurst": {
+          "value": 0.2319,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.0389
+        },
+        "microstructure": {
+          "spread_estimate": 0.0091,
+          "efficiency_ratio": 0.1137
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.028,
+          "yang_zhang": 0.662,
+          "regime": "low",
+          "percentile": 18.3
+        },
+        "hurst": {
+          "value": 0.2398,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.196
+        },
+        "microstructure": {
+          "spread_estimate": 0.04,
+          "efficiency_ratio": 0.1011
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0447,
+          "regime": "low",
+          "percentile": 3.33
+        },
+        "hurst": {
+          "value": 0.4426,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.8466
+        },
+        "microstructure": {
+          "spread_estimate": 0.004,
+          "efficiency_ratio": 0.1421
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-08": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.013,
+          "yang_zhang": 0.2038,
+          "regime": "high",
+          "percentile": 84.41
+        },
+        "hurst": {
+          "value": 0.3697,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6856
+        },
+        "microstructure": {
+          "spread_estimate": 0.0195,
+          "efficiency_ratio": 0.33
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0992,
+          "regime": "low",
+          "percentile": 21.41
+        },
+        "hurst": {
+          "value": 0.2341,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.278
+        },
+        "microstructure": {
+          "spread_estimate": 0.0092,
+          "efficiency_ratio": 0.1338
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0282,
+          "yang_zhang": 0.6648,
+          "regime": "low",
+          "percentile": 19.33
+        },
+        "hurst": {
+          "value": 0.2507,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.26
+        },
+        "microstructure": {
+          "spread_estimate": 0.0406,
+          "efficiency_ratio": 0.15
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0445,
+          "regime": "low",
+          "percentile": 2.7
+        },
+        "hurst": {
+          "value": 0.4411,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.7977
+        },
+        "microstructure": {
+          "spread_estimate": 0.004,
+          "efficiency_ratio": 0.1427
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-09": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.013,
+          "yang_zhang": 0.204,
+          "regime": "high",
+          "percentile": 84.82
+        },
+        "hurst": {
+          "value": 0.3659,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.7993
+        },
+        "microstructure": {
+          "spread_estimate": 0.0195,
+          "efficiency_ratio": 0.3388
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0059,
+          "yang_zhang": 0.0987,
+          "regime": "low",
+          "percentile": 17.67
+        },
+        "hurst": {
+          "value": 0.2342,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.4884
+        },
+        "microstructure": {
+          "spread_estimate": 0.0091,
+          "efficiency_ratio": 0.1278
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0267,
+          "yang_zhang": 0.6536,
+          "regime": "low",
+          "percentile": 15.38
+        },
+        "hurst": {
+          "value": 0.2605,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3665
+        },
+        "microstructure": {
+          "spread_estimate": 0.0384,
+          "efficiency_ratio": 0.0763
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0024,
+          "yang_zhang": 0.044,
+          "regime": "low",
+          "percentile": 1.46
+        },
+        "hurst": {
+          "value": 0.4398,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.774
+        },
+        "microstructure": {
+          "spread_estimate": 0.0038,
+          "efficiency_ratio": 0.0818
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-12": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0132,
+          "yang_zhang": 0.2072,
+          "regime": "high",
+          "percentile": 86.07
+        },
+        "hurst": {
+          "value": 0.363,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.7875
+        },
+        "microstructure": {
+          "spread_estimate": 0.0198,
+          "efficiency_ratio": 0.3676
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0057,
+          "yang_zhang": 0.0951,
+          "regime": "low",
+          "percentile": 13.1
+        },
+        "hurst": {
+          "value": 0.2339,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.7151
+        },
+        "microstructure": {
+          "spread_estimate": 0.0089,
+          "efficiency_ratio": 0.1142
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0253,
+          "yang_zhang": 0.6405,
+          "regime": "low",
+          "percentile": 12.47
+        },
+        "hurst": {
+          "value": 0.2614,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.4461
+        },
+        "microstructure": {
+          "spread_estimate": 0.0367,
+          "efficiency_ratio": 0.0156
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0023,
+          "yang_zhang": 0.0438,
+          "regime": "low",
+          "percentile": 0.62
+        },
+        "hurst": {
+          "value": 0.437,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.7396
+        },
+        "microstructure": {
+          "spread_estimate": 0.0037,
+          "efficiency_ratio": 0.0925
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-13": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.013,
+          "yang_zhang": 0.2027,
+          "regime": "high",
+          "percentile": 84.62
+        },
+        "hurst": {
+          "value": 0.3569,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.5425
+        },
+        "microstructure": {
+          "spread_estimate": 0.0194,
+          "efficiency_ratio": 0.3329
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0054,
+          "yang_zhang": 0.0917,
+          "regime": "low",
+          "percentile": 8.32
+        },
+        "hurst": {
+          "value": 0.2331,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.5569
+        },
+        "microstructure": {
+          "spread_estimate": 0.0085,
+          "efficiency_ratio": 0.233
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0218,
+          "yang_zhang": 0.5751,
+          "regime": "low",
+          "percentile": 3.95
+        },
+        "hurst": {
+          "value": 0.2639,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3277
+        },
+        "microstructure": {
+          "spread_estimate": 0.0339,
+          "efficiency_ratio": 0.0086
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0023,
+          "yang_zhang": 0.0419,
+          "regime": "low",
+          "percentile": 1.25
+        },
+        "hurst": {
+          "value": 0.4327,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.798
+        },
+        "microstructure": {
+          "spread_estimate": 0.0038,
+          "efficiency_ratio": 0.2691
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-14": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0129,
+          "yang_zhang": 0.2005,
+          "regime": "high",
+          "percentile": 84.2
+        },
+        "hurst": {
+          "value": 0.3541,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.5886
+        },
+        "microstructure": {
+          "spread_estimate": 0.0193,
+          "efficiency_ratio": 0.3591
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0055,
+          "yang_zhang": 0.0928,
+          "regime": "low",
+          "percentile": 9.36
+        },
+        "hurst": {
+          "value": 0.234,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.5033
+        },
+        "microstructure": {
+          "spread_estimate": 0.0086,
+          "efficiency_ratio": 0.183
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0233,
+          "yang_zhang": 0.5897,
+          "regime": "low",
+          "percentile": 7.9
+        },
+        "hurst": {
+          "value": 0.2643,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.0329
+        },
+        "microstructure": {
+          "spread_estimate": 0.0352,
+          "efficiency_ratio": 0.1148
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0023,
+          "yang_zhang": 0.0418,
+          "regime": "low",
+          "percentile": 1.04
+        },
+        "hurst": {
+          "value": 0.4347,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.6742
+        },
+        "microstructure": {
+          "spread_estimate": 0.0038,
+          "efficiency_ratio": 0.2604
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-15": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0128,
+          "yang_zhang": 0.1997,
+          "regime": "high",
+          "percentile": 83.37
+        },
+        "hurst": {
+          "value": 0.3518,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6
+        },
+        "microstructure": {
+          "spread_estimate": 0.0191,
+          "efficiency_ratio": 0.3466
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0055,
+          "yang_zhang": 0.0925,
+          "regime": "low",
+          "percentile": 8.73
+        },
+        "hurst": {
+          "value": 0.2316,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.4317
+        },
+        "microstructure": {
+          "spread_estimate": 0.0085,
+          "efficiency_ratio": 0.2592
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0257,
+          "yang_zhang": 0.4263,
+          "regime": "low",
+          "percentile": 13.1
+        },
+        "hurst": {
+          "value": 0.2618,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.1431
+        },
+        "microstructure": {
+          "spread_estimate": 0.0381,
+          "efficiency_ratio": 0.3263
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0023,
+          "yang_zhang": 0.0406,
+          "regime": "low",
+          "percentile": 0.83
+        },
+        "hurst": {
+          "value": 0.4325,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.6432
+        },
+        "microstructure": {
+          "spread_estimate": 0.0038,
+          "efficiency_ratio": 0.3352
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-16": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.013,
+          "yang_zhang": 0.2047,
+          "regime": "high",
+          "percentile": 85.03
+        },
+        "hurst": {
+          "value": 0.3509,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6045
+        },
+        "microstructure": {
+          "spread_estimate": 0.0194,
+          "efficiency_ratio": 0.2906
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0052,
+          "yang_zhang": 0.088,
+          "regime": "low",
+          "percentile": 4.99
+        },
+        "hurst": {
+          "value": 0.2305,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.3066
+        },
+        "microstructure": {
+          "spread_estimate": 0.0081,
+          "efficiency_ratio": 0.3814
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0258,
+          "yang_zhang": 0.4304,
+          "regime": "low",
+          "percentile": 13.51
+        },
+        "hurst": {
+          "value": 0.262,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.3536
+        },
+        "microstructure": {
+          "spread_estimate": 0.0383,
+          "efficiency_ratio": 0.3517
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0023,
+          "yang_zhang": 0.0397,
+          "regime": "low",
+          "percentile": 0.42
+        },
+        "hurst": {
+          "value": 0.4316,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.6321
+        },
+        "microstructure": {
+          "spread_estimate": 0.0037,
+          "efficiency_ratio": 0.3195
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-19": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.013,
+          "yang_zhang": 0.2061,
+          "regime": "high",
+          "percentile": 85.24
+        },
+        "hurst": {
+          "value": 0.35,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.5768
+        },
+        "microstructure": {
+          "spread_estimate": 0.0194,
+          "efficiency_ratio": 0.3535
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0049,
+          "yang_zhang": 0.0892,
+          "regime": "low",
+          "percentile": 1.25
+        },
+        "hurst": {
+          "value": 0.2292,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": 0.3336
+        },
+        "microstructure": {
+          "spread_estimate": 0.0077,
+          "efficiency_ratio": 0.1988
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0259,
+          "yang_zhang": 0.7124,
+          "regime": "low",
+          "percentile": 13.93
+        },
+        "hurst": {
+          "value": 0.2609,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": -0.2403
+        },
+        "microstructure": {
+          "spread_estimate": 0.0385,
+          "efficiency_ratio": 0.1158
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0022,
+          "yang_zhang": 0.0408,
+          "regime": "low",
+          "percentile": 0.21
+        },
+        "hurst": {
+          "value": 0.4305,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.4633
+        },
+        "microstructure": {
+          "spread_estimate": 0.0036,
+          "efficiency_ratio": 0.188
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-20": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0133,
+          "yang_zhang": 0.2083,
+          "regime": "high",
+          "percentile": 86.9
+        },
+        "hurst": {
+          "value": 0.3514,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4207.71,
+          "profile_vah": 4606.59,
+          "profile_val": 3622.69,
+          "accumulation_score": 0.6539
+        },
+        "microstructure": {
+          "spread_estimate": 0.02,
+          "efficiency_ratio": 0.4058
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.005,
+          "yang_zhang": 0.0901,
+          "regime": "low",
+          "percentile": 2.29
+        },
+        "hurst": {
+          "value": 0.2279,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6819.19,
+          "profile_vah": 6882.96,
+          "profile_val": 6589.61,
+          "accumulation_score": -0.4144
+        },
+        "microstructure": {
+          "spread_estimate": 0.0079,
+          "efficiency_ratio": 0.0632
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0274,
+          "yang_zhang": 0.726,
+          "regime": "low",
+          "percentile": 16.22
+        },
+        "hurst": {
+          "value": 0.2533,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.23,
+          "accumulation_score": 1.0
+        },
+        "microstructure": {
+          "spread_estimate": 0.04,
+          "efficiency_ratio": 0.32
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0451,
+          "regime": "low",
+          "percentile": 2.49
+        },
+        "hurst": {
+          "value": 0.4299,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.69,
+          "profile_vah": 99.41,
+          "profile_val": 97.44,
+          "accumulation_score": 0.3741
+        },
+        "microstructure": {
+          "spread_estimate": 0.0039,
+          "efficiency_ratio": 0.0038
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    }
+  }
+}

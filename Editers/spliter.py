@@ -85,8 +85,27 @@ def process_economic_calendar_json(data, output_dir):
     return date_events
 
 def process_market_technicals_json(data, output_dir):
-    """Process the new market technicals format"""
     folder_name = "market_technicals_daily"
+    folder_path = os.path.join(output_dir, folder_name)
+    os.makedirs(folder_path, exist_ok=True)
+    
+    daily_data = data.get("daily_data", {})
+    
+    for date, instruments in sorted(daily_data.items()):
+        if instruments:
+            file_path = os.path.join(folder_path, f"{date}.json")
+            content = {
+                "date": date,
+                "instruments": instruments
+            }
+            with open(file_path, 'w', encoding='utf-8') as f:
+                json.dump(content, f, indent=2, ensure_ascii=False)
+    
+    print(f"Created {len(daily_data)} JSON files in {folder_name}")
+    return daily_data
+
+def process_deepin_daily_json(data, output_dir):
+    folder_name = "deepin_daily_analysis"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
     
@@ -208,9 +227,9 @@ def convert_economic_calendar_to_txt(json_folder, txt_folder):
                     act_val = float(actual.replace("%", "").replace("K", "").replace("M", "").replace("B", ""))
                     fc_val = float(forecast.replace("%", "").replace("K", "").replace("M", "").replace("B", ""))
                     if act_val > fc_val:
-                        status = "BEAT↑"
+                        status = "BEAT"
                     elif act_val < fc_val:
-                        status = "MISS↓"
+                        status = "MISS"
                     else:
                         status = "MEET"
                 except:
@@ -294,7 +313,6 @@ def convert_fundamentals_to_txt(json_folder, txt_folder):
                 f.write('\n'.join(lines))
 
 def convert_market_technicals_to_txt(json_folder, txt_folder):
-    """Convert market technicals JSON to compact TXT format"""
     os.makedirs(txt_folder, exist_ok=True)
     
     for filename in os.listdir(json_folder):
@@ -317,43 +335,77 @@ def convert_market_technicals_to_txt(json_folder, txt_folder):
             name = inst_data.get("name", "")
             lines.append(f"{symbol}({name})")
             
-            # Price
             p = inst_data.get("price", {})
             lines.append(f"O:{p.get('o')}|H:{p.get('h')}|L:{p.get('l')}|C:{p.get('c')}|V:{p.get('v')}")
             
-            # EMAs
             e = inst_data.get("ema", {})
             lines.append(f"E9:{e.get('e9')}|E21:{e.get('e21')}|E50:{e.get('e50')}|E200:{e.get('e200')}")
             
-            # Momentum
             m = inst_data.get("momentum", {})
             lines.append(f"RSI:{m.get('rsi')}|MACD:{m.get('macd')}|SIG:{m.get('sig')}|HIST:{m.get('hist')}")
             
-            # Trend
             t = inst_data.get("trend", {})
             lines.append(f"ADX:{t.get('adx')}|+DI:{t.get('pos')}|-DI:{t.get('neg')}")
             
-            # Bollinger
             b = inst_data.get("bb", {})
             lines.append(f"BBU:{b.get('upper')}|BBM:{b.get('mid')}|BBL:{b.get('lower')}|WIDTH:{b.get('width')}")
             
-            # Volatility & Stoch
             v = inst_data.get("vol", {})
             s = inst_data.get("stoch", {})
             lines.append(f"ATR:{v.get('atr')}|STOCH_K:{s.get('k')}|STOCH_D:{s.get('d')}")
             
-            # Ichimoku
             i = inst_data.get("ichimoku", {})
             lines.append(f"TK:{i.get('tk')}|KJ:{i.get('kj')}|SA:{i.get('sa')}|SB:{i.get('sb')}")
             
-            # Advanced
             a = inst_data.get("adv", {})
             lines.append(f"VWAP:{a.get('vwap')}|PSAR:{a.get('psar')}|AO:{a.get('ao')}|WILL:{a.get('willr')}|CCI:{a.get('cci')}|MFI:{a.get('mfi')}|ROC:{a.get('roc')}")
             
-            # Signals
             signals = inst_data.get("signals", [])
             if signals:
                 lines.append(f"SIG:{','.join(signals)}")
+            
+            lines.append("")
+        
+        with open(txt_path, 'w', encoding='utf-8') as f:
+            f.write('\n'.join(lines))
+
+def convert_deepin_to_txt(json_folder, txt_folder):
+    os.makedirs(txt_folder, exist_ok=True)
+    
+    for filename in os.listdir(json_folder):
+        if not filename.endswith('.json'):
+            continue
+            
+        date = filename.replace('.json', '')
+        json_path = os.path.join(json_folder, filename)
+        txt_path = os.path.join(txt_folder, f"{date}.txt")
+        
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        
+        if not data.get("instruments"):
+            continue
+        
+        lines = [f"=== DEEPIN: {date} ===", ""]
+        
+        for symbol, inst_data in data.get("instruments", {}).items():
+            name = inst_data.get("name", "")
+            lines.append(f"{symbol}({name})")
+            
+            vol = inst_data.get("volatility", {})
+            lines.append(f"PARK_VOL:{vol.get('parkinson')}|YZ_VOL:{vol.get('yang_zhang')}|VOL_REGIME:{vol.get('regime')}|VOL_PCT:{vol.get('percentile')}")
+            
+            h = inst_data.get("hurst", {})
+            lines.append(f"HURST:{h.get('value')}|STATE:{h.get('state')}")
+            
+            vp = inst_data.get("volume", {})
+            lines.append(f"POC:{vp.get('profile_poc')}|VAH:{vp.get('profile_vah')}|VAL:{vp.get('profile_val')}|ACCUM:{vp.get('accumulation_score')}")
+            
+            ms = inst_data.get("microstructure", {})
+            lines.append(f"SPREAD_EST:{ms.get('spread_estimate')}|EFFICIENCY:{ms.get('efficiency_ratio')}")
+            
+            prob = inst_data.get("probability", {})
+            lines.append(f"BULL_P:{prob.get('bull_regime')}|BEAR_P:{prob.get('bear_regime')}|CONSOL_P:{prob.get('consolidation')}")
             
             lines.append("")
         
@@ -433,6 +485,7 @@ def organize_json_files(output_dir):
         "Fetchers/jsons/economic_calendar.json": process_economic_calendar_json,
         "Fetchers/jsons/fundamentals_data.json": process_fundamentals_json,
         "Fetchers/jsons/market_technicals.json": process_market_technicals_json,
+        "Fetchers/jsons/deepin_daily.json": process_deepin_daily_json,
         "Fetchers/jsons/news_30days.json": process_news_json,
         "Fetchers/jsons/reddit_news.json": process_reddit_json
     }
@@ -456,6 +509,7 @@ def convert_to_txt(json_base_dir, txt_base_dir):
         ("economic_calendar_events", convert_economic_calendar_to_txt),
         ("fundamental_daily_snapshots", convert_fundamentals_to_txt),
         ("market_technicals_daily", convert_market_technicals_to_txt),
+        ("deepin_daily_analysis", convert_deepin_to_txt),
         ("news_daily", convert_news_to_txt),
         ("reddit_posts_daily", convert_reddit_to_txt)
     ]

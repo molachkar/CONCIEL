@@ -7,7 +7,8 @@ import os
 SCRIPTS = {
     "INFLATION": "Fetchers/inflation.py",
     "ECO CALENDER": "Fetchers/eco calender.py",
-    "MARKET DATA": "Fetchers/global market data.py",
+    "MARKET DATA": "Fetchers/market00.py",
+    "DEEP ANALYST": "Fetchers/deep00.py",
     "NEWS": "Fetchers/news.py",
     "REDDIT": "Fetchers/reddit.py",
     "SPLITER": "Editers/spliter.py",

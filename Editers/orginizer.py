@@ -8,6 +8,7 @@ FOLDER_MAPPING = {
     "economic_calendar_events": "calendar.txt",
     "fundamental_daily_snapshots": "fundamentals.txt",
     "market_technicals_daily": "technicals.txt",
+    "deepin_daily_analysis": "calculos.txt",
     "news_daily": "news.txt",
     "reddit_posts_daily": "forums.txt"
 }
