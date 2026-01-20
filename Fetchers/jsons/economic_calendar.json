@@ -1,177 +1,6 @@
 {
   "events": [
     {
-      "date": "18/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Core CPI (YoY)  (Nov)",
-      "actual": "2.6%",
-      "forecast": "3.0%",
-      "previous": "3.0%"
-    },
-    {
-      "date": "18/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "CPI (YoY)  (Nov)",
-      "actual": "2.7%",
-      "forecast": "3.1%",
-      "previous": "3.0%"
-    },
-    {
-      "date": "18/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Initial Jobless Claims",
-      "actual": "224K",
-      "forecast": "224K",
-      "previous": "237K"
-    },
-    {
-      "date": "18/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Philadelphia Fed Manufacturing Index  (Dec)",
-      "actual": "-10.2",
-      "forecast": "2.5",
-      "previous": "-1.7"
-    },
-    {
-      "date": "18/12/2025",
-      "time": "14:30",
-      "currency": "USD",
-      "event": "Philly Fed Employment  (Dec)",
-      "actual": "12.9",
-      "forecast": "",
-      "previous": "6.0"
-    },
-    {
-      "date": "18/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "5-Year TIPS Auction",
-      "actual": "1.433%",
-      "forecast": "",
-      "previous": "1.182%"
-    },
-    {
-      "date": "18/12/2025",
-      "time": "22:00",
-      "currency": "USD",
-      "event": "TIC Net Long-Term Transactions  (Oct)",
-      "actual": "17.5B",
-      "forecast": "122.7B",
-      "previous": "173.2B"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Existing Home Sales  (Nov)",
-      "actual": "4.13M",
-      "forecast": "4.15M",
-      "previous": "4.11M"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Existing Home Sales (MoM)  (Nov)",
-      "actual": "0.5%",
-      "forecast": "",
-      "previous": "1.5%"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan 1-Year Inflation Expectations  (Dec)",
-      "actual": "4.2%",
-      "forecast": "4.1%",
-      "previous": "4.5%"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan 5-Year Inflation Expectations  (Dec)",
-      "actual": "3.2%",
-      "forecast": "3.2%",
-      "previous": "3.4%"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan Consumer Expectations  (Dec)",
-      "actual": "54.6",
-      "forecast": "55.0",
-      "previous": "51.0"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "16:00",
-      "currency": "USD",
-      "event": "Michigan Consumer Sentiment  (Dec)",
-      "actual": "52.9",
-      "forecast": "53.5",
-      "previous": "51.0"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Oil Rig Count",
-      "actual": "406",
-      "forecast": "",
-      "previous": "414"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "19:00",
-      "currency": "USD",
-      "event": "U.S. Baker Hughes Total Rig Count",
-      "actual": "542",
-      "forecast": "",
-      "previous": "548"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Crude Oil speculative net positions",
-      "actual": "58.4K",
-      "forecast": "",
-      "previous": "55.0K"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Gold speculative net positions",
-      "actual": "223.9K",
-      "forecast": "",
-      "previous": "204.6K"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC Nasdaq 100 speculative net positions",
-      "actual": "48.1K",
-      "forecast": "",
-      "previous": "57.4K"
-    },
-    {
-      "date": "19/12/2025",
-      "time": "21:30",
-      "currency": "USD",
-      "event": "CFTC S&P 500 speculative net positions",
-      "actual": "-190.4K",
-      "forecast": "",
-      "previous": "-155.3K"
-    },
-    {
       "date": "22/12/2025",
       "time": "19:00",
       "currency": "USD",
@@ -523,15 +352,6 @@
       "previous": "-166.0K"
     },
     {
-      "date": "02/01/2026",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "S&P Global Manufacturing PMI  (Dec)",
-      "actual": "51.8",
-      "forecast": "51.8",
-      "previous": "52.2"
-    },
-    {
       "date": "05/01/2026",
       "time": "16:00",
       "currency": "USD",
@@ -602,24 +422,6 @@
       "actual": "-94.4K",
       "forecast": "",
       "previous": "-81.8K"
-    },
-    {
-      "date": "06/01/2026",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "S&P Global Composite PMI  (Dec)",
-      "actual": "52.7",
-      "forecast": "53.0",
-      "previous": "54.2"
-    },
-    {
-      "date": "06/01/2026",
-      "time": "15:45",
-      "currency": "USD",
-      "event": "S&P Global Services PMI  (Dec)",
-      "actual": "52.5",
-      "forecast": "52.9",
-      "previous": "54.1"
     },
     {
       "date": "06/01/2026",
@@ -1347,7 +1149,7 @@
       "currency": "USD",
       "event": "U.S. Baker Hughes Oil Rig Count",
       "actual": "410",
-      "forecast": "",
+      "forecast": "407",
       "previous": "409"
     },
     {
@@ -1394,6 +1196,24 @@
       "actual": "-122.1K",
       "forecast": "",
       "previous": "-106.1K"
+    },
+    {
+      "date": "20/01/2026",
+      "time": "14:15",
+      "currency": "USD",
+      "event": "ADP Employment Change Weekly",
+      "actual": "8.00K",
+      "forecast": "",
+      "previous": "11.25K"
+    },
+    {
+      "date": "20/01/2026",
+      "time": "22:30",
+      "currency": "USD",
+      "event": "API Weekly Crude Oil Stock",
+      "actual": "",
+      "forecast": "",
+      "previous": "5.270M"
     }
   ]
 }

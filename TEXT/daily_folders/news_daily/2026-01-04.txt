@@ -3,9 +3,8 @@
 GOLD(1):
 2026-|Top & Flop ETF Areas of 2025 (Revised)|GDXJ
 
-MARKET(2):
-2026-|Top & Flop ETF Areas of 2025 (Revised)|QQQ
-2026-|Will the Nasdaq 100 ETF Triple Your Money in the Next 10 Yea|QQQ
+MARKET(1):
+2026-|Top & Flop ETF Areas of 2025 (Revised)|DIA
 
 VOLATILITY(1):
 2026-|Top & Flop ETF Areas of 2025 (Revised)|VIXY

@@ -7,7 +7,7 @@ import ta
 import MetaTrader5 as mt5
 from pathlib import Path
 
-OUTPUT_PATH = "reports"
+OUTPUT_PATH = "Fetchers/jsons"
 INSTRUMENTS = {
     "XAUUSD": "Gold",
     "USA500.IDX": "S&P500",
@@ -55,7 +55,6 @@ def init_mt5():
     return True
 
 def fetch_data(symbol: str) -> Optional[pd.DataFrame]:
-    # Fetch last 450 bars regardless of current time (works on weekends)
     rates = mt5.copy_rates_from_pos(symbol, TIMEFRAME, 0, 450)
     
     if rates is None or len(rates) == 0:
@@ -279,17 +278,16 @@ def determine_signals(c, indicators, i):
     
     return signals
 
-def format_instrument_data(symbol: str, name: str, df, indicators, last_n=35):
+def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35):
+    """Build a JSON structure organized by date"""
     df_slice = df.tail(last_n).copy()
-    output = []
-    
-    output.append(f"\n{'='*100}")
-    output.append(f"{name} ({symbol}) - 35 Day History with Advanced Technicals")
-    output.append(f"{'='*100}\n")
+    daily_data = {}
     
     for idx in range(len(df_slice)):
         i = df_slice.index[idx]
-        date = df_slice.loc[i, 'time'].strftime('%m-%d-%y')
+        date = df_slice.loc[i, 'time'].strftime('%Y-%m-%d')
+        
+        # Price data
         o = round_2(df_slice.loc[i, 'open'])
         h = round_2(df_slice.loc[i, 'high'])
         l = round_2(df_slice.loc[i, 'low'])
@@ -334,100 +332,50 @@ def format_instrument_data(symbol: str, name: str, df, indicators, last_n=35):
         mfi = round_2(indicators['mfi'].loc[i])
         roc = round_2(indicators['roc'].loc[i])
         
-        # Signal determination
+        # Signals
         signals = determine_signals(c, indicators, i)
-        signal_str = ",".join(signals) if signals else "NEUTRAL"
         
-        # Trend classification
-        trend = "BULL" if c and ema200 and c > ema200 else "BEAR" if c and ema200 and c < ema200 else "NEUT"
+        # Store data for this date
+        if date not in daily_data:
+            daily_data[date] = {}
         
-        # Price vs EMAs position
-        ema_pos = ""
-        if c and ema50 and ema200:
-            if c > ema50 > ema200:
-                ema_pos = "AB50&200"
-            elif c < ema50 < ema200:
-                ema_pos = "BL50&200"
-            elif c > ema50 and ema50 < ema200:
-                ema_pos = "AB50/BL200"
-            else:
-                ema_pos = "MIXED"
-        
-        # MACD momentum
-        macd_mom = "BULL" if macd and sig and macd > sig else "BEAR"
-        
-        # ADX strength classification
-        adx_str = "STRONG" if adx and adx > 25 else "WEAK" if adx and adx < 20 else "MOD"
-        
-        output.append(f"--- {date} ---")
-        output.append(f"PRICE: O:{o}|H:{h}|L:{l}|C:{c}|V:{v}")
-        output.append(f"EMAS: E9:{ema9}|E21:{ema21}|E50:{ema50}|E200:{ema200}|POS:{ema_pos}|TREND:{trend}")
-        output.append(f"MOMENTUM: RSI:{rsi}|MACD:{macd}|SIG:{sig}|HIST:{macd_hist}|DIR:{macd_mom}")
-        output.append(f"TREND_STR: ADX:{adx}({adx_str})|+DI:{adx_pos}|-DI:{adx_neg}")
-        output.append(f"BANDS: BBU:{bbu}|BBM:{bbm}|BBL:{bbl}|WIDTH:{bbw}|ATR:{atr}")
-        output.append(f"STOCH: K:{stk}|D:{std}")
-        output.append(f"ICHIMOKU: TK:{tenkan}|KJ:{kijun}|SA:{senkou_a}|SB:{senkou_b}")
-        output.append(f"ADVANCED: VWAP:{vwap}|PSAR:{psar}|AO:{ao}|WILL:{willr}|CCI:{cci}|MFI:{mfi}|ROC:{roc}")
-        output.append(f"SIGNALS: {signal_str}")
-        output.append("")
+        daily_data[date][symbol] = {
+            "name": name,
+            "price": {"o": o, "h": h, "l": l, "c": c, "v": v},
+            "ema": {"e9": ema9, "e21": ema21, "e50": ema50, "e200": ema200},
+            "momentum": {"rsi": rsi, "macd": macd, "sig": sig, "hist": macd_hist},
+            "trend": {"adx": adx, "pos": adx_pos, "neg": adx_neg},
+            "bb": {"upper": bbu, "mid": bbm, "lower": bbl, "width": bbw},
+            "vol": {"atr": atr},
+            "stoch": {"k": stk, "d": std},
+            "ichimoku": {"tk": tenkan, "kj": kijun, "sa": senkou_a, "sb": senkou_b},
+            "adv": {"vwap": vwap, "psar": psar, "ao": ao, "willr": willr, "cci": cci, "mfi": mfi, "roc": roc},
+            "signals": signals
+        }
     
-    # Current market summary
-    current_idx = df.index[-1]
-    curr_price = round_2(df.loc[current_idx, 'close'])
-    curr_rsi = round_2(indicators['rsi'].loc[current_idx])
-    curr_ema50 = round_2(indicators['ema50'].loc[current_idx])
-    curr_ema200 = round_2(indicators['ema200'].loc[current_idx])
-    curr_adx = round_2(indicators['adx'].loc[current_idx])
-    curr_signals = determine_signals(curr_price, indicators, current_idx)
-    
-    output.append(f"\n{'='*100}")
-    output.append(f"CURRENT MARKET STATE")
-    output.append(f"{'='*100}")
-    output.append(f"PRICE: {curr_price}")
-    output.append(f"KEY_LEVELS: EMA50:{curr_ema50}|EMA200:{curr_ema200}")
-    output.append(f"MOMENTUM: RSI:{curr_rsi}|ADX:{curr_adx}")
-    output.append(f"ACTIVE_SIGNALS: {','.join(curr_signals) if curr_signals else 'NEUTRAL'}")
-    
-    # Range analysis
-    last_7 = df.tail(7)
-    high_7 = round_2(last_7['high'].max())
-    low_7 = round_2(last_7['low'].min())
-    range_7 = round_2(high_7 - low_7)
-    
-    last_30 = df.tail(30)
-    high_30 = round_2(last_30['high'].max())
-    low_30 = round_2(last_30['low'].min())
-    range_30 = round_2(high_30 - low_30)
-    
-    output.append(f"\nRANGE_ANALYSIS:")
-    output.append(f"7D: {low_7}-{high_7} (Range:{range_7})")
-    output.append(f"30D: {low_30}-{high_30} (Range:{range_30})")
-    
-    # Distance from EMAs
-    if curr_price and curr_ema50 and curr_ema200:
-        dist_50 = round_2(((curr_price - curr_ema50) / curr_ema50) * 100)
-        dist_200 = round_2(((curr_price - curr_ema200) / curr_ema200) * 100)
-        output.append(f"\nDISTANCE_FROM_EMAS:")
-        output.append(f"From_EMA50: {dist_50}%")
-        output.append(f"From_EMA200: {dist_200}%")
-    
-    return "\n".join(output)
+    return daily_data
 
-def save_report(text):
+def save_json_output(all_data):
+    """Save data as JSON organized by date"""
     output_dir = Path(OUTPUT_PATH)
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    txt_file = output_dir / "Fetchers/jsons/market_tech.txt"
-    txt_file.parent.mkdir(parents=True, exist_ok=True)
+    json_file = output_dir / "market_technicals.json"
     
-    with open(txt_file, 'w', encoding='utf-8') as f:
-        f.write(text)
+    output = {
+        "generated_at": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+        "instruments": list(INSTRUMENTS.keys()),
+        "daily_data": all_data
+    }
     
-    print(f"\nSaved: {txt_file.absolute()}")
-    return str(txt_file)
+    with open(json_file, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    
+    print(f"\nSaved: {json_file.absolute()}")
+    return str(json_file)
 
 def main():
-    print("Multi-Instrument Advanced Technical Analysis - 35 Day History")
+    print("Multi-Instrument Technical Analysis - Daily JSON Output")
     print("(Works on weekends - uses last available data)")
     print()
     
@@ -435,47 +383,7 @@ def main():
         return
     
     try:
-        all_output = []
-        all_output.append(f"{'='*100}")
-        all_output.append(f"ADVANCED TECHNICAL ANALYSIS REPORT")
-        all_output.append(f"{'='*100}")
-        all_output.append(f"Report Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-        all_output.append(f"Period: Last 35 trading days")
-        all_output.append(f"Instruments: {len(INSTRUMENTS)}")
-        all_output.append(f"Note: Data reflects last available market close (Friday close if run on weekends)")
-        
-        all_output.append("\n" + "="*100)
-        all_output.append("SIGNAL LEGEND")
-        all_output.append("="*100)
-        all_output.append("EMA_BULL_STACK: Price > E9 > E21 > E50 > E200 (Strong uptrend)")
-        all_output.append("EMA_BEAR_STACK: Price < E9 < E21 < E50 < E200 (Strong downtrend)")
-        all_output.append("GOLDEN_CROSS: EMA50 crosses above EMA200 (Bullish)")
-        all_output.append("DEATH_CROSS: EMA50 crosses below EMA200 (Bearish)")
-        all_output.append("RSI_OB/OS: RSI Overbought (>=70) / Oversold (<=30)")
-        all_output.append("MACD_BULL_X/BEAR_X: MACD crosses signal line")
-        all_output.append("STRONG_UP/DOWN: ADX > 25 with directional bias")
-        all_output.append("WEAK_TREND: ADX < 20 (consolidation)")
-        all_output.append("BB_SQUEEZE: Bollinger Band Width < 1.5 (low volatility)")
-        all_output.append("BB_BREAKOUT_UP/DN: Price breaks Bollinger Bands")
-        all_output.append("ABOVE/BELOW/IN_CLOUD: Ichimoku Cloud position")
-        all_output.append("TK_BULL_X/BEAR_X: Tenkan/Kijun cross (Ichimoku signal)")
-        all_output.append("MFI_OB/OS: Money Flow Index extreme (>=80 / <=20)")
-        all_output.append("CCI_OB/OS: Commodity Channel Index extreme (>100 / <-100)")
-        all_output.append("WILL_OB/OS: Williams %R extreme (>=-20 / <=-80)")
-        
-        all_output.append("\n" + "="*100)
-        all_output.append("INDICATOR ABBREVIATIONS")
-        all_output.append("="*100)
-        all_output.append("E9/E21/E50/E200: Exponential Moving Averages")
-        all_output.append("RSI: Relative Strength Index | MACD: Moving Average Convergence Divergence")
-        all_output.append("ADX: Average Directional Index | +DI/-DI: Directional Indicators")
-        all_output.append("BBU/BBM/BBL: Bollinger Upper/Middle/Lower | WIDTH: BB Width %")
-        all_output.append("ATR: Average True Range | K/D: Stochastic K/D")
-        all_output.append("TK: Tenkan-sen | KJ: Kijun-sen | SA/SB: Senkou Span A/B")
-        all_output.append("VWAP: Volume Weighted Average Price | PSAR: Parabolic SAR")
-        all_output.append("AO: Awesome Oscillator | WILL: Williams %R")
-        all_output.append("CCI: Commodity Channel Index | MFI: Money Flow Index")
-        all_output.append("ROC: Rate of Change")
+        all_daily_data = {}
         
         for symbol, name in INSTRUMENTS.items():
             print(f"\nProcessing {symbol}...")
@@ -483,14 +391,18 @@ def main():
             if df is None or df.empty:
                 continue
             
-            print(f"Calculating advanced indicators...")
+            print(f"Calculating indicators...")
             indicators = calc_indicators(df)
             
-            formatted = format_instrument_data(symbol, name, df, indicators, last_n=35)
-            all_output.append(formatted)
+            daily_data = build_daily_data_structure(symbol, name, df, indicators, last_n=35)
+            
+            # Merge into all_daily_data
+            for date, instruments in daily_data.items():
+                if date not in all_daily_data:
+                    all_daily_data[date] = {}
+                all_daily_data[date].update(instruments)
         
-        final_text = "\n".join(all_output)
-        save_report(final_text)
+        save_json_output(all_daily_data)
         print("\nComplete")
         
     finally:

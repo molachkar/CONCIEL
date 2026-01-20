@@ -1,16 +1,8 @@
 {
-  "collection_date": "2026-01-17 12:13:05",
+  "collection_date": "2026-01-20 20:46:39",
   "data_source": "Federal Reserve Economic Data (FRED) + Yahoo Finance",
   "#DAILY_DATA": "Last 30 days, chronological order (oldest to newest)",
   "TREASURY_10Y": [
-    {
-      "date": "2025-12-18",
-      "value": 4.12
-    },
-    {
-      "date": "2025-12-19",
-      "value": 4.16
-    },
     {
       "date": "2025-12-22",
       "value": 4.17
@@ -83,14 +75,6 @@
   "TREASURY_10Y_END_DATE": "2026-01-15",
   "HY_CREDIT_SPREAD": [
     {
-      "date": "2025-12-18",
-      "value": 2.95
-    },
-    {
-      "date": "2025-12-19",
-      "value": 2.9
-    },
-    {
       "date": "2025-12-22",
       "value": 2.88
     },
@@ -157,20 +141,18 @@
     {
       "date": "2026-01-15",
       "value": 2.71
+    },
+    {
+      "date": "2026-01-16",
+      "value": 2.65
+    },
+    {
+      "date": "2026-01-19",
+      "value": 2.65
     }
   ],
-  "HY_CREDIT_SPREAD_END_DATE": "2026-01-15",
+  "HY_CREDIT_SPREAD_END_DATE": "2026-01-19",
   "GLD": [
-    {
-      "date": "2025-12-18",
-      "close": 398.57,
-      "volume": 11837600
-    },
-    {
-      "date": "2025-12-19",
-      "close": 399.02,
-      "volume": 9894800
-    },
     {
       "date": "2025-12-22",
       "close": 408.23,
@@ -260,20 +242,15 @@
       "date": "2026-01-16",
       "close": 421.29,
       "volume": 20914900
+    },
+    {
+      "date": "2026-01-20",
+      "close": 437.86,
+      "volume": 17439231
     }
   ],
-  "GLD_END_DATE": "2026-01-16",
+  "GLD_END_DATE": "2026-01-20",
   "IAU": [
-    {
-      "date": "2025-12-18",
-      "close": 81.63,
-      "volume": 8053100
-    },
-    {
-      "date": "2025-12-19",
-      "close": 81.71,
-      "volume": 5202600
-    },
     {
       "date": "2025-12-22",
       "close": 83.59,
@@ -363,15 +340,16 @@
       "date": "2026-01-16",
       "close": 86.27,
       "volume": 20019600
+    },
+    {
+      "date": "2026-01-20",
+      "close": 89.69,
+      "volume": 13599642
     }
   ],
-  "IAU_END_DATE": "2026-01-16",
+  "IAU_END_DATE": "2026-01-20",
   "#WEEKLY_DATA": "Last 30 days, chronological order (oldest to newest)",
   "JOBLESS_CLAIMS": [
-    {
-      "date": "2025-12-20",
-      "value": 215000.0
-    },
     {
       "date": "2025-12-27",
       "value": 200000.0

@@ -48,9 +48,8 @@ def process_fundamentals_json(data, output_dir):
         elif key.endswith("_END_DATE"):
             continue
     
-    # Only write files for dates that have more than just collection_info
     for date, content in sorted(date_data.items()):
-        if len(content) > 1:  # More than just collection_info
+        if len(content) > 1:
             file_path = os.path.join(folder_path, f"{date}.json")
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(content, f, indent=2, ensure_ascii=False)
@@ -71,9 +70,8 @@ def process_economic_calendar_json(data, output_dir):
         if date:
             date_events[date].append(event)
     
-    # Only write files for dates that have events
     for date, events in sorted(date_events.items()):
-        if events:  # Only if there are events
+        if events:
             file_path = os.path.join(folder_path, f"{date}.json")
             content = {
                 "date": date,
@@ -86,54 +84,26 @@ def process_economic_calendar_json(data, output_dir):
     print(f"Created {len(date_events)} JSON files in {folder_name}")
     return date_events
 
-def process_market_analysis_json(data, output_dir):
-    folder_name = "market_analysis_daily"
+def process_market_technicals_json(data, output_dir):
+    """Process the new market technicals format"""
+    folder_name = "market_technicals_daily"
     folder_path = os.path.join(output_dir, folder_name)
     os.makedirs(folder_path, exist_ok=True)
     
-    date_data = defaultdict(lambda: {
-        "analysis_info": {
-            "generated_at": data.get("generated_at", ""),
-            "period_days": data.get("period_days", 30)
-        },
-        "instruments": {}
-    })
+    daily_data = data.get("daily_data", {})
     
-    for instrument_data in data.get("instruments", []):
-        instrument_name = instrument_data.get("instrument", "")
-        
-        for market_entry in instrument_data.get("market_data", []):
-            date = parse_date(market_entry["date"])
-            if date:
-                if instrument_name not in date_data[date]["instruments"]:
-                    date_data[date]["instruments"][instrument_name] = {
-                        "description": instrument_data.get("description", ""),
-                        "market_data": {},
-                        "technicals": {}
-                    }
-                date_data[date]["instruments"][instrument_name]["market_data"] = market_entry
-        
-        for tech_entry in instrument_data.get("technicals", []):
-            date = parse_date(tech_entry["date"])
-            if date:
-                if instrument_name not in date_data[date]["instruments"]:
-                    date_data[date]["instruments"][instrument_name] = {
-                        "description": instrument_data.get("description", ""),
-                        "market_data": {},
-                        "technicals": {}
-                    }
-                date_data[date]["instruments"][instrument_name]["technicals"] = tech_entry
-    
-    # Only write files for dates that have instruments
-    for date, content in sorted(date_data.items()):
-        if content["instruments"]:  # Only if there are instruments
+    for date, instruments in sorted(daily_data.items()):
+        if instruments:
             file_path = os.path.join(folder_path, f"{date}.json")
+            content = {
+                "date": date,
+                "instruments": instruments
+            }
             with open(file_path, 'w', encoding='utf-8') as f:
                 json.dump(content, f, indent=2, ensure_ascii=False)
     
-    files_created = sum(1 for content in date_data.values() if content["instruments"])
-    print(f"Created {files_created} JSON files in {folder_name}")
-    return date_data
+    print(f"Created {len(daily_data)} JSON files in {folder_name}")
+    return daily_data
 
 def process_news_json(data, output_dir):
     folder_name = "news_daily"
@@ -150,9 +120,8 @@ def process_news_json(data, output_dir):
         if date:
             date_news[date]["headlines"].append(headline)
     
-    # Only write files for dates that have headlines
     for date, content in sorted(date_news.items()):
-        if content["headlines"]:  # Only if there are headlines
+        if content["headlines"]:
             content["headlines"] = sorted(content["headlines"], key=lambda x: x.get("time", ""))
             content["total_headlines"] = len(content["headlines"])
             
@@ -188,9 +157,8 @@ def process_reddit_json(data, output_dir):
         if date:
             date_posts[date]["posts"].append(post)
     
-    # Only write files for dates that have posts
     for date, content in sorted(date_posts.items()):
-        if content["posts"]:  # Only if there are posts
+        if content["posts"]:
             content["posts"] = sorted(content["posts"], key=lambda x: x.get("time", ""))
             content["total_posts"] = len(content["posts"])
             
@@ -221,7 +189,6 @@ def convert_economic_calendar_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Skip if no events
         if not data.get("events"):
             continue
         
@@ -322,12 +289,12 @@ def convert_fundamentals_to_txt(json_folder, txt_folder):
                 lines.append(f"UNEMPLOYMENT:{entry.get('value')}%")
             has_content = True
         
-        # Only write if there's actual content
         if has_content:
             with open(txt_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(lines))
 
-def convert_market_analysis_to_txt(json_folder, txt_folder):
+def convert_market_technicals_to_txt(json_folder, txt_folder):
+    """Convert market technicals JSON to compact TXT format"""
     os.makedirs(txt_folder, exist_ok=True)
     
     for filename in os.listdir(json_folder):
@@ -341,39 +308,52 @@ def convert_market_analysis_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Skip if no instruments
         if not data.get("instruments"):
             continue
         
-        lines = [f"=== MARKET ANALYSIS: {date} ===", ""]
+        lines = [f"=== MARKET: {date} ===", ""]
         
-        for instrument_name, instrument_data in data.get("instruments", {}).items():
-            desc = instrument_data.get("description", "")
-            lines.append(f"{instrument_name}({desc})")
+        for symbol, inst_data in data.get("instruments", {}).items():
+            name = inst_data.get("name", "")
+            lines.append(f"{symbol}({name})")
             
-            market = instrument_data.get("market_data", {})
-            if market:
-                o = market.get('open', 0)
-                h = market.get('high', 0)
-                l = market.get('low', 0)
-                c = market.get('close', 0)
-                lines.append(f"O:{o}|H:{h}|L:{l}|C:{c}")
+            # Price
+            p = inst_data.get("price", {})
+            lines.append(f"O:{p.get('o')}|H:{p.get('h')}|L:{p.get('l')}|C:{p.get('c')}|V:{p.get('v')}")
             
-            tech = instrument_data.get("technicals", {})
-            if tech:
-                rsi = tech.get('rsi_value', 0)
-                rsi_st = tech.get('rsi_status', 'N')
-                e50 = tech.get('ema50_value', 0)
-                e200 = tech.get('ema200_value', 0)
-                trend = tech.get('ema_trend', 'N')
-                macd = tech.get('macd_value', 0)
-                signal = tech.get('macd_signal', 0)
-                stk = tech.get('stoch_k_value', 0)
-                
-                lines.append(f"RSI:{rsi:.1f}({rsi_st})|E50:{e50:.2f}|E200:{e200:.2f}|TREND:{trend}")
-                
-                macd_dir = ">" if macd > signal else "<"
-                lines.append(f"MACD:{macd:.2f}{macd_dir}{signal:.2f}|STK:{stk:.1f}")
+            # EMAs
+            e = inst_data.get("ema", {})
+            lines.append(f"E9:{e.get('e9')}|E21:{e.get('e21')}|E50:{e.get('e50')}|E200:{e.get('e200')}")
+            
+            # Momentum
+            m = inst_data.get("momentum", {})
+            lines.append(f"RSI:{m.get('rsi')}|MACD:{m.get('macd')}|SIG:{m.get('sig')}|HIST:{m.get('hist')}")
+            
+            # Trend
+            t = inst_data.get("trend", {})
+            lines.append(f"ADX:{t.get('adx')}|+DI:{t.get('pos')}|-DI:{t.get('neg')}")
+            
+            # Bollinger
+            b = inst_data.get("bb", {})
+            lines.append(f"BBU:{b.get('upper')}|BBM:{b.get('mid')}|BBL:{b.get('lower')}|WIDTH:{b.get('width')}")
+            
+            # Volatility & Stoch
+            v = inst_data.get("vol", {})
+            s = inst_data.get("stoch", {})
+            lines.append(f"ATR:{v.get('atr')}|STOCH_K:{s.get('k')}|STOCH_D:{s.get('d')}")
+            
+            # Ichimoku
+            i = inst_data.get("ichimoku", {})
+            lines.append(f"TK:{i.get('tk')}|KJ:{i.get('kj')}|SA:{i.get('sa')}|SB:{i.get('sb')}")
+            
+            # Advanced
+            a = inst_data.get("adv", {})
+            lines.append(f"VWAP:{a.get('vwap')}|PSAR:{a.get('psar')}|AO:{a.get('ao')}|WILL:{a.get('willr')}|CCI:{a.get('cci')}|MFI:{a.get('mfi')}|ROC:{a.get('roc')}")
+            
+            # Signals
+            signals = inst_data.get("signals", [])
+            if signals:
+                lines.append(f"SIG:{','.join(signals)}")
             
             lines.append("")
         
@@ -394,7 +374,6 @@ def convert_news_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Skip if no headlines
         if not data.get("headlines"):
             continue
         
@@ -432,7 +411,6 @@ def convert_reddit_to_txt(json_folder, txt_folder):
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
         
-        # Skip if no posts
         if not data.get("posts"):
             continue
         
@@ -454,7 +432,7 @@ def organize_json_files(output_dir):
     input_files = {
         "Fetchers/jsons/economic_calendar.json": process_economic_calendar_json,
         "Fetchers/jsons/fundamentals_data.json": process_fundamentals_json,
-        "Fetchers/jsons/market_analysis_30d.json": process_market_analysis_json,
+        "Fetchers/jsons/market_technicals.json": process_market_technicals_json,
         "Fetchers/jsons/news_30days.json": process_news_json,
         "Fetchers/jsons/reddit_news.json": process_reddit_json
     }
@@ -477,7 +455,7 @@ def convert_to_txt(json_base_dir, txt_base_dir):
     conversions = [
         ("economic_calendar_events", convert_economic_calendar_to_txt),
         ("fundamental_daily_snapshots", convert_fundamentals_to_txt),
-        ("market_analysis_daily", convert_market_analysis_to_txt),
+        ("market_technicals_daily", convert_market_technicals_to_txt),
         ("news_daily", convert_news_to_txt),
         ("reddit_posts_daily", convert_reddit_to_txt)
     ]
