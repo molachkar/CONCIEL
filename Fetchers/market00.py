@@ -2,11 +2,18 @@ import json
 from datetime import datetime
 from typing import Optional
 import pandas as pd
+import numpy as np
 import ta
 import MetaTrader5 as mt5
 from pathlib import Path
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from matplotlib.patches import Rectangle
+import warnings
+warnings.filterwarnings('ignore')
 
-OUTPUT_PATH = "Fetchers/jsons"
+OUTPUT_JSON = "Fetchers/jsons"
+OUTPUT_CHARTS = "Fetchers/charts"
 INSTRUMENTS = {
     "XAUUSD": "Gold",
     "USA500.IDX": "S&P500",
@@ -290,8 +297,133 @@ def build_daily_data_structure(symbol: str, name: str, df, indicators, last_n=35
     
     return daily_data
 
+def create_charts(symbol, name, df, indicators):
+    charts_dir = Path(OUTPUT_CHARTS)
+    charts_dir.mkdir(parents=True, exist_ok=True)
+    
+    df_chart = df.tail(100).copy()
+    
+    # Chart 1: Price + EMAs + Bollinger + Volume
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 8), height_ratios=[3, 1])
+    
+    ax1.plot(df_chart['time'], df_chart['close'], label='Price', linewidth=1.5, color='black')
+    ax1.plot(df_chart['time'], indicators['ema9'].loc[df_chart.index], label='EMA9', linewidth=1, alpha=0.7)
+    ax1.plot(df_chart['time'], indicators['ema21'].loc[df_chart.index], label='EMA21', linewidth=1, alpha=0.7)
+    ax1.plot(df_chart['time'], indicators['ema50'].loc[df_chart.index], label='EMA50', linewidth=1, alpha=0.7)
+    ax1.plot(df_chart['time'], indicators['ema200'].loc[df_chart.index], label='EMA200', linewidth=1, alpha=0.7)
+    ax1.plot(df_chart['time'], indicators['bb_upper'].loc[df_chart.index], 'g--', linewidth=1, alpha=0.5)
+    ax1.plot(df_chart['time'], indicators['bb_lower'].loc[df_chart.index], 'r--', linewidth=1, alpha=0.5)
+    ax1.fill_between(df_chart['time'], indicators['bb_lower'].loc[df_chart.index], indicators['bb_upper'].loc[df_chart.index], alpha=0.1, color='gray')
+    ax1.set_title(f'{name} - Price + EMAs + Bollinger Bands', fontsize=12, fontweight='bold')
+    ax1.set_ylabel('Price')
+    ax1.legend(loc='upper left', fontsize=8)
+    ax1.grid(True, alpha=0.3)
+    ax1.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+    plt.setp(ax1.xaxis.get_majorticklabels(), rotation=45, ha='right')
+    
+    ax2.bar(df_chart['time'], df_chart['tick_volume'], alpha=0.7, color='steelblue')
+    ax2.set_ylabel('Volume')
+    ax2.grid(True, alpha=0.3)
+    ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+    plt.setp(ax2.xaxis.get_majorticklabels(), rotation=45, ha='right')
+    
+    plt.tight_layout()
+    chart_file = charts_dir / f"{symbol}_price_emas.png"
+    plt.savefig(chart_file, dpi=150, bbox_inches='tight')
+    plt.close()
+    
+    # Chart 2: RSI + MACD
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 6))
+    
+    ax1.plot(df_chart['time'], indicators['rsi'].loc[df_chart.index], linewidth=1.5, color='purple')
+    ax1.axhline(y=70, color='red', linestyle='--', linewidth=1, alpha=0.7, label='Overbought')
+    ax1.axhline(y=30, color='green', linestyle='--', linewidth=1, alpha=0.7, label='Oversold')
+    ax1.fill_between(df_chart['time'], 70, 100, alpha=0.1, color='red')
+    ax1.fill_between(df_chart['time'], 0, 30, alpha=0.1, color='green')
+    ax1.set_title(f'{name} - RSI', fontsize=12, fontweight='bold')
+    ax1.set_ylabel('RSI')
+    ax1.set_ylim(0, 100)
+    ax1.legend(loc='upper left', fontsize=8)
+    ax1.grid(True, alpha=0.3)
+    
+    ax2.plot(df_chart['time'], indicators['macd'].loc[df_chart.index], label='MACD', linewidth=1.5)
+    ax2.plot(df_chart['time'], indicators['signal'].loc[df_chart.index], label='Signal', linewidth=1.5)
+    ax2.bar(df_chart['time'], indicators['macd_hist'].loc[df_chart.index], label='Histogram', alpha=0.3)
+    ax2.axhline(y=0, color='black', linestyle='-', linewidth=0.5)
+    ax2.set_title(f'{name} - MACD', fontsize=12, fontweight='bold')
+    ax2.set_ylabel('MACD')
+    ax2.legend(loc='upper left', fontsize=8)
+    ax2.grid(True, alpha=0.3)
+    ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+    plt.setp(ax2.xaxis.get_majorticklabels(), rotation=45, ha='right')
+    
+    plt.tight_layout()
+    chart_file = charts_dir / f"{symbol}_momentum.png"
+    plt.savefig(chart_file, dpi=150, bbox_inches='tight')
+    plt.close()
+    
+    # Chart 3: Stochastic + ADX
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(14, 6))
+    
+    ax1.plot(df_chart['time'], indicators['stoch_k'].loc[df_chart.index], label='%K', linewidth=1.5)
+    ax1.plot(df_chart['time'], indicators['stoch_d'].loc[df_chart.index], label='%D', linewidth=1.5)
+    ax1.axhline(y=80, color='red', linestyle='--', linewidth=1, alpha=0.7)
+    ax1.axhline(y=20, color='green', linestyle='--', linewidth=1, alpha=0.7)
+    ax1.fill_between(df_chart['time'], 80, 100, alpha=0.1, color='red')
+    ax1.fill_between(df_chart['time'], 0, 20, alpha=0.1, color='green')
+    ax1.set_title(f'{name} - Stochastic Oscillator', fontsize=12, fontweight='bold')
+    ax1.set_ylabel('Stochastic')
+    ax1.set_ylim(0, 100)
+    ax1.legend(loc='upper left', fontsize=8)
+    ax1.grid(True, alpha=0.3)
+    
+    ax2.plot(df_chart['time'], indicators['adx'].loc[df_chart.index], label='ADX', linewidth=1.5, color='black')
+    ax2.plot(df_chart['time'], indicators['adx_pos'].loc[df_chart.index], label='+DI', linewidth=1, alpha=0.7, color='green')
+    ax2.plot(df_chart['time'], indicators['adx_neg'].loc[df_chart.index], label='-DI', linewidth=1, alpha=0.7, color='red')
+    ax2.axhline(y=25, color='blue', linestyle='--', linewidth=1, alpha=0.7, label='Trend Threshold')
+    ax2.set_title(f'{name} - ADX Trend Strength', fontsize=12, fontweight='bold')
+    ax2.set_ylabel('ADX')
+    ax2.legend(loc='upper left', fontsize=8)
+    ax2.grid(True, alpha=0.3)
+    ax2.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+    plt.setp(ax2.xaxis.get_majorticklabels(), rotation=45, ha='right')
+    
+    plt.tight_layout()
+    chart_file = charts_dir / f"{symbol}_trend_oscillators.png"
+    plt.savefig(chart_file, dpi=150, bbox_inches='tight')
+    plt.close()
+    
+    # Chart 4: Ichimoku Cloud
+    fig, ax = plt.subplots(figsize=(14, 6))
+    
+    ax.plot(df_chart['time'], df_chart['close'], label='Price', linewidth=1.5, color='black')
+    ax.plot(df_chart['time'], indicators['tenkan'].loc[df_chart.index], label='Tenkan', linewidth=1, alpha=0.7)
+    ax.plot(df_chart['time'], indicators['kijun'].loc[df_chart.index], label='Kijun', linewidth=1, alpha=0.7)
+    
+    senkou_a = indicators['senkou_a'].loc[df_chart.index]
+    senkou_b = indicators['senkou_b'].loc[df_chart.index]
+    ax.plot(df_chart['time'], senkou_a, label='Senkou A', linewidth=1, alpha=0.5, linestyle='--')
+    ax.plot(df_chart['time'], senkou_b, label='Senkou B', linewidth=1, alpha=0.5, linestyle='--')
+    
+    ax.fill_between(df_chart['time'], senkou_a, senkou_b, 
+                     where=senkou_a >= senkou_b, alpha=0.2, color='green', interpolate=True)
+    ax.fill_between(df_chart['time'], senkou_a, senkou_b, 
+                     where=senkou_a < senkou_b, alpha=0.2, color='red', interpolate=True)
+    
+    ax.set_title(f'{name} - Ichimoku Cloud', fontsize=12, fontweight='bold')
+    ax.set_ylabel('Price')
+    ax.legend(loc='upper left', fontsize=8)
+    ax.grid(True, alpha=0.3)
+    ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+    plt.setp(ax.xaxis.get_majorticklabels(), rotation=45, ha='right')
+    
+    plt.tight_layout()
+    chart_file = charts_dir / f"{symbol}_ichimoku.png"
+    plt.savefig(chart_file, dpi=150, bbox_inches='tight')
+    plt.close()
+
 def save_json_output(all_data):
-    output_dir = Path(OUTPUT_PATH)
+    output_dir = Path(OUTPUT_JSON)
     output_dir.mkdir(parents=True, exist_ok=True)
     
     json_file = output_dir / "market_technicals.json"
@@ -326,6 +458,8 @@ def main():
                 if date not in all_daily_data:
                     all_daily_data[date] = {}
                 all_daily_data[date].update(instruments)
+            
+            create_charts(symbol, name, df, indicators)
         
         save_json_output(all_daily_data)
         print("Done")
