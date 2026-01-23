@@ -33,10 +33,22 @@ def process_fundamentals_json(data, output_dir):
         }
     })
     
-    for key, value in data.items():
-        if key.startswith("#") or key in ["collection_date", "data_source"]:
+    monthly_data = {
+        "collection_info": {
+            "source": data.get("data_source", ""),
+            "original_collection_date": data.get("collection_date", "")
+        }
+    }
+    
+    daily_section = data.get("DAILY", {})
+    weekly_section = data.get("WEEKLY", {})
+    monthly_section = data.get("MONTHLY", {})
+    calculated_section = data.get("CALCULATED", {})
+    
+    for key, value in daily_section.items():
+        if key.endswith("_END_DATE") or value is None:
             continue
-            
+        
         if isinstance(value, list) and len(value) > 0 and isinstance(value[0], dict):
             for entry in value:
                 if "date" in entry:
@@ -45,8 +57,46 @@ def process_fundamentals_json(data, output_dir):
                         if key not in date_data[date]:
                             date_data[date][key] = []
                         date_data[date][key].append(entry)
-        elif key.endswith("_END_DATE"):
+    
+    for key, value in weekly_section.items():
+        if key.endswith("_END_DATE") or value is None:
             continue
+        
+        if isinstance(value, list) and len(value) > 0 and isinstance(value[0], dict):
+            for entry in value:
+                if "date" in entry:
+                    date = parse_date(entry["date"])
+                    if date:
+                        if key not in date_data[date]:
+                            date_data[date][key] = []
+                        date_data[date][key].append(entry)
+    
+    for key, value in monthly_section.items():
+        if key.endswith("_END_DATE") or value is None:
+            continue
+        
+        if isinstance(value, list) and len(value) > 0:
+            monthly_data[key] = value
+    
+    for key, value in calculated_section.items():
+        if key.endswith("_END_DATE") or value is None:
+            continue
+        
+        if key == "CENTRAL_BANK_EVENTS":
+            if value and isinstance(value, list):
+                for event in value:
+                    event_date = parse_date(event.get("date", ""))
+                    if event_date:
+                        if "CENTRAL_BANK_EVENTS" not in date_data[event_date]:
+                            date_data[event_date]["CENTRAL_BANK_EVENTS"] = []
+                        date_data[event_date]["CENTRAL_BANK_EVENTS"].append(event)
+        else:
+            monthly_data[key] = value
+    
+    if len(monthly_data) > 1:
+        file_path = os.path.join(folder_path, "monthly_data.json")
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(monthly_data, f, indent=2, ensure_ascii=False)
     
     for date, content in sorted(date_data.items()):
         if len(content) > 1:
@@ -55,6 +105,7 @@ def process_fundamentals_json(data, output_dir):
                 json.dump(content, f, indent=2, ensure_ascii=False)
     
     files_created = sum(1 for content in date_data.values() if len(content) > 1)
+    files_created += 1 if len(monthly_data) > 1 else 0
     print(f"Created {files_created} JSON files in {folder_name}")
     return date_data
 
@@ -250,67 +301,200 @@ def convert_fundamentals_to_txt(json_folder, txt_folder):
         if not filename.endswith('.json'):
             continue
             
-        date = filename.replace('.json', '')
         json_path = os.path.join(json_folder, filename)
-        txt_path = os.path.join(txt_folder, f"{date}.txt")
         
-        with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+        if filename == "monthly_data.json":
+            txt_path = os.path.join(txt_folder, "monthly_data.txt")
+            
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            lines = ["=== MONTHLY FUNDAMENTALS ===", ""]
+            has_content = False
+            
+            if "CPI" in data:
+                lines.append("CPI:")
+                for entry in data["CPI"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "PCE" in data:
+                lines.append("PCE:")
+                for entry in data["PCE"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "PPI" in data:
+                lines.append("PPI:")
+                for entry in data["PPI"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "UNEMPLOYMENT" in data:
+                lines.append("UNEMPLOYMENT:")
+                for entry in data["UNEMPLOYMENT"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}%")
+                has_content = True
+                lines.append("")
+            
+            if "NFP" in data:
+                lines.append("NFP:")
+                for entry in data["NFP"]:
+                    lines.append(f"{entry.get('date')}:{int(entry.get('value'))}K")
+                has_content = True
+                lines.append("")
+            
+            if "FEDFUNDS" in data:
+                lines.append("FEDFUNDS:")
+                for entry in data["FEDFUNDS"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}%")
+                has_content = True
+                lines.append("")
+            
+            if "M2_MONEY_SUPPLY" in data:
+                lines.append("M2_MONEY_SUPPLY:")
+                for entry in data["M2_MONEY_SUPPLY"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "RETAIL_SALES" in data:
+                lines.append("RETAIL_SALES:")
+                for entry in data["RETAIL_SALES"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "INDUSTRIAL_PROD" in data:
+                lines.append("INDUSTRIAL_PROD:")
+                for entry in data["INDUSTRIAL_PROD"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "HOUSING_STARTS" in data:
+                lines.append("HOUSING_STARTS:")
+                for entry in data["HOUSING_STARTS"]:
+                    lines.append(f"{entry.get('date')}:{entry.get('value')}")
+                has_content = True
+                lines.append("")
+            
+            if "REAL_RATE" in data:
+                lines.append(f"REAL_RATE:{data['REAL_RATE']}%")
+                has_content = True
+                lines.append("")
+            
+            if "GPR_PREVIOUS" in data or "GPR_ACTUAL" in data:
+                lines.append("GEOPOLITICAL_RISK:")
+                if "GPR_PREVIOUS" in data:
+                    lines.append(f"GPR_PREV:{data['GPR_PREVIOUS']}")
+                if "GPR_ACTUAL" in data:
+                    lines.append(f"GPR_ACT:{data['GPR_ACTUAL']}")
+                if "GPR_CHANGE_PCT" in data:
+                    lines.append(f"GPR_CHG:{data['GPR_CHANGE_PCT']}%")
+                has_content = True
+                lines.append("")
+            
+            if "GLD_7D_FLOW_PCT" in data or "GLD_30D_FLOW_PCT" in data:
+                lines.append("GOLD_ETF_FLOWS:")
+                if "GLD_CURRENT_PRICE" in data:
+                    lines.append(f"GLD_PRICE:${data['GLD_CURRENT_PRICE']}")
+                if "GLD_7D_FLOW_PCT" in data:
+                    lines.append(f"GLD_7D:{data['GLD_7D_FLOW_PCT']}%")
+                if "GLD_30D_FLOW_PCT" in data:
+                    lines.append(f"GLD_30D:{data['GLD_30D_FLOW_PCT']}%")
+                if "IAU_CURRENT_PRICE" in data:
+                    lines.append(f"IAU_PRICE:${data['IAU_CURRENT_PRICE']}")
+                if "IAU_7D_FLOW_PCT" in data:
+                    lines.append(f"IAU_7D:{data['IAU_7D_FLOW_PCT']}%")
+                if "IAU_30D_FLOW_PCT" in data:
+                    lines.append(f"IAU_30D:{data['IAU_30D_FLOW_PCT']}%")
+                has_content = True
+            
+            if has_content:
+                with open(txt_path, 'w', encoding='utf-8') as f:
+                    f.write('\n'.join(lines))
         
-        lines = [f"=== FUNDAMENTALS: {date} ===", ""]
-        has_content = False
-        
-        if "TREASURY_10Y" in data:
-            lines.append("RATES:")
-            for entry in data["TREASURY_10Y"]:
-                lines.append(f"T10Y:{entry.get('value')}%")
-            has_content = True
-        
-        if "HY_CREDIT_SPREAD" in data:
-            for entry in data["HY_CREDIT_SPREAD"]:
-                lines.append(f"HY_SPREAD:{entry.get('value')}%")
-            has_content = True
-        
-        if has_content:
-            lines.append("")
-        
-        if "GLD" in data:
-            lines.append("GOLD_ETFS:")
-            for entry in data["GLD"]:
-                close = entry.get('close', 0)
-                vol = entry.get('volume', 0)
-                lines.append(f"GLD:${close}|VOL:{vol/1000000:.2f}M")
-            has_content = True
-        
-        if "IAU" in data:
-            for entry in data["IAU"]:
-                close = entry.get('close', 0)
-                vol = entry.get('volume', 0)
-                lines.append(f"IAU:${close}|VOL:{vol/1000000:.2f}M")
-            has_content = True
-        
-        if has_content and ("JOBLESS_CLAIMS" in data or "CPI" in data or "UNEMPLOYMENT" in data):
-            lines.append("")
-        
-        if "JOBLESS_CLAIMS" in data:
-            lines.append("LABOR:")
-            for entry in data["JOBLESS_CLAIMS"]:
-                lines.append(f"CLAIMS:{int(entry.get('value', 0))}K")
-            has_content = True
-        
-        if "CPI" in data:
-            for entry in data["CPI"]:
-                lines.append(f"CPI:{entry.get('value')}")
-            has_content = True
-        
-        if "UNEMPLOYMENT" in data:
-            for entry in data["UNEMPLOYMENT"]:
-                lines.append(f"UNEMPLOYMENT:{entry.get('value')}%")
-            has_content = True
-        
-        if has_content:
-            with open(txt_path, 'w', encoding='utf-8') as f:
-                f.write('\n'.join(lines))
+        else:
+            date = filename.replace('.json', '')
+            txt_path = os.path.join(txt_folder, f"{date}.txt")
+            
+            with open(json_path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            lines = [f"=== FUNDAMENTALS: {date} ===", ""]
+            has_content = False
+            
+            if "TREASURY_10Y" in data:
+                lines.append("RATES:")
+                for entry in data["TREASURY_10Y"]:
+                    lines.append(f"T10Y:{entry.get('value')}%")
+                has_content = True
+            
+            if "TREASURY_2Y" in data:
+                for entry in data["TREASURY_2Y"]:
+                    lines.append(f"T2Y:{entry.get('value')}%")
+                has_content = True
+            
+            if "TREASURY_5Y" in data:
+                for entry in data["TREASURY_5Y"]:
+                    lines.append(f"T5Y:{entry.get('value')}%")
+                has_content = True
+            
+            if "TREASURY_30Y" in data:
+                for entry in data["TREASURY_30Y"]:
+                    lines.append(f"T30Y:{entry.get('value')}%")
+                has_content = True
+            
+            if "HY_CREDIT_SPREAD" in data:
+                for entry in data["HY_CREDIT_SPREAD"]:
+                    lines.append(f"HY_SPREAD:{entry.get('value')}%")
+                has_content = True
+            
+            if has_content:
+                lines.append("")
+            
+            if "GLD" in data:
+                lines.append("GOLD_ETFS:")
+                for entry in data["GLD"]:
+                    close = entry.get('close', 0)
+                    vol = entry.get('volume', 0)
+                    lines.append(f"GLD:${close}|VOL:{vol/1000000:.2f}M")
+                has_content = True
+            
+            if "IAU" in data:
+                for entry in data["IAU"]:
+                    close = entry.get('close', 0)
+                    vol = entry.get('volume', 0)
+                    lines.append(f"IAU:${close}|VOL:{vol/1000000:.2f}M")
+                has_content = True
+            
+            if has_content and "JOBLESS_CLAIMS" in data:
+                lines.append("")
+            
+            if "JOBLESS_CLAIMS" in data:
+                lines.append("LABOR:")
+                for entry in data["JOBLESS_CLAIMS"]:
+                    lines.append(f"CLAIMS:{int(entry.get('value', 0))}K")
+                has_content = True
+            
+            if "CENTRAL_BANK_EVENTS" in data:
+                if has_content:
+                    lines.append("")
+                lines.append("CENTRAL_BANK:")
+                for event in data["CENTRAL_BANK_EVENTS"]:
+                    time = event.get("time", "")
+                    evt = event.get("event", "")[:30]
+                    curr = event.get("currency", "")
+                    lines.append(f"{time}|{curr}|{evt}")
+                has_content = True
+            
+            if has_content:
+                with open(txt_path, 'w', encoding='utf-8') as f:
+                    f.write('\n'.join(lines))
 
 def convert_market_technicals_to_txt(json_folder, txt_folder):
     os.makedirs(txt_folder, exist_ok=True)
