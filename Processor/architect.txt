@@ -1,0 +1,51 @@
+processors/
+├── __init__.py
+├── config.py                  # API keys, model configs
+├── base_agent.py              # Shared functions for all agents
+├── memory_manager.py          # Hierarchical memory builder
+│
+├── agent_1_economic.py        # Qwen2.5-72B
+├── agent_2_inflation.py       # DeepSeek-V3
+├── agent_3_market.py          # Gemini-2.0-Flash-Thinking
+├── agent_4_news.py            # Claude-3.5-Sonnet
+├── agent_5_social.py          # GPT-4o-mini
+│
+├── run_single_agent.py        # Run one agent for one date
+├── run_all_agents.py          # Orchestrate all 5 agents
+└── aggregator.py              # Combine all outputs
+
+
+✅ Hierarchical memory (old→new)
+✅ Data+conclusion format
+✅ Separate file per agent
+✅ Base class with shared functions
+✅ Memory manager
+✅ Orchestrator for running all agents
+
+
+AGENT_CONFIGS = {
+    "macro": {
+        "model": "Qwen-235B",
+        "files": ["calendar.txt", "fundamentals.txt", "monthly_data.txt"],
+        "temperature": 0.2
+    },
+    "market": {
+        "model": "gemini-2.5-flash", 
+        "files": ["technicals.txt", "calculos.txt"],
+        "temperature": 0.3
+    },
+    "narrative": {
+        "model": "Meta-Llama-3.3-70B",
+        "files": ["news.txt", "forums.txt"],
+        "temperature": 0.4
+    }
+}
+
+processors/
+├── config.py              # API keys, model names, memory settings
+├── base_agent.py          # Shared functions (load data, build memory, save output)
+├── memory_manager.py      # Build hierarchical context (old→new)
+├── agent_macro.py         # Qwen-235B
+├── agent_market.py        # Gemini-2.5-Flash
+├── agent_narrative.py     # Meta-Llama-3.3-70B
+└── run_all.py             # Orchestrator

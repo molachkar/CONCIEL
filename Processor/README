@@ -1,0 +1,698 @@
+# 🤖 DATA_BOT AGENT CODING RULES
+
+## 📁 PROJECT STRUCTURE
+
+```
+processors/
+├── config.py              # API keys, model configs, memory settings
+├── base_agent.py          # Shared base class for all agents
+├── memory_manager.py      # Hierarchical memory builder
+├── agent_macro.py         # Agent 1: Qwen-235B
+├── agent_market.py        # Agent 2: Gemini-2.5-Flash
+├── agent_narrative.py     # Agent 3: Meta-Llama-3.3-70B
+└── run_all.py             # Orchestrator for all agents
+```
+
+---
+
+## 🎯 3-AGENT ARCHITECTURE
+
+| Agent | Model | Input Files | Purpose |
+|-------|-------|-------------|---------|
+| **MACRO** | Qwen-235B | calendar.txt + fundamentals.txt + monthly_data.txt | Fed policy, rates, inflation, real rates |
+| **MARKET** | Gemini-2.5-Flash | technicals.txt + calculos.txt | Price action, volatility, regime detection |
+| **NARRATIVE** | Meta-Llama-3.3-70B | news.txt + forums.txt | Sentiment, catalysts, positioning |
+
+---
+
+## 🧠 CRITICAL CONCEPT: LLMs DON'T ACCESS FILES
+
+**IMPORTANT:** LLMs are stateless and cannot navigate folders.
+
+**Your Python code must:**
+1. Read files from `TEXT/data_by_date/{date}/`
+2. Load historical memory from `TEXT/agent_outputs/{agent}/`
+3. Build hierarchical context (old → new)
+4. Send everything to LLM in ONE prompt
+5. Parse LLM's JSON response
+6. Save output to `TEXT/agent_outputs/{agent}/{date}.json`
+
+**LLM only sees text you send it. LLM only returns text. That's it.**
+
+---
+
+## 📐 RULE 1: BASE AGENT TEMPLATE
+
+Every agent inherits from `BaseAgent`:
+
+```python
+class BaseAgent:
+    def __init__(self, name, model, files):
+        self.name = name          # "macro", "market", "narrative"
+        self.model = model        # Model identifier
+        self.files = files        # List of txt files to read
+    
+    def load_today_data(self, date):
+        """Load raw data files for target date"""
+        data = {}
+        for filename in self.files:
+            path = f"TEXT/data_by_date/{date}/{filename}"
+            with open(path, 'r') as f:
+                data[filename] = f.read()
+        return data
+    
+    def load_memory(self, date):
+        """Build hierarchical memory (old→new)"""
+        from memory_manager import build_hierarchical_memory
+        return build_hierarchical_memory(self.name, date)
+    
+    def save_output(self, date, output):
+        """Save agent's analysis"""
+        path = f"TEXT/agent_outputs/{self.name}/{date}.json"
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w') as f:
+            json.dump(output, f, indent=2)
+    
+    def analyze(self, date):
+        """Each agent implements this"""
+        raise NotImplementedError
+```
+
+---
+
+## 🧩 RULE 2: HIERARCHICAL MEMORY STRUCTURE
+
+**Memory is built in chronological order: OLD → NEW**
+
+For date `2026-01-20`, memory spans 30 days back (`2025-12-22` to `2026-01-19`):
+
+```python
+{
+  "long_context": {
+    "description": "Days 1-9 (oldest, regime labels only)",
+    "span": "2025-12-22 to 2025-12-30",
+    "days": [
+      {"date": "2025-12-22", "regime": "RISK_OFF"},
+      {"date": "2025-12-23", "regime": "RISK_OFF"},
+      # ... 7 more days (labels only)
+    ]
+  },
+  
+  "medium_context": {
+    "description": "Days 10-23 (middle 14 days, weekly summaries)",
+    "span": "2025-12-31 to 2026-01-13",
+    "weeks": [
+      {
+        "period": "2025-12-31 to 2026-01-06",
+        "regime": "RISK_ON",
+        "key_data": "CPI fell 20bps, Fed dovish signals, DXY weakened 1.5%",
+        "conclusion": "Disinflationary trend established, gold supportive environment"
+      },
+      {
+        "period": "2026-01-07 to 2026-01-13",
+        "regime": "RISK_OFF", 
+        "key_data": "CPI surprise 3.5%, Fed hawkish pivot, DXY rally",
+        "conclusion": "Regime shift confirmed, inflation re-accelerating"
+      }
+    ]
+  },
+  
+  "recent_context": {
+    "description": "Days 24-30 (last 7 days, full detail)",
+    "span": "2026-01-14 to 2026-01-19",
+    "days": [
+      {
+        "date": "2026-01-14",
+        "data_snapshot": {
+          "economic_events": "Fed Powell speech - maintained hawkish tone",
+          "rates": "T10Y 4.1%, T2Y 3.5%, spread 60bp",
+          "gold": "Close $2,050, up $15 on safe-haven bid"
+        },
+        "analysis": {
+          "regime": "RISK_ON",
+          "trend": "DISINFLATION_TREND",
+          "key_drivers": ["CPI_DECLINE", "FED_DOVISH", "DOLLAR_WEAK"],
+          "reasoning": "Three pillars support gold: falling inflation, dovish Fed, weak Dollar",
+          "confidence": 0.85,
+          "risk_factors": ["Geopolitical calm could reverse quickly"]
+        }
+      },
+      # ... 6 more days with full detail
+    ]
+  }
+}
+```
+
+**Key Principles:**
+- ✅ Chronological order (oldest first, newest last)
+- ✅ Three compression levels (labels → summaries → full)
+- ✅ Agent sees its own past conclusions + the data that led to them
+
+---
+
+## 📋 RULE 3: STANDARD OUTPUT FORMAT
+
+**Every agent must return this exact JSON structure:**
+
+```python
+{
+  "metadata": {
+    "agent": "macro",                    # Agent name
+    "date": "2026-01-20",                # Analysis date
+    "timestamp": "2026-01-20T14:30:00Z", # Processing time
+    "model": "Qwen-235B"                 # Model used
+  },
+  
+  "data_snapshot": {
+    # Agent's compressed summary of what it saw (2-3 lines per category)
+    # This becomes part of tomorrow's memory
+    "economic_events": "Fed Powell speech hawkish, 10Y auction at 4.17%",
+    "rates": "T10Y 4.19%, T2Y 3.54%, normal curve (65bp)",
+    "inflation": "CPI 3.5% (up from 3.2%), re-acceleration confirmed"
+  },
+  
+  "analysis": {
+    "regime": "RISK_OFF",              # RISK_ON / RISK_OFF / NEUTRAL
+    "trend": "HAWKISH_TIGHTENING",     # Descriptive trend label
+    "key_drivers": [                   # 3-5 main factors
+      "FED_HAWKISH",
+      "CPI_SPIKE", 
+      "DOLLAR_STRONG"
+    ],
+    "reasoning": "Powell's hawkish tone combined with CPI surprise signals sustained higher rates, strengthening Dollar and pressuring gold",
+    "confidence": 0.88,                # 0.0 to 1.0
+    "risk_factors": [
+      "Geopolitical shock could override macro headwinds",
+      "Technical support at $2,000 may attract buyers"
+    ]
+  },
+  
+  "memory_references": {
+    "compared_to": [
+      "2026-01-10: Assessed RISK_ON regime with CPI at 3.2%",
+      "2026-01-16: Flagged regime shift when CPI jumped to 3.5%",
+      "2026-01-19: Confirmed RISK_OFF as Fed reinforced hawkish stance"
+    ],
+    "corrections": [
+      "My Jan 10 assessment of 'sustained disinflation' is now invalidated by CPI re-acceleration"
+    ]
+  }
+}
+```
+
+**Why this format:**
+- `data_snapshot` → Becomes compressed memory for future days
+- `analysis` → The agent's conclusions
+- `memory_references` → Proves agent is learning/self-correcting
+
+---
+
+## 🎯 RULE 4: AGENT-SPECIFIC RESPONSIBILITIES
+
+### **MACRO AGENT (Qwen-235B)**
+
+**Files:** calendar.txt + fundamentals.txt + monthly_data.txt
+
+**Primary Focus:**
+- Economic calendar events (Fed speeches, auctions, data releases)
+- Treasury yield curve (T2Y, T5Y, T10Y, T30Y)
+- Credit spreads (HY_SPREAD)
+- Monthly inflation data (CPI, PCE, PPI)
+- **CRITICAL CALCULATION:** Real Rate = T10Y - CPI
+
+**Key Questions to Answer:**
+1. Is the Fed hawkish or dovish?
+2. Is the yield curve normal, flat, or inverted?
+3. What is the real interest rate? (Gold hates positive real rates)
+4. Is inflation accelerating or decelerating?
+5. Are credit markets stressed?
+
+**Output Focus:**
+- Regime: Macro environment supportive or hostile to gold?
+- Trend: Fed tightening, pivoting, or cutting?
+
+**Temperature:** 0.2 (highly analytical)
+
+---
+
+### **MARKET AGENT (Gemini-2.5-Flash)**
+
+**Files:** technicals.txt + calculos.txt
+
+**Primary Focus:**
+- Price action: OHLCV for Gold, SPX, VIX, DXY
+- Technical indicators: EMAs, RSI, MACD, Bollinger, Stoch, ADX, etc.
+- Advanced analytics: Volatility regime, Hurst exponent, volume profile
+- Cross-asset correlations: Gold vs DXY, Gold vs SPX
+
+**Key Questions to Answer:**
+1. Is gold in a trending or mean-reverting state?
+2. What's the volatility regime? (Low vol = complacency, high vol = fear)
+3. Are we at key support/resistance levels?
+4. Is momentum strong or weakening?
+5. What are DXY and VIX doing? (Dollar up = gold down; VIX up = safe haven bid)
+
+**Output Focus:**
+- Regime: Breakout, breakdown, or consolidation?
+- Trend: Bull momentum, bear momentum, or range-bound?
+
+**Temperature:** 0.3 (needs pattern interpretation)
+
+---
+
+### **NARRATIVE AGENT (Meta-Llama-3.3-70B)**
+
+**Files:** news.txt + forums.txt
+
+**Primary Focus:**
+- News headlines: Political events, Fed drama, geopolitical risk
+- Reddit sentiment: Retail positioning, fear/greed, contrarian signals
+- Catalyst identification: What could move gold in next 24-48 hours?
+
+**Key Questions to Answer:**
+1. What's the dominant narrative? (Fed independence threat? War risk? Inflation scare?)
+2. Is retail bullish or bearish on gold?
+3. Are there geopolitical catalysts brewing?
+4. Has sentiment shifted from yesterday?
+5. Is there a contrarian trade setup? (Extreme fear/greed)
+
+**Output Focus:**
+- Regime: Risk-on narrative or risk-off narrative?
+- Trend: Is the story building or fading?
+
+**Temperature:** 0.4 (needs interpretative flexibility)
+
+---
+
+## 🔧 RULE 5: PROMPT STRUCTURE (TEMPLATE)
+
+```python
+def build_prompt(agent_name, today_data, memory_context):
+    prompt = f"""
+You are the {agent_name.upper()} analyst in a gold macro intelligence system.
+Your role: [Agent-specific role description]
+
+=== HISTORICAL CONTEXT (CHRONOLOGICAL: OLD → NEW) ===
+
+LONG-TERM MEMORY (3 weeks ago):
+{json.dumps(memory_context['long_context'], indent=2)}
+
+MEDIUM-TERM MEMORY (Last 2 weeks):
+{json.dumps(memory_context['medium_context'], indent=2)}
+
+RECENT MEMORY (Last 7 days):
+{json.dumps(memory_context['recent_context'], indent=2)}
+
+=== TODAY'S NEW DATA ({date}) ===
+
+{json.dumps(today_data, indent=2)}
+
+=== YOUR TASK ===
+
+1. **Compare today vs your historical analysis**
+   - Reference specific past dates from your memory
+   - Identify what changed and why
+
+2. **Detect regime shifts or trend changes**
+   - Is today different from last week?
+   - Do you need to revise previous conclusions?
+
+3. **Provide updated assessment**
+   - Regime: RISK_ON / RISK_OFF / NEUTRAL
+   - Key drivers (3-5 bullet points)
+   - Confidence level (0.0 to 1.0)
+
+4. **Self-correction**
+   - If you were wrong before, acknowledge it
+   - Explain what new data changed your view
+
+=== OUTPUT FORMAT (STRICT JSON) ===
+
+Return ONLY valid JSON (no markdown, no explanation):
+
+{{
+  "metadata": {{
+    "agent": "{agent_name}",
+    "date": "{date}",
+    "timestamp": "{datetime.now().isoformat()}",
+    "model": "{model_name}"
+  }},
+  "data_snapshot": {{
+    // Compress today's data to 2-3 lines per category
+  }},
+  "analysis": {{
+    "regime": "RISK_ON or RISK_OFF or NEUTRAL",
+    "trend": "Descriptive trend label",
+    "key_drivers": ["DRIVER_1", "DRIVER_2", "DRIVER_3"],
+    "reasoning": "2-3 sentence explanation",
+    "confidence": 0.85,
+    "risk_factors": ["Factor 1", "Factor 2"]
+  }},
+  "memory_references": {{
+    "compared_to": ["Date 1: what you said", "Date 2: what you said"],
+    "corrections": ["What you got wrong and why"]
+  }}
+}}
+"""
+    return prompt
+```
+
+---
+
+## 🗜️ RULE 6: MEMORY COMPRESSION LOGIC
+
+**How to build hierarchical memory from agent outputs:**
+
+```python
+def compress_memory(agent_name, target_date):
+    """
+    Build 3-tier memory for target_date
+    """
+    # Calculate date ranges
+    day_30 = target_date - timedelta(days=30)
+    day_24 = target_date - timedelta(days=24)
+    day_7 = target_date - timedelta(days=7)
+    
+    # TIER 1: Long (days 1-9, oldest)
+    long_context = []
+    for date in range(day_30, day_24):
+        output = load_agent_output(agent_name, date)
+        if output:
+            long_context.append({
+                "date": date,
+                "regime": output["analysis"]["regime"]
+                # ONLY regime label, nothing else
+            })
+    
+    # TIER 2: Medium (days 10-23, middle)
+    medium_context = []
+    # Group into weeks
+    for week_start in [day_24, day_24 + timedelta(days=7)]:
+        week_end = week_start + timedelta(days=6)
+        week_outputs = load_outputs_for_range(agent_name, week_start, week_end)
+        
+        # Compress week into summary
+        medium_context.append({
+            "period": f"{week_start} to {week_end}",
+            "regime": most_common_regime(week_outputs),
+            "key_data": compress_data_snapshots(week_outputs),  # 1 line
+            "conclusion": compress_reasoning(week_outputs)       # 1 sentence
+        })
+    
+    # TIER 3: Recent (days 24-30, last 7 days)
+    recent_context = []
+    for date in range(day_7, target_date):
+        output = load_agent_output(agent_name, date)
+        if output:
+            recent_context.append({
+                "date": date,
+                "data_snapshot": output["data_snapshot"],  # Full
+                "analysis": output["analysis"]              # Full
+            })
+    
+    return {
+        "long_context": long_context,
+        "medium_context": medium_context,
+        "recent_context": recent_context
+    }
+```
+
+---
+
+## ⚠️ RULE 7: ERROR HANDLING
+
+```python
+def analyze(self, date):
+    """
+    Main analysis function with comprehensive error handling
+    """
+    try:
+        # Step 1: Load today's data
+        today_data = self.load_today_data(date)
+        
+    except FileNotFoundError as e:
+        print(f"❌ Missing data file for {date}: {e}")
+        return None
+    
+    try:
+        # Step 2: Load memory
+        memory = self.load_memory(date)
+        
+    except Exception as e:
+        print(f"⚠️ Memory loading failed (first run?): {e}")
+        memory = None  # First day has no memory
+    
+    try:
+        # Step 3: Build prompt
+        prompt = self.build_prompt(today_data, memory)
+        
+        # Step 4: Call LLM
+        response = call_llm_api(self.model, prompt)
+        
+        # Step 5: Parse JSON
+        output = json.loads(response)
+        
+        # Step 6: Validate structure
+        assert "metadata" in output
+        assert "analysis" in output
+        assert "regime" in output["analysis"]
+        
+    except json.JSONDecodeError:
+        print(f"❌ LLM returned invalid JSON")
+        print(f"Raw response: {response[:500]}")
+        return None
+        
+    except AssertionError as e:
+        print(f"❌ Output missing required fields: {e}")
+        return None
+    
+    except Exception as e:
+        print(f"❌ LLM API call failed: {e}")
+        return None
+    
+    try:
+        # Step 7: Save output
+        self.save_output(date, output)
+        print(f"✅ {self.name} agent completed for {date}")
+        return output
+        
+    except Exception as e:
+        print(f"❌ Failed to save output: {e}")
+        return None
+```
+
+---
+
+## 🚀 RULE 8: FIRST RUN BEHAVIOR
+
+**When analyzing the very first date (no historical memory exists):**
+
+```python
+def analyze(self, date):
+    memory = self.load_memory(date)
+    
+    if memory is None or all(len(m) == 0 for m in memory.values()):
+        # FIRST RUN - no memory available
+        prompt = f"""
+You are analyzing {date}. This is your FIRST analysis.
+You have NO historical context yet.
+
+TODAY'S DATA:
+{today_data}
+
+Provide your initial assessment. Your output today will become 
+memory for tomorrow's analysis.
+
+[... rest of prompt ...]
+        """
+    else:
+        # NORMAL RUN - memory exists
+        prompt = f"""
+You have historical context from previous analyses.
+
+MEMORY:
+{memory}
+
+TODAY:
+{today_data}
+
+[... rest of prompt ...]
+        """
+```
+
+**Memory builds gradually:**
+- Day 1: No memory
+- Day 2: 1 day of memory
+- Day 7: 7 days of recent memory
+- Day 8+: Full hierarchical memory (long + medium + recent)
+
+---
+
+## 🔄 RULE 9: ORCHESTRATION
+
+```python
+# run_all.py
+
+def process_single_date(date):
+    """
+    Run all 3 agents for one date
+    """
+    print(f"\n{'='*60}")
+    print(f"Processing: {date}")
+    print(f"{'='*60}\n")
+    
+    results = {}
+    
+    # Agent 1: Macro
+    print("Running MACRO agent...")
+    macro_agent = MacroAgent()
+    results['macro'] = macro_agent.analyze(date)
+    
+    # Agent 2: Market
+    print("Running MARKET agent...")
+    market_agent = MarketAgent()
+    results['market'] = market_agent.analyze(date)
+    
+    # Agent 3: Narrative
+    print("Running NARRATIVE agent...")
+    narrative_agent = NarrativeAgent()
+    results['narrative'] = narrative_agent.analyze(date)
+    
+    # Check if all succeeded
+    if all(results.values()):
+        print(f"\n✅ All agents completed successfully for {date}")
+        
+        # Optional: Save combined output
+        combined_path = f"TEXT/macro_structured/{date}.json"
+        save_combined_output(combined_path, results)
+    else:
+        print(f"\n⚠️ Some agents failed for {date}")
+    
+    return results
+
+
+def process_date_range(start_date, end_date):
+    """
+    Process multiple dates in sequence
+    """
+    current = start_date
+    while current <= end_date:
+        process_single_date(current)
+        current += timedelta(days=1)
+```
+
+---
+
+## ⚙️ RULE 10: CONFIGURATION
+
+```python
+# config.py
+
+AGENT_CONFIGS = {
+    "macro": {
+        "model": "Qwen-235B",
+        "provider": "cerebras",  # or your provider
+        "files": ["calendar.txt", "fundamentals.txt", "monthly_data.txt"],
+        "temperature": 0.2,
+        "max_tokens": 2000
+    },
+    "market": {
+        "model": "gemini-2.5-flash",
+        "provider": "google",
+        "files": ["technicals.txt", "calculos.txt"],
+        "temperature": 0.3,
+        "max_tokens": 2000
+    },
+    "narrative": {
+        "model": "Meta-Llama-3.3-70B",
+        "provider": "sambanova",  # or your provider
+        "files": ["news.txt", "forums.txt"],
+        "temperature": 0.4,
+        "max_tokens": 2000
+    }
+}
+
+MEMORY_CONFIG = {
+    "recent_days": 7,      # Full detail
+    "medium_days": 14,     # Weekly summaries (2 weeks)
+    "long_days": 9,        # Regime labels only
+    "total_window": 30     # Total memory span
+}
+
+API_KEYS = {
+    "openai": "sk-...",
+    "google": "...",
+    "anthropic": "...",
+    # etc.
+}
+```
+
+---
+
+## ✅ IMPLEMENTATION CHECKLIST
+
+Before coding each agent, ensure:
+
+- [ ] Agent inherits from `BaseAgent`
+- [ ] Agent specifies correct input files
+- [ ] Agent has agent-specific prompt template
+- [ ] Agent validates LLM output structure
+- [ ] Agent handles missing data gracefully
+- [ ] Agent handles first-run (no memory) scenario
+- [ ] Agent saves output to correct path
+- [ ] Agent uses appropriate temperature setting
+- [ ] Memory builder creates chronological context (old→new)
+- [ ] Output includes: metadata, data_snapshot, analysis, memory_references
+
+---
+
+## 🎓 KEY CONCEPTS SUMMARY
+
+1. **LLMs are stateless** - You manage all persistence
+2. **Memory is explicit** - You build and send context each time
+3. **Chronological order** - Always old → new (builds narrative)
+4. **Three-tier compression** - Labels → Summaries → Full detail
+5. **Self-correction** - Agents reference and revise past conclusions
+6. **Data + Analysis** - Save both what agent saw and what it concluded
+7. **Error tolerance** - Graceful degradation when data missing
+8. **Gradual memory** - First 7 days build up context
+9. **Standardized output** - Same JSON structure for all agents
+10. **Single responsibility** - Each agent has clear, focused role
+
+---
+
+## 🚨 COMMON PITFALLS TO AVOID
+
+❌ **DON'T** expect LLM to remember previous conversations  
+✅ **DO** send full context in every prompt
+
+❌ **DON'T** send memory in reverse chronological order  
+✅ **DO** send old → new (narrative flows forward)
+
+❌ **DON'T** store full 30 days of raw data in memory  
+✅ **DO** compress: recent=full, medium=summary, long=labels
+
+❌ **DON'T** combine all agents into one mega-prompt  
+✅ **DO** keep agents separate, focused, specialized
+
+❌ **DON'T** skip error handling  
+✅ **DO** handle missing files, bad JSON, API failures
+
+❌ **DON'T** use creative temperatures (0.7+)  
+✅ **DO** use analytical temperatures (0.1-0.4)
+
+❌ **DON'T** save only conclusions  
+✅ **DO** save data_snapshot + analysis (both needed for memory)
+
+---
+
+## 📚 REFERENCES
+
+- Base architecture: Modular agent system
+- Memory approach: Hierarchical temporal compression
+- Output format: Standardized JSON with self-correction
+- Data flow: File I/O → Memory builder → LLM → JSON validator → File I/O
+
+**Last updated:** 2026-01-24  
+**System:** CONCIEL - Gold Macro Intelligence Pipeline  
+**Version:** 1.0
