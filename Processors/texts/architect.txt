@@ -49,3 +49,10 @@ processors/
 ├── agent_market.py        # Gemini-2.5-Flash
 ├── agent_narrative.py     # Meta-Llama-3.3-70B
 └── run_all.py             # Orchestrator
+
+
+✅ config.py - API keys, settings
+✅ memory_manager.py - Build hierarchical memory
+✅ base_agent.py - File reader + shared functions
+✅ agent_macro.py - Economic agent (uses base_agent)
+✅ run_all.py - Orchestrator

@@ -13,8 +13,7 @@ class MacroAgent(BaseAgent):
     
     def build_prompt(self, date: str, today_data: Dict, memory: Optional[Dict]) -> str:
         memory_section = "First analysis - no historical context." if memory is None else f"MEMORY:\n{json.dumps(memory, indent=2)}"
-        
-        prompt = f"""MACRO analyst for gold intelligence system.
+        return f"""MACRO analyst for gold intelligence system.
 
 {memory_section}
 
@@ -28,18 +27,17 @@ Output regime: RISK_ON (dovish Fed, falling real rates) / RISK_OFF (hawkish Fed,
 
 Return ONLY valid JSON:
 {{"metadata":{{"agent":"macro","date":"{date}","timestamp":"{datetime.now().isoformat()}","model":"Qwen-235B"}},"data_snapshot":{{"economic_events":"...","rates":"...","inflation":"...","real_rate":"..."}},"analysis":{{"regime":"RISK_ON/OFF/NEUTRAL","trend":"...","key_drivers":["..."],"reasoning":"...","confidence":0.85,"risk_factors":["..."]}},"memory_references":{{"compared_to":[],"corrections":[]}}}}"""
-        return prompt
     
     def call_llm(self, prompt: str) -> str:
         if not self.api_key:
             raise Exception("Cerebras API key not configured")
-        
-        response = requests.post(
-            self.api_endpoint,
-            headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
-            json={"model": "llama3.3-70b", "messages": [{"role": "system", "content": "Respond ONLY with valid JSON."}, {"role": "user", "content": prompt}], "temperature": self.config['temperature'], "max_tokens": self.config['max_tokens']},
-            timeout=60
-        )
+        response = requests.post(self.api_endpoint, headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}, json={"model": "llama3.3-70b", "messages": [{"role": "system", "content": "Respond ONLY with valid JSON."}, {"role": "user", "content": prompt}], "temperature": self.config['temperature'], "max_tokens": self.config['max_tokens']}, timeout=60)
         response.raise_for_status()
         content = response.json()['choices'][0]['message']['content'].strip()
         return content.replace('```json', '').replace('```', '').strip()
+
+if __name__ == "__main__":
+    agent = MacroAgent()
+    result = agent.analyze("2026-01-20")
+    print(json.dumps(result, indent=2) if result else "Analysis failed")
+    print("\ndone")

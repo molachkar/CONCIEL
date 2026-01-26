@@ -1,0 +1,73 @@
+{
+  "date": "2026-01-20",
+  "timestamp": "2026-01-24T22:43:18.904172",
+  "agents": {
+    "macro": {
+      "metadata": {
+        "agent": "macro",
+        "date": "2026-01-20",
+        "timestamp": "2026-01-24T22:43:18.914757",
+        "model": "Qwen-235B"
+      },
+      "data_snapshot": {
+        "economic_events": "ADP employment change reported at 8.00K, API weekly crude oil stocks reported",
+        "rates": "T10Y 4.3%, T2Y 3.6%, spread 73bp",
+        "inflation": "CPI 326.03, trend direction stable",
+        "real_rate": "T10Y - CPI = 4.3% - 326.03/100 = 1.07% (positive)"
+      },
+      "analysis": {
+        "regime": "NEUTRAL",
+        "trend": "STABLE_INFLATION_TREND",
+        "key_drivers": [
+          "Fed Policy Stance",
+          "Yield Curve Analysis",
+          "Inflation Trends"
+        ],
+        "reasoning": "The current regime is assessed as NEUTRAL due to the stable inflation trend and the Fed's recent dovish stance. However, the positive real rate acts as a headwind for gold. The yield curve is currently normal, which suggests a stable economic environment.",
+        "confidence": 0.7,
+        "risk_factors": [
+          "A sudden change in the Fed's policy stance",
+          "A significant increase in inflation"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    },
+    "market": null,
+    "narrative": {
+      "metadata": {
+        "agent": "narrative",
+        "date": "2026-01-20",
+        "timestamp": "2026-01-20T12:00:00.000000",
+        "model": "Meta-Llama-3.3-70B"
+      },
+      "data_snapshot": {
+        "dominant_story": "Gold price surges to $4,730 an ounce as investors flee global markets due to geopolitical tensions and economic uncertainty",
+        "sentiment": "Retail bullish, high fear level",
+        "catalysts": "Upcoming Fed speeches, US-Europe trade tensions, and geopolitical developments in Greenland and Ukraine",
+        "geopolitical": "Escalating tensions between US and Europe over Greenland, Russian invasion of Ukraine, and China's response to US tariffs"
+      },
+      "analysis": {
+        "regime": "RISK_OFF_NARRATIVE",
+        "trend": "SAFE_HAVEN_BID",
+        "key_drivers": [
+          "Geopolitical tensions",
+          "Economic uncertainty",
+          "Investor flight to safe-haven assets"
+        ],
+        "reasoning": "The current narrative is driven by escalating geopolitical tensions and economic uncertainty, leading to a surge in gold prices as investors seek safe-haven assets. Retail sentiment is bullish, but with a high fear level, indicating potential for a contrarian sell signal. The regime is characterized by a risk-off narrative, with investors prioritizing safety over returns.",
+        "confidence": 0.8,
+        "risk_factors": [
+          "Unexpected resolution of US-Europe trade tensions",
+          "Contrarian signals from extremely bullish retail sentiment"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    }
+  }
+}

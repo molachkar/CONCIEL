@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2026-01-20",
+    "timestamp": "2026-01-24T22:43:18.914757",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "ADP employment change reported at 8.00K, API weekly crude oil stocks reported",
+    "rates": "T10Y 4.3%, T2Y 3.6%, spread 73bp",
+    "inflation": "CPI 326.03, trend direction stable",
+    "real_rate": "T10Y - CPI = 4.3% - 326.03/100 = 1.07% (positive)"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "STABLE_INFLATION_TREND",
+    "key_drivers": [
+      "Fed Policy Stance",
+      "Yield Curve Analysis",
+      "Inflation Trends"
+    ],
+    "reasoning": "The current regime is assessed as NEUTRAL due to the stable inflation trend and the Fed's recent dovish stance. However, the positive real rate acts as a headwind for gold. The yield curve is currently normal, which suggests a stable economic environment.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "A sudden change in the Fed's policy stance",
+      "A significant increase in inflation"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}
