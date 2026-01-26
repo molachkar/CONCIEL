@@ -51,8 +51,16 @@ processors/
 └── run_all.py             # Orchestrator
 
 
-✅ config.py - API keys, settings
-✅ memory_manager.py - Build hierarchical memory
-✅ base_agent.py - File reader + shared functions
-✅ agent_macro.py - Economic agent (uses base_agent)
-✅ run_all.py - Orchestrator
+
+processors/
+├── config.py                  # API keys, models, output settings
+├── base_agent.py              # Shared: load data, build context, save
+├── memory_manager.py          # Smart context window (not compression)
+├── data_loader.py             # NEW: Efficient timespan filtering
+│
+├── agent_market.py            # Gemini (technical + calculos)
+├── agent_macro.py             # Qwen (fundamental + calendar)
+├── agent_narrative.py         # Llama (news + forums)
+│
+├── run_all.py                 # Orchestrator for date range
+└── report_formatter.py        # NEW: Structure 2+ page outputs

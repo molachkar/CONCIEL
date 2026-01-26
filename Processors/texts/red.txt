@@ -1,0 +1,647 @@
+# PROCESSORS SYSTEM - COMPLETE DOCUMENTATION
+
+## 🎯 PURPOSE
+
+Multi-agent financial analysis system for Gold (XAUUSD) that:
+1. Processes daily market data using 3 specialized LLM agents
+2. Builds hierarchical memory (agents learn from past analyses)
+3. Outputs lightweight daily JSONs for memory building
+4. Generates detailed monthly confluence reports (2+ pages each)
+
+**Key principle:** Daily JSONs are token-efficient (fed to next day). Monthly reports are detailed (human reading).
+
+---
+
+## 📐 ARCHITECTURE OVERVIEW
+
+```
+processors/
+├── config.py              # API keys, model configs, file mappings
+├── base_agent.py          # Shared: load files, save JSON, error handling
+├── memory_manager.py      # Build hierarchical context (old→new, 3-tier)
+│
+├── agent_market.py        # Gemini-2.5-Flash (technicals + calculos)
+├── agent_macro.py         # Qwen-235B (calendar + fundamentals + monthly_data)
+├── agent_narrative.py     # Meta-Llama-3.3-70B (news + forums)
+│
+├── run_all.py             # Orchestrator: process date range day-by-day
+├── report_generator.py    # Synthesize daily JSONs → monthly markdown reports
+└── generate_reports.py    # CLI for report generation
+
+TEXT/
+├── data_by_date/          # Input: single-day data files
+│   └── {date}/            # e.g., 2024-01-15/
+│       ├── technicals.txt
+│       ├── calculos.txt
+│       ├── calendar.txt
+│       ├── fundamentals.txt
+│       ├── monthly_data.txt
+│       ├── news.txt
+│       └── forums.txt
+│
+├── agent_outputs/         # Output: daily JSONs (lightweight)
+│   ├── market/            # {date}.json
+│   ├── macro/             # {date}.json
+│   └── narrative/         # {date}.json
+│
+└── reports/               # Output: monthly reports (detailed)
+    ├── market/            # {start}_{end}.md
+    ├── macro/             # {start}_{end}.md
+    └── narrative/         # {start}_{end}.md
+```
+
+---
+
+## 🤖 THREE AGENT SYSTEM
+
+| Agent | Model | Files | Focus | Temp |
+|-------|-------|-------|-------|------|
+| **MARKET** | Gemini-2.5-Flash | technicals.txt + calculos.txt | Price action, volatility, regime detection | 0.3 |
+| **MACRO** | Qwen-235B | calendar.txt + fundamentals.txt + monthly_data.txt | Fed policy, rates, inflation, real rates | 0.2 |
+| **NARRATIVE** | Meta-Llama-3.3-70B | news.txt + forums.txt | Sentiment, catalysts, positioning | 0.4 |
+
+**Key:** Each agent specializes in one domain. Outputs are independent but complementary.
+
+---
+
+## 📋 DATA FILE FORMATS
+
+### technicals.txt (Market Agent)
+```
+=== MARKET: 2025-12-08 ===
+
+XAUUSD(Gold)
+O:4198.3|H:4218.76|L:4176.0|C:4189.89|V:259493
+E9:4185.82|E21:4145.25|E50:4036.24|E200:3561.13
+RSI:58.66|MACD:46.75|SIG:45.68|HIST:1.07
+ADX:21.16|+DI:25.5|-DI:16.8
+BBU:4266.72|BBM:4147.51|BBL:4028.31|WIDTH:5.75
+ATR:73.31|STOCH_K:69.25|STOCH_D:74.26
+SIG:EMA_BULL_STACK,ABOVE_CLOUD
+
+USA500.IDX(S&P500)
+[similar format]
+
+VOL.IDX(VIX)
+[similar format]
+
+DOLLAR.IDX(DXY)
+[similar format]
+```
+
+### calculos.txt (Market Agent)
+```
+=== DEEPIN: 2025-12-08 ===
+
+XAUUSD(Gold)
+PARK_VOL:0.0119|YZ_VOL:0.1994|VOL_REGIME:high|VOL_PCT:77.13
+HURST:0.4483|STATE:mean_reverting
+POC:4207.71|VAH:4606.59|VAL:3622.69|ACCUM:-0.1619
+SPREAD_EST:0.018|EFFICIENCY:0.1435
+BULL_P:0.25|BEAR_P:0.25|CONSOL_P:0.5
+
+[similar for SPX, VIX, DXY]
+```
+
+**Other files:** (structure TBD based on actual data)
+- calendar.txt → Economic events, Fed speeches, data releases
+- fundamentals.txt → Treasury yields, credit spreads, inflation metrics
+- monthly_data.txt → CPI, PCE, PPI monthly aggregates
+- news.txt → Financial headlines, sentiment
+- forums.txt → Reddit, Twitter, TradingView discussions
+
+---
+
+## 🧠 MEMORY SYSTEM (HIERARCHICAL, OLD→NEW)
+
+**30-day rolling window, 3 compression tiers:**
+
+```
+LONG CONTEXT (Days 1-9, oldest)
+- Regime labels only
+- Example: {"date": "2024-01-01", "regime": "RISK_OFF"}
+
+MEDIUM CONTEXT (Days 10-23, middle 14 days)
+- Weekly summaries (2 weeks)
+- Example: {
+    "period": "2024-01-07 to 2024-01-13",
+    "regime": "RISK_ON",
+    "key_data": "CPI fell 20bps, Fed dovish, DXY weak 1.5%",
+    "conclusion": "Disinflationary trend established"
+  }
+
+RECENT CONTEXT (Days 24-30, last 7 days)
+- FULL detail (all data + analysis)
+- Example: {
+    "date": "2024-01-14",
+    "data_snapshot": {...},
+    "analysis": {...}
+  }
+```
+
+**Why this matters:**
+- Agents see their own past conclusions
+- Agents can self-correct ("My Jan 10 assessment was wrong because...")
+- Chronological order builds narrative flow
+
+---
+
+## 📄 DAILY JSON OUTPUT (LIGHTWEIGHT)
+
+**Purpose:** Token-efficient memory for next day's analysis.
+
+```json
+{
+  "metadata": {
+    "agent": "market",
+    "date": "2024-01-15",
+    "timestamp": "2024-01-15T14:30:00Z",
+    "model": "gemini-2.5-flash"
+  },
+  
+  "data_snapshot": {
+    "price_action": "Gold $4189, +$25 (+0.6%), broke $4150 resistance",
+    "volatility": "VIX 17.42 (low), YZ_VOL 0.1994 (high regime)",
+    "correlations": "DXY -0.8% (inverse correlation strong), SPX +0.9%"
+  },
+  
+  "analysis": {
+    "regime": "RISK_ON",
+    "trend": "BULL_MOMENTUM",
+    "key_drivers": ["DXY_WEAK", "BREAKOUT_CONFIRMED", "VOL_COMPRESSION"],
+    "reasoning": "Gold broke resistance at $4150 on DXY weakness. High vol regime (77%) + mean-reverting Hurst suggests consolidation after breakout. MACD bull cross confirms momentum.",
+    "confidence": 0.82,
+    "risk_factors": ["DXY reversal above 99.50 would invalidate breakout"]
+  },
+  
+  "memory_references": {
+    "compared_to": [
+      "2024-01-10: Was consolidating $4100-4150, awaited breakout",
+      "2024-01-14: Resistance test at $4150 failed, bearish"
+    ],
+    "corrections": [
+      "Yesterday's bearish view invalidated by breakout confirmation"
+    ]
+  }
+}
+```
+
+**Key fields:**
+- `data_snapshot` → Becomes compressed memory for future
+- `analysis.reasoning` → Short explanation of conclusion
+- `memory_references` → Proves agent is learning/self-correcting
+
+---
+
+## 📊 MONTHLY REPORT OUTPUT (DETAILED)
+
+**Purpose:** 2+ page confluence analysis for human reading (NOT token-efficient).
+
+### Structure (3 sections):
+
+```markdown
+# [AGENT] REPORT
+Period: 2024-01-01 to 2024-01-31
+Model: [model_name]
+
+---
+
+## 📊 PART 1: RAW DATA CONFLUENCE
+
+### Price Action Timeline
+[ALL raw numbers, dates, metrics from 31 days]
+- Jan 1: Gold $4100, VIX 18.5, DXY 103.2
+- Jan 5: Gold $4125 (+0.6%), VIX 17.8 (-3.8%)
+[... exhaustive data points]
+
+### Technical Indicators Evolution
+[Tables of indicators over time]
+| Date | RSI | MACD | Hurst | Vol Regime |
+[...]
+
+### Volume Profile Analysis
+[POC, VAH, VAL shifts over month]
+
+[2-3 pages of raw metrics, NO interpretation yet]
+
+---
+
+## 🔗 PART 2: CONFLUENCE & CAUSATION ANALYSIS
+
+### Week 1 (Jan 1-7): Initial Setup
+Gold's breakout from $4100 to $4125 was driven by THREE confluent factors:
+
+1. **DXY weakness (-1.5%)**: Dollar index broke support at 103.0
+   - Why this matters: Gold has -0.85 inverse correlation with DXY
+   - Expected impact: $15-20 upside per 1% DXY decline
+   - Actual: $25 move = stronger than expected
+
+2. **Volatility compression**: VIX fell from 18.5 → 17.8
+   - Calculos showed YZ_VOL at 77% (high regime) but declining
+   - Mean-reverting Hurst (0.45) + vol compression = range setup
+   - This explained why breakout stalled at $4150
+
+3. **Technical confluence**: 
+   - RSI climbed from 55 → 62 (momentum building)
+   - MACD bull cross on Jan 3
+   - EMA stack bullish (E9 > E21 > E50)
+   - Price above Ichimoku cloud
+
+**CAUSATION CHAIN:**
+DXY breakdown → Gold breakout → Vol compression → Consolidation at $4150
+
+### Week 2 (Jan 8-14): Failed Breakdown
+[Continue with deep explanations of relationships, causes, effects]
+
+[4-5 pages of deep confluence analysis]
+
+---
+
+## 🎯 PART 3: CONCLUSIONS & IMPLICATIONS
+
+### Current Market State (Jan 31)
+**REGIME: RISK_ON (Confidence: 0.78)**
+
+Gold consolidated $4140-4180 after breakout, suggesting:
+- Breakout was legitimate (support held above $4100)
+- Consolidation = healthy price discovery, not reversal
+- Next move likely depends on DXY direction
+
+### What This Means
+[Forward implications, scenarios, key levels]
+
+### Self-Correction & Learning
+Compared to previous assessments:
+- Jan 10: Expected consolidation $4100-4150 → CORRECT
+- Jan 14: Called false breakout → WRONG (it held)
+- Lesson: Don't dismiss breakouts during DXY weakness
+
+[1-2 pages of conclusions, scenarios, forward outlook]
+
+---
+END OF REPORT
+```
+
+**Report generation logic:**
+1. Load all 31 daily JSONs for agent
+2. Extract all `data_snapshot` fields → Part 1
+3. Extract all `analysis.reasoning` → Part 2 (expand with LLM)
+4. Synthesize conclusions → Part 3
+
+---
+
+## 🔄 WORKFLOW (DAY-BY-DAY PROCESSING)
+
+### Step 1: Daily Processing (run_all.py)
+```bash
+python processors/run_all.py --start_date 2024-01-01 --end_date 2024-01-31
+```
+
+**What happens:**
+```
+For each date (Jan 1 → Jan 31):
+  1. Load data files from TEXT/data_by_date/{date}/
+  2. Build hierarchical memory (previous days)
+  3. Market agent analyzes → saves JSON
+  4. Macro agent analyzes → saves JSON
+  5. Narrative agent analyzes → saves JSON
+  
+Output: 93 JSON files (31 per agent)
+```
+
+**Memory builds incrementally:**
+- Day 1: No memory (first run)
+- Day 2: 1 day of memory
+- Day 7: 7 days recent memory
+- Day 8+: Full 30-day hierarchical memory
+
+---
+
+### Step 2: Report Generation (generate_reports.py)
+```bash
+python processors/generate_reports.py --start_date 2024-01-01 --end_date 2024-01-31
+```
+
+**What happens:**
+```
+For each agent (market, macro, narrative):
+  1. Load all 31 daily JSONs
+  2. Call report_generator.py
+  3. LLM synthesizes 3-section markdown report
+  4. Save to TEXT/reports/{agent}/{start}_{end}.md
+
+Output: 3 markdown reports (2+ pages each)
+```
+
+---
+
+## 🛠️ IMPLEMENTATION PHASES
+
+### Phase 1: Foundation ✅
+**Files:** config.py, base_agent.py  
+**Test:** Load 1 day of data, save dummy JSON  
+**Goal:** File I/O works correctly
+
+### Phase 2: Memory System ✅
+**Files:** memory_manager.py  
+**Test:** Process 3 days, verify hierarchical memory builds correctly  
+**Goal:** Old→new chronology confirmed
+
+### Phase 3: Single Agent ✅
+**Files:** agent_market.py  
+**Test:** Process 1 week (7 days) with Market agent only  
+**Goal:** Daily JSONs correct, memory references work
+
+### Phase 4: All Agents ✅
+**Files:** agent_macro.py, agent_narrative.py, run_all.py  
+**Test:** Process 1 month (30 days), all 3 agents  
+**Goal:** 90 JSONs generated, no errors
+
+### Phase 5: Report Generation ✅
+**Files:** report_generator.py, generate_reports.py  
+**Test:** Generate 3 reports from Phase 4 JSONs  
+**Goal:** 3 markdown files (2+ pages each), proper structure
+
+---
+
+## ⚙️ CRITICAL RULES
+
+### Rule 1: LLMs Are Stateless
+- LLMs don't access files directly
+- Python loads files → sends to LLM in prompt
+- LLM returns text → Python parses and saves
+- Every day requires full context (that's why memory exists)
+
+### Rule 2: Chronological Order (OLD→NEW)
+- Memory ALWAYS flows old → new
+- Never reverse chronological order
+- Builds narrative flow naturally
+
+### Rule 3: Three-Tier Compression
+- Recent (7 days): FULL detail
+- Medium (14 days): Weekly summaries
+- Long (9 days): Regime labels only
+- Total window: 30 days
+
+### Rule 4: Data + Analysis (Both Required)
+- Save `data_snapshot` (what agent saw)
+- Save `analysis` (what agent concluded)
+- Both needed for memory building
+
+### Rule 5: Self-Correction Required
+- Agents must reference past conclusions
+- Agents must identify corrections
+- `memory_references` field is mandatory
+
+### Rule 6: Error Tolerance
+- Handle missing files gracefully
+- Handle bad JSON gracefully
+- Handle API failures gracefully
+- Continue processing other agents if one fails
+
+### Rule 7: First Run Behavior
+- Day 1 has no memory (expected)
+- Memory builds gradually over first week
+- Full hierarchical memory starts Day 8+
+
+### Rule 8: Output Separation
+- Daily JSON: Token-efficient (for LLM memory)
+- Monthly report: Detailed (for human reading)
+- Never mix these purposes
+
+---
+
+## 🚨 COMMON PITFALLS
+
+❌ **Don't:** Expect LLM to remember previous conversations  
+✅ **Do:** Send full memory context every time
+
+❌ **Don't:** Use reverse chronological order  
+✅ **Do:** Always old → new
+
+❌ **Don't:** Store 30 days of full raw data in memory  
+✅ **Do:** Use 3-tier compression
+
+❌ **Don't:** Combine agents into one mega-prompt  
+✅ **Do:** Keep agents separate and specialized
+
+❌ **Don't:** Use creative temperatures (0.7+)  
+✅ **Do:** Use analytical temperatures (0.1-0.4)
+
+❌ **Don't:** Save only conclusions  
+✅ **Do:** Save data_snapshot + analysis
+
+❌ **Don't:** Skip error handling  
+✅ **Do:** Handle missing files, bad JSON, API failures
+
+---
+
+## 📝 CONFIGURATION (config.py)
+
+```python
+AGENT_CONFIGS = {
+    "market": {
+        "model": "gemini-2.5-flash",
+        "provider": "google",
+        "files": ["technicals.txt", "calculos.txt"],
+        "temperature": 0.3,
+        "max_tokens": 2000
+    },
+    "macro": {
+        "model": "Qwen-235B",
+        "provider": "cerebras",
+        "files": ["calendar.txt", "fundamentals.txt", "monthly_data.txt"],
+        "temperature": 0.2,
+        "max_tokens": 2000
+    },
+    "narrative": {
+        "model": "Meta-Llama-3.3-70B",
+        "provider": "sambanova",
+        "files": ["news.txt", "forums.txt"],
+        "temperature": 0.4,
+        "max_tokens": 2000
+    }
+}
+
+MEMORY_CONFIG = {
+    "recent_days": 7,      # Full detail
+    "medium_days": 14,     # Weekly summaries
+    "long_days": 9,        # Regime labels only
+    "total_window": 30     # Total lookback
+}
+
+PATHS = {
+    "data_input": "TEXT/data_by_date",
+    "agent_outputs": "TEXT/agent_outputs",
+    "reports": "TEXT/reports"
+}
+```
+
+---
+
+## 🎯 AGENT-SPECIFIC FOCUSES
+
+### MARKET AGENT
+**Questions to answer:**
+1. Is gold trending or mean-reverting? (Hurst exponent)
+2. What's volatility regime? (Low/medium/high)
+3. Key support/resistance levels? (POC, VAH, VAL)
+4. Momentum direction? (RSI, MACD, ADX)
+5. What are DXY and VIX doing? (Correlations)
+
+**Output focus:**
+- Regime: Breakout, breakdown, or consolidation?
+- Trend: Bull momentum, bear momentum, or range-bound?
+
+---
+
+### MACRO AGENT
+**Questions to answer:**
+1. Is Fed hawkish or dovish?
+2. Is yield curve normal, flat, or inverted?
+3. What is real interest rate? (T10Y - CPI)
+4. Is inflation accelerating or decelerating?
+5. Are credit markets stressed?
+
+**Output focus:**
+- Regime: Macro environment supportive or hostile to gold?
+- Trend: Fed tightening, pivoting, or cutting?
+
+**CRITICAL:** Real Rate = T10Y - CPI (gold hates positive real rates)
+
+---
+
+### NARRATIVE AGENT
+**Questions to answer:**
+1. What's market sentiment? (Bullish/bearish/neutral)
+2. Any major catalysts? (News, events, shocks)
+3. What's positioning? (Retail bullish? Institutions bearish?)
+4. Are there narrative shifts? (Risk-on → risk-off)
+5. What are forums saying? (Reddit, Twitter sentiment)
+
+**Output focus:**
+- Regime: Sentiment bullish, bearish, or mixed?
+- Trend: Narrative strengthening, weakening, or shifting?
+
+---
+
+## 🔍 VALIDATION CHECKLIST
+
+Before moving to next phase:
+
+**Phase 1:**
+- [ ] config.py has all API keys
+- [ ] base_agent.py loads files correctly
+- [ ] Can save dummy JSON to correct path
+
+**Phase 2:**
+- [ ] memory_manager.py builds 3-tier structure
+- [ ] Chronological order confirmed (old→new)
+- [ ] Compression levels correct
+
+**Phase 3:**
+- [ ] agent_market.py inherits BaseAgent
+- [ ] Daily JSON has all required fields
+- [ ] Memory references work correctly
+- [ ] Handles first-run (no memory) gracefully
+
+**Phase 4:**
+- [ ] All 3 agents produce valid JSONs
+- [ ] run_all.py processes date range correctly
+- [ ] Error handling works (missing files, bad JSON)
+- [ ] 90 JSONs created (30 per agent)
+
+**Phase 5:**
+- [ ] report_generator.py synthesizes correctly
+- [ ] 3-section structure present
+- [ ] 2+ pages per report
+- [ ] Markdown formatting clean
+
+---
+
+## 🚀 QUICK START
+
+```bash
+# 1. Setup
+cd processors/
+pip install -r requirements.txt
+
+# 2. Configure
+# Edit config.py with your API keys
+
+# 3. Test foundation
+python test_foundation.py  # Phase 1 test
+
+# 4. Test memory
+python test_memory.py  # Phase 2 test
+
+# 5. Run single agent test
+python test_single_agent.py  # Phase 3 test
+
+# 6. Run full month
+python run_all.py --start_date 2024-01-01 --end_date 2024-01-31
+
+# 7. Generate reports
+python generate_reports.py --start_date 2024-01-01 --end_date 2024-01-31
+```
+
+---
+
+## 📚 EXPECTED OUTPUTS
+
+### After Step 6 (run_all.py):
+```
+TEXT/agent_outputs/
+├── market/
+│   ├── 2024-01-01.json
+│   ├── 2024-01-02.json
+│   └── ... (31 files)
+├── macro/
+│   └── ... (31 files)
+└── narrative/
+    └── ... (31 files)
+```
+
+### After Step 7 (generate_reports.py):
+```
+TEXT/reports/
+├── market/
+│   └── 2024-01-01_to_2024-01-31.md  (2+ pages)
+├── macro/
+│   └── 2024-01-01_to_2024-01-31.md  (2+ pages)
+└── narrative/
+    └── 2024-01-01_to_2024-01-31.md  (2+ pages)
+```
+
+---
+
+## 🎓 KEY CONCEPTS SUMMARY
+
+1. **Stateless LLMs** → You manage persistence
+2. **Explicit memory** → Build and send context each time
+3. **Chronological order** → Always old → new
+4. **Three-tier compression** → Labels → Summaries → Full
+5. **Self-correction** → Reference and revise past conclusions
+6. **Data + Analysis** → Save both (for memory)
+7. **Error tolerance** → Graceful degradation
+8. **Gradual memory** → First 7 days build up
+9. **Standardized output** → Same JSON structure
+10. **Single responsibility** → Each agent focused
+
+---
+
+## 📞 NEXT STEPS AFTER READING
+
+When starting new conversation, state:
+- "I've read PROCESSORS_README.md"
+- "I want to work on Phase [X]"
+- "Current status: [completed phases]"
+
+This allows continuation without re-explaining entire system.
+
+---
+
+**Last Updated:** 2024-01-26  
+**Version:** 1.0  
+**System:** CONCIEL - Processors Module  
+**Purpose:** Multi-agent financial analysis with hierarchical memory
