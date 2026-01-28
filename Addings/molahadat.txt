@@ -1,5 +1,4 @@
-Model 1 (Qwen-235B):       
-Model 2 (Gemini):            
+Model 1 (Qwen-235B):                  
 Model 3 (Llama-3.3-70B):    
 Model 4 (DeepSeek-V3.1):    
 Model 5 (Meta-Llama-3.3):   
