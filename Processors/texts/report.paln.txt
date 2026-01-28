@@ -1,0 +1,1052 @@
+# Gold Market Multi-Agent Report Generation System
+
+## Overview
+This system generates a comprehensive 13-16 page market intelligence report by processing 53 days of structured market data (2025-12-01 to 2026-01-23) through three sequential AI agents. Each agent has full dataset access and builds upon previous agents' analyses to create cross-domain correlational insights.
+
+---
+
+## Input Data Structure
+
+**Source Folder:** `https://github.com/molachkar/CONCIEL/tree/main/Processors/macro_structured`
+
+**File Pattern:** `YYYY-MM-DD.json` (53 files total)
+
+**Each JSON Contains:**
+```json
+{
+  "date": "YYYY-MM-DD",
+  "timestamp": "ISO-8601",
+  "agents": {
+    "macro": {
+      "metadata": {...},
+      "data_snapshot": {
+        "economic_events": "EXISTING_HOME_SALES, MICHIGAN_INFLATION, etc.",
+        "rates": "T10Y, HY_SPREAD, FEDFUNDS",
+        "inflation": "CPI, YoY%, MICHIGAN_1-YEAR, MICHIGAN_5-YEAR",
+        "real_rate": "T10Y yield - CPI YoY"
+      },
+      "analysis": {
+        "regime": "RISK_ON | RISK_OFF",
+        "trend": "dovish | hawkish",
+        "key_drivers": [...],
+        "reasoning": "...",
+        "confidence": 0.0-1.0,
+        "risk_factors": [...]
+      }
+    },
+    "market": {
+      "metadata": {...},
+      "data_snapshot": {
+        "price_action": "Gold price, EMAs, Ichimoku positioning",
+        "momentum": "RSI, MACD, ADX, Stochastic",
+        "volatility": "VOL_PCT, HURST, ATR, accumulation",
+        "cross_assets": "DXY, S&P500, VIX analysis"
+      },
+      "analysis": {
+        "regime": "BREAKOUT | CONSOLIDATION | REVERSAL",
+        "trend": "Strong bullish | bearish | ranging",
+        "key_drivers": [...],
+        "reasoning": "...",
+        "confidence": 0.0-1.0,
+        "risk_factors": [...]
+      }
+    },
+    "narrative": {
+      "metadata": {...},
+      "data_snapshot": {
+        "dominant_story": "...",
+        "sentiment": "Positive | Negative | Neutral",
+        "catalysts": "...",
+        "geopolitical": "..."
+      },
+      "analysis": {
+        "regime": "RISK_ON_NARRATIVE | RISK_OFF_NARRATIVE",
+        "trend": "...",
+        "key_drivers": [...],
+        "reasoning": "...",
+        "confidence": 0.0-1.0,
+        "risk_factors": [...]
+      }
+    }
+  }
+}
+```
+
+---
+
+## Report Generation Process
+
+### Architecture Overview
+
+**Sequential Multi-Agent System:**
+- Each agent reads ALL 53 daily JSON files
+- Each agent reads previous agents' outputs (cumulative knowledge)
+- Each agent writes 4-6 pages focused on their domain
+- Each agent MUST end with explicit handoff directive
+- No rate-limit interruptions (agents plan output length)
+
+**Critical Principle:** Each agent analyzes their primary domain (macro/market/narrative) BUT validates findings against other domains using the full dataset.
+
+---
+
+## Agent 1: Macro-Centric Cross-Asset Analysis
+
+### Input Data
+- All 53 JSON files from `macro_structured/`
+- Focus on: `agents.macro.*` data
+- Cross-reference: `agents.market.data_snapshot.cross_assets` (DXY, S&P500, VIX)
+- Cross-reference: `agents.narrative.analysis.regime` for risk sentiment
+
+### Analysis Objectives
+
+1. **Macro Regime Evolution (Core Focus)**
+   - FEDFUNDS trajectory over 53 days
+   - Real Rate calculation and path: `T10Y - CPI_YoY`
+   - Inflation dynamics: CPI, Michigan 1-year, Michigan 5-year expectations
+   - Identify regime shifts (RISK_ON → RISK_OFF transitions)
+   - Dovish vs Hawkish trend changes
+
+2. **Cross-Asset Validation (Evidence Layer)**
+   - Correlate DXY weakness periods with gold price movements
+   - Analyze S&P500 trend alignment with risk regimes
+   - VIX behavior during macro regime transitions
+   - Calculate correlation coefficients where meaningful
+
+3. **Market Technical Confirmation (Supporting Evidence)**
+   - Do ADX trend strength readings align with dovish/hawkish periods?
+   - RSI momentum shifts timing vs real rate inflection points
+   - Gold price breakouts vs real rate compression events
+
+4. **Narrative Integration (Context Layer)**
+   - Risk-on/risk-off sentiment timing vs FEDFUNDS changes
+   - Geopolitical risk windows impact on macro regime confidence
+   - Dominant story themes correlation with economic data releases
+
+### Output Structure (4-5 pages)
+
+```
+PART I: MACRO REGIME ANALYSIS
+
+1. EXECUTIVE SUMMARY (0.5 pages)
+   - Overview of 53-day macro regime evolution
+   - Key inflection points with dates
+   - Primary drivers (FEDFUNDS path, real rate trajectory, inflation)
+
+2. FEDERAL RESERVE POLICY TRAJECTORY (1.5 pages)
+   - FEDFUNDS evolution: opening rate → closing rate
+   - Identify distinct phases (e.g., Dec 1-10 dovish, Dec 11-20 neutral, etc.)
+   - Paragraph narrative explaining each phase
+   - Bullet points ONLY for rate timeline:
+     • Dec 1: 4.09%
+     • Dec 8: 3.72% (dovish shift)
+     • Dec 15: 3.85% (consolidation)
+     [etc.]
+
+3. REAL RATE REGIME ANALYSIS (1.5 pages)
+   - Real rate calculation methodology
+   - Full 53-day real rate path with phase identification
+   - Correlation with gold price movements (from market data)
+   - Example: "Real rate compression Dec 1-8 (4.35% → 3.85%) 
+     coincided with gold breakout above 4200 resistance. This 
+     wasn't coincidental—the 50bp decline in real borrowing 
+     costs typically triggers 2-3% gold appreciation within 
+     5 trading days historically."
+
+4. CROSS-ASSET CORRELATION PATTERNS (1 page)
+   - DXY inverse correlation analysis
+     - Identify periods: DXY down, gold up
+     - Calculate correlation coefficient
+     - Highlight divergences (if any)
+   - S&P500 risk-on confirmation
+     - Periods where stocks + gold both rallied (atypical)
+     - Periods of negative correlation
+   - VIX behavior as regime validator
+     - Low VIX (<18) periods → risk-on confirmation
+     - VIX spikes → regime uncertainty
+
+5. INFLATION DYNAMICS (0.5 pages)
+   - CPI YoY trajectory
+   - Michigan inflation expectations (1-year vs 5-year divergence)
+   - Impact on real rate calculations
+
+[HANDOFF TO AGENT_2]
+Macro regime analysis complete. Key findings for technical validation:
+
+• 3 distinct regime phases identified:
+  - Phase 1 (Dec 1-10): Dovish shift, FEDFUNDS 4.09% → 3.72%, real rate compression
+  - Phase 2 (Dec 11-25): Consolidation, FEDFUNDS stable 3.7-3.8%
+  - Phase 3 (Dec 26-Jan 23): [describe]
+
+• Real rate inflection points requiring technical confirmation:
+  - Dec 8: Real rate 3.85% (from 4.35%)
+  - [other key dates]
+
+• DXY inverse correlation: -0.87 (strong)
+• Risk-on regime dominant: 38 of 53 days
+
+Agent_2 Tasks:
+1. Validate gold price breakouts align with Dec 8 macro inflection
+2. Analyze RSI/ADX behavior during Phase 2 consolidation
+3. Confirm volatility clustering around regime transition dates
+4. Cross-check EMA configuration changes with real rate trajectory
+
+Continue analysis from this point.
+```
+
+### Writing Guidelines for Agent 1
+
+**Prose Quality:**
+- Financial Times / Bloomberg Intelligence style
+- Each paragraph = one clear argument
+- No wall-of-text (max 6-8 lines per paragraph)
+- Strategic whitespace between sections
+
+**Bullet Point Usage:**
+- Data tables (rate timelines, key statistics)
+- Multi-factor lists (risk factors, key drivers)
+- NOT for analytical reasoning (use paragraphs)
+
+**Cross-Domain Integration:**
+- When discussing real rate compression, cite gold price response
+- When identifying dovish shifts, reference narrative sentiment scores
+- When analyzing DXY, show gold price correlation
+
+**Causal Language:**
+- "This caused..." (when confident)
+- "This likely contributed to..." (when probable)
+- "Coincided with..." (when timing matches but causality unclear)
+- Always justify confidence levels
+
+---
+
+## Agent 2: Market-Centric Technical Synthesis
+
+### Input Data
+- All 53 JSON files from `macro_structured/`
+- **Agent 1's complete output** (PART I)
+- Focus on: `agents.market.*` data
+- Cross-reference: `agents.macro.analysis.regime` for macro context
+- Cross-reference: `agents.narrative.data_snapshot.sentiment`
+
+### Analysis Objectives
+
+1. **Price Structure Evolution (Core Focus)**
+   - Gold price trajectory: opening (Dec 1) → closing (Jan 23)
+   - Support/resistance level identification
+   - Breakout phases: dates, magnitude, sustainability
+   - EMA configuration evolution (E9, E21, E50, E200 stack changes)
+   - Ichimoku cloud positioning trends
+
+2. **Momentum Regime Analysis (Core Focus)**
+   - RSI journey: identify overbought (>70), oversold (<30) periods
+   - MACD signal line crosses and histogram trends
+   - ADX trend strength evolution (>25 trending, <20 ranging)
+   - Stochastic patterns during consolidation vs breakout
+
+3. **Volatility Characterization (Core Focus)**
+   - ATR evolution (daily range expansion/contraction)
+   - Volatility regime (VOL_PCT) changes
+   - Hurst exponent (mean-reversion vs trending)
+   - Accumulation/distribution patterns
+
+4. **Macro Trigger Validation (Cross-Domain)**
+   - **Key Task:** Does Agent_1's Dec 8 dovish shift align with technical breakout?
+   - Do RSI momentum shifts occur within 1-2 days of real rate inflections?
+   - ADX trend strength changes during FEDFUNDS regime transitions
+   - Volatility spikes correlation with macro uncertainty periods
+
+5. **Narrative Confluence (Supporting Evidence)**
+   - Risk-on headlines timing vs breakout confirmations
+   - Sentiment score >0.8 periods → price acceleration?
+   - Geopolitical risk windows → consolidation patterns?
+
+### Output Structure (4-5 pages)
+
+```
+PART II: MARKET TECHNICAL ANALYSIS
+
+1. PRICE STRUCTURE EVOLUTION (1.5 pages)
+   - Opening statement: "Gold appreciated X% over 53 days, from 
+     [start price] to [end price], characterized by [number] 
+     distinct structural phases."
+   
+   - Phase breakdown narrative:
+     • Phase 1 (Dec 1-10): Breakout above 4200 resistance
+       - Trigger: Agent_1 identified Dec 8 real rate compression
+       - Technical confirmation: RSI crossed 70 on Dec 9 (1-day lag)
+       - EMA configuration: Bullish stack established (E9 > E21 > E50)
+       - Price action: 4150 → 4320 (+4.1%)
+     
+     • Phase 2 (Dec 11-25): Consolidation
+       - Macro context: FEDFUNDS stabilized 3.7-3.8% (Agent_1)
+       - Technical behavior: Range-bound 4280-4350
+       - RSI cooled to 60-65 (healthy retracement)
+       - Support held at E21 (4235) throughout
+     
+     [Continue for remaining phases]
+   
+   - Support/Resistance Table:
+     Key Level | Type       | Tests | Outcome
+     ----------|------------|-------|----------
+     4200      | Resistance | 3     | Broken Dec 8
+     4350      | Resistance | 5     | Active
+     4150      | Support    | 2     | Held
+
+2. MOMENTUM REGIME ANALYSIS (1.5 pages)
+   - RSI trajectory narrative
+     - Identify sustained overbought periods (>70 for 5+ days)
+     - Correlation with Agent_1's risk-on regime days
+     - Divergences: RSI declining while price rising (bearish)
+   
+   - MACD signal analysis
+     - Bullish crossovers: dates and price response
+     - Histogram expansion/contraction phases
+     - Alignment with macro inflection points
+   
+   - ADX trend strength evolution
+     - Trending regimes (ADX >25): dates and characteristics
+     - Ranging regimes (ADX <20): duration and resolution
+     - +DI/-DI directional shifts
+   
+   Example paragraph:
+   "The Dec 8-15 period exhibited the strongest momentum alignment 
+   across all indicators. RSI surged from 65 to 74 (entering 
+   overbought but sustainable given breakout context), MACD 
+   histogram expanded from 3.2 to 6.9 (accelerating bullish 
+   momentum), and ADX climbed from 22 to 28.5 (confirming trend 
+   strength). This technical confluence occurred exactly as 
+   Agent_1's macro analysis identified real rate compression from 
+   4.35% to 3.85%—a textbook correlation."
+
+3. VOLATILITY CHARACTERIZATION (1 page)
+   - ATR evolution (identify expansion/contraction cycles)
+   - Volatility regime changes (VOL_PCT thresholds)
+   - Hurst exponent interpretation:
+     - H > 0.5: Trending (momentum strategies favorable)
+     - H < 0.5: Mean-reverting (range strategies favorable)
+     - H ≈ 0.5: Random walk
+   - Accumulation patterns (positive = buying pressure)
+
+4. CROSS-DOMAIN VALIDATION (1 page)
+   - **Macro-Technical Alignment Score:**
+     Calculate timing lag between Agent_1's macro inflections 
+     and technical breakouts
+     
+     Example:
+     Macro Event          | Date   | Technical Response      | Lag
+     ---------------------|--------|-------------------------|-----
+     Dovish shift         | Dec 8  | RSI >70                 | +1 day
+     Real rate bottom     | Dec 15 | Price consolidation     | 0 days
+     FEDFUNDS stabilize   | Dec 20 | ADX decline to 22       | +2 days
+     
+     Average lag: 1.0 days (strong alignment)
+   
+   - **Narrative-Technical Confluence:**
+     - Risk-on sentiment days (from narrative data) vs price up-days
+     - Correlation coefficient
+     - Identify divergences (sentiment positive, price down)
+
+5. FORWARD-LOOKING TECHNICAL SETUP (0.5 pages)
+   - Current positioning (as of Jan 23)
+   - Key levels to watch
+   - Momentum sustainability assessment
+   - Volatility regime implications
+
+[HANDOFF TO AGENT_3]
+Technical analysis complete. Key findings for narrative integration:
+
+• Price structure: 2 major breakouts (Dec 8, Jan 5) aligned with 
+  Agent_1's macro inflections, average lag 1.0 days
+
+• Momentum sustainability: RSI overbought 18 of 53 days, but 
+  historical precedent shows gold can sustain RSI >70 for 15-20 
+  days in strong breakout regimes
+
+• Volatility regime: Mean-reverting (Hurst 0.43 average), suggests 
+  current trends may consolidate before next leg
+
+• Technical-macro correlation: 0.89 (very strong)
+
+• Critical technical levels validated:
+  - 4200 resistance → support (broken Dec 8)
+  - 4350 resistance (active, 5 tests, needs narrative catalyst)
+  - E21 support (4235) held all consolidations
+
+Agent_3 Tasks:
+1. Analyze sentiment catalysts for Dec 8 and Jan 5 breakouts
+2. Identify narrative themes during consolidation phases
+3. Assess geopolitical risk timing vs volatility spikes
+4. Synthesize macro + technical + narrative for forward probabilities
+
+Continue final synthesis from this point.
+```
+
+### Writing Guidelines for Agent 2
+
+**Evidence-Based Analysis:**
+- Every technical claim must reference specific data points
+- When stating "RSI was overbought," specify: "RSI at 74.2 on Dec 9"
+- When claiming correlation, calculate and state coefficient
+
+**Cross-Agent References:**
+- "As Agent_1 identified..." (cite specific finding)
+- "This confirms Agent_1's hypothesis that..." (validate or refute)
+- "Agent_1's real rate data shows..." (integrate their analysis)
+
+**Visualization Through Text:**
+- Describe chart patterns in words
+- Use ASCII tables for key statistics
+- Paint the picture: "Gold carved a higher-low structure..."
+
+---
+
+## Agent 3: Narrative-Driven Synthesis + Forward Outlook
+
+### Input Data
+- All 53 JSON files from `macro_structured/`
+- **Agent 1's complete output** (PART I)
+- **Agent 2's complete output** (PART II)
+- Focus on: `agents.narrative.*` data
+- Full access to macro + market data for correlation analysis
+
+### Analysis Objectives
+
+1. **Sentiment Evolution (Core Focus)**
+   - Dominant story themes over 53 days
+   - Sentiment score trajectory (positive/negative/neutral distribution)
+   - Geopolitical risk windows and impact
+   - Risk-on vs risk-off narrative regime transitions
+
+2. **Macro-Narrative Timing Analysis (Cross-Domain)**
+   - Do risk-on headlines lead or lag Agent_1's dovish shifts?
+   - Sentiment score changes around FEDFUNDS inflections
+   - Narrative catalyst identification for real rate movements
+
+3. **Market-Narrative Correlation (Cross-Domain)**
+   - Breakout phases (Agent_2) alignment with sentiment >0.8
+   - Consolidation phases alignment with neutral/negative sentiment
+   - Volatility spikes (Agent_2) vs geopolitical risk windows
+
+4. **Triple-Domain Pattern Recognition (Synthesis)**
+   - Identify recurring patterns:
+     Example: "Dovish Fed (macro) + DXY weakness + Risk-on narrative 
+     → Gold breakout (market)" occurred X times, average price gain Y%
+   
+   - Failure modes:
+     Example: "Dovish Fed + Risk-off narrative → Consolidation" 
+     (macro-narrative conflict suppresses bullish response)
+
+5. **Forward-Looking Regime Probabilities (Synthesis)**
+   - Given current regime stack (as of Jan 23), historical analogs
+   - Conditional probabilities based on pattern library
+   - Risk scenarios and hedge considerations
+
+### Output Structure (5-6 pages)
+
+```
+PART III: NARRATIVE SYNTHESIS & INTEGRATED OUTLOOK
+
+1. SENTIMENT EVOLUTION (1.5 pages)
+   - 53-day sentiment trajectory narrative
+   - Dominant themes by period:
+     • Dec 1-15: "Tech strength, cooling inflation" (Risk-on)
+     • Dec 16-25: "Holiday thin liquidity, consolidation" (Neutral)
+     • Dec 26-Jan 10: [theme] (Sentiment)
+     [etc.]
+   
+   - Sentiment distribution:
+     • Risk-on narrative: 35 days (66%)
+     • Risk-off narrative: 8 days (15%)
+     • Neutral: 10 days (19%)
+   
+   - Geopolitical risk windows:
+     • Dec 12-14: [specific event], market impact: [describe]
+     • Jan 8-10: [specific event], market impact: [describe]
+
+2. MACRO-NARRATIVE TIMING CORRELATION (1.5 pages)
+   - **Lead-Lag Analysis:**
+     Research question: Do narratives predict macro shifts or react?
+     
+     Method: Compare Agent_1's regime change dates with narrative 
+     sentiment shifts
+     
+     Findings:
+     • Risk-on sentiment typically LEADS dovish Fed shifts by 2-3 days
+     • Example: Dec 5-6 risk-on narrative intensified, Dec 8 FEDFUNDS 
+       dropped (2-day lead)
+     • This suggests markets price in Fed expectations before data
+     
+     Counter-examples:
+     • Dec 20: Dovish continuation but narrative turned neutral 
+       (disconnect, market hesitation)
+   
+   - **Catalysts for Real Rate Movements:**
+     Agent_1 identified real rate compression Dec 1-8. Narrative 
+     analysis shows:
+     • Dec 1-3: "CPI cooling" headlines (15 instances)
+     • Dec 4-6: "Fed dovish pivot speculation" (22 instances)
+     • Dec 7-8: "Tech rally expands to cyclicals" (risk-on broadening)
+     
+     Narrative provided the expectation pathway that real rate data 
+     confirmed.
+
+3. MARKET-NARRATIVE CONFLUENCE (1.5 pages)
+   - **Breakout Amplification:**
+     Agent_2 identified 2 major breakouts (Dec 8, Jan 5)
+     
+     Dec 8 Breakout:
+     • Technical: RSI 65 → 74, price +4.1%
+     • Narrative: Sentiment 0.85 (strong positive), "inflation victory" theme
+     • Confluence assessment: 9/10 (narrative amplified technical move)
+     
+     Jan 5 Breakout:
+     • Technical: [describe from Agent_2]
+     • Narrative: Sentiment [value], dominant theme [describe]
+     • Confluence assessment: [score]/10
+   
+   - **Consolidation Phase Narrative:**
+     Agent_2 identified Dec 11-25 consolidation
+     • Narrative during period: Neutral sentiment 60% of days
+     • Dominant story: "Holiday trading, thin liquidity"
+     • Interpretation: Lack of narrative catalyst → technical stall
+     • This confirms Agent_2's momentum cooling (RSI 74 → 62)
+   
+   - **Volatility-Geopolitics Correlation:**
+     Cross-reference Agent_2's volatility spikes with geopolitical 
+     risk windows
+     
+     ATR Spikes (Agent_2):          | Geopolitical Event:
+     -------------------------------|--------------------------------
+     Dec 13: ATR 72 (+15% vs avg)  | [specific event from narrative]
+     Jan 9: ATR 68 (+12% vs avg)   | [specific event from narrative]
+     
+     Correlation: 0.78 (strong), geopolitics explains 78% of 
+     volatility variance
+
+4. TRIPLE-DOMAIN PATTERN LIBRARY (2 pages)
+   **This is the synthesis core—identify recurring patterns across 
+   all three domains**
+   
+   ### Pattern 1: "Dovish Breakout Cascade"
+   **Conditions:**
+   - Macro: FEDFUNDS decline >20bp within 5 days, real rate <4.0%
+   - Market: Price above E9, RSI 60-75, ADX >25
+   - Narrative: Risk-on sentiment >0.75
+   
+   **Occurrences:** 3 times in 53-day window
+   - Dec 8-12
+   - Jan 5-8
+   - [if 3rd occurrence exists]
+   
+   **Outcome:**
+   - Average gold price gain: +3.8% within 5 days
+   - Success rate: 100% (3/3)
+   - Average duration: 7 days before consolidation
+   
+   **Mechanism:**
+   "Dovish Fed policy reduces opportunity cost of holding gold 
+   (real rate compression), technical breakout confirms trend 
+   strength, and risk-on narrative provides psychological 
+   reinforcement for momentum traders. The confluence creates 
+   self-reinforcing feedback loop."
+   
+   ### Pattern 2: "Macro-Narrative Divergence Stall"
+   **Conditions:**
+   - Macro: Dovish continuation (FEDFUNDS stable/declining)
+   - Market: Consolidation (price range-bound, ADX <22)
+   - Narrative: Risk-off or neutral sentiment <0.5
+   
+   **Occurrences:** 2 times
+   - Dec 20-25
+   - [if 2nd occurrence exists]
+   
+   **Outcome:**
+   - Gold price change: -0.5% to +1.2% (minimal movement)
+   - Duration: 5-8 days average
+   - Resolution: Requires narrative catalyst to break
+   
+   **Mechanism:**
+   "Despite favorable macro backdrop, lack of positive narrative 
+   prevents new capital deployment. Technical consolidation reflects 
+   this standoff. Historical resolution requires either narrative 
+   improvement (Pattern 1 resumes) or macro deterioration 
+   (Pattern 3 activates)."
+   
+   ### Pattern 3: "Risk-Off Compression"
+   [If occurred in dataset, describe with same structure]
+   
+   ### Pattern 4: [Additional patterns]
+   
+   **Pattern Validation:**
+   - Out of 53 days, 47 days (89%) fit one of identified patterns
+   - 6 days (11%) showed idiosyncratic behavior
+   - Pattern library has predictive value IF conditions repeat
+
+5. FORWARD-LOOKING REGIME PROBABILITIES (1 page)
+   **Current State (as of Jan 23):**
+   - Macro: FEDFUNDS [value], Real Rate [value], Trend: [dovish/hawkish]
+   - Market: Price [value], RSI [value], ADX [value], Above/below EMAs
+   - Narrative: Sentiment [score], Dominant theme: [describe]
+   
+   **Pattern Matching:**
+   Current regime most closely resembles:
+   - Pattern [X]: [name] (80% match)
+   - Historical analogs: [dates when similar setup occurred]
+   
+   **Scenario Analysis:**
+   
+   **Scenario A (60% probability): Pattern 1 Continuation**
+   - If: FEDFUNDS remains <3.8%, narrative stays risk-on >0.7
+   - Then: Gold likely tests 4400-4450 resistance within 10 days
+   - Risk: Narrative shift to risk-off breaks pattern
+   
+   **Scenario B (25% probability): Pattern 2 Consolidation**
+   - If: Narrative weakens to neutral while macro stable
+   - Then: 4280-4350 range extends 5-10 more days
+   - Resolution: Requires macro or narrative catalyst
+   
+   **Scenario C (15% probability): Risk-Off Reversal**
+   - If: FEDFUNDS reversal or geopolitical shock
+   - Then: Support test at 4200-4235 (E21/prior resistance)
+   - Likelihood: Low given current macro trend, but tail risk exists
+   
+   **Risk Management Considerations:**
+   - Key level to watch: 4235 (E21 support, Agent_2 validated)
+   - Narrative monitoring: Sentiment <0.5 for 3+ consecutive days 
+     = early warning
+   - Macro tripwire: Real rate >4.2% invalidates dovish thesis
+
+6. CONFIDENCE ASSESSMENT & LIMITATIONS (0.5 pages)
+   **Analytical Confidence: 8.2/10**
+   
+   Confidence drivers:
+   • Strong cross-domain correlations (macro-market: 0.89, 
+     market-narrative: 0.78)
+   • Pattern library validated across 89% of dataset
+   • Agent alignment high (3 independent analyses converged)
+   
+   Uncertainty factors:
+   • Narrative data has subjective sentiment scoring
+   • 53-day window limited for rare event analysis
+   • Forward probabilities assume regime stability
+   • Black swan events (geopolitical shocks) not modeled
+   
+   **Usage Recommendation:**
+   This report provides a probabilistic framework, not deterministic 
+   predictions. Use pattern library as hypothesis generator, validate 
+   real-time against incoming macro/market/narrative data. Update 
+   probabilities as new information arrives.
+
+[END OF REPORT]
+
+═══════════════════════════════════════════════════════════════════
+APPENDIX: DAILY REGIME CLASSIFICATION TABLE
+═══════════════════════════════════════════════════════════════════
+
+Date       | Macro Regime | Market Regime | Narrative      | Pattern Match
+-----------|--------------|---------------|----------------|---------------
+2025-12-01 | RISK_ON      | CONSOLIDATION | RISK_ON (0.75) | Transition
+2025-12-02 | RISK_ON      | CONSOLIDATION | RISK_ON (0.78) | Transition
+...
+2025-12-08 | RISK_ON      | BREAKOUT      | RISK_ON (0.85) | Pattern 1
+...
+[Full 53-day table]
+```
+
+### Writing Guidelines for Agent 3
+
+**Synthesis Quality:**
+- Don't just summarize Agents 1 & 2—find connections they couldn't see
+- Pattern library is YOUR unique contribution
+- Forward probabilities must be justified by historical analogs
+
+**Intellectual Honesty:**
+- State confidence levels with reasoning
+- Acknowledge limitations explicitly
+- Identify days that don't fit patterns (anomalies matter)
+
+**Actionable Intelligence:**
+- Scenario analysis should be decision-ready
+- Risk management sections should be specific (levels, triggers)
+- Don't hedge to uselessness—take positions with caveats
+
+---
+
+## Technical Implementation
+
+### Step 1: Data Loading
+```python
+import json
+from pathlib import Path
+
+# Load all 53 JSON files
+data_folder = Path("macro_structured")
+daily_data = {}
+
+for json_file in sorted(data_folder.glob("*.json")):
+    date = json_file.stem  # e.g., "2025-12-19"
+    with open(json_file) as f:
+        daily_data[date] = json.load(f)
+
+print(f"Loaded {len(daily_data)} days of data")
+```
+
+### Step 2: Agent 1 Execution
+```python
+# Prompt for Agent 1
+agent1_prompt = f"""
+You are Agent 1 in a multi-agent gold market analysis system.
+
+INPUT DATA:
+- 53 days of structured market data (2025-12-01 to 2026-01-23)
+- Full JSON structure provided below
+
+YOUR TASK:
+Write PART I: MACRO REGIME ANALYSIS (4-5 pages)
+
+Follow the structure outlined in REPORT_GENERATION_README.md:
+1. Executive Summary
+2. Federal Reserve Policy Trajectory  
+3. Real Rate Regime Analysis
+4. Cross-Asset Correlation Patterns
+5. Inflation Dynamics
+6. Handoff directive to Agent 2
+
+WRITING QUALITY:
+- Financial Times / Bloomberg Intelligence professional style
+- Narrative flow with embedded statistics
+- Bullet points only for data tables
+- Each paragraph advances clear argument
+- Cross-reference market/narrative data as supporting evidence
+
+CRITICAL REQUIREMENTS:
+- Analyze YOUR domain (macro) using ALL domains' data
+- Calculate real rate for all 53 days: T10Y - CPI_YoY
+- Identify regime shifts with specific dates
+- Validate macro findings against price action (market data)
+- End with explicit handoff to Agent 2
+
+DATA:
+{json.dumps(daily_data, indent=2)}
+
+BEGIN WRITING PART I:
+"""
+
+# Execute Agent 1 (send to LLM)
+agent1_output = llm.generate(agent1_prompt, max_tokens=8000)
+```
+
+### Step 3: Agent 2 Execution
+```python
+agent2_prompt = f"""
+You are Agent 2 in a multi-agent gold market analysis system.
+
+INPUT DATA:
+- 53 days of structured market data (2025-12-01 to 2026-01-23)
+- Agent 1's completed analysis (PART I)
+
+YOUR TASK:
+Write PART II: MARKET TECHNICAL ANALYSIS (4-5 pages)
+
+Follow the structure outlined in REPORT_GENERATION_README.md:
+1. Price Structure Evolution
+2. Momentum Regime Analysis
+3. Volatility Characterization
+4. Cross-Domain Validation (validate Agent 1's macro inflections)
+5. Forward-Looking Technical Setup
+6. Handoff directive to Agent 3
+
+CRITICAL CROSS-DOMAIN TASKS:
+- Validate Agent 1's Dec 8 dovish shift against technical breakout timing
+- Calculate macro-technical alignment lag (days between macro event and 
+  technical confirmation)
+- Cross-reference risk-on narrative periods with price up-days
+
+DATA:
+{json.dumps(daily_data, indent=2)}
+
+AGENT 1 OUTPUT:
+{agent1_output}
+
+BEGIN WRITING PART II:
+"""
+
+agent2_output = llm.generate(agent2_prompt, max_tokens=8000)
+```
+
+### Step 4: Agent 3 Execution
+```python
+agent3_prompt = f"""
+You are Agent 3 in a multi-agent gold market analysis system.
+
+INPUT DATA:
+- 53 days of structured market data (2025-12-01 to 2026-01-23)
+- Agent 1's completed analysis (PART I)
+- Agent 2's completed analysis (PART II)
+
+YOUR TASK:
+Write PART III: NARRATIVE SYNTHESIS & INTEGRATED OUTLOOK (5-6 pages)
+
+Follow the structure outlined in REPORT_GENERATION_README.md:
+1. Sentiment Evolution
+2. Macro-Narrative Timing Correlation
+3. Market-Narrative Confluence
+4. Triple-Domain Pattern Library (YOUR UNIQUE CONTRIBUTION)
+5. Forward-Looking Regime Probabilities
+6. Confidence Assessment & Limitations
+7. Daily Regime Classification Table (Appendix)
+
+SYNTHESIS REQUIREMENTS:
+- Identify recurring patterns across macro + market + narrative
+- Calculate lead-lag relationships (narratives lead or lag macro?)
+- Build pattern library with conditions, occurrences, outcomes
+- Generate forward probabilities based on current regime + historical analogs
+- Be intellectually honest about limitations
+
+DATA:
+{json.dumps(daily_data, indent=2)}
+
+AGENT 1 OUTPUT:
+{agent1_output}
+
+AGENT 2 OUTPUT:
+{agent2_output}
+
+BEGIN WRITING PART III (FINAL SYNTHESIS):
+"""
+
+agent3_output = llm.generate(agent3_prompt, max_tokens=10000)
+```
+
+### Step 5: Report Compilation
+```python
+final_report = f"""
+═══════════════════════════════════════════════════════════════════
+GOLD MARKET INTELLIGENCE REPORT
+Analysis Period: 2025-12-01 to 2026-01-23 (53 Trading Days)
+Generation Date: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}
+═══════════════════════════════════════════════════════════════════
+
+{agent1_output}
+
+{'═'*70}
+
+{agent2_output}
+
+{'═'*70}
+
+{agent3_output}
+
+═══════════════════════════════════════════════════════════════════
+END OF REPORT
+═══════════════════════════════════════════════════════════════════
+"""
+
+# Save to file
+output_path = Path("gold_market_analysis_2025-12-01_to_2026-01-23.txt")
+output_path.write_text(final_report)
+
+print(f"Report generated: {output_path}")
+print(f"Total length: {len(final_report)} characters")
+print(f"Estimated pages: {len(final_report) / 3000:.1f}")
+```
+
+---
+
+## Quality Control Checklist
+
+Before finalizing the report, verify:
+
+### Content Completeness
+- [ ] All 53 days analyzed (spot-check critical dates)
+- [ ] Each agent referenced the other agents' findings
+- [ ] Pattern library contains 3-5 patterns with full structure
+- [ ] Forward probabilities sum to 100% across scenarios
+- [ ] Appendix table includes all 53 days
+
+### Cross-Domain Integration
+- [ ] Agent 2 explicitly validated Agent 1's macro inflection dates
+- [ ] Agent 3 calculated lead-lag relationships
+- [ ] Correlation coefficients stated for key relationships
+- [ ] Examples given showing macro → market → narrative causality
+
+### Writing Quality
+- [ ] No bullet-point lists for analytical reasoning
+- [ ] Each section has clear narrative flow
+- [ ] Professional financial analysis tone throughout
+- [ ] No repetition between agents (each adds unique value)
+- [ ] Handoff directives are specific and actionable
+
+### Analytical Rigor
+- [ ] Confidence levels justified with evidence
+- [ ] Alternative scenarios considered (not just bull case)
+- [ ] Limitations explicitly stated
+- [ ] Risk factors identified for each conclusion
+- [ ] Historical analogs cited for forward probabilities
+
+### Formatting
+- [ ] Consistent section headers
+- [ ] Strategic whitespace (no walls of text)
+- [ ] Data tables properly formatted (ASCII alignment)
+- [ ] Page estimates accurate (13-16 pages at 3000 char/page)
+
+---
+
+## Common Pitfalls to Avoid
+
+1. **Agent Siloing:** Each agent only analyzing their domain without cross-referencing others
+   - Fix: Every agent MUST cite findings from other domains
+
+2. **Bullet Point Overuse:** Turning report into slide deck
+   - Fix: Bullets only for data tables, rest is prose
+
+3. **Shallow Synthesis:** Agent 3 just summarizing Agents 1 & 2
+   - Fix: Pattern library must reveal NEW insights not visible to prior agents
+
+4. **Vague Handoffs:** "Agent 2, continue the analysis"
+   - Fix: Specific tasks listed (e.g., "validate Dec 8 inflection timing")
+
+5. **Unsubstantiated Claims:** "Gold will likely rise"
+   - Fix: "Gold likely tests 4400 (60% probability, based on Pattern 1 
+     which occurred 3 times with 100% success rate)"
+
+6. **Ignoring Contradictions:** Dovish Fed but price down
+   - Fix: Explicitly analyze anomalies (these are learning opportunities)
+
+---
+
+## Output Specifications
+
+**File Name:** `gold_market_analysis_2025-12-01_to_2026-01-23.txt`
+
+**Target Length:** 13-16 pages (39,000-48,000 characters at 3000 char/page)
+
+**Character Budget by Agent:**
+- Agent 1: 12,000-15,000 characters (4-5 pages)
+- Agent 2: 12,000-15,000 characters (4-5 pages)  
+- Agent 3: 15,000-18,000 characters (5-6 pages)
+
+**Structure:**
+```
+[Agent 1: 4-5 pages]
+PART I: MACRO REGIME ANALYSIS
+[Section divider]
+
+[Agent 2: 4-5 pages]
+PART II: MARKET TECHNICAL ANALYSIS
+[Section divider]
+
+[Agent 3: 5-6 pages]
+PART III: NARRATIVE SYNTHESIS & INTEGRATED OUTLOOK
+APPENDIX: Daily Regime Classification Table
+```
+
+**Tone:** Professional financial intelligence (Bloomberg/FT quality)
+
+**Audience:** Sophisticated market analyst requiring deep understanding
+
+---
+
+## Post-Generation: Token-Efficient Compression
+
+**This step is MANUAL (you handle it after reviewing the human-readable report)**
+
+Compression targets:
+- Remove narrative prose, keep causal chains
+- Convert paragraphs to structured data where possible
+- Maintain all statistics and correlation coefficients
+- Preserve pattern library (most information-dense section)
+- Target: 50-60% size reduction while retaining analytical value
+
+**Do NOT ask agents to generate compressed version—they produce 
+human-readable first, compression is separate workflow.**
+
+---
+
+## FAQ
+
+**Q: What if Agent 1 writes 8 pages instead of 4-5?**
+A: Agent receives character budget in prompt. If exceeded, truncate 
+   less-critical sections (e.g., reduce inflation dynamics to 0.25 pages).
+
+**Q: What if agents don't cross-reference each other?**
+A: Prompt explicitly requires citation. Example: "Agent 2 MUST validate 
+   Agent 1's Dec 8 inflection against technical data and state findings."
+
+**Q: What if Pattern Library finds no patterns?**
+A: Unlikely with 53 days of data. Minimum: identify 2-3 patterns even if 
+   they occurred only twice. Patterns with n=2 are still valuable.
+
+**Q: What if forward probabilities are uncertain?**
+A: State confidence explicitly. "Low confidence (5/10) due to limited 
+   historical analogs for current regime configuration" is acceptable.
+
+**Q: Can we parallelize agents instead of sequential?**
+A: No—Agent 2 needs Agent 1's macro inflection dates, Agent 3 needs both 
+   prior analyses. Sequential is architectural requirement.
+
+---
+
+## Example Prompt Snippets
+
+### Agent 1 Prompt Addition
+```
+CRITICAL CROSS-DOMAIN TASK:
+For every macro regime shift you identify (e.g., FEDFUNDS decline), 
+you MUST check the market data for gold price response:
+
+Example required structure:
+"Real rate compressed from 4.35% to 3.85% on Dec 1-8. Cross-referencing 
+market data shows gold rallied from 4150 to 4320 (+4.1%) during this 
+period, with RSI crossing 70 on Dec 9. This validates the hypothesis 
+that real rate compression triggers gold appreciation with 1-day lag."
+
+If you find NO price response to macro shift, you MUST state this 
+explicitly and hypothesize why (e.g., narrative was risk-off, offsetting 
+dovish macro impact).
+```
+
+### Agent 2 Prompt Addition
+```
+MACRO INFLECTION VALIDATION TASK:
+Agent 1 identified [X] macro regime shifts. For each one:
+
+1. State the date of macro shift
+2. Identify corresponding technical breakout/breakdown date  
+3. Calculate lag in days
+4. Assess alignment quality (strong/moderate/weak)
+
+Create a validation table:
+Macro Event | Date | Technical Response | Lag | Quality
+------------|------|-------------------|-----|--------
+[example]   | Dec 8| RSI >70 breakout  | +1d | Strong
+
+Then calculate average lag and correlation strength.
+```
+
+### Agent 3 Prompt Addition
+```
+PATTERN LIBRARY REQUIREMENTS:
+You MUST identify minimum 3 patterns with this exact structure:
+
+### Pattern [N]: "[Descriptive Name]"
+**Conditions:**
+- Macro: [specific thresholds from Agent 1 data]
+- Market: [specific indicators from Agent 2 data]  
+- Narrative: [specific sentiment/themes from your data]
+
+**Occurrences:** [X] times in 53-day window
+[List specific date ranges]
+
+**Outcome:**
+[Quantified results: price change %, duration, success rate]
+
+**Mechanism:**
+[Causal explanation in 2-3 sentences]
+
+If you cannot find 3 patterns, explain why and identify partial patterns.
+```
+
+---
+
+END OF README
