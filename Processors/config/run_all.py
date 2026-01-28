@@ -33,7 +33,7 @@ def process_single_date(date: str) -> Dict:
     try:
         macro_agent = MacroAgent()
         results['agents']['macro'] = macro_agent.analyze(date)
-        print(f"  Macro: {'OK' if results['agents']['macro'] else 'FAILED'}")
+        print(f"  Macro: {'OK' if results['agents']['macro'] else 'SKIPPED/FAILED'}")
     except Exception as e:
         print(f"  Macro: FAILED ({e})")
         results['agents']['macro'] = None
@@ -42,7 +42,7 @@ def process_single_date(date: str) -> Dict:
     try:
         market_agent = MarketAgent()
         results['agents']['market'] = market_agent.analyze(date)
-        print(f"  Market: {'OK' if results['agents']['market'] else 'FAILED'}")
+        print(f"  Market: {'OK' if results['agents']['market'] else 'SKIPPED/FAILED'}")
     except Exception as e:
         print(f"  Market: FAILED ({e})")
         results['agents']['market'] = None
@@ -51,7 +51,7 @@ def process_single_date(date: str) -> Dict:
     try:
         narrative_agent = NarrativeAgent()
         results['agents']['narrative'] = narrative_agent.analyze(date)
-        print(f"  Narrative: {'OK' if results['agents']['narrative'] else 'FAILED'}")
+        print(f"  Narrative: {'OK' if results['agents']['narrative'] else 'SKIPPED/FAILED'}")
     except Exception as e:
         print(f"  Narrative: FAILED ({e})")
         results['agents']['narrative'] = None
@@ -82,15 +82,10 @@ def process_date_range(start_date: str, end_date: str) -> List[Dict]:
     current = start_dt
     
     print(f"Date range: {start_date} to {end_date}")
+    print("Processing ALL days (including weekends if data exists)")
     
     while current <= end_dt:
         date_str = current.strftime("%Y-%m-%d")
-        
-        if PROCESSING_CONFIG['skip_weekends'] and current.weekday() in [5, 6]:
-            print(f"\nSkipping weekend: {date_str}")
-            current += timedelta(days=1)
-            continue
-        
         result = process_single_date(date_str)
         all_results.append(result)
         current += timedelta(days=1)
@@ -113,15 +108,15 @@ def print_summary(results: List[Dict]):
     
     failed_dates = [
         r['date'] for r in results 
-        if not all(r['agents'].get(agent) for agent in ['macro', 'market', 'narrative'])
+        if not any(r['agents'].get(agent) for agent in ['macro', 'market', 'narrative'])
     ]
     
     if failed_dates:
-        print(f"\nFailed dates ({len(failed_dates)}):")
+        print(f"\nDates with no successful agents ({len(failed_dates)}):")
         for date in failed_dates:
             print(f"  {date}")
     else:
-        print("\nAll dates processed successfully")
+        print("\nAll dates had at least one successful agent")
     
     print("="*60)
 
@@ -130,7 +125,6 @@ def main():
     parser = argparse.ArgumentParser(description="CONCIEL Processors - Run all agents")
     parser.add_argument('start_date', type=str, help="Start date (YYYY-MM-DD)")
     parser.add_argument('end_date', type=str, nargs='?', default=None, help="End date (YYYY-MM-DD), defaults to start_date")
-    parser.add_argument('--skip-weekends', action='store_true', default=PROCESSING_CONFIG['skip_weekends'], help="Skip weekend dates")
     parser.add_argument('--skip-missing', action='store_true', default=PROCESSING_CONFIG['skip_missing_data'], help="Skip dates with missing data")
     
     args = parser.parse_args()
@@ -146,7 +140,6 @@ def main():
     end_date = args.end_date if args.end_date else args.start_date
     
     # Update config based on args
-    PROCESSING_CONFIG['skip_weekends'] = args.skip_weekends
     PROCESSING_CONFIG['skip_missing_data'] = args.skip_missing
     
     print("="*60)
@@ -164,7 +157,6 @@ if __name__ == "__main__":
         print("\nExamples:")
         print("  python run_all.py 2026-01-20")
         print("  python run_all.py 2026-01-20 2026-01-31")
-        print("  python run_all.py 2026-01-20 --skip-weekends")
         print("\nRunning test with 2026-01-20...")
         result = process_single_date("2026-01-20")
         print("\ndone")

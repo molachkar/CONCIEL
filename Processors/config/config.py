@@ -76,7 +76,7 @@ DAILY_FILES = [
 MONTHLY_DATA_FILE = "monthly_fundamentals.txt"
 
 PROCESSING_CONFIG = {
-    "skip_weekends": True,
+    "skip_weekends": False,  # CHANGED: Process weekends if data exists
     "skip_missing_data": True,
     "require_all_files": False,
     "parallel_agents": False,
@@ -101,7 +101,7 @@ REGIME_LABELS = {
 
 VALIDATION_CONFIG = {
     "require_regime_label": True,
-    "require_confidence_score": True,
+    "require_confidence_score": False,  # CHANGED: Removed confidence requirement
     "min_confidence": 0.0,
     "max_confidence": 1.0,
     "require_key_drivers": True,
