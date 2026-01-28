@@ -1,20 +1,20 @@
 {
-  "date": "2025-12-26",
-  "timestamp": "2026-01-28T18:51:26.498015",
+  "date": "2025-12-27",
+  "timestamp": "2026-01-28T19:13:27.682369",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
-        "date": "2025-12-26",
-        "timestamp": "2026-01-28T18:51:26.502864",
+        "date": "2025-12-27",
+        "timestamp": "2026-01-28T19:13:27.731750",
         "model": "Qwen-235B"
       },
       "data_snapshot": {
         "economic_events": "No calendar data available",
         "rates": "T10Y: 4.14%, FEDFUNDS: 3.72%",
-        "inflation": "CPI YoY: calculated from index values",
+        "inflation": "CPI YoY: 0.31%",
         "real_rate": "T10Y (4.14%) - CPI (0.31%) = Real Rate 3.83%",
-        "data_quality": "current"
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
         "regime": "RISK_OFF",
@@ -25,29 +25,28 @@
           "Decreasing unemployment"
         ],
         "reasoning": "The current macro environment hurts gold due to a high real rate, which indicates a strong economy and low inflation expectations. The hawkish trend is further supported by increasing industrial production and decreasing unemployment, making it less likely for the Fed to implement dovish policies.",
-        "confidence": 0.85,
         "risk_factors": [
           "Geopolitical risk",
           "Potential changes in Fed policy"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "Previous date: 2025-12-01, Real Rate was not provided"
-        ],
-        "corrections": [
-          "None"
-        ]
+        "compared_to": [],
+        "corrections": []
       }
     },
     "market": {
       "metadata": {
         "agent": "market",
-        "date": "2025-12-26",
-        "timestamp": "2026-01-28T18:51:27.775501",
-        "model": "DeepSeek-V3.1"
+        "date": "2025-12-27",
+        "timestamp": "2026-01-28T19:13:29.094289",
+        "model": "DeepSeek-V3.1",
+        "note": "MARKET CLOSED - Using last trading day values",
+        "source_date": "2025-12-26"
       },
       "data_snapshot": {
+        "market_status": "CLOSED - Weekend/Holiday",
+        "last_trading_day": "2025-12-26",
         "price_action": "Gold (XAUUSD) showing strong bullish breakout - closed at 4532.36 (up from open 4490.01), breaking above Bollinger Band upper (4509.76) with high volume (390k). SPX flat with weak trend, VIX low/stable, DXY in strong downtrend.",
         "momentum": "Gold RSI 82.16 (overbought), MACD bullish (95.1 > SIG 74.38), ADX 36.88 (strong trend). SPX momentum mixed (RSI 61.6, weak ADX 13.66). DXY momentum bearish (RSI 35.15, ADX 27.08).",
         "volatility": "Gold VOL_REGIME: medium (PARK_VOL 0.0095, VOL_PCT 53.64), SPX/VOL/DXY all low volatility regimes. Gold ATR 71.84 indicates elevated but not extreme volatility.",
@@ -71,40 +70,46 @@
         ]
       },
       "memory_references": {
-        "compared_to": [],
+        "compared_to": [
+          "Forward-filled from 2025-12-26 (last trading day)"
+        ],
         "corrections": []
       }
     },
     "narrative": {
       "metadata": {
         "agent": "narrative",
-        "date": "2025-12-26",
-        "timestamp": "2026-01-28T18:51:32.106044",
+        "date": "2025-12-27",
+        "timestamp": "2026-01-28T19:13:29.161373",
         "model": "Meta-Llama-3.3-70B"
       },
       "data_snapshot": {
-        "dominant_story": "Gold and Silver Rally",
-        "sentiment": "Bullish",
-        "catalysts": "Record-breaking gold and silver prices, year-end bullish sentiment",
-        "geopolitical": "Low",
+        "dominant_story": "No data available",
+        "sentiment": "Neutral",
+        "catalysts": "No catalysts identified",
+        "geopolitical": "Low risk",
         "data_quality": "incomplete"
       },
       "analysis": {
-        "regime": "BULLISH_SENTIMENT",
-        "trend": "Upward",
+        "regime": "NEUTRAL_NARRATIVE",
+        "trend": "Stable",
         "key_drivers": [
-          "Gold and silver price records",
-          "Year-end bullish sentiment"
-        ],
-        "reasoning": "The news headlines suggest a strong upward trend in gold and silver prices, with record-breaking prices and year-end bullish sentiment. The lack of social sentiment data and forums data limits the analysis, but the institutional news suggests a positive outlook.",
-        "confidence": 0.7,
-        "risk_factors": [
-          "Market volatility",
+          "Lack of news headlines",
           "Lack of social sentiment data"
+        ],
+        "reasoning": "The absence of news headlines and social sentiment data due to file directory errors limits the analysis, resulting in a neutral narrative.",
+        "risk_factors": [
+          "Data unavailability",
+          "Incomplete analysis"
         ]
       },
       "memory_references": {
-        "compared_to": [],
+        "compared_to": [
+          "2025-12-22",
+          "2025-12-23",
+          "2025-12-24",
+          "2025-12-26"
+        ],
         "corrections": []
       }
     }

@@ -1,16 +1,16 @@
 {
   "metadata": {
     "agent": "macro",
-    "date": "2025-12-26",
-    "timestamp": "2026-01-28T18:51:26.502864",
+    "date": "2025-12-27",
+    "timestamp": "2026-01-28T19:13:27.731750",
     "model": "Qwen-235B"
   },
   "data_snapshot": {
     "economic_events": "No calendar data available",
     "rates": "T10Y: 4.14%, FEDFUNDS: 3.72%",
-    "inflation": "CPI YoY: calculated from index values",
+    "inflation": "CPI YoY: 0.31%",
     "real_rate": "T10Y (4.14%) - CPI (0.31%) = Real Rate 3.83%",
-    "data_quality": "current"
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "RISK_OFF",
@@ -21,18 +21,13 @@
       "Decreasing unemployment"
     ],
     "reasoning": "The current macro environment hurts gold due to a high real rate, which indicates a strong economy and low inflation expectations. The hawkish trend is further supported by increasing industrial production and decreasing unemployment, making it less likely for the Fed to implement dovish policies.",
-    "confidence": 0.85,
     "risk_factors": [
       "Geopolitical risk",
       "Potential changes in Fed policy"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "Previous date: 2025-12-01, Real Rate was not provided"
-    ],
-    "corrections": [
-      "None"
-    ]
+    "compared_to": [],
+    "corrections": []
   }
 }

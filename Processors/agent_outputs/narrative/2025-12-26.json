@@ -2,27 +2,28 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-26",
-    "timestamp": "2026-01-28T18:18:46.132929",
+    "timestamp": "2026-01-28T18:51:32.106044",
     "model": "Meta-Llama-3.3-70B"
   },
   "data_snapshot": {
-    "dominant_story": "Gold and Silver Smash Records Again as Rally Gathers Momentum",
+    "dominant_story": "Gold and Silver Rally",
     "sentiment": "Bullish",
     "catalysts": "Record-breaking gold and silver prices, year-end bullish sentiment",
-    "geopolitical": "Low risk, no significant geopolitical events mentioned"
+    "geopolitical": "Low",
+    "data_quality": "incomplete"
   },
   "analysis": {
     "regime": "BULLISH_SENTIMENT",
-    "trend": "Upward momentum in gold prices",
+    "trend": "Upward",
     "key_drivers": [
-      "Record-breaking gold and silver prices",
+      "Gold and silver price records",
       "Year-end bullish sentiment"
     ],
-    "reasoning": "The news headlines indicate a strong bullish sentiment in the gold market, with record-breaking prices and a rally gathering momentum. The lack of significant geopolitical events and the overall positive tone of the news suggest a low-risk environment.",
-    "confidence": 0.85,
+    "reasoning": "The news headlines suggest a strong upward trend in gold and silver prices, with record-breaking prices and year-end bullish sentiment. The lack of social sentiment data and forums data limits the analysis, but the institutional news suggests a positive outlook.",
+    "confidence": 0.7,
     "risk_factors": [
-      "Potential market correction",
-      "Interest rate changes"
+      "Market volatility",
+      "Lack of social sentiment data"
     ]
   },
   "memory_references": {

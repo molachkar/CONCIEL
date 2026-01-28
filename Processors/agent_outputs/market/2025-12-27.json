@@ -1,11 +1,15 @@
 {
   "metadata": {
     "agent": "market",
-    "date": "2025-12-26",
-    "timestamp": "2026-01-28T18:51:27.775501",
-    "model": "DeepSeek-V3.1"
+    "date": "2025-12-27",
+    "timestamp": "2026-01-28T19:13:29.094289",
+    "model": "DeepSeek-V3.1",
+    "note": "MARKET CLOSED - Using last trading day values",
+    "source_date": "2025-12-26"
   },
   "data_snapshot": {
+    "market_status": "CLOSED - Weekend/Holiday",
+    "last_trading_day": "2025-12-26",
     "price_action": "Gold (XAUUSD) showing strong bullish breakout - closed at 4532.36 (up from open 4490.01), breaking above Bollinger Band upper (4509.76) with high volume (390k). SPX flat with weak trend, VIX low/stable, DXY in strong downtrend.",
     "momentum": "Gold RSI 82.16 (overbought), MACD bullish (95.1 > SIG 74.38), ADX 36.88 (strong trend). SPX momentum mixed (RSI 61.6, weak ADX 13.66). DXY momentum bearish (RSI 35.15, ADX 27.08).",
     "volatility": "Gold VOL_REGIME: medium (PARK_VOL 0.0095, VOL_PCT 53.64), SPX/VOL/DXY all low volatility regimes. Gold ATR 71.84 indicates elevated but not extreme volatility.",
@@ -29,7 +33,9 @@
     ]
   },
   "memory_references": {
-    "compared_to": [],
+    "compared_to": [
+      "Forward-filled from 2025-12-26 (last trading day)"
+    ],
     "corrections": []
   }
 }
