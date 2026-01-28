@@ -23,11 +23,18 @@ Calendar: {today_data.get('calendar.txt', 'N/A')}
 Fundamentals: {today_data.get('fundamentals.txt', 'N/A')}
 Monthly: {today_data.get('monthly_fundamentals.txt', 'N/A')}
 
-TASK: Analyze Fed policy, rates, inflation. Calculate Real Rate = T10Y - CPI.
+TASK: Analyze Fed policy, rates, inflation. 
+
+CRITICAL: Calculate Real Rate properly:
+- If CPI is given as an index (e.g., 326.03), convert to YoY % by comparing to prior year
+- If CPI YoY% is provided directly, use that value
+- Real Rate = T10Y yield - CPI YoY%
+- Example: T10Y=4.3%, CPI YoY=3.0% → Real Rate=1.3%
+
 Output regime: RISK_ON (dovish Fed, falling real rates) / RISK_OFF (hawkish Fed, rising real rates) / NEUTRAL
 
 Return ONLY valid JSON:
-{{"metadata":{{"agent":"macro","date":"{date}","timestamp":"{datetime.now().isoformat()}","model":"Qwen-235B"}},"data_snapshot":{{"economic_events":"...","rates":"...","inflation":"...","real_rate":"..."}},"analysis":{{"regime":"RISK_ON/OFF/NEUTRAL","trend":"...","key_drivers":["..."],"reasoning":"...","confidence":0.85,"risk_factors":["..."]}},"memory_references":{{"compared_to":[],"corrections":[]}}}}"""
+{{"metadata":{{"agent":"macro","date":"{date}","timestamp":"{datetime.now().isoformat()}","model":"Qwen-235B"}},"data_snapshot":{{"economic_events":"...","rates":"...","inflation":"...","real_rate":"T10Y minus CPI_YoY with calculation shown"}},"analysis":{{"regime":"RISK_ON/OFF/NEUTRAL","trend":"...","key_drivers":["..."],"reasoning":"...","confidence":0.85,"risk_factors":["..."]}},"memory_references":{{"compared_to":[],"corrections":[]}}}}"""
     
     def call_llm(self, prompt: str) -> str:
         if not self.api_key:
