@@ -13,6 +13,7 @@ class NarrativeAgent(BaseAgent):
     
     def build_prompt(self, date: str, today_data: Dict, memory: Optional[Dict]) -> str:
         memory_section = "First analysis - no historical context." if memory is None else f"MEMORY:\n{json.dumps(memory, indent=2)}"
+        
         return f"""NARRATIVE analyst for gold intelligence system.
 
 {memory_section}
@@ -30,13 +31,40 @@ Return ONLY valid JSON:
     def call_llm(self, prompt: str) -> str:
         if not self.api_key:
             raise Exception("SambaNova API key not configured")
-        response = requests.post(self.api_endpoint, headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"}, json={"model": "Meta-Llama-3.3-70B-Instruct", "messages": [{"role": "system", "content": "Respond ONLY with valid JSON."}, {"role": "user", "content": prompt}], "temperature": self.config['temperature'], "max_tokens": self.config['max_tokens']}, timeout=60)
-        response.raise_for_status()
-        content = response.json()['choices'][0]['message']['content'].strip()
-        return content.replace('```json', '').replace('```', '').strip()
+        
+        try:
+            response = requests.post(
+                self.api_endpoint,
+                headers={
+                    "Authorization": f"Bearer {self.api_key}",
+                    "Content-Type": "application/json"
+                },
+                json={
+                    "model": "Meta-Llama-3.3-70B-Instruct",
+                    "messages": [
+                        {"role": "system", "content": "Respond ONLY with valid JSON."},
+                        {"role": "user", "content": prompt}
+                    ],
+                    "temperature": self.config['temperature'],
+                    "max_tokens": self.config['max_tokens']
+                },
+                timeout=60
+            )
+            response.raise_for_status()
+            content = response.json()['choices'][0]['message']['content'].strip()
+            return content.replace('```json', '').replace('```', '').strip()
+        
+        except requests.exceptions.RequestException as e:
+            print(f"API request failed: {e}")
+            raise
 
 if __name__ == "__main__":
     agent = NarrativeAgent()
     result = agent.analyze("2026-01-20")
-    print(json.dumps(result, indent=2) if result else "Analysis failed")
+    
+    if result:
+        print(json.dumps(result, indent=2))
+    else:
+        print("Analysis failed")
+    
     print("\ndone")
