@@ -3,9 +3,5 @@
 GOLD(1):
 2026-|Should You Buy SPDR Gold ETF After Its 64% Rally in 2025? Hi|GLD
 
-MARKET(6):
-2026-|3 Bad Investing Mistakes I Won't Repeat in 2026 and Beyond|SPY
-2026-|Warren Buffett Left Wall Street 3 Deafening Warnings Before |SPY
-2026-|2 S&P 500 ETFs to Buy With $100 and Hold Forever|SPY
-2026-|The ETFs Id Buy If I Was Starting Over in 2026|QQQ
-2026-|PayPal Is The Most Hated Stock We Track Today|SPY
+MARKET(1):
+2026-|3 Reasons Small-Cap Stocks Could Outperform in 2026 -- and 1|IWM

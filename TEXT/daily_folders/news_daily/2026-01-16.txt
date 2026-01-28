@@ -7,9 +7,9 @@ GOLD(5):
 2026-|Precious Metal Miners Outshine Markets - But Can The Rally R|GDX
 2026-|In 2025, Bitcoin Fell 6% And Gold Rose 65%-But Cathie Wood S|GLD
 
-MARKET(17):
-2026-|Cathie Wood Calls US Economy 'Coiled Spring' In 2026 Outlook|SPY
-2026-|Stock Market Today: Dow Jones, S&P 500 Futures Gain Followin|SPY
-2026-|A 58-Year-Old With $3 Million Faces the Most Expensive Retir|SPY
-2026-|Market Minute 1-16-26- AI Power Costs in Focus Amid Tech Bou|SPY
-2026-|Stock Market Today: Dow Waffles Near Record Highs; Nvidia Re|SPY
+MARKET(12):
+2026-|Cathie Wood Calls US Economy 'Coiled Spring' In 2026 Outlook|QQQ
+2026-|Stock Market Today: Dow Jones, S&P 500 Futures Gain Followin|QQQ
+2026-|Market Minute 1-16-26- AI Power Costs in Focus Amid Tech Bou|IWM
+2026-|Stock Market Today: Dow Waffles Near Record Highs; Nvidia Re|QQQ
+2026-|Stocks Climb on Renewed Optimism for AI Spending|QQQ

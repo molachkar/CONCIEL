@@ -1,121 +1,78 @@
 {
   "date": "2025-12-09",
-  "timestamp": "2026-01-28T18:16:40.365853",
+  "timestamp": "2026-01-28T19:22:13.929129",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-09",
-        "timestamp": "2026-01-28T18:16:40.411949",
+        "timestamp": "2026-01-28T19:22:14.093698",
         "model": "Qwen-235B"
       },
       "data_snapshot": {
-        "economic_events": "FEDFUNDS decreased from 4.09% to 3.72%",
-        "rates": "FEDFUNDS: 3.72%",
-        "inflation": "CPI: 326.03, YoY%: 0.31% (calculated from 325.03 to 326.03)",
-        "real_rate": "Cannot calculate Real Rate without T10Y yield, however, given Real Rate is 1.23% or alternatively, using FEDFUNDS as a proxy: 3.72% - 0.31% = 3.41%"
+        "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0, INDUSTRIAL_PROD: 102.33",
+        "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 0.31%",
+        "real_rate": "T10Y - CPI_YoY = unknown - 0.31% = unknown",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
-        "regime": "RISK_ON",
+        "regime": "NEUTRAL",
         "trend": "dovish",
         "key_drivers": [
-          "decrease in FEDFUNDS",
-          "low inflation"
+          "FEDFUNDS decreased to 3.72%",
+          "NFP increased to 159526K"
         ],
-        "reasoning": "The decrease in FEDFUNDS from 4.09% to 3.72% and low inflation indicate a dovish Fed policy, which is typically associated with a RISK_ON regime.",
-        "confidence": 0.85,
+        "reasoning": "The decrease in FEDFUNDS and increase in NFP may indicate a dovish trend, but the lack of historical context and unknown T10Y rate make it difficult to determine the overall regime.",
         "risk_factors": [
-          "inflation increase",
-          "geopolitical risk"
+          "GEOPOLITICAL_RISK increased by 20.97%",
+          "GOLD_ETF_FLOWS increased for GLD and IAU"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "2025-12-08"
-        ],
-        "corrections": [
-          "T10Y yield is required for accurate Real Rate calculation"
-        ]
+        "compared_to": [],
+        "corrections": []
       }
     },
     "market": {
       "metadata": {
         "agent": "market",
         "date": "2025-12-09",
-        "timestamp": "2026-01-28T18:16:43.104114",
+        "timestamp": "2026-01-28T19:22:15.870634",
         "model": "DeepSeek-V3.1"
       },
       "data_snapshot": {
-        "price_action": "Gold closed at 4207.07 after trading between 4169.85-4221.35, maintaining position above all key EMAs (E9:4190.07, E21:4150.87) with bullish stack configuration and above cloud positioning, showing recovery from yesterday's consolidation",
-        "momentum": "RSI at 60.48 (healthy bullish zone), MACD positive with histogram at 0.11 showing continued bullish momentum, ADX at 20.99 indicating developing trend strength with +DI > -DI (24.19 > 16.55)",
-        "volatility": "High volatility regime (VOL_PCT: 76.92%) with mean-reverting state (HURST: 0.4463), ATR of 71.75 confirming elevated daily ranges, maintaining breakout environment characteristics",
-        "cross_assets": "S&P500 maintaining weak uptrend with bullish EMA stack and above cloud, VIX continuing weak uptrend (17.63) but still at low levels, DXY showing neutral consolidation with weak trend (99.17), creating supportive environment for gold"
+        "price_action": "Gold closed at 4207.07 after trading between 4169.85-4221.35, maintaining position above all key EMAs (E9:4190.07, E21:4150.87, E50:4042.94, E200:3567.6) with bullish stack configuration and above cloud positioning",
+        "momentum": "RSI at 60.48 (healthy bullish zone), MACD positive with histogram at 0.11 showing continued bullish momentum, ADX at 20.99 indicating developing trend strength with +DI > -DI",
+        "volatility": "High volatility regime (VOL_PCT: 75.68%) with mean-reverting state (HURST: 0.4463), ATR of 71.75 confirming elevated daily ranges, maintaining breakout environment characteristics",
+        "cross_assets": "S&P500 maintaining weak uptrend with bullish EMA stack and above cloud, VIX continuing downtrend (17.63) with oversold conditions, DXY consolidating with weak trend and in-cloud positioning (99.17)"
       },
       "analysis": {
         "regime": "BREAKOUT",
-        "trend": "Strong bullish trend resumption after brief consolidation, maintaining above all EMAs, bullish Ichimoku cloud positioning, and improving momentum indicators",
+        "trend": "Strong bullish trend continuation with successful test of support at 4169.85 and recovery to close above 4200, maintaining position above all EMAs with bullish stack configuration and above cloud positioning",
         "key_drivers": [
           "Bullish EMA stack configuration maintained (E9 > E21 > E50 > E200)",
           "Above cloud positioning with strong Ichimoku signals",
-          "RSI improvement to 60.48 showing renewed bullish momentum",
-          "VIX remaining at low levels (17.63) supporting risk-on environment",
-          "DXY neutral consolidation reducing downward pressure on gold"
+          "RSI in healthy bullish zone (60.48) with room for further upside",
+          "VIX decline to 17.63 with oversold conditions continuing risk-on environment",
+          "DXY consolidation with weak trend supporting gold appreciation"
         ],
-        "reasoning": "Gold demonstrates breakout resumption after yesterday's consolidation, closing at 4207.07 with strong recovery from intraday lows. Price remains well above all major moving averages with improving momentum indicators (RSI 60.48, MACD positive). The successful defense of EMA support and close near session highs shows underlying strength. High volatility regime with mean-reverting properties suggests continued upward momentum potential. Cross-asset signals remain favorable with VIX at low levels supporting risk-on sentiment and DXY showing neutral consolidation, creating optimal conditions for gold appreciation. The recovery from consolidation aligns with the broader breakout structure.",
-        "confidence": 0.78,
+        "reasoning": "Gold demonstrates breakout continuation with strong recovery from intraday lows. Price remains well above all major moving averages with supportive momentum indicators (RSI 60.48, MACD positive). The successful defense of the 4170 support level and close above 4200 shows underlying strength. High volatility regime with mean-reverting properties suggests continued upward momentum potential. Cross-asset signals remain favorable with VIX at low levels (17.63) with oversold conditions and DXY showing continued consolidation/weakness, creating supportive conditions for gold appreciation.",
         "risk_factors": [
+          "MACD histogram showing minimal positive divergence (0.11)",
           "Stochastic showing potential overbought signals (K:76.35, D:73.5)",
           "High volatility regime may indicate increased price swings",
-          "Price approaching upper Bollinger Band resistance at 4273.06",
-          "VIX showing slight uptick to 17.63 from previous lows",
-          "MACD histogram showing minimal positive divergence (0.11)"
+          "Price approaching upper Bollinger Band resistance at 4273.06"
         ]
       },
       "memory_references": {
         "compared_to": [
-          "2025-12-08 consolidation regime",
-          "2025-12-05 breakout characteristics"
+          "2025-12-08 consolidation",
+          "2025-12-05 breakout continuation"
         ],
         "corrections": []
       }
     },
-    "narrative": {
-      "metadata": {
-        "agent": "narrative",
-        "date": "2025-12-09",
-        "timestamp": "2026-01-28T18:16:48.295877",
-        "model": "Meta-Llama-3.3-70B"
-      },
-      "data_snapshot": {
-        "dominant_story": "No data available",
-        "sentiment": "Unknown",
-        "catalysts": "No catalysts identified",
-        "geopolitical": "No geopolitical risk assessed"
-      },
-      "analysis": {
-        "regime": "NEUTRAL_NARRATIVE",
-        "trend": "No trend identified",
-        "key_drivers": [
-          "Insufficient data"
-        ],
-        "reasoning": "No news headlines or social sentiment data available for analysis due to file directory errors",
-        "confidence": 0.0,
-        "risk_factors": [
-          "Data unavailability",
-          "Incomplete analysis",
-          "File directory errors"
-        ]
-      },
-      "memory_references": {
-        "compared_to": [
-          "2025-12-02",
-          "2025-12-03",
-          "2025-12-04",
-          "2025-12-05",
-          "2025-12-08"
-        ],
-        "corrections": []
-      }
-    }
+    "narrative": null
   }
 }

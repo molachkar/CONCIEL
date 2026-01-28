@@ -1,836 +1,756 @@
 {
-  "fetch_time": "2026-01-20T21:23:46.356046",
+  "fetch_time": "2026-01-28T19:20:46.189406",
   "total_fetched": 300,
-  "total_filtered": 166,
+  "total_filtered": 150,
   "posts": [
     {
-      "time": "2026-01-20T21:11:38",
-      "title": "Carney says the old world order 'is not coming back' in Davos speech",
+      "time": "2026-01-28T18:30:49",
+      "title": "Federal Reserve may keep rates unchanged for months as economy shows signs of health",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T17:39:46",
+      "title": "Russia says it's ready for Zelensky-Putin meeting — but only if Ukraine's president travels to Moscow",
       "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T17:15:13",
+      "title": "New York Mayor Mamdani says city must hike taxes on wealthy to fill $12 billion deficit",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T17:02:03",
+      "title": "Amazon layoffs, store cuts reverberate through U.S. economy",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T17:01:21",
+      "title": "China cancels all flights on 49 routes to Japan",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T16:45:29",
+      "title": "Europe opens its ‘first gateway office’ to fast-track hiring in India",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T16:33:42",
+      "title": "Thousands protest in Paris over death of immigrant worker in police custody",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T16:17:06",
+      "title": "Threat of US-Iran war escalates as Trump warns time running out for deal",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T15:48:36",
+      "title": "Kim Keon Hee, wife of South Korea’s ousted president, jailed for corruption",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T15:27:12",
+      "title": "Trump warns Iran an 'armada' is heading its way and to agree a nuclear deal, or else",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T15:18:53",
+      "title": "Iranian teen motorcycle influencer ‘baby rider’ shot dead during anti-government protests",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T15:16:08",
+      "title": "Amazon confirms 16,000 job cuts after accidental email",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T15:01:05",
+      "title": "Russia’s Ukraine Offensive Crawls at Slowest Pace in 100 Years – CSIS",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T14:56:49",
+      "title": "Trump warns Iran 'time is running out' as US military builds up in Gulf",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T14:56:00",
+      "title": "Trump tells Iran to make nuclear deal or next attack will be 'far worse'",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T14:40:24",
+      "title": "Rubio to warn that US is ‘prepared to use force’ in Venezuela if leaders stray from goals",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T14:17:37",
+      "title": "Federal Reserve expected to hold interest rates steady, defying Trump",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T14:14:25",
+      "title": "Trump warns 'massive armada' approaching Iran as people flee country's capital",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-28T13:29:22",
+      "title": "Trump Deepens Dollar Woes, Brushing Off Concerns About Slump",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T13:07:30",
+      "title": "Greenland will not give in, PM says, as Denmark warns world order as we know it is over",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T12:55:47",
+      "title": "European leader spoke of shock at Trump’s state of mind after Mar-a-Lago meeting",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-28T12:48:47",
+      "title": "The Debasement Trade Is a Real Worry for Scott Bessent",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T12:42:12",
+      "title": "Amazon to Lay 0f Around 16,000 Corporate Employees",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T12:37:30",
+      "title": "CSIS: Russia has lost 1.2 million soldiers, twice as many as Ukraine",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T12:26:26",
+      "title": "Belarus joins Trump's 'Board of Peace,' raising eyebrows over its role",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T12:25:02",
+      "title": "Meta Can Read Private WhatsApp Chats, Claims Lawsuit; Elon Musk Says App Is Not Secure",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T12:21:42",
+      "title": "Amazon to cut around 16,000 jobs in fresh round of lay-offs",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T12:12:16",
+      "title": "Russia strikes civilian train in Ukraine, killing five, in an attack Zelensky calls ‘terrorism’",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T11:59:40",
+      "title": "French former senator found guilty of drugging MP with intent to sexually assault her",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T11:58:25",
+      "title": "How the UK became Putin's enemy number one",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-28T11:37:31",
+      "title": "Europe no longer Washington's centre of gravity, shift is structural, EU’s Kallas says",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T11:12:38",
+      "title": "Mark Carney Says U.S. Trade Talks Will Continue Even Though There is ‘Nearly Nothing Normal’ in America Right Now",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T10:35:26",
+      "title": "Trump Says the Dollar Is 'Great' Despite Sharp Devaluation, Triggering a New Crash as Gold Prices Continue to Climb",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T09:28:09",
+      "title": "Sam Altman Says OpenAI Is Slashing Its Hiring Pace as Financial Crunch Tightens",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T09:10:47",
+      "title": "Iranian doctor who fled to Australia after operating on massacre victims estimates death toll in tens of thousands",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T09:04:05",
+      "title": "Analysis: Promises unkept, lives lost — Iran's protests and global responsibility",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T08:47:43",
+      "title": "Tourist mauled by snow leopard while trying to take photo",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T08:00:18",
+      "title": "A year into Trump presidency, 'pivot to China' gathers pace",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T07:09:56",
+      "title": "South Korea's former first lady sentenced to 20 months in prison for corruption",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T06:31:33",
+      "title": "EU should only buy European components for defence, France space minister says",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T06:06:43",
+      "title": "Deputy chief minister of India's Maharashtra dies in plane crash, TV channels say",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T05:07:28",
+      "title": "Board of Peace Set to Hand Trump Sweeping Powers Over Gaza",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T05:02:35",
+      "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1434, Part 1 (Thread )",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T04:09:45",
+      "title": "US announces multi-day aerial military drills in the Middle East amid Iran tensions | US news",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T03:07:35",
+      "title": "US intelligence raises doubts about Venezuela leader's cooperation",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T01:57:27",
+      "title": "Half of childless Canadian women don’t want kids, nearly a quarter in their 40s aren’t mothers: Statistics Canada",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-28T01:49:27",
+      "title": "Donald Trump announces second US military armada aimed for Iran",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-28T01:16:39",
+      "title": "ICE Agents Attempt To Enter Ecuadorian Consulate In Minneapolis, Triggering Geopolitical Row",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-28T00:38:25",
+      "title": "Saudi won't allow airspace to be used for military action against Iran, crown prince says",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T23:55:42",
+      "title": "Former French senator found guilty of drugging MP",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T23:02:20",
+      "title": "France to ban officials from US video tools including Zoom, Teams",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T22:59:42",
+      "title": "Homebuyers are backing out of deals at the fastest pace in nearly a decade",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T22:56:17",
+      "title": "Gold Climbs to Record Over $5,100 as Debasement Trade Picks Up",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T22:54:17",
+      "title": "Euro Rallies Above $1.20 on Broad Dollar Weakness, Trump Remarks",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T22:41:30",
+      "title": "Trump’s own Big Beautiful Bill could add $5.5 trillion to the deficit and help sabotage his plan to ‘grow out’ of the national debt crisis",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T22:25:19",
+      "title": "India and the EU announce a free trade deal affecting up to 2 billion people",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T21:59:34",
+      "title": "Polish President Karol Nawrocki has said that Auschwitz “might not have happened” if the world had reacted sooner to Nazi crimes in occupied Poland, accusing Western Europe of indifference in the early years of World War II.",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T21:59:16",
+      "title": "US has told Ukraine it must sign peace deal with Russia to get security guarantees, source says",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T21:29:18",
+      "title": "Iran arrests Dr. Alireza Golchini for treating injured protesters, charges him with \"waging war against God\"",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T21:20:21",
+      "title": "'We all know someone who was killed': Iran protesters describe personal toll of crackdown",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T21:10:02",
+      "title": "Cabinet approves S. Korea's military intel-sharing pact with Canada",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T21:01:18",
+      "title": "French lawmakers approve bill banning social media for children under 15",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T20:58:45",
+      "title": "Trump's immigration crackdown led to drop in US growth rate last year as population hit 342 million",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T20:19:24",
+      "title": "EU now has its own 'secure and encrypted' satellite communication system, Kubilius says",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T19:04:05",
+      "title": "African nations now send more money to China than they receive in new loans",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T19:03:36",
+      "title": "Doomsday Clock updated to 85 seconds to midnight [RECORD]",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T18:57:45",
+      "title": "Americans' confidence in the U.S. economy falls sharply in January to lowest level since 2014",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T18:48:09",
+      "title": "‘Abdication’: Trump takes US out of Paris climate agreement for a second time",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T18:47:12",
+      "title": "China buys more Canadian canola after Mark Carney visit",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T17:23:03",
+      "title": "Carney says he told Trump 'I meant what I said in Davos,' contradicting U.S. Treasury Secretary Scott Bessent",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T17:04:56",
+      "title": "US Consumer Confidence Plummets to Lowest Level Since 2014",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T16:49:27",
+      "title": "Canada could gain nearly 7% in real GDP by removing internal trade barriers, says IMF",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T16:39:04",
+      "title": "Iran’s currency, the rial, falls to 1.5 million to $1, a record low after nationwide protests sparked by economic woes",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T16:31:08",
+      "title": "All eyes are on Trump's reaction to the 'mother of all deals' between India and the EU",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T16:19:33",
+      "title": "Humana, UnitedHealth plunge 20% after Trump administration proposes keeping Medicare Advantage rates flat",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T15:56:16",
+      "title": "Carney stands by speech despite U.S. claims",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T15:28:47",
+      "title": "Palestinian Islamic Jihad knew Gaza rockets were killing Palestinians, doc finds",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T15:10:11",
+      "title": "Millions of Americans are \"functionally unemployed\"—with numbers rising",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T14:40:08",
+      "title": "Tariffs are more destructive than you think",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T14:34:32",
+      "title": "India, Canada to finalise PM Mark Carney’s visit as CEPA trade talks accelerate.",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T14:04:14",
+      "title": "US reportedly ties security guarantees to Ukraine ceding Donbas territory to Russia",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T13:21:55",
+      "title": "Trump Chickens Out About 73% of the Time on Tariffs",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T11:48:45",
+      "title": "US warns they will send fighter jets into Canadian airspace if F-35 deal doesn’t go through",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T11:00:57",
+      "title": "India, EU reach landmark trade deal, tariffs to be slashed on most goods",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T10:47:06",
+      "title": "OpenAI could reportedly run out of cash by mid-2027 — analyst paints grim picture after examining the company's finances",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T10:44:43",
+      "title": "Europe accelerates push for military independence from US",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T10:24:45",
+      "title": "‘Mother of all deals’: EU and India sign free trade agreement",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T10:03:52",
+      "title": "German general prepares country for potential Russian attack within 2 to 3 years",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T09:59:45",
+      "title": "Xi Jinping says China seeks to uphold UN-based world order",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T09:48:32",
+      "title": "'The mother of all trade deals': EU and India sign landmark trade agreement – Europe live | Europe",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T09:06:37",
+      "title": "Europe funding war against itself through India trade deal, says US secy Scott Bessent",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T08:52:42",
+      "title": "Workers from Bangladesh sought jobs in Russia but got sent to combat in Ukraine",
+      "source": "r/worldnews"
+    },
+    {
+      "time": "2026-01-27T06:10:18",
+      "title": "Trump raises US tariffs on South Korea imports to 25%",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T04:31:17",
+      "title": "Trump says he’s raising tariffs on South Korea to 25%",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T03:25:37",
+      "title": "Treasury cancels Booz Allen contracts after employee leaked Trump tax records; stock falls",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T03:18:28",
+      "title": "China hacked Downing Street phones for years",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T01:31:33",
+      "title": "Japan Bond Crash Unleashes a $7 Trillion Risk for Global Markets",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T00:54:59",
+      "title": "Amazon layoffs signal a massive shift in the labor market",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T00:36:35",
+      "title": "India's air superiority forced Pak to seek ceasefire during Op Sindoor: Swiss think tank",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-27T00:30:12",
+      "title": "Palestinians in the West Bank face a deepening economic crisis since the Gaza war",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-27T00:22:12",
+      "title": "Trump says hiking tariffs on South Korean goods to 25% - The Korea Times",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T22:15:36",
+      "title": "Japan bond market: Why the drama matters for the global economy",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T22:00:59",
+      "title": "The World Economy Is Hooked on Government Debt",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T20:28:09",
+      "title": "AI spending wasn't the biggest engine of U.S. economic growth in 2025, despite popular assumptions",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T18:49:05",
+      "title": "Trump says US used 'Discombobulator' secret weapon during Maduro capture",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-26T17:37:37",
+      "title": "Fed is likely to hold interest rates steady, resisting Trump pressure. Here’s what that means for borrowers",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T15:12:54",
+      "title": "Brisk Sales at Goodwill Suggest Wary Shoppers in an Uncertain Economy (Gift Article)",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T15:11:16",
+      "title": "Ran Gvili's body found, no hostages left in Gaza | IDF announces at end of search operation in Gaza City cemetery that police tactical fighter who fell defending Kibbutz Alumim on October 7 and was kidnapped to Gaza has been identified; He was held captive for 843 days",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-26T14:49:42",
+      "title": "Why Is Trump Cozying Up to China?",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-26T13:39:28",
+      "title": "Watch Why Israeli Weapons Are in Demand Despite Global Criticism",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-26T12:37:16",
+      "title": "The surprising winner from Trump's military adventurism",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-26T05:18:28",
+      "title": "Carney says Canada not pursuing free trade deal with China as Trump threatens 100% tariffs",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T05:02:58",
+      "title": "Gold blasts past $5,000 to record high on safe-haven rush",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-26T03:53:08",
+      "title": "Zelenskiy says security guarantees document from US is 100% ready",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-26T01:46:41",
+      "title": "Canada Holds Firm on Trade Pivot as Energy Minister Heads to India",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-25T22:40:57",
+      "title": "Keyne's Bancor idea needs revisiting in wake of Trump",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-25T21:00:55",
+      "title": "Trump scraps old order, global economy feels effects",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-25T18:58:58",
+      "title": "China pulls back on funding African projects",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-25T18:14:04",
+      "title": "Trump’s tantrums push US allies closer to Beijing",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-25T15:37:14",
+      "title": "German investments in US nearly halved in Trump's first year back",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-25T11:59:34",
+      "title": "Young will suffer most when AI ‘tsunami’ hits jobs, says head of IMF",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-25T09:02:03",
+      "title": "Argentina's economic activity shrinks in November, first decline of 2025",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-25T07:17:30",
+      "title": "Iran Protest Death Toll Could Top 30,000: Local Officials",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-25T04:40:36",
+      "title": "Spain urges EU to create joint army amid Greenland dispute",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-25T00:56:24",
+      "title": "Trump threatens to impose 100% tariff if Canada makes deal with China",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-24T22:57:20",
+      "title": "In 2026, the Russian Economy Is in Big Trouble",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-24T10:45:58",
+      "title": "‘Sell America’, the two words that sum up the markets’ break with an out-of-control Trump",
+      "source": "r/economics"
+    },
+    {
+      "time": "2026-01-24T10:28:07",
+      "title": "Bessent pans Carney, cheers on Albertan separatism amid growing US-Canada rift",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-24T10:02:45",
+      "title": "This was the moment EU leaders agreed Europe must go it alone",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-24T06:49:45",
+      "title": "China no longer Pentagon's top security priority",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T22:35:23",
+      "title": "A Perfect Storm for Taiwan in 2026?",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T21:05:44",
+      "title": "Trump Comments on Afghan-War Veterans Spark Backlash From Allies",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T16:52:48",
+      "title": "Russia Loses Venezuela, the Avocado Ally",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T12:23:23",
+      "title": "European Parliament calls for reducing dependence on U.S. tech giants and building Europe’s own digital infrastructure",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T11:44:53",
+      "title": "Putin is ready to abandon old allies to secure place in Trump’s new world order",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T06:08:41",
+      "title": "US Seeks Carte Blanche for Military Presence in Greenland",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T02:02:13",
+      "title": "Trump ‘aiming for regime change in Cuba by end of year’ after Venezuela raid",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-23T00:43:42",
+      "title": "Trump’s European threats could cause lasting damage to US standing in the world",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-22T17:21:07",
+      "title": "Trump Wants Peace Board to Rewrite Global Order—but Major Powers Aren’t Sold",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-22T14:45:06",
+      "title": "Trump’s NATO Deal Would Mean US Mines and Missiles in Greenland",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-22T14:23:58",
+      "title": "We Are Witnessing the Self-Immolation of a Superpower",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-22T14:17:23",
+      "title": "Venezuela’s Delcy Rodríguez assured US of cooperation before Maduro’s capture | Venezuela",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-21T20:14:31",
+      "title": "‘You Feel Betrayed.’ In Denmark, People Are Stunned by Trump’s Greenland Threats.",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-21T19:40:32",
+      "title": "Russia Cheers the Growing NATO Rift Over Greenland",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-21T18:53:56",
+      "title": "Putin’s Irrelevance at Davos Forum is Irreversible",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-21T16:27:51",
+      "title": "E.U. halts approval of U.S. trade deal after Trump's Greenland tariff threat",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-21T14:07:31",
+      "title": "70 percent of European parliamentarians rate their country’s relationship with Israel as good or very good",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-21T12:59:04",
+      "title": "Keir Starmer to visit China amid fallout from mega-embassy deal",
+      "source": "r/geopolitics"
+    },
+    {
+      "time": "2026-01-20T23:50:01",
+      "title": "Canada's Carney aims to lead new global trading order less reliant on US",
+      "source": "r/geopolitics"
     },
     {
       "time": "2026-01-20T20:18:14",
       "title": "Denmark would go to war with US over Greenland: MP",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-20T20:02:39",
-      "title": "EU Parliament freezes US trade deal ratification after Trump's tariff threats over Greenland",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T19:38:48",
-      "title": "Europe to suspend approval of US tariffs deal",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T19:32:15",
-      "title": "Military models Canadian response to hypothetical American invasion",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:47:53",
-      "title": "To Make Homes Affordable Again, Someone Has to Lose Out",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T18:46:57",
-      "title": "UK defends Chagos Islands deal after Trump calls handover 'act of great stupidity'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:42:37",
-      "title": "Danish pension fund to sell $100 million in Treasuries, citing 'poor' U.S. government finances",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:32:13",
-      "title": "Sweden deploys Gripen to Iceland for NATO air policing",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:28:44",
-      "title": "UK unlikely to join Trump’s Gaza Peace Board amid outcry over Putin invitation",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:27:06",
-      "title": "Danish pension fund to sell $100 million in Treasuries, citing ‘poor’ U.S. government finances",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T18:21:34",
-      "title": "‘Make the War Unbearable’: Fedorov Sets 50,000 Lethal Losses-a-Month Goal for Russia",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:15:52",
-      "title": "Macron denounces US competition seeking to 'subordinate Europe'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:15:16",
-      "title": "Canada's Military models response to hypothetical American invasion",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:14:42",
-      "title": "Chernobyl cooling systems have lost power but meltdown risk is low",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T18:13:31",
-      "title": "German finance minister supports Macron on readying EU trade ‘bazooka’ against Trump",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-20T17:45:29",
-      "title": "Canada strongly opposes tariffs over Greenland: Mark Carney",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T17:31:51",
-      "title": "Iran general warns Trump 'we will set their world on fire' if Khamenei attacked",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T17:28:10",
-      "title": "US Supreme Court does not issue ruling on Trump’s tariffs",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T17:28:04",
-      "title": "Canada’s Military Has Modeled Hypothetical US Invasion, Reports Say",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T16:58:35",
-      "title": "'The old order is not coming back,' Canadian PM Carney says in provocative speech at Davos",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T16:58:03",
-      "title": "IMF drops blunt warning on US economy",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T16:52:51",
-      "title": "Greenland Leader Tells People to Prepare for Possible Invasion",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T16:51:06",
-      "title": "Billionaires are 4,000 times more likely to hold public office | CNN Business",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T16:21:55",
-      "title": "Norway won't take part in Trump's \"Board of Peace\", deputy foreign minister tells Aftenposten",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T16:08:10",
-      "title": "Canadian military models response to hypothetical American invasion (gift link)",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-20T16:02:50",
-      "title": "Ray Dalio warns that 'capital wars' could follow Trump's actions, with countries dumping U.S. assets",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T16:00:14",
-      "title": "Danish Pension Fund AkademikerPension to Exit US Treasuries",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T15:46:09",
-      "title": "Dollar falls sharply and Wall Street stocks drop over Greenland crisis",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T15:32:30",
-      "title": "“I followed the order.” Kharkiv court sentences Russian soldier who killed Ukrainian POWs in Vovchansk to life imprisonment",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T15:17:57",
-      "title": "Europe loads 'trade bazooka,' ready retaliatory measures against Trump's Greenland tariff threats",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T15:09:47",
-      "title": "Top EU official questions Trump’s trustworthiness over Greenland tariff threat",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T15:04:46",
-      "title": "NATO curbs intelligence sharing with US over Greenland dispute",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T14:43:32",
-      "title": "China pitches itself as reliable partner amid Trump threats",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T14:22:50",
-      "title": "Russia says Moldova's plans to merge with Romania would destroy its statehood",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T14:16:59",
-      "title": "India-Europe ‘mother of all deals’ within reach as EU chief Ursula von der Leyen hints at breakthrough",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T14:14:07",
-      "title": "US talk on Greenland 'incomprehensible' and 'hostile', Belgian FM says",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T14:06:42",
-      "title": "Trump tariffs over Greenland are an error, says Ursula von der Leyen",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T14:05:45",
-      "title": "EU chief warns there's no going back after Trump's Greenland threats",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T14:00:28",
-      "title": "Australia stiffens hate crime, gun laws after Bondi attack",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T13:46:47",
-      "title": "Trump promised to cut energy bills in half. One year later, has he delivered?",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T13:45:36",
-      "title": "South Korea takes one step towards 4.5-day workweek — banks to close one hour early on Fridays",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T13:29:57",
-      "title": "One Russian Strike Drained €80 Million Worth of Ukraine’s Air Defense Missiles, Zelenskyy Says",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T13:09:28",
-      "title": "Zelensky Questions Ukraine’s Place on Trump’s ‘Peace Council’ with Russia, Belarus",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T12:12:06",
-      "title": "UK approves China plan for its largest embassy in Europe despite espionage fears",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-20T12:11:52",
-      "title": "IMF boss has a blunt message for Europe: 'Get your act together'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T11:30:07",
-      "title": "German investments in US nearly halved in Trump's first year back, report shows",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T10:57:06",
-      "title": "Trump Shares Macron's Private Text Questioning His Greenland Stance",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T10:31:56",
-      "title": "Putin Invited to Join Trump’s ‘Board of Peace’",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T10:25:15",
-      "title": "The Gaza Board of Peace: 60 countries invited for a fee of $1 billion each",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T10:18:29",
-      "title": "‘Brazen’ political influence of rich laid bare as wealth of billionaires reaches $18.3tn, says Oxfam",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T10:00:55",
-      "title": "Amid global gold rush, India and China are dumping US treasuries",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T09:41:36",
-      "title": "China's total births are now at roughly the same level as in 1738, when country population was only about 150 million.",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T09:31:56",
-      "title": "Trump Invites China to Join His 'Board of Peace'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T09:20:41",
-      "title": "Trump aide Peter Navarro renews attack on Delhi, asks why Americans ‘paying for AI in India’",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T09:10:11",
-      "title": "Trump cites UK’s ‘stupidity’ over Chagos Islands as reason to take over Greenland",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T08:48:37",
-      "title": "Trump threatens 200 percent tariffs on French wine after Macron snubs peace board",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T08:42:21",
-      "title": "Trump calls UK's Chagos deal with Mauritius an 'act of total weakness'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T08:37:44",
-      "title": "National debt is already killing the American Dream, says top economist—and it might push the U.S. into an outright depression",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T08:25:58",
-      "title": "Donald Trump’s Greenland tariffs are no great blow to Europe",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T08:05:27",
-      "title": "'Great stupidity': Trump launches fresh attack on Starmer over UK plans to hand back Chagos Islands | LBC",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T07:41:30",
-      "title": "UK to consult on social media ban for under 16s",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T07:20:12",
-      "title": "Germany-US rift is looming after a year of Trump",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-20T07:07:58",
-      "title": "Trump threatens 200% tariff on French wines as Macron reportedly snubs 'Board of Peace' seat",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T05:26:29",
-      "title": "Hong Kong sees 55% surge in job applications from US academics amid Trump’s university crackdown – report",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T05:23:40",
-      "title": "The Dollar’s Suez Moment: Losing Trust and Reserve Status?",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-20T05:12:26",
-      "title": "China slams Trump's tariff threat to Europe over Greenland",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T05:02:33",
-      "title": "/r/WorldNews Live Thread: Russian Invasion of Ukraine Day 1426, Part 1 (Thread )",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T04:22:36",
-      "title": "Australia set to pass tougher gun control laws in response to Bondi mass shooting",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T04:11:55",
-      "title": "Denmark, Greenland suggest Arctic NATO mission, Danish defence minister says",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T04:08:45",
-      "title": "Austrian cow shows first case of flexible, multi-purpose tool use in cattle",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-20T02:44:03",
-      "title": "Russia gleeful at Trump-Europe split over Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-20T01:58:08",
-      "title": "Ex-Shah’s son outlines plan for democratic transition in Iran",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T23:36:41",
-      "title": "Pentagon Places 1,500 Arctic-Trained Airborne Troops on Standby as Greenland Dispute Escalates",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T23:26:47",
-      "title": "Italy uncovers basilica designed by Vitruvius, the 'father of architecture'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T23:24:12",
-      "title": "Canada considers sending small number of troops to Greenland as Trump seeks to acquire island",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T21:18:49",
-      "title": "US futures sink after Trump warns of higher tariffs for 8 countries over Greenland issue",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T21:05:34",
-      "title": "Denmark urges NATO mission to bolster Greenland’s defences | Euractiv",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T20:42:25",
-      "title": "'No such thing as a better colonizer': Inuit emphatically reject U.S. takeover of Greenland",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T19:50:35",
-      "title": "Russia's oil, gas revenues to drop by 46% in January year-on-year, Reuters reports",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T19:47:03",
-      "title": "Trump invites Putin, Lukashenko to join Gaza 'Board of Peace,' Russia and Belarus say",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T19:38:03",
-      "title": "European stocks drop the most in two months on Trump tariff threat over Greenland",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T19:29:11",
-      "title": "'Europe is at a total loss': Russia gloats over Greenland tensions",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T18:58:50",
-      "title": "Trump's Gaza Peace Board Faces Opposition As France Pulls Back, Canada Refuses To Pay",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T18:32:21",
-      "title": "Dozens of Orthodox rabbis issue ban on gay conversion therapy",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T18:02:44",
-      "title": "Trump won't say whether he would use force to seize Greenland",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T16:56:37",
-      "title": "Americans Are the Ones Paying for Tariffs, Study Finds",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T16:56:17",
-      "title": "As Davos Convenes, Deference to Trump Has Replaced Everything. The traditional rhetoric of the World Economic Forum centered on global integration, climate change and international cooperation. Not anymore.",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T16:18:14",
-      "title": "Americans pay almost entirely for Trump’s tariffs",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T16:15:20",
-      "title": "Zelensky Claims Ukraine’s Army Has Mostly Shut Down Russian Attacks",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T15:56:45",
-      "title": "How to Understand Trump’s Obsession With Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T15:48:08",
-      "title": "Trump links Greenland dispute to not getting Nobel Peace Prize, in letter to Norway's PM",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T15:46:19",
-      "title": "Xi’s Export Machine Gets Lift From US Move to Strongarm Allies",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T14:11:16",
-      "title": "Germany and France 'will not be blackmailed' with US tariff threat, finance ministers say",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T14:04:30",
-      "title": "Chinese electric vehicles are making inroads in America. Experts are worried",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T13:37:03",
-      "title": "Europe weighs using trade 'bazooka' against the U.S. as Greenland crisis deepens",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T13:20:18",
-      "title": "Trump's latest Western Hemisphere fixation: Canada",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T12:40:51",
-      "title": "Donald Trump’s ‘unpredictable’ policies to fuel multiyear shift from US, Pimco says",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T12:10:49",
-      "title": "German minister backs use of EU's Anti-Coercion Instrument against US",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T11:31:19",
-      "title": "Putin invited to join Trump’s ‘Board of Peace’ for Gaza, Kremlin says",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T11:01:42",
-      "title": "Kremlin says Trump invited Putin to join 'Board of Peace'",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T09:28:10",
-      "title": "US reportedly considers granting asylum to Jewish people from UK",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-19T08:22:46",
-      "title": "Trump says Nobel Prize denial ends obligation to ‘think purely of peace’, presses Greenland demand – Firstpost",
-      "source": "r/worldnews"
-    },
-    {
-      "time": "2026-01-19T07:41:16",
-      "title": "Dollar Faces Pressure From Trump’s Fresh Tariff Threat to Europe",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T05:32:10",
-      "title": "China's economy grew 5% last year, among slowest in decades",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T04:42:47",
-      "title": "China’s birth rate drops to record low. And economy hits target despite US trade war.",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T04:41:59",
-      "title": "Why the Tech World Thinks the American Dream Is Dying",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T04:40:15",
-      "title": "Billionaires’ wealth hits record in 2025, Oxfam warns of 'dangerous' political risks ahead of Davos",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T03:35:15",
-      "title": "China December new home prices fall again; annual decline steepest in five months",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-19T00:51:48",
-      "title": "America vs. the World",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-18T22:46:55",
-      "title": "$1 Billion in Cash Buys a Permanent Seat on Trump’s ‘Board of Peace’",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T19:10:53",
-      "title": "China cuts its U.S. debt holdings to a 17-year low, shifts reserves to gold",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T18:26:50",
-      "title": "Syrian government says it has struck ceasefire deal with Kurdish-led forces",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-18T18:18:11",
-      "title": "BlackRock CEO delivers blunt warning on US national debt",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T17:52:48",
-      "title": "Israel blames Jared Kushner for Qatari, Turkish presence in Gaza",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-18T17:50:06",
-      "title": "Kurdish commander urges US to intervene in Syria, says he'd welcome Israeli help",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-18T17:06:47",
-      "title": "US-EU trade deal in jeopardy over Trump’s new tariffs",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T15:39:54",
-      "title": "U.S. goods and services trade with European Union totaled an estimated $1.5 trillion in 2024",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T14:48:58",
-      "title": "World stock markets brace for turbulence after Trump’s latest tariff shock",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T06:01:15",
-      "title": "US official says EU should consider separating Greenland tariff issue from US trade deal",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T04:08:37",
-      "title": "Small businesses say they aren’t planning to hire many recent graduates for entry-level jobs – here’s why",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T03:20:19",
-      "title": "No intimidation or threat will influence us — Europe hits back at Trump tariff warning",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-18T02:57:18",
-      "title": "Trump announces 10% tariff on eight European countries until there is a deal to buy Greenland",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-18T01:37:12",
-      "title": "Trump announces he will sue JPMorgan ‘over the next two weeks’ for allegedly ‘DEBANKING’ him",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T23:52:27",
-      "title": "Allies seek off-ramps as Trump doubles down on Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T23:23:37",
-      "title": "Iran ‘plans permanent break from global internet’",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T22:47:46",
-      "title": "EU Set to Halt US Trade Deal Over Trump’s Latest Tariff Threat",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T22:03:34",
-      "title": "With US tariff war with everyone how long before other nations decouple their currency and holding of US debt?",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T20:38:35",
-      "title": "Canada to give foreign automakers who build vehicles here preferential access to domestic market: senior official",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T20:23:14",
-      "title": "China Purchased No U.S. Soybeans An Unprecented Sixth Straight Month",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T19:16:48",
-      "title": "Nearly 6 in 10 Americans believe economy is weak under Trump",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T18:40:44",
-      "title": "Labor Department accused of echoing Nazi slogan in social media post",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T18:31:35",
-      "title": "US Senator Says America 'Got Absolutely Rolled' in Canada-China EV Deal | EV",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T18:29:45",
-      "title": "Trump: NATO members to face tariffs increasing to 25% until a Greenland purchase deal is struck",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T18:08:46",
-      "title": "Trump to Hit European Nations With Tariffs Until Deal Reached to Buy Greenland",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T17:48:40",
-      "title": "Trump says 8 European countries will be charged a 10% tariff for opposing US control of Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T17:48:14",
-      "title": "Trump tariffs: US president announces plan to hit UK, Denmark and other European countries with tariffs over Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T17:08:38",
-      "title": "Mark Carney in China positions Canada for ‘the world as it is, not as we wish it’",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T16:47:14",
-      "title": "Trump housing plan to allow 401(k) money for down payments, adviser says",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-17T05:47:05",
-      "title": "Iranian Supreme Leader Ali Khamenei Is Running Out of Road",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-17T04:40:23",
-      "title": "It’s Trump’s Economy, and Voters Are Unhappy With It",
-      "source": "r/economics"
-    },
-    {
-      "time": "2026-01-16T22:27:52",
-      "title": "Trump’s Fateful Choice in Iran",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-16T20:56:25",
-      "title": "Trump threatens new tariffs on countries opposed to Greenland takeover as US lawmakers visit Denmark to ease tensions",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-16T13:38:21",
-      "title": "Canada reaches tariff-quota deal with China on EVs, canola",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-16T12:40:18",
-      "title": "NATO Mulls 'Arctic Sentry' To Ease US-Denmark Tensions Over Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-16T12:30:23",
-      "title": "We are dangerously reliant on Trump to stop Putin",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-16T12:18:16",
-      "title": "Time to dump Trump? Europeans whisper last-resort options to save Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T21:36:04",
-      "title": "Trump: Putin is ready for a peace deal",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T18:19:15",
-      "title": "Russia Is the World’s Worst Patron: From Syria to Venezuela, Putin Has Overpromised and Underdelivered",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T17:31:18",
-      "title": "Trump’s Military Buildup in Caribbean Limits His Options in Iran",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T16:11:51",
-      "title": "Arab allies breathe out after Trump pauses plans to bomb Iran",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T15:22:04",
-      "title": "Tehran leaders wiring huge sums of money out of Iran, US Treasury says",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T13:30:02",
-      "title": "Europe allies begin Greenland military mission as Trump says US needs island",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T09:17:22",
-      "title": "Afar tribe seeks Israeli support amid Iranian expansion and Eritrean repression",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T05:26:35",
-      "title": "Analysis: Coal power drops in China and India for first time in 52 years after clean-energy records",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T02:18:21",
-      "title": "Trump is making China – not America – great again, global survey suggests",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-15T00:20:56",
-      "title": "Danish official says there's a 'fundamental disagreement' with Trump over Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T23:03:34",
-      "title": "24 Hours Until US Involvement in Iran",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T22:05:10",
-      "title": "The People of Iran Deserve the World’s Support",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T21:05:33",
-      "title": "The Pro-Gaza Left Is Oh So Quiet on Iran",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T20:53:53",
-      "title": "Denmark’s Army Chief Says He’s Ready to Defend Greenland",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T20:08:00",
-      "title": "Putin’s great-power project faces the ‘end of an era’",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T19:22:12",
-      "title": "US to suspend immigrant visa processing from 75 countries over public assistance concerns",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T18:26:36",
-      "title": "All the signs the US could attack Iran as troops pulled from Middle East bases",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T13:08:35",
-      "title": "Nato should be helping us acquire Greenland, says Donald Trump",
-      "source": "r/geopolitics"
-    },
-    {
-      "time": "2026-01-14T10:46:06",
-      "title": "Russia’s Allies Complain Putin Was Nowhere When It Mattered Most",
       "source": "r/geopolitics"
     }
   ]

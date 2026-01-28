@@ -4,9 +4,8 @@ GOLD(2):
 2026-|Gold's 2025 Performance Shifts Ground In ETFs, Central Banks|GLD
 2026-|These Were Among the Best-Performing ETFs in 2025. Are They |GLD
 
-MARKET(19):
-2026-|Dow Futures Rise, Nasdaq Slips And Crude Gains Amid Ongoing |SPY
-2026-|Morgan Stanley's Mike Wilson Sees 'Crystal Clear' Earnings G|SPY
-2026-|Want to Get Your Portfolio to $1 Million in 30 Years? Here's|SPY
-2026-|Stock Market Today: Nasdaq 100, S&P 500 Futures Gain As Inve|SPY
-2026-|Jim Cramer Warns Against Chasing Stocks Already Up '30% Or 4|QQQ
+MARKET(4):
+2026-|Non-farm Payrolls: Good News & Bad News|DIA
+2026-|US Consumers Open 2026 With Cautious Optimism As Tariff Worr|DIA
+2026-|S&P 500, Russell 2000 Soar To Record Highs, Silver Jumps To |DIA
+2026-|S&P 500 Rallies to a New Record High on US Economic Optimism|DIA

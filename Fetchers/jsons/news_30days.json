@@ -1,231 +1,15 @@
 {
-  "fetch_time": "2026-01-20T21:23:30.425437",
+  "fetch_time": "2026-01-28T19:20:33.102287",
   "source": "FinViz",
   "period": "Last 30 days",
-  "total_articles": 276,
+  "total_articles": 335,
   "by_category": {
-    "gold": 74,
-    "market": 191,
-    "dollar": 7,
-    "volatility": 4
+    "market": 214,
+    "gold": 106,
+    "volatility": 6,
+    "dollar": 9
   },
   "headlines": [
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Analyst who predicted record gold prices resets target",
-      "time": "2025-12-21T21:51:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Analyst who predicted gold rally sets shocking new price target",
-      "time": "2025-12-21T21:51:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "How to Invest in Gold",
-      "time": "2025-12-22T09:53:00"
-    },
-    {
-      "category": "market",
-      "ticker": "IWM",
-      "title": "MarketBeats Top 5 Rated Small-Cap Stocks",
-      "time": "2025-12-22T13:12:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "The Biggest ETF Stories of 2025 and the 2026 Outlook",
-      "time": "2025-12-22T15:45:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stock Indexes Close Higher on Strength in Tech Stocks",
-      "time": "2025-12-22T17:21:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Best-Performing Sector ETFs of 2025",
-      "time": "2025-12-23T08:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Q3 GDP +4.3%: Consumer Carries Economic Heft",
-      "time": "2025-12-23T10:15:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GDXJ",
-      "title": "Gold Mining ETF (GDXJ) Hits New 52-Week High",
-      "time": "2025-12-23T10:33:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Best ETF of 2025 & Its 7 Winning Stocks",
-      "time": "2025-12-23T11:00:00"
-    },
-    {
-      "category": "dollar",
-      "ticker": "UUP",
-      "title": "Best ETF of 2025 & Its 7 Winning Stocks",
-      "time": "2025-12-23T11:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stocks See Support from Economic Confidence After Strong US GDP Report",
-      "time": "2025-12-23T12:06:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "I Predict Gold Will Cross $5,000 Per Ounce in 2026. Here's How Much You Should Buy, According to Hedge Fund Legend Ray Dalio",
-      "time": "2025-12-24T06:14:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Gold Climbs Above $4,500 in Historic Rally for Precious Metals",
-      "time": "2025-12-24T07:11:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Bitcoin Keeps Falling. Blame Gold and Silver.",
-      "time": "2025-12-24T09:27:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stocks Little Changed Heading Into Year-End",
-      "time": "2025-12-24T10:11:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs",
-      "time": "2025-12-24T11:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Top-Performing International ETFs of 2025",
-      "time": "2025-12-24T11:00:00"
-    },
-    {
-      "category": "dollar",
-      "ticker": "UUP",
-      "title": "Santa Rally for Metal ETFs as Gold, Silver & Platinum Hit Highs",
-      "time": "2025-12-24T11:00:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Forget the Bond Vigilantes. It's the Gold Vigilantes You Need to Worry About.",
-      "time": "2025-12-24T11:41:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "ETF trends to watch in 2026 for active managed & derivative funds",
-      "time": "2025-12-24T11:45:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stocks End Mildly Higher as Bullish Sentiment Continues",
-      "time": "2025-12-24T14:23:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "4 Top-Ranked ETF Areas That Beat the Market in 2025",
-      "time": "2025-12-26T08:00:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Gold Or Silver ETFs: What Could Rally More in 2026?",
-      "time": "2025-12-26T09:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stocks See Support As Year-End Bullish Sentiment Continues",
-      "time": "2025-12-26T10:04:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Full-Day in the Markets on a Recently Declared Federal Holiday",
-      "time": "2025-12-26T10:43:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Best-Performing Areas in a Blockbuster Year for Stocks",
-      "time": "2025-12-26T11:40:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "Gold and Silver Smash Records Again as Rally Gathers Momentum",
-      "time": "2025-12-26T14:12:00"
-    },
-    {
-      "category": "dollar",
-      "ticker": "UUP",
-      "title": "Is Invesco DB US Dollar Index Bullish ETF (UUP) a Strong ETF Right Now?",
-      "time": "2025-12-29T06:20:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Best-Performing Country ETFs of 2025",
-      "time": "2025-12-29T08:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stocks Slip Due to Weakness in Megacap Technology Stocks",
-      "time": "2025-12-29T10:02:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Verizon: Out of the Doghouse and Into Your Dividend Portfolio",
-      "time": "2025-12-29T11:16:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Pre-Markets Lower on Low Seasonal Volume",
-      "time": "2025-12-29T11:33:00"
-    },
-    {
-      "category": "market",
-      "ticker": "IWM",
-      "title": "Will the Ongoing Market Rally Continue in 2026? ETFs in Focus",
-      "time": "2025-12-29T11:42:00"
-    },
-    {
-      "category": "gold",
-      "ticker": "GLD",
-      "title": "'The bulls are definitely spooked': Has silver's stunning rise this year run out of steam?",
-      "time": "2025-12-29T13:56:00"
-    },
-    {
-      "category": "market",
-      "ticker": "DIA",
-      "title": "Stocks Settle Lower as Weakness in Big Tech Weighs",
-      "time": "2025-12-29T16:32:00"
-    },
     {
       "category": "market",
       "ticker": "DIA",
@@ -497,34 +281,10 @@
       "time": "2026-01-07T11:21:00"
     },
     {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Can Retirees Count on QYLDs Amazing 11% Dividend Any More?",
-      "time": "2026-01-07T12:31:00"
-    },
-    {
       "category": "gold",
       "ticker": "IAU",
       "title": "Retirees: Here's How to Invest for a Fracturing World",
       "time": "2026-01-08T03:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Stock Market Today: S&P 500, Dow Jones Futures Decline - AZZ, Northrop Grumman, Immuneering In Focus",
-      "time": "2026-01-08T05:17:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "S&P 500 Set For 'Choppy' 2026 As Fundstrat's Mark Newton Sets Target At 7,300- Warns Stocks Could See Drawdown In February",
-      "time": "2026-01-08T06:26:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Falls After Surprise Jobless Claims; Apple, Tesla Extend Losses (Live Coverage)",
-      "time": "2026-01-08T09:44:00"
     },
     {
       "category": "gold",
@@ -534,25 +294,25 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Pre-markets Soft on Excellent Economic Data",
       "time": "2026-01-08T10:39:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Stock Indexes Mixed on Big Tech Weakness and Higher Bond Yields",
       "time": "2026-01-08T11:23:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "5 ETFs to Buy for January",
       "time": "2026-01-08T12:00:00"
     },
     {
       "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "Defense Stocks Rally As Trump Pledges $1.5T Military Budget: What's Moving Markets Thursday?",
       "time": "2026-01-08T12:19:00"
     },
@@ -564,69 +324,9 @@
     },
     {
       "category": "market",
-      "ticker": "QQQ",
-      "title": "If You'd Invested $1,000 in the Invesco QQQ ETF 27 Years Ago, Here's How Much You'd Have Today",
-      "time": "2026-01-08T16:25:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Stocks Settle Mixed on Sector Rotation",
       "time": "2026-01-08T16:39:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Got an Extra $10K? Heres How to Put It to Work for Maximum Financial Growth",
-      "time": "2026-01-08T17:07:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Dow Futures Rise, Nasdaq Slips And Crude Gains Amid Ongoing Unrest In Iran",
-      "time": "2026-01-09T01:14:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Morgan Stanley's Mike Wilson Sees 'Crystal Clear' Earnings Growth, Says 'Big Beautiful Bill' Will Fuel Consumer Stocks Rally",
-      "time": "2026-01-09T03:42:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Want to Get Your Portfolio to $1 Million in 30 Years? Here's How Much You Should Aim to Invest in the S&P 500 Each Year.",
-      "time": "2026-01-09T04:50:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Nasdaq 100, S&P 500 Futures Gain As Investors Await December Jobs Report- General Motors, Offerpad, Tilray In Focus",
-      "time": "2026-01-09T05:43:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Jim Cramer Warns Against Chasing Stocks Already Up '30% Or 40%' For The Year, Says It's 'A License To Lose Money'",
-      "time": "2026-01-09T06:37:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Keeps Its Amazing Streak Going",
-      "time": "2026-01-09T07:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "ETF Giant Invesco Shares What The Next Big Thing Will Be",
-      "time": "2026-01-09T07:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "First Trust Has an ETF That Might Be Better Than the Nasdaq and QQQ",
-      "time": "2026-01-09T07:38:00"
     },
     {
       "category": "gold",
@@ -636,43 +336,19 @@
     },
     {
       "category": "market",
-      "ticker": "QQQ",
-      "title": "Here Are Fridays Top Wall Street Analyst Research Calls: Adobe, Airbnb, Altria, CrowdStrike, GE Vernova, Flutter Entertainment, Robinhood, Southwest Airlines, and More",
-      "time": "2026-01-09T08:01:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Up After Surprise Jobs Data; Trump Tariff Ruling Looms (Live Coverage)",
-      "time": "2026-01-09T09:44:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Here's Why Biotech ETFs Are Rallying Hard",
-      "time": "2026-01-09T10:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Non-farm Payrolls: Good News & Bad News",
       "time": "2026-01-09T10:44:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "Defense ETFs in 2026: Trump's Spending Push & Other Key Tailwinds",
-      "time": "2026-01-09T12:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "US Consumers Open 2026 With Cautious Optimism As Tariff Worries Ease",
       "time": "2026-01-09T12:03:00"
     },
     {
       "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "S&P 500, Russell 2000 Soar To Record Highs, Silver Jumps To $80: What's Moving Markets Friday?",
       "time": "2026-01-09T13:49:00"
     },
@@ -684,57 +360,9 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "Want to retire from a soul-sucking job? Here are the financial factors to consider.",
-      "time": "2026-01-09T14:33:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Can Strong Earnings Justify High Stock Valuations?",
-      "time": "2026-01-09T16:03:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "S&P 500 Rallies to a New Record High on US Economic Optimism",
       "time": "2026-01-09T16:38:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Walmart To Join Nasdaq 100 on Jan. 20 as AstraZeneca Exits",
-      "time": "2026-01-09T21:09:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "3 Bad Investing Mistakes I Won't Repeat in 2026 and Beyond",
-      "time": "2026-01-10T05:50:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Warren Buffett Left Wall Street 3 Deafening Warnings Before Retiring. Was Anyone Paying Attention?",
-      "time": "2026-01-10T06:20:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "2 S&P 500 ETFs to Buy With $100 and Hold Forever",
-      "time": "2026-01-10T10:40:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "The ETFs Id Buy If I Was Starting Over in 2026",
-      "time": "2026-01-10T11:08:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "PayPal Is The Most Hated Stock We Track Today",
-      "time": "2026-01-10T11:12:00"
     },
     {
       "category": "gold",
@@ -747,48 +375,6 @@
       "ticker": "IWM",
       "title": "3 Reasons Small-Cap Stocks Could Outperform in 2026 -- and 1 Fund to Buy Now",
       "time": "2026-01-10T14:37:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "ETFs That Can Beat the S&P 500 in 2026",
-      "time": "2026-01-11T09:33:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Why Smart Money Is Looking Overseas for Bank Stocks",
-      "time": "2026-01-11T10:17:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Wall Street S&P 500 targets reveal hidden trap for SPY investors",
-      "time": "2026-01-11T15:20:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Senator Tillis Opposes Upcoming Fed Chair Nominee Over DOJ Subpoenas, Blasts Trump's 'Push' To Control Central Bank",
-      "time": "2026-01-12T01:31:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Trump Issues Ultimatum: Lower Credit Card Rates To 10% By Jan. 20 Or Face 'Severe' Consequences For 'Violation Of The Law'",
-      "time": "2026-01-12T02:32:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Bitcoin's early gains fade fast as prices fall back below $91,000",
-      "time": "2026-01-12T04:17:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Jones, S&P 500 Futures Tumble As DOJ Serves Federal Reserve-Vistra, Tempus AI, Alibaba In Focus",
-      "time": "2026-01-12T05:33:00"
     },
     {
       "category": "gold",
@@ -816,21 +402,9 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "Jerome Powell 'Is Going to War': Top Economist Wolfers Blasts DOJ As 'Department Of Recriminations' For Targeting Fed Chair",
-      "time": "2026-01-12T09:19:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Stocks Retreat on Concerns Over Fed Independence",
       "time": "2026-01-12T09:57:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Falls On Powell Investigation; Cybersecurity Name Breaks Out (Live Coverage)",
-      "time": "2026-01-12T10:16:00"
     },
     {
       "category": "gold",
@@ -840,7 +414,7 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Equity Indexes Recover Early Losses as Precious Metals Reach New Record Highs",
       "time": "2026-01-12T11:15:00"
     },
@@ -857,18 +431,6 @@
       "time": "2026-01-12T12:04:00"
     },
     {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Low Volatility Is One Reason To Look At Options On This Fund",
-      "time": "2026-01-12T12:11:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Read This Before Buying JPMorgans Active Value ETF | JAVA",
-      "time": "2026-01-12T12:33:00"
-    },
-    {
       "category": "gold",
       "ticker": "GLD",
       "title": "Gold, Silver Spike To Record Highs As Fed Independence Falters: What's Moving Markets Monday?",
@@ -876,15 +438,9 @@
     },
     {
       "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "Gold, Silver Spike To Record Highs As Fed Independence Falters: What's Moving Markets Monday?",
       "time": "2026-01-12T12:43:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Raymond James Sees Fewer Easy Gains Ahead",
-      "time": "2026-01-12T13:09:00"
     },
     {
       "category": "gold",
@@ -899,76 +455,10 @@
       "time": "2026-01-12T15:07:00"
     },
     {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "How to Position Your ETF Portfolio for 2026",
-      "time": "2026-01-12T15:51:00"
-    },
-    {
       "category": "gold",
       "ticker": "GLD",
       "title": "6 stocks and ETFs that these unsung market heroes see outperforming in 2026",
       "time": "2026-01-12T15:57:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "5 Simple ETFs to Buy With $1,000 and Hold for a Lifetime",
-      "time": "2026-01-12T19:36:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Questcorp and Riverside Make New Gold Discovery in Initial Drill Results from Luis Hill and Famosa Targets at Union Project, Sonora, Mexico",
-      "time": "2026-01-13T00:01:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Want to Invest in AI Stocks in 2026? Here's Why This Popular Tech ETF Might Not Be a Good Choice",
-      "time": "2026-01-13T00:20:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Top Economist Rebuts Trump: $200 Billion Housing Stimulus Via Fannie, Freddie Will Spike Prices, Not Restore 'Affordability'",
-      "time": "2026-01-13T01:52:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Cathie Wood Predicts 'Goldilocks' Boom In 2026: 5% GDP With Deflation, Calls Bitcoin 'Ultimate Diversifier' For Portfolios",
-      "time": "2026-01-13T02:46:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Goldman Sachs Warns Valuations Are 'Historically High,' But Bear Market Is Unlikely In 2026",
-      "time": "2026-01-13T03:15:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "JPMorgan's Q4 Results To Reveal If Dealmaking Will Replace Rate-Driven Profits For Big Banks In 2026- SpaceX's $1.5 Trillion IPO In Focus",
-      "time": "2026-01-13T04:05:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: S&P 500, Dow Jones Futures Slip Ahead Of December CPI Print- JPMorgan, Alphabet, Five9 In Focus",
-      "time": "2026-01-13T05:28:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Ed Yardeni Dismisses Trump's 'Severe' 10% Credit Card Cap Ultimatum As 'Trial Balloon' That Won't Fly",
-      "time": "2026-01-13T06:12:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Goldman Sees Crude Prices Drifting Lower",
-      "time": "2026-01-13T06:22:00"
     },
     {
       "category": "gold",
@@ -978,31 +468,19 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Reverses On Surprise Inflation Report; Delta Dives On Earnings News (Live Coverage)",
-      "time": "2026-01-13T08:43:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Falls On Surprise Inflation Data; Nvidia, Adobe Slide (Live Coverage)",
-      "time": "2026-01-13T09:46:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "World's Top Central Bankers Rally Behind Powell On Fed Independence",
       "time": "2026-01-13T10:15:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Stock Indexes Slip as the Magnificent Seven Technology Stocks Retreat",
       "time": "2026-01-13T11:17:00"
     },
     {
       "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "Silver Jumps To $89 After Soft CPI, JPMorgan Falls 3%: What's Moving Markets Tuesday?",
       "time": "2026-01-13T13:04:00"
     },
@@ -1014,19 +492,7 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "Ignore the Apple Noise and Consider Buying Qualcomm Stock for 2026",
-      "time": "2026-01-13T14:57:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Yen Weakens To July 2024 Lows, But Japanese Stocks Have Never Been Stronger",
-      "time": "2026-01-13T15:38:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Stocks Fall on Weakness in Software and Credit Card Companies",
       "time": "2026-01-13T16:35:00"
     },
@@ -1035,60 +501,6 @@
       "ticker": "GLD",
       "title": "Daily ETF Flows: Nearly $1B Flows Into GLD",
       "time": "2026-01-13T18:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Tech Wreck or Valuation Reset? Rotating to Value in 2026",
-      "time": "2026-01-13T18:26:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Wells Fargo Enters Its First Post-Asset-Cap Earnings Test: Here's Why Q4 Results Could Redefine The Bank's Growth Story",
-      "time": "2026-01-14T02:59:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Kevin O'Leary Issues Stark Warning On US Energy Grid Vs. China: 'A Big Problem' For AI Boom",
-      "time": "2026-01-14T03:36:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Inflation 'Good Enough' But Fed Stays Put: Bilello Warns Against Political 'Price Fixing' Of Money",
-      "time": "2026-01-14T04:25:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Jones, Nasdaq 100 Futures Tumble Ahead Of Supreme Court Ruling On Trump's Tariffs-Wells Fargo, BP, WeRide In Focus",
-      "time": "2026-01-14T05:03:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Should SPDR S&P 500 ETF (SPY) Be on Your Investing Radar?",
-      "time": "2026-01-14T06:20:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Four reasons to buy this overlooked group of stocks early in 2026",
-      "time": "2026-01-14T08:02:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Looking to Sell America Amid Fed Drama? Heres 1 ETF to Buy.",
-      "time": "2026-01-14T09:00:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "KBE Is A Tiny ETF With Huge Potential For Investors in 2026",
-      "time": "2026-01-14T09:07:00"
     },
     {
       "category": "volatility",
@@ -1103,40 +515,10 @@
       "time": "2026-01-14T09:15:00"
     },
     {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow Falls On Surprise Inflation Data; Nvidia Slides (Live Coverage)",
-      "time": "2026-01-14T09:46:00"
-    },
-    {
       "category": "gold",
       "ticker": "GLD",
       "title": "The Silver Shock: How A 'Legacy Metal' Became 2026's Hottest Trade",
       "time": "2026-01-14T10:19:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "The Silver Shock: How A 'Legacy Metal' Became 2026's Hottest Trade",
-      "time": "2026-01-14T10:19:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Market Today: Dow, Nasdaq Fall On Inflation Data; Silver Names Shine, Then Fade (Live Coverage)",
-      "time": "2026-01-14T10:26:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Bitcoin rallies past $97,000 as investors seek haven assets",
-      "time": "2026-01-14T11:14:00"
-    },
-    {
-      "category": "market",
-      "ticker": "QQQ",
-      "title": "Crypto Long & Short: Markets at Highs, Crypto Still Waiting",
-      "time": "2026-01-14T12:00:00"
     },
     {
       "category": "gold",
@@ -1146,7 +528,7 @@
     },
     {
       "category": "market",
-      "ticker": "QQQ",
+      "ticker": "DIA",
       "title": "Stocks Drop, Energy Sector Rises As Crude Eyes 6th Day Of Gains: What's Moving Markets Wednesday?",
       "time": "2026-01-14T13:25:00"
     },
@@ -1155,18 +537,6 @@
       "ticker": "IWM",
       "title": "Regional Banking Sector Near a Critical Inflection Point",
       "time": "2026-01-14T14:08:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Analysts Are Bullish About Stocks in 2026. Time to Short the Market?",
-      "time": "2026-01-14T14:15:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Why Japanese Stocks Are Hitting Record Highs",
-      "time": "2026-01-14T14:44:00"
     },
     {
       "category": "market",
@@ -1182,7 +552,7 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "DIA",
       "title": "Stock Indexes Settle Lower on Tech Weakness",
       "time": "2026-01-14T16:39:00"
     },
@@ -1194,19 +564,19 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Trump's 'Performative' Tweets Don't Change Law, Says Economist Paul Krugman, Calling Credit Card Rate Cap As 'Charade'",
       "time": "2026-01-15T02:26:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Trump's Tussle With Fed, Firing Of BLS Head, Lack Of 'Coherent' Strategy Leave Americans More Worried Than Covid, 2008 Financial Crisis",
       "time": "2026-01-15T05:03:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stock Market Today: S&P 500, Nasdaq 100 Futures Gain As Tech Stocks Rebound-Taiwan Semiconductor, ASML, Goldman Sachs In Focus",
       "time": "2026-01-15T05:09:00"
     },
@@ -1217,18 +587,6 @@
       "time": "2026-01-15T06:08:00"
     },
     {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "A Popular Quality ETF Is Actually A Low Yield, High P/E Choice Im Avoiding Today",
-      "time": "2026-01-15T07:09:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "A 72-Year-Old With $900,000 Discovers RMDs Wont Drain the Portfolio as Expected",
-      "time": "2026-01-15T07:46:00"
-    },
-    {
       "category": "gold",
       "ticker": "GLD",
       "title": "3 Years of Gains: Are We Due for a Black Swan Event?",
@@ -1236,33 +594,21 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stock Market Today: Dow Falls On Surprise Jobless Claims; Nvidia Chipmaker Surges (Live Coverage)",
       "time": "2026-01-15T09:14:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stock Market Today: Dow Rises On Jobless Claims; Nvidia Chipmaker Surges (Live Coverage)",
       "time": "2026-01-15T09:41:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "That $85,000 Retirement Only Looks Comfortable Until You Hit Year 20",
-      "time": "2026-01-15T10:02:00"
     },
     {
       "category": "gold",
       "ticker": "AAAU",
       "title": "Gold ETF (AAAU) Hits New 52-Week High",
       "time": "2026-01-15T10:03:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Stock Markets Calm Belies Extreme Swings in Individual Shares",
-      "time": "2026-01-15T10:04:00"
     },
     {
       "category": "gold",
@@ -1275,12 +621,6 @@
       "ticker": "IWM",
       "title": "These under-the-radar stocks combine fast growth with big upside potential",
       "time": "2026-01-15T10:31:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Bank of America resets IBM price target before earnings",
-      "time": "2026-01-15T11:07:00"
     },
     {
       "category": "gold",
@@ -1308,13 +648,7 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "What Are the Tailwinds for Bank Stocks?",
-      "time": "2026-01-15T15:32:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "IWM",
       "title": "David Vs. Goliath: Why Small Caps Are Crushing The Magnificent 7",
       "time": "2026-01-15T16:12:00"
     },
@@ -1326,15 +660,9 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stocks Boosted by Chip Demand Optimism",
       "time": "2026-01-15T16:33:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "These charts show the stock market giving investors a lot to like - for now - as the S&P 500 nears 7,000",
-      "time": "2026-01-15T16:34:00"
     },
     {
       "category": "gold",
@@ -1344,13 +672,13 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Cathie Wood Calls US Economy 'Coiled Spring' In 2026 Outlook, Predicts 'Golden Age'",
       "time": "2026-01-16T03:42:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain Following Stellar Chipmaker Rally-Chevron, Paysafe, J.B. Hunt Transport In Focus",
       "time": "2026-01-16T05:46:00"
     },
@@ -1361,12 +689,6 @@
       "time": "2026-01-16T07:02:00"
     },
     {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "A 58-Year-Old With $3 Million Faces the Most Expensive Retirement Decision",
-      "time": "2026-01-16T07:48:00"
-    },
-    {
       "category": "gold",
       "ticker": "GLD",
       "title": "Market Alert: AI Rally Extends, Druckenmiller Dumps Nvidia, Tesla Stalls",
@@ -1374,33 +696,21 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "IWM",
       "title": "Market Minute 1-16-26- AI Power Costs in Focus Amid Tech Bounce",
       "time": "2026-01-16T09:15:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stock Market Today: Dow Waffles Near Record Highs; Nvidia Regains Key Level (Live Coverage)",
       "time": "2026-01-16T09:43:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "A $2 Million Portfolio Still Has a Safety Trap Most Investors Miss",
-      "time": "2026-01-16T09:53:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stocks Climb on Renewed Optimism for AI Spending",
       "time": "2026-01-16T09:54:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Gresham Partners' Ted Neild: How We Beat the Index by Ignoring It",
-      "time": "2026-01-16T12:12:00"
     },
     {
       "category": "gold",
@@ -1434,13 +744,7 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "Top 10 Congress Stock Traders 2025: Nancy Pelosi, Marjorie Taylor Greene Both Bet Big On NVDA - But Who Came Out On Top?",
-      "time": "2026-01-16T16:29:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stocks Finish Slightly Lower as Bond Yields Climb",
       "time": "2026-01-16T16:38:00"
     },
@@ -1464,27 +768,9 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "VOO vs. SPY: What's the Better S&P 500 ETF Buy?",
-      "time": "2026-01-16T20:50:00"
-    },
-    {
-      "category": "market",
       "ticker": "QQQ",
       "title": "This Mid-Cap Growth ETF Delivers 11.5% Returns Without Betting 40% of Your Portfolio on Seven Tech Stocks",
       "time": "2026-01-17T08:22:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Investors Worried About Large Cap Concentration Risk Have a Great Option in MDY",
-      "time": "2026-01-17T10:33:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "Here's How Much $1,000 in a Trump Account Could Grow to After 18 Years",
-      "time": "2026-01-17T17:35:00"
     },
     {
       "category": "market",
@@ -1500,19 +786,13 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "A $700,000 Stock Portfolio Lost $146,000 in Five Days, Showing Exactly Why Retirees Need Cash",
-      "time": "2026-01-18T07:14:00"
-    },
-    {
-      "category": "market",
       "ticker": "QQQ",
       "title": "Prediction: This Unstoppable AI Company Will Lead the Stock Market Higher in 2026",
       "time": "2026-01-18T20:03:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Is Stock Market Open Today? What's Open And What's Closed On Martin Luther King Jr. Day",
       "time": "2026-01-19T02:27:00"
     },
@@ -1524,19 +804,13 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
-      "title": "If History Repeats, This Unstoppable ETF Can Make You a Millionaire With a $100,000 Initial Investment and $655 Monthly Contributions Over 20 Years",
-      "time": "2026-01-19T04:26:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "SEC Approves Expanded Option Expirations for Magnificent Seven Stocks",
       "time": "2026-01-19T06:36:00"
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "'Very Scary:' Markets Are Missing A Huge Warning Sign, Says Brookings Economist: Long-Term Debt Is Becoming 'Thoroughly Alarming'",
       "time": "2026-01-19T09:01:00"
     },
@@ -1596,7 +870,7 @@
     },
     {
       "category": "market",
-      "ticker": "SPY",
+      "ticker": "QQQ",
       "title": "Stock Market Today: S&P 500, Nasdaq Futures Plunge As Trump Escalates Tariff Threats-Alibaba, United Airlines, Netflix In Focus",
       "time": "2026-01-20T05:21:00"
     },
@@ -1617,12 +891,6 @@
       "ticker": "GLD",
       "title": "Gold Hits Unthinkable $4,730 An Ounce As Investors Flee Global Chaos-Is Greenland The Hidden Trigger Behind The Rush?",
       "time": "2026-01-20T07:25:00"
-    },
-    {
-      "category": "market",
-      "ticker": "SPY",
-      "title": "10 Stocks Dominate The S&P 500 Under Trump's Reign",
-      "time": "2026-01-20T07:34:00"
     },
     {
       "category": "market",
@@ -1661,10 +929,1096 @@
       "time": "2026-01-20T10:35:00"
     },
     {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Tokenized gold volumes beat most ETFs as metal rallies toward $5,000",
+      "time": "2026-01-20T12:16:00"
+    },
+    {
       "category": "market",
       "ticker": "QQQ",
       "title": "Cantor Sees Tailwinds, Near Term Risk",
       "time": "2026-01-20T13:19:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stocks Tumble, Treasury Yields Jump To 5-Month Highs: What's Moving Markets Tuesday?",
+      "time": "2026-01-20T13:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "1 No-Brainer S&P Index Fund to Buy Right Now for Less Than $200",
+      "time": "2026-01-20T14:15:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GDX",
+      "title": "Markets Are Looking Shaky. How to Ride Out Another Trade War.",
+      "time": "2026-01-20T15:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "DIA",
+      "title": "Dow Jones Faces Big Week As Four Heavyweights Report Earnings",
+      "time": "2026-01-20T15:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump's 1-Year Mark: Two Country ETFs Crush S&P 500 By Nearly 90%",
+      "time": "2026-01-20T15:51:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Plunge on Greenland Crisis and Soaring Bond Yields",
+      "time": "2026-01-20T16:36:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Magnificent 7 Stocks Suffer $700 Billion Value Wipeout On Trump's Greenland Tariff Threat, Gold Hits Fresh Records",
+      "time": "2026-01-20T16:42:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Tariffs Are Back, Complacency Isn't: ETFs That Could Benefit From A Volatility Shock",
+      "time": "2026-01-20T16:51:00"
+    },
+    {
+      "category": "volatility",
+      "ticker": "VIXY",
+      "title": "Tariffs Are Back, Complacency Isn't: ETFs That Could Benefit From A Volatility Shock",
+      "time": "2026-01-20T16:51:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Relative Strength: Identifying Alpha in Market Weakness",
+      "time": "2026-01-20T19:24:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Danish Pension Fund To Dump All US Treasuries Citing 'Rising Credit Risk': Executive Says America's Finances Are No Longer 'Sustainable'",
+      "time": "2026-01-21T02:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Top Economist Sees Fed Pivot, Resilient Economy Fueling 'Durable' Rotation Into Small-Cap, Value",
+      "time": "2026-01-21T03:27:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump's 10% Credit Card APR Cap Looms Over Capital One Ahead Of Q4: Analysts Warn Bank Is 'Most Vulnerable'",
+      "time": "2026-01-21T04:53:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones, S&P 500 Futures Recover As Focus Turns To Trump's Davos Address-Johnson & Johnson, Intel, GameStop In Focus",
+      "time": "2026-01-21T05:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "For a $1.8m Retiree, Timing Matters More Than Total Savings",
+      "time": "2026-01-21T08:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Drops As Trump Speaks; Netflix Dives On Earnings (Live Coverage)",
+      "time": "2026-01-21T09:02:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises As Trump Rules Out Force In Greenland; Netflix Dives On Results (Live Coverage)",
+      "time": "2026-01-21T09:52:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold ETFs Glitter Amid Renewed Transatlantic Trade Strains",
+      "time": "2026-01-21T10:02:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Rebound as President Trump Eases Rhetoric on Greenland",
+      "time": "2026-01-21T10:07:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "7 ETF Themes Investors Are Watching As The Fear & Greed Index Slips Toward Caution",
+      "time": "2026-01-21T10:21:00"
+    },
+    {
+      "category": "volatility",
+      "ticker": "VXX",
+      "title": "7 ETF Themes Investors Are Watching As The Fear & Greed Index Slips Toward Caution",
+      "time": "2026-01-21T10:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Notes on President Trump's Davos Speech",
+      "time": "2026-01-21T10:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "DIA",
+      "title": "Intel Q4 Preview: Stock Hits New 52-Week Highs Ahead Of Earnings, Can Momentum Continue?",
+      "time": "2026-01-21T10:52:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Gold Breaks $4,800 as Markets Turn Defensive",
+      "time": "2026-01-21T11:01:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Trump Pressures Fed, Slams Big Landlords And Pushes Bold Plan To Cut Rates",
+      "time": "2026-01-21T13:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stocks Rebound On Trump's Remarks, Natural Gas Rockets: What's Moving Markets Wednesday?",
+      "time": "2026-01-21T13:57:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump Champions Atomic Energy At Davos-Nuclear Stocks Climb",
+      "time": "2026-01-21T14:10:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Jumps Toward $5,000 as Trump Tariffs Drive Safe-Haven Buying",
+      "time": "2026-01-21T14:18:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold ETF Still Breaking Records After Capping Best Year Ever",
+      "time": "2026-01-21T14:54:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold, Bitcoin Or The S&P500? Which Asset Polymarket Predicts To Do Best In 2026",
+      "time": "2026-01-21T14:56:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Gold, Bitcoin Or The S&P500? Which Asset Polymarket Predicts To Do Best In 2026",
+      "time": "2026-01-21T14:56:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Markets Rally As Trump Drops Greenland's Tariff Threat: These 10 Stocks Are Soaring",
+      "time": "2026-01-21T15:32:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Big Tech stocks haven't been this cheap in months. These investors say it's time to buy.",
+      "time": "2026-01-21T17:40:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "TACO Trade Wins Again, Trump Withdraws EU Tariff Threat",
+      "time": "2026-01-21T18:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump Approval Rating Hits New Lows: Tariffs, Federal Reserve, Global Tension Hurting Voter's View Of President",
+      "time": "2026-01-21T19:18:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Riverside Resources and Questcorp Chip-Channel Sample High Grade Gold-Silver 30m @ 20 g/t Gold and 226 g/t Silver and Announce Drill Results from Union Project",
+      "time": "2026-01-22T03:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Questcorp Mining and Riverside Resources Chip Channel Sample 30 Meters @ 20 g/t Gold and 226 g/t Silver at the Mexican Union Project",
+      "time": "2026-01-22T03:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump Trade Wars To Capital Wars: How Greenland Dispute Led Danish Pension Fund To Sell US Treasuries",
+      "time": "2026-01-22T03:09:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump's Greenland 'Framework' Defuses Crisis, Averting EU Tariffs: 'Don't Blink' As Buy-The-Dip Strategy Pays Off",
+      "time": "2026-01-22T03:26:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: S&P 500, Dow Jones Futures Rise As Trump Scales Down EU Tariff Threats-Microsoft, Moderna, Intel In Focus",
+      "time": "2026-01-22T05:19:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Goldman Bumps Gold Target, Sees $5400 In 2026",
+      "time": "2026-01-22T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Should iShares Russell 2000 ETF (IWM) Be on Your Investing Radar?",
+      "time": "2026-01-22T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "PayPals Path Forward Doesnt Require Winning the Stablecoin Battle",
+      "time": "2026-01-22T07:28:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Unitys Q4 Earnings Will Test Whether Analyst Optimism Matches Execution",
+      "time": "2026-01-22T07:36:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Carnival Posts 19-Year High Profitability While Carrying $26.8 Billion Debt Load",
+      "time": "2026-01-22T07:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "The 4% Withdrawal Rule Breaks Down When You Need Your Money to Last 30 Years",
+      "time": "2026-01-22T08:17:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises On Strong GDP Data; Nvidia, Tesla Extend Their Gains (Live Coverage)",
+      "time": "2026-01-22T08:56:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Has A New Buyer In Town - And The Old Price Rules No Longer Apply",
+      "time": "2026-01-22T09:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rallies On Strong GDP Findings; Nvidia, Tesla Extend Winning Streaks (Live Coverage)",
+      "time": "2026-01-22T09:53:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "The Stock Market's Most Surprising Winners Of 2026 Aren't AI Giants",
+      "time": "2026-01-22T10:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "This momentum fund has dodged U.S. stocks and trounced the competition",
+      "time": "2026-01-22T10:52:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "MoneyMasters Podcast 1-22-26- Dave Nadig on How to Sort Through 5,000 ETFs",
+      "time": "2026-01-22T11:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump's Economy Is In Strong-Growth, Low-Inflation Mode: What It Means For Your Money",
+      "time": "2026-01-22T11:51:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold or Silver: What's the Better Investment for 2026?",
+      "time": "2026-01-22T12:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Goldman Sachs Targets 12% Gain for S&P 500: Heres Why",
+      "time": "2026-01-22T12:50:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Stock Market Today: Dow Leaps 500 Points, Gold Surpasses $4,900; Corning Climbs (Live Coverage)",
+      "time": "2026-01-22T13:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "6 Of Top 10 Richest People Have Lost Wealth In 2026: Musk's Gains Help List Stay Positive",
+      "time": "2026-01-22T13:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Denmark Residents Are Boycotting American Products: Netflix, Coca-Cola Could Lose Revenue From Trump's Battle Over Greenland",
+      "time": "2026-01-22T13:50:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "These Minnows Are Smashing The Magnificent Seven",
+      "time": "2026-01-22T14:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Russell 2000 Extends Records, Meta Jumps 5%: What's Moving Markets Thursday?",
+      "time": "2026-01-22T15:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "The Stock Market Is In 'Hyper-Bull' Mode - And Its Safety Net Has Vanished",
+      "time": "2026-01-22T15:28:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Stock Market Today: Dow, Small Caps Gain; Crypto Stock Surges In Debut (Live Coverage)",
+      "time": "2026-01-22T15:32:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Prices Jumped On Trump's Greenland Spat. Why They Might Keep Rising.",
+      "time": "2026-01-22T16:17:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Michael Saylors Bitcoin Playbook: What He Says Will Win",
+      "time": "2026-01-22T16:32:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Stock Market Today: Dow Scores Back-To-Back Gains; Spice Maker Plummets (Live Coverage)",
+      "time": "2026-01-22T16:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Settle Higher as Global Tensions Cool and the Economy Expands",
+      "time": "2026-01-22T16:36:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Affordability Weighs On Trump's Approval Rating: 39% Say Finances Worse Off Than Year Ago",
+      "time": "2026-01-22T18:12:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Is Now the Time to Move Away From the \"Magnificent Seven\" and Into Small-Cap Stocks?",
+      "time": "2026-01-22T22:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: S&P 500, Dow Jones, Nasdaq 100 Futures Decline After 2 Consecutive Days Of Gains - Intel, CSX In Focus",
+      "time": "2026-01-23T04:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Markets Most Reliable Dip Buyers Cash in on Latest TACO Turn",
+      "time": "2026-01-23T05:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Here's How Much a $250-Per-Month Investment in the S&P 500 Could Grow to Over 25 Years",
+      "time": "2026-01-23T06:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Should Invesco QQQ (QQQ) Be on Your Investing Radar?",
+      "time": "2026-01-23T06:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Small Stocks Are On Fire Especially These 10",
+      "time": "2026-01-23T07:24:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Retirees Are Realizing A $1 Million Nest Egg at 62 Only Means $29,630 in Real Spending Power",
+      "time": "2026-01-23T08:17:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls In Wake Of Greenland Deal Rally; Intel Plunges After Earnings (Live Coverage)",
+      "time": "2026-01-23T09:43:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Pressured by Weakness in Chip Makers",
+      "time": "2026-01-23T09:57:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump Trade: Trump says wont use excessive force to obtain Greenland",
+      "time": "2026-01-23T10:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "One Climate ETF Holds 10.2% in NVIDIA but Zero Energy Stocks How?",
+      "time": "2026-01-23T10:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Wall Street Veteran Richard Bernstein Moves To Janus Henderson In Blockbuster Acquisition",
+      "time": "2026-01-23T11:18:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Recover on Strength in Megacap Tech and Consumer Sentiment",
+      "time": "2026-01-23T11:24:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLDM",
+      "title": "This Pro Is More and More Bullish on Gold. How Hes Playing It.",
+      "time": "2026-01-23T12:08:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Investors Are Acting As if QQQ Is the Perfect Investment Right Now (And Maybe It Actually Is)",
+      "time": "2026-01-23T12:45:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "The Great Dollar Dump of 2026: How To Capitalize on the Greenback's Retreat",
+      "time": "2026-01-23T12:55:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Dow, S&P 500 Eye Weekly Losses Despite Tariff Threat Reversal",
+      "time": "2026-01-23T13:36:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Silver Breaks $101, Intel Stock Plunges 17%: What's Moving Markets Friday?",
+      "time": "2026-01-23T13:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "EXCLUSIVE: CEO Behind MAGS ETF Says Magnificent Seven Underperformance In 2025 Doesn't Change Dominance - 'It Reinforces It'",
+      "time": "2026-01-23T14:09:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GDX",
+      "title": "Investors Lose Their Mind After Hycroft Runs 2,243% And The CEO Backs Up The Truck | HYMC",
+      "time": "2026-01-23T14:27:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Flirts With $5,000, Eyes Best Week Since 2020: Why Wall Street Thinks Rally Isn't Done",
+      "time": "2026-01-23T14:35:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Vs. Silver: Which Precious Metal Reigns Supreme?",
+      "time": "2026-01-23T14:54:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "EXCLUSIVE: CEO Behind Magnificent 7 ETF Picks His Favorite Stocks From Index For 2026 - 'Risk-Reward Is Starting To Look Better'",
+      "time": "2026-01-23T16:10:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "1 Tech ETF That Could Turn $500 Monthly Into Over $1 Million",
+      "time": "2026-01-23T16:20:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "When Silver Hits $100 And Gold Nears $5,000, Something Bigger Is Happening - This Week On Wall Street",
+      "time": "2026-01-23T16:24:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Finish Mostly Higher Despite a Plunge in Intel",
+      "time": "2026-01-23T16:34:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Ron DeSantis Blames Dollar Instability As Silver Hits Record Highs: If The US Had A 'Stable Currency' Silver Wouldn't Set New Records",
+      "time": "2026-01-24T03:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "2026 Is Showing Retirees That A $3,000 Monthly Pension Changes Investment Strategy",
+      "time": "2026-01-24T07:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Fact: Working Two More Years Could Add $200,000 to A 68-Year-Olds Retirement",
+      "time": "2026-01-24T08:24:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Invescos 1,500 Stock ETF Gained 227% While Everyone Forgot About Small Caps",
+      "time": "2026-01-24T10:07:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Whats the Best Way to Buy Gold in 2026?",
+      "time": "2026-01-24T11:30:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GDX",
+      "title": "What's the Best Way to Buy Gold in 2026?",
+      "time": "2026-01-24T11:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "This ETF Outperformed the S&P 500 3-To-1 Last Year. Heres Why I Expect a Repeat in 2026",
+      "time": "2026-01-25T07:15:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Platinum Rally Faces Critical Test After Mining Giant Posts $3.6 Billion Loss",
+      "time": "2026-01-25T07:37:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "The Stock Market Just Did Something It Hasn't Done Since 1996. History Says This Happens Next.",
+      "time": "2026-01-25T23:20:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Surges Past $5,000 To Historic High As 'Crisis Of Confidence' In Trump Administration Rattles Global Markets",
+      "time": "2026-01-26T02:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Questcorp Mining Strengthens Advisory Board with New Appointment",
+      "time": "2026-01-26T03:01:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump 'Really Serious' About Greenland, Says 'Big Short' Steve Eisman, Warns Rare Earth Battle Is 'Not A Positive' For Markets",
+      "time": "2026-01-26T04:18:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones, S&P 500 Futures Slip As Investors Brace For Mega-Cap Earnings-Brand Engagement, Nucor In Focus",
+      "time": "2026-01-26T05:36:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold's $5000 Break Signals Weakening Confidence In Washington",
+      "time": "2026-01-26T06:33:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Hits New Records as Investors Seek Shelter From Trade and Policy Risks",
+      "time": "2026-01-26T06:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Silver Is Putting Gold To Shame",
+      "time": "2026-01-26T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "What Geopolitics? Earnings Growth to Drive Wall Street ETFs",
+      "time": "2026-01-26T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Wavers On Trump Tariff News; Tesla Shares Take A Dip Ahead Of Earnings (Live Coverage)",
+      "time": "2026-01-26T08:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "4 Country ETFs Hovering Around a 52-Week High",
+      "time": "2026-01-26T09:00:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold And Silver Just Reawakened The Commodity Supercycle - Natural Gas And Copper Are Doing The Rest",
+      "time": "2026-01-26T09:09:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Market Minute 1-26-26- Gold Tops $5K as US Dollar Slides",
+      "time": "2026-01-26T09:15:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Market Minute 1-26-26- Gold Tops $5K as US Dollar Slides",
+      "time": "2026-01-26T09:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Chinas Stranglehold on Critical Minerals Creates Massive Opportunity in These 5 Stocks",
+      "time": "2026-01-26T09:28:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Why Every Ounce Of Gold Now Carries A Greenland Tax",
+      "time": "2026-01-26T09:29:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Prices Top $5,000. These ETFs, Gold Miner Stocks Surge.",
+      "time": "2026-01-26T09:36:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Rises Amid Trump Tariff News; Tesla Slides Before Earnings (Live Coverage)",
+      "time": "2026-01-26T09:53:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Breaks $5,000 as Investors Flee Bonds and Currencies",
+      "time": "2026-01-26T10:16:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Why many large-bank stocks look like bargains for long-term investors",
+      "time": "2026-01-26T10:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "A Storm Is Brewing: How To Manage Risk and Weather Financial Turbulence in 2026",
+      "time": "2026-01-26T10:34:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Buy These 3 ETFs and Hold For Decades",
+      "time": "2026-01-26T10:45:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Magnificent Seven Earnings Are Here: Apple, Microsoft, Meta, Tesla In Spotlight, Here's What You Should Expect",
+      "time": "2026-01-26T11:30:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Commvault, Google Cloud Expand Alliance To Strengthen Enterprise Security",
+      "time": "2026-01-26T11:38:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks See Support Ahead of Heavy Earnings Week and FOMC Meeting",
+      "time": "2026-01-26T11:41:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Best-Performing Leveraged ETFs of Last Week",
+      "time": "2026-01-26T12:00:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Why A 'Suspected' Yen Intervention Just Sent The Dollar Sliding",
+      "time": "2026-01-26T12:28:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Natural Gas Rallies 30%, Silver Jumps 13% To $116: What's Moving Markets Monday?",
+      "time": "2026-01-26T13:26:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Climbs Above $5,000 As Global Tensions Mount",
+      "time": "2026-01-26T15:02:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Close Higher Ahead of Heavy Earnings Week and FOMC Meeting",
+      "time": "2026-01-26T16:32:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Why Investors Are Turning to Autocallable ETFs for Higher Income",
+      "time": "2026-01-26T16:38:00"
+    },
+    {
+      "category": "market",
+      "ticker": "IWM",
+      "title": "Prediction: The Russell 2000 Will Beat the S&P 500 This Year. Here's How To Take Advantage.",
+      "time": "2026-01-26T21:50:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Bank of America resets Meta stock forecast before earnings",
+      "time": "2026-01-26T22:33:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Extends Gains Above $5,000 as Debasement Trade Gathers Pace",
+      "time": "2026-01-27T00:19:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Government Shutdown Odds Rise From 10% To 79%: Prediction Markets Confirm Jeremy Siegel's Warning Of A Sudden Closure Threat",
+      "time": "2026-01-27T02:05:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Futures Slip, S&P 500 Gains Amid Trump's Fresh Tariffs On South Korea- General Motors, UnitedHealth, Cloudflare In Focus",
+      "time": "2026-01-27T05:13:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "1 AI ETF to Buy With $1,000 and Hold Forever",
+      "time": "2026-01-27T05:20:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Wall Street veteran who called the dot-com bust sees a bigger bubble in Magnificent 7",
+      "time": "2026-01-27T07:08:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "11 S&P 500 Stocks Expected To Post Jaw-Dropping Earnings Growth",
+      "time": "2026-01-27T08:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Bill Ackman Alarmed By Anthropic CEO's Warning That AI Models Developed 'Evil' Persona During Training: 'Very Concerning'",
+      "time": "2026-01-27T08:03:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Dont Write Off Bitcoin as a Safe Haven Beneficiary This Year",
+      "time": "2026-01-27T08:46:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Dont Write Off Bitcoin as a Safe Haven Beneficiary This Year",
+      "time": "2026-01-27T08:46:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Miners Crushed The S&P 500 By 10x - Are They Still A Buy?",
+      "time": "2026-01-27T09:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Gold Miners Crushed The S&P 500 By 10x - Are They Still A Buy?",
+      "time": "2026-01-27T09:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Your $1.5 Million Nest Egg Runs Out 5 Years Early When Inflation Hits 4.5%",
+      "time": "2026-01-27T09:35:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "In January, a 65-Year-Old Has $1.3 Million Saved but Still Faces Retirements Biggest Threat",
+      "time": "2026-01-27T09:39:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls As Fed Meeting Starts; UnitedHealth Plunges On Medicare News (Live Coverage)",
+      "time": "2026-01-27T09:48:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stocks Edge Higher as Chip Makers Rally",
+      "time": "2026-01-27T10:07:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Falls As UnitedHealth Craters On Medicare News; Boeing Shares Sink (Live Coverage)",
+      "time": "2026-01-27T10:25:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Breaks $5,000 as Options Traders Target Further Upside",
+      "time": "2026-01-27T10:27:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Invescos RAFI ETF Has One of The Best Charts Ive Seen This Year",
+      "time": "2026-01-27T10:36:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Best-Performing ETFs of Last Week: Commodity Wins",
+      "time": "2026-01-27T11:00:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Broader Market Rallies on Tech Strength and Solid Earnings",
+      "time": "2026-01-27T11:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "From Tokyo To Oslo, Country ETFs Are Running Hot As Global Markets Ride Policy Shifts, AI Buzz",
+      "time": "2026-01-27T12:06:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Another Government Shutdown Looms: These 10 Stocks Suffered Last Time",
+      "time": "2026-01-27T12:32:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "S&P 500 Hits New Records, GM Stock Jumps 8% On Earnings: What's Moving Markets Tuesday?",
+      "time": "2026-01-27T12:55:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Meta Q4 Preview: Market Expert Says Stock Was 'Punished' For Increased Spending, Will Investors Come Back?",
+      "time": "2026-01-27T13:57:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Holds Above $5,000 as Dollar Weakens and Geopolitical Risks Rise",
+      "time": "2026-01-27T15:03:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Tom Lee: Gold And Silver Are 'Sucking Oxygen' Out Of Bitcoin, Ethereum",
+      "time": "2026-01-27T15:26:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Trump-Powell Showdown Makes Wednesday's Fed Meeting About Much More Than Rates",
+      "time": "2026-01-27T15:42:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "SPY At Record Highs: Still A Core Holding, Or A Crowded Trade?",
+      "time": "2026-01-27T16:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "S&P 500 Posts a Record High on Tech Strength and Solid Corporate Earnings",
+      "time": "2026-01-27T16:34:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "The 'Brazil Trade' Is Back - Why Analysts See More Upside Ahead",
+      "time": "2026-01-27T16:53:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "2 Portfolio Worthy Value Stocks to Consider After Q4 Results: GM, IVZ",
+      "time": "2026-01-27T18:53:00"
+    },
+    {
+      "category": "dollar",
+      "ticker": "UUP",
+      "title": "Trump Says Dollar Is 'Doing Great' As Greenback Slides To 4-Year Low, Cites Edge Against China And Japan",
+      "time": "2026-01-27T21:05:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold ETFs Shine as Prices Hit New Highs",
+      "time": "2026-01-28T00:01:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Anthropic CEO Says Selling Chips To China Is Like Selling Nukes To North Korea-'...Deal With These Dangers Properly'",
+      "time": "2026-01-28T02:09:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Trump's 'One Big, Beautiful Bill' Will Spark 'Non-Inflationary Boom' In US, Says Scott Bessent: It Will Last For 'Several Years'",
+      "time": "2026-01-28T04:51:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Jones, Nasdaq Futures Gain As Investors Await Fed Decision, Jerome Powell's Speech-Starbucks, Seagate, Tesla In Focus",
+      "time": "2026-01-28T05:12:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Gold Soars Past $5,300 After Trump Says Dollar Should 'Find Its Level'",
+      "time": "2026-01-28T06:21:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Is Wall Street's AI-Fueled Rally Far From Over? Traders See S&P 500 Soaring In 2026 Like Never Before",
+      "time": "2026-01-28T06:54:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "Stock Market Today: Dow Falls Ahead Of Fed Decision, Powell Comments; Tesla Earnings Next (Live Coverage)",
+      "time": "2026-01-28T08:56:00"
+    },
+    {
+      "category": "market",
+      "ticker": "SPY",
+      "title": "With SPY Breaking Records, Is It Time to Bet on RSP?",
+      "time": "2026-01-28T09:29:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Dow Rises Ahead Of Fed Decision, Powell Comments; Tesla Earnings Next (Live Coverage)",
+      "time": "2026-01-28T09:42:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Stock Market Today: Nasdaq Charges Higher Ahead Of Fed, Powell Comments; Nvidia Rises (Live Coverage)",
+      "time": "2026-01-28T10:23:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "Trump Says The Dollar Is 'Great' - Gold And Silver Are Proving It Isn't",
+      "time": "2026-01-28T10:48:00"
+    },
+    {
+      "category": "gold",
+      "ticker": "GLD",
+      "title": "ETFs to Watch as Gold Breaches the $5,200 Mark",
+      "time": "2026-01-28T10:49:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "Mega-Cap Earnings Could Decide the Tech Sector's Next Big Move",
+      "time": "2026-01-28T11:15:00"
+    },
+    {
+      "category": "market",
+      "ticker": "QQQ",
+      "title": "QQQY Flips Nasdaq Volatility Into a 45% Yield, Paid Weekly! Its Hard To Process",
+      "time": "2026-01-28T11:53:00"
     }
   ]
 }

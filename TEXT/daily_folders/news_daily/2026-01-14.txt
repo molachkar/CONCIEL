@@ -6,12 +6,11 @@ GOLD(4):
 2026-|Gold Has A January Secret - And Its Latest Breakout Is No Ac|GLDM
 2026-|Fed Drama Fuels Gold Rush: ETFs Jump As Wall Street Bets On |AAAU
 
-MARKET(19):
-2026-|Wells Fargo Enters Its First Post-Asset-Cap Earnings Test: H|SPY
-2026-|Kevin O'Leary Issues Stark Warning On US Energy Grid Vs. Chi|SPY
-2026-|Inflation 'Good Enough' But Fed Stays Put: Bilello Warns Aga|SPY
-2026-|Stock Market Today: Dow Jones, Nasdaq 100 Futures Tumble Ahe|SPY
-2026-|Should SPDR S&P 500 ETF (SPY) Be on Your Investing Radar?|SPY
+MARKET(4):
+2026-|Stocks Drop, Energy Sector Rises As Crude Eyes 6th Day Of Ga|DIA
+2026-|Regional Banking Sector Near a Critical Inflection Point|IWM
+2026-|Goldman Sachs Q4 Preview: Largest Dow Jones Industrial Avera|DIA
+2026-|Stock Indexes Settle Lower on Tech Weakness|DIA
 
 VOLATILITY(1):
 2026-|With Markets on Edge, Defensive ETFs Deserve a Second Look|VXX

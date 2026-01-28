@@ -1,112 +1,69 @@
 {
   "date": "2025-12-02",
-  "timestamp": "2026-01-28T18:15:55.326753",
+  "timestamp": "2026-01-28T19:21:47.867460",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-02",
-        "timestamp": "2026-01-28T18:15:55.348467",
+        "timestamp": "2026-01-28T19:21:47.886051",
         "model": "Qwen-235B"
       },
       "data_snapshot": {
-        "economic_events": "FEDFUNDS decreased from 4.09% to 3.72%",
-        "rates": "FEDFUNDS: 3.72%",
-        "inflation": "CPI: 326.03, YoY%: 0.31% (calculated from 325.03 to 326.03)",
-        "real_rate": "1.23% (given) or calculation pending for T10Y yield and prior year CPI, however, using given Real Rate for analysis"
+        "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0",
+        "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 0.31%",
+        "real_rate": "T10Y - CPI_YoY = unknown - 0.31% = unknown",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
-        "regime": "RISK_ON",
+        "regime": "NEUTRAL",
         "trend": "dovish",
         "key_drivers": [
-          "FEDFUNDS decrease from 4.09% to 3.72%",
-          "stable inflation with CPI YoY% at 0.31%"
+          "FEDFUNDS decreased to 3.72%",
+          "NFP increased to 159526K"
         ],
-        "reasoning": "dovish Fed policy indicated by decreasing FEDFUNDS rate, stable inflation, and given Real Rate of 1.23% suggests falling real rates",
-        "confidence": 0.85,
+        "reasoning": "The decrease in FEDFUNDS and increase in NFP may indicate a dovish trend, but the lack of historical context and unknown T10Y rate make it difficult to determine the overall regime.",
         "risk_factors": [
-          "incomplete data for T10Y yield"
+          "GEOPOLITICAL_RISK increased by 20.97%",
+          "GOLD_ETF_FLOWS increased for GLD and IAU"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "2025-12-01 analysis"
-        ],
-        "corrections": [
-          "prior year CPI used for YoY% calculation"
-        ]
-      }
-    },
-    "market": {
-      "metadata": {
-        "agent": "market",
-        "date": "2025-12-02",
-        "timestamp": "2026-01-28T18:15:56.539416",
-        "model": "DeepSeek-V3.1"
-      },
-      "data_snapshot": {
-        "price_action": "Gold closed at 4205.69 after pulling back from yesterday's highs, maintaining position above all key EMAs (E9:4168.42, E21:4120.45) with bullish stack configuration and above cloud positioning",
-        "momentum": "RSI at 61.2 (healthy bullish zone), MACD positive with histogram at 9.08 showing continued bullish momentum, ADX at 20.98 indicating developing trend strength",
-        "volatility": "High volatility regime (VOL_PCT: 81.91%) with mean-reverting state (HURST: 0.4532), ATR of 81.23 confirming elevated daily ranges",
-        "cross_assets": "S&P500 maintaining weak uptrend, VIX continuing strong downtrend (17.92), DXY consolidating with weak trend and BB squeeze, supporting gold environment"
-      },
-      "analysis": {
-        "regime": "BREAKOUT",
-        "trend": "Strong bullish trend continuation despite minor pullback, with gold maintaining above all EMAs, bullish Ichimoku cloud positioning, and supportive momentum indicators",
-        "key_drivers": [
-          "Bullish EMA stack configuration maintained",
-          "Above cloud positioning with strong Ichimoku signals",
-          "MACD positive divergence with healthy histogram",
-          "VIX decline continuing risk-on environment",
-          "DXY weakness and consolidation supporting gold"
-        ],
-        "reasoning": "Gold demonstrates breakout continuation characteristics despite minor profit-taking pullback. Price remains well above all major moving averages with strong momentum indicators (RSI 61.2, MACD bullish). High volatility regime with mean-reverting properties suggests continued upward momentum potential. Cross-asset signals remain favorable with VIX decline and DXY weakness creating supportive conditions for gold appreciation.",
-        "confidence": 0.78,
-        "risk_factors": [
-          "Minor pullback from yesterday's highs indicating potential profit-taking",
-          "RSI still in bullish zone but monitoring for overbought conditions",
-          "High volatility regime may indicate increased price swings",
-          "Stochastic showing potential overbought signals (K:78.0, D:86.85)"
-        ]
-      },
-      "memory_references": {
-        "compared_to": [
-          "2025-12-01: Similar breakout regime with strong bullish momentum"
-        ],
+        "compared_to": [],
         "corrections": []
       }
     },
+    "market": null,
     "narrative": {
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-02",
-        "timestamp": "2026-01-28T18:16:00.673122",
+        "timestamp": "2026-01-28T19:21:50.324956",
         "model": "Meta-Llama-3.3-70B"
       },
       "data_snapshot": {
         "dominant_story": "No data available",
         "sentiment": "Unknown",
-        "catalysts": "No catalysts identified",
-        "geopolitical": "No geopolitical risk assessed"
+        "catalysts": "None",
+        "geopolitical": "Unknown",
+        "data_quality": "incomplete"
       },
       "analysis": {
         "regime": "NEUTRAL_NARRATIVE",
-        "trend": "No trend identified",
+        "trend": "Stable",
         "key_drivers": [
-          "Insufficient data"
+          "No news headlines available",
+          "No social sentiment data available"
         ],
-        "reasoning": "No news headlines or social sentiment data available for analysis due to file directory errors",
-        "confidence": 0.0,
+        "reasoning": "Insufficient data to determine narrative regime",
         "risk_factors": [
           "Data unavailability",
-          "Incomplete analysis",
-          "File directory errors"
+          "Incomplete information"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "2025-12-01"
-        ],
+        "compared_to": [],
         "corrections": []
       }
     }

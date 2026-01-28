@@ -5,9 +5,9 @@ GOLD(3):
 2026-|Gold and Silver Funds Surged. Crypto Took a Dive.|GLD
 2026-|EXCLUSIVE: 'Big Short' Star Danny Moses Predicts Gold Monste|GLD
 
-MARKET(10):
-2026-|Stock Market Today: S&P 500, Dow Jones Futures Decline - AZZ|QQQ
-2026-|S&P 500 Set For 'Choppy' 2026 As Fundstrat's Mark Newton Set|SPY
-2026-|Stock Market Today: Dow Falls After Surprise Jobless Claims;|SPY
-2026-|Pre-markets Soft on Excellent Economic Data|SPY
-2026-|Stock Indexes Mixed on Big Tech Weakness and Higher Bond Yie|SPY
+MARKET(5):
+2026-|Pre-markets Soft on Excellent Economic Data|DIA
+2026-|Stock Indexes Mixed on Big Tech Weakness and Higher Bond Yie|DIA
+2026-|5 ETFs to Buy for January|DIA
+2026-|Defense Stocks Rally As Trump Pledges $1.5T Military Budget:|DIA
+2026-|Stocks Settle Mixed on Sector Rotation|DIA

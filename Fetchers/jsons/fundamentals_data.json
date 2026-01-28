@@ -1,16 +1,8 @@
 {
-  "collection_date": "2026-01-23 01:35:58",
+  "collection_date": "2026-01-28 19:18:22",
   "data_source": "FRED + Investing.com + Iacoviello GPR + Yahoo Finance",
   "DAILY": {
     "TREASURY_10Y": [
-      {
-        "date": "2025-12-24",
-        "value": 4.15
-      },
-      {
-        "date": "2025-12-26",
-        "value": 4.14
-      },
       {
         "date": "2025-12-29",
         "value": 4.12
@@ -74,18 +66,22 @@
       {
         "date": "2026-01-21",
         "value": 4.26
+      },
+      {
+        "date": "2026-01-22",
+        "value": 4.26
+      },
+      {
+        "date": "2026-01-23",
+        "value": 4.24
+      },
+      {
+        "date": "2026-01-26",
+        "value": 4.22
       }
     ],
-    "TREASURY_10Y_END_DATE": "2026-01-21",
+    "TREASURY_10Y_END_DATE": "2026-01-26",
     "HY_CREDIT_SPREAD": [
-      {
-        "date": "2025-12-24",
-        "value": 2.84
-      },
-      {
-        "date": "2025-12-26",
-        "value": 2.86
-      },
       {
         "date": "2025-12-29",
         "value": 2.87
@@ -153,25 +149,26 @@
       {
         "date": "2026-01-21",
         "value": 2.69
+      },
+      {
+        "date": "2026-01-22",
+        "value": 2.64
+      },
+      {
+        "date": "2026-01-23",
+        "value": 2.68
+      },
+      {
+        "date": "2026-01-26",
+        "value": 2.69
+      },
+      {
+        "date": "2026-01-27",
+        "value": 2.71
       }
     ],
-    "HY_CREDIT_SPREAD_END_DATE": "2026-01-21",
+    "HY_CREDIT_SPREAD_END_DATE": "2026-01-27",
     "GLD": [
-      {
-        "date": "2025-12-24",
-        "close": 411.93,
-        "volume": 6718400
-      },
-      {
-        "date": "2025-12-26",
-        "close": 416.74,
-        "volume": 10476200
-      },
-      {
-        "date": "2025-12-29",
-        "close": 398.6,
-        "volume": 20679200
-      },
       {
         "date": "2025-12-30",
         "close": 398.89,
@@ -250,26 +247,31 @@
       {
         "date": "2026-01-22",
         "close": 451.79,
-        "volume": 18612389
+        "volume": 19251200
+      },
+      {
+        "date": "2026-01-23",
+        "close": 458.0,
+        "volume": 21531900
+      },
+      {
+        "date": "2026-01-26",
+        "close": 464.7,
+        "volume": 34156000
+      },
+      {
+        "date": "2026-01-27",
+        "close": 476.1,
+        "volume": 28271800
+      },
+      {
+        "date": "2026-01-28",
+        "close": 488.21,
+        "volume": 19656461
       }
     ],
-    "GLD_END_DATE": "2026-01-22",
+    "GLD_END_DATE": "2026-01-28",
     "IAU": [
-      {
-        "date": "2025-12-24",
-        "close": 84.34,
-        "volume": 6549300
-      },
-      {
-        "date": "2025-12-26",
-        "close": 85.34,
-        "volume": 8989300
-      },
-      {
-        "date": "2025-12-29",
-        "close": 81.61,
-        "volume": 16442800
-      },
       {
         "date": "2025-12-30",
         "close": 81.71,
@@ -348,19 +350,31 @@
       {
         "date": "2026-01-22",
         "close": 92.56,
-        "volume": 10878842
+        "volume": 11020500
+      },
+      {
+        "date": "2026-01-23",
+        "close": 93.79,
+        "volume": 18623600
+      },
+      {
+        "date": "2026-01-26",
+        "close": 95.18,
+        "volume": 25297400
+      },
+      {
+        "date": "2026-01-27",
+        "close": 97.48,
+        "volume": 20348800
+      },
+      {
+        "date": "2026-01-28",
+        "close": 99.98,
+        "volume": 22228773
       }
     ],
-    "IAU_END_DATE": "2026-01-22",
+    "IAU_END_DATE": "2026-01-28",
     "TREASURY_2Y": [
-      {
-        "date": "2025-12-24",
-        "value": 3.47
-      },
-      {
-        "date": "2025-12-26",
-        "value": 3.46
-      },
       {
         "date": "2025-12-29",
         "value": 3.45
@@ -424,18 +438,22 @@
       {
         "date": "2026-01-21",
         "value": 3.6
+      },
+      {
+        "date": "2026-01-22",
+        "value": 3.61
+      },
+      {
+        "date": "2026-01-23",
+        "value": 3.6
+      },
+      {
+        "date": "2026-01-26",
+        "value": 3.56
       }
     ],
-    "TREASURY_2Y_END_DATE": "2026-01-21",
+    "TREASURY_2Y_END_DATE": "2026-01-26",
     "TREASURY_5Y": [
-      {
-        "date": "2025-12-24",
-        "value": 3.7
-      },
-      {
-        "date": "2025-12-26",
-        "value": 3.68
-      },
       {
         "date": "2025-12-29",
         "value": 3.67
@@ -499,18 +517,22 @@
       {
         "date": "2026-01-21",
         "value": 3.83
+      },
+      {
+        "date": "2026-01-22",
+        "value": 3.85
+      },
+      {
+        "date": "2026-01-23",
+        "value": 3.84
+      },
+      {
+        "date": "2026-01-26",
+        "value": 3.82
       }
     ],
-    "TREASURY_5Y_END_DATE": "2026-01-21",
+    "TREASURY_5Y_END_DATE": "2026-01-26",
     "TREASURY_30Y": [
-      {
-        "date": "2025-12-24",
-        "value": 4.79
-      },
-      {
-        "date": "2025-12-26",
-        "value": 4.81
-      },
       {
         "date": "2025-12-29",
         "value": 4.8
@@ -574,16 +596,24 @@
       {
         "date": "2026-01-21",
         "value": 4.87
+      },
+      {
+        "date": "2026-01-22",
+        "value": 4.84
+      },
+      {
+        "date": "2026-01-23",
+        "value": 4.82
+      },
+      {
+        "date": "2026-01-26",
+        "value": 4.8
       }
     ],
-    "TREASURY_30Y_END_DATE": "2026-01-21"
+    "TREASURY_30Y_END_DATE": "2026-01-26"
   },
   "WEEKLY": {
     "JOBLESS_CLAIMS": [
-      {
-        "date": "2025-12-27",
-        "value": 200000.0
-      },
       {
         "date": "2026-01-03",
         "value": 207000.0
@@ -677,14 +707,18 @@
     "M2_MONEY_SUPPLY": [
       {
         "date": "2025-10-01",
-        "value": 22298.0
+        "value": 22297.8
       },
       {
         "date": "2025-11-01",
-        "value": 22322.4
+        "value": 22322.1
+      },
+      {
+        "date": "2025-12-01",
+        "value": 22411.0
       }
     ],
-    "M2_MONEY_SUPPLY_END_DATE": "2025-11-01",
+    "M2_MONEY_SUPPLY_END_DATE": "2025-12-01",
     "RETAIL_SALES": [
       {
         "date": "2025-10-01",
@@ -720,8 +754,8 @@
     "HOUSING_STARTS_END_DATE": "2025-10-01"
   },
   "CALCULATED": {
-    "REAL_RATE": 1.23,
-    "REAL_RATE_END_DATE": "2026-01-21",
+    "REAL_RATE": 1.19,
+    "REAL_RATE_END_DATE": "2026-01-26",
     "CENTRAL_BANK_EVENTS": [
       {
         "date": "30/12/2025",
@@ -733,23 +767,23 @@
         "previous": ""
       },
       {
-        "date": "23/01/2026",
-        "time": "04:00",
-        "currency": "JPY",
-        "event": "BoJ Interest Rate Decision",
+        "date": "28/01/2026",
+        "time": "20:00",
+        "currency": "USD",
+        "event": "FOMC Statement",
         "actual": "",
-        "forecast": "0.75%",
-        "previous": "0.75%"
+        "forecast": "",
+        "previous": ""
       }
     ],
     "GPR_PREVIOUS": 105.25,
     "GPR_ACTUAL": 127.32,
     "GPR_CHANGE_PCT": 20.97,
-    "GLD_7D_FLOW_PCT": 66.17,
-    "GLD_30D_FLOW_PCT": 21.11,
-    "GLD_CURRENT_PRICE": 451.79,
-    "IAU_7D_FLOW_PCT": 71.14,
-    "IAU_30D_FLOW_PCT": 11.4,
-    "IAU_CURRENT_PRICE": 92.56
+    "GLD_7D_FLOW_PCT": 60.81,
+    "GLD_30D_FLOW_PCT": 53.22,
+    "GLD_CURRENT_PRICE": 488.0,
+    "IAU_7D_FLOW_PCT": 74.47,
+    "IAU_30D_FLOW_PCT": 35.25,
+    "IAU_CURRENT_PRICE": 99.96
   }
 }

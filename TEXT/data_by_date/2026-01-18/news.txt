@@ -1,6 +1,5 @@
 === NEWS: 2026-01-18 (FinViz) ===
 
-MARKET(3):
+MARKET(2):
 2026-|The Stock Market Has Done This 7 Times Since 1990. It Signal|QQQ
-2026-|A $700,000 Stock Portfolio Lost $146,000 in Five Days, Showi|SPY
 2026-|Prediction: This Unstoppable AI Company Will Lead the Stock |QQQ

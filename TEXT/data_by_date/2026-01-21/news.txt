@@ -1,0 +1,18 @@
+=== NEWS: 2026-01-21 (FinViz) ===
+
+GOLD(7):
+2026-|Danish Pension Fund To Dump All US Treasuries Citing 'Rising|GLD
+2026-|Gold ETFs Glitter Amid Renewed Transatlantic Trade Strains|GLD
+2026-|7 ETF Themes Investors Are Watching As The Fear & Greed Inde|GLD
+2026-|Trump Pressures Fed, Slams Big Landlords And Pushes Bold Pla|GLD
+2026-|Gold Jumps Toward $5,000 as Trump Tariffs Drive Safe-Haven B|GLD
+
+MARKET(17):
+2026-|Top Economist Sees Fed Pivot, Resilient Economy Fueling 'Dur|SPY
+2026-|Trump's 10% Credit Card APR Cap Looms Over Capital One Ahead|SPY
+2026-|Stock Market Today: Dow Jones, S&P 500 Futures Recover As Fo|SPY
+2026-|For a $1.8m Retiree, Timing Matters More Than Total Savings|SPY
+2026-|Stock Market Today: Dow Drops As Trump Speaks; Netflix Dives|SPY
+
+VOLATILITY(1):
+2026-|7 ETF Themes Investors Are Watching As The Fear & Greed Inde|VXX

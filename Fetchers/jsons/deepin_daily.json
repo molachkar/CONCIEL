@@ -1,690 +1,6 @@
 {
-  "generated_at": "2026-01-20 22:07:26",
+  "generated_at": "2026-01-28 19:19:29",
   "daily_data": {
-    "2025-12-01": {
-      "XAUUSD": {
-        "name": "Gold",
-        "volatility": {
-          "parkinson": 0.0126,
-          "yang_zhang": 0.1986,
-          "regime": "high",
-          "percentile": 82.12
-        },
-        "hurst": {
-          "value": 0.4558,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": 0.5578
-        },
-        "microstructure": {
-          "spread_estimate": 0.0193,
-          "efficiency_ratio": 0.3171
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "USA500.IDX": {
-        "name": "S&P500",
-        "volatility": {
-          "parkinson": 0.0101,
-          "yang_zhang": 0.171,
-          "regime": "high",
-          "percentile": 83.37
-        },
-        "hurst": {
-          "value": 0.2031,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": 0.2911
-        },
-        "microstructure": {
-          "spread_estimate": 0.0152,
-          "efficiency_ratio": 0.0412
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "VOL.IDX": {
-        "name": "VIX",
-        "volatility": {
-          "parkinson": 0.053,
-          "yang_zhang": 0.9004,
-          "regime": "high",
-          "percentile": 74.22
-        },
-        "hurst": {
-          "value": 0.1374,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 18.23,
-          "profile_vah": 21.75,
-          "profile_val": 17.23,
-          "accumulation_score": -0.4303
-        },
-        "microstructure": {
-          "spread_estimate": 0.0782,
-          "efficiency_ratio": 0.035
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "DOLLAR.IDX": {
-        "name": "DXY",
-        "volatility": {
-          "parkinson": 0.0027,
-          "yang_zhang": 0.0461,
-          "regime": "low",
-          "percentile": 10.81
-        },
-        "hurst": {
-          "value": 0.1902,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": 0.1314
-        },
-        "microstructure": {
-          "spread_estimate": 0.0043,
-          "efficiency_ratio": 0.1026
-        },
-        "probability": {
-          "bull_regime": 0.33,
-          "bear_regime": 0.33,
-          "consolidation": 0.34
-        }
-      }
-    },
-    "2025-12-02": {
-      "XAUUSD": {
-        "name": "Gold",
-        "volatility": {
-          "parkinson": 0.0125,
-          "yang_zhang": 0.2011,
-          "regime": "high",
-          "percentile": 81.91
-        },
-        "hurst": {
-          "value": 0.4532,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": 0.563
-        },
-        "microstructure": {
-          "spread_estimate": 0.0192,
-          "efficiency_ratio": 0.4018
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "USA500.IDX": {
-        "name": "S&P500",
-        "volatility": {
-          "parkinson": 0.01,
-          "yang_zhang": 0.1699,
-          "regime": "high",
-          "percentile": 82.54
-        },
-        "hurst": {
-          "value": 0.2018,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": 0.2807
-        },
-        "microstructure": {
-          "spread_estimate": 0.0148,
-          "efficiency_ratio": 0.0568
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "VOL.IDX": {
-        "name": "VIX",
-        "volatility": {
-          "parkinson": 0.0524,
-          "yang_zhang": 0.89,
-          "regime": "high",
-          "percentile": 73.18
-        },
-        "hurst": {
-          "value": 0.1429,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 18.23,
-          "profile_vah": 21.75,
-          "profile_val": 17.23,
-          "accumulation_score": -0.4549
-        },
-        "microstructure": {
-          "spread_estimate": 0.0763,
-          "efficiency_ratio": 0.1098
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "DOLLAR.IDX": {
-        "name": "DXY",
-        "volatility": {
-          "parkinson": 0.0026,
-          "yang_zhang": 0.0446,
-          "regime": "low",
-          "percentile": 5.82
-        },
-        "hurst": {
-          "value": 0.1888,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": -0.1823
-        },
-        "microstructure": {
-          "spread_estimate": 0.0041,
-          "efficiency_ratio": 0.2446
-        },
-        "probability": {
-          "bull_regime": 0.33,
-          "bear_regime": 0.33,
-          "consolidation": 0.34
-        }
-      }
-    },
-    "2025-12-03": {
-      "XAUUSD": {
-        "name": "Gold",
-        "volatility": {
-          "parkinson": 0.0124,
-          "yang_zhang": 0.2013,
-          "regime": "high",
-          "percentile": 81.29
-        },
-        "hurst": {
-          "value": 0.4519,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": 0.2238
-        },
-        "microstructure": {
-          "spread_estimate": 0.019,
-          "efficiency_ratio": 0.3494
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "USA500.IDX": {
-        "name": "S&P500",
-        "volatility": {
-          "parkinson": 0.0098,
-          "yang_zhang": 0.1668,
-          "regime": "high",
-          "percentile": 82.12
-        },
-        "hurst": {
-          "value": 0.2028,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": 0.3827
-        },
-        "microstructure": {
-          "spread_estimate": 0.0144,
-          "efficiency_ratio": 0.0619
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "VOL.IDX": {
-        "name": "VIX",
-        "volatility": {
-          "parkinson": 0.0509,
-          "yang_zhang": 0.8644,
-          "regime": "high",
-          "percentile": 70.27
-        },
-        "hurst": {
-          "value": 0.1404,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 18.23,
-          "profile_vah": 21.75,
-          "profile_val": 17.23,
-          "accumulation_score": -0.4752
-        },
-        "microstructure": {
-          "spread_estimate": 0.0727,
-          "efficiency_ratio": 0.0801
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "DOLLAR.IDX": {
-        "name": "DXY",
-        "volatility": {
-          "parkinson": 0.0027,
-          "yang_zhang": 0.0447,
-          "regime": "low",
-          "percentile": 9.36
-        },
-        "hurst": {
-          "value": 0.1906,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": -0.4649
-        },
-        "microstructure": {
-          "spread_estimate": 0.0042,
-          "efficiency_ratio": 0.3308
-        },
-        "probability": {
-          "bull_regime": 0.33,
-          "bear_regime": 0.33,
-          "consolidation": 0.34
-        }
-      }
-    },
-    "2025-12-04": {
-      "XAUUSD": {
-        "name": "Gold",
-        "volatility": {
-          "parkinson": 0.0124,
-          "yang_zhang": 0.1995,
-          "regime": "high",
-          "percentile": 80.87
-        },
-        "hurst": {
-          "value": 0.4498,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": 0.4069
-        },
-        "microstructure": {
-          "spread_estimate": 0.0188,
-          "efficiency_ratio": 0.3613
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "USA500.IDX": {
-        "name": "S&P500",
-        "volatility": {
-          "parkinson": 0.0096,
-          "yang_zhang": 0.1645,
-          "regime": "high",
-          "percentile": 80.25
-        },
-        "hurst": {
-          "value": 0.2042,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": 0.4223
-        },
-        "microstructure": {
-          "spread_estimate": 0.0139,
-          "efficiency_ratio": 0.1389
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "VOL.IDX": {
-        "name": "VIX",
-        "volatility": {
-          "parkinson": 0.0499,
-          "yang_zhang": 0.8496,
-          "regime": "high",
-          "percentile": 68.4
-        },
-        "hurst": {
-          "value": 0.1397,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 18.23,
-          "profile_vah": 21.75,
-          "profile_val": 17.23,
-          "accumulation_score": -0.5184
-        },
-        "microstructure": {
-          "spread_estimate": 0.0702,
-          "efficiency_ratio": 0.1611
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "DOLLAR.IDX": {
-        "name": "DXY",
-        "volatility": {
-          "parkinson": 0.0026,
-          "yang_zhang": 0.0448,
-          "regime": "low",
-          "percentile": 7.69
-        },
-        "hurst": {
-          "value": 0.1914,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": -0.1139
-        },
-        "microstructure": {
-          "spread_estimate": 0.0042,
-          "efficiency_ratio": 0.1597
-        },
-        "probability": {
-          "bull_regime": 0.33,
-          "bear_regime": 0.33,
-          "consolidation": 0.34
-        }
-      }
-    },
-    "2025-12-05": {
-      "XAUUSD": {
-        "name": "Gold",
-        "volatility": {
-          "parkinson": 0.0124,
-          "yang_zhang": 0.202,
-          "regime": "high",
-          "percentile": 81.08
-        },
-        "hurst": {
-          "value": 0.449,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": 0.0019
-        },
-        "microstructure": {
-          "spread_estimate": 0.019,
-          "efficiency_ratio": 0.3152
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "USA500.IDX": {
-        "name": "S&P500",
-        "volatility": {
-          "parkinson": 0.0094,
-          "yang_zhang": 0.1571,
-          "regime": "high",
-          "percentile": 79.0
-        },
-        "hurst": {
-          "value": 0.2067,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": 0.377
-        },
-        "microstructure": {
-          "spread_estimate": 0.0134,
-          "efficiency_ratio": 0.1502
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "VOL.IDX": {
-        "name": "VIX",
-        "volatility": {
-          "parkinson": 0.0483,
-          "yang_zhang": 0.8008,
-          "regime": "high",
-          "percentile": 66.53
-        },
-        "hurst": {
-          "value": 0.1402,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 18.23,
-          "profile_vah": 21.75,
-          "profile_val": 17.23,
-          "accumulation_score": -0.515
-        },
-        "microstructure": {
-          "spread_estimate": 0.0664,
-          "efficiency_ratio": 0.1732
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "DOLLAR.IDX": {
-        "name": "DXY",
-        "volatility": {
-          "parkinson": 0.0026,
-          "yang_zhang": 0.0443,
-          "regime": "low",
-          "percentile": 4.99
-        },
-        "hurst": {
-          "value": 0.1995,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": -0.0107
-        },
-        "microstructure": {
-          "spread_estimate": 0.0041,
-          "efficiency_ratio": 0.1346
-        },
-        "probability": {
-          "bull_regime": 0.33,
-          "bear_regime": 0.33,
-          "consolidation": 0.34
-        }
-      }
-    },
-    "2025-12-08": {
-      "XAUUSD": {
-        "name": "Gold",
-        "volatility": {
-          "parkinson": 0.0119,
-          "yang_zhang": 0.1994,
-          "regime": "high",
-          "percentile": 77.13
-        },
-        "hurst": {
-          "value": 0.4483,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": -0.1619
-        },
-        "microstructure": {
-          "spread_estimate": 0.018,
-          "efficiency_ratio": 0.1435
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "USA500.IDX": {
-        "name": "S&P500",
-        "volatility": {
-          "parkinson": 0.0093,
-          "yang_zhang": 0.155,
-          "regime": "high",
-          "percentile": 77.75
-        },
-        "hurst": {
-          "value": 0.2109,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": 0.2901
-        },
-        "microstructure": {
-          "spread_estimate": 0.0132,
-          "efficiency_ratio": 0.0092
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "VOL.IDX": {
-        "name": "VIX",
-        "volatility": {
-          "parkinson": 0.0479,
-          "yang_zhang": 0.7865,
-          "regime": "medium",
-          "percentile": 64.86
-        },
-        "hurst": {
-          "value": 0.1429,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 18.23,
-          "profile_vah": 21.75,
-          "profile_val": 17.23,
-          "accumulation_score": -0.4664
-        },
-        "microstructure": {
-          "spread_estimate": 0.0651,
-          "efficiency_ratio": 0.0673
-        },
-        "probability": {
-          "bull_regime": 0.25,
-          "bear_regime": 0.25,
-          "consolidation": 0.5
-        }
-      },
-      "DOLLAR.IDX": {
-        "name": "DXY",
-        "volatility": {
-          "parkinson": 0.0026,
-          "yang_zhang": 0.0444,
-          "regime": "low",
-          "percentile": 7.28
-        },
-        "hurst": {
-          "value": 0.2102,
-          "state": "mean_reverting"
-        },
-        "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": 0.1413
-        },
-        "microstructure": {
-          "spread_estimate": 0.0042,
-          "efficiency_ratio": 0.136
-        },
-        "probability": {
-          "bull_regime": 0.33,
-          "bear_regime": 0.33,
-          "consolidation": 0.34
-        }
-      }
-    },
     "2025-12-09": {
       "XAUUSD": {
         "name": "Gold",
@@ -692,16 +8,16 @@
           "parkinson": 0.0119,
           "yang_zhang": 0.1992,
           "regime": "high",
-          "percentile": 76.92
+          "percentile": 75.68
         },
         "hurst": {
           "value": 0.4463,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.0524
         },
         "microstructure": {
@@ -727,9 +43,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.1428
         },
         "microstructure": {
@@ -757,7 +73,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3692
         },
         "microstructure": {
@@ -776,16 +92,16 @@
           "parkinson": 0.0026,
           "yang_zhang": 0.0439,
           "regime": "low",
-          "percentile": 5.2
+          "percentile": 5.61
         },
         "hurst": {
           "value": 0.2164,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.2729
         },
         "microstructure": {
@@ -806,16 +122,16 @@
           "parkinson": 0.0114,
           "yang_zhang": 0.194,
           "regime": "high",
-          "percentile": 74.84
+          "percentile": 73.6
         },
         "hurst": {
           "value": 0.4467,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.3682
         },
         "microstructure": {
@@ -841,9 +157,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.2744
         },
         "microstructure": {
@@ -871,7 +187,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4021
         },
         "microstructure": {
@@ -890,16 +206,16 @@
           "parkinson": 0.0027,
           "yang_zhang": 0.0446,
           "regime": "low",
-          "percentile": 12.06
+          "percentile": 12.47
         },
         "hurst": {
           "value": 0.2247,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.2098
         },
         "microstructure": {
@@ -920,16 +236,16 @@
           "parkinson": 0.0113,
           "yang_zhang": 0.1898,
           "regime": "high",
-          "percentile": 73.8
+          "percentile": 72.56
         },
         "hurst": {
           "value": 0.4461,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.6701
         },
         "microstructure": {
@@ -955,9 +271,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.4958
         },
         "microstructure": {
@@ -985,7 +301,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4429
         },
         "microstructure": {
@@ -1004,16 +320,16 @@
           "parkinson": 0.0027,
           "yang_zhang": 0.0449,
           "regime": "low",
-          "percentile": 12.47
+          "percentile": 12.68
         },
         "hurst": {
           "value": 0.2457,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.4033
         },
         "microstructure": {
@@ -1034,16 +350,16 @@
           "parkinson": 0.0101,
           "yang_zhang": 0.1743,
           "regime": "medium",
-          "percentile": 63.2
+          "percentile": 61.95
         },
         "hurst": {
           "value": 0.4443,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.529
         },
         "microstructure": {
@@ -1069,9 +385,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.3465
         },
         "microstructure": {
@@ -1099,7 +415,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4593
         },
         "microstructure": {
@@ -1118,16 +434,16 @@
           "parkinson": 0.0027,
           "yang_zhang": 0.0461,
           "regime": "low",
-          "percentile": 11.23
+          "percentile": 11.64
         },
         "hurst": {
           "value": 0.2743,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.6002
         },
         "microstructure": {
@@ -1148,16 +464,16 @@
           "parkinson": 0.0098,
           "yang_zhang": 0.1699,
           "regime": "medium",
-          "percentile": 57.59
+          "percentile": 56.34
         },
         "hurst": {
           "value": 0.4415,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.3104
         },
         "microstructure": {
@@ -1183,9 +499,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.1965
         },
         "microstructure": {
@@ -1213,7 +529,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4324
         },
         "microstructure": {
@@ -1232,16 +548,16 @@
           "parkinson": 0.0027,
           "yang_zhang": 0.046,
           "regime": "low",
-          "percentile": 11.64
+          "percentile": 12.06
         },
         "hurst": {
           "value": 0.3102,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.5678
         },
         "microstructure": {
@@ -1262,16 +578,16 @@
           "parkinson": 0.0096,
           "yang_zhang": 0.1659,
           "regime": "medium",
-          "percentile": 54.26
+          "percentile": 53.01
         },
         "hurst": {
           "value": 0.4398,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.2519
         },
         "microstructure": {
@@ -1297,9 +613,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.1706
         },
         "microstructure": {
@@ -1327,7 +643,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4118
         },
         "microstructure": {
@@ -1346,16 +662,16 @@
           "parkinson": 0.0027,
           "yang_zhang": 0.0475,
           "regime": "low",
-          "percentile": 13.51
+          "percentile": 13.72
         },
         "hurst": {
           "value": 0.3327,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.2625
         },
         "microstructure": {
@@ -1376,16 +692,16 @@
           "parkinson": 0.0093,
           "yang_zhang": 0.1595,
           "regime": "medium",
-          "percentile": 50.52
+          "percentile": 49.27
         },
         "hurst": {
           "value": 0.4377,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.4793
         },
         "microstructure": {
@@ -1411,9 +727,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": -0.0799
         },
         "microstructure": {
@@ -1441,7 +757,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.2998
         },
         "microstructure": {
@@ -1460,16 +776,16 @@
           "parkinson": 0.0026,
           "yang_zhang": 0.047,
           "regime": "low",
-          "percentile": 6.86
+          "percentile": 7.28
         },
         "hurst": {
           "value": 0.3507,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.3653
         },
         "microstructure": {
@@ -1490,16 +806,16 @@
           "parkinson": 0.0093,
           "yang_zhang": 0.1583,
           "regime": "medium",
-          "percentile": 49.27
+          "percentile": 48.02
         },
         "hurst": {
           "value": 0.4387,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.2756
         },
         "microstructure": {
@@ -1525,9 +841,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": -0.1771
         },
         "microstructure": {
@@ -1555,7 +871,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3854
         },
         "microstructure": {
@@ -1574,16 +890,16 @@
           "parkinson": 0.0026,
           "yang_zhang": 0.0472,
           "regime": "low",
-          "percentile": 7.9
+          "percentile": 8.32
         },
         "hurst": {
           "value": 0.3685,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.1255
         },
         "microstructure": {
@@ -1604,16 +920,16 @@
           "parkinson": 0.009,
           "yang_zhang": 0.1536,
           "regime": "medium",
-          "percentile": 43.87
+          "percentile": 42.62
         },
         "hurst": {
           "value": 0.4393,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.3805
         },
         "microstructure": {
@@ -1639,9 +955,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.1104
         },
         "microstructure": {
@@ -1660,7 +976,7 @@
           "parkinson": 0.0333,
           "yang_zhang": 0.7384,
           "regime": "low",
-          "percentile": 28.9
+          "percentile": 29.11
         },
         "hurst": {
           "value": 0.2188,
@@ -1669,7 +985,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4621
         },
         "microstructure": {
@@ -1688,16 +1004,16 @@
           "parkinson": 0.0026,
           "yang_zhang": 0.0465,
           "regime": "low",
-          "percentile": 6.03
+          "percentile": 6.44
         },
         "hurst": {
           "value": 0.3885,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.2731
         },
         "microstructure": {
@@ -1718,16 +1034,16 @@
           "parkinson": 0.0091,
           "yang_zhang": 0.1501,
           "regime": "medium",
-          "percentile": 45.11
+          "percentile": 43.87
         },
         "hurst": {
           "value": 0.4362,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.6806
         },
         "microstructure": {
@@ -1746,16 +1062,16 @@
           "parkinson": 0.0063,
           "yang_zhang": 0.1062,
           "regime": "low",
-          "percentile": 31.39
+          "percentile": 32.02
         },
         "hurst": {
           "value": 0.2436,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.2857
         },
         "microstructure": {
@@ -1774,7 +1090,7 @@
           "parkinson": 0.0307,
           "yang_zhang": 0.6992,
           "regime": "low",
-          "percentile": 24.32
+          "percentile": 23.91
         },
         "hurst": {
           "value": 0.2175,
@@ -1783,7 +1099,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4505
         },
         "microstructure": {
@@ -1802,16 +1118,16 @@
           "parkinson": 0.0027,
           "yang_zhang": 0.0468,
           "regime": "low",
-          "percentile": 9.98
+          "percentile": 10.4
         },
         "hurst": {
           "value": 0.3925,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.0316
         },
         "microstructure": {
@@ -1832,16 +1148,16 @@
           "parkinson": 0.0092,
           "yang_zhang": 0.151,
           "regime": "medium",
-          "percentile": 46.78
+          "percentile": 45.53
         },
         "hurst": {
           "value": 0.4309,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.8031
         },
         "microstructure": {
@@ -1860,16 +1176,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0997,
           "regime": "low",
-          "percentile": 21.0
+          "percentile": 21.62
         },
         "hurst": {
           "value": 0.2385,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.4359
         },
         "microstructure": {
@@ -1888,7 +1204,7 @@
           "parkinson": 0.0291,
           "yang_zhang": 0.6736,
           "regime": "low",
-          "percentile": 22.25
+          "percentile": 22.04
         },
         "hurst": {
           "value": 0.2166,
@@ -1897,7 +1213,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4252
         },
         "microstructure": {
@@ -1916,16 +1232,16 @@
           "parkinson": 0.0026,
           "yang_zhang": 0.0456,
           "regime": "low",
-          "percentile": 4.57
+          "percentile": 4.78
         },
         "hurst": {
           "value": 0.4023,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.3161
         },
         "microstructure": {
@@ -1946,16 +1262,16 @@
           "parkinson": 0.0094,
           "yang_zhang": 0.1551,
           "regime": "medium",
-          "percentile": 50.73
+          "percentile": 49.48
         },
         "hurst": {
           "value": 0.4237,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.6001
         },
         "microstructure": {
@@ -1974,16 +1290,16 @@
           "parkinson": 0.0058,
           "yang_zhang": 0.0983,
           "regime": "low",
-          "percentile": 15.18
+          "percentile": 15.8
         },
         "hurst": {
           "value": 0.2346,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.4597
         },
         "microstructure": {
@@ -2002,7 +1318,7 @@
           "parkinson": 0.0286,
           "yang_zhang": 0.6702,
           "regime": "low",
-          "percentile": 20.37
+          "percentile": 20.17
         },
         "hurst": {
           "value": 0.2176,
@@ -2011,7 +1327,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3858
         },
         "microstructure": {
@@ -2030,16 +1346,16 @@
           "parkinson": 0.0025,
           "yang_zhang": 0.0452,
           "regime": "low",
-          "percentile": 3.53
+          "percentile": 3.74
         },
         "hurst": {
           "value": 0.4108,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.0099
         },
         "microstructure": {
@@ -2060,16 +1376,16 @@
           "parkinson": 0.0095,
           "yang_zhang": 0.1578,
           "regime": "medium",
-          "percentile": 53.64
+          "percentile": 52.39
         },
         "hurst": {
           "value": 0.422,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.7171
         },
         "microstructure": {
@@ -2088,16 +1404,16 @@
           "parkinson": 0.0058,
           "yang_zhang": 0.0987,
           "regime": "low",
-          "percentile": 16.01
+          "percentile": 16.63
         },
         "hurst": {
           "value": 0.2315,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.3644
         },
         "microstructure": {
@@ -2116,7 +1432,7 @@
           "parkinson": 0.0287,
           "yang_zhang": 0.6723,
           "regime": "low",
-          "percentile": 21.0
+          "percentile": 20.79
         },
         "hurst": {
           "value": 0.2194,
@@ -2125,7 +1441,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3684
         },
         "microstructure": {
@@ -2144,16 +1460,16 @@
           "parkinson": 0.0025,
           "yang_zhang": 0.045,
           "regime": "low",
-          "percentile": 3.12
+          "percentile": 3.33
         },
         "hurst": {
           "value": 0.4181,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.2047
         },
         "microstructure": {
@@ -2174,16 +1490,16 @@
           "parkinson": 0.0119,
           "yang_zhang": 0.1817,
           "regime": "high",
-          "percentile": 76.72
+          "percentile": 75.47
         },
         "hurst": {
           "value": 0.4233,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.2798
         },
         "microstructure": {
@@ -2202,16 +1518,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0993,
           "regime": "low",
-          "percentile": 17.46
+          "percentile": 18.09
         },
         "hurst": {
           "value": 0.2306,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.2478
         },
         "microstructure": {
@@ -2230,7 +1546,7 @@
           "parkinson": 0.0287,
           "yang_zhang": 0.6735,
           "regime": "low",
-          "percentile": 20.79
+          "percentile": 20.58
         },
         "hurst": {
           "value": 0.2224,
@@ -2239,7 +1555,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3765
         },
         "microstructure": {
@@ -2265,9 +1581,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.0147
         },
         "microstructure": {
@@ -2288,16 +1604,16 @@
           "parkinson": 0.012,
           "yang_zhang": 0.1859,
           "regime": "high",
-          "percentile": 77.55
+          "percentile": 76.3
         },
         "hurst": {
           "value": 0.4139,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": -0.0337
         },
         "microstructure": {
@@ -2316,16 +1632,16 @@
           "parkinson": 0.0058,
           "yang_zhang": 0.0975,
           "regime": "low",
-          "percentile": 13.51
+          "percentile": 14.14
         },
         "hurst": {
           "value": 0.2302,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.1254
         },
         "microstructure": {
@@ -2353,7 +1669,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3622
         },
         "microstructure": {
@@ -2379,9 +1695,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.335
         },
         "microstructure": {
@@ -2402,16 +1718,16 @@
           "parkinson": 0.0121,
           "yang_zhang": 0.1882,
           "regime": "high",
-          "percentile": 79.0
+          "percentile": 77.75
         },
         "hurst": {
           "value": 0.3983,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": -0.0915
         },
         "microstructure": {
@@ -2430,16 +1746,16 @@
           "parkinson": 0.0058,
           "yang_zhang": 0.0971,
           "regime": "low",
-          "percentile": 14.55
+          "percentile": 15.18
         },
         "hurst": {
           "value": 0.232,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": -0.1213
         },
         "microstructure": {
@@ -2467,7 +1783,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3208
         },
         "microstructure": {
@@ -2493,9 +1809,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.0705
         },
         "microstructure": {
@@ -2516,16 +1832,16 @@
           "parkinson": 0.0124,
           "yang_zhang": 0.1947,
           "regime": "high",
-          "percentile": 80.67
+          "percentile": 79.42
         },
         "hurst": {
           "value": 0.3887,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": -0.2996
         },
         "microstructure": {
@@ -2544,16 +1860,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0981,
           "regime": "low",
-          "percentile": 16.42
+          "percentile": 17.05
         },
         "hurst": {
           "value": 0.2308,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": -0.105
         },
         "microstructure": {
@@ -2581,7 +1897,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3142
         },
         "microstructure": {
@@ -2607,9 +1923,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.4556
         },
         "microstructure": {
@@ -2630,16 +1946,16 @@
           "parkinson": 0.0128,
           "yang_zhang": 0.201,
           "regime": "high",
-          "percentile": 82.95
+          "percentile": 81.7
         },
         "hurst": {
           "value": 0.3843,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.0741
         },
         "microstructure": {
@@ -2658,16 +1974,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0989,
           "regime": "low",
-          "percentile": 19.75
+          "percentile": 20.37
         },
         "hurst": {
           "value": 0.2308,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.0877
         },
         "microstructure": {
@@ -2695,7 +2011,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.2568
         },
         "microstructure": {
@@ -2714,16 +2030,16 @@
           "parkinson": 0.0025,
           "yang_zhang": 0.0447,
           "regime": "low",
-          "percentile": 2.91
+          "percentile": 3.12
         },
         "hurst": {
           "value": 0.4397,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": -0.129
         },
         "microstructure": {
@@ -2744,16 +2060,16 @@
           "parkinson": 0.0127,
           "yang_zhang": 0.1983,
           "regime": "high",
-          "percentile": 82.74
+          "percentile": 81.5
         },
         "hurst": {
           "value": 0.3799,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.3954
         },
         "microstructure": {
@@ -2772,16 +2088,16 @@
           "parkinson": 0.006,
           "yang_zhang": 0.099,
           "regime": "low",
-          "percentile": 22.66
+          "percentile": 23.28
         },
         "hurst": {
           "value": 0.2319,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.3421
         },
         "microstructure": {
@@ -2809,7 +2125,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.2413
         },
         "microstructure": {
@@ -2828,16 +2144,16 @@
           "parkinson": 0.0026,
           "yang_zhang": 0.0454,
           "regime": "low",
-          "percentile": 4.78
+          "percentile": 4.99
         },
         "hurst": {
           "value": 0.4407,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.4591
         },
         "microstructure": {
@@ -2858,16 +2174,16 @@
           "parkinson": 0.0129,
           "yang_zhang": 0.2008,
           "regime": "high",
-          "percentile": 83.78
+          "percentile": 82.54
         },
         "hurst": {
           "value": 0.3728,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.3049
         },
         "microstructure": {
@@ -2886,16 +2202,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0984,
           "regime": "low",
-          "percentile": 20.37
+          "percentile": 21.0
         },
         "hurst": {
           "value": 0.2319,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.0389
         },
         "microstructure": {
@@ -2923,7 +2239,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.196
         },
         "microstructure": {
@@ -2942,16 +2258,16 @@
           "parkinson": 0.0025,
           "yang_zhang": 0.0447,
           "regime": "low",
-          "percentile": 3.33
+          "percentile": 3.53
         },
         "hurst": {
           "value": 0.4426,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.8466
         },
         "microstructure": {
@@ -2972,16 +2288,16 @@
           "parkinson": 0.013,
           "yang_zhang": 0.2038,
           "regime": "high",
-          "percentile": 84.41
+          "percentile": 83.37
         },
         "hurst": {
           "value": 0.3697,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.6856
         },
         "microstructure": {
@@ -3000,16 +2316,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0992,
           "regime": "low",
-          "percentile": 21.41
+          "percentile": 22.04
         },
         "hurst": {
           "value": 0.2341,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.278
         },
         "microstructure": {
@@ -3037,7 +2353,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.26
         },
         "microstructure": {
@@ -3056,16 +2372,16 @@
           "parkinson": 0.0025,
           "yang_zhang": 0.0445,
           "regime": "low",
-          "percentile": 2.7
+          "percentile": 2.91
         },
         "hurst": {
           "value": 0.4411,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.7977
         },
         "microstructure": {
@@ -3086,16 +2402,16 @@
           "parkinson": 0.013,
           "yang_zhang": 0.204,
           "regime": "high",
-          "percentile": 84.82
+          "percentile": 83.78
         },
         "hurst": {
           "value": 0.3659,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.7993
         },
         "microstructure": {
@@ -3114,16 +2430,16 @@
           "parkinson": 0.0059,
           "yang_zhang": 0.0987,
           "regime": "low",
-          "percentile": 17.67
+          "percentile": 18.3
         },
         "hurst": {
           "value": 0.2342,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.4884
         },
         "microstructure": {
@@ -3151,7 +2467,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3665
         },
         "microstructure": {
@@ -3177,9 +2493,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.774
         },
         "microstructure": {
@@ -3200,16 +2516,16 @@
           "parkinson": 0.0132,
           "yang_zhang": 0.2072,
           "regime": "high",
-          "percentile": 86.07
+          "percentile": 85.03
         },
         "hurst": {
           "value": 0.363,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.7875
         },
         "microstructure": {
@@ -3228,16 +2544,16 @@
           "parkinson": 0.0057,
           "yang_zhang": 0.0951,
           "regime": "low",
-          "percentile": 13.1
+          "percentile": 13.72
         },
         "hurst": {
           "value": 0.2339,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.7151
         },
         "microstructure": {
@@ -3265,7 +2581,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.4461
         },
         "microstructure": {
@@ -3291,9 +2607,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.7396
         },
         "microstructure": {
@@ -3314,16 +2630,16 @@
           "parkinson": 0.013,
           "yang_zhang": 0.2027,
           "regime": "high",
-          "percentile": 84.62
+          "percentile": 83.58
         },
         "hurst": {
           "value": 0.3569,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.5425
         },
         "microstructure": {
@@ -3349,9 +2665,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.5569
         },
         "microstructure": {
@@ -3379,7 +2695,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3277
         },
         "microstructure": {
@@ -3405,9 +2721,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.798
         },
         "microstructure": {
@@ -3428,16 +2744,16 @@
           "parkinson": 0.0129,
           "yang_zhang": 0.2005,
           "regime": "high",
-          "percentile": 84.2
+          "percentile": 82.95
         },
         "hurst": {
           "value": 0.3541,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.5886
         },
         "microstructure": {
@@ -3463,9 +2779,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.5033
         },
         "microstructure": {
@@ -3493,7 +2809,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.0329
         },
         "microstructure": {
@@ -3519,9 +2835,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.6742
         },
         "microstructure": {
@@ -3542,16 +2858,16 @@
           "parkinson": 0.0128,
           "yang_zhang": 0.1997,
           "regime": "high",
-          "percentile": 83.37
+          "percentile": 82.12
         },
         "hurst": {
           "value": 0.3518,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.6
         },
         "microstructure": {
@@ -3577,9 +2893,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.4317
         },
         "microstructure": {
@@ -3607,7 +2923,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.1431
         },
         "microstructure": {
@@ -3633,9 +2949,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.6432
         },
         "microstructure": {
@@ -3656,16 +2972,16 @@
           "parkinson": 0.013,
           "yang_zhang": 0.2047,
           "regime": "high",
-          "percentile": 85.03
+          "percentile": 83.99
         },
         "hurst": {
           "value": 0.3509,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.6045
         },
         "microstructure": {
@@ -3691,9 +3007,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.3066
         },
         "microstructure": {
@@ -3721,7 +3037,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.3536
         },
         "microstructure": {
@@ -3747,9 +3063,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.6321
         },
         "microstructure": {
@@ -3770,16 +3086,16 @@
           "parkinson": 0.013,
           "yang_zhang": 0.2061,
           "regime": "high",
-          "percentile": 85.24
+          "percentile": 84.2
         },
         "hurst": {
           "value": 0.35,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
           "accumulation_score": 0.5768
         },
         "microstructure": {
@@ -3805,9 +3121,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
           "accumulation_score": 0.3336
         },
         "microstructure": {
@@ -3835,7 +3151,7 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": -0.2403
         },
         "microstructure": {
@@ -3861,9 +3177,9 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
           "accumulation_score": 0.4633
         },
         "microstructure": {
@@ -3882,23 +3198,23 @@
         "name": "Gold",
         "volatility": {
           "parkinson": 0.0133,
-          "yang_zhang": 0.2083,
+          "yang_zhang": 0.2081,
           "regime": "high",
-          "percentile": 86.9
+          "percentile": 85.86
         },
         "hurst": {
           "value": 0.3514,
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 4207.71,
-          "profile_vah": 4606.59,
-          "profile_val": 3622.69,
-          "accumulation_score": 0.6539
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.6645
         },
         "microstructure": {
           "spread_estimate": 0.02,
-          "efficiency_ratio": 0.4058
+          "efficiency_ratio": 0.4076
         },
         "probability": {
           "bull_regime": 0.25,
@@ -3910,7 +3226,7 @@
         "name": "S&P500",
         "volatility": {
           "parkinson": 0.005,
-          "yang_zhang": 0.0901,
+          "yang_zhang": 0.0906,
           "regime": "low",
           "percentile": 2.29
         },
@@ -3919,14 +3235,14 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 6819.19,
-          "profile_vah": 6882.96,
-          "profile_val": 6589.61,
-          "accumulation_score": -0.4144
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": -0.2897
         },
         "microstructure": {
           "spread_estimate": 0.0079,
-          "efficiency_ratio": 0.0632
+          "efficiency_ratio": 0.052
         },
         "probability": {
           "bull_regime": 0.25,
@@ -3938,7 +3254,7 @@
         "name": "VIX",
         "volatility": {
           "parkinson": 0.0274,
-          "yang_zhang": 0.726,
+          "yang_zhang": 0.727,
           "regime": "low",
           "percentile": 16.22
         },
@@ -3949,12 +3265,12 @@
         "volume": {
           "profile_poc": 18.23,
           "profile_vah": 21.75,
-          "profile_val": 17.23,
+          "profile_val": 17.48,
           "accumulation_score": 1.0
         },
         "microstructure": {
           "spread_estimate": 0.04,
-          "efficiency_ratio": 0.32
+          "efficiency_ratio": 0.3163
         },
         "probability": {
           "bull_regime": 0.25,
@@ -3966,7 +3282,7 @@
         "name": "DXY",
         "volatility": {
           "parkinson": 0.0025,
-          "yang_zhang": 0.0451,
+          "yang_zhang": 0.0449,
           "regime": "low",
           "percentile": 2.49
         },
@@ -3975,14 +3291,698 @@
           "state": "mean_reverting"
         },
         "volume": {
-          "profile_poc": 98.69,
-          "profile_vah": 99.41,
-          "profile_val": 97.44,
-          "accumulation_score": 0.3741
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": 0.3605
         },
         "microstructure": {
           "spread_estimate": 0.0039,
-          "efficiency_ratio": 0.0038
+          "efficiency_ratio": 0.0017
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-21": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0133,
+          "yang_zhang": 0.2138,
+          "regime": "high",
+          "percentile": 86.49
+        },
+        "hurst": {
+          "value": 0.3508,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.6028
+        },
+        "microstructure": {
+          "spread_estimate": 0.0201,
+          "efficiency_ratio": 0.3867
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0055,
+          "yang_zhang": 0.0971,
+          "regime": "low",
+          "percentile": 10.19
+        },
+        "hurst": {
+          "value": 0.2208,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": 0.2571
+        },
+        "microstructure": {
+          "spread_estimate": 0.0085,
+          "efficiency_ratio": 0.0112
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0313,
+          "yang_zhang": 0.7491,
+          "regime": "low",
+          "percentile": 24.12
+        },
+        "hurst": {
+          "value": 0.2421,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.48,
+          "accumulation_score": -0.4964
+        },
+        "microstructure": {
+          "spread_estimate": 0.0446,
+          "efficiency_ratio": 0.1509
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0025,
+          "yang_zhang": 0.0453,
+          "regime": "low",
+          "percentile": 2.7
+        },
+        "hurst": {
+          "value": 0.422,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": 0.4805
+        },
+        "microstructure": {
+          "spread_estimate": 0.0039,
+          "efficiency_ratio": 0.1644
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-22": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.014,
+          "yang_zhang": 0.2242,
+          "regime": "high",
+          "percentile": 87.32
+        },
+        "hurst": {
+          "value": 0.3503,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.655
+        },
+        "microstructure": {
+          "spread_estimate": 0.0211,
+          "efficiency_ratio": 0.4228
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0056,
+          "yang_zhang": 0.0977,
+          "regime": "low",
+          "percentile": 10.81
+        },
+        "hurst": {
+          "value": 0.2187,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": 0.3246
+        },
+        "microstructure": {
+          "spread_estimate": 0.0086,
+          "efficiency_ratio": 0.0109
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0314,
+          "yang_zhang": 0.7488,
+          "regime": "low",
+          "percentile": 24.32
+        },
+        "hurst": {
+          "value": 0.2404,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.48,
+          "accumulation_score": -0.8267
+        },
+        "microstructure": {
+          "spread_estimate": 0.045,
+          "efficiency_ratio": 0.0994
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0026,
+          "yang_zhang": 0.0456,
+          "regime": "low",
+          "percentile": 5.41
+        },
+        "hurst": {
+          "value": 0.4215,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": 0.2527
+        },
+        "microstructure": {
+          "spread_estimate": 0.004,
+          "efficiency_ratio": 0.122
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-23": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.014,
+          "yang_zhang": 0.2243,
+          "regime": "high",
+          "percentile": 87.73
+        },
+        "hurst": {
+          "value": 0.3514,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.6655
+        },
+        "microstructure": {
+          "spread_estimate": 0.0211,
+          "efficiency_ratio": 0.455
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.0056,
+          "yang_zhang": 0.0981,
+          "regime": "low",
+          "percentile": 11.43
+        },
+        "hurst": {
+          "value": 0.2125,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": 0.1458
+        },
+        "microstructure": {
+          "spread_estimate": 0.0086,
+          "efficiency_ratio": 0.038
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0317,
+          "yang_zhang": 0.7521,
+          "regime": "low",
+          "percentile": 24.53
+        },
+        "hurst": {
+          "value": 0.2387,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.48,
+          "accumulation_score": -0.3571
+        },
+        "microstructure": {
+          "spread_estimate": 0.0462,
+          "efficiency_ratio": 0.1351
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0029,
+          "yang_zhang": 0.0486,
+          "regime": "low",
+          "percentile": 19.54
+        },
+        "hurst": {
+          "value": 0.4137,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": -0.0276
+        },
+        "microstructure": {
+          "spread_estimate": 0.0045,
+          "efficiency_ratio": 0.0766
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-26": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0142,
+          "yang_zhang": 0.2328,
+          "regime": "high",
+          "percentile": 88.15
+        },
+        "hurst": {
+          "value": 0.3584,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.4462
+        },
+        "microstructure": {
+          "spread_estimate": 0.0216,
+          "efficiency_ratio": 0.4408
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.006,
+          "yang_zhang": 0.104,
+          "regime": "low",
+          "percentile": 24.53
+        },
+        "hurst": {
+          "value": 0.2077,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": 0.5231
+        },
+        "microstructure": {
+          "spread_estimate": 0.0093,
+          "efficiency_ratio": 0.0313
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0327,
+          "yang_zhang": 0.7687,
+          "regime": "low",
+          "percentile": 27.23
+        },
+        "hurst": {
+          "value": 0.2398,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.48,
+          "accumulation_score": -0.5887
+        },
+        "microstructure": {
+          "spread_estimate": 0.0483,
+          "efficiency_ratio": 0.1341
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.003,
+          "yang_zhang": 0.051,
+          "regime": "low",
+          "percentile": 22.45
+        },
+        "hurst": {
+          "value": 0.3946,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": -0.0675
+        },
+        "microstructure": {
+          "spread_estimate": 0.0046,
+          "efficiency_ratio": 0.1653
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-27": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0129,
+          "yang_zhang": 0.219,
+          "regime": "high",
+          "percentile": 83.16
+        },
+        "hurst": {
+          "value": 0.3729,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.5529
+        },
+        "microstructure": {
+          "spread_estimate": 0.0204,
+          "efficiency_ratio": 0.8062
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.006,
+          "yang_zhang": 0.1037,
+          "regime": "low",
+          "percentile": 24.32
+        },
+        "hurst": {
+          "value": 0.2035,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": 0.578
+        },
+        "microstructure": {
+          "spread_estimate": 0.0093,
+          "efficiency_ratio": 0.1138
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.0327,
+          "yang_zhang": 0.769,
+          "regime": "low",
+          "percentile": 27.44
+        },
+        "hurst": {
+          "value": 0.24,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.48,
+          "accumulation_score": -0.4021
+        },
+        "microstructure": {
+          "spread_estimate": 0.0484,
+          "efficiency_ratio": 0.1749
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.0038,
+          "yang_zhang": 0.06,
+          "regime": "medium",
+          "percentile": 54.68
+        },
+        "hurst": {
+          "value": 0.3797,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": -0.4031
+        },
+        "microstructure": {
+          "spread_estimate": 0.0054,
+          "efficiency_ratio": 0.3276
+        },
+        "probability": {
+          "bull_regime": 0.33,
+          "bear_regime": 0.33,
+          "consolidation": 0.34
+        }
+      }
+    },
+    "2026-01-28": {
+      "XAUUSD": {
+        "name": "Gold",
+        "volatility": {
+          "parkinson": 0.0133,
+          "yang_zhang": 0.2184,
+          "regime": "high",
+          "percentile": 86.28
+        },
+        "hurst": {
+          "value": 0.3895,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 4189.49,
+          "profile_vah": 4631.5,
+          "profile_val": 3951.48,
+          "accumulation_score": 0.624
+        },
+        "microstructure": {
+          "spread_estimate": 0.0209,
+          "efficiency_ratio": 0.8268
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "USA500.IDX": {
+        "name": "S&P500",
+        "volatility": {
+          "parkinson": 0.006,
+          "yang_zhang": 0.105,
+          "regime": "low",
+          "percentile": 24.95
+        },
+        "hurst": {
+          "value": 0.197,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 6843.33,
+          "profile_vah": 6907.11,
+          "profile_val": 6598.86,
+          "accumulation_score": 0.3192
+        },
+        "microstructure": {
+          "spread_estimate": 0.0094,
+          "efficiency_ratio": 0.1239
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "VOL.IDX": {
+        "name": "VIX",
+        "volatility": {
+          "parkinson": 0.033,
+          "yang_zhang": 0.7726,
+          "regime": "low",
+          "percentile": 28.48
+        },
+        "hurst": {
+          "value": 0.2428,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 18.23,
+          "profile_vah": 21.75,
+          "profile_val": 17.48,
+          "accumulation_score": -0.3101
+        },
+        "microstructure": {
+          "spread_estimate": 0.0491,
+          "efficiency_ratio": 0.2062
+        },
+        "probability": {
+          "bull_regime": 0.25,
+          "bear_regime": 0.25,
+          "consolidation": 0.5
+        }
+      },
+      "DOLLAR.IDX": {
+        "name": "DXY",
+        "volatility": {
+          "parkinson": 0.004,
+          "yang_zhang": 0.0624,
+          "regime": "medium",
+          "percentile": 60.29
+        },
+        "hurst": {
+          "value": 0.3558,
+          "state": "mean_reverting"
+        },
+        "volume": {
+          "profile_poc": 98.72,
+          "profile_vah": 99.52,
+          "profile_val": 97.53,
+          "accumulation_score": -0.1269
+        },
+        "microstructure": {
+          "spread_estimate": 0.0056,
+          "efficiency_ratio": 0.2173
         },
         "probability": {
           "bull_regime": 0.33,

@@ -9,9 +9,9 @@ GOLD(4):
 2026-|Gold, Europe ETFs In Focus As EU Prepares To Retaliate Again|GLD
 2026-|Daily ETF Flows: GLD Gobbles Up $1.6B|GLD
 
-MARKET(9):
-2026-|Is Stock Market Open Today? What's Open And What's Closed On|SPY
-2026-|If History Repeats, This Unstoppable ETF Can Make You a Mill|SPY
-2026-|SEC Approves Expanded Option Expirations for Magnificent Sev|SPY
-2026-|'Very Scary:' Markets Are Missing A Huge Warning Sign, Says |SPY
+MARKET(8):
+2026-|Is Stock Market Open Today? What's Open And What's Closed On|QQQ
+2026-|SEC Approves Expanded Option Expirations for Magnificent Sev|QQQ
+2026-|'Very Scary:' Markets Are Missing A Huge Warning Sign, Says |QQQ
 2026-|1 Reason Why Now Is a Great Time to Buy the Invesco QQQ Trus|QQQ
+2026-|Trump Proposes New EU Tariffs, Sending Futures Lower and Gol|QQQ

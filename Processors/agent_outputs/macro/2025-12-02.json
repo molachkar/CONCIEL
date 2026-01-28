@@ -2,34 +2,31 @@
   "metadata": {
     "agent": "macro",
     "date": "2025-12-02",
-    "timestamp": "2026-01-28T18:15:55.348467",
+    "timestamp": "2026-01-28T19:21:47.886051",
     "model": "Qwen-235B"
   },
   "data_snapshot": {
-    "economic_events": "FEDFUNDS decreased from 4.09% to 3.72%",
-    "rates": "FEDFUNDS: 3.72%",
-    "inflation": "CPI: 326.03, YoY%: 0.31% (calculated from 325.03 to 326.03)",
-    "real_rate": "1.23% (given) or calculation pending for T10Y yield and prior year CPI, however, using given Real Rate for analysis"
+    "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0",
+    "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
+    "inflation": "CPI YoY: 0.31%",
+    "real_rate": "T10Y - CPI_YoY = unknown - 0.31% = unknown",
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
-    "regime": "RISK_ON",
+    "regime": "NEUTRAL",
     "trend": "dovish",
     "key_drivers": [
-      "FEDFUNDS decrease from 4.09% to 3.72%",
-      "stable inflation with CPI YoY% at 0.31%"
+      "FEDFUNDS decreased to 3.72%",
+      "NFP increased to 159526K"
     ],
-    "reasoning": "dovish Fed policy indicated by decreasing FEDFUNDS rate, stable inflation, and given Real Rate of 1.23% suggests falling real rates",
-    "confidence": 0.85,
+    "reasoning": "The decrease in FEDFUNDS and increase in NFP may indicate a dovish trend, but the lack of historical context and unknown T10Y rate make it difficult to determine the overall regime.",
     "risk_factors": [
-      "incomplete data for T10Y yield"
+      "GEOPOLITICAL_RISK increased by 20.97%",
+      "GOLD_ETF_FLOWS increased for GLD and IAU"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "2025-12-01 analysis"
-    ],
-    "corrections": [
-      "prior year CPI used for YoY% calculation"
-    ]
+    "compared_to": [],
+    "corrections": []
   }
 }

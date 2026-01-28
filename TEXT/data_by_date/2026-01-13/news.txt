@@ -5,9 +5,8 @@ GOLD(3):
 2026-|Investors flocking to gold for safety may be making a big mi|GLD
 2026-|Daily ETF Flows: Nearly $1B Flows Into GLD|GLD
 
-MARKET(18):
-2026-|Questcorp and Riverside Make New Gold Discovery in Initial D|QQQ
-2026-|Want to Invest in AI Stocks in 2026? Here's Why This Popular|QQQ
-2026-|Top Economist Rebuts Trump: $200 Billion Housing Stimulus Vi|SPY
-2026-|Cathie Wood Predicts 'Goldilocks' Boom In 2026: 5% GDP With |SPY
-2026-|Goldman Sachs Warns Valuations Are 'Historically High,' But |SPY
+MARKET(4):
+2026-|World's Top Central Bankers Rally Behind Powell On Fed Indep|DIA
+2026-|Stock Indexes Slip as the Magnificent Seven Technology Stock|DIA
+2026-|Silver Jumps To $89 After Soft CPI, JPMorgan Falls 3%: What'|DIA
+2026-|Stocks Fall on Weakness in Software and Credit Card Companie|DIA
