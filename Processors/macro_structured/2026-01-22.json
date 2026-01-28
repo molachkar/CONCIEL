@@ -1,0 +1,111 @@
+{
+  "date": "2026-01-22",
+  "timestamp": "2026-01-28T18:22:49.463492",
+  "agents": {
+    "macro": {
+      "metadata": {
+        "agent": "macro",
+        "date": "2026-01-22",
+        "timestamp": "2026-01-28T18:22:49.511415",
+        "model": "Qwen-235B"
+      },
+      "data_snapshot": {
+        "economic_events": "No calendar data available",
+        "rates": "T10Y: Not provided, FEDFUNDS: 3.72%",
+        "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
+        "real_rate": "Real Rate calculation: T10Y yield is not provided. Assuming FEDFUNDS rate of 3.72% for calculation purposes. Real Rate = 3.72% - 0.31% = 3.41%"
+      },
+      "analysis": {
+        "regime": "NEUTRAL",
+        "trend": "stable",
+        "key_drivers": [
+          "low inflation",
+          "stable interest rates"
+        ],
+        "reasoning": "The Real Rate is calculated as 3.41%, which is relatively high. However, without the T10Y yield, the accuracy of this calculation is limited. The FEDFUNDS rate has been decreasing, which could be seen as dovish, but the low CPI YoY% suggests that inflation is under control. Therefore, the regime is classified as NEUTRAL.",
+        "confidence": 0.6,
+        "risk_factors": [
+          "Inaccurate Real Rate calculation due to missing T10Y yield",
+          "Potential for inflation to rise"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    },
+    "market": {
+      "metadata": {
+        "agent": "market",
+        "date": "2026-01-22",
+        "timestamp": "2026-01-28T18:22:50.867357",
+        "model": "DeepSeek-V3.1"
+      },
+      "data_snapshot": {
+        "price_action": "Unable to retrieve due to data file errors. Based on recent context, gold was in strong breakout regime with price above all EMAs, breaking above upper Bollinger Band, and achieving new highs near 4766 on 2026-01-20",
+        "momentum": "Unable to retrieve current data. Previous momentum showed RSI extremely overbought (75.49), MACD strongly bullish with positive histogram (16.85), ADX strong trend strength (31.62), Stochastic extremely overbought",
+        "volatility": "Unable to retrieve current data. Previous regime showed high volatility (86.9%) with mean-reverting properties and strong positive accumulation (0.6539)",
+        "cross_assets": "Unable to retrieve current data. Previous context showed SPX weakness, VIX breakout (20.08), DXY weakness - indicating risk-off environment favorable for gold"
+      },
+      "analysis": {
+        "regime": "BREAKOUT",
+        "trend": "Strong bullish continuation expected based on recent powerful breakout pattern, though data unavailability prevents precise current assessment",
+        "key_drivers": [
+          "Recent EMA_BULL_STACK signal with price well above all key EMAs",
+          "Previous BB_BREAKOUT_UP signal with price breaking above upper Bollinger Band",
+          "High volatility regime supporting momentum continuation",
+          "Strong positive accumulation indicating institutional buying pressure",
+          "Risk-off environment with SPX weakness and VIX breakout supporting safe-haven flows"
+        ],
+        "reasoning": "Despite current data unavailability, the strong breakout pattern established in recent days (new highs above 4760, breaking above Bollinger Bands, EMA_BULL_STACK configuration) combined with supportive risk-off cross-asset environment (SPX weakness, VIX elevated, DXY weak) suggests continuation of the BREAKOUT regime. The high volatility regime and strong institutional accumulation support momentum persistence, though overbought conditions noted in previous data warrant monitoring for potential pullback risks.",
+        "confidence": 0.75,
+        "risk_factors": [
+          "Data unavailability prevents real-time assessment of current conditions",
+          "Previous extremely overbought conditions (RSI 75.49, Stochastic extreme) suggest elevated pullback risk",
+          "High volatility regime may lead to sharp reversals",
+          "VIX breakout indicates significant market stress that could affect all assets",
+          "Potential mean reversion after breaking above upper Bollinger Band"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [
+          "2026-01-20: Similar breakout continuation pattern",
+          "2026-01-19: Strong bullish momentum with risk-off support",
+          "2026-01-16: Healthy pullback within breakout context"
+        ],
+        "corrections": []
+      }
+    },
+    "narrative": {
+      "metadata": {
+        "agent": "narrative",
+        "date": "2026-01-22",
+        "timestamp": "2026-01-28T18:22:55.850423",
+        "model": "Meta-Llama-3.3-70B"
+      },
+      "data_snapshot": {
+        "dominant_story": "Unable to determine due to missing news and forums data",
+        "sentiment": "Unknown",
+        "catalysts": "Unknown",
+        "geopolitical": "Unknown"
+      },
+      "analysis": {
+        "regime": "NEUTRAL_NARRATIVE",
+        "trend": "Unable to determine due to lack of data",
+        "key_drivers": [
+          "Insufficient data"
+        ],
+        "reasoning": "The analysis is unable to determine the current narrative due to the absence of news and forums data for 2026-01-22. Without this information, it's impossible to accurately assess the sentiment, catalysts, and geopolitical risk. Therefore, a neutral narrative is assigned by default, indicating a lack of sufficient data to make a more informed decision.",
+        "confidence": 0.0,
+        "risk_factors": [
+          "Data unavailability",
+          "Potential for unexpected market movements"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    }
+  }
+}

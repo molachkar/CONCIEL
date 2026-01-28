@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2025-12-15",
+    "timestamp": "2026-01-28T18:17:19.442916",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "FEDFUNDS decreased from 4.09% to 3.72%",
+    "rates": "FEDFUNDS: 3.72%, M2_MONEY_SUPPLY increased",
+    "inflation": "CPI increased from 325.03 to 326.03, PCE increased from 127.83 to 128.09",
+    "real_rate": "To calculate Real Rate: T10Y yield is not provided, assuming T10Y yield = FEDFUNDS = 3.72%, CPI YoY = ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate = 3.72% - 0.31% = 3.41%"
+  },
+  "analysis": {
+    "regime": "RISK_ON",
+    "trend": "dovish",
+    "key_drivers": [
+      "decrease in FEDFUNDS",
+      "low inflation"
+    ],
+    "reasoning": "The decrease in FEDFUNDS from 4.09% to 3.72% indicates a dovish Fed policy. The low inflation rate, with CPI increasing only by 0.31% YoY, also supports a RISK_ON regime. The Real Rate, calculated as 3.41%, is relatively high but the trend is more important than the absolute value.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "inflation increase",
+      "geopolitical risk"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

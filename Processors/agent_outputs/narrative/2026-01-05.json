@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-05",
+    "timestamp": "2026-01-28T18:19:41.966319",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "US Ousts Venezuela's Maduro, Gold and Dollar Jump",
+    "sentiment": "Bullish",
+    "catalysts": "Geopolitical events, Energy stocks",
+    "geopolitical": "High"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing",
+    "key_drivers": [
+      "Gold price increase",
+      "Energy stocks jump",
+      "US geopolitical actions"
+    ],
+    "reasoning": "The ousting of Venezuela's Maduro has led to a jump in gold and dollar prices, indicating a risk-on narrative. The increase in energy stocks also supports this trend. However, the lack of historical context and forum data limits the confidence in this analysis.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "Geopolitical instability",
+      "Market volatility"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

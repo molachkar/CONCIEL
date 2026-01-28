@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-19",
+    "timestamp": "2026-01-28T18:22:16.371873",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "Global economic uncertainty and geopolitical tensions drive gold prices to record highs",
+    "sentiment": "Bullish on gold, bearish on global economy",
+    "catalysts": "Trump's Greenland threat, EU retaliation, and dollar pressure",
+    "geopolitical": "High risk due to US-EU and US-China tensions"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing gold prices and market volatility",
+    "key_drivers": [
+      "Geopolitical tensions",
+      "Global economic uncertainty",
+      "Record gold prices"
+    ],
+    "reasoning": "The current narrative is driven by escalating geopolitical tensions, particularly between the US and EU, as well as the US and China. The threat of tariffs and retaliation has led to a decrease in global stocks and an increase in gold prices. This trend is expected to continue as investors seek safe-haven assets amidst the uncertainty.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "Escalating US-EU and US-China tensions",
+      "Global economic downturn",
+      "Dollar pressure"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

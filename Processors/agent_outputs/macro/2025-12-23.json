@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2025-12-23",
+    "timestamp": "2026-01-28T18:18:08.641588",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "ADP Employment Change: 11.50K, Core Durable Goods Orders: 0.2%, Core PCE Prices (Q3): 2.90%, Durable Goods Orders (MOM): -2.2%, GDP (QOQ) (Q3): 4.3%, GDP Price Index (QOQ) (Q3): 3.7%, Industrial Production (MOM): -0.1%, Industrial Production (YOY): 2.20%, CB Consumer Confidence: 89.1, Atlanta Fed GDPNow (Q4): 3.0%",
+    "rates": "T10Y: 4.18%, HY_SPREAD: 2.83%, FEDFUNDS: 3.72%",
+    "inflation": "CPI: 326.03, YoY%: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
+    "real_rate": "T10Y: 4.18%, CPI YoY: 0.31%, Real Rate = 4.18% - 0.31% = 3.87%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The current real rate is 3.87%, which is relatively high. However, the Fed funds rate has been decreasing (from 4.09% to 3.72%), indicating a dovish stance. The low inflation rate (0.31% YoY) also suggests that the Fed may not need to tighten monetary policy further. Therefore, the regime is neutral.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "inflation surprise",
+      "interest rate volatility"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

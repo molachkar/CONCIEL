@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2025-12-29",
+    "timestamp": "2026-01-28T18:18:48.317540",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "PENDING_HOME_SALES_(MOM)_BEAT, CRUDE_OIL_INVENTORIES_BEAT",
+    "rates": "T10Y: 4.12%, T2Y: 3.45%, T5Y: 3.67%, T30Y: 4.8%, HY_SPREAD: 2.87%",
+    "inflation": "CPI: 326.03, PCE: 128.09, PPI: 261.56",
+    "real_rate": "T10Y: 4.12%, CPI_YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate = 4.12% - 0.31% = 3.81%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The current real rate is 3.81%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "inflation uncertainty",
+      "interest rate changes"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "previous month",
+      "previous year"
+    ],
+    "corrections": [
+      "CPI YoY calculation"
+    ]
+  }
+}

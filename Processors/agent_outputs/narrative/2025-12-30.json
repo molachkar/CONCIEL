@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2025-12-30",
+    "timestamp": "2026-01-28T18:19:06.366185",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "Top & Flop ETF Areas of 2025, with GDXJ and DIA mentioned",
+    "sentiment": "Neutral with a hint of bullishness",
+    "catalysts": "ETF performance, Market predictions for 2026, Bond yields",
+    "geopolitical": "Low risk, no significant geopolitical events mentioned"
+  },
+  "analysis": {
+    "regime": "NEUTRAL_NARRATIVE",
+    "trend": "Short-term uncertainty",
+    "key_drivers": [
+      "GDXJ performance",
+      "DIA mentions",
+      "Bond yields rise"
+    ],
+    "reasoning": "The news headlines indicate a neutral sentiment with a hint of bullishness, driven by the mentions of GDXJ and DIA in the context of top and flop ETF areas of 2025. However, the rise in bond yields and the lack of significant geopolitical events contribute to short-term uncertainty.",
+    "confidence": 0.75,
+    "risk_factors": [
+      "Market volatility",
+      "Bond yield changes",
+      "ETF performance"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2025-12-29",
+      "2025-12-26"
+    ],
+    "corrections": []
+  }
+}

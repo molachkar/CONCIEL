@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-08",
+    "timestamp": "2026-01-28T18:20:28.849721",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "Gold and market trends",
+    "sentiment": "Bullish",
+    "catalysts": "Gold funds surge, crypto decline, positive economic data",
+    "geopolitical": "Low"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing",
+    "key_drivers": [
+      "Gold funds surge",
+      "Crypto decline",
+      "Positive economic data",
+      "Stock market volatility"
+    ],
+    "reasoning": "The news headlines indicate a strong bullish sentiment, driven by the surge in gold funds and the decline in crypto. The positive economic data and the mixed stock market performance also support this trend, suggesting a risk-on narrative.",
+    "confidence": 0.8,
+    "risk_factors": [
+      "Market volatility",
+      "Geopolitical instability",
+      "Interest rate changes"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2026-01-01",
+      "2026-01-05",
+      "2026-01-06"
+    ],
+    "corrections": []
+  }
+}

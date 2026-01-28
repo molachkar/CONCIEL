@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2026-01-14",
+    "timestamp": "2026-01-28T18:21:19.572808",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "CORE_PPI_(MOM)__(NOV): 0.0% (MISS), CORE_RETAIL_SALES_(MOM)__: 0.5% (BEAT), CURRENT_ACCOUNT__(Q3): -226.4B (BEAT), PPI_(MOM)__(NOV): 0.2% (MEET), RETAIL_CONTROL_(MOM)__(NO: 0.4% (MEET), RETAIL_SALES_(MOM)__(NOV): 0.6% (BEAT), BUSINESS_INVENTORIES_(MOM): 0.3% (BEAT), EXISTING_HOME_SALES__(DEC): 4.35M (BEAT), EXISTING_HOME_SALES_(MOM): 5.1%, RETAIL_INVENTORIES_EX_AUT: 0.3% (BEAT), CRUDE_OIL_INVENTORIES: 3.391M (BEAT), CUSHING_CRUDE_OIL_INVENTO: 0.745M, ATLANTA_FED_GDPNOW__(Q4): 5.3% (BEAT)",
+    "rates": "T10Y: 4.15%, T2Y: 3.51%, T5Y: 3.72%, T30Y: 4.79%, HY_SPREAD: 2.76%",
+    "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
+    "real_rate": "T10Y: 4.15%, CPI YoY: 0.31%, Real Rate = 4.15% - 0.31% = 3.84%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The current real rate is 3.84%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "inflation uncertainty",
+      "interest rate changes"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "long_context",
+      "medium_context",
+      "recent_context"
+    ],
+    "corrections": []
+  }
+}

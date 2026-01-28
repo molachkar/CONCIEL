@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2025-12-31",
+    "timestamp": "2026-01-28T18:19:16.419826",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "Jefferies is betting big on mining stocks for 2026, and the best cryptocurrency to buy with $500 is hinted to be related to gold",
+    "sentiment": "Neutral with a hint of bullishness",
+    "catalysts": "Mining stocks, Cryptocurrency, ETF performance",
+    "geopolitical": "Low risk, no significant geopolitical events mentioned"
+  },
+  "analysis": {
+    "regime": "NEUTRAL_NARRATIVE",
+    "trend": "Short-term uncertainty",
+    "key_drivers": [
+      "Jefferies' bet on mining stocks",
+      "Cryptocurrency hint related to gold",
+      "ETF performance"
+    ],
+    "reasoning": "The news headlines indicate a neutral sentiment with a hint of bullishness, driven by Jefferies' bet on mining stocks and the hint about the best cryptocurrency to buy. However, the lack of significant geopolitical events and the mixed market signals contribute to short-term uncertainty.",
+    "confidence": 0.75,
+    "risk_factors": [
+      "Market volatility",
+      "Cryptocurrency fluctuations",
+      "ETF performance"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2025-12-29",
+      "2025-12-30"
+    ],
+    "corrections": []
+  }
+}

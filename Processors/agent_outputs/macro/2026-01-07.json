@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2026-01-07",
+    "timestamp": "2026-01-28T18:19:53.344072",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "ADP_NONFARM_EMPLOYMENT_CH: 41K (MISS), FACTORY_ORDERS_(MOM)__: -1.3% (MISS), ISM_NON-MANUFACTURING_EMP: 52.0 (BEAT), ISM_NON-MANUFACTURING_PMI: 54.4 (BEAT), JOLTS_JOB_OPENINGS__(NOV): 7.146M (MISS), CRUDE_OIL_INVENTORIES: -3.832M (MISS)",
+    "rates": "T10Y: 4.15%, T2Y: 3.47%, T5Y: 3.7%, T30Y: 4.82%, HY_SPREAD: 2.79%",
+    "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
+    "real_rate": "T10Y: 4.15%, CPI YoY: 0.31%, Real Rate = 4.15% - 0.31% = 3.84%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The current real rate is 3.84%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "inflation uncertainty",
+      "interest rate changes"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2025-12-31"
+    ],
+    "corrections": []
+  }
+}

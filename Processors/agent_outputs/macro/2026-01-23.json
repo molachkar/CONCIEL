@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2026-01-23",
+    "timestamp": "2026-01-28T18:22:59.177186",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "BoJ Interest Rate Decision",
+    "rates": "FEDFUNDS: 3.72%",
+    "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
+    "real_rate": "Real Rate calculation: T10Y yield is not provided. Assuming FEDFUNDS rate of 3.72% for calculation purposes is incorrect. Real Rate = T10Y - CPI YoY, but T10Y is not available. Given Real Rate is 1.23%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The provided Real Rate is 1.23%, which is relatively low. However, without the T10Y yield, the accuracy of this calculation is limited. The FEDFUNDS rate has been decreasing, which could be seen as dovish, but the low CPI YoY% suggests that inflation is under control. Therefore, the regime is classified as NEUTRAL.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "Inaccurate Real Rate calculation due to missing T10Y yield",
+      "Potential for inflation to rise"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

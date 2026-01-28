@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2025-12-30",
+    "timestamp": "2026-01-28T18:18:59.283662",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "S&P/CS_HPI_COMPOSITE_-_20: 1.3% (BEAT), CHICAGO_PMI__(DEC): 43.5 (BEAT)",
+    "rates": "T10Y: 4.14%, T2Y: 3.45%, T5Y: 3.68%, T30Y: 4.81%, HY_SPREAD: 2.84%",
+    "inflation": "CPI: 326.03 (2025-12-01), CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
+    "real_rate": "T10Y: 4.14%, CPI YoY: 0.31%, Real Rate = 4.14% - 0.31% = 3.83%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The current real rate is 3.83%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
+    "confidence": 0.7,
+    "risk_factors": [
+      "inflation uncertainty",
+      "interest rate changes"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-21",
+    "timestamp": "2026-01-28T18:22:46.448945",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "Unable to determine due to missing news and forums data",
+    "sentiment": "Unknown",
+    "catalysts": "Unknown",
+    "geopolitical": "Unknown"
+  },
+  "analysis": {
+    "regime": "NEUTRAL_NARRATIVE",
+    "trend": "Unable to determine due to lack of data",
+    "key_drivers": [
+      "Insufficient data"
+    ],
+    "reasoning": "The analysis is unable to determine the current narrative due to the absence of news and forums data for 2026-01-21. Without this information, it's impossible to accurately assess the sentiment, catalysts, and geopolitical risk. Therefore, a neutral narrative is assigned by default, indicating a lack of sufficient data to make a more informed decision.",
+    "confidence": 0.0,
+    "risk_factors": [
+      "Data unavailability",
+      "Potential for unexpected market movements"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-15",
+    "timestamp": "2026-01-28T18:21:49.124445",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "Gold prices and geopolitical uncertainty",
+    "sentiment": "Bullish",
+    "catalysts": "Gold ETF inflows, US-Iran tensions, Trump administration's economic policies",
+    "geopolitical": "High risk due to US-Iran tensions and Trump administration's influence on Fed"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing gold prices and market volatility",
+    "key_drivers": [
+      "Gold price surge",
+      "US-Iran tensions",
+      "Geopolitical uncertainty",
+      "Fed drama and ETF inflows"
+    ],
+    "reasoning": "The current narrative is driven by gold's price surge due to geopolitical uncertainty, which is fueled by the US-Iran tensions and the Trump administration's actions. This uncertainty is causing investors to seek safe-haven assets, leading to a bullish sentiment in the gold market. The news headlines indicate a strong risk-on narrative, with a focus on gold and ETFs, and a high level of geopolitical risk due to the US-Iran tensions and the Trump administration's influence on the Fed.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "US-Iran conflict escalation",
+      "Trump administration's economic policies",
+      "Global economic instability"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2026-01-12",
+      "2026-01-13",
+      "2026-01-14"
+    ],
+    "corrections": []
+  }
+}

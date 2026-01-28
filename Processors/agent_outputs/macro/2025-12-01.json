@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2025-12-01",
+    "timestamp": "2026-01-28T18:15:48.210813",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "FEDFUNDS decreased from 4.09% to 3.72%",
+    "rates": "FEDFUNDS: 3.72%, REAL_RATE: calculation pending",
+    "inflation": "CPI: 326.03, YoY% calculation pending"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "inconclusive",
+    "key_drivers": [
+      "insufficient data for T10Y yield and prior year CPI"
+    ],
+    "reasoning": "cannot calculate Real Rate without T10Y yield and prior year CPI",
+    "confidence": 0.0,
+    "risk_factors": [
+      "incomplete data"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

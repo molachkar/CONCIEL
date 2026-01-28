@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2026-01-19",
+    "timestamp": "2026-01-28T18:22:10.902313",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "No calendar data available",
+    "rates": "FEDFUNDS: 3.72%",
+    "inflation": "CPI: 326.03 (2025-12-01), PCE: 128.09 (2025-11-01), PPI: 261.56 (2025-11-01)",
+    "real_rate": "To calculate Real Rate: T10Y yield is not provided, but assuming it is around the FEDFUNDS rate of 3.72%. CPI YoY% is calculated as ((326.03 - 325.03) / 325.03) * 100 = 0.31%. Real Rate = 3.72% - 0.31% = 3.41%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "Stable",
+    "key_drivers": [
+      "Low CPI YoY%",
+      "Stable FEDFUNDS rate"
+    ],
+    "reasoning": "The Real Rate is calculated as 3.41%, which is relatively high. However, without the T10Y yield, the accuracy of this calculation is limited. The FEDFUNDS rate has been decreasing, which could be seen as dovish, but the low CPI YoY% suggests that inflation is under control. Therefore, the regime is classified as NEUTRAL.",
+    "confidence": 0.6,
+    "risk_factors": [
+      "Inaccurate Real Rate calculation due to missing T10Y yield",
+      "Potential for inflation to rise"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

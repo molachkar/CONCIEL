@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-07",
+    "timestamp": "2026-01-28T18:20:03.244811",
+    "model": "Meta-Llama-3.3-70B"
+  },
+  "data_snapshot": {
+    "dominant_story": "US Raid in Venezuela and its impact on ETF investors, silver's rare trading phenomenon, and crude oil's last bearish overhang",
+    "sentiment": "Bullish",
+    "catalysts": "Geopolitical events, ETF performance, crude oil, silver trading phenomenon",
+    "geopolitical": "High"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing",
+    "key_drivers": [
+      "US raid in Venezuela",
+      "Silver's rare trading phenomenon",
+      "Crude oil's last bearish overhang",
+      "ETF performance"
+    ],
+    "reasoning": "The news headlines indicate a strong bullish sentiment, driven by the US raid in Venezuela, silver's rare trading phenomenon, and the removal of crude oil's last bearish overhang. The overall positive tone of the news, including the support of stocks by lower bond yields and the rebound of ADP, suggests a risk-on narrative.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "Geopolitical instability",
+      "Market volatility",
+      "Crude oil price fluctuations"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2025-12-31",
+      "2026-01-01",
+      "2026-01-05",
+      "2026-01-06"
+    ],
+    "corrections": []
+  }
+}

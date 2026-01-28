@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "macro",
+    "date": "2025-12-22",
+    "timestamp": "2026-01-28T18:18:01.802645",
+    "model": "Qwen-235B"
+  },
+  "data_snapshot": {
+    "economic_events": "2-YEAR_NOTE_AUCTION|3.499%|FC:-----|PV:3.489%|USD",
+    "rates": "T10Y: 4.17%, HY_SPREAD: 2.88%",
+    "inflation": "CPI: 326.03, PCE: 128.09, PPI: 261.56",
+    "real_rate": "T10Y: 4.17%, CPI_YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate = 4.17% - 0.31% = 3.86%"
+  },
+  "analysis": {
+    "regime": "NEUTRAL",
+    "trend": "stable",
+    "key_drivers": [
+      "low inflation",
+      "stable interest rates"
+    ],
+    "reasoning": "The current real rate is 3.86%, which is relatively high. However, the Fed funds rate has been decreasing (from 4.09% to 3.72%), indicating a dovish stance. The low inflation rate (0.31% YoY) also suggests that the Fed may not need to tighten monetary policy further. Therefore, the regime is neutral.",
+    "confidence": 0.85,
+    "risk_factors": [
+      "inflation surprise",
+      "interest rate volatility"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}
