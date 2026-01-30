@@ -2,36 +2,32 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-12",
-    "timestamp": "2026-01-28T18:21:00.128458",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:17:24.389837",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
-    "dominant_story": "Gold Hits Record High on Political Uncertainty",
-    "sentiment": "Bullish",
-    "catalysts": "Political Uncertainty, Explosive Earnings Season for Gold Miners",
-    "geopolitical": "High risk due to US-Iran tensions, Trump administration's influence on Fed"
+    "dominant_story": "Gold prices and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold investment, political uncertainty, Fed independence",
+    "geopolitical": "Medium",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing gold prices and market volatility",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold price surge",
-      "US political uncertainty",
-      "Geopolitical tensions"
+      "Gold investment",
+      "Political uncertainty",
+      "Fed independence"
     ],
-    "reasoning": "The current narrative is driven by gold's record high price due to political uncertainty, which is fueled by the Trump administration's actions and the escalating US-Iran tensions. This uncertainty is causing investors to seek safe-haven assets, leading to a bullish sentiment in the gold market.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs on political uncertainty and the potential for ETFs to outperform, indicating increased investor risk appetite.",
     "risk_factors": [
-      "US-Iran conflict escalation",
-      "Trump administration's economic policies",
-      "Global economic instability"
+      "Market volatility",
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "Previous gold price trends",
-      "Historical geopolitical risk events"
-    ],
+    "compared_to": [],
     "corrections": []
   }
 }

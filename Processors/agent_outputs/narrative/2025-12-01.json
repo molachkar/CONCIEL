@@ -2,8 +2,8 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-01",
-    "timestamp": "2026-01-28T19:21:46.162617",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:07:29.089357",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
     "dominant_story": "No data available",
@@ -14,15 +14,13 @@
   },
   "analysis": {
     "regime": "NEUTRAL_NARRATIVE",
-    "trend": "Stable",
+    "trend": "No trend available",
     "key_drivers": [
-      "No news headlines available",
-      "No social sentiment data available"
+      "No data available"
     ],
-    "reasoning": "Insufficient data to determine narrative regime",
+    "reasoning": "Insufficient data to make an analysis",
     "risk_factors": [
-      "Data unavailability",
-      "Incomplete information"
+      "Data unavailability"
     ]
   },
   "memory_references": {

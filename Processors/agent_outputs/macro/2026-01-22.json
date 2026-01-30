@@ -2,27 +2,28 @@
   "metadata": {
     "agent": "macro",
     "date": "2026-01-22",
-    "timestamp": "2026-01-28T18:22:49.511415",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:19:24.124514",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "economic_events": "No calendar data available",
-    "rates": "T10Y: Not provided, FEDFUNDS: 3.72%",
-    "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
-    "real_rate": "Real Rate calculation: T10Y yield is not provided. Assuming FEDFUNDS rate of 3.72% for calculation purposes. Real Rate = 3.72% - 0.31% = 3.41%"
+    "economic_events": "CORE_PCE_PRICES__(Q3): 2.90%, GDP_(QOQ)__(Q3): 4.4%, INITIAL_JOBLESS_CLAIMS: 200K",
+    "rates": "T10Y: 4.26%, FEDFUNDS: 3.72%",
+    "inflation": "CPI YoY: 2.7%",
+    "real_rate": "T10Y (4.26%) - CPI_YoY (2.7%) = 1.56%",
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "NEUTRAL",
-    "trend": "stable",
+    "trend": "neutral",
     "key_drivers": [
-      "low inflation",
-      "stable interest rates"
+      "GDP_(QOQ)__(Q3) beat",
+      "INITIAL_JOBLESS_CLAIMS miss",
+      "CORE_PCE_PRICES__(Q3) meet"
     ],
-    "reasoning": "The Real Rate is calculated as 3.41%, which is relatively high. However, without the T10Y yield, the accuracy of this calculation is limited. The FEDFUNDS rate has been decreasing, which could be seen as dovish, but the low CPI YoY% suggests that inflation is under control. Therefore, the regime is classified as NEUTRAL.",
-    "confidence": 0.6,
+    "reasoning": "The real rate of 1.56% is relatively high, which could be bearish for gold. However, the mixed economic data, including a beat in GDP_(QOQ)__(Q3) and a miss in INITIAL_JOBLESS_CLAIMS, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
     "risk_factors": [
-      "Inaccurate Real Rate calculation due to missing T10Y yield",
-      "Potential for inflation to rise"
+      "GEOPOLITICAL_RISK increase by 20.97%",
+      "GOLD_ETF_FLOWS volatility"
     ]
   },
   "memory_references": {

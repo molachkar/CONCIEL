@@ -2,35 +2,31 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-23",
-    "timestamp": "2026-01-28T18:18:15.431082",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:13:37.970684",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "Gold Mining ETF (GDXJ) Hits New 52-Week High",
+    "dominant_story": "Gold hits new highs and market strength in tech stocks",
     "sentiment": "Positive",
-    "catalysts": "Gold ETFs, Economic Confidence, Strong US GDP",
-    "geopolitical": "Low risk"
+    "catalysts": "Gold price targets, Tech sector performance",
+    "geopolitical": "Stable",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Upward trend identified",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold ETF performance",
-      "Economic confidence",
-      "Strong US GDP"
+      "Gold investment",
+      "Tech sector growth"
     ],
-    "reasoning": "Analysis of news headlines indicates a positive market sentiment driven by the gold mining ETF hitting a new 52-week high, economic confidence, and strong US GDP growth, despite missing forums data",
-    "confidence": 0.8,
+    "reasoning": "The news headlines suggest a positive outlook for gold prices and market strength in tech stocks, which are driving the sentiment higher.",
     "risk_factors": [
-      "Data unavailability",
-      "Incomplete analysis"
+      "Market volatility",
+      "Economic uncertainty"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "2025-12-18",
-      "2025-12-19"
-    ],
+    "compared_to": [],
     "corrections": []
   }
 }

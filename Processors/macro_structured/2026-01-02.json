@@ -1,118 +1,73 @@
 {
   "date": "2026-01-02",
-  "timestamp": "2026-01-28T18:19:28.021882",
+  "timestamp": "2026-01-30T22:15:20.688031",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2026-01-02",
-        "timestamp": "2026-01-02T15:45:00.000000",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-02T15:45:00",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "economic_events": "S&P_GLOBAL_MANUFACTURING_|51.8|FC:51.8|PV:52.2|USD|MEET",
-        "rates": "T10Y:4.19%, T2Y:3.47%, T5Y:3.74%, T30Y:4.86%, HY_SPREAD:2.83%",
-        "inflation": "CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
-        "real_rate": "T10Y: 4.19%, CPI YoY: 0.31%, Real Rate = 4.19% - 0.31% = 3.88%"
+        "economic_events": "S&P_GLOBAL_MANUFACTURING_: 51.8",
+        "rates": "T10Y: 4.19%, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 2.95%",
+        "real_rate": "T10Y (4.19%) - CPI_YoY (2.95%) = 1.24%",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
         "regime": "NEUTRAL",
-        "trend": "stable",
+        "trend": "neutral",
         "key_drivers": [
-          "low inflation",
-          "stable interest rates"
+          "S&P_GLOBAL_MANUFACTURING_ meet at 51.8",
+          "FEDFUNDS at 3.72%",
+          "NFP at 159526K",
+          "UNEMPLOYMENT at 4.4%"
         ],
-        "reasoning": "The current real rate is 3.88%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
-        "confidence": 0.7,
+        "reasoning": "The real rate of 1.24% is relatively low, which could be bullish for gold. However, the mixed economic data, including a meet in S&P_GLOBAL_MANUFACTURING_, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
         "risk_factors": [
-          "inflation uncertainty",
-          "interest rate changes"
+          "GEOPOLITICAL_RISK increase by 20.97%",
+          "GOLD_ETF_FLOWS volatility"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "previous days"
-        ],
+        "compared_to": [],
         "corrections": []
       }
     },
-    "market": {
-      "metadata": {
-        "agent": "market",
-        "date": "2026-01-02",
-        "timestamp": "2026-01-28T18:19:29.201460",
-        "model": "DeepSeek-V3.1"
-      },
-      "data_snapshot": {
-        "price_action": "Gold closed at 4331.57 after trading between 4309.62-4401.93, maintaining position above key EMAs (E21:4319.61, E50:4193.21) but below E9 (4362.71), showing continued consolidation with price inside Bollinger Bands (BBM:4323.74) and testing support/resistance levels",
-        "momentum": "RSI neutral at 54.01, MACD bearish with negative histogram (-12.55) and signal line above MACD (70.78 > 58.23), ADX at 29.85 showing moderate trend strength with +DI > -DI (24.53 > 20.67), Stochastic oversold (K:25.52, D:33.59)",
-        "volatility": "High volatility regime (VOL_PCT: 80.67%, PARK_VOL: 0.0124) with mean-reverting state (HURST: 0.3887), ATR of 85.79 showing wide daily ranges, negative accumulation (-0.2996) suggesting continued distribution",
-        "cross_assets": "DXY showing mixed signals (MACD_BULL_X but STRONG_DOWN, BELOW_CLOUD, RSI 46.18) with slight bounce, SPX in weak trend (WEAK_TREND, MACD_BEAR_X) with neutral momentum, VIX in bearish EMA stack with low volatility (VOL_PCT: 17.46%) indicating stable risk environment"
-      },
-      "analysis": {
-        "regime": "CONSOLIDATION",
-        "trend": "Bullish trend intact but in extended consolidation phase - price holding above critical EMA supports (E21:4319.61, E50:4193.21) but below short-term E9, maintaining inside Bollinger Bands with neutral to bearish momentum indicators",
-        "key_drivers": [
-          "MACD bearish configuration with negative histogram (-12.55) confirming ongoing momentum deceleration",
-          "High volatility regime (80.67%) with strong mean-reverting properties supporting consolidation digestion",
-          "DXY showing slight bounce but maintaining bearish structure (STRONG_DOWN, BELOW_CLOUD)",
-          "Price successfully defended E21 support at 4319.61 despite intraday test to 4309.62",
-          "Negative accumulation (-0.2996) indicates persistent institutional profit-taking after recent explosive rally",
-          "Stochastic oversold conditions (K:25.52) suggesting potential for near-term bounce within consolidation range"
-        ],
-        "reasoning": "Gold continues its consolidation phase following the explosive December breakout, with today's action showing a successful defense of the critical E21 support at 4319.61 despite testing lower levels intraday. The technical structure maintains its bullish foundation with price above key moving averages and supportive cross-asset environment (low VIX, stable SPX). However, momentum indicators clearly show consolidation characteristics - neutral RSI, bearish MACD crossover, declining histogram, and oversold Stochastic. The high volatility regime with strong mean-reverting properties (HURST 0.3887) supports this extended consolidation phase as healthy digestion of recent gains. The asset maintains above-cloud positioning and key supports, indicating this remains a constructive pause rather than trend reversal.",
-        "confidence": 0.83,
-        "risk_factors": [
-          "MACD bearish configuration with negative histogram suggests continued momentum deterioration",
-          "High volatility regime (80.67%) may lead to increased price swings and uncertainty",
-          "Negative accumulation (-0.2996) indicates persistent institutional selling pressure",
-          "Intraday low of 4309.62 approached key support levels, suggesting vulnerability to further downside",
-          "Potential for deeper pullback toward E50 support at 4193 if consolidation extends further",
-          "DXY showing MACD bullish crossover could signal temporary dollar strength, potentially pressuring gold"
-        ]
-      },
-      "memory_references": {
-        "compared_to": [
-          "2025-12-30 consolidation pattern",
-          "2025-12-31 E21 support defense",
-          "December breakout rally context"
-        ],
-        "corrections": []
-      }
-    },
+    "market": null,
     "narrative": {
       "metadata": {
         "agent": "narrative",
         "date": "2026-01-02",
-        "timestamp": "2026-01-28T18:19:35.031000",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:15:31.216767",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "dominant_story": "Gold prices and market trends",
-        "sentiment": "Neutral with a hint of bullishness",
-        "catalysts": "Gold ETFs, market outlook, chip makers' strength",
-        "geopolitical": "Low risk, no significant geopolitical events mentioned"
+        "dominant_story": "Gold prices and ETF performance",
+        "sentiment": "Positive",
+        "catalysts": "Record ETF inflows, gold investment",
+        "geopolitical": "Low",
+        "data_quality": "complete"
       },
       "analysis": {
-        "regime": "NEUTRAL_NARRATIVE",
-        "trend": "Short-term uncertainty",
+        "regime": "RISK_ON_NARRATIVE",
+        "trend": "Increasing optimism",
         "key_drivers": [
-          "Gold prices",
-          "Market trends",
-          "Chip makers' performance"
+          "Gold investment",
+          "Record ETF inflows"
         ],
-        "reasoning": "The news headlines indicate a neutral sentiment with a hint of bullishness, driven by the mentions of gold ETFs and market outlook. However, the mixed market signals, including the fall of megacap tech shares and the strength in chip makers, contribute to short-term uncertainty.",
-        "confidence": 0.75,
+        "reasoning": "News headlines suggest a positive outlook for gold prices and ETFs, with record inflows into U.S. ETFs in 2025 and a historic run in gold prices.",
         "risk_factors": [
           "Market volatility",
-          "Gold price fluctuations",
-          "Interest rate changes"
+          "Economic uncertainty"
         ]
       },
       "memory_references": {
         "compared_to": [
-          "2025-12-26",
-          "2025-12-29"
+          "2025-12-31",
+          "2026-01-01"
         ],
         "corrections": []
       }

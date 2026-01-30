@@ -2,27 +2,27 @@
   "metadata": {
     "agent": "macro",
     "date": "2026-01-20",
-    "timestamp": "2026-01-28T18:22:18.997001",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:18:53.473951",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "economic_events": "ADP Employment Change: 8.00K, API Weekly Crude Oil Stock: no value provided",
-    "rates": "T10Y: 4.3%, T2Y: 3.6%, T5Y: 3.86%, T30Y: 4.91%, HY Spread: 2.73%",
-    "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
-    "real_rate": "T10Y: 4.3%, CPI YoY: 0.31%, Real Rate = 4.3% - 0.31% = 3.99%"
+    "economic_events": "ADP_EMPLOYMENT_CHANGE_WEE: 8.00K",
+    "rates": "T10Y: 4.3%, FEDFUNDS: 3.72%",
+    "inflation": "CPI YoY: 2.7%",
+    "real_rate": "T10Y (4.3%) - CPI_YoY (2.7%) = 1.6%",
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "NEUTRAL",
-    "trend": "stable",
+    "trend": "neutral",
     "key_drivers": [
-      "low inflation",
-      "stable interest rates"
+      "ADP_EMPLOYMENT_CHANGE_WEE: 8.00K",
+      "REAL_RATE at 1.6%"
     ],
-    "reasoning": "The current real rate is 3.99%, which is relatively high. The inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
-    "confidence": 0.85,
+    "reasoning": "The real rate of 1.6% is relatively high, which could be bearish for gold. However, the mixed economic data, including the ADP employment change, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
     "risk_factors": [
-      "inflation uncertainty",
-      "interest rate changes"
+      "GEOPOLITICAL_RISK increase by 20.97%",
+      "GOLD_ETF_FLOWS volatility"
     ]
   },
   "memory_references": {

@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-17",
+    "timestamp": "2026-01-30T22:18:29.280707",
+    "model": "Meta-Llama-3.3-70B-Instruct"
+  },
+  "data_snapshot": {
+    "dominant_story": "Trump's economic policies and geopolitical tensions",
+    "sentiment": "Negative",
+    "catalysts": "Trump's tariffs on European countries, Iran's Supreme Leader, US-China EV deal",
+    "geopolitical": "High",
+    "data_quality": "complete"
+  },
+  "analysis": {
+    "regime": "RISK_OFF_NARRATIVE",
+    "trend": "Decreasing optimism",
+    "key_drivers": [
+      "Trump's economic policies",
+      "Geopolitical tensions",
+      "Tariffs on European countries"
+    ],
+    "reasoning": "News headlines suggest a negative outlook for the market, with Trump's tariffs on European countries, Iran's Supreme Leader, and the US-China EV deal contributing to increased geopolitical uncertainty, indicating decreased investor risk appetite.",
+    "risk_factors": [
+      "Market volatility",
+      "Geopolitical uncertainty",
+      "Trade wars"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2026-01-10",
+      "2026-01-11",
+      "2026-01-12"
+    ],
+    "corrections": []
+  }
+}

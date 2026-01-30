@@ -2,13 +2,13 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-26",
-    "timestamp": "2026-01-28T18:51:32.106044",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:14:25.205623",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
     "dominant_story": "Gold and Silver Rally",
     "sentiment": "Bullish",
-    "catalysts": "Record-breaking gold and silver prices, year-end bullish sentiment",
+    "catalysts": "ETF performance, year-end sentiment",
     "geopolitical": "Low",
     "data_quality": "incomplete"
   },
@@ -16,14 +16,13 @@
     "regime": "BULLISH_SENTIMENT",
     "trend": "Upward",
     "key_drivers": [
-      "Gold and silver price records",
-      "Year-end bullish sentiment"
+      "Gold ETFs",
+      "Stock market performance"
     ],
-    "reasoning": "The news headlines suggest a strong upward trend in gold and silver prices, with record-breaking prices and year-end bullish sentiment. The lack of social sentiment data and forums data limits the analysis, but the institutional news suggests a positive outlook.",
-    "confidence": 0.7,
+    "reasoning": "Positive news headlines and year-end bullish sentiment",
     "risk_factors": [
       "Market volatility",
-      "Lack of social sentiment data"
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {

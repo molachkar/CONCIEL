@@ -2,35 +2,33 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-02",
-    "timestamp": "2026-01-28T18:19:35.031000",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:15:31.216767",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "Gold prices and market trends",
-    "sentiment": "Neutral with a hint of bullishness",
-    "catalysts": "Gold ETFs, market outlook, chip makers' strength",
-    "geopolitical": "Low risk, no significant geopolitical events mentioned"
+    "dominant_story": "Gold prices and ETF performance",
+    "sentiment": "Positive",
+    "catalysts": "Record ETF inflows, gold investment",
+    "geopolitical": "Low",
+    "data_quality": "complete"
   },
   "analysis": {
-    "regime": "NEUTRAL_NARRATIVE",
-    "trend": "Short-term uncertainty",
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold prices",
-      "Market trends",
-      "Chip makers' performance"
+      "Gold investment",
+      "Record ETF inflows"
     ],
-    "reasoning": "The news headlines indicate a neutral sentiment with a hint of bullishness, driven by the mentions of gold ETFs and market outlook. However, the mixed market signals, including the fall of megacap tech shares and the strength in chip makers, contribute to short-term uncertainty.",
-    "confidence": 0.75,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and ETFs, with record inflows into U.S. ETFs in 2025 and a historic run in gold prices.",
     "risk_factors": [
       "Market volatility",
-      "Gold price fluctuations",
-      "Interest rate changes"
+      "Economic uncertainty"
     ]
   },
   "memory_references": {
     "compared_to": [
-      "2025-12-26",
-      "2025-12-29"
+      "2025-12-31",
+      "2026-01-01"
     ],
     "corrections": []
   }

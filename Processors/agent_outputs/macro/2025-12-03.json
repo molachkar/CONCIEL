@@ -2,14 +2,14 @@
   "metadata": {
     "agent": "macro",
     "date": "2025-12-03",
-    "timestamp": "2026-01-28T19:21:52.013790",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:07:53.725785",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
     "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0",
     "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
     "inflation": "CPI YoY: 0.31%",
-    "real_rate": "T10Y - CPI_YoY = unknown - 0.31% = unknown",
+    "real_rate": "T10Y - CPI_YoY = unknown - 0.31%",
     "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {

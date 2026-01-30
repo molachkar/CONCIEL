@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-25",
+    "timestamp": "2026-01-30T22:20:01.426253",
+    "model": "Meta-Llama-3.3-70B-Instruct"
+  },
+  "data_snapshot": {
+    "dominant_story": "Global economic uncertainty and geopolitical tensions",
+    "sentiment": "Negative",
+    "catalysts": "Trump's tariffs, EU-Canada trade deal, Iran protests, Argentina's economic decline",
+    "geopolitical": "High",
+    "data_quality": "complete"
+  },
+  "analysis": {
+    "regime": "RISK_OFF_NARRATIVE",
+    "trend": "Decreasing optimism",
+    "key_drivers": [
+      "Trump's economic policies",
+      "Geopolitical tensions",
+      "Global economic uncertainty"
+    ],
+    "reasoning": "News headlines suggest a negative outlook for the market, with Trump's tariffs, EU-Canada trade deal, Iran protests, and Argentina's economic decline contributing to increased geopolitical uncertainty and global economic uncertainty, indicating decreased investor risk appetite.",
+    "risk_factors": [
+      "Market volatility",
+      "Geopolitical uncertainty",
+      "Trade wars"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

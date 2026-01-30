@@ -1,32 +1,33 @@
 {
   "date": "2025-12-17",
-  "timestamp": "2026-01-28T18:17:34.685686",
+  "timestamp": "2026-01-30T22:11:46.900438",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-17",
-        "timestamp": "2026-01-28T18:17:34.721944",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:11:46.917590",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "economic_events": "FEDFUNDS decreased from 4.09% to 3.72%",
-        "rates": "FEDFUNDS: 3.72%",
-        "inflation": "CPI: 326.03, YoY%: 0.31% (calculated from 325.03 to 326.03)",
-        "real_rate": "Cannot calculate Real Rate without T10Y yield, however, given Real Rate is 1.23% or alternatively, using FEDFUNDS as a proxy: 3.72% - 0.31% = 3.41%"
+        "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0, INDUSTRIAL_PROD: 102.33",
+        "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 0.31%",
+        "real_rate": "T10Y - CPI_YoY = unknown - 0.31%, unable to calculate",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
-        "regime": "RISK_ON",
-        "trend": "dovish",
+        "regime": "NEUTRAL",
+        "trend": "neutral",
         "key_drivers": [
-          "decrease in FEDFUNDS",
-          "low inflation"
+          "FEDFUNDS decrease to 3.72%",
+          "NFP increase to 159526K",
+          "UNEMPLOYMENT decrease to 4.4%"
         ],
-        "reasoning": "The decrease in FEDFUNDS from 4.09% to 3.72% indicates a dovish Fed policy. The low inflation rate, with CPI increasing only by 0.31% YoY, also supports a RISK_ON regime. However, the Real Rate calculation is incomplete due to missing T10Y yield data.",
-        "confidence": 0.85,
+        "reasoning": "The decrease in FEDFUNDS and UNEMPLOYMENT, along with the increase in NFP, suggests a neutral trend. However, the lack of information on T10Y and CPI YoY hinders a more accurate analysis.",
         "risk_factors": [
-          "inflation increase",
-          "geopolitical risk"
+          "GEOPOLITICAL_RISK increase by 20.97%",
+          "GOLD_ETF_FLOWS volatility"
         ]
       },
       "memory_references": {
@@ -38,41 +39,33 @@
       "metadata": {
         "agent": "market",
         "date": "2025-12-17",
-        "timestamp": "2026-01-28T18:17:36.878596",
-        "model": "DeepSeek-V3.1"
+        "timestamp": "2026-01-30T22:11:47.973181",
+        "model": "DeepSeek-V3-0324"
       },
       "data_snapshot": {
-        "price_action": "Gold closed at 4337.34 after strong rally from 4300.85 low to 4348.68 high, maintaining position above all key EMAs (E9:4272.77, E21:4214.15, E50:4096.39, E200:3609.73) with bullish stack configuration and above cloud positioning, showing breakout continuation with new highs near 4350",
-        "momentum": "RSI at 71.91 (strong bullish zone approaching overbought), MACD positive with histogram at 8.18 showing accelerating bullish momentum, ADX at 26.3 indicating strengthening trend with +DI > -DI (27.49 > 12.14)",
-        "volatility": "Medium volatility regime (VOL_PCT: 50.52%) with mean-reverting state (HURST: 0.4377), ATR of 70.31 showing moderate daily ranges, maintaining breakout environment characteristics with accumulation signal positive (0.4793)",
-        "cross_assets": "DXY showing extreme weakness closing at 97.97 with oversold conditions (RSI 32.59) and bearish EMA stack, S&P500 showing weakness closing at 6739.75 with bearish momentum (MACD -9.75), VIX rising to 18.63 but remaining in medium volatility regime, creating highly supportive environment for gold appreciation"
+        "price_action": "Gold (XAUUSD) closed higher after testing both the day's high and low, with volume significantly above average. S&P500 (USA500.IDX) showed minor losses with moderate volume. VIX (VOL.IDX) rose slightly, indicating increased market uncertainty. DXY (DOLLAR.IDX) was flat with low volatility.",
+        "momentum": "Gold shows strong momentum with RSI at 71.91 and MACD histogram positive (8.18). ADX at 26.3 indicates a strengthening trend. S&P500 has neutral momentum (RSI 43.94). VIX momentum is neutral (RSI 52.63). DXY momentum is weak (RSI 32.59).",
+        "volatility": "Gold is in a medium volatility regime (VOL_PCT 49.27). S&P500 is in a medium volatility regime (VOL_PCT 65.9). VIX is in a medium volatility regime (VOL_PCT 47.19). DXY is in a low volatility regime (VOL_PCT 7.28).",
+        "cross_assets": "Gold is above its cloud and showing bullish EMA stacking. S&P500 is in its cloud with a weak trend. VIX is in its cloud, indicating neutral fear. DXY is below its cloud with weak trend signals."
       },
       "analysis": {
         "regime": "BREAKOUT",
-        "trend": "Strong bullish trend continuation with accelerating momentum, maintaining above all EMAs, bullish Ichimoku cloud positioning, and strengthening momentum indicators with new highs near 4350",
+        "trend": "Gold is in a strong uptrend, supported by bullish technicals and medium volatility. S&P500 is consolidating with a slight bearish bias. VIX and DXY are not providing strong counter signals.",
         "key_drivers": [
-          "Bullish EMA stack configuration maintained (E9 > E21 > E50 > E200) with expanding spreads",
-          "Above cloud positioning with strong Ichimoku signals and positive accumulation (0.4793)",
-          "DXY extreme weakness with RSI 32.59 and bearish EMA stack supporting gold appreciation",
-          "ADX at 26.3 showing strengthening trend with strong directional movement (+DI 27.49)",
-          "MACD histogram acceleration to 8.18 indicating renewed bullish momentum"
+          "Gold's bullish EMA stacking and medium volatility",
+          "S&P500's neutral but slightly bearish stance",
+          "VIX's neutral levels despite minor uptick",
+          "DXY's low volatility and lack of directional bias"
         ],
-        "reasoning": "Gold demonstrates strong breakout continuation with new highs near 4350, closing at 4337.34 while maintaining position above all major moving averages. The technical structure remains strongly bullish with RSI at 71.91 (approaching overbought but with room for extension), MACD positive with accelerating histogram, and ADX showing trend strength. Cross-asset signals remain highly favorable with DXY showing extreme weakness (RSI 32.59, bearish EMA stack) which historically supports gold appreciation. The medium volatility regime with mean-reverting properties suggests continued upward momentum potential. Despite S&P500 weakness, gold's safe-haven characteristics are being supported by dollar weakness and stable volatility conditions.",
-        "confidence": 0.83,
+        "reasoning": "The combination of Gold's strong uptrend, S&P500's consolidation, and neutral fear (VIX) suggests a BREAKOUT environment. DXY's inactivity removes a potential headwind for risk assets.",
         "risk_factors": [
-          "RSI approaching overbought territory (71.91) may indicate near-term pullback risk",
-          "Stochastic showing extreme overbought signals (K:92.01, D:81.73)",
-          "Price approaching upper Bollinger Band resistance at 4351.57",
-          "MFI at 72.22 showing potential overbought conditions",
-          "S&P500 weakness may indicate broader risk-off sentiment that could eventually pressure gold"
+          "Gold's overbought conditions (RSI 71.91, CCI 151.05, WILL -7.99)",
+          "Potential mean-reversion in medium volatility regimes",
+          "S&P500's weak trend could shift to risk-off if volatility spikes"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "2025-12-16: Continued breakout pattern with higher close and stronger momentum",
-          "2025-12-15: Acceleration of bullish momentum with improved technical readings",
-          "2025-12-12: Similar breakout characteristics with new highs above 4350"
-        ],
+        "compared_to": [],
         "corrections": []
       }
     },
@@ -80,36 +73,29 @@
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-17",
-        "timestamp": "2026-01-28T18:17:42.345712",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:12:32.459750",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
         "dominant_story": "No data available",
         "sentiment": "Unknown",
-        "catalysts": "No catalysts identified",
-        "geopolitical": "No geopolitical risk assessed"
+        "catalysts": "None",
+        "geopolitical": "Unknown",
+        "data_quality": "incomplete"
       },
       "analysis": {
         "regime": "NEUTRAL_NARRATIVE",
-        "trend": "No trend identified",
+        "trend": "No trend available",
         "key_drivers": [
-          "Insufficient data"
+          "No data available"
         ],
-        "reasoning": "No news headlines or social sentiment data available for analysis due to file directory errors",
-        "confidence": 0.0,
+        "reasoning": "Insufficient data to make an analysis",
         "risk_factors": [
-          "Data unavailability",
-          "Incomplete analysis",
-          "File directory errors"
+          "Data unavailability"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "2025-12-10",
-          "2025-12-11",
-          "2025-12-12",
-          "2025-12-16"
-        ],
+        "compared_to": [],
         "corrections": []
       }
     }

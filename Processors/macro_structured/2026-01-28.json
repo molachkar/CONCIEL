@@ -1,0 +1,75 @@
+{
+  "date": "2026-01-28",
+  "timestamp": "2026-01-30T22:20:28.736416",
+  "agents": {
+    "macro": {
+      "metadata": {
+        "agent": "macro",
+        "date": "2026-01-28",
+        "timestamp": "2026-01-30T22:20:28.768395",
+        "model": "llama3.3-70b"
+      },
+      "data_snapshot": {
+        "economic_events": "CRUDE_OIL_INVENTORIES: -2.295M, CUSHING_CRUDE_OIL_INVENTO: -0.278M, FED_INTEREST_RATE_DECISIO: 3.75%",
+        "rates": "T10Y: 4.22%, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 2.7%",
+        "real_rate": "T10Y (4.22%) - CPI_YoY (2.7%) = 1.52%",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
+      },
+      "analysis": {
+        "regime": "NEUTRAL",
+        "trend": "neutral",
+        "key_drivers": [
+          "CRUDE_OIL_INVENTORIES miss",
+          "FED_INTEREST_RATE_DECISIO meet",
+          "REAL_RATE at 1.52%"
+        ],
+        "reasoning": "The real rate of 1.52% is relatively high, which could be bearish for gold. However, the mixed economic data, including a miss in CRUDE_OIL_INVENTORIES and a meet in FED_INTEREST_RATE_DECISIO, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
+        "risk_factors": [
+          "GEOPOLITICAL_RISK increase by 20.97%",
+          "GOLD_ETF_FLOWS volatility"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    },
+    "market": null,
+    "narrative": {
+      "metadata": {
+        "agent": "narrative",
+        "date": "2026-01-28",
+        "timestamp": "2026-01-30T22:20:37.213909",
+        "model": "Meta-Llama-3.3-70B-Instruct"
+      },
+      "data_snapshot": {
+        "dominant_story": "Gold prices and market trends",
+        "sentiment": "Positive",
+        "catalysts": "Gold investment, record gold prices, US dollar slide, trade wars",
+        "geopolitical": "High",
+        "data_quality": "complete"
+      },
+      "analysis": {
+        "regime": "RISK_ON_NARRATIVE",
+        "trend": "Increasing optimism",
+        "key_drivers": [
+          "Gold investment",
+          "Record gold prices",
+          "US dollar slide",
+          "Trade wars"
+        ],
+        "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs and the US dollar sliding, indicating increased investor risk appetite.",
+        "risk_factors": [
+          "Market volatility",
+          "Geopolitical uncertainty",
+          "Trade wars"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    }
+  }
+}

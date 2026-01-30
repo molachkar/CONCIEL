@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-10",
+    "timestamp": "2026-01-30T22:17:01.685843",
+    "model": "llama3.3-70b"
+  },
+  "data_snapshot": {
+    "dominant_story": "Gold ETF performance and small-cap stocks outlook",
+    "sentiment": "Positive",
+    "catalysts": "SPDR Gold ETF rally, small-cap stocks potential outperformance",
+    "geopolitical": "Low",
+    "data_quality": "complete"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing optimism",
+    "key_drivers": [
+      "Gold investment",
+      "Small-cap stocks potential outperformance"
+    ],
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with the SPDR Gold ETF rallying and small-cap stocks potentially outperforming, indicating increased investor risk appetite.",
+    "risk_factors": [
+      "Market volatility",
+      "Geopolitical uncertainty"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2026-01-05",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-09"
+    ],
+    "corrections": []
+  }
+}

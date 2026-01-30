@@ -2,35 +2,37 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-16",
-    "timestamp": "2026-01-28T18:22:07.820237",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:18:23.652804",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
-    "dominant_story": "Gold prices and US economy outlook",
-    "sentiment": "Bullish",
-    "catalysts": "Cathie Wood's outlook, gold ETF inflows, US-Iran tensions",
-    "geopolitical": "High risk due to US-Iran tensions and Trump administration's influence on Fed"
+    "dominant_story": "Gold investment and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold prices, market trends, central bankers supporting Fed independence, AI rally, Cathie Wood's US economy outlook",
+    "geopolitical": "Medium",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing gold prices and market volatility",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold price surge",
-      "US-Iran tensions",
-      "Geopolitical uncertainty",
-      "Fed drama and ETF inflows"
+      "Gold investment",
+      "Market trends",
+      "Central bankers supporting Fed independence",
+      "AI rally",
+      "Cathie Wood's US economy outlook"
     ],
-    "reasoning": "The current narrative is driven by gold's price surge due to geopolitical uncertainty, which is fueled by the US-Iran tensions and the Trump administration's actions. This uncertainty is causing investors to seek safe-haven assets, leading to a bullish sentiment in the gold market. The news headlines indicate a strong risk-on narrative, with a focus on gold and ETFs, and a high level of geopolitical risk due to the US-Iran tensions and the Trump administration's influence on the Fed.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs, central bankers supporting Fed independence, and the AI rally extending, indicating increased investor risk appetite.",
     "risk_factors": [
-      "US-Iran conflict escalation",
-      "Trump administration's economic policies",
-      "Global economic instability"
+      "Market volatility",
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {
     "compared_to": [
       "2026-01-09",
+      "2026-01-10",
+      "2026-01-11",
       "2026-01-12",
       "2026-01-13",
       "2026-01-14",

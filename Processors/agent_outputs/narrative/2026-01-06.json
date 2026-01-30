@@ -2,35 +2,37 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-06",
-    "timestamp": "2026-01-28T18:19:51.026560",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:16:07.114765",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "S&P 500 and Dow Rally to Record Highs, Gold and Silver Prices Rise",
-    "sentiment": "Bullish",
-    "catalysts": "Record-breaking S&P 500, Gold and Silver price increases, Tech stocks surge",
-    "geopolitical": "Low"
+    "dominant_story": "Gold and market trends",
+    "sentiment": "Positive",
+    "catalysts": "S&P 500 winning streak, Newmont Mining, silver futures, tech stocks surge",
+    "geopolitical": "Low",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "S&P 500 record highs",
-      "Gold price increase",
+      "Gold investment",
+      "Market trends",
       "Tech stocks surge"
     ],
-    "reasoning": "The news headlines indicate a strong bullish sentiment, driven by the record-breaking S&P 500 and Dow rally, as well as the increase in gold and silver prices. The surge in tech stocks also supports this trend, suggesting a risk-on narrative.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with the S&P 500 and Dow rallying to record highs and tech stocks surging, indicating increased investor risk appetite.",
     "risk_factors": [
       "Market volatility",
-      "Interest rate changes",
-      "Geopolitical instability"
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {
     "compared_to": [
       "2025-12-30",
-      "2026-01-01"
+      "2025-12-31",
+      "2026-01-01",
+      "2026-01-02",
+      "2026-01-05"
     ],
     "corrections": []
   }

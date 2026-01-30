@@ -1,31 +1,32 @@
 {
   "date": "2025-12-08",
-  "timestamp": "2026-01-28T19:22:06.496381",
+  "timestamp": "2026-01-30T22:08:50.056027",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-08",
-        "timestamp": "2026-01-28T19:22:06.501528",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:08:50.059287",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
         "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0, INDUSTRIAL_PROD: 102.33",
         "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
         "inflation": "CPI YoY: unknown",
-        "real_rate": "1.19% (T10Y - CPI_YoY, but T10Y and CPI_YoY are unknown)",
+        "real_rate": "T10Y - CPI_YoY = unknown - unknown, unable to calculate",
         "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
         "regime": "NEUTRAL",
-        "trend": "dovish",
+        "trend": "neutral",
         "key_drivers": [
           "FEDFUNDS decrease to 3.72%",
-          "NFP increase to 159526K"
+          "NFP increase to 159526K",
+          "UNEMPLOYMENT decrease to 4.4%"
         ],
-        "reasoning": "The decrease in FEDFUNDS rate and the increase in NFP suggest a dovish trend. However, the lack of information on T10Y and CPI_YoY makes it difficult to determine the overall regime.",
+        "reasoning": "The decrease in FEDFUNDS and UNEMPLOYMENT, along with the increase in NFP, suggests a neutral trend. However, the lack of information on T10Y and CPI YoY hinders a more accurate analysis.",
         "risk_factors": [
-          "GEOPOLITICAL_RISK increase to 127.32",
+          "GEOPOLITICAL_RISK increase by 20.97%",
           "GOLD_ETF_FLOWS volatility"
         ]
       },
@@ -38,30 +39,28 @@
       "metadata": {
         "agent": "market",
         "date": "2025-12-08",
-        "timestamp": "2026-01-28T19:22:07.896618",
-        "model": "DeepSeek-V3.1"
+        "timestamp": "2026-01-30T22:08:52.776642",
+        "model": "DeepSeek-V3-0324"
       },
       "data_snapshot": {
-        "price_action": "Gold closed at 4189.89, below the high of 4218.76 and above the low of 4176.0, with volume of 259493 indicating active participation.",
-        "momentum": "RSI at 58.66 shows neutral to slight bullish momentum, MACD histogram positive at 1.07, ADX at 21.16 indicates weak trend strength.",
-        "volatility": "High volatility regime (VOL_REGIME: high, VOL_PCT: 77.13), ATR at 73.31, Bollinger Band width at 5.75% suggests elevated volatility.",
-        "cross_assets": "S&P500 in high volatility with positive accumulation (0.2901), VIX in medium volatility with negative accumulation (-0.4664), DXY in low volatility with positive accumulation (0.1413)."
+        "price_action": "Gold closed at 4189.89 after reaching a high of 4218.76 and a low of 4176.0, showing moderate volatility.",
+        "momentum": "RSI at 58.66 indicates neutral momentum, MACD shows a slight bullish crossover (HIST: 1.07), and ADX at 21.16 suggests a weak trend.",
+        "volatility": "VOL_REGIME is high (VOL_PCT: 77.13), with PARK_VOL at 0.0119 and YZ_VOL at 0.1994. The market is mean-reverting (HURST: 0.4483).",
+        "cross_assets": "S&P500 (USA500.IDX) shows accumulation (ACCUM: 0.2901) and high volatility (VOL_PCT: 77.75). VIX (VOL.IDX) is in a medium volatility regime (VOL_PCT: 64.86). DXY (DOLLAR.IDX) has low volatility (VOL_PCT: 7.28) and slight accumulation (ACCUM: 0.1413)."
       },
       "analysis": {
         "regime": "CONSOLIDATION",
-        "trend": "Gold is in a mean-reverting state (HURST: 0.4483) with neutral short-term momentum, trading within a range above key EMAs but below recent highs.",
+        "trend": "Neutral with weak bullish signals",
         "key_drivers": [
-          "High volatility environment",
-          "Neutral momentum indicators",
-          "Mean-reverting price action",
-          "Cross-asset mixed signals (SPX accumulation positive, VIX negative)"
+          "High volatility in gold and S&P500",
+          "Neutral momentum indicators (RSI, MACD)",
+          "Mean-reverting market state"
         ],
-        "reasoning": "Price closed near opening with moderate range, RSI and MACD show neutral momentum, ADX indicates lack of strong trend, and high volatility with mean-reverting state supports consolidation. Cross-assets show mixed but not extreme risk signals (SPX accumulation positive, VIX negative but not alarming, DXY stable).",
+        "reasoning": "Gold's price action and momentum indicators suggest a consolidation phase, supported by mean-reverting volatility and neutral cross-asset signals. The lack of strong trend (ADX < 25) and balanced probabilities (BULL_P/BEAR_P/CONSOL_P) further confirm this regime.",
         "risk_factors": [
-          "Elevated volatility could lead to sharp moves",
-          "MACD histogram is positive but small",
-          "VIX negative accumulation may indicate complacency",
-          "Gold's accumulation is slightly negative (-0.1619)"
+          "Potential breakout if volatility spikes",
+          "DXY movements could influence gold direction",
+          "S&P500 volatility may spill over"
         ]
       },
       "memory_references": {
@@ -73,23 +72,23 @@
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-08",
-        "timestamp": "2026-01-28T19:22:11.270295",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:09:10.337927",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
         "dominant_story": "No data available",
         "sentiment": "NEUTRAL",
-        "catalysts": "No catalysts identified",
-        "geopolitical": "No geopolitical risk identified",
+        "catalysts": "None",
+        "geopolitical": "STABLE",
         "data_quality": "incomplete"
       },
       "analysis": {
         "regime": "NEUTRAL_NARRATIVE",
-        "trend": "No trend identified",
+        "trend": "UNCERTAIN",
         "key_drivers": [
-          "No data available"
+          "Lack of data"
         ],
-        "reasoning": "Insufficient data to analyze news headlines, social sentiment, catalysts, geopolitical risk, and sentiment shifts.",
+        "reasoning": "Insufficient information to determine narrative regime",
         "risk_factors": [
           "Data unavailability"
         ]

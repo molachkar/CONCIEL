@@ -2,37 +2,29 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-09",
-    "timestamp": "2026-01-28T18:16:48.295877",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:09:51.384891",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
     "dominant_story": "No data available",
     "sentiment": "Unknown",
-    "catalysts": "No catalysts identified",
-    "geopolitical": "No geopolitical risk assessed"
+    "catalysts": "None",
+    "geopolitical": "Unknown",
+    "data_quality": "incomplete"
   },
   "analysis": {
     "regime": "NEUTRAL_NARRATIVE",
-    "trend": "No trend identified",
+    "trend": "No trend available",
     "key_drivers": [
-      "Insufficient data"
+      "No data available"
     ],
-    "reasoning": "No news headlines or social sentiment data available for analysis due to file directory errors",
-    "confidence": 0.0,
+    "reasoning": "Insufficient data to make an analysis",
     "risk_factors": [
-      "Data unavailability",
-      "Incomplete analysis",
-      "File directory errors"
+      "Data unavailability"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "2025-12-02",
-      "2025-12-03",
-      "2025-12-04",
-      "2025-12-05",
-      "2025-12-08"
-    ],
+    "compared_to": [],
     "corrections": []
   }
 }

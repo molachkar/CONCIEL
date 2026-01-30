@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-11",
+    "timestamp": "2026-01-30T22:17:06.974298",
+    "model": "llama3.3-70b"
+  },
+  "data_snapshot": {
+    "dominant_story": "Market trends and geopolitical tensions",
+    "sentiment": "Positive",
+    "catalysts": "Potential for ETFs to beat the S&P 500, overseas bank stocks, Wall Street targets",
+    "geopolitical": "Medium",
+    "data_quality": "complete"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing optimism",
+    "key_drivers": [
+      "ETF performance",
+      "Overseas bank stocks",
+      "Wall Street targets"
+    ],
+    "reasoning": "News headlines suggest a positive outlook for the market, with potential for ETFs to beat the S&P 500 and overseas bank stocks attracting smart money, indicating increased investor risk appetite.",
+    "risk_factors": [
+      "Market volatility",
+      "Geopolitical uncertainty"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2026-01-05",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-01-08",
+      "2026-01-09",
+      "2026-01-10"
+    ],
+    "corrections": []
+  }
+}

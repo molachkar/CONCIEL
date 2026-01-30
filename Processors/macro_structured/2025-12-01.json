@@ -1,19 +1,19 @@
 {
   "date": "2025-12-01",
-  "timestamp": "2026-01-28T19:21:41.353517",
+  "timestamp": "2026-01-30T22:06:35.915014",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-01",
-        "timestamp": "2026-01-28T19:21:41.388576",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:06:35.919949",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
         "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0",
         "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
         "inflation": "CPI YoY: unknown",
-        "real_rate": "T10Y - CPI_YoY = unknown - ((326.03 - 325.03) / 325.03) * 100 = unknown - 0.31% = unknown",
+        "real_rate": "T10Y - CPI_YoY = unknown - ((326.03 - 325.03) / 325.03) * 100 = unknown - 0.31%",
         "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
@@ -38,29 +38,29 @@
       "metadata": {
         "agent": "market",
         "date": "2025-12-01",
-        "timestamp": "2026-01-28T19:21:42.665896",
-        "model": "DeepSeek-V3.1"
+        "timestamp": "2026-01-30T22:06:37.359326",
+        "model": "DeepSeek-V3-0324"
       },
       "data_snapshot": {
-        "price_action": "Gold closed above all EMAs with bullish engulfing pattern, S&P500 near highs with weak trend, VIX declining, DXY consolidating",
-        "momentum": "Gold: RSI 64.43 (bullish), MACD positive, ADX weak trend; S&P500: RSI 55.7 neutral, weak ADX; VIX: oversold RSI 43.85; DXY: neutral RSI 49.22",
-        "volatility": "Gold: high vol regime (VOL_PCT 82.12), mean-reverting; S&P500: high vol (83.37); VIX: high vol (74.22); DXY: low vol (10.81)",
-        "cross_assets": "Gold strong vs weak DXY (consolidating), S&P500 bullish but weak trend, VIX declining suggesting risk-on"
+        "price_action": "Gold (XAUUSD) closed higher after testing the day's low, with volume significantly above average. S&P500 (USA500.IDX) showed minor losses with moderate volume. VIX (VOL.IDX) rose slightly, indicating increased market uncertainty. DXY (DOLLAR.IDX) was flat with low volatility.",
+        "momentum": "Gold shows strong momentum with RSI at 64.43 and MACD histogram positive. S&P500 has neutral momentum (RSI 55.7). VIX momentum is weak (RSI 43.85). DXY momentum is neutral (RSI 49.22).",
+        "volatility": "Gold and S&P500 are in high volatility regimes (VOL_PCT 82.12 and 83.37 respectively). VIX is also in a high volatility regime (VOL_PCT 74.22). DXY is in a low volatility regime (VOL_PCT 10.81).",
+        "cross_assets": "Gold is above its cloud and showing bullish EMA stacking. S&P500 is above its cloud but with a weak trend. VIX is below its cloud, indicating subdued fear. DXY is in a squeeze with weak trend signals."
       },
       "analysis": {
-        "regime": "BREAKOUT",
-        "trend": "Bullish for gold, neutral for equities, bearish for VIX, sideways for DXY",
+        "regime": "RISK_ON",
+        "trend": "Gold is in a strong uptrend, supported by bullish technicals and high volatility. S&P500 is consolidating with a slight bullish bias. VIX and DXY are not providing strong counter signals.",
         "key_drivers": [
-          "Gold above all EMAs and cloud",
-          "High volatility supporting momentum",
-          "Weak DXY reducing headwinds",
-          "Declining VIX indicating risk appetite"
+          "Gold's bullish EMA stacking and high volatility",
+          "S&P500's neutral but slightly bullish stance",
+          "VIX's subdued levels despite minor uptick",
+          "DXY's low volatility and lack of directional bias"
         ],
-        "reasoning": "Gold shows strong bullish signals with price above key averages, positive MACD, and high volatility suggesting momentum continuation. Cross-asset context with weak DXY and falling VIX supports upward breakout potential.",
+        "reasoning": "The combination of Gold's strong uptrend, S&P500's stability, and low fear (VIX) suggests a RISK_ON environment. DXY's inactivity removes a potential headwind for risk assets.",
         "risk_factors": [
-          "High volatility may increase price swings",
-          "ADX weak across assets suggesting lack of strong trend conviction",
-          "VIX at low levels could reverse abruptly"
+          "Gold's overbought conditions (CCI_OB, WILL_OB)",
+          "Potential mean-reversion in high volatility regimes",
+          "S&P500's weak ADX (17.06) indicating lack of strong trend"
         ]
       },
       "memory_references": {
@@ -72,8 +72,8 @@
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-01",
-        "timestamp": "2026-01-28T19:21:46.162617",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:07:29.089357",
+        "model": "Meta-Llama-3.3-70B-Instruct"
       },
       "data_snapshot": {
         "dominant_story": "No data available",
@@ -84,15 +84,13 @@
       },
       "analysis": {
         "regime": "NEUTRAL_NARRATIVE",
-        "trend": "Stable",
+        "trend": "No trend available",
         "key_drivers": [
-          "No news headlines available",
-          "No social sentiment data available"
+          "No data available"
         ],
-        "reasoning": "Insufficient data to determine narrative regime",
+        "reasoning": "Insufficient data to make an analysis",
         "risk_factors": [
-          "Data unavailability",
-          "Incomplete information"
+          "Data unavailability"
         ]
       },
       "memory_references": {

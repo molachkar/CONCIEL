@@ -2,26 +2,29 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-23",
-    "timestamp": "2026-01-28T18:23:06.034059",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:19:53.041473",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
-    "dominant_story": "Unable to determine due to missing news and forums data",
-    "sentiment": "Unknown",
-    "catalysts": "Unknown",
-    "geopolitical": "Unknown"
+    "dominant_story": "Gold investment and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold prices, Goldman Sachs' increased gold target, record gold prices",
+    "geopolitical": "High",
+    "data_quality": "complete"
   },
   "analysis": {
-    "regime": "NEUTRAL_NARRATIVE",
-    "trend": "Unable to determine due to lack of data",
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Insufficient data"
+      "Gold investment",
+      "Record gold prices",
+      "Goldman Sachs' increased gold target"
     ],
-    "reasoning": "The analysis is unable to determine the current narrative due to the absence of news and forums data for 2026-01-23. Without this information, it's impossible to accurately assess the sentiment, catalysts, and geopolitical risk. Therefore, a neutral narrative is assigned by default, indicating a lack of sufficient data to make a more informed decision.",
-    "confidence": 0.0,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs and Goldman Sachs increasing its gold target, indicating increased investor risk appetite.",
     "risk_factors": [
-      "Data unavailability",
-      "Potential for unexpected market movements"
+      "Market volatility",
+      "Geopolitical uncertainty",
+      "Trade wars"
     ]
   },
   "memory_references": {

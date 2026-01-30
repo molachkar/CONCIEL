@@ -2,27 +2,28 @@
   "metadata": {
     "agent": "macro",
     "date": "2026-01-23",
-    "timestamp": "2026-01-28T18:22:59.177186",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:19:40.666806",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "economic_events": "BoJ Interest Rate Decision",
-    "rates": "FEDFUNDS: 3.72%",
-    "inflation": "CPI (2025-11-01): 325.03, CPI (2025-12-01): 326.03, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%",
-    "real_rate": "Real Rate calculation: T10Y yield is not provided. Assuming FEDFUNDS rate of 3.72% for calculation purposes is incorrect. Real Rate = T10Y - CPI YoY, but T10Y is not available. Given Real Rate is 1.23%"
+    "economic_events": "S&P_GLOBAL_MANUFACTURING_: 51.9, S&P_GLOBAL_COMPOSITE_PMI_: 52.8, S&P_GLOBAL_SERVICES_PMI__: 52.5, MICHIGAN_1-YEAR_INFLATION: 4.0%, MICHIGAN_5-YEAR_INFLATION: 3.3%, MICHIGAN_CONSUMER_EXPECTA: 57.0, MICHIGAN_CONSUMER_SENTIME: 56.4, US_LEADING_INDEX_(MOM)__: -0.1%, U.S._BAKER_HUGHES_OIL_RIG: 411, CFTC_CRUDE_OIL_SPECULATIV: 78.8K, CFTC_GOLD_SPECULATIVE_NET: 244.8K",
+    "rates": "T10Y: 4.24%, FEDFUNDS: 3.72%",
+    "inflation": "CPI YoY: 2.7%",
+    "real_rate": "T10Y (4.24%) - CPI_YoY (2.7%) = 1.54%",
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "NEUTRAL",
-    "trend": "stable",
+    "trend": "neutral",
     "key_drivers": [
-      "low inflation",
-      "stable interest rates"
+      "S&P_GLOBAL_MANUFACTURING_ meet",
+      "MICHIGAN_CONSUMER_SENTIME beat",
+      "CFTC_GOLD_SPECULATIVE_NET decrease"
     ],
-    "reasoning": "The provided Real Rate is 1.23%, which is relatively low. However, without the T10Y yield, the accuracy of this calculation is limited. The FEDFUNDS rate has been decreasing, which could be seen as dovish, but the low CPI YoY% suggests that inflation is under control. Therefore, the regime is classified as NEUTRAL.",
-    "confidence": 0.6,
+    "reasoning": "The real rate of 1.54% is relatively high, which could be bearish for gold. However, the mixed economic data, including a meet in S&P_GLOBAL_MANUFACTURING_ and a beat in MICHIGAN_CONSUMER_SENTIME, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
     "risk_factors": [
-      "Inaccurate Real Rate calculation due to missing T10Y yield",
-      "Potential for inflation to rise"
+      "GEOPOLITICAL_RISK increase by 20.97%",
+      "GOLD_ETF_FLOWS volatility"
     ]
   },
   "memory_references": {

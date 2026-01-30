@@ -2,27 +2,27 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-22",
-    "timestamp": "2026-01-28T18:18:06.669780",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:13:25.803406",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "Gold investment and ETF outlook",
-    "sentiment": "Neutral",
-    "catalysts": "ETF stories and market strength",
-    "geopolitical": "Low risk"
+    "dominant_story": "Gold investment and market strength in tech stocks",
+    "sentiment": "Positive",
+    "catalysts": "Gold investment, Tech sector performance",
+    "geopolitical": "Stable",
+    "data_quality": "complete"
   },
   "analysis": {
-    "regime": "NEUTRAL_NARRATIVE",
-    "trend": "Stable",
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold ETFs",
-      "Market strength in tech stocks"
+      "Gold investment",
+      "Tech sector growth"
     ],
-    "reasoning": "The absence of negative news and the presence of neutral to positive market news suggest a stable narrative. The focus on gold investment and ETF outlook indicates a neutral sentiment towards gold.",
-    "confidence": 0.7,
+    "reasoning": "The news headlines suggest a positive outlook for gold investment and market strength in tech stocks, which are driving the sentiment higher.",
     "risk_factors": [
-      "Lack of forums data",
-      "Potential market volatility"
+      "Market volatility",
+      "Economic uncertainty"
     ]
   },
   "memory_references": {

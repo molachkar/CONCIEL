@@ -2,38 +2,34 @@
   "metadata": {
     "agent": "narrative",
     "date": "2025-12-18",
-    "timestamp": "2026-01-28T18:17:51.073757",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:12:48.221921",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "Stocks Settle Higher on Upbeat Tech Outlook and Cooling Inflation",
+    "dominant_story": "Upbeat Tech Outlook and Cooling Inflation",
     "sentiment": "Positive",
-    "catalysts": "Upbeat Tech Outlook, Cooling Inflation",
-    "geopolitical": "Low risk assessed"
+    "catalysts": "Tech sector performance, Cooling inflation",
+    "geopolitical": "Stable",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Upward trend identified",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Upbeat tech outlook",
+      "Tech sector growth",
       "Cooling inflation"
     ],
-    "reasoning": "Analysis of news headlines indicates a positive market sentiment driven by an upbeat tech outlook and cooling inflation, despite missing forums data",
-    "confidence": 0.7,
+    "reasoning": "The news headlines suggest a positive outlook for the tech sector and cooling inflation, which are driving the market higher.",
     "risk_factors": [
-      "Data unavailability",
-      "Incomplete analysis"
+      "Market volatility",
+      "Economic uncertainty"
     ]
   },
   "memory_references": {
     "compared_to": [
       "2025-12-11",
-      "2025-12-12",
-      "2025-12-16",
-      "2025-12-17"
+      "2025-12-12"
     ],
-    "corrections": [
-      "Missing forums data on 2025-12-18"
-    ]
+    "corrections": []
   }
 }

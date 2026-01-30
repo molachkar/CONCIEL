@@ -2,36 +2,33 @@
   "metadata": {
     "agent": "macro",
     "date": "2026-01-05",
-    "timestamp": "2026-01-28T18:19:37.384194",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:15:41.448438",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "economic_events": "ISM Manufacturing Employment: 44.9, ISM Manufacturing PMI: 47.9, Atlanta Fed GDPNow: 2.7%",
-    "rates": "T10Y: 4.17%, T2Y: 3.46%, T5Y: 3.71%, T30Y: 4.85%",
-    "inflation": "CPI: 326.03 (2025-12-01), PCE: 128.09 (2025-11-01)",
-    "real_rate": "T10Y: 4.17%, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate: 4.17% - 0.31% = 3.86% (Note: CPI YoY calculated as the change from 2025-11-01 to 2025-12-01, which may not accurately represent the full year-over-year change. For a more accurate calculation, the CPI value from 2024-12-01 is needed.)"
+    "economic_events": "ISM_MANUFACTURING_PMI__(D: 47.9, ISM_MANUFACTURING_EMPLOYM: 44.9, ISM_MANUFACTURING_PRICES_: 58.5, ATLANTA_FED_GDPNOW__(Q4): 2.7%, CFTC_CRUDE_OIL_SPECULATIV: 64.6K, CFTC_GOLD_SPECULATIVE_NET: 231.2K, CFTC_NASDAQ_100_SPECULATI: 25.1K, CFTC_S&P_500_SPECULATIVE_: -94.4K",
+    "rates": "T10Y: 4.17%, FEDFUNDS: 3.72%",
+    "inflation": "CPI YoY: 2.95%",
+    "real_rate": "T10Y (4.17%) - CPI_YoY (2.95%) = 1.22%",
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "NEUTRAL",
-    "trend": "stable",
+    "trend": "neutral",
     "key_drivers": [
-      "low ISM Manufacturing PMI",
-      "missed Atlanta Fed GDPNow forecast"
+      "ISM_MANUFACTURING_PMI__(D miss",
+      "FEDFUNDS at 3.72%",
+      "NFP at 159526K",
+      "UNEMPLOYMENT at 4.4%"
     ],
-    "reasoning": "The current economic data suggests a neutral regime, as the low ISM Manufacturing PMI and missed Atlanta Fed GDPNow forecast indicate a potential slowdown in economic growth. However, the real rate remains relatively high, which may support a hawkish Fed stance.",
-    "confidence": 0.7,
+    "reasoning": "The real rate of 1.22% is relatively low, which could be bullish for gold. However, the mixed economic data, including a miss in ISM_MANUFACTURING_PMI__(D, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
     "risk_factors": [
-      "inflation uncertainty",
-      "geopolitical risk"
+      "GEOPOLITICAL_RISK increase by 20.97%",
+      "GOLD_ETF_FLOWS volatility"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "previous economic events",
-      "historical inflation data"
-    ],
-    "corrections": [
-      "CPI YoY calculation may not accurately represent the full year-over-year change"
-    ]
+    "compared_to": [],
+    "corrections": []
   }
 }

@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-04",
+    "timestamp": "2026-01-30T22:15:38.832161",
+    "model": "llama3.3-70b"
+  },
+  "data_snapshot": {
+    "dominant_story": "Review of top and flop ETF areas in 2025",
+    "sentiment": "Neutral",
+    "catalysts": "ETF performance review",
+    "geopolitical": "Low",
+    "data_quality": "incomplete"
+  },
+  "analysis": {
+    "regime": "NEUTRAL_NARRATIVE",
+    "trend": "Stable",
+    "key_drivers": [
+      "ETF performance review"
+    ],
+    "reasoning": "News headlines indicate a review of top and flop ETF areas in 2025, with no significant geopolitical events or catalysts reported.",
+    "risk_factors": [
+      "Market volatility",
+      "Data unavailability"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

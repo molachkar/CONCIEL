@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2025-12-21",
+    "timestamp": "2026-01-30T22:13:07.951149",
+    "model": "llama3.3-70b"
+  },
+  "data_snapshot": {
+    "dominant_story": "Analysts predict record gold prices and set new targets",
+    "sentiment": "Positive",
+    "catalysts": "Analyst predictions, Gold price targets",
+    "geopolitical": "Stable",
+    "data_quality": "complete"
+  },
+  "analysis": {
+    "regime": "BULLISH_SENTIMENT",
+    "trend": "Increasing optimism",
+    "key_drivers": [
+      "Analyst predictions",
+      "Gold price targets"
+    ],
+    "reasoning": "The news headlines suggest a positive outlook for gold prices, with analysts predicting record prices and setting new targets, which is driving the sentiment higher.",
+    "risk_factors": [
+      "Market volatility",
+      "Economic uncertainty"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

@@ -1,32 +1,33 @@
 {
   "date": "2025-12-22",
-  "timestamp": "2026-01-28T18:18:01.763784",
+  "timestamp": "2026-01-30T22:13:10.912262",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-22",
-        "timestamp": "2026-01-28T18:18:01.802645",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:13:10.945115",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "economic_events": "2-YEAR_NOTE_AUCTION|3.499%|FC:-----|PV:3.489%|USD",
-        "rates": "T10Y: 4.17%, HY_SPREAD: 2.88%",
-        "inflation": "CPI: 326.03, PCE: 128.09, PPI: 261.56",
-        "real_rate": "T10Y: 4.17%, CPI_YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate = 4.17% - 0.31% = 3.86%"
+        "economic_events": "2-YEAR_NOTE_AUCTION: 3.499%",
+        "rates": "T10Y: 4.17%, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 2.7%",
+        "real_rate": "T10Y - CPI_YoY = 4.17% - 2.7% = 1.47%",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
         "regime": "NEUTRAL",
-        "trend": "stable",
+        "trend": "neutral",
         "key_drivers": [
-          "low inflation",
-          "stable interest rates"
+          "FEDFUNDS at 3.72%",
+          "NFP at 159526K",
+          "UNEMPLOYMENT at 4.4%"
         ],
-        "reasoning": "The current real rate is 3.86%, which is relatively high. However, the Fed funds rate has been decreasing (from 4.09% to 3.72%), indicating a dovish stance. The low inflation rate (0.31% YoY) also suggests that the Fed may not need to tighten monetary policy further. Therefore, the regime is neutral.",
-        "confidence": 0.85,
+        "reasoning": "The real rate of 1.47% is bearish for gold. However, the mixed economic data suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
         "risk_factors": [
-          "inflation surprise",
-          "interest rate volatility"
+          "GEOPOLITICAL_RISK increase to 127.32",
+          "GOLD_ETF_FLOWS volatility"
         ]
       },
       "memory_references": {
@@ -38,31 +39,29 @@
       "metadata": {
         "agent": "market",
         "date": "2025-12-22",
-        "timestamp": "2026-01-28T18:18:03.007120",
-        "model": "DeepSeek-V3.1"
+        "timestamp": "2026-01-30T22:13:12.253933",
+        "model": "DeepSeek-V3-0324"
       },
       "data_snapshot": {
-        "price_action": "Gold (XAUUSD) shows strong bullish momentum with close near daily high (4442.81 vs H:4448.94), breaking above all EMAs and upper Bollinger Band. S&P500 modestly positive, DXY and VIX showing weakness.",
-        "momentum": "Gold RSI 78.58 (overbought), MACD bullish (72.65 > SIG 60.42), ADX 30.47 shows strengthening trend. S&P500 neutral momentum (RSI 57.44), DXY and VIX bearish momentum.",
-        "volatility": "Gold VOL_REGIME: medium (VOL_PCT: 45.11%), PARK_VOL: 0.0091. S&P500 low volatility (VOL_PCT: 31.39%). VIX low volatility regime despite being fear index.",
-        "cross_assets": "DXY weakness (97.92, bearish signals) supporting gold. S&P500 stable (6877.65) with low VIX (16.77) suggests risk-on environment. Inverse correlation: gold strength vs dollar weakness."
+        "price_action": "Gold (XAUUSD) closed significantly higher after testing both the day's high and low, with volume significantly above average. S&P500 (USA500.IDX) showed minor gains with moderate volume. VIX (VOL.IDX) declined, indicating decreased market uncertainty. DXY (DOLLAR.IDX) was slightly lower with low volatility.",
+        "momentum": "Gold shows extremely strong momentum with RSI at 78.58 (overbought), MACD histogram positive (12.23), and ADX at 30.47 indicating a strong trend. S&P500 has neutral momentum (RSI 57.44). VIX momentum is weak (RSI 42.24). DXY momentum is weak (RSI 35.77).",
+        "volatility": "Gold is in a medium volatility regime (VOL_PCT 43.87). S&P500 is in a low volatility regime (VOL_PCT 32.02). VIX is in a low volatility regime (VOL_PCT 23.91). DXY is in a low volatility regime (VOL_PCT 10.4).",
+        "cross_assets": "Gold is above its cloud with bullish EMA stacking and showing breakout signals (BB_BREAKOUT_UP). S&P500 is above its cloud with a weak trend. VIX is below its cloud, indicating subdued fear. DXY is below its cloud with weak trend signals."
       },
       "analysis": {
         "regime": "BREAKOUT",
-        "trend": "Strong bullish trend for gold with breakout above technical levels, supported by weak dollar and stable equity markets",
+        "trend": "Gold is in a strong uptrend, supported by extremely bullish technicals and medium volatility. S&P500 is consolidating with a slight bullish bias. VIX and DXY are not providing strong counter signals.",
         "key_drivers": [
-          "Gold technical breakout (BB_BREAKOUT_UP, ABOVE_CLOUD)",
-          "Dollar weakness (DXY bearish signals)",
-          "Low volatility in equities supporting risk-on",
-          "Strong momentum indicators (RSI_OB, CCI_OB)"
+          "Gold's extremely bullish EMA stacking and breakout signals (BB_BREAKOUT_UP, ABOVE_CLOUD)",
+          "S&P500's neutral but slightly bullish stance",
+          "VIX's subdued levels indicating low fear",
+          "DXY's low volatility and lack of directional bias"
         ],
-        "reasoning": "Gold demonstrates clear breakout characteristics with price above all moving averages and Bollinger Bands, strong momentum indicators, and supportive cross-asset dynamics (weak DXY, stable SPX, low VIX). The VOL_REGIME medium suggests adequate volatility for continuation, while HURST 0.4362 indicates mean-reverting tendencies that may support pullbacks for entry.",
-        "confidence": 0.82,
+        "reasoning": "The combination of Gold's strong uptrend, S&P500's stability, and low fear (VIX) suggests a BREAKOUT environment. DXY's inactivity removes a potential headwind for risk assets.",
         "risk_factors": [
-          "RSI overbought (78.58) may lead to short-term pullback",
-          "Gold VOL_PCT 45.11% suggests moderate volatility risk",
-          "VIX at low levels (16.77) could spike unexpectedly",
-          "ADX 30.47 shows trend strength but not extreme"
+          "Gold's extremely overbought conditions (RSI 78.58, CCI 175.94, WILL -2.2)",
+          "Potential mean-reversion in medium volatility regimes",
+          "S&P500's weak trend could shift to risk-off if volatility spikes"
         ]
       },
       "memory_references": {
@@ -74,27 +73,27 @@
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-22",
-        "timestamp": "2026-01-28T18:18:06.669780",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:13:25.803406",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "dominant_story": "Gold investment and ETF outlook",
-        "sentiment": "Neutral",
-        "catalysts": "ETF stories and market strength",
-        "geopolitical": "Low risk"
+        "dominant_story": "Gold investment and market strength in tech stocks",
+        "sentiment": "Positive",
+        "catalysts": "Gold investment, Tech sector performance",
+        "geopolitical": "Stable",
+        "data_quality": "complete"
       },
       "analysis": {
-        "regime": "NEUTRAL_NARRATIVE",
-        "trend": "Stable",
+        "regime": "RISK_ON_NARRATIVE",
+        "trend": "Increasing optimism",
         "key_drivers": [
-          "Gold ETFs",
-          "Market strength in tech stocks"
+          "Gold investment",
+          "Tech sector growth"
         ],
-        "reasoning": "The absence of negative news and the presence of neutral to positive market news suggest a stable narrative. The focus on gold investment and ETF outlook indicates a neutral sentiment towards gold.",
-        "confidence": 0.7,
+        "reasoning": "The news headlines suggest a positive outlook for gold investment and market strength in tech stocks, which are driving the sentiment higher.",
         "risk_factors": [
-          "Lack of forums data",
-          "Potential market volatility"
+          "Market volatility",
+          "Economic uncertainty"
         ]
       },
       "memory_references": {

@@ -1,19 +1,19 @@
 {
   "date": "2025-12-02",
-  "timestamp": "2026-01-28T19:21:47.867460",
+  "timestamp": "2026-01-30T22:07:30.970574",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-02",
-        "timestamp": "2026-01-28T19:21:47.886051",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:07:31.014103",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
         "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0",
         "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
         "inflation": "CPI YoY: 0.31%",
-        "real_rate": "T10Y - CPI_YoY = unknown - 0.31% = unknown",
+        "real_rate": "T10Y - CPI_YoY = unknown - 0.31%",
         "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
@@ -34,13 +34,46 @@
         "corrections": []
       }
     },
-    "market": null,
+    "market": {
+      "metadata": {
+        "agent": "market",
+        "date": "2025-12-02",
+        "timestamp": "2026-01-30T22:07:34.467266",
+        "model": "DeepSeek-V3-0324"
+      },
+      "data_snapshot": {
+        "price_action": "Gold (XAUUSD) closed lower after testing the day's low, with volume significantly above average. S&P500 (USA500.IDX) showed minor gains with moderate volume. VIX (VOL.IDX) declined slightly, indicating decreased market uncertainty. DXY (DOLLAR.IDX) was flat with low volatility.",
+        "momentum": "Gold shows strong momentum with RSI at 61.2 and MACD histogram positive. S&P500 has neutral momentum (RSI 56.77). VIX momentum is weak (RSI 42.55). DXY momentum is neutral (RSI 47.64).",
+        "volatility": "Gold and S&P500 are in high volatility regimes (VOL_PCT 81.91 and 82.54 respectively). VIX is also in a high volatility regime (VOL_PCT 73.18). DXY is in a low volatility regime (VOL_PCT 5.82).",
+        "cross_assets": "Gold is above its cloud and showing bullish EMA stacking. S&P500 is above its cloud but with a weak trend. VIX is below its cloud, indicating subdued fear. DXY is in a squeeze with weak trend signals."
+      },
+      "analysis": {
+        "regime": "RISK_ON",
+        "trend": "Gold is in a strong uptrend, supported by bullish technicals and high volatility. S&P500 is consolidating with a slight bullish bias. VIX and DXY are not providing strong counter signals.",
+        "key_drivers": [
+          "Gold's bullish EMA stacking and high volatility",
+          "S&P500's neutral but slightly bullish stance",
+          "VIX's subdued levels despite minor uptick",
+          "DXY's low volatility and lack of directional bias"
+        ],
+        "reasoning": "The combination of Gold's strong uptrend, S&P500's stability, and low fear (VIX) suggests a RISK_ON environment. DXY's inactivity removes a potential headwind for risk assets.",
+        "risk_factors": [
+          "Gold's overbought conditions (CCI_OB, WILL_OB)",
+          "Potential mean-reversion in high volatility regimes",
+          "S&P500's weak ADX (16.37) indicating lack of strong trend"
+        ]
+      },
+      "memory_references": {
+        "compared_to": [],
+        "corrections": []
+      }
+    },
     "narrative": {
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-02",
-        "timestamp": "2026-01-28T19:21:50.324956",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:07:52.045575",
+        "model": "Meta-Llama-3.3-70B-Instruct"
       },
       "data_snapshot": {
         "dominant_story": "No data available",
@@ -51,15 +84,13 @@
       },
       "analysis": {
         "regime": "NEUTRAL_NARRATIVE",
-        "trend": "Stable",
+        "trend": "No trend available",
         "key_drivers": [
-          "No news headlines available",
-          "No social sentiment data available"
+          "No data available"
         ],
-        "reasoning": "Insufficient data to determine narrative regime",
+        "reasoning": "Insufficient data to make an analysis",
         "risk_factors": [
-          "Data unavailability",
-          "Incomplete information"
+          "Data unavailability"
         ]
       },
       "memory_references": {

@@ -2,33 +2,36 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-19",
-    "timestamp": "2026-01-28T18:22:16.371873",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:18:50.996815",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
-    "dominant_story": "Global economic uncertainty and geopolitical tensions drive gold prices to record highs",
-    "sentiment": "Bullish on gold, bearish on global economy",
-    "catalysts": "Trump's Greenland threat, EU retaliation, and dollar pressure",
-    "geopolitical": "High risk due to US-EU and US-China tensions"
+    "dominant_story": "Gold prices and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold investment, Trump's tariffs, EU retaliation, record gold prices",
+    "geopolitical": "High",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing gold prices and market volatility",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Geopolitical tensions",
-      "Global economic uncertainty",
-      "Record gold prices"
+      "Gold investment",
+      "Record gold prices",
+      "EU retaliation"
     ],
-    "reasoning": "The current narrative is driven by escalating geopolitical tensions, particularly between the US and EU, as well as the US and China. The threat of tariffs and retaliation has led to a decrease in global stocks and an increase in gold prices. This trend is expected to continue as investors seek safe-haven assets amidst the uncertainty.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs and the EU preparing to retaliate against Trump's tariffs, indicating increased investor risk appetite.",
     "risk_factors": [
-      "Escalating US-EU and US-China tensions",
-      "Global economic downturn",
-      "Dollar pressure"
+      "Market volatility",
+      "Geopolitical uncertainty",
+      "Trade wars"
     ]
   },
   "memory_references": {
-    "compared_to": [],
+    "compared_to": [
+      "2026-01-17",
+      "2026-01-18"
+    ],
     "corrections": []
   }
 }

@@ -2,26 +2,27 @@
   "metadata": {
     "agent": "macro",
     "date": "2025-12-08",
-    "timestamp": "2026-01-28T19:22:06.501528",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:08:50.059287",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
     "economic_events": "NFP: 159526K, UNEMPLOYMENT: 4.4%, RETAIL_SALES: 735904.0, INDUSTRIAL_PROD: 102.33",
     "rates": "T10Y: unknown, FEDFUNDS: 3.72%",
     "inflation": "CPI YoY: unknown",
-    "real_rate": "1.19% (T10Y - CPI_YoY, but T10Y and CPI_YoY are unknown)",
+    "real_rate": "T10Y - CPI_YoY = unknown - unknown, unable to calculate",
     "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "NEUTRAL",
-    "trend": "dovish",
+    "trend": "neutral",
     "key_drivers": [
       "FEDFUNDS decrease to 3.72%",
-      "NFP increase to 159526K"
+      "NFP increase to 159526K",
+      "UNEMPLOYMENT decrease to 4.4%"
     ],
-    "reasoning": "The decrease in FEDFUNDS rate and the increase in NFP suggest a dovish trend. However, the lack of information on T10Y and CPI_YoY makes it difficult to determine the overall regime.",
+    "reasoning": "The decrease in FEDFUNDS and UNEMPLOYMENT, along with the increase in NFP, suggests a neutral trend. However, the lack of information on T10Y and CPI YoY hinders a more accurate analysis.",
     "risk_factors": [
-      "GEOPOLITICAL_RISK increase to 127.32",
+      "GEOPOLITICAL_RISK increase by 20.97%",
       "GOLD_ETF_FLOWS volatility"
     ]
   },

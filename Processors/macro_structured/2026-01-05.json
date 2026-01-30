@@ -1,73 +1,34 @@
 {
   "date": "2026-01-05",
-  "timestamp": "2026-01-28T18:19:37.353299",
+  "timestamp": "2026-01-30T22:15:41.370363",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2026-01-05",
-        "timestamp": "2026-01-28T18:19:37.384194",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:15:41.448438",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "economic_events": "ISM Manufacturing Employment: 44.9, ISM Manufacturing PMI: 47.9, Atlanta Fed GDPNow: 2.7%",
-        "rates": "T10Y: 4.17%, T2Y: 3.46%, T5Y: 3.71%, T30Y: 4.85%",
-        "inflation": "CPI: 326.03 (2025-12-01), PCE: 128.09 (2025-11-01)",
-        "real_rate": "T10Y: 4.17%, CPI YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate: 4.17% - 0.31% = 3.86% (Note: CPI YoY calculated as the change from 2025-11-01 to 2025-12-01, which may not accurately represent the full year-over-year change. For a more accurate calculation, the CPI value from 2024-12-01 is needed.)"
+        "economic_events": "ISM_MANUFACTURING_PMI__(D: 47.9, ISM_MANUFACTURING_EMPLOYM: 44.9, ISM_MANUFACTURING_PRICES_: 58.5, ATLANTA_FED_GDPNOW__(Q4): 2.7%, CFTC_CRUDE_OIL_SPECULATIV: 64.6K, CFTC_GOLD_SPECULATIVE_NET: 231.2K, CFTC_NASDAQ_100_SPECULATI: 25.1K, CFTC_S&P_500_SPECULATIVE_: -94.4K",
+        "rates": "T10Y: 4.17%, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: 2.95%",
+        "real_rate": "T10Y (4.17%) - CPI_YoY (2.95%) = 1.22%",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
         "regime": "NEUTRAL",
-        "trend": "stable",
+        "trend": "neutral",
         "key_drivers": [
-          "low ISM Manufacturing PMI",
-          "missed Atlanta Fed GDPNow forecast"
+          "ISM_MANUFACTURING_PMI__(D miss",
+          "FEDFUNDS at 3.72%",
+          "NFP at 159526K",
+          "UNEMPLOYMENT at 4.4%"
         ],
-        "reasoning": "The current economic data suggests a neutral regime, as the low ISM Manufacturing PMI and missed Atlanta Fed GDPNow forecast indicate a potential slowdown in economic growth. However, the real rate remains relatively high, which may support a hawkish Fed stance.",
-        "confidence": 0.7,
+        "reasoning": "The real rate of 1.22% is relatively low, which could be bullish for gold. However, the mixed economic data, including a miss in ISM_MANUFACTURING_PMI__(D, suggests a neutral trend. The lack of historical context and unknown factors make it difficult to determine the overall regime.",
         "risk_factors": [
-          "inflation uncertainty",
-          "geopolitical risk"
-        ]
-      },
-      "memory_references": {
-        "compared_to": [
-          "previous economic events",
-          "historical inflation data"
-        ],
-        "corrections": [
-          "CPI YoY calculation may not accurately represent the full year-over-year change"
-        ]
-      }
-    },
-    "market": {
-      "metadata": {
-        "agent": "market",
-        "date": "2026-01-05",
-        "timestamp": "2026-01-28T18:19:38.660862",
-        "model": "DeepSeek-V3.1"
-      },
-      "data_snapshot": {
-        "price_action": "Gold closed strong at 4448.35 (up from open 4360.81), near daily high 4455.43, above all EMAs with bullish EMA stack signal",
-        "momentum": "RSI 63.06 (bullish but not overbought), MACD positive 61.29 but below signal line, ADX 28.96 shows developing trend strength",
-        "volatility": "High volatility regime (VOL_PCT 82.95%, ATR 88.51), mean-reverting state (Hurst 0.3843)",
-        "cross_assets": "SPX bullish but weak trend, VIX bearish and oversold, DXY below cloud with consolidation signals"
-      },
-      "analysis": {
-        "regime": "BREAKOUT",
-        "trend": "Strong bullish momentum with high volatility breakout characteristics",
-        "key_drivers": [
-          "Strong gold price action above all EMAs",
-          "High volatility regime supporting momentum moves",
-          "Risk-on environment with SPX bullish and VIX suppressed",
-          "Dollar weakness providing tailwind for gold"
-        ],
-        "reasoning": "Gold shows strong bullish price action closing near highs, above all moving averages with EMA_BULL_STACK signal. High volatility regime (82.95%) combined with mean-reverting state suggests momentum continuation. Cross-asset signals support risk-on environment with SPX bullish and VIX oversold, while DXY weakness typically benefits gold. Technical indicators show room for further upside without overbought conditions.",
-        "confidence": 0.82,
-        "risk_factors": [
-          "MACD histogram negative (-7.59) suggesting potential momentum divergence",
-          "High volatility may lead to sharp reversals",
-          "PSAR at 4527.7 provides near-term resistance",
-          "Consolidation probability at 0.5 suggests potential pause"
+          "GEOPOLITICAL_RISK increase by 20.97%",
+          "GOLD_ETF_FLOWS volatility"
         ]
       },
       "memory_references": {
@@ -75,36 +36,41 @@
         "corrections": []
       }
     },
+    "market": null,
     "narrative": {
       "metadata": {
         "agent": "narrative",
         "date": "2026-01-05",
-        "timestamp": "2026-01-28T18:19:41.966319",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:15:50.898487",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "dominant_story": "US Ousts Venezuela's Maduro, Gold and Dollar Jump",
-        "sentiment": "Bullish",
-        "catalysts": "Geopolitical events, Energy stocks",
-        "geopolitical": "High"
+        "dominant_story": "Gold prices and US market trends",
+        "sentiment": "Positive",
+        "catalysts": "US ousting Venezuela's Maduro, gold investment, energy stocks",
+        "geopolitical": "Medium",
+        "data_quality": "complete"
       },
       "analysis": {
         "regime": "RISK_ON_NARRATIVE",
-        "trend": "Increasing",
+        "trend": "Increasing optimism",
         "key_drivers": [
-          "Gold price increase",
-          "Energy stocks jump",
-          "US geopolitical actions"
+          "Gold investment",
+          "US market trends",
+          "Energy stocks"
         ],
-        "reasoning": "The ousting of Venezuela's Maduro has led to a jump in gold and dollar prices, indicating a risk-on narrative. The increase in energy stocks also supports this trend. However, the lack of historical context and forum data limits the confidence in this analysis.",
-        "confidence": 0.7,
+        "reasoning": "News headlines suggest a positive outlook for gold prices and US market trends, with the US ousting Venezuela's Maduro and energy stocks jumping, indicating increased investor risk appetite.",
         "risk_factors": [
-          "Geopolitical instability",
-          "Market volatility"
+          "Market volatility",
+          "Geopolitical uncertainty"
         ]
       },
       "memory_references": {
-        "compared_to": [],
+        "compared_to": [
+          "2025-12-31",
+          "2026-01-01",
+          "2026-01-02"
+        ],
         "corrections": []
       }
     }

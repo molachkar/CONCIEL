@@ -2,32 +2,36 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-05",
-    "timestamp": "2026-01-28T18:19:41.966319",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:15:50.898487",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "US Ousts Venezuela's Maduro, Gold and Dollar Jump",
-    "sentiment": "Bullish",
-    "catalysts": "Geopolitical events, Energy stocks",
-    "geopolitical": "High"
+    "dominant_story": "Gold prices and US market trends",
+    "sentiment": "Positive",
+    "catalysts": "US ousting Venezuela's Maduro, gold investment, energy stocks",
+    "geopolitical": "Medium",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold price increase",
-      "Energy stocks jump",
-      "US geopolitical actions"
+      "Gold investment",
+      "US market trends",
+      "Energy stocks"
     ],
-    "reasoning": "The ousting of Venezuela's Maduro has led to a jump in gold and dollar prices, indicating a risk-on narrative. The increase in energy stocks also supports this trend. However, the lack of historical context and forum data limits the confidence in this analysis.",
-    "confidence": 0.7,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and US market trends, with the US ousting Venezuela's Maduro and energy stocks jumping, indicating increased investor risk appetite.",
     "risk_factors": [
-      "Geopolitical instability",
-      "Market volatility"
+      "Market volatility",
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {
-    "compared_to": [],
+    "compared_to": [
+      "2025-12-31",
+      "2026-01-01",
+      "2026-01-02"
+    ],
     "corrections": []
   }
 }

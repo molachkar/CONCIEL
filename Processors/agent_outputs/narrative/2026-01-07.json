@@ -2,39 +2,33 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-07",
-    "timestamp": "2026-01-28T18:20:03.244811",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:16:29.641271",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "dominant_story": "US Raid in Venezuela and its impact on ETF investors, silver's rare trading phenomenon, and crude oil's last bearish overhang",
-    "sentiment": "Bullish",
-    "catalysts": "Geopolitical events, ETF performance, crude oil, silver trading phenomenon",
-    "geopolitical": "High"
+    "dominant_story": "US Raid in Venezuela and its impact on ETF investors, mixed US economic news",
+    "sentiment": "Positive",
+    "catalysts": "US Raid in Venezuela, lower bond yields, ADP rebound",
+    "geopolitical": "Medium",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "US raid in Venezuela",
-      "Silver's rare trading phenomenon",
-      "Crude oil's last bearish overhang",
-      "ETF performance"
+      "US Raid in Venezuela",
+      "lower bond yields",
+      "ADP rebound",
+      "mixed US economic news"
     ],
-    "reasoning": "The news headlines indicate a strong bullish sentiment, driven by the US raid in Venezuela, silver's rare trading phenomenon, and the removal of crude oil's last bearish overhang. The overall positive tone of the news, including the support of stocks by lower bond yields and the rebound of ADP, suggests a risk-on narrative.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for the market, with the US Raid in Venezuela compounding uncertainty for ETF investors, but lower bond yields and an ADP rebound supporting stocks near record highs.",
     "risk_factors": [
-      "Geopolitical instability",
       "Market volatility",
-      "Crude oil price fluctuations"
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "2025-12-31",
-      "2026-01-01",
-      "2026-01-05",
-      "2026-01-06"
-    ],
+    "compared_to": [],
     "corrections": []
   }
 }

@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2026-01-26",
+    "timestamp": "2026-01-30T22:20:12.522595",
+    "model": "llama3.3-70b"
+  },
+  "data_snapshot": {
+    "dominant_story": "Gold prices and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold investment, record gold prices, US dollar slide, trade wars",
+    "geopolitical": "High",
+    "data_quality": "complete"
+  },
+  "analysis": {
+    "regime": "RISK_ON_NARRATIVE",
+    "trend": "Increasing optimism",
+    "key_drivers": [
+      "Gold investment",
+      "Record gold prices",
+      "US dollar slide",
+      "Trade wars"
+    ],
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs and the US dollar sliding, indicating increased investor risk appetite.",
+    "risk_factors": [
+      "Market volatility",
+      "Geopolitical uncertainty",
+      "Trade wars"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [
+      "2026-01-25"
+    ],
+    "corrections": []
+  }
+}

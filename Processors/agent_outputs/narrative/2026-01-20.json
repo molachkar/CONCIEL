@@ -2,39 +2,34 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-20",
-    "timestamp": "2026-01-28T18:22:30.464813",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:19:05.307349",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
-    "dominant_story": "Gold prices surge as investors seek safe-haven assets amid geopolitical uncertainty and economic instability",
-    "sentiment": "Bullish",
-    "catalysts": "Gold ETF inflows, US-Europe and US-China tensions, Trump administration's economic policies",
-    "geopolitical": "High risk due to US-Europe and US-China tensions, Greenland crisis, and Trump administration's influence on global economy"
+    "dominant_story": "Gold prices and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold investment, record gold prices, EU retaliation, trade wars",
+    "geopolitical": "High",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing gold prices and market volatility",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold price surge",
-      "US-Europe and US-China tensions",
-      "Geopolitical uncertainty",
-      "Fed drama and ETF inflows"
+      "Gold investment",
+      "Record gold prices",
+      "EU retaliation",
+      "Trade wars"
     ],
-    "reasoning": "The current narrative is driven by gold's price surge due to geopolitical uncertainty, which is fueled by the US-Europe and US-China tensions, as well as the Trump administration's actions. This uncertainty is causing investors to seek safe-haven assets, leading to a bullish sentiment in the gold market. The news headlines indicate a strong risk-on narrative, with a focus on gold and ETFs, and a high level of geopolitical risk due to the US-Europe and US-China tensions and the Trump administration's influence on the global economy.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs and the EU preparing to retaliate against Trump's tariffs, indicating increased investor risk appetite.",
     "risk_factors": [
-      "Escalating US-Europe and US-China tensions",
-      "Global economic downturn",
-      "Dollar pressure",
-      "Trump administration's economic policies"
+      "Market volatility",
+      "Geopolitical uncertainty",
+      "Trade wars"
     ]
   },
   "memory_references": {
     "compared_to": [
-      "2026-01-13",
-      "2026-01-14",
-      "2026-01-15",
-      "2026-01-16",
       "2026-01-19"
     ],
     "corrections": []

@@ -1,73 +1,68 @@
 {
   "date": "2025-12-29",
-  "timestamp": "2026-01-28T18:18:48.277154",
+  "timestamp": "2026-01-30T22:14:32.315602",
   "agents": {
     "macro": {
       "metadata": {
         "agent": "macro",
         "date": "2025-12-29",
-        "timestamp": "2026-01-28T18:18:48.317540",
-        "model": "Qwen-235B"
+        "timestamp": "2026-01-30T22:14:32.322783",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "economic_events": "PENDING_HOME_SALES_(MOM)_BEAT, CRUDE_OIL_INVENTORIES_BEAT",
-        "rates": "T10Y: 4.12%, T2Y: 3.45%, T5Y: 3.67%, T30Y: 4.8%, HY_SPREAD: 2.87%",
-        "inflation": "CPI: 326.03, PCE: 128.09, PPI: 261.56",
-        "real_rate": "T10Y: 4.12%, CPI_YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate = 4.12% - 0.31% = 3.81%"
+        "economic_events": "PENDING_HOME_SALES_(MOM)_: 3.3% (BEAT), CRUDE_OIL_INVENTORIES: 0.405M (BEAT)",
+        "rates": "T10Y: 4.12%, FEDFUNDS: 3.72%",
+        "inflation": "CPI YoY: unknown",
+        "real_rate": "T10Y (4.12%) - CPI_YoY (unknown) = unknown",
+        "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
       },
       "analysis": {
         "regime": "NEUTRAL",
-        "trend": "stable",
+        "trend": "neutral",
         "key_drivers": [
-          "low inflation",
-          "stable interest rates"
+          "Pending Home Sales (MOM) beat",
+          "Crude Oil Inventories beat",
+          "Unknown inflation rates"
         ],
-        "reasoning": "The current real rate is 3.81%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
-        "confidence": 0.7,
+        "reasoning": "The recent economic events, such as the beat in Pending Home Sales (MOM) and Crude Oil Inventories, may indicate a positive trend. However, the unknown inflation rates and lack of historical context make it difficult to determine the overall regime and trend. The FEDFUNDS rate has decreased, which could be seen as dovish, but its impact is uncertain without more information.",
         "risk_factors": [
-          "inflation uncertainty",
-          "interest rate changes"
+          "Unknown inflation rates",
+          "Lack of historical context",
+          "Geopolitical risk (GPR_CHG: 20.97%)"
         ]
       },
       "memory_references": {
-        "compared_to": [
-          "previous month",
-          "previous year"
-        ],
-        "corrections": [
-          "CPI YoY calculation"
-        ]
+        "compared_to": [],
+        "corrections": []
       }
     },
     "market": {
       "metadata": {
         "agent": "market",
         "date": "2025-12-29",
-        "timestamp": "2026-01-28T18:18:50.656756",
-        "model": "DeepSeek-V3.1"
+        "timestamp": "2026-01-30T22:14:34.424422",
+        "model": "gpt-oss-120b"
       },
       "data_snapshot": {
-        "price_action": "Gold closed at 4331.48 after significant intraday range (4300.7-4549.3), below opening but above key EMA supports. Large daily range suggests high volatility activity.",
-        "momentum": "Mixed signals - RSI neutral (54.27), MACD positive but histogram declining (7.75), ADX shows moderate trend strength (35.21) with +DI > -DI indicating bullish bias.",
-        "volatility": "High volatility regime (VOL_PCT: 76.72%, PARK_VOL: 0.0119), mean-reverting state (HURST: 0.4233), wide Bollinger Bands (width: 9.58).",
-        "cross_assets": "DXY strongly bearish (STRONG_DOWN, below cloud), SPX bullish but overbought (CCI_OB, WILL_OB), VIX low and bearish - typical risk-on environment supporting gold."
+        "price_action": "Gold opened near 4538, fell to a low of 4300 and closed at 4331, trading just above the 20‑day Bollinger middle band (4306) and well within the day's range. The price sits above the POC (4189) but below the VAH (4631), indicating a pull‑back within a broader up‑trend.",
+        "momentum": "RSI 54 (neutral), MACD (+84) above signal (+76) with a positive histogram (+7.8) – bullish. ADX 35 (strong trend) with +DI (28) > -DI (21) – bullish. Stochastic K 42/D 75 shows bearish divergence, PSAR sits above price (bearish). Overall momentum leans bullish but mixed.",
+        "volatility": "High volatility regime (VOL_PCT 75.5%, PARK_VOL 0.0119). Hurst 0.42 suggests mean‑reverting behavior in the short term. Efficiency low (0.158) and spread estimate 0.0172 indicate price is moving in a wide range.",
+        "cross_assets": "S&P500 modestly higher (close 6906, RSI 58, weak ADX 13). VIX low at 16.5 with bearish MACD and low ADX – risk sentiment low. DXY weakening (close 97.68, RSI 34, -DI > +DI) – dollar under pressure. Combined picture: weakening dollar, low VIX, modest equity strength – a risk‑on backdrop."
       },
       "analysis": {
-        "regime": "BREAKOUT",
-        "trend": "Bullish with consolidation characteristics - price above key EMAs (E21:4316.59, E50:4175.92), strong volume, but testing resistance levels.",
+        "regime": "RISK_ON",
+        "trend": "Gold is in a short‑term pull‑back within an overall up‑trend; momentum indicators are mildly bullish while price action shows consolidation under high volatility.",
         "key_drivers": [
-          "Dollar weakness (DXY STRONG_DOWN)",
-          "Risk-on sentiment (SPX bullish, VIX low)",
-          "High volatility supporting momentum moves",
-          "MACD bullish crossover despite histogram decline"
+          "Strong ADX and positive MACD histogram for gold",
+          "High volatility regime increasing breakout potential",
+          "Weakening US dollar (DXY) supporting precious metals",
+          "Low VIX indicating reduced fear and higher risk appetite"
         ],
-        "reasoning": "Gold shows strong upward momentum with high volatility and volume. The asset closed near session lows but maintains position above critical moving averages. Cross-asset analysis reveals dollar weakness and risk-on environment typically supportive for gold. The combination of technical strength (STRONG_UP signal, in cloud) and favorable macro conditions suggests breakout potential despite some profit-taking at highs.",
-        "confidence": 0.78,
+        "reasoning": "Gold's price has retreated from its recent high but remains above key support levels (POC, 20‑day SMA) and exhibits bullish momentum (MACD, ADX). The high volatility regime suggests the market is primed for a directional move. Concurrently, the dollar is in a downtrend and the VIX is at multi‑year lows, both of which typically favor risk assets like gold and equities. Hence the dominant market environment is risk‑on, with gold likely to break higher if it clears the recent high of 4549.",
         "risk_factors": [
-          "Large intraday reversal from highs (4549 to 4331)",
-          "Overbought conditions in correlated assets (SPX)",
-          "High volatility may indicate instability",
-          "MACD histogram showing divergence"
+          "Potential reversal if price breaks below the 20‑day SMA (~4306) and the PSAR remains above price",
+          "Unexpected dollar strength could cap gold upside",
+          "Elevated volatility could trigger rapid price swings and false breakouts"
         ]
       },
       "memory_references": {
@@ -79,27 +74,27 @@
       "metadata": {
         "agent": "narrative",
         "date": "2025-12-29",
-        "timestamp": "2026-01-28T18:18:57.006908",
-        "model": "Meta-Llama-3.3-70B"
+        "timestamp": "2026-01-30T22:14:41.122010",
+        "model": "llama3.3-70b"
       },
       "data_snapshot": {
-        "dominant_story": "Market volatility and silver's price movement",
-        "sentiment": "Neutral with a hint of bearishness",
-        "catalysts": "Weakness in megacap technology stocks, low seasonal volume",
-        "geopolitical": "No significant geopolitical events mentioned"
+        "dominant_story": "Market and ETF performance",
+        "sentiment": "Neutral",
+        "catalysts": "ETF performance, market trends",
+        "geopolitical": "Low",
+        "data_quality": "incomplete"
       },
       "analysis": {
         "regime": "NEUTRAL_NARRATIVE",
-        "trend": "Short-term uncertainty",
+        "trend": "Stable",
         "key_drivers": [
-          "Silver's stunning rise",
-          "Weakness in megacap technology stocks"
+          "ETF performance",
+          "market trends"
         ],
-        "reasoning": "The absence of significant geopolitical events and the mixed market signals contribute to a neutral narrative. However, the weakness in megacap technology stocks and low seasonal volume may lead to short-term uncertainty.",
-        "confidence": 0.7,
+        "reasoning": "News headlines indicate a focus on ETF performance and market trends, with no significant geopolitical events or catalysts reported.",
         "risk_factors": [
           "Market volatility",
-          "Silver price fluctuations"
+          "ETF performance"
         ]
       },
       "memory_references": {

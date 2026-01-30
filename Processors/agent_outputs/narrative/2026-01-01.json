@@ -2,33 +2,32 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-01",
-    "timestamp": "2026-01-28T18:19:25.051304",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:15:18.314243",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
     "dominant_story": "U.S. ETFs Pull In a Record $1.49 Trillion in 2025",
-    "sentiment": "Bullish",
-    "catalysts": "Record-breaking ETF inflows, Positive market outlook",
-    "geopolitical": "Low risk, no significant geopolitical events mentioned"
+    "sentiment": "Positive",
+    "catalysts": "Record ETF inflows",
+    "geopolitical": "Low",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Upward momentum in ETF inflows and market optimism",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Record-breaking ETF inflows",
-      "Positive market outlook"
+      "Record ETF inflows",
+      "Gold investment"
     ],
-    "reasoning": "The news headlines indicate a strong bullish sentiment, driven by the record-breaking ETF inflows and positive market outlook. The lack of significant geopolitical events and the overall positive tone of the news suggest a low-risk environment, contributing to a risk-on narrative.",
-    "confidence": 0.8,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and ETFs, with record inflows into U.S. ETFs in 2025.",
     "risk_factors": [
       "Market volatility",
-      "Interest rate changes"
+      "Economic uncertainty"
     ]
   },
   "memory_references": {
     "compared_to": [
-      "2025-12-26",
-      "2025-12-29"
+      "2025-12-31"
     ],
     "corrections": []
   }

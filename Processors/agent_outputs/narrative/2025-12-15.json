@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "agent": "narrative",
+    "date": "2025-12-15",
+    "timestamp": "2026-01-30T22:11:13.312592",
+    "model": "llama3.3-70b"
+  },
+  "data_snapshot": {
+    "dominant_story": "No data available",
+    "sentiment": "Unknown",
+    "catalysts": "None",
+    "geopolitical": "Unknown",
+    "data_quality": "incomplete"
+  },
+  "analysis": {
+    "regime": "NEUTRAL_NARRATIVE",
+    "trend": "No trend available",
+    "key_drivers": [
+      "No data available"
+    ],
+    "reasoning": "Insufficient data to make an analysis",
+    "risk_factors": [
+      "Data unavailability"
+    ]
+  },
+  "memory_references": {
+    "compared_to": [],
+    "corrections": []
+  }
+}

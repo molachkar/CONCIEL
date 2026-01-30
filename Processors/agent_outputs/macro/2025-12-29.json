@@ -2,36 +2,33 @@
   "metadata": {
     "agent": "macro",
     "date": "2025-12-29",
-    "timestamp": "2026-01-28T18:18:48.317540",
-    "model": "Qwen-235B"
+    "timestamp": "2026-01-30T22:14:32.322783",
+    "model": "llama3.3-70b"
   },
   "data_snapshot": {
-    "economic_events": "PENDING_HOME_SALES_(MOM)_BEAT, CRUDE_OIL_INVENTORIES_BEAT",
-    "rates": "T10Y: 4.12%, T2Y: 3.45%, T5Y: 3.67%, T30Y: 4.8%, HY_SPREAD: 2.87%",
-    "inflation": "CPI: 326.03, PCE: 128.09, PPI: 261.56",
-    "real_rate": "T10Y: 4.12%, CPI_YoY: ((326.03 - 325.03) / 325.03) * 100 = 0.31%, Real Rate = 4.12% - 0.31% = 3.81%"
+    "economic_events": "PENDING_HOME_SALES_(MOM)_: 3.3% (BEAT), CRUDE_OIL_INVENTORIES: 0.405M (BEAT)",
+    "rates": "T10Y: 4.12%, FEDFUNDS: 3.72%",
+    "inflation": "CPI YoY: unknown",
+    "real_rate": "T10Y (4.12%) - CPI_YoY (unknown) = unknown",
+    "monthly_context": "CPI: 2025% (as of date unknown) | PCE: 2025% (as of date unknown) | PPI: 2025% (as of date unknown)"
   },
   "analysis": {
     "regime": "NEUTRAL",
-    "trend": "stable",
+    "trend": "neutral",
     "key_drivers": [
-      "low inflation",
-      "stable interest rates"
+      "Pending Home Sales (MOM) beat",
+      "Crude Oil Inventories beat",
+      "Unknown inflation rates"
     ],
-    "reasoning": "The current real rate is 3.81%, which is relatively high. However, the inflation rate is low, and the interest rates are stable. The Fed policy seems to be neutral, with no clear indication of a dovish or hawkish stance.",
-    "confidence": 0.7,
+    "reasoning": "The recent economic events, such as the beat in Pending Home Sales (MOM) and Crude Oil Inventories, may indicate a positive trend. However, the unknown inflation rates and lack of historical context make it difficult to determine the overall regime and trend. The FEDFUNDS rate has decreased, which could be seen as dovish, but its impact is uncertain without more information.",
     "risk_factors": [
-      "inflation uncertainty",
-      "interest rate changes"
+      "Unknown inflation rates",
+      "Lack of historical context",
+      "Geopolitical risk (GPR_CHG: 20.97%)"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "previous month",
-      "previous year"
-    ],
-    "corrections": [
-      "CPI YoY calculation"
-    ]
+    "compared_to": [],
+    "corrections": []
   }
 }

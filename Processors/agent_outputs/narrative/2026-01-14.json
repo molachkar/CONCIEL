@@ -2,37 +2,32 @@
   "metadata": {
     "agent": "narrative",
     "date": "2026-01-14",
-    "timestamp": "2026-01-28T18:21:31.380983",
-    "model": "Meta-Llama-3.3-70B"
+    "timestamp": "2026-01-30T22:17:58.881120",
+    "model": "Meta-Llama-3.3-70B-Instruct"
   },
   "data_snapshot": {
-    "dominant_story": "Gold price surge and geopolitical uncertainty",
-    "sentiment": "Bullish",
-    "catalysts": "Gold ETF inflows, US-Iran tensions, Trump administration's economic policies",
-    "geopolitical": "High risk due to US-Iran tensions and Trump administration's influence on Fed"
+    "dominant_story": "Gold prices and market trends",
+    "sentiment": "Positive",
+    "catalysts": "Gold investment, market trends, central bankers supporting Fed independence",
+    "geopolitical": "Medium",
+    "data_quality": "complete"
   },
   "analysis": {
     "regime": "RISK_ON_NARRATIVE",
-    "trend": "Increasing gold prices and market volatility",
+    "trend": "Increasing optimism",
     "key_drivers": [
-      "Gold price surge",
-      "US-Iran tensions",
-      "Geopolitical uncertainty",
-      "Fed drama and ETF inflows"
+      "Gold investment",
+      "Market trends",
+      "Central bankers supporting Fed independence"
     ],
-    "reasoning": "The current narrative is driven by gold's price surge due to geopolitical uncertainty, which is fueled by the US-Iran tensions and the Trump administration's actions. This uncertainty is causing investors to seek safe-haven assets, leading to a bullish sentiment in the gold market. The news headlines indicate a strong risk-on narrative, with a focus on gold and ETFs, and a high level of geopolitical risk due to the US-Iran tensions and the Trump administration's influence on the Fed.",
-    "confidence": 0.85,
+    "reasoning": "News headlines suggest a positive outlook for gold prices and market trends, with gold hitting record highs and central bankers supporting Fed independence, indicating increased investor risk appetite.",
     "risk_factors": [
-      "US-Iran conflict escalation",
-      "Trump administration's economic policies",
-      "Global economic instability"
+      "Market volatility",
+      "Geopolitical uncertainty"
     ]
   },
   "memory_references": {
-    "compared_to": [
-      "2026-01-07",
-      "2026-01-12"
-    ],
+    "compared_to": [],
     "corrections": []
   }
 }
