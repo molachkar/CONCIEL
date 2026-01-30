@@ -18,6 +18,102 @@ API_KEYS = {
     "groq": os.getenv("GROQ_API_KEY", "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"),
 }
 
+# Fallback model configurations for market agent (when primary model hits token limit)
+MARKET_FALLBACK_MODELS = [
+    {
+        "name": "DeepSeek-V3.1",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 1
+    },
+    {
+        "name": "Meta-Llama-3.3-70B",
+        "provider": "sambanova", 
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 2
+    },
+    {
+        "name": "DeepSeek-V3-0324",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 3
+    },
+    {
+        "name": "gpt-oss-120b",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 4
+    },
+    {
+        "name": "Llama-Swallow",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 5
+    }
+]
+
+# Fallback model configurations for macro agent
+MACRO_FALLBACK_MODELS = [
+    {
+        "name": "llama3.3-70b",
+        "provider": "cerebras",
+        "api_endpoint": "https://api.cerebras.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 1
+    },
+    {
+        "name": "Meta-Llama-3.3-70B",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 2
+    },
+    {
+        "name": "DeepSeek-V3-0324",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 3
+    }
+]
+
+# Fallback model configurations for narrative agent
+NARRATIVE_FALLBACK_MODELS = [
+    {
+        "name": "Meta-Llama-3.3-70B-Instruct",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 1
+    },
+    {
+        "name": "llama3.3-70b",
+        "provider": "cerebras",
+        "api_endpoint": "https://api.cerebras.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 2
+    },
+    {
+        "name": "DeepSeek-V3-0324",
+        "provider": "sambanova",
+        "api_endpoint": "https://api.sambanova.ai/v1/chat/completions",
+        "max_tokens": 2000,
+        "priority": 3
+    }
+]
+
+# Sticky model configuration (persist working model for N days before retrying primary)
+STICKY_MODEL_CONFIG = {
+    "enabled": True,
+    "retry_primary_after_days": 10,  # After 10 successful days, retry primary model
+    "reset_on_failure": True  # Reset to full fallback chain when sticky model fails
+}
+
 AGENT_CONFIGS = {
     "market": {
         "name": "market",

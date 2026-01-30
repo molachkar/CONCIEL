@@ -13,8 +13,7 @@ from agent_market import MarketAgent
 from agent_narrative import NarrativeAgent
 
 def process_single_date(date: str) -> Dict:
-    print(f"\nProcessing {date}...")
-    
+    """Process all agents for a single date with minimal output"""
     results = {
         'date': date,
         'timestamp': datetime.now().isoformat(),
@@ -24,65 +23,57 @@ def process_single_date(date: str) -> Dict:
     date_folder = DATA_DIR / date
     if not date_folder.exists():
         if PROCESSING_CONFIG['skip_missing_data']:
-            print(f"  Skipping (no data folder)")
             return results
-        print(f"  Aborting (no data folder)")
         return results
     
-    # Process macro agent
+    # Process macro agent (output is handled by agent itself)
     try:
         macro_agent = MacroAgent()
         results['agents']['macro'] = macro_agent.analyze(date)
-        print(f"  Macro: {'OK' if results['agents']['macro'] else 'SKIPPED/FAILED'}")
-    except Exception as e:
-        print(f"  Macro: FAILED ({e})")
+    except Exception:
         results['agents']['macro'] = None
     
-    # Process market agent
+    # Process market agent (output is handled by agent itself)
     try:
         market_agent = MarketAgent()
         results['agents']['market'] = market_agent.analyze(date)
-        print(f"  Market: {'OK' if results['agents']['market'] else 'SKIPPED/FAILED'}")
-    except Exception as e:
-        print(f"  Market: FAILED ({e})")
+    except Exception:
         results['agents']['market'] = None
     
-    # Process narrative agent
+    # Process narrative agent (output is handled by agent itself)
     try:
         narrative_agent = NarrativeAgent()
         results['agents']['narrative'] = narrative_agent.analyze(date)
-        print(f"  Narrative: {'OK' if results['agents']['narrative'] else 'SKIPPED/FAILED'}")
-    except Exception as e:
-        print(f"  Narrative: FAILED ({e})")
+    except Exception:
         results['agents']['narrative'] = None
     
+    # Save combined output silently
     success_count = sum(1 for r in results['agents'].values() if r is not None)
-    print(f"  Result: {success_count}/3 agents succeeded")
-    
     if OUTPUT_CONFIG['save_combined_output'] and success_count > 0:
-        if save_combined_output(date, results):
-            print(f"  Saved combined output")
+        save_combined_output(date, results)
     
     return results
 
 def save_combined_output(date: str, results: Dict) -> bool:
+    """Save combined output without printing"""
     try:
         output_path = MACRO_STRUCTURED_DIR / f"{date}.json"
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
         return True
-    except Exception as e:
-        print(f"  Failed to save combined output: {e}")
+    except Exception:
         return False
 
 def process_date_range(start_date: str, end_date: str) -> List[Dict]:
+    """Process date range with minimal header output"""
     start_dt = datetime.strptime(start_date, "%Y-%m-%d")
     end_dt = datetime.strptime(end_date, "%Y-%m-%d")
     all_results = []
     current = start_dt
     
-    print(f"Date range: {start_date} to {end_date}")
-    print("Processing ALL days (including weekends if data exists)")
+    # Only show header for multi-day processing
+    if start_date != end_date:
+        print(f"\nProcessing {start_date} to {end_date}\n")
     
     while current <= end_dt:
         date_str = current.strftime("%Y-%m-%d")
@@ -93,32 +84,30 @@ def process_date_range(start_date: str, end_date: str) -> List[Dict]:
     return all_results
 
 def print_summary(results: List[Dict]):
+    """Print concise summary"""
     total_dates = len(results)
     macro_success = sum(1 for r in results if r['agents'].get('macro') is not None)
     market_success = sum(1 for r in results if r['agents'].get('market') is not None)
     narrative_success = sum(1 for r in results if r['agents'].get('narrative') is not None)
     
-    print("\n" + "="*60)
-    print("SUMMARY")
-    print("="*60)
-    print(f"Total dates processed: {total_dates}")
-    print(f"  Macro agent: {macro_success}/{total_dates}")
-    print(f"  Market agent: {market_success}/{total_dates}")
-    print(f"  Narrative agent: {narrative_success}/{total_dates}")
-    
-    failed_dates = [
-        r['date'] for r in results 
-        if not any(r['agents'].get(agent) for agent in ['macro', 'market', 'narrative'])
-    ]
-    
-    if failed_dates:
-        print(f"\nDates with no successful agents ({len(failed_dates)}):")
-        for date in failed_dates:
-            print(f"  {date}")
-    else:
-        print("\nAll dates had at least one successful agent")
-    
-    print("="*60)
+    # Only print summary for multi-day runs
+    if total_dates > 1:
+        print(f"\n{'='*50}")
+        print(f"SUMMARY: {total_dates} dates processed")
+        print(f"{'='*50}")
+        print(f"Macro:     {macro_success}/{total_dates}")
+        print(f"Market:    {market_success}/{total_dates}")
+        print(f"Narrative: {narrative_success}/{total_dates}")
+        
+        failed_dates = [
+            r['date'] for r in results 
+            if not any(r['agents'].get(agent) for agent in ['macro', 'market', 'narrative'])
+        ]
+        
+        if failed_dates:
+            print(f"\nFailed dates ({len(failed_dates)}): {', '.join(failed_dates)}")
+        
+        print(f"{'='*50}\n")
 
 def main():
     import argparse
@@ -142,14 +131,8 @@ def main():
     # Update config based on args
     PROCESSING_CONFIG['skip_missing_data'] = args.skip_missing
     
-    print("="*60)
-    print("CONCIEL PROCESSORS")
-    print("="*60)
-    
     results = process_date_range(args.start_date, end_date)
     print_summary(results)
-    
-    print("\ndone")
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
@@ -157,8 +140,7 @@ if __name__ == "__main__":
         print("\nExamples:")
         print("  python run_all.py 2026-01-20")
         print("  python run_all.py 2026-01-20 2026-01-31")
-        print("\nRunning test with 2026-01-20...")
+        print("\nRunning test with 2026-01-20...\n")
         result = process_single_date("2026-01-20")
-        print("\ndone")
     else:
         main()

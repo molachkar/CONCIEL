@@ -1,64 +1,55 @@
 import json
 import requests
 from datetime import datetime
-from typing import Dict, Optional
-from config import API_KEYS, AGENT_CONFIGS
+from typing import Dict, Optional, Tuple
+from config import API_KEYS, AGENT_CONFIGS, NARRATIVE_FALLBACK_MODELS, STICKY_MODEL_CONFIG
 from base_agent import BaseAgent
 
 class NarrativeAgent(BaseAgent):
     def __init__(self):
         super().__init__("narrative")
-        self.api_key = API_KEYS.get("sambanova", "")
-        self.api_endpoint = "https://api.sambanova.ai/v1/chat/completions"
+        self.fallback_models = NARRATIVE_FALLBACK_MODELS
+        self.sticky_model_index = 0
+        self.sticky_success_count = 0
     
     def analyze(self, date: str) -> Optional[Dict]:
         """Override analyze to check for data availability first"""
         try:
-            # Load today's files
             today_data = super().load_today_data(date)
             
-            # Check for usable data
             has_news = today_data.get('news.txt') and today_data['news.txt'].strip() not in ['N/A', '', 'No data', '[ERROR']
             has_forums = today_data.get('forums.txt') and today_data['forums.txt'].strip() not in ['N/A', '', 'No data', '[ERROR']
             
-            # If BOTH missing, skip
             if not has_news and not has_forums:
-                print(f"⚠️  NARRATIVE AGENT: Skipping {date} - no news or forums data available")
+                print(f"NARRATIVE {date}: No data")
                 return None
             
-            # Warn if partial data
-            if not has_news:
-                print(f"⚠️  NARRATIVE AGENT: {date} - news.txt missing, using forums only")
-            if not has_forums:
-                print(f"⚠️  NARRATIVE AGENT: {date} - forums.txt missing, using news only")
-            
-            # Load memory
             memory = super().load_memory(date)
-            
-            # Build prompt
             prompt = self.build_prompt(date, today_data, memory, has_news, has_forums)
             
-            # Call LLM
             llm_response = self.call_llm(prompt)
-            
-            # Parse and validate
             result = json.loads(llm_response)
             
-            # Validate output
             if not super().validate_output(result):
-                print(f"❌ NARRATIVE AGENT: {date} - Output validation failed")
+                print(f"NARRATIVE {date}: Validation failed")
                 return None
             
-            # Save output
             if not super().save_output(date, result):
-                print(f"❌ NARRATIVE AGENT: {date} - Failed to save output")
+                print(f"NARRATIVE {date}: Save failed")
                 return None
             
-            print(f"✅ NARRATIVE AGENT: {date} completed")
+            # Clean output
+            model_used = result.get('metadata', {}).get('model', 'Unknown')
+            if self.sticky_model_index != 0:
+                print(f"NARRATIVE {date}: Complete ({model_used})")
+            else:
+                print(f"NARRATIVE {date}: Complete")
+            
             return result
             
         except Exception as e:
-            print(f"❌ NARRATIVE AGENT ERROR on {date}: {e}")
+            error_type = self._detect_error_type(str(e))
+            print(f"NARRATIVE {date}: Failed ({error_type})")
             return None
     
     def build_prompt(self, date: str, today_data: Dict, memory: Optional[Dict], 
@@ -67,9 +58,9 @@ class NarrativeAgent(BaseAgent):
         
         data_note = ""
         if not has_news:
-            data_note = "⚠️ NEWS DATA MISSING - Analyze forums only\n"
+            data_note = "NOTE: NEWS DATA MISSING - Analyze forums only\n"
         elif not has_forums:
-            data_note = "⚠️ FORUMS DATA MISSING - Analyze news only\n"
+            data_note = "NOTE: FORUMS DATA MISSING - Analyze news only\n"
         
         return f"""NARRATIVE analyst for gold intelligence system.
 
@@ -84,45 +75,109 @@ TASK: Analyze news headlines, social sentiment, catalysts, geopolitical risk, se
 Output regime: RISK_ON_NARRATIVE / RISK_OFF_NARRATIVE / NEUTRAL_NARRATIVE / BULLISH_SENTIMENT / BEARISH_SENTIMENT
 
 Return ONLY valid JSON (NO confidence score):
-{{"metadata":{{"agent":"narrative","date":"{date}","timestamp":"{datetime.now().isoformat()}","model":"Meta-Llama-3.3-70B"}},"data_snapshot":{{"dominant_story":"...","sentiment":"...","catalysts":"...","geopolitical":"...","data_quality":"{'partial - news only' if not has_forums else 'partial - forums only' if not has_news else 'complete'}"}},"analysis":{{"regime":"RISK_ON_NARRATIVE/RISK_OFF_NARRATIVE/NEUTRAL_NARRATIVE","trend":"...","key_drivers":["..."],"reasoning":"...","risk_factors":["..."]}},"memory_references":{{"compared_to":[],"corrections":[]}}}}"""
+{{"metadata":{{"agent":"narrative","date":"{date}","timestamp":"{datetime.now().isoformat()}","model":"[MODEL_NAME]"}},"data_snapshot":{{"dominant_story":"...","sentiment":"...","catalysts":"...","geopolitical":"...","data_quality":"{'partial - news only' if not has_forums else 'partial - forums only' if not has_news else 'complete'}"}},"analysis":{{"regime":"RISK_ON_NARRATIVE/RISK_OFF_NARRATIVE/NEUTRAL_NARRATIVE","trend":"...","key_drivers":["..."],"reasoning":"...","risk_factors":["..."]}},"memory_references":{{"compared_to":[],"corrections":[]}}}}"""
     
-    def call_llm(self, prompt: str) -> str:
-        if not self.api_key:
-            raise Exception("SambaNova API key not configured")
+    def _detect_error_type(self, error_response: str) -> str:
+        """Detect error type for minimal logging"""
+        error_str = error_response.lower()
+        
+        if any(x in error_str for x in ["context_length", "token limit", "too many tokens"]):
+            return "token limit"
+        elif any(x in error_str for x in ["rate limit", "rate_limit"]):
+            return "rate limit"
+        elif any(x in error_str for x in ["timeout", "timed out"]):
+            return "timeout"
+        else:
+            return "error"
+    
+    def _call_model_with_config(self, prompt: str, model_config: Dict) -> Tuple[bool, Optional[str], Optional[str]]:
+        """Call a specific model configuration"""
+        model_name = model_config['name']
+        api_endpoint = model_config['api_endpoint']
+        max_tokens = model_config['max_tokens']
+        provider = model_config['provider']
+        
+        api_key = API_KEYS.get(provider, "")
+        if not api_key:
+            return False, None, "No API key"
+        
+        prompt_with_model = prompt.replace("[MODEL_NAME]", model_name)
         
         try:
             response = requests.post(
-                self.api_endpoint,
+                api_endpoint,
                 headers={
-                    "Authorization": f"Bearer {self.api_key}",
+                    "Authorization": f"Bearer {api_key}",
                     "Content-Type": "application/json"
                 },
                 json={
-                    "model": "Meta-Llama-3.3-70B-Instruct",
+                    "model": model_name,
                     "messages": [
                         {"role": "system", "content": "Respond ONLY with valid JSON. NO confidence scores."},
-                        {"role": "user", "content": prompt}
+                        {"role": "user", "content": prompt_with_model}
                     ],
                     "temperature": self.config['temperature'],
-                    "max_tokens": self.config['max_tokens']
+                    "max_tokens": max_tokens
                 },
-                timeout=60
+                timeout=90
             )
+            
             response.raise_for_status()
             content = response.json()['choices'][0]['message']['content'].strip()
-            return content.replace('```json', '').replace('```', '').strip()
+            cleaned_content = content.replace('```json', '').replace('```', '').strip()
+            
+            return True, cleaned_content, None
+            
+        except Exception as e:
+            error_msg = str(e)
+            try:
+                error_detail = response.json()
+                error_msg = json.dumps(error_detail)
+            except:
+                pass
+            
+            return False, None, error_msg
+    
+    def call_llm(self, prompt: str) -> str:
+        """Call LLM with sticky model logic and automatic fallback"""
         
-        except requests.exceptions.RequestException as e:
-            print(f"API request failed: {e}")
-            raise
+        # Check if we should retry primary model
+        if (STICKY_MODEL_CONFIG['enabled'] and 
+            self.sticky_success_count >= STICKY_MODEL_CONFIG['retry_primary_after_days'] and
+            self.sticky_model_index != 0):
+            self.sticky_model_index = 0
+            self.sticky_success_count = 0
+        
+        # Try sticky model first
+        sticky_config = self.fallback_models[self.sticky_model_index]
+        success, response, error = self._call_model_with_config(prompt, sticky_config)
+        
+        if success:
+            self.sticky_success_count += 1
+            return response
+        
+        # Sticky model failed - try full fallback chain
+        for idx, model_config in enumerate(self.fallback_models):
+            if idx == self.sticky_model_index:
+                continue
+            
+            success, response, error = self._call_model_with_config(prompt, model_config)
+            
+            if success:
+                self.sticky_model_index = idx
+                self.sticky_success_count = 1
+                return response
+        
+        # All models failed
+        error_type = self._detect_error_type(str(error))
+        raise Exception(f"All models failed ({error_type})")
 
 if __name__ == "__main__":
     agent = NarrativeAgent()
     result = agent.analyze("2026-01-20")
     
     if result:
-        print(json.dumps(result, indent=2))
-    else:
-        print("Analysis failed or skipped due to missing data")
+        print(f"\nModel: {result.get('metadata', {}).get('model')}")
+        print(f"Regime: {result.get('analysis', {}).get('regime')}")
     
     print("\ndone")
